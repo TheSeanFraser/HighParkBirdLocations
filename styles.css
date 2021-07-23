@@ -1,6 +1,8 @@
 body {
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 80%;
 }
 
 h1 {
@@ -13,4 +15,17 @@ h3 {
 
 p {
   	color: black;
+}
+
+iframe {
+	width: 50%;
+	height: 50%;
+}
+
+footer {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	color: gray;
+	align-content: center;
 }
