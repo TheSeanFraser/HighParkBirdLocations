@@ -1,34 +1,14 @@
 // var path = "/maps/species/"
 // // var speciesMap = $('#species_map');
 // var speciesList = "test"
+var speciesList;
 
-fetch('speciesList.txt')
+fetch('https://theseanfraser.github.io/HighParkBirdLocations/maps/species/speciesList.txt')
     .then(response => response.text())
+    .then(text=> speciesList = text)
     .then(text => console.log(text));
 
-
-function getText(){
-    // read text from URL location
-    var request = new XMLHttpRequest();
-    request.open('GET', 'speciesList.txt', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-                return request.responseText;
-            }
-        }
-    }
-}
-
-var speciesList = getText();
-console.log(speciesList);
-
-
-
-
-
+console.log(speciesList + "TET");
 
 
 function loadNewMap(speciesName)
