@@ -47,7 +47,10 @@ p {
 }
 
 iframe {
-
+/*
+	width: 90%;
+	height: 400px;
+*/
 }
 
 .heatmap {
@@ -57,7 +60,6 @@ iframe {
 	height: 400px;
 */
 }
-
 
 
 footer {
