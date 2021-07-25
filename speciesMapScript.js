@@ -1,18 +1,30 @@
-// var path = "/maps/species/"
-// // var speciesMap = $('#species_map');
-// var speciesList = "test"
-var speciesList;
+var path = "/maps/species/"
 
-fetch('https://theseanfraser.github.io/HighParkBirdLocations/maps/species/speciesList.txt')
-    .then(response => response.text())
-    .then(text=> speciesList = text)
-    .then(text => console.log(text));
+var speciesListResponse;
 
-console.log(speciesList + "TET");
+ fetch('https://theseanfraser.github.io/HighParkBirdLocations/maps/species/speciesList.txt')
+     .then(response => response.text())
+     .then(text=> speciesListResponse = text)
+    	.then((response) => {
+        this.updateSelectorList();
+ 		})
+     .then(text => console.log(text));
 
 
-function loadNewMap(speciesName)
+function updateSelectorList()
 {
-    var source = path + speciesName;
-    speciesMap.attr('src', source);
+    var selector = document.getElementById("speciesSelector");
+
+	var speciesList = speciesListResponse.split("\n");
+
+     for(var i = 0; i < speciesList.length; i++) {
+         var opt = speciesList[i];
+         var el = document.createElement("option");
+         el.textContent = opt;
+         el.value = opt;
+         selector.appendChild(el);
+     }
 }
+
+
+
