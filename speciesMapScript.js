@@ -1,14 +1,12 @@
-var path = "/maps/species/"
-
 var speciesListResponse;
 
- fetch('https://theseanfraser.github.io/HighParkBirdLocations/maps/species/speciesList.txt')
-     .then(response => response.text())
-     .then(text=> speciesListResponse = text)
-    	.then((response) => {
+fetch('https://theseanfraser.github.io/HighParkBirdLocations/maps/species/speciesList.txt')
+	.then(response => response.text())
+    .then(text=> speciesListResponse = text)
+    .then((response) => {
         this.updateSelectorList();
  		})
-     .then(text => console.log(text));
+    .then(text => console.log(text));
 
 
 function updateSelectorList()

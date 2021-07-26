@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=500, initial-scale=1">
 		<link rel="stylesheet" href="styles.css">
 		<link rel="import" href="maps/all_birds_map.html">
+		<script src="dateMapScript.js" ></script>
 	</head>
 	
 	<body>
@@ -20,18 +21,28 @@
 		
 		<div> 
 			<p>More checklist reports will be added next. Vulnerable species will not be shown on the map. </p>
-			<p>This is an example of the birds seen in High Park on an evening walk.</p>
+			<p>This is an example of the birds seen in High Park on morning walk.</p>
 			<p>Here is the link to the <a href="https://ebird.org/checklist/S92158487"> eBird checklist</a> this map is representing.</p>
 
 		</div>
+		
+		<!-- Checklist selector -->
+		<label for="species">Select a date:</label>
+		
+		<select name="date" id="dateSelector">
+			<option>2021-07-21</option>
+		</select>
+
+		<input type="button" id="selectDateButton" value="Display Map">
 
 		<div>
 			<h3>Map of checklist from 2021 July 22 :</h3>
-			<iframe class="species_map" src="maps/checklists/S92158487_map.html" height="500" width="95%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
+			<iframe class="species_map" src="maps/checklists/2021-07-21.html" height="500" width="95%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
 		</div>
 
 		
 	</body>
+	<script src="displayNewDateMap.js"></script>
 	<footer>
 		<div>Sean Fraser | 2021</div>
 	</footer>
