@@ -18,3 +18,23 @@ selectDateButton.onclick = function() {
 };
 
 
+// Checks and deals with hashtag fragment in link
+function fragmentChecklistMap(){
+	if(window.location.hash) {
+		console.log("HASH FOUND");
+		var hashChecklistID = decodeURI(window.location.hash.split("#")[1]);
+		var dateMapiFrame = document.getElementById("date_map");
+		var mapTitle = document.getElementById("mapTitle");
+		var source = path + hashChecklistID + '.html';
+		
+		console.log(source);
+		mapTitle.innerHTML = "Map of checklist " + hashChecklistID +  " :";
+		document.getElementById("dateSelector").value = hashChecklistID;
+		dateMapiFrame.setAttribute('src', source);
+		
+	} else {
+		console.log("NO HASH");
+	}
+}
+
+fragmentChecklistMap();
