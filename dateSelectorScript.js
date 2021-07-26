@@ -15,7 +15,7 @@ function updateSelectorList()
 
 	var dateList = dateListResponse.split("\n");
 
-     for(var i = 0; i < dateList.length; i++) {
+     for(var i = 0; i < dateList.length - 1; i++) {
          var opt = dateList[i];
          var el = document.createElement("option");
          el.textContent = opt;

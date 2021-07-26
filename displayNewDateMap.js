@@ -1,4 +1,5 @@
 var path = 'https://theseanfraser.github.io/HighParkBirdLocations/maps/checklists/';
+var eBirdChecklistPath = 'https://ebird.org/checklist/'
 var selectDateButton = document.getElementById("selectDateButton");
 
 
@@ -8,10 +9,12 @@ selectDateButton.onclick = function() {
 	var dateAndChecklistID = document.getElementById("dateSelector").value;
 	//var mapTitle = document.getElementById("mapTitle");
 	var checklistID = dateAndChecklistID.split(" ")[1];
-    var source = path + checklistID + '.html';
+	var source = path + checklistID + '.html';
 	console.log(source);
 	//mapTitle.innerHTML("Map of " + speciesName +  " seen since July 2021:");
     dateMapiFrame.setAttribute('src', source);
+	var eBirdChecklist = document.getElementById("eBirdChecklist");
+	eBirdChecklist.setAttribute('href', eBirdChecklistPath + checklistID);
 };
 
 

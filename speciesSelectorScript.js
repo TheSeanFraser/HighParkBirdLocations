@@ -15,7 +15,7 @@ function updateSelectorList()
 
 	var speciesList = speciesListResponse.split("\n");
 
-     for(var i = 0; i < speciesList.length; i++) {
+     for(var i = 0; i < speciesList.length - 1; i++) {
          var opt = speciesList[i];
          var el = document.createElement("option");
          el.textContent = opt;
