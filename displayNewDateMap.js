@@ -31,6 +31,7 @@ function fragmentChecklistMap(){
 		mapTitle.innerHTML = "Map of checklist " + hashChecklistID +  " :";
 		document.getElementById("dateSelector").value = hashChecklistID;
 		dateMapiFrame.setAttribute('src', source);
+		document.getElementById("eBirdChecklist").href = "https://ebird.org/checklist/" + hashChecklistID;
 		
 	} else {
 		console.log("NO HASH");
