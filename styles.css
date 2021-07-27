@@ -1,17 +1,25 @@
 body {
-	background-color: white;
+	background-color: whitesmoke;
 	font-family: Arial, Helvetica, sans-serif;
-	height: 100%;
-	width: 95%;
-	padding: 5px;
+
 }
 
 h1 {
   	color: black;
+	font-size: 6vw;
+}
+
+h2 {
+	text-align: center;
 }
 
 h3 {
 	color:black
+}
+
+.writing {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 ul {
@@ -20,6 +28,7 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
+	border-radius: 5px;
   }
   
 li {
@@ -30,8 +39,9 @@ li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px 10px;
 	text-decoration: none;
+
 }
 
 li a:hover:not(.active) {
@@ -46,24 +56,18 @@ p {
   	color: black;
 }
 
-iframe {
-/*
-	width: 90%;
-	height: 400px;
-*/
+.speciesSelector {
+	position: relative;
+	font-family: Arial;
+	background: white;
 }
 
-.heatmap {
-	padding: 1%;
-/*
-	width: 90%;
-	height: 400px;
-*/
+.newMapButton {
+	cursor: pointer;
 }
 
 
 footer {
-	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 80%;
 	color: gray;

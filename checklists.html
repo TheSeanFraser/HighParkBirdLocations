@@ -3,7 +3,7 @@
 	<head>
 		<title>High Park Bird Locations - Checklists</title>
 		<meta name="author" content="Sean Fraser">
-		<meta name="viewport" content="width=450, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
 		<link rel="import" href="maps/all_birds_map.html">
 		<script src="dateSelectorScript.js" ></script>
@@ -19,37 +19,34 @@
 	</head>
 	
 	<body>
-		<h1>High Park Bird Locations</h1>
-		
+		<div>
+			<h2>High Park Bird Locations</h2>
+		</div>
+		<!--Navigation Bar-->
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="species.html">Species Maps</a></li>
-			<li><a class="active" href="checklists.html">Checklist Maps</a></li>
-			<li><a href="about.html">About</a></li>
+			<li><a href="species.html">Species</a></li>
+			<li><a class="active" href="checklists.html">Checklists</a></li>
+			<li style="float:right"><a href="about.html">About</a></li>
 		</ul>
-		
-		<div> 
+				
+		<!-- Writing Div -->
+		<div class="writing">
 			<p>More checklist reports will be added next. Vulnerable species will not be shown on the map. </p>
-<!--
-			<p>This is an example of the birds seen in High Park on morning walk.</p>
-			<p>Here is the link to the <a href="https://ebird.org/checklist/S92158487"> eBird checklist</a> this map is representing.</p>
--->
+			
+			<!-- Checklist Selector-->
+			<label for="species">Select a date:</label>
 
-		</div>
-		
-		<!-- Checklist selector -->
-		<label for="species">Select a date:</label>
-		
-		<select name="date" id="dateSelector">
-			<option>2021-07-25: S92307669</option>
-		</select>
+			<select name="date" id="dateSelector"><option>2021-07-25: S92307669</option></select>
 
-		<input type="button" id="selectDateButton" value="Display Map">
+			<input type="button" class="newMapButton" id="selectDateButton" value="Display Map">
 
-		<div>
 			<h3 id="mapTitle">Map of checklist from selected date:</h3>
 			<div>Link to the selected <a id="eBirdChecklist" href="https://ebird.org/checklist/S92307669">eBird checklist</a>.</div>
-			
+		</div>
+		
+		<!-- Map Div -->
+		<div>
 			<iframe class="date_map" id="date_map" src="maps/checklists/S92307669.html" height="500" width="95%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
 		</div>
 

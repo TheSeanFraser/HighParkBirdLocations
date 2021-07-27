@@ -3,7 +3,7 @@
 	<head>
 		<title>High Park Bird Locations - Species</title>
 		<meta name="author" content="Sean Fraser">
-		<meta name="viewport" content="width=500, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
 		<script src="speciesSelectorScript.js" ></script>
 		
@@ -18,34 +18,38 @@
 	</head>
 	
 	<body>
-		<h1>High Park Bird Locations</h1>
-		
+		<div>
+			<h2>High Park Bird Locations</h2>
+		</div>
+		<!--Navigation Bar-->
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a class="active" href="species.html">Species Maps</a></li>
-			<li><a href="checklists.html">Checklist Maps</a></li>
-			<li><a href="about.html">About</a></li>
+			<li><a class="active" href="species.html">Species</a></li>
+			<li><a href="checklists.html">Checklists</a></li>
+			<li style="float:right"><a href="about.html">About</a></li>
 		</ul>
 		
-		<div> 
-			<p>Vulnerable species will not be available to see.</p>
-            <p>Note: Each marker does not necessarily depict an individual bird, these are just the locations where the species has been seen.</p>
-		</div>
+		<!-- Writing Div -->
+		<div class="writing">
+			<div > 
+				<p>Vulnerable species will not be available to see.</p>
+				<p>The date and surface for each observation are included. Each marker does not necessarily depict an individual bird, these are just the locations where the species has been seen.</p>
+			</div>
 
-		
-		<!-- Species selector -->
-		<label for="species">Select a species:</label>
-		
-		<select name="species" id="speciesSelector">
-			<option>Song Sparrow</option>
-		</select>
 
-		<input type="button" id="selectSpeciesButton" value="Display Map">
+			<!-- Species selector -->
+			<label for="species">Species:</label>
 
-		
-		
-		<div>
+			<select class="speciesSelector" name="species" id="speciesSelector"><option>Song Sparrow</option></select>
+
+			<input class="newMapButton" type="button" id="selectSpeciesButton" value="Display Map">
+
 			<h3 id="mapTitle">Map of Song Sparrow observations since July 2021:</h3>
+		</div>
+		
+		<!-- Map Div -->
+		<div>
+			
 			<iframe id="species_map" class="species_map" src="maps/species/Song Sparrow.html" height="500" width="95%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
 		</div>
 
