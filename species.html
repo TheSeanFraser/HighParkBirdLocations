@@ -33,7 +33,7 @@
 		<div class="writing">
 			<div > 
 				<p>Vulnerable species will not be available to see.</p>
-				<p>The date and surface for each observation are included. Each marker does not necessarily depict an individual bird, these are just the locations where the species has been seen.</p>
+				<p>The recorded location and surface is where the bird spent most of its time during the observation. Each marker does not necessarily depict an individual bird, these are just the locations where the species has been seen.</p>
 			</div>
 
 
@@ -42,7 +42,7 @@
 
 			<select class="speciesSelector" name="species" id="speciesSelector"><option>Song Sparrow</option></select>
 
-			<input class="newMapButton" type="button" id="selectSpeciesButton" value="Display Map">
+			<input class="newMapButton" type="button" id="selectSpeciesButton" value="Display Data">
 
 			<h3 id="mapTitle">Map of Song Sparrow observations since July 2021:</h3>
 		</div>
@@ -50,13 +50,22 @@
 		<!-- Map Div -->
 		<div>
 			
-			<iframe id="species_map" class="species_map" src="maps/species/Song Sparrow.html" height="500" width="95%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
+			<iframe id="species_map" class="species_map" src="maps/species/Song Sparrow.html" height="500" width="100%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
 		</div>
+		
+		<!-- Chart Div -->
+		
+		<div id="chart_wrapper">
+			<iframe class="bar_chart" id="bar_chart" src="charts/species/Song%20Sparrow%20Bar%20Graph.html" height="500" width="49%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
+			
+			<iframe class="pie_chart" id="pie_chart" src="charts/species/Song%20Sparrow%20Pie%20Graph.html" height="500" width="49%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
+		</div>
+	
 
 		
 	</body>
 	<script src="displayNewSpeciesMap.js"></script>
 	<footer>
-		<div>Sean Fraser | 2021</div>
+		<div>Sean Fraser 🦆 2021</div>
 	</footer>
 </html>

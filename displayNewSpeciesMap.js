@@ -1,18 +1,28 @@
-var path = 'https://theseanfraser.github.io/HighParkBirdLocations/maps/species/';
+var mapPath = 'https://theseanfraser.github.io/HighParkBirdLocations/maps/species/';
+var chartPath = 'https://theseanfraser.github.io/HighParkBirdLocations/charts/species/';
 var selectSpeciesButton = document.getElementById("selectSpeciesButton");
 
 
 selectSpeciesButton.onclick = function() {
 	console.log("Button clicked");
-	var speciesMapiFrame = document.getElementById("species_map");
+	// Get species name from selector
 	var speciesName = document.getElementById("speciesSelector").value;
+	// Set path variables based on species name
+	var mapSource = mapPath + speciesName + '.html';
+	var barChartSource = chartPath + speciesName + ' Bar Graph.html'
+	var pieChartSource = chartPath + speciesName + ' Pie Graph.html'
 	
-    var source = path + speciesName + '.html';
-	console.log(source);
+	// Get page elements
 	var mapTitle = document.getElementById("mapTitle");
+	var speciesMapiFrame = document.getElementById("species_map");
+	var barChartiFrame = document.getElementById("bar_chart");
+	var pieChartiFrame = document.getElementById("pie_chart");
+
+	// Set page elements to reflect selected species
 	mapTitle.innerHTML = "Map of " + speciesName +  " observations since July 2021:";
-	
-    speciesMapiFrame.setAttribute('src', source);
+    speciesMapiFrame.setAttribute('src', mapSource);
+	barChartiFrame.setAttribute('src', barChartSource);
+	pieChartiFrame.setAttribute('src', pieChartSource);
 };
 
 
@@ -23,7 +33,7 @@ function fragmentSpeciesMap(){
 		var hashSpeciesName = decodeURI(window.location.hash.split("#")[1]);
 		var speciesMapiFrame = document.getElementById("species_map");
 		var mapTitle = document.getElementById("mapTitle");
-		var source = path + hashSpeciesName + '.html';
+		var source = mapPath + hashSpeciesName + '.html';
 		
 		console.log(source);
 		mapTitle.innerHTML = "Map of " + hashSpeciesName +  " observations since July 2021:";
