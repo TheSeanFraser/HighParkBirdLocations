@@ -2,4 +2,4 @@
  
 This is where I will publish the data that I will collect about the GPS locations of the birds I see in High Park.
 
-<a href="theseanfraser.github.io/HighParkBirdLocations/">View the website.</a>
+theseanfraser.github.io/HighParkBirdLocations/
