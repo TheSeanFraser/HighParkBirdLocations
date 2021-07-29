@@ -39,7 +39,6 @@ Eastern Kingbird
 Hairy Woodpecker
 Yellow Warbler
 Great Crested Flycatcher
-Rock Pigeon (Feral Pigeon)
 Caspian Tern
 Red-bellied Woodpecker
 Red-eyed Vireo
@@ -49,7 +48,6 @@ Killdeer
 Belted Kingfisher
 Baltimore Oriole
 Mute Swan
-Great Horned Owl
 Cooper's Hawk
 Common Nighthawk
 Pine Warbler
@@ -64,6 +62,5 @@ Virginia Rail
 Great Egret
 American Crow
 American Black Duck
-Eastern Screech-Owl
 Gray Catbird
 Merlin
