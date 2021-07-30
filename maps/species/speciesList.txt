@@ -39,6 +39,7 @@ Eastern Kingbird
 Hairy Woodpecker
 Yellow Warbler
 Great Crested Flycatcher
+Rock Pigeon (Feral Pigeon)
 Caspian Tern
 Red-bellied Woodpecker
 Red-eyed Vireo
@@ -57,7 +58,6 @@ Cliff Swallow
 Herring Gull
 Marsh Wren
 Osprey
-Gadwall
 Virginia Rail
 Great Egret
 American Crow
