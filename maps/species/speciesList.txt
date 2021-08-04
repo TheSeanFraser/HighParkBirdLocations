@@ -64,3 +64,6 @@ American Crow
 American Black Duck
 Gray Catbird
 Merlin
+Northern Waterthrush
+Hooded Merganser
+Solitary Sandpiper
