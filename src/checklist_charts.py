@@ -8,31 +8,6 @@ import config
 import plotly.graph_objects as go
 from sql_manager import create_db_connection, read_query
 
-###############################################################################
-# SQL Queries
-###############################################################################
-# Gets the list of distinct species seen
-qSpeciesList = """
-SELECT DISTINCT species 
-FROM birds;
-"""
-
-# Gets all birds data
-#[id, species, effort, latitude, longitude, surface, checklistID, date, time, location, duration]
-q1 = """
-SELECT *
-FROM birds
-INNER JOIN effort
-ON birds.effort = effort.checklistID;
-"""
-
-q2 = """
-SELECT * 
-FROM birds 
-INNER JOIN effort
-ON birds.effort = effort.checklistID
-WHERE birds.species = 'Great Blue Heron';
-"""
 
 ###############################################################################
 # Helper functions
@@ -44,6 +19,7 @@ def species_list_cleaner(species_list_input):
         cleanSpeciesList.append(species[0])
 
     return cleanSpeciesList
+
 
 ###############################################################################
 # Main function
@@ -58,7 +34,8 @@ def checklist_chart_maker(checklist_id="S92367052"):
     WHERE effort = '""" + checklist_id + """';"""
 
     # Create a connection and store the results of the query
-    connection = create_db_connection(config.my_host, config.my_user, config.my_pwd, config.my_db)
+    connection = create_db_connection(config.my_host, config.my_user,
+                                      config.my_pwd, config.my_db)
     results = read_query(connection, qChecklist)
 
     # Create a list from the database results
@@ -67,7 +44,8 @@ def checklist_chart_maker(checklist_id="S92367052"):
         result = list(result)
         from_db.append(result)
 
-    columns = ["id", "species", "effort", "latitude", "longitude", "surface", "checklistID", "date", "time", "location", "duration"]
+    columns = ["id", "species", "effort", "latitude", "longitude", "surface",
+               "checklistID", "date", "time", "location", "duration"]
 
     # Create pandas DataFrame of data
     df = pd.DataFrame(from_db, columns=columns)
@@ -77,26 +55,27 @@ def checklist_chart_maker(checklist_id="S92367052"):
     dfSpeciesSorted = dfSpecies["species"].unique()
     dfSpeciesCount = df.groupby("species").id.nunique()
 
-
     fig = go.Figure(data=[go.Table(
-        header=dict(values=["Species", "Total",  "% Water","% Ground","% Structure","% Tree","% Air"],
-                    fill_color='paleturquoise',
-                    align='left'),
-        cells=dict(values=[dfSpeciesSorted, dfSpeciesCount, [1,2,3,4,5555,4634]],
-               fill_color='lavender',
-               align='left'))
-            ])
+        header=dict(
+            values=["Species", "Total", "% Water", "% Ground", "% Structure",
+                    "% Tree", "% Air"],
+            fill_color='paleturquoise',
+            align='left'),
+        cells=dict(
+            values=[dfSpeciesSorted, dfSpeciesCount, [1, 2, 3, 4, 5555, 4634]],
+            fill_color='lavender',
+            align='left'))
+    ])
 
     fig.show()
     # fig.write_html(config.web_path + "charts\\checklists\\" + checklistID + "  Table.html")
-
 
 
 # checklist_chart_maker()
 
 def make_all_checklist_charts():
     checklists = []
-    f = open(config.web_path + "maps\\checklists\\checklistList.txt")
+    f = open(config.dir_path + "maps\\checklists\\checklistList.txt")
     for line in f:
         checklists.append(line.split(' ')[1].strip("\n"))
     f.close()

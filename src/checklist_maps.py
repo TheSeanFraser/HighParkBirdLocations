@@ -56,7 +56,7 @@ def create_map(checklist_id, checklist_data):
     m.layout.width = '100%'
     m.layout.height = '500px'
 
-    m.save(config.web_path + 'maps\\checklists\\'
+    m.save(config.dir_path + 'maps\\checklists\\'
            + checklist_id + '.html',
            title='Map for: ' + checklist_id)
 
@@ -91,7 +91,7 @@ def checklist_map_maker(checklist_id):
 def remake_all_checklist_maps():
     checklists = []
     # Read list of checklists
-    f = open(config.web_path + "maps\\checklists\\checklistList.txt")
+    f = open(config.dir_path + "maps\\checklists\\checklistList.txt")
     for line in f:
         checklists.append(line.split(' ')[1].strip("\n"))
     f.close()

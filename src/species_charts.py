@@ -38,7 +38,7 @@ def species_chart_maker(connection, species="Cooper''s Hawk"):
                  category_orders={"surface":
                                       ["GROUND", "WATER", "STRUCTURE", "TREE", "AIR"]},
                  title= species + " surface observations")
-    fig.write_html(config.web_path + "charts\\species\\"
+    fig.write_html(config.dir_path + "charts\\species\\"
                    + species + " Bar Graph.html")
 
     # Count the occurrences of each surface
@@ -58,7 +58,7 @@ def species_chart_maker(connection, species="Cooper''s Hawk"):
         'WATER': 'royalblue',
         'STRUCTURE': 'darkslategrey'
         }, title= species + " surface observations")
-    fig2.write_html(config.web_path + "charts\\species\\" + species + " Pie Graph.html")
+    fig2.write_html(config.dir_path + "charts\\species\\" + species + " Pie Graph.html")
 
 
 # Create the charts for every species in database
@@ -67,7 +67,7 @@ def make_all_species_charts():
     connection = create_db_connection(config.my_host, config.my_user, config.my_pwd, config.my_db)
 
     species_list = []
-    f = open(config.web_path + "maps\\species\\speciesList.txt")
+    f = open(config.dir_path + "maps\\species\\speciesList.txt")
     for line in f:
         species_list.append(line.strip("\n"))
     f.close()

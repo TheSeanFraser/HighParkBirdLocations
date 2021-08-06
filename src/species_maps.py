@@ -20,7 +20,7 @@ def create_species_list(connection):
     species_list_non_protected = []
 
     # Store list of species for website
-    species_text_file = open(config.web_path + "maps\\species\\speciesList.txt", "w")
+    species_text_file = open(config.dir_path + "maps\\species\\speciesList.txt", "w")
     for species in species_list_result:
         # If species is protected, skip it for the map making
         if(species[1]):
@@ -103,7 +103,7 @@ def create_map(species, single_species_data):
     m.add_layer(heatmap)
     m.add_layer(marker_cluster)
 
-    m.save(config.web_path + 'maps\\species\\' + species + '.html', title=species + ' Map')
+    m.save(config.dir_path + 'maps\\species\\' + species + '.html', title=species + ' Map')
 
 # Create a map for each of the species
 def map_all_species():
