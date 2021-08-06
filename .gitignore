@@ -5,6 +5,7 @@ src/config.py
 .psd
 */.ipynb_checkpoints/
 .ipynb_checkpoints/
+notebooks/
 
 ############
 ## Taken from https://github.com/github/gitignore
