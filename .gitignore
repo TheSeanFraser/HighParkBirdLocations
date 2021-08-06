@@ -2,13 +2,17 @@
 # Application secret files
 src/config.py
 */config.py
+# Extras
 .psd
 */.ipynb_checkpoints/
 .ipynb_checkpoints/
 notebooks/
 *.gsheet
+*_old.py
 
-############
+
+
+########################################################################
 ## Taken from https://github.com/github/gitignore
 
 
