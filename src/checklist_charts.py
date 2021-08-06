@@ -9,21 +9,7 @@ import plotly.graph_objects as go
 from sql_manager import create_db_connection, read_query
 
 
-###############################################################################
-# Helper functions
-###############################################################################
-# Clean up the species list to only include the name
-def species_list_cleaner(species_list_input):
-    cleanSpeciesList = []
-    for species in species_list_input:
-        cleanSpeciesList.append(species[0])
-
-    return cleanSpeciesList
-
-
-###############################################################################
-# Main function
-###############################################################################
+# Makes a chart for the selected checklist
 def checklist_chart_maker(checklist_id="S92367052"):
     # Set SQL query to get the data for the selected species
     qChecklist = """
