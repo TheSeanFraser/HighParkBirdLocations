@@ -30,17 +30,24 @@
 			<li style="float:right"><a class="active" href="about.html">About</a></li>
 		</ul>
 		
-		<div class="writing"> 
-			<h3>About Project</h3>
-			<p>This is a project that I started in July of 2021, although I had been thinking about starting this for a long time.</p> 
-			<p>I am interested in finding patterns in the locations each species of bird that can be seen in High Park, as well as providing a resource for other birders to help them see everything that I can find.</p>
-			<h4>Data Collection</h4>
-			<p>I have created a Python application to import my eBird checklists to record the GPS location and surface where each bird is seen (air, water, ground, tree, structure) to an SQL server.
-			</p>
-			<h4>Data Visualisation</h4>
-			<p>Using the ipyleaflet jupyter widget, I create a map for the observations of each species and each checklist. Charts were made using Plotly.</p>
-			<h4>eBird</h4>
-			<p>You can find my <a href="https://ebird.org/profile/MTE4NTQ3Mw/world">eBird profile here</a> (must be logged in to eBird to view).</p>
+		<div id="column_wrapper">
+			<div id="left_col" class="writing"> 
+				<h3>About Project</h3>
+				<p>This is a project that I started in July of 2021, although I had been thinking about starting this for a long time.</p> 
+				<p>I am interested in finding patterns in the locations each species of bird that can be seen in High Park, as well as providing a resource for other birders to help them see everything that I can find.</p>
+				<p>You can find the source code for this project on <a href="https://github.com/TheSeanFraser/HighParkBirdLocations">GitHub</a>.</p>
+				<h4>Data Collection</h4>
+				<p>I have created a Python application to import my eBird checklists to record the GPS location and surface where each bird is seen (air, water, ground, tree, structure) to an SQL server.
+				</p>
+				<h4>Data Visualisation</h4>
+				<p>Using ipyleaflet, I create a map for the observations of each species and each checklist. Charts were made using Plotly.</p>
+				<h4>eBird</h4>
+				<p>You can find my <a href="https://ebird.org/profile/MTE4NTQ3Mw/world">eBird profile here</a> (must be logged in to eBird to view).</p>
+			</div>
+
+			<div id="right_col">
+				<img id="owl_photo" src="img/ghow.jpg">
+			</div>
 		</div>
 		
 	</body>
