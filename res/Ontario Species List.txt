@@ -1,0 +1,1005 @@
+Waterfowl
+
+Black-bellied Whistling-Duck
+Fulvous Whistling-Duck
+whistling-duck sp.
+Snow Goose
+Ross's Goose
+Snow x Ross's Goose (hybrid)
+Snow/Ross's Goose
+Graylag Goose (Domestic type)
+Swan Goose (Domestic type)
+Graylag x Swan Goose (Domestic type) (hybrid)
+Greater White-fronted Goose
+Tundra Bean-Goose
+Taiga/Tundra Bean-Goose
+Pink-footed Goose
+Domestic goose sp. (Domestic type)
+Brant
+Barnacle Goose
+Cackling Goose
+Canada Goose
+Swan Goose (Domestic type) x Canada Goose (hybrid)
+Greater White-fronted x Canada Goose (hybrid)
+Graylag x Canada Goose (hybrid)
+Graylag Goose (Domestic type) x Canada Goose (hybrid)
+Domestic goose sp. (Domestic type) x Canada Goose (hybrid)
+Snow x Canada Goose (hybrid)
+Barnacle x Canada Goose (hybrid)
+Cackling/Canada Goose
+Branta sp.
+goose sp.
+Mute Swan
+Trumpeter Swan
+Tundra Swan
+Trumpeter/Tundra Swan
+swan sp.
+Muscovy Duck (Domestic type)
+Wood Duck
+Garganey
+Blue-winged Teal
+Cinnamon Teal
+Blue-winged x Cinnamon Teal (hybrid)
+Blue-winged/Cinnamon Teal
+Northern Shoveler
+Blue-winged Teal x Northern Shoveler (hybrid)
+Gadwall
+Eurasian Wigeon
+American Wigeon
+Gadwall x American Wigeon (hybrid)
+Eurasian x American Wigeon (hybrid)
+Eurasian/American Wigeon
+Mallard
+Mallard (Domestic type)
+Muscovy Duck x Mallard (hybrid)
+Northern Shoveler x Mallard (hybrid)
+Gadwall x Mallard (hybrid)
+American Wigeon x Mallard (hybrid)
+American Black Duck
+Mallard x American Black Duck (hybrid)
+Mallard/American Black Duck
+Mottled Duck
+Northern Pintail
+Gadwall x Northern Pintail (hybrid)
+Mallard x Northern Pintail (hybrid)
+Green-winged Teal
+Gadwall x Green-winged Teal (hybrid)
+American Wigeon x Green-winged Teal (hybrid)
+Northern Pintail x Green-winged Teal (hybrid)
+Anas sp.
+teal sp.
+dabbling duck sp.
+Canvasback
+Redhead
+Canvasback x Redhead (hybrid)
+Ring-necked Duck
+Canvasback x Ring-necked Duck (hybrid)
+Redhead x Ring-necked Duck (hybrid)
+Tufted Duck
+Greater Scaup
+Redhead x Greater Scaup (hybrid)
+Ring-necked Duck x Greater Scaup (hybrid)
+Tufted Duck x Greater Scaup (hybrid)
+Lesser Scaup
+Redhead x Lesser Scaup (hybrid)
+Ring-necked Duck x Lesser Scaup (hybrid)
+Greater/Lesser Scaup
+Redhead x scaup sp. (hybrid)
+Ring-necked Duck x scaup sp. (hybrid)
+Tufted Duck x scaup sp. (hybrid)
+Aythya sp.
+King Eider
+Common Eider
+King/Common Eider
+eider sp.
+Harlequin Duck
+Surf Scoter
+White-winged Scoter
+White-winged/Stejneger's Scoter
+Black Scoter
+Surf/Black Scoter
+scoter sp.
+Long-tailed Duck
+Bufflehead
+Common Goldeneye
+Bufflehead x Common Goldeneye (hybrid)
+Barrow's Goldeneye
+Common x Barrow's Goldeneye (hybrid)
+Common/Barrow's Goldeneye
+Smew
+Hooded Merganser
+Wood Duck x Hooded Merganser (hybrid)
+Bufflehead x Hooded Merganser (hybrid)
+Common Goldeneye x Hooded Merganser (hybrid)
+goldeneye sp. x Hooded Merganser (hybrid)
+Common Merganser
+Red-breasted Merganser
+Common/Red-breasted Merganser
+merganser sp.
+Ruddy Duck
+duck sp.
+waterfowl sp.
+
+
+Grouse, Quail, and Allies
+
+Northern Bobwhite
+Indian Peafowl (Domestic type)
+Ring-necked Pheasant
+pheasant sp.
+Gray Partridge
+Ruffed Grouse
+Spruce Grouse
+Ruffed/Spruce Grouse
+Willow Ptarmigan
+Rock Ptarmigan
+Sharp-tailed Grouse
+Greater Prairie-Chicken
+grouse sp.
+Wild Turkey
+Wild Turkey (Domestic type)
+
+
+Grebes
+
+Pied-billed Grebe
+Horned Grebe
+Red-necked Grebe
+Eared Grebe
+Horned/Eared Grebe
+Podiceps sp.
+Western Grebe
+Western/Clark's Grebe
+grebe sp.
+
+
+Pigeons and Doves
+
+Rock Pigeon
+Band-tailed Pigeon
+Passenger Pigeon
+Eurasian Collared-Dove
+African Collared-Dove (Domestic type or Ringed Turtle-Dove)
+Eurasian/African Collared-Dove
+Inca Dove
+Common Ground Dove
+White-winged Dove
+Mourning Dove
+pigeon/dove sp.
+
+
+Cuckoos
+
+Groove-billed Ani
+Yellow-billed Cuckoo
+Black-billed Cuckoo
+Yellow-billed/Black-billed Cuckoo
+Coccyzus sp.
+cuckoo sp. (Cuculidae sp.)
+
+
+Nightjars
+
+Lesser Nighthawk
+Common Nighthawk
+nighthawk sp.
+Common Poorwill
+Chuck-will's-widow
+Eastern Whip-poor-will
+Eastern/Mexican Whip-poor-will
+Antrostomus sp.
+nightjar sp.
+
+
+Swifts
+
+Black Swift
+White-collared Swift
+Chimney Swift
+Chaetura sp.
+swift sp.
+
+
+Hummingbirds
+
+Mexican Violetear
+violetear sp.
+Ruby-throated Hummingbird
+Black-chinned Hummingbird
+Ruby-throated/Black-chinned Hummingbird
+Anna's Hummingbird
+Rufous Hummingbird
+Rufous/Allen's Hummingbird
+Calliope Hummingbird
+Selasphorus sp.
+Broad-billed Hummingbird
+hummingbird sp.
+
+
+Rails, Gallinules, and Allies
+
+King Rail
+large rail sp.
+Virginia Rail
+King/Virginia Rail
+Rallus sp.
+Sora
+Common Gallinule
+American Coot
+Purple Gallinule
+moorhen/coot/gallinule sp.
+Yellow Rail
+Black Rail
+rail/crake sp.
+
+
+Cranes
+
+Sandhill Crane
+Whooping Crane
+
+
+Shorebirds
+
+Black-necked Stilt
+American Avocet
+American Oystercatcher
+Black-bellied Plover
+American Golden-Plover
+American/Pacific Golden-Plover (Lesser Golden-Plover)
+Black-bellied Plover/golden-plover sp.
+Lesser Sand-Plover
+Snowy Plover
+Wilson's Plover
+Common Ringed Plover
+Semipalmated Plover
+Piping Plover
+Killdeer
+Eurasian Dotterel
+small plover sp.
+plover sp.
+Upland Sandpiper
+Whimbrel
+Eskimo Curlew
+Long-billed Curlew
+Slender-billed Curlew
+Black-tailed Godwit
+Hudsonian Godwit
+Marbled Godwit
+godwit sp.
+Ruddy Turnstone
+Red Knot
+Ruff
+Sharp-tailed Sandpiper
+Stilt Sandpiper
+Curlew Sandpiper
+Sanderling
+Dunlin
+Purple Sandpiper
+Baird's Sandpiper
+Little Stint
+Least Sandpiper
+White-rumped Sandpiper
+Dunlin x White-rumped Sandpiper (hybrid)
+Buff-breasted Sandpiper
+Pectoral Sandpiper
+Semipalmated Sandpiper
+Western Sandpiper
+Semipalmated/Western Sandpiper
+peep sp.
+Calidris sp.
+Short-billed Dowitcher
+Long-billed Dowitcher
+Short-billed/Long-billed Dowitcher
+American Woodcock
+Wilson's Snipe
+Common/Wilson's Snipe
+Wilson's Phalarope
+Red-necked Phalarope
+Red Phalarope
+Red-necked/Red Phalarope
+phalarope sp.
+Spotted Sandpiper
+Common/Spotted Sandpiper
+Solitary Sandpiper
+Wandering Tattler
+Spotted Redshank
+Greater Yellowlegs
+Willet
+Lesser Yellowlegs
+Greater/Lesser Yellowlegs
+Tringa sp.
+Scolopacidae sp.
+large shorebird sp.
+shorebird sp.
+
+
+Skuas and Jaegers
+
+Pomarine Jaeger
+Parasitic Jaeger
+Pomarine/Parasitic Jaeger
+Long-tailed Jaeger
+Parasitic/Long-tailed Jaeger
+jaeger sp.
+
+
+Alcids
+
+Dovekie
+Thick-billed Murre
+Razorbill
+large alcid sp.
+Black Guillemot
+Long-billed Murrelet
+Ancient Murrelet
+Atlantic Puffin
+
+
+Gulls, Terns, and Skimmers
+
+Black-legged Kittiwake
+Ivory Gull
+Sabine's Gull
+Bonaparte's Gull
+Black-headed Gull
+Little Gull
+Ross's Gull
+Laughing Gull
+Franklin's Gull
+Laughing/Franklin's Gull
+Black-tailed Gull
+Heermann's Gull
+Mew Gull
+Ring-billed Gull
+Laughing x Ring-billed Gull (hybrid)
+California Gull
+Herring Gull
+California x Herring Gull (hybrid)
+Iceland Gull
+Herring/Iceland Gull
+Lesser Black-backed Gull
+Herring x Lesser Black-backed Gull (hybrid)
+Herring/Lesser Black-backed Gull
+Yellow-legged/Lesser Black-backed Gull
+Slaty-backed Gull
+Glaucous-winged Gull
+Herring x Glaucous-winged Gull (hybrid)
+Glaucous Gull
+Herring x Glaucous Gull (hybrid)
+white-winged gull sp.
+Great Black-backed Gull
+Herring x Great Black-backed Gull (hybrid)
+Glaucous x Great Black-backed Gull (hybrid)
+Kelp Gull
+Larus sp.
+gull sp.
+Sooty Tern
+Least Tern
+Caspian Tern
+Black Tern
+White-winged Tern
+Common Tern
+Arctic Tern
+Common/Arctic Tern
+Forster's Tern
+Common/Forster's Tern
+Sterna sp.
+Royal Tern
+Sandwich Tern
+Elegant Tern
+large tern sp.
+tern sp.
+Black Skimmer
+gull/tern sp.
+
+
+Loons
+
+Red-throated Loon
+Pacific Loon
+Common Loon
+Yellow-billed Loon
+loon sp.
+
+Albatrosses
+
+Yellow-nosed Albatross
+Storm-Petrels
+Wilson's Storm-Petrel
+Leach's Storm-Petrel
+Band-rumped Storm-Petrel
+storm-petrel sp. (white-rumped)
+storm-petrel sp.
+
+
+Petrels, Shearwaters, and Diving-Petrels
+
+Northern Fulmar
+Black-capped Petrel
+Great Shearwater
+Sooty/Short-tailed Shearwater
+Manx Shearwater
+Audubon's Shearwater
+shearwater sp.
+
+
+Storks
+
+Wood Stork
+
+
+Frigatebirds, Boobies, and Gannets
+
+Magnificent Frigatebird
+frigatebird sp.
+Brown Booby
+Northern Gannet
+
+
+Cormorants and Anhingas
+
+Anhinga
+Great Cormorant
+Neotropic Cormorant
+Double-crested Cormorant
+Great/Double-crested Cormorant
+Neotropic/Double-crested Cormorant
+cormorant sp.
+
+
+Pelicans
+
+American White Pelican
+Brown Pelican
+
+
+Herons, Ibis, and Allies
+
+American Bittern
+Least Bittern
+small bittern sp.
+Great Blue Heron
+Great Egret
+Little Egret
+Snowy Egret
+Little Blue Heron
+Tricolored Heron
+Reddish Egret
+Cattle Egret
+white egret sp.
+Green Heron
+Green/Striated Heron
+Black-crowned Night-Heron
+Yellow-crowned Night-Heron
+Black-crowned/Yellow-crowned Night-Heron
+heron sp.
+White Ibis
+Glossy Ibis
+White-faced Ibis
+Glossy/White-faced Ibis
+ibis sp.
+Roseate Spoonbill
+
+
+Vultures, Hawks, and Allies
+
+Black Vulture
+Turkey Vulture
+Cathartes sp.
+new world vulture sp.
+Osprey
+Swallow-tailed Kite
+Golden Eagle
+Mississippi Kite
+Northern Harrier
+Sharp-shinned Hawk
+Cooper's Hawk
+Sharp-shinned/Cooper's Hawk
+Northern Goshawk
+Cooper's Hawk/Northern Goshawk
+Accipiter sp.
+Bald Eagle
+Golden/Bald Eagle
+Red-shouldered Hawk
+Broad-winged Hawk
+Red-shouldered/Broad-winged Hawk
+Swainson's Hawk
+Red-tailed Hawk
+Red-shouldered x Red-tailed Hawk (hybrid)
+Rough-legged Hawk
+Red-tailed x Rough-legged Hawk (hybrid)
+Ferruginous Hawk
+Buteo sp.
+Buteo/eagle sp.
+hawk sp.
+eagle sp.
+
+
+Owls
+
+Barn Owl
+Eastern Screech-Owl
+Great Horned Owl
+Snowy Owl
+Northern Hawk Owl
+Burrowing Owl
+Barred Owl
+Great Gray Owl
+Long-eared Owl
+Short-eared Owl
+Long-eared/Short-eared Owl
+Asio sp.
+Boreal Owl
+Northern Saw-whet Owl
+owl sp.
+
+
+Kingfishers
+
+Belted Kingfisher
+
+
+Woodpeckers
+
+Yellow-bellied Sapsucker
+Yellow-bellied x Red-naped Sapsucker (hybrid)
+Lewis's Woodpecker
+Red-headed Woodpecker
+Red-bellied Woodpecker
+Melanerpes sp.
+American Three-toed Woodpecker
+Black-backed Woodpecker
+American Three-toed/Black-backed Woodpecker
+Downy Woodpecker
+Hairy Woodpecker
+Downy/Hairy Woodpecker
+Pileated Woodpecker
+Northern Flicker
+woodpecker sp.
+
+
+Falcons and Caracaras
+
+Crested Caracara
+American Kestrel
+Merlin
+Gyrfalcon
+Peregrine Falcon
+Prairie Falcon
+large falcon sp.
+small falcon sp.
+falcon sp.
+diurnal raptor sp.
+
+
+Cockatoos
+
+Cockatiel (Domestic type)
+
+
+Parrots, Parakeets, and Allies
+
+Budgerigar (Domestic type)
+
+
+Tyrant Flycatchers: Pewees, Kingbirds, and Allies
+
+Olive-sided Flycatcher
+Western Wood-Pewee
+Eastern Wood-Pewee
+Western/Eastern Wood-Pewee
+pewee sp. (Contopus sp.)
+Yellow-bellied Flycatcher
+Acadian Flycatcher
+Alder Flycatcher
+Willow Flycatcher
+Alder/Willow Flycatcher (Traill's Flycatcher)
+Least Flycatcher
+Gray Flycatcher
+Dusky Flycatcher
+Empidonax sp.
+Eastern Phoebe
+Say's Phoebe
+Vermilion Flycatcher
+Ash-throated Flycatcher
+Great Crested Flycatcher
+Myiarchus sp.
+Great Kiskadee
+Sulphur-bellied Flycatcher
+Variegated Flycatcher
+Tropical Kingbird
+Tropical/Couch's Kingbird
+Cassin's Kingbird
+Thick-billed Kingbird
+Western Kingbird
+Cassin's/Western Kingbird
+Tyrannus sp.
+Eastern Kingbird
+Western x Eastern Kingbird (hybrid)
+Gray Kingbird
+Scissor-tailed Flycatcher
+Fork-tailed Flycatcher
+flycatcher sp. (Tyrannidae sp.)
+
+
+Vireos
+
+Black-capped Vireo
+White-eyed Vireo
+Bell's Vireo
+Yellow-throated Vireo
+Blue-headed Vireo
+Cassin's/Blue-headed Vireo
+Plumbeous Vireo
+solitary vireo sp.
+Philadelphia Vireo
+Warbling Vireo
+Philadelphia/Warbling Vireo
+Red-eyed Vireo
+Philadelphia/Red-eyed Vireo
+vireo sp.
+
+
+Shrikes
+
+Loggerhead Shrike
+Northern Shrike
+Loggerhead/Northern Shrike
+shrike sp.
+
+
+Jays, Magpies, Crows, and Ravens
+
+Canada Jay
+Blue Jay
+jay sp.
+Black-billed Magpie
+Clark's Nutcracker
+Eurasian Jackdaw
+American Crow
+Fish Crow
+Chihuahuan Raven
+crow sp.
+Common Raven
+crow/raven sp.
+
+
+Tits, Chickadees, and Titmice
+
+Carolina Chickadee
+Black-capped Chickadee
+Carolina x Black-capped Chickadee (hybrid)
+Carolina/Black-capped Chickadee
+Boreal Chickadee
+chickadee sp.
+Tufted Titmouse
+
+
+Larks
+
+Horned Lark
+
+
+Martins and Swallows
+
+Northern Rough-winged Swallow
+Purple Martin
+martin sp. (Progne sp.)
+Tree Swallow
+Violet-green Swallow
+Bank Swallow
+Barn Swallow
+Cliff Swallow
+Barn x Cliff Swallow (hybrid)
+Cave Swallow
+Cliff/Cave Swallow
+swallow sp.
+
+
+Kinglets
+
+Golden-crowned Kinglet
+Ruby-crowned Kinglet
+kinglet sp.
+
+
+Nuthatches
+
+Red-breasted Nuthatch
+White-breasted Nuthatch
+nuthatch sp.
+
+
+Treecreepers
+
+Brown Creeper
+
+
+Gnatcatchers
+
+Blue-gray Gnatcatcher
+
+
+Wrens
+
+Rock Wren
+House Wren
+Winter Wren
+Sedge Wren
+Marsh Wren
+Carolina Wren
+Bewick's Wren
+wren sp.
+
+
+Starlings and Mynas
+
+European Starling
+
+
+Catbirds, Mockingbirds, and Thrashers
+
+Gray Catbird
+Brown Thrasher
+Sage Thrasher
+Northern Mockingbird
+Mimidae sp.
+
+
+Thrushes
+
+Eastern Bluebird
+Mountain Bluebird
+bluebird sp.
+Townsend's Solitaire
+Varied Thrush
+Veery
+Gray-cheeked Thrush
+Bicknell's Thrush
+Gray-cheeked/Bicknell's Thrush
+Swainson's Thrush
+Hermit Thrush
+Catharus sp.
+Wood Thrush
+Eurasian Blackbird
+American Robin
+Fieldfare
+Turdus sp.
+thrush sp.
+
+
+Old World Flycatchers
+
+Siberian Rubythroat
+Northern Wheatear
+
+
+Waxwings
+
+Bohemian Waxwing
+Cedar Waxwing
+Bohemian/Cedar Waxwing
+
+
+Silky-flycatchers
+
+Phainopepla
+
+
+Old World Sparrows
+
+House Sparrow
+Eurasian Tree Sparrow
+House/Eurasian Tree Sparrow
+
+
+Wagtails and Pipits
+
+American Pipit
+Water/American Pipit
+Sprague's Pipit
+pipit sp.
+
+
+Finches, Euphonias, and Allies
+
+Brambling
+Evening Grosbeak
+Pine Grosbeak
+Gray-crowned Rosy-Finch
+House Finch
+Purple Finch
+House/Purple Finch
+Cassin's Finch
+Common Redpoll
+Hoary Redpoll
+Common/Hoary Redpoll
+redpoll sp.
+Red Crossbill
+White-winged Crossbill
+crossbill sp.
+Pine Siskin
+Lesser Goldfinch
+American Goldfinch
+Spinus sp. (goldfinch sp.)
+Spinus sp.
+Acanthis/Spinus sp.
+finch sp.
+
+
+Longspurs and Snow Buntings
+
+Lapland Longspur
+Chestnut-collared Longspur
+Smith's Longspur
+McCown's Longspur
+longspur sp.
+Snow Bunting
+
+
+
+New World Sparrows
+
+Cassin's Sparrow
+Bachman's Sparrow
+Grasshopper Sparrow
+Chipping Sparrow
+Clay-colored Sparrow
+Chipping x Clay-colored Sparrow (hybrid)
+Field Sparrow
+Brewer's Sparrow
+Spizella sp.
+Black-throated Sparrow
+Lark Sparrow
+Lark Bunting
+American Tree Sparrow
+Spizella sp./American Tree Sparrow
+Fox Sparrow
+Dark-eyed Junco
+White-crowned Sparrow
+Golden-crowned Sparrow
+Harris's Sparrow
+White-throated Sparrow
+White-crowned x White-throated Sparrow (hybrid)
+White-crowned/White-throated Sparrow
+Zonotrichia sp.
+Dark-eyed Junco x White-throated Sparrow (hybrid)
+Vesper Sparrow
+LeConte's Sparrow
+Nelson's Sparrow
+Nelson's/Saltmarsh Sparrow (Sharp-tailed Sparrow)
+Ammospiza sp.
+Savannah Sparrow
+Baird's Sparrow
+Henslow's Sparrow
+Grasshopper/Henslow's Sparrow
+Song Sparrow
+Lincoln's Sparrow
+Swamp Sparrow
+Lincoln's/Swamp Sparrow
+Green-tailed Towhee
+Spotted Towhee
+Eastern Towhee
+Spotted/Eastern Towhee (Rufous-sided Towhee)
+sparrow sp.
+
+
+Yellow-breasted Chat
+
+Yellow-breasted Chat
+
+
+Blackbirds
+
+Yellow-headed Blackbird
+Bobolink
+Western Meadowlark
+Eastern Meadowlark
+Western x Eastern Meadowlark (hybrid)
+Western/Eastern Meadowlark
+Orchard Oriole
+Hooded Oriole
+Bullock's Oriole
+Baltimore Oriole
+Bullock's/Baltimore Oriole
+Scott's Oriole
+new world oriole sp.
+Red-winged Blackbird
+Brown-headed Cowbird
+Rusty Blackbird
+Brewer's Blackbird
+Rusty/Brewer's Blackbird
+Common Grackle
+Great-tailed Grackle
+Boat-tailed/Great-tailed Grackle
+grackle sp.
+blackbird sp.
+
+
+Wood-Warblers
+
+Ovenbird
+Worm-eating Warbler
+Louisiana Waterthrush
+Northern Waterthrush
+Louisiana/Northern Waterthrush
+Golden-winged Warbler
+Blue-winged Warbler
+Golden-winged x Blue-winged Warbler (hybrid)
+Brewster's Warbler (hybrid)
+Lawrence's Warbler (hybrid)
+Golden-winged/Blue-winged Warbler
+Black-and-white Warbler
+Prothonotary Warbler
+Swainson's Warbler
+Tennessee Warbler
+Orange-crowned Warbler
+Nashville Warbler
+Virginia's Warbler
+Leiothlypis sp.
+Connecticut Warbler
+Mourning Warbler
+Connecticut/MacGillivray's/Mourning Warbler
+Kentucky Warbler
+Common Yellowthroat
+Hooded Warbler
+American Redstart
+Kirtland's Warbler
+Cape May Warbler
+Cerulean Warbler
+Northern Parula
+Magnolia Warbler
+Bay-breasted Warbler
+Blackburnian Warbler
+Yellow Warbler
+Chestnut-sided Warbler
+Magnolia x Chestnut-sided Warbler (hybrid)
+Blackpoll Warbler
+Bay-breasted/Blackpoll Warbler
+Black-throated Blue Warbler
+Magnolia x Black-throated Blue Warbler (hybrid)
+Palm Warbler
+Pine Warbler
+Yellow-rumped Warbler
+Magnolia x Yellow-rumped Warbler (hybrid)
+Yellow-throated Warbler
+Prairie Warbler
+Grace's Warbler
+Black-throated Gray Warbler
+Townsend's Warbler
+Black-throated Gray x Townsend's Warbler (hybrid)
+Hermit Warbler
+Black-throated Green Warbler
+Setophaga sp.
+Canada Warbler
+Wilson's Warbler
+Painted Redstart
+warbler sp. (Parulidae sp.)
+
+
+Cardinals, Grosbeaks, and Allies
+
+Summer Tanager
+Scarlet Tanager
+Summer/Scarlet Tanager
+Western Tanager
+tanager sp. (Piranga sp.)
+Northern Cardinal
+Pyrrhuloxia
+Northern Cardinal/Pyrrhuloxia
+Rose-breasted Grosbeak
+Black-headed Grosbeak
+Pheucticus sp.
+Blue Grosbeak
+Lazuli Bunting
+Indigo Bunting
+Varied Bunting
+Painted Bunting
+Dickcissel
+
+
+Others
+
+passerine sp.
+bird sp.
