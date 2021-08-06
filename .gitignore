@@ -2,6 +2,9 @@
 # Application secret files
 src/config.py
 */config.py
+.psd
+*/.ipynb_checkpoints/
+.ipynb_checkpoints/
 
 ############
 ## Taken from https://github.com/github/gitignore
