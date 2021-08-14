@@ -122,7 +122,7 @@ class DataCollectorGUI:
         if self.checklist.end_of_checklist_reached:
             if not self.data_output_complete:
                 self.list_label_text.set("Complete ")
-                self.output_data.upload_data_and_make_media()
+                self.output_data.upload_data_and_make_media(self.output_data)
                 self.data_output_complete = True
         else:
             self.list_label_text.set(
@@ -239,6 +239,7 @@ class OutputData:
         self.duration = None
         self.location = None
         self.checklist_id = None
+        self.checklist_species = {}
 
     # Generates a random id for storage
     def generate_bird_id(self):
@@ -277,6 +278,8 @@ class OutputData:
                       surface)
         # Add the bird to the output_data list
         self.data.append(bird_tuple)
+        # Add species to the checklist_species dictionary (so only one entry)
+        self.checklist_species[species] = 0
 
     # Copies the effort details from the checklist
     def copy_effort_details(self, checklist):
@@ -287,7 +290,7 @@ class OutputData:
         self.checklist_id = checklist.checklist_id
 
     # Uploads data to SQL server and makes maps and charts
-    def upload_data_and_make_media(self):
+    def upload_data_and_make_media(self,output_data):
         insert_data_to_sql(self.data,
                            self.checklist_id,
                            self.date,
@@ -295,8 +298,8 @@ class OutputData:
                            self.duration,
                            self.location)
         checklist_map_maker(self.checklist_id)
-        map_all_species()
-        make_all_species_charts()
+        map_all_species(self.checklist_species)
+        make_all_species_charts(self.checklist_species)
 
 
 ###############################################################################

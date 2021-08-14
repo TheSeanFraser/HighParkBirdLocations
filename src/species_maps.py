@@ -106,22 +106,30 @@ def create_map(species, single_species_data):
     m.save(config.dir_path + 'maps\\species\\' + species + '.html', title=species + ' Map')
 
 # Create a map for each of the species
-def map_all_species():
+def map_all_species(checklist_species = None):
     # Create a connection to the SQL server
     connection = create_db_connection(config.my_host, config.my_user, config.my_pwd, config.my_db)
-    # Create the species list
-    species_list = create_species_list(connection)
 
     # Start a timer - not necessary, but just to know how long this takes
     maps_start_time = timeit.default_timer()
 
     print("Starting species maps.")
     # Loop through each species, get data from SQL, and make a map
-    for species in species_list:
-        # Get data from SQL server
-        singleSpeciesData = get_single_species_data(connection, species)
-        # Create and save the map
-        create_map(species, singleSpeciesData)
+    if checklist_species:
+        print("Checklist species provided - making maps")
+        for species_in_checklist in checklist_species:
+            species = species_in_checklist
+            print("Making map for: " + species)
+            singleSpeciesData = get_single_species_data(connection, species)
+            create_map(species, singleSpeciesData)
+    else:
+        # Create the species list
+        species_list = create_species_list(connection)
+        for species in species_list:
+            # Get data from SQL server
+            singleSpeciesData = get_single_species_data(connection, species)
+            # Create and save the map
+            create_map(species, singleSpeciesData)
 
     # Stop timer and alert that all maps are made
     maps_stop_time = timeit.default_timer()

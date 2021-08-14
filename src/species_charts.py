@@ -62,7 +62,7 @@ def species_chart_maker(connection, species="Cooper''s Hawk"):
 
 
 # Create the charts for every species in database
-def make_all_species_charts():
+def make_all_species_charts(checklist_species = None):
     # Create a connection to the SQL server
     connection = create_db_connection(config.my_host, config.my_user, config.my_pwd, config.my_db)
 
@@ -73,9 +73,16 @@ def make_all_species_charts():
     f.close()
 
     print("Started making charts.")
-    for species in species_list:
-        species = species.replace("'","''")
-        species_chart_maker(connection, species)
+    if checklist_species:
+        print("Checklist species provided - making charts")
+        for species_in_checklist in checklist_species:
+            species = species_in_checklist
+            species = species.replace("'", "''")
+            species_chart_maker(connection, species)
+    else:
+        for species in species_list:
+            species = species.replace("'","''")
+            species_chart_maker(connection, species)
     print("All charts created!")
 
 # make_all_species_charts()
