@@ -181,13 +181,13 @@ class DataCollectorGUI:
             else:
                 self.draw_dot(event.x, event.y)
                 self.species_list_labels[self.checklist.current_species].pack_forget()
-                self.set_species_and_count_text()
                 self.output_data.add_bird(
                     self.checklist.data[self.checklist.current_species][0],
                     event.x,
                     event.y,
                     self.surface)
                 self.checklist.__next__()
+                self.set_species_and_count_text()
 
 ###############################################################################
 #                       -- Checklist Class --
