@@ -9,6 +9,7 @@ from resources import birdColors
 from checklist_maps import checklist_map_maker
 from species_maps import map_all_species
 from species_charts import make_all_species_charts
+from threading import *
 
 ###############################################################################
 #                   -- DataCollectorGUI Class --
@@ -122,6 +123,8 @@ class DataCollectorGUI:
         if self.checklist.end_of_checklist_reached:
             if not self.data_output_complete:
                 self.list_label_text.set("Complete ")
+                # media_making_thread = Thread(self.output_data.upload_data_and_make_media(self.output_data))
+                # media_making_thread.start()
                 self.output_data.upload_data_and_make_media(self.output_data)
                 self.data_output_complete = True
         else:
@@ -143,11 +146,9 @@ class DataCollectorGUI:
             self.surface = "WATER"
         elif self.surface_var.get() == 5:
             self.surface = "STRUCTURE"
-        print(self.surface)
 
     # Handles the skip species button
     def skip_species_button_handler(self):
-        print("Skip species button pressed.")
         self.species_list_labels[self.checklist.current_species].pack_forget()
         self.checklist.__next__()
         self.set_species_and_count_text()
@@ -297,9 +298,15 @@ class OutputData:
                            self.time,
                            self.duration,
                            self.location)
+        print("==========================================================")
         checklist_map_maker(self.checklist_id)
+        print("==========================================================")
         map_all_species(self.checklist_species)
+        print("==========================================================")
         make_all_species_charts(self.checklist_species)
+        print("==========================================================")
+        print("==========================================================")
+        print("                All media created!")
 
 
 ###############################################################################

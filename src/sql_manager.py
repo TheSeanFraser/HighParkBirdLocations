@@ -15,7 +15,9 @@ def create_db_connection(host_name, user_name, user_password, db_name):
             passwd=user_password,
             database=db_name
         )
-        print("--- MySQL Database connection successful")
+        print("----------------------------------------------------------")
+        print("         MySQL Database connection successful")
+        print("----------------------------------------------------------")
     except Error as err:
         print(f"Error: '{err}'")
 
@@ -78,12 +80,12 @@ def insert_data_to_sql(data, checklistID, date, time, duration, location):
             cursor.execute(insert_birds_stmt, entry)
             # Commit your changes in the database
             connection.commit()
-            print(entry[1] + ' ' + entry[0] + " inserted")
 
         except:
             # Rolling back in case of error
             connection.rollback()
             print("Data not inserted")
+    print("Birds inserted")
 
     connection.close()
 
