@@ -117,19 +117,24 @@ def map_all_species(checklist_species = None):
     # Loop through each species, get data from SQL, and make a map
     if checklist_species:
         print("Checklist species provided - making maps")
+        species_count = len(checklist_species)
+        cur_species_index = 0
         for species_in_checklist in checklist_species:
+            cur_species_index += 1
             species = species_in_checklist
-            print("Making map for: " + species)
-            singleSpeciesData = get_single_species_data(connection, species)
-            create_map(species, singleSpeciesData)
+            print("Making map for: " + species
+                  + "... [" + str(cur_species_index) + "/"
+                  + str(species_count) + "]")
+            single_species_data = get_single_species_data(connection, species)
+            create_map(species, single_species_data)
     else:
         # Create the species list
         species_list = create_species_list(connection)
         for species in species_list:
             # Get data from SQL server
-            singleSpeciesData = get_single_species_data(connection, species)
+            single_species_data = get_single_species_data(connection, species)
             # Create and save the map
-            create_map(species, singleSpeciesData)
+            create_map(species, single_species_data)
 
     # Stop timer and alert that all maps are made
     maps_stop_time = timeit.default_timer()
