@@ -1,8 +1,11 @@
+import sys
 import timeit
 from ipywidgets import HTML
 import config
-from ipyleaflet import Map, Heatmap, FullScreenControl, Marker, LayersControl, MarkerCluster
+from ipyleaflet import Map, Heatmap, FullScreenControl, Marker, LayersControl, \
+    MarkerCluster
 from sql_manager import create_db_connection, read_query
+
 
 # Generated species list based on SQL database results
 def create_species_list(connection):
@@ -20,34 +23,38 @@ def create_species_list(connection):
     species_list_non_protected = []
 
     # Store list of species for website
-    species_text_file = open(config.dir_path + "maps\\species\\speciesList.txt", "w")
+    species_text_file = open(config.dir_path + "maps\\species\\speciesList.txt",
+                             "w")
     for species in species_list_result:
         # If species is protected, skip it for the map making
-        if(species[1]):
+        if species[1]:
             print(species[0] + " is protected. Skipping species.")
         else:
-            species_list_non_protected.append(species[0])
-            species_text_file.write(species[0] + "\n")
+            species_slash_fixed = species[0].replace('/', ' or ')
+            species_list_non_protected.append(species_slash_fixed)
+            species_text_file.write(species_slash_fixed + "\n")
     species_text_file.close()
 
     print("SpeciesList created.")
     return species_list_non_protected
 
-######## MASTER FUNCTION ########
 
+######## MASTER FUNCTION ########
 # Returns the data for a single species from the SQL server
 def get_single_species_data(connection, species):
-    # Must add second single quote in order to manage apostrophes (e.g. Cooper's Hawk -> Cooper''s Hawk)
+    # Must add second single quote in order to manage apostrophes
+    # (e.g. Cooper's Hawk -> Cooper''s Hawk)
     species_apo_fixed = species.replace("'", "''")
+    species_slash_fixed = species_apo_fixed.replace(' or ', '/')
 
-    qSingleSpecies = """
+    q_single_species = """
         SELECT * FROM birds 
         INNER JOIN effort ON birds.effort = effort.checklistID 
         INNER JOIN species ON birds.species = species.species_name 
-        WHERE birds.species = \'""" + species_apo_fixed + """\';"""
+        WHERE birds.species = \'""" + species_slash_fixed + """\';"""
 
     # Get the data from the SQL server for this species
-    results = read_query(connection, qSingleSpecies)
+    results = read_query(connection, q_single_species)
 
     # Cleanly add data to a list
     single_species_data = []
@@ -57,6 +64,7 @@ def get_single_species_data(connection, species):
 
     return single_species_data
 
+
 # Returns a list of GPS coordinates based on the selected species
 def heatmap_layer_maker(single_species_data):
     heatmap_list = []
@@ -64,6 +72,7 @@ def heatmap_layer_maker(single_species_data):
         current_gps_coord = (entry[3], entry[4])
         heatmap_list.append(current_gps_coord)
     return heatmap_list
+
 
 # Creates a MarkerLayer for the batch of coordinates
 def marker_layer_maker(single_species_data):
@@ -78,8 +87,12 @@ def marker_layer_maker(single_species_data):
                                   popup=pop_up_html))
     return marker_list
 
+
 # Create a single map for the selected species
 def create_map(species, single_species_data):
+    # Clean the species name to not cause conflict with file saving
+    species = species.replace('/', ' or ')
+
     # Create the map object and set some options
     m = Map(center=(43.64632654828124, -79.46253966380962),
             zoom=14,
@@ -91,24 +104,28 @@ def create_map(species, single_species_data):
 
     # Create the heatmap layer
     heatmap = Heatmap(name="Heatmap",
-                             locations=heatmap_layer_maker(single_species_data),
-                             min_opacity=0.01,
-                             max=1.5,
-                             radius=15)
+                      locations=heatmap_layer_maker(single_species_data),
+                      min_opacity=0.01,
+                      max=1.5,
+                      radius=15)
 
     # Create the marker cluster for each represented bird
-    marker_cluster = MarkerCluster(name="Markers", markers=marker_layer_maker(single_species_data))
+    marker_cluster = MarkerCluster(name="Markers", markers=marker_layer_maker(
+        single_species_data))
 
     # Add all the layers to the map
     m.add_layer(heatmap)
     m.add_layer(marker_cluster)
 
-    m.save(config.dir_path + 'maps\\species\\' + species + '.html', title=species + ' Map')
+    m.save(config.dir_path + 'maps\\species\\' + species + '.html',
+           title=species + ' Map')
+
 
 # Create a map for each of the species
-def map_all_species(checklist_species = None):
+def map_all_species(checklist_species=None):
     # Create a connection to the SQL server
-    connection = create_db_connection(config.my_host, config.my_user, config.my_pwd, config.my_db)
+    connection = create_db_connection(config.my_host, config.my_user,
+                                      config.my_pwd, config.my_db)
 
     # Start a timer - not necessary, but just to know how long this takes
     maps_start_time = timeit.default_timer()
@@ -121,7 +138,7 @@ def map_all_species(checklist_species = None):
         cur_species_index = 0
         for species_in_checklist in checklist_species:
             cur_species_index += 1
-            species = species_in_checklist
+            species = species_in_checklist.replace('/', ' or ')
             print("Making map for: " + species
                   + "... [" + str(cur_species_index) + "/"
                   + str(species_count) + "]")
@@ -130,7 +147,13 @@ def map_all_species(checklist_species = None):
     else:
         # Create the species list
         species_list = create_species_list(connection)
+        species_count = len(species_list)
+        cur_species_index = 0
         for species in species_list:
+            cur_species_index += 1
+            print("Making map for: " + species
+                  + "... [" + str(cur_species_index) + "/"
+                  + str(species_count) + "]")
             # Get data from SQL server
             single_species_data = get_single_species_data(connection, species)
             # Create and save the map
@@ -139,7 +162,8 @@ def map_all_species(checklist_species = None):
     # Stop timer and alert that all maps are made
     maps_stop_time = timeit.default_timer()
     total_time = round(maps_stop_time - maps_start_time, 4)
-    print("--- All species maps created! Total time elapsed: " + str(total_time) + "seconds ---")
+    print("--- All species maps created! Total time elapsed: " + str(
+        total_time) + "seconds ---")
 
 
 # map_all_species()
