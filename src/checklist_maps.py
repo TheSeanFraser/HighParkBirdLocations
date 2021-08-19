@@ -62,10 +62,10 @@ def create_map(checklist_id, checklist_data):
 
 
 # Creates a map for the selected checklist
-def checklist_map_maker(checklist_id):
-    print("Making map for " + checklist_id )
+def checklist_map_maker(checklist_id, remake_flag = False):
+    print("Making map for " + checklist_id)
     # Select a group with specific checklistID
-    qChecklist = """
+    q_checklist = """
     SELECT * 
     FROM birds
     INNER JOIN effort
@@ -75,7 +75,7 @@ def checklist_map_maker(checklist_id):
     # Create a connection and store the results of the query
     connection = create_db_connection(config.my_host, config.my_user,
                                       config.my_pwd, config.my_db)
-    results = read_query(connection, qChecklist)
+    results = read_query(connection, q_checklist)
 
     # Create a list from the database results
     checklist_data = []
@@ -84,22 +84,49 @@ def checklist_map_maker(checklist_id):
         checklist_data.append(result)
 
     create_map(checklist_id, checklist_data)
+    if not remake_flag:
+        with open(config.dir_path + "maps\\checklists\\checklistList.txt",
+                  "a") as checklists_file:
+            entry = checklist_data[0][7] + ": " + checklist_id + "\n"
+            checklists_file.write(entry)
+
     print("Map for " + checklist_id + " created.")
 
 
 # Remakes all available checklist maps
 def remake_all_checklist_maps():
-    checklists = []
-    # Read list of checklists
-    f = open(config.dir_path + "maps\\checklists\\checklistList.txt")
-    for line in f:
-        checklists.append(line.split(' ')[1].strip("\n"))
-    f.close()
+    connection = create_db_connection(config.my_host, config.my_user,
+                                      config.my_pwd, config.my_db)
+    q = """
+    SELECT * FROM effort;
+    """
 
-    # Create the map for each checklist
-    for checklist in checklists:
-        print("Making map for " + checklist)
-        checklist_map_maker(checklist)
+    results = read_query(connection, q)
+    # Cleanly add data to a list
+    checklists_data = []
+    for entry in results:
+        entry = list(entry)
+        checklists_data.append(entry)
+
+    # Open and empty checklist list file
+    checklist_file = open(config.dir_path
+                          + "maps\\checklists\\checklistList.txt", "r+")
+    checklist_file.truncate(0)
+    checklist_file.close()
+
+    # Iterate through all checklists, add to list file, and make map
+    for checklist in checklists_data:
+        cur_checklist_id = checklist[0]
+        cur_checklist_date = checklist[1]
+
+        # Add checklist to checklist list file
+        with open(config.dir_path + "maps\\checklists\\checklistList.txt",
+                  "a") as checklists_file:
+            entry = cur_checklist_date + ": " + cur_checklist_id + "\n"
+            checklists_file.write(entry)
+            checklist_file.close()
+
+        checklist_map_maker(cur_checklist_id, remake_flag=True)
 
 
 # checklist_map_maker("S92746003")
