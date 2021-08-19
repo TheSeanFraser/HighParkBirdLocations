@@ -8,7 +8,10 @@ from sql_manager import create_db_connection, read_query
 # Main function
 ###############################################################################
 def species_chart_maker(connection, species="Cooper''s Hawk"):
-    species_slash_fixed = species.replace('/', ' or ')
+    # Create a cleaned species name for file name
+    species_apo_fixed = species.replace("''", "'")
+    species_slash_fixed = species_apo_fixed.replace('/', ' or ')
+
     # Set SQL query to get the data for the selected species
     q_species = """
     SELECT * 
