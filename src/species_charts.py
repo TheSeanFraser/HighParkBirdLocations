@@ -96,4 +96,4 @@ def make_all_species_charts(checklist_species=None):
     print("All charts created!")
 
 
-make_all_species_charts()
+# make_all_species_charts()
