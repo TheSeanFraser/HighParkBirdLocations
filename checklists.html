@@ -24,7 +24,10 @@
 				
 		<!-- Writing Div -->
 		<div class="writing">
-			<p>More checklist reports will be added next. Vulnerable species will not be shown on the map. </p>
+			<p>You can enable/disable each family of birds using the layers in the top right corner of the map. Vulnerable species will not be shown on the map.</p>
+			
+			<p><u>Icon key:</u> <b>Drop</b>: Water, <b>Plane</b>: Air, <b>Tree</b>: Tree, <b>Square</b>: Ground, <b>Building</b>: Structure</p>
+			
 			
 			<!-- Checklist Selector-->
 			<label for="species">Select a date:</label>
@@ -38,8 +41,8 @@
 		</div>
 		
 		<!-- Map Div -->
-		<div>
-			<iframe class="date_map" id="date_map" src="maps/checklists/S92307669.html" height="500" width="100%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
+		<div class="iframe-holder">
+			<iframe class="date_map" id="date_map" src="maps/checklists/S92307669.html" height="500" width="100%" style="border:none;" scrolling="no" title="All birds heatmap"><p>Loading</p></iframe>
 		</div>
 		
 	</body>

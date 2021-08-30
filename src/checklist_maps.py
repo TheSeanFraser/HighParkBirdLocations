@@ -1,6 +1,8 @@
 from ipywidgets import HTML
 import config
-from ipyleaflet import Map, Heatmap, FullScreenControl, Marker, LayersControl, MarkerCluster
+import resources
+from ipyleaflet import Map, Heatmap, FullScreenControl, Marker, LayersControl, \
+    MarkerCluster, AwesomeIcon
 from sql_manager import create_db_connection, read_query
 
 
@@ -17,11 +19,51 @@ def marker_layer_maker(checklist_data):
     return marker_list
 
 
+# Creates a marker list for the given family of birds
+def family_marker_layer_maker(current_family, checklist_data):
+    marker_list = []
+    for entry in checklist_data:
+        if entry[13] == 1:
+            break
+        if entry[12] == current_family:
+            pop_up_html = HTML()
+            pop_up_html.value = entry[1] + ": <b>" + entry[5] + "</b>"
+            color = list(resources.family_colors[current_family])[0]
+
+            color2 = 'black'
+            if color == 'black' or color == 'darkgray':
+                color2 = 'lightgray'
+
+            icon_choice = 'chevron-circle-down'
+            if entry[5] == 'TREE':
+                icon_choice = 'tree'
+            elif entry[5] == 'WATER':
+                icon_choice = 'tint'
+            elif entry[5] == 'AIR':
+                icon_choice = 'plane'
+            elif entry[5] == 'GROUND':
+                icon_choice = 'square'
+            elif entry[5] == 'STRUCTURE':
+                icon_choice = 'building'
+
+            icon = AwesomeIcon(name=icon_choice,
+                               marker_color=color,
+                               icon_color=color2,
+                               spin=False)
+
+            marker_list.append(Marker(location=(entry[3], entry[4]),
+                                      icon=icon,
+                                      draggable=False,
+                                      title=entry[1] + ', ' + entry[7],
+                                      popup=pop_up_html))
+    return marker_list
+
+
 # Returns a heatmap created from the results
 def heatmap_layer_maker(checklist_data):
     heatmap_list = []
     for entry in checklist_data:
-        current_gps_coord = (entry[3],entry[4])
+        current_gps_coord = (entry[3], entry[4])
         heatmap_list.append(current_gps_coord)
     return heatmap_list
 
@@ -44,13 +86,21 @@ def create_map(checklist_id, checklist_data):
                       max=1.5,
                       radius=15)
 
-    # Create the marker cluster for each represented bird
-    marker_cluster = MarkerCluster(name="Markers",
-                                   markers=marker_layer_maker(checklist_data))
-
     # Add all the layers to the map
     m.add_layer(heatmap)
-    m.add_layer(marker_cluster)
+
+    # Create a list of bird families in the current checklist
+    family_list = []
+    for entry in checklist_data:
+        if entry[12] not in family_list:
+            family_list.append(entry[12])
+
+    # Create a marker cluster for each family of bird
+    for family in family_list:
+        marker_cluster = MarkerCluster(name=family,
+                                       markers=family_marker_layer_maker(family,
+                                                                         checklist_data))
+        m.add_layer(marker_cluster)
 
     # Save the map for the checklist
     m.layout.width = '100%'
@@ -62,7 +112,7 @@ def create_map(checklist_id, checklist_data):
 
 
 # Creates a map for the selected checklist
-def checklist_map_maker(checklist_id, remake_flag = False):
+def checklist_map_maker(checklist_id, remake_flag=False):
     print("Making map for " + checklist_id)
     # Select a group with specific checklistID
     q_checklist = """
@@ -70,6 +120,8 @@ def checklist_map_maker(checklist_id, remake_flag = False):
     FROM birds
     INNER JOIN effort
     ON birds.effort = effort.checklistID
+    INNER JOIN species
+    ON birds.species = species.species_name
     WHERE effort = '""" + checklist_id + """';"""
 
     # Create a connection and store the results of the query
@@ -130,5 +182,4 @@ def remake_all_checklist_maps():
 
 
 # checklist_map_maker("S92746003")
-# remake_all_checklist_maps()
-
+remake_all_checklist_maps()

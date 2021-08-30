@@ -308,7 +308,9 @@ class OutputData:
         print("==========================================================")
         print("                All media created!")
         print("Use this link for eBird checklist comment:")
-        print('<a href="https://theseanfraser.github.io/HighParkBirdLocations/checklists.html#' + self.checklist_id + '">Map of birds seen on this checklist.</a>')
+        print('<a href="https://theseanfraser.github.io/HighParkBirdLocations/checklists.html#'
+              + self.checklist_id
+              + '">Map of birds seen on this checklist.</a>')
 
 ###############################################################################
 #   Main Function

@@ -66,6 +66,13 @@ p {
 	cursor: pointer;
 }
 
+.date_map {
+	background:url(../img/loading.gif) center center no-repeat;
+}
+
+.species_map {
+	background:url(../img/loading.gif) center center no-repeat;
+}
 
 
 #chart_wrapper {
@@ -83,6 +90,7 @@ p {
 	/*  min-width: 300px;*/
 	display: table-column; 
 	float: left;
+	background:url(../img/loading.gif) center center no-repeat;
 }
 
 #pie_chart {
@@ -91,6 +99,7 @@ p {
   height: 500px;
   width: 49%;
   display: table-column;
+	background:url(../img/loading.gif) center center no-repeat;
 }
 
 @media screen and (max-width: 500px) {
