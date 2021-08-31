@@ -23,39 +23,40 @@ def marker_layer_maker(checklist_data):
 def family_marker_layer_maker(current_family, checklist_data):
     marker_list = []
     for entry in checklist_data:
-        if entry[13] == 1:
-            break
-        if entry[12] == current_family:
-            pop_up_html = HTML()
-            pop_up_html.value = entry[1] + ": <b>" + entry[5] + "</b>"
-            color = list(resources.family_colors[current_family])[0]
+        # Check if species is protected, if so skip
+        if entry[13] == 0:
+            # Check if the current bird is in the current family
+            if entry[12] == current_family:
+                pop_up_html = HTML()
+                pop_up_html.value = entry[1] + ": <b>" + entry[5] + "</b>"
+                color = list(resources.family_colors[current_family])[0]
 
-            color2 = 'black'
-            if color == 'black' or color == 'darkgray':
-                color2 = 'lightgray'
+                color2 = 'black'
+                if color == 'black' or color == 'darkgray':
+                    color2 = 'lightgray'
 
-            icon_choice = 'chevron-circle-down'
-            if entry[5] == 'TREE':
-                icon_choice = 'tree'
-            elif entry[5] == 'WATER':
-                icon_choice = 'tint'
-            elif entry[5] == 'AIR':
-                icon_choice = 'plane'
-            elif entry[5] == 'GROUND':
-                icon_choice = 'square'
-            elif entry[5] == 'STRUCTURE':
-                icon_choice = 'building'
+                icon_choice = 'chevron-circle-down'
+                if entry[5] == 'TREE':
+                    icon_choice = 'tree'
+                elif entry[5] == 'WATER':
+                    icon_choice = 'tint'
+                elif entry[5] == 'AIR':
+                    icon_choice = 'plane'
+                elif entry[5] == 'GROUND':
+                    icon_choice = 'square'
+                elif entry[5] == 'STRUCTURE':
+                    icon_choice = 'building'
 
-            icon = AwesomeIcon(name=icon_choice,
-                               marker_color=color,
-                               icon_color=color2,
-                               spin=False)
+                icon = AwesomeIcon(name=icon_choice,
+                                   marker_color=color,
+                                   icon_color=color2,
+                                   spin=False)
 
-            marker_list.append(Marker(location=(entry[3], entry[4]),
-                                      icon=icon,
-                                      draggable=False,
-                                      title=entry[1] + ', ' + entry[7],
-                                      popup=pop_up_html))
+                marker_list.append(Marker(location=(entry[3], entry[4]),
+                                          icon=icon,
+                                          draggable=False,
+                                          title=entry[1] + ', ' + entry[7],
+                                          popup=pop_up_html))
     return marker_list
 
 
@@ -63,8 +64,10 @@ def family_marker_layer_maker(current_family, checklist_data):
 def heatmap_layer_maker(checklist_data):
     heatmap_list = []
     for entry in checklist_data:
-        current_gps_coord = (entry[3], entry[4])
-        heatmap_list.append(current_gps_coord)
+        # Check if species is not protected
+        if entry[13] == 0:
+            current_gps_coord = (entry[3], entry[4])
+            heatmap_list.append(current_gps_coord)
     return heatmap_list
 
 
@@ -102,6 +105,10 @@ def create_map(checklist_id, checklist_data):
                                                                          checklist_data))
         m.add_layer(marker_cluster)
 
+    # marker_cluster = MarkerCluster(name="birds",
+    #                                markers=marker_layer_maker(checklist_data))
+    # m.add_layer(marker_cluster)
+
     # Save the map for the checklist
     m.layout.width = '100%'
     m.layout.height = '500px'
@@ -110,6 +117,9 @@ def create_map(checklist_id, checklist_data):
            + checklist_id + '.html',
            title='Map for: ' + checklist_id)
 
+    # Clear the map to prevent sizes increasing
+    m.clear_controls()
+    m.clear_layers()
 
 # Creates a map for the selected checklist
 def checklist_map_maker(checklist_id, remake_flag=False):
@@ -181,5 +191,5 @@ def remake_all_checklist_maps():
         checklist_map_maker(cur_checklist_id, remake_flag=True)
 
 
-# checklist_map_maker("S92746003")
+checklist_map_maker("S93979335")
 # remake_all_checklist_maps()
