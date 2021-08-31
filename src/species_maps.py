@@ -120,6 +120,13 @@ def create_map(species, single_species_data):
     m.save(config.dir_path + 'maps\\species\\' + species + '.html',
            title=species + ' Map')
 
+    # Clear the map to prevent sizes increasing
+    m.clear_controls()
+    m.clear_layers()
+    m.close_all()
+    m.close()
+    del m
+
 
 # Create a map for each of the species
 def map_all_species(checklist_species=None):

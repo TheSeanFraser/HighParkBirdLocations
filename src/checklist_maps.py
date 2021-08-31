@@ -1,6 +1,7 @@
 from ipywidgets import HTML
 import config
 import resources
+import gc
 from ipyleaflet import Map, Heatmap, FullScreenControl, Marker, LayersControl, \
     MarkerCluster, AwesomeIcon
 from sql_manager import create_db_connection, read_query
@@ -105,10 +106,6 @@ def create_map(checklist_id, checklist_data):
                                                                          checklist_data))
         m.add_layer(marker_cluster)
 
-    # marker_cluster = MarkerCluster(name="birds",
-    #                                markers=marker_layer_maker(checklist_data))
-    # m.add_layer(marker_cluster)
-
     # Save the map for the checklist
     m.layout.width = '100%'
     m.layout.height = '500px'
@@ -120,6 +117,10 @@ def create_map(checklist_id, checklist_data):
     # Clear the map to prevent sizes increasing
     m.clear_controls()
     m.clear_layers()
+    m.close_all()
+    m.close()
+    del m
+
 
 # Creates a map for the selected checklist
 def checklist_map_maker(checklist_id, remake_flag=False):
@@ -191,5 +192,5 @@ def remake_all_checklist_maps():
         checklist_map_maker(cur_checklist_id, remake_flag=True)
 
 
-checklist_map_maker("S93979335")
+# checklist_map_maker("S93979335")
 # remake_all_checklist_maps()
