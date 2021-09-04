@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swainson's Thrush Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "f57b238099c848fd9c187df23b401954": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "cf09d3ca70574e37aeb27d9c9f45e454": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "25d1804e34db474cba7291535d25bbec": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "ad4d617a066d41849e1887b438055f55": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "6c7d3f0bfe614133aab39ccc0e84cc47": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "c08b5388a51e416f8ce44e0feeb08a6d": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_5ab237eecc7d4a3b893364d4a41be0a3",
+          "IPY_MODEL_e78f6b1308914ea8bc42395fbb23e964",
+          "IPY_MODEL_8aa20da3f2684ff4a2ef6aa938a2c236",
+          "IPY_MODEL_390f6b079e2e4fb8b06642ecf6eeab89"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_f57b238099c848fd9c187df23b401954",
+        "dragging_style": "IPY_MODEL_cf09d3ca70574e37aeb27d9c9f45e454",
+        "layers": [
+          "IPY_MODEL_25d1804e34db474cba7291535d25bbec",
+          "IPY_MODEL_e94422a0248646f097a9ab09a068f9c4",
+          "IPY_MODEL_d97c95b0477a4f5baeefc29119cab98d"
+        ],
+        "layout": "IPY_MODEL_ad4d617a066d41849e1887b438055f55",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_6c7d3f0bfe614133aab39ccc0e84cc47",
+        "zoom": 14.0
+      }
+    },
+    "5ab237eecc7d4a3b893364d4a41be0a3": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "e78f6b1308914ea8bc42395fbb23e964": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "8aa20da3f2684ff4a2ef6aa938a2c236": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "390f6b079e2e4fb8b06642ecf6eeab89": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "e94422a0248646f097a9ab09a068f9c4": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "blue",
+          "0.6": "cyan",
+          "0.7": "lime",
+          "0.8": "yellow",
+          "1.0": "red"
+        },
+        "locations": [
+          [
+            "43.64899097500372",
+            "-79.46263231089452"
+          ],
+          [
+            "43.644621650294546",
+            "-79.45999074965479"
+          ],
+          [
+            "43.649077021900816",
+            "-79.46284923652551"
+          ],
+          [
+            "43.653165560907425",
+            "-79.46084988839813"
+          ],
+          [
+            "43.65317421671097",
+            "-79.46080827362599"
+          ],
+          [
+            "43.652721703793674",
+            "-79.46061902409187"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "bc6747c92f5a4e769dd7e4f9ef62a519": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cf5835373dca490aa00db92bf4f49e12": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0c2d69cb10ab4b5bac6c8952635e89be": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_bc6747c92f5a4e769dd7e4f9ef62a519",
+        "style": "IPY_MODEL_cf5835373dca490aa00db92bf4f49e12",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2c42c37fccbd4e88a8900754c8339344": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64899097500372",
+          "-79.46263231089452"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0c2d69cb10ab4b5bac6c8952635e89be",
+        "title": "Swainson's Thrush, 2021-09-04"
+      }
+    },
+    "2b9e1312f02c4984ac17ccbf8697de76": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d514058e23d04b2a99864e38d706850e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9ad2675a5b354999a7271d8a8aa4a5c1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_2b9e1312f02c4984ac17ccbf8697de76",
+        "style": "IPY_MODEL_d514058e23d04b2a99864e38d706850e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "887e66dcfd4446819dc5b3105ad9133d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.644621650294546",
+          "-79.45999074965479"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9ad2675a5b354999a7271d8a8aa4a5c1",
+        "title": "Swainson's Thrush, 2021-09-04"
+      }
+    },
+    "cc7610f3642f423196c0b6e58d7a8616": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4cf0c5025c764c19b5b57f3b34864ca7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7d42b1790a584f2fa9c0075652dde232": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_cc7610f3642f423196c0b6e58d7a8616",
+        "style": "IPY_MODEL_4cf0c5025c764c19b5b57f3b34864ca7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ba3778a05d5a429a8ce401109ccc1d99": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.649077021900816",
+          "-79.46284923652551"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7d42b1790a584f2fa9c0075652dde232",
+        "title": "Swainson's Thrush, 2021-09-04"
+      }
+    },
+    "8c841b82e75a4ac38c1061304946db77": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b961875548194a2e8b3b2895c6598340": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a81eae69882b42c58ac6fab7c9e09ca1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_8c841b82e75a4ac38c1061304946db77",
+        "style": "IPY_MODEL_b961875548194a2e8b3b2895c6598340",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "02572429e0794958a1aa83a3d7bf9a51": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.653165560907425",
+          "-79.46084988839813"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a81eae69882b42c58ac6fab7c9e09ca1",
+        "title": "Swainson's Thrush, 2021-09-04"
+      }
+    },
+    "bd6109d82aa84f95a94aaa1de10f6d38": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "37d1d6146cff4241a5bc0ad6406ec20c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d879ec887e68408c827c1af51de9b101": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_bd6109d82aa84f95a94aaa1de10f6d38",
+        "style": "IPY_MODEL_37d1d6146cff4241a5bc0ad6406ec20c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e70d403ab3c848428b2b66c2122de050": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.65317421671097",
+          "-79.46080827362599"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d879ec887e68408c827c1af51de9b101",
+        "title": "Swainson's Thrush, 2021-09-04"
+      }
+    },
+    "ae7f71db4e5e44958cad3d6cd301fbd0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ed0c5e2b84ad419eb4bebbaca2ba3b71": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b28906ba42fe4dcabb154f076aedb024": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_ae7f71db4e5e44958cad3d6cd301fbd0",
+        "style": "IPY_MODEL_ed0c5e2b84ad419eb4bebbaca2ba3b71",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "515ca5d84a3a4be1a0397b2630a8757a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.652721703793674",
+          "-79.46061902409187"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b28906ba42fe4dcabb154f076aedb024",
+        "title": "Swainson's Thrush, 2021-09-04"
+      }
+    },
+    "d97c95b0477a4f5baeefc29119cab98d": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_2c42c37fccbd4e88a8900754c8339344",
+          "IPY_MODEL_887e66dcfd4446819dc5b3105ad9133d",
+          "IPY_MODEL_ba3778a05d5a429a8ce401109ccc1d99",
+          "IPY_MODEL_02572429e0794958a1aa83a3d7bf9a51",
+          "IPY_MODEL_e70d403ab3c848428b2b66c2122de050",
+          "IPY_MODEL_515ca5d84a3a4be1a0397b2630a8757a"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "c08b5388a51e416f8ce44e0feeb08a6d"}
+</script>
+
+</body>
+</html>

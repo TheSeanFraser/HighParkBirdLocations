@@ -25,6 +25,18 @@ def create_species_list(connection):
     # Store list of species for website
     species_text_file = open(config.dir_path + "maps\\species\\speciesList.txt",
                              "w")
+
+    # Open list of all Ontario species and build a dict with families included
+    ont_species_file = open(config.dir_path + "res\\Ontario Species List.txt")
+    ont_species_list = {}
+    cur_family = ''
+    for line in ont_species_file:
+        if line.startswith('+'):
+            cur_family = line.strip().replace('+', '')
+            ont_species_list[cur_family] = []
+        elif line.strip():
+            ont_species_list[cur_family].append(line.strip())
+
     for species in species_list_result:
         # If species is protected, skip it for the map making
         if species[1]:
@@ -34,6 +46,15 @@ def create_species_list(connection):
             species_list_non_protected.append(species_slash_fixed)
             species_text_file.write(species_slash_fixed + "\n")
     species_text_file.close()
+
+    # TODO: add species to file in order of families
+    # Loop through dictionary of families
+    ordered_species_list = []
+    for family in ont_species_list:
+        for species in ont_species_list[family]:
+            if species in species_list_non_protected:
+                ordered_species_list.append(species)
+    print(ordered_species_list)
 
     print("SpeciesList created.")
     return species_list_non_protected

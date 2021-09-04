@@ -1,4 +1,4 @@
-Waterfowl
++Waterfowl
 
 Black-bellied Whistling-Duck
 Fulvous Whistling-Duck
@@ -121,7 +121,7 @@ duck sp.
 waterfowl sp.
 
 
-Grouse, Quail, and Allies
++Grouse, Quail, and Allies
 
 Northern Bobwhite
 Indian Peafowl (Domestic type)
@@ -140,7 +140,7 @@ Wild Turkey
 Wild Turkey (Domestic type)
 
 
-Grebes
++Grebes
 
 Pied-billed Grebe
 Horned Grebe
@@ -153,7 +153,7 @@ Western/Clark's Grebe
 grebe sp.
 
 
-Pigeons and Doves
++Pigeons and Doves
 
 Rock Pigeon
 Band-tailed Pigeon
@@ -168,7 +168,7 @@ Mourning Dove
 pigeon/dove sp.
 
 
-Cuckoos
++Cuckoos
 
 Groove-billed Ani
 Yellow-billed Cuckoo
@@ -178,7 +178,7 @@ Coccyzus sp.
 cuckoo sp. (Cuculidae sp.)
 
 
-Nightjars
++Nightjars
 
 Lesser Nighthawk
 Common Nighthawk
@@ -191,7 +191,7 @@ Antrostomus sp.
 nightjar sp.
 
 
-Swifts
++Swifts
 
 Black Swift
 White-collared Swift
@@ -200,7 +200,7 @@ Chaetura sp.
 swift sp.
 
 
-Hummingbirds
++Hummingbirds
 
 Mexican Violetear
 violetear sp.
@@ -216,7 +216,7 @@ Broad-billed Hummingbird
 hummingbird sp.
 
 
-Rails, Gallinules, and Allies
++Rails, Gallinules, and Allies
 
 King Rail
 large rail sp.
@@ -233,13 +233,13 @@ Black Rail
 rail/crake sp.
 
 
-Cranes
++Cranes
 
 Sandhill Crane
 Whooping Crane
 
 
-Shorebirds
++Shorebirds
 
 Black-necked Stilt
 American Avocet
@@ -314,7 +314,7 @@ large shorebird sp.
 shorebird sp.
 
 
-Skuas and Jaegers
++Skuas and Jaegers
 
 Pomarine Jaeger
 Parasitic Jaeger
@@ -324,7 +324,7 @@ Parasitic/Long-tailed Jaeger
 jaeger sp.
 
 
-Alcids
++Alcids
 
 Dovekie
 Thick-billed Murre
@@ -336,7 +336,7 @@ Ancient Murrelet
 Atlantic Puffin
 
 
-Gulls, Terns, and Skimmers
++Gulls, Terns, and Skimmers
 
 Black-legged Kittiwake
 Ivory Gull
@@ -394,7 +394,7 @@ Black Skimmer
 gull/tern sp.
 
 
-Loons
++Loons
 
 Red-throated Loon
 Pacific Loon
@@ -402,7 +402,7 @@ Common Loon
 Yellow-billed Loon
 loon sp.
 
-Albatrosses
++Albatrosses
 
 Yellow-nosed Albatross
 Storm-Petrels
@@ -413,7 +413,7 @@ storm-petrel sp. (white-rumped)
 storm-petrel sp.
 
 
-Petrels, Shearwaters, and Diving-Petrels
++Petrels, Shearwaters, and Diving-Petrels
 
 Northern Fulmar
 Black-capped Petrel
@@ -424,12 +424,12 @@ Audubon's Shearwater
 shearwater sp.
 
 
-Storks
++Storks
 
 Wood Stork
 
 
-Frigatebirds, Boobies, and Gannets
++Frigatebirds, Boobies, and Gannets
 
 Magnificent Frigatebird
 frigatebird sp.
@@ -437,7 +437,7 @@ Brown Booby
 Northern Gannet
 
 
-Cormorants and Anhingas
++Cormorants and Anhingas
 
 Anhinga
 Great Cormorant
@@ -448,13 +448,13 @@ Neotropic/Double-crested Cormorant
 cormorant sp.
 
 
-Pelicans
++Pelicans
 
 American White Pelican
 Brown Pelican
 
 
-Herons, Ibis, and Allies
++Herons, Ibis, and Allies
 
 American Bittern
 Least Bittern
@@ -482,7 +482,7 @@ ibis sp.
 Roseate Spoonbill
 
 
-Vultures, Hawks, and Allies
++Vultures, Hawks, and Allies
 
 Black Vulture
 Turkey Vulture
@@ -516,7 +516,7 @@ hawk sp.
 eagle sp.
 
 
-Owls
++Owls
 
 Barn Owl
 Eastern Screech-Owl
@@ -535,12 +535,12 @@ Northern Saw-whet Owl
 owl sp.
 
 
-Kingfishers
++Kingfishers
 
 Belted Kingfisher
 
 
-Woodpeckers
++Woodpeckers
 
 Yellow-bellied Sapsucker
 Yellow-bellied x Red-naped Sapsucker (hybrid)
@@ -559,7 +559,7 @@ Northern Flicker
 woodpecker sp.
 
 
-Falcons and Caracaras
++Falcons and Caracaras
 
 Crested Caracara
 American Kestrel
@@ -573,17 +573,17 @@ falcon sp.
 diurnal raptor sp.
 
 
-Cockatoos
++Cockatoos
 
 Cockatiel (Domestic type)
 
 
-Parrots, Parakeets, and Allies
++Parrots, Parakeets, and Allies
 
 Budgerigar (Domestic type)
 
 
-Tyrant Flycatchers: Pewees, Kingbirds, and Allies
++Tyrant Flycatchers: Pewees, Kingbirds, and Allies
 
 Olive-sided Flycatcher
 Western Wood-Pewee
@@ -623,7 +623,7 @@ Fork-tailed Flycatcher
 flycatcher sp. (Tyrannidae sp.)
 
 
-Vireos
++Vireos
 
 Black-capped Vireo
 White-eyed Vireo
@@ -641,7 +641,7 @@ Philadelphia/Red-eyed Vireo
 vireo sp.
 
 
-Shrikes
++Shrikes
 
 Loggerhead Shrike
 Northern Shrike
@@ -649,7 +649,7 @@ Loggerhead/Northern Shrike
 shrike sp.
 
 
-Jays, Magpies, Crows, and Ravens
++Jays, Magpies, Crows, and Ravens
 
 Canada Jay
 Blue Jay
@@ -665,7 +665,7 @@ Common Raven
 crow/raven sp.
 
 
-Tits, Chickadees, and Titmice
++Tits, Chickadees, and Titmice
 
 Carolina Chickadee
 Black-capped Chickadee
@@ -676,12 +676,12 @@ chickadee sp.
 Tufted Titmouse
 
 
-Larks
++Larks
 
 Horned Lark
 
 
-Martins and Swallows
++Martins and Swallows
 
 Northern Rough-winged Swallow
 Purple Martin
@@ -697,31 +697,31 @@ Cliff/Cave Swallow
 swallow sp.
 
 
-Kinglets
++Kinglets
 
 Golden-crowned Kinglet
 Ruby-crowned Kinglet
 kinglet sp.
 
 
-Nuthatches
++Nuthatches
 
 Red-breasted Nuthatch
 White-breasted Nuthatch
 nuthatch sp.
 
 
-Treecreepers
++Treecreepers
 
 Brown Creeper
 
 
-Gnatcatchers
++Gnatcatchers
 
 Blue-gray Gnatcatcher
 
 
-Wrens
++Wrens
 
 Rock Wren
 House Wren
@@ -733,12 +733,12 @@ Bewick's Wren
 wren sp.
 
 
-Starlings and Mynas
++Starlings and Mynas
 
 European Starling
 
 
-Catbirds, Mockingbirds, and Thrashers
++Catbirds, Mockingbirds, and Thrashers
 
 Gray Catbird
 Brown Thrasher
@@ -747,7 +747,7 @@ Northern Mockingbird
 Mimidae sp.
 
 
-Thrushes
++Thrushes
 
 Eastern Bluebird
 Mountain Bluebird
@@ -769,32 +769,32 @@ Turdus sp.
 thrush sp.
 
 
-Old World Flycatchers
++Old World Flycatchers
 
 Siberian Rubythroat
 Northern Wheatear
 
 
-Waxwings
++Waxwings
 
 Bohemian Waxwing
 Cedar Waxwing
 Bohemian/Cedar Waxwing
 
 
-Silky-flycatchers
++Silky-flycatchers
 
 Phainopepla
 
 
-Old World Sparrows
++Old World Sparrows
 
 House Sparrow
 Eurasian Tree Sparrow
 House/Eurasian Tree Sparrow
 
 
-Wagtails and Pipits
++Wagtails and Pipits
 
 American Pipit
 Water/American Pipit
@@ -802,7 +802,7 @@ Sprague's Pipit
 pipit sp.
 
 
-Finches, Euphonias, and Allies
++Finches, Euphonias, and Allies
 
 Brambling
 Evening Grosbeak
@@ -828,7 +828,7 @@ Acanthis/Spinus sp.
 finch sp.
 
 
-Longspurs and Snow Buntings
++Longspurs and Snow Buntings
 
 Lapland Longspur
 Chestnut-collared Longspur
@@ -839,7 +839,7 @@ Snow Bunting
 
 
 
-New World Sparrows
++New World Sparrows
 
 Cassin's Sparrow
 Bachman's Sparrow
@@ -885,12 +885,12 @@ Spotted/Eastern Towhee (Rufous-sided Towhee)
 sparrow sp.
 
 
-Yellow-breasted Chat
++Yellow-breasted Chat
 
 Yellow-breasted Chat
 
 
-Blackbirds
++Blackbirds
 
 Yellow-headed Blackbird
 Bobolink
@@ -917,7 +917,7 @@ grackle sp.
 blackbird sp.
 
 
-Wood-Warblers
++Wood-Warblers
 
 Ovenbird
 Worm-eating Warbler
@@ -978,7 +978,7 @@ Painted Redstart
 warbler sp. (Parulidae sp.)
 
 
-Cardinals, Grosbeaks, and Allies
++Cardinals, Grosbeaks, and Allies
 
 Summer Tanager
 Scarlet Tanager
@@ -999,7 +999,7 @@ Painted Bunting
 Dickcissel
 
 
-Others
++Others
 
 passerine sp.
 bird sp.
