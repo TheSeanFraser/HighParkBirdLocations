@@ -33,7 +33,7 @@ birdColors = {
     "Swainson's Thrush": ["brown4", "khaki"],
     "Solitary Sandpiper": ["dark khaki", "khaki"],
     "Mourning Warbler": ["yellow", "gray40"],
-    "Blue-winged Teal": ["khaki", "SteekBlue1"],
+    "Blue-winged Teal": ["khaki", "SteelBlue1"],
     "Semipalmated Plover": ["khaki", "khaki"],
     "Baird's Sandpiper": ["khaki", "khaki"],
     "Least Sandpiper": ["khaki", "khaki"],
