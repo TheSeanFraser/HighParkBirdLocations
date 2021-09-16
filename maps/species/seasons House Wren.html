@@ -1,0 +1,4928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Wren Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "6091cbfcac764d998933a630ff39e2e8": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "af0bbdefe5f6478881e26a07c1ba9875": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "e117ff0d678748718b253510ebf37c88": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "76274159a4b94f3abcedb00fcd632ea8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "c3a61cda16f747adac7b9cb367db00e1": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "d9d7769747374f2f86b3cb7d8d1e1a8c": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_87d83e9229344b2798c94057cea8971f",
+          "IPY_MODEL_18160646c589410090fcd28d3f07757b",
+          "IPY_MODEL_533672b9f7ea46bc904ee5575301f3e0",
+          "IPY_MODEL_26c67d6362cf4d6bacff475b065adef0"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_6091cbfcac764d998933a630ff39e2e8",
+        "dragging_style": "IPY_MODEL_af0bbdefe5f6478881e26a07c1ba9875",
+        "layers": [
+          "IPY_MODEL_e117ff0d678748718b253510ebf37c88",
+          "IPY_MODEL_8b63dab6e1de4b60a984c9bfe7433f44",
+          "IPY_MODEL_8e76cbb4200a46359d0cbe68120b200e",
+          "IPY_MODEL_11569b371f0d49ca9ad6dc0f1a1ece05",
+          "IPY_MODEL_d9073bccaedc42adb2d912bf95f44e1f",
+          "IPY_MODEL_82380b2881c745808f973d2efa7e47dd"
+        ],
+        "layout": "IPY_MODEL_76274159a4b94f3abcedb00fcd632ea8",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_c3a61cda16f747adac7b9cb367db00e1",
+        "zoom": 14.0
+      }
+    },
+    "87d83e9229344b2798c94057cea8971f": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "18160646c589410090fcd28d3f07757b": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "533672b9f7ea46bc904ee5575301f3e0": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "26c67d6362cf4d6bacff475b065adef0": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "8b63dab6e1de4b60a984c9bfe7433f44": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "8e76cbb4200a46359d0cbe68120b200e": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "11569b371f0d49ca9ad6dc0f1a1ece05": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.647597752187394",
+            "-79.46157988814548"
+          ],
+          [
+            "43.64740923430046",
+            "-79.46307964395012"
+          ],
+          [
+            "43.64591708540511",
+            "-79.46210621355513"
+          ],
+          [
+            "43.645918122979175",
+            "-79.46186405777829"
+          ],
+          [
+            "43.64659389088455",
+            "-79.46674913030154"
+          ],
+          [
+            "43.6477254727943",
+            "-79.46170483745536"
+          ],
+          [
+            "43.6442217601893",
+            "-79.46087997741989"
+          ],
+          [
+            "43.64743380488618",
+            "-79.46177975128502"
+          ],
+          [
+            "43.646944402321544",
+            "-79.46735321979155"
+          ],
+          [
+            "43.64584497420794",
+            "-79.46156733801496"
+          ],
+          [
+            "43.647117444995374",
+            "-79.46133516089927"
+          ],
+          [
+            "43.647477647790076",
+            "-79.46189469349886"
+          ],
+          [
+            "43.647543180351725",
+            "-79.4617516585989"
+          ],
+          [
+            "43.64603130654951",
+            "-79.4620558424238"
+          ],
+          [
+            "43.64615556124307",
+            "-79.46077241396299"
+          ],
+          [
+            "43.647339661839816",
+            "-79.46268735329772"
+          ],
+          [
+            "43.64692605718019",
+            "-79.46720017779553"
+          ],
+          [
+            "43.64571517845291",
+            "-79.46192670025877"
+          ],
+          [
+            "43.64726156799221",
+            "-79.46724020617971"
+          ],
+          [
+            "43.647656728112956",
+            "-79.46740163388598"
+          ],
+          [
+            "43.64771681901065",
+            "-79.46150723856893"
+          ],
+          [
+            "43.645868165028155",
+            "-79.46169810156576"
+          ],
+          [
+            "43.646932735213234",
+            "-79.46305479403557"
+          ],
+          [
+            "43.6458329759079",
+            "-79.46178075823835"
+          ],
+          [
+            "43.64788540219596",
+            "-79.46761633984406"
+          ],
+          [
+            "43.64763190373358",
+            "-79.46173938724974"
+          ],
+          [
+            "43.647036470219795",
+            "-79.46692992933255"
+          ],
+          [
+            "43.64758448451909",
+            "-79.46172001592498"
+          ],
+          [
+            "43.64725545294509",
+            "-79.46718919218104"
+          ],
+          [
+            "43.647696398721166",
+            "-79.46183850812662"
+          ],
+          [
+            "43.647382235375446",
+            "-79.46272900306768"
+          ],
+          [
+            "43.64779056376698",
+            "-79.46757759719455"
+          ],
+          [
+            "43.64762313955269",
+            "-79.4630457370231"
+          ],
+          [
+            "43.643991010958175",
+            "-79.46114958301554"
+          ],
+          [
+            "43.64736907810439",
+            "-79.46136518218741"
+          ],
+          [
+            "43.6459163900225",
+            "-79.46115986889293"
+          ],
+          [
+            "43.64709645072024",
+            "-79.46253948267528"
+          ],
+          [
+            "43.645982728364",
+            "-79.46045922999538"
+          ],
+          [
+            "43.647276778411936",
+            "-79.46147302442566"
+          ],
+          [
+            "43.64585824187624",
+            "-79.46142721023546"
+          ],
+          [
+            "43.6475237976363",
+            "-79.46184077237974"
+          ],
+          [
+            "43.648626992395876",
+            "-79.46225391245311"
+          ],
+          [
+            "43.64751145714482",
+            "-79.46324269304219"
+          ],
+          [
+            "43.645964233067126",
+            "-79.46039392160125"
+          ],
+          [
+            "43.64761863606528",
+            "-79.46187951502925"
+          ],
+          [
+            "43.64595977738077",
+            "-79.46057299732543"
+          ],
+          [
+            "43.647082851860226",
+            "-79.46719145643416"
+          ],
+          [
+            "43.648626992395876",
+            "-79.46225391245311"
+          ],
+          [
+            "43.64593826565649",
+            "-79.46051876591767"
+          ],
+          [
+            "43.645657335395015",
+            "-79.46139644099793"
+          ],
+          [
+            "43.64740542619566",
+            "-79.4628597666185"
+          ],
+          [
+            "43.64574389343048",
+            "-79.46098029327653"
+          ],
+          [
+            "43.64726420612625",
+            "-79.46255949686737"
+          ],
+          [
+            "43.64605068926493",
+            "-79.46196672864296"
+          ],
+          [
+            "43.64805799271016",
+            "-79.46751197343785"
+          ],
+          [
+            "43.64767574663748",
+            "-79.46185432946358"
+          ],
+          [
+            "43.647577331897914",
+            "-79.46191115770317"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "d9073bccaedc42adb2d912bf95f44e1f": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64566045773034",
+            "-79.46019902476917"
+          ],
+          [
+            "43.64737852890612",
+            "-79.46541841694157"
+          ],
+          [
+            "43.649059693519405",
+            "-79.46829278217905"
+          ],
+          [
+            "43.645578483165835",
+            "-79.46027782842829"
+          ],
+          [
+            "43.652765549454905",
+            "-79.46237890076435"
+          ],
+          [
+            "43.64756048407031",
+            "-79.46698726227412"
+          ],
+          [
+            "43.64620728999451",
+            "-79.46103839017643"
+          ],
+          [
+            "43.647728633316504",
+            "-79.46696711590788"
+          ],
+          [
+            "43.647434608339445",
+            "-79.46270516537518"
+          ],
+          [
+            "43.645841335112664",
+            "-79.4604329929209"
+          ],
+          [
+            "43.65341886255858",
+            "-79.46215454602957"
+          ],
+          [
+            "43.6532121455502",
+            "-79.46188715385614"
+          ],
+          [
+            "43.64760770763604",
+            "-79.46723318604164"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "6bbc23e5d7a041d98b070e2e66970169": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e300ae129baf42f8b5990e93bba4cb27": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6539f6ce946642afba75a2fabdc23b85": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_6bbc23e5d7a041d98b070e2e66970169",
+        "style": "IPY_MODEL_e300ae129baf42f8b5990e93bba4cb27",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8db99b62f6284fad91eb71f4e0ec1cc4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "84fbd8b0254449d59d0c9c4ea00a15ad": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8db99b62f6284fad91eb71f4e0ec1cc4",
+        "location": [
+          "43.647597752187394",
+          "-79.46157988814548"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6539f6ce946642afba75a2fabdc23b85",
+        "title": "House Wren, 2021-07-09"
+      }
+    },
+    "1464c820217343549d82465d1bb2b2d1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "26499199efec45648a424da899718369": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4bc1a15af8884ea08c640efebf501903": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_1464c820217343549d82465d1bb2b2d1",
+        "style": "IPY_MODEL_26499199efec45648a424da899718369",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "a0d0ed6ff4d0492282c2207343295ef5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d03456f2f17c4f9c9276d4ee97910786": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a0d0ed6ff4d0492282c2207343295ef5",
+        "location": [
+          "43.64740923430046",
+          "-79.46307964395012"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4bc1a15af8884ea08c640efebf501903",
+        "title": "House Wren, 2021-07-12"
+      }
+    },
+    "eb81a2366cd343df9127a2583898414b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a7a87f1e25f743ccaaa65bfcd220f45d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7e12fda3754c49a5b18f680b39716169": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_eb81a2366cd343df9127a2583898414b",
+        "style": "IPY_MODEL_a7a87f1e25f743ccaaa65bfcd220f45d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "acf7f50c3e254a0ab5b0f0214eae6ca8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f33f5b465820499e9a05bf2cfec03cb1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_acf7f50c3e254a0ab5b0f0214eae6ca8",
+        "location": [
+          "43.64591708540511",
+          "-79.46210621355513"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7e12fda3754c49a5b18f680b39716169",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "e287a073bd2f42b084be75e75a8f06d7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "553c239e73f6491d82a8e6a73c13829a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "96d23c31b62d4e3698d57bfd74949a59": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_e287a073bd2f42b084be75e75a8f06d7",
+        "style": "IPY_MODEL_553c239e73f6491d82a8e6a73c13829a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2d70aea2a10341069441c4ec86ba926f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "65334c9c24934e28955b8f8a7ca966fb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2d70aea2a10341069441c4ec86ba926f",
+        "location": [
+          "43.645918122979175",
+          "-79.46186405777829"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_96d23c31b62d4e3698d57bfd74949a59",
+        "title": "House Wren, 2021-07-09"
+      }
+    },
+    "da2cf9aca33346308666dc53a7690718": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1d157af1e51045a3ac97dd078cdc9e34": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cda04413952f437f85c2901527de7298": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_da2cf9aca33346308666dc53a7690718",
+        "style": "IPY_MODEL_1d157af1e51045a3ac97dd078cdc9e34",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "618735e668644d04a6416ca07b2222a9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d83651b1b0664dd090b573b3e6f55c32": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_618735e668644d04a6416ca07b2222a9",
+        "location": [
+          "43.64659389088455",
+          "-79.46674913030154"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cda04413952f437f85c2901527de7298",
+        "title": "House Wren, 2021-07-21"
+      }
+    },
+    "a2e2af9802db4f7599f19e419619f4ba": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4e400f2062af49d0a8516020153c98ba": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7ebea2def66f46399c820d617f4a7e13": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_a2e2af9802db4f7599f19e419619f4ba",
+        "style": "IPY_MODEL_4e400f2062af49d0a8516020153c98ba",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "61e6c768353943e894497df439498753": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "206e1d98c46d4d918f62113e74834d2a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_61e6c768353943e894497df439498753",
+        "location": [
+          "43.6477254727943",
+          "-79.46170483745536"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7ebea2def66f46399c820d617f4a7e13",
+        "title": "House Wren, 2021-07-24"
+      }
+    },
+    "69e81a3001074f2db4fbaef6949a9524": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "82d3aaa5cdab4497bd6e3211d901fe18": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2e461b79b15a44a99e4047fea1d84291": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_69e81a3001074f2db4fbaef6949a9524",
+        "style": "IPY_MODEL_82d3aaa5cdab4497bd6e3211d901fe18",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ab33f8734b704426b00f9b1b52c085cd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9548d42bdfb640fb83368e6e56851803": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ab33f8734b704426b00f9b1b52c085cd",
+        "location": [
+          "43.6442217601893",
+          "-79.46087997741989"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2e461b79b15a44a99e4047fea1d84291",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "4581b90cad644239a4650114953b2933": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f46b739c5d504065bb8f5157c30611de": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "83d6286f2a0346b1b5a04fd1d0fb70c0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_4581b90cad644239a4650114953b2933",
+        "style": "IPY_MODEL_f46b739c5d504065bb8f5157c30611de",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a9837f48463243779ae4bc7855920b7c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ad0d794aa3c74ab685b7de93fb128909": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a9837f48463243779ae4bc7855920b7c",
+        "location": [
+          "43.64743380488618",
+          "-79.46177975128502"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_83d6286f2a0346b1b5a04fd1d0fb70c0",
+        "title": "House Wren, 2021-07-24"
+      }
+    },
+    "0442896e79a74522a21fa78e3a2f76ee": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "712ce2a4dedb4b44a5d8b823faf94af3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9445d815e0624eb490872b910370de92": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_0442896e79a74522a21fa78e3a2f76ee",
+        "style": "IPY_MODEL_712ce2a4dedb4b44a5d8b823faf94af3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "76058bb34476442b9666c9f82b616a5c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "834baeaba0b2478989fa43226bc7a780": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_76058bb34476442b9666c9f82b616a5c",
+        "location": [
+          "43.646944402321544",
+          "-79.46735321979155"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9445d815e0624eb490872b910370de92",
+        "title": "House Wren, 2021-07-24"
+      }
+    },
+    "0580a339f14941b1add6238f00c455eb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "52db4fa4f6ce447580157007f5942873": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b26facee158d4fcc8f8fca66d3bed97e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_0580a339f14941b1add6238f00c455eb",
+        "style": "IPY_MODEL_52db4fa4f6ce447580157007f5942873",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "d13bf56746a84fb9ade7aa445bec7378": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4930b9547d8c46078372954be41da8c3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d13bf56746a84fb9ade7aa445bec7378",
+        "location": [
+          "43.64584497420794",
+          "-79.46156733801496"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b26facee158d4fcc8f8fca66d3bed97e",
+        "title": "House Wren, 2021-07-12"
+      }
+    },
+    "e403f30ac58a450bb7b5c054d7f746d6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bfa8cfd6ffde471e9beee83edf1b0436": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "94f4e16c74e441f2a00f113280bc46e1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_e403f30ac58a450bb7b5c054d7f746d6",
+        "style": "IPY_MODEL_bfa8cfd6ffde471e9beee83edf1b0436",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "d61c16ffd0d54a33b5cecd437849ae73": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d644d53b8a454b9b8a8def980381a43c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d61c16ffd0d54a33b5cecd437849ae73",
+        "location": [
+          "43.647117444995374",
+          "-79.46133516089927"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_94f4e16c74e441f2a00f113280bc46e1",
+        "title": "House Wren, 2021-07-08"
+      }
+    },
+    "fcd9efb9229a494e9f92e9b375732afc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a87382858ed24435b926a283e88c9c54": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "48cbd2a86bc1439990be3f9a74fa50e9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_fcd9efb9229a494e9f92e9b375732afc",
+        "style": "IPY_MODEL_a87382858ed24435b926a283e88c9c54",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3f48a5fc400f42358c13ee2e94a22f71": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be147ffa92164fd7a90d591a411ccf09": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3f48a5fc400f42358c13ee2e94a22f71",
+        "location": [
+          "43.647477647790076",
+          "-79.46189469349886"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_48cbd2a86bc1439990be3f9a74fa50e9",
+        "title": "House Wren, 2021-07-18"
+      }
+    },
+    "4c1e107d45ec42a5abcb349edf811109": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b27de9041247476b8d82ce01696c0941": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "184187c221324785b1eed8a2b936accb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_4c1e107d45ec42a5abcb349edf811109",
+        "style": "IPY_MODEL_b27de9041247476b8d82ce01696c0941",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "86c4faa7626e43f6a8114b2dec0a0638": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "20f7c32c8a874a7ea9c5731d256e47a8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_86c4faa7626e43f6a8114b2dec0a0638",
+        "location": [
+          "43.647543180351725",
+          "-79.4617516585989"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_184187c221324785b1eed8a2b936accb",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "097771d79d9d4119afe365e38c9d57e2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3a3f487cbee04fd0a501675930b48cbb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8fc123acf1364a00a0e2f7a92a3b485c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_097771d79d9d4119afe365e38c9d57e2",
+        "style": "IPY_MODEL_3a3f487cbee04fd0a501675930b48cbb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c183eafa2e284b46968c9e902b598852": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3dad16255af74611954e06c8fa43f3f0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c183eafa2e284b46968c9e902b598852",
+        "location": [
+          "43.64603130654951",
+          "-79.4620558424238"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8fc123acf1364a00a0e2f7a92a3b485c",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "94eadac62c3248f09c095d2aef99ba06": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "15c6f1465a4a498abfb6d5c50a8e84df": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0fc695a753b248a7ba58097f8dc76a67": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_94eadac62c3248f09c095d2aef99ba06",
+        "style": "IPY_MODEL_15c6f1465a4a498abfb6d5c50a8e84df",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "16ed6cd6f7854be2b2720e40663801ce": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9f4be700e5c4472482a45ab7e71975d1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_16ed6cd6f7854be2b2720e40663801ce",
+        "location": [
+          "43.64615556124307",
+          "-79.46077241396299"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0fc695a753b248a7ba58097f8dc76a67",
+        "title": "House Wren, 2021-07-04"
+      }
+    },
+    "3559e402715942cfa9d803472cbbe153": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fc5ff4ffbd6847528877240262ca4107": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a5fe7bde8e35483ba499e591149ece14": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_3559e402715942cfa9d803472cbbe153",
+        "style": "IPY_MODEL_fc5ff4ffbd6847528877240262ca4107",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "593ee16dc279458e822672bf594d18d1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e392536b01374b288f81f34cec69a357": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_593ee16dc279458e822672bf594d18d1",
+        "location": [
+          "43.647339661839816",
+          "-79.46268735329772"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a5fe7bde8e35483ba499e591149ece14",
+        "title": "House Wren, 2021-07-21"
+      }
+    },
+    "09534941c9344d52807cd8a0e84f787b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a90ec34c54694e46a89ad99a4da3ed60": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ca795aedd14f4199b90105444408cf3d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_09534941c9344d52807cd8a0e84f787b",
+        "style": "IPY_MODEL_a90ec34c54694e46a89ad99a4da3ed60",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "bab8eb1eb38649328101e035c754e606": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a44ced5255b947b1b207ba98b89be535": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bab8eb1eb38649328101e035c754e606",
+        "location": [
+          "43.64692605718019",
+          "-79.46720017779553"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ca795aedd14f4199b90105444408cf3d",
+        "title": "House Wren, 2021-07-12"
+      }
+    },
+    "5d4a6b92c8334760bedc04a62065d30a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7ec5a5117e324b9695760ee6dbad637a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "369c55b817e04ccca12445f58feeef81": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_5d4a6b92c8334760bedc04a62065d30a",
+        "style": "IPY_MODEL_7ec5a5117e324b9695760ee6dbad637a",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "19fa6423cf034c1caea5f0df38044aad": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6c8ff2f470114a38ad6b2d1ddb957b33": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_19fa6423cf034c1caea5f0df38044aad",
+        "location": [
+          "43.64571517845291",
+          "-79.46192670025877"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_369c55b817e04ccca12445f58feeef81",
+        "title": "House Wren, 2021-07-08"
+      }
+    },
+    "30f55a85f1da4255bc8122200aaf0adf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "14949cfbfea840b9a13fe1780e43751a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d2ce2b4fc98c46608147f8f0b379102b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_30f55a85f1da4255bc8122200aaf0adf",
+        "style": "IPY_MODEL_14949cfbfea840b9a13fe1780e43751a",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "97385fac87b14601b1b51b5d9d9210ff": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "046a1be712694742a9138b0567501ae3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_97385fac87b14601b1b51b5d9d9210ff",
+        "location": [
+          "43.64726156799221",
+          "-79.46724020617971"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d2ce2b4fc98c46608147f8f0b379102b",
+        "title": "House Wren, 2021-07-12"
+      }
+    },
+    "d5749f687b3a4403b29ba3b4aafaa662": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "61ce06cdb7334ea8aebfc0f17e381ba2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8b7771e439ad4c449cf282ba6f992320": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_d5749f687b3a4403b29ba3b4aafaa662",
+        "style": "IPY_MODEL_61ce06cdb7334ea8aebfc0f17e381ba2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4c786198109a45ef90f1c8cb1559c885": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "964b4b3567bc432c9a94fca8348da235": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4c786198109a45ef90f1c8cb1559c885",
+        "location": [
+          "43.647656728112956",
+          "-79.46740163388598"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8b7771e439ad4c449cf282ba6f992320",
+        "title": "House Wren, 2021-07-24"
+      }
+    },
+    "6bce7017febe40239b6a99482f4e9536": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8f9e3d1dfffe44c7af27397d685a601d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c44868703a5244c4979da31345d249b8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_6bce7017febe40239b6a99482f4e9536",
+        "style": "IPY_MODEL_8f9e3d1dfffe44c7af27397d685a601d",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "16ac342b86c640dea964a1ca4414c823": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1525387cd24e4796a455fc23469254f8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_16ac342b86c640dea964a1ca4414c823",
+        "location": [
+          "43.64771681901065",
+          "-79.46150723856893"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c44868703a5244c4979da31345d249b8",
+        "title": "House Wren, 2021-07-12"
+      }
+    },
+    "d113cfa884fe455e8d5fec6a142a997f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cba7ce3a82824009b310fde53496a49a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7d7f9964f4fd41718b158af2cf8614d6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_d113cfa884fe455e8d5fec6a142a997f",
+        "style": "IPY_MODEL_cba7ce3a82824009b310fde53496a49a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c442567fab5f4d99ab0af440b5f77f51": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "788415b1d5d14aa199291f4892a74db3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c442567fab5f4d99ab0af440b5f77f51",
+        "location": [
+          "43.645868165028155",
+          "-79.46169810156576"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7d7f9964f4fd41718b158af2cf8614d6",
+        "title": "House Wren, 2021-07-21"
+      }
+    },
+    "c44240b829ea4693abca4f1ea1d087f2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "052d75acf64d417eb2ec34b978b93bb5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9119d3a38c6e471e9d5d567e45ba9340": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_c44240b829ea4693abca4f1ea1d087f2",
+        "style": "IPY_MODEL_052d75acf64d417eb2ec34b978b93bb5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5b53b8d76582439886059462e3ce72e1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9136a8715d384b3f9ec56e714de67318": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5b53b8d76582439886059462e3ce72e1",
+        "location": [
+          "43.646932735213234",
+          "-79.46305479403557"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9119d3a38c6e471e9d5d567e45ba9340",
+        "title": "House Wren, 2021-07-23"
+      }
+    },
+    "3cb7d0c008d94ed6b3e4e1cbdc9f258d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "51605ac36ae64f28a1250a010752b3b7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8345717e56b9440cbb9d2acf7554763f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_3cb7d0c008d94ed6b3e4e1cbdc9f258d",
+        "style": "IPY_MODEL_51605ac36ae64f28a1250a010752b3b7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6aa54acacf10414294d9269ad5868d4b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8c8323c7585e4ecd998a003cb89015f6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6aa54acacf10414294d9269ad5868d4b",
+        "location": [
+          "43.6458329759079",
+          "-79.46178075823835"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8345717e56b9440cbb9d2acf7554763f",
+        "title": "House Wren, 2021-07-09"
+      }
+    },
+    "c5c8802de3854319ad421e9a0a273dea": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ac8da3765ca54e3288a0986f5b94c718": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "037fcfaa535e447ab6cdbbc8630c26d8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_c5c8802de3854319ad421e9a0a273dea",
+        "style": "IPY_MODEL_ac8da3765ca54e3288a0986f5b94c718",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "60e8eec655c541c79cd7c4d36a7f85f0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "272a41efc5894d2ea75bae6e72a0b1d9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_60e8eec655c541c79cd7c4d36a7f85f0",
+        "location": [
+          "43.64788540219596",
+          "-79.46761633984406"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_037fcfaa535e447ab6cdbbc8630c26d8",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "fb0b1aeeb15b4596ba13d8c5a9de3e5d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "125fc0e26db2401886e0c4e66bc3dd30": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "780a2556a69843cc8250c58efd879a1e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_fb0b1aeeb15b4596ba13d8c5a9de3e5d",
+        "style": "IPY_MODEL_125fc0e26db2401886e0c4e66bc3dd30",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "db15b7fbf10745d58940b2db15fffff6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b3bd208ee2094c89be47558629930a9b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_db15b7fbf10745d58940b2db15fffff6",
+        "location": [
+          "43.64763190373358",
+          "-79.46173938724974"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_780a2556a69843cc8250c58efd879a1e",
+        "title": "House Wren, 2021-07-23"
+      }
+    },
+    "2d5fc8d0803e4e69a87d73f210046860": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e40d4eb6c50d42339b128936fc63eb26": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d0c8b0905d8c47fe94b46303ab4fbc3b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_2d5fc8d0803e4e69a87d73f210046860",
+        "style": "IPY_MODEL_e40d4eb6c50d42339b128936fc63eb26",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5bca948c3c03468fb0297ef28a476ca3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bdc4dbe4595841e58abb92b2bb53053c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5bca948c3c03468fb0297ef28a476ca3",
+        "location": [
+          "43.647036470219795",
+          "-79.46692992933255"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d0c8b0905d8c47fe94b46303ab4fbc3b",
+        "title": "House Wren, 2021-07-21"
+      }
+    },
+    "ad69401636ed4ca1a338ef653c051d16": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fe84215baa0141b9804adfa4565cc80d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a5a69432c79a40c787fbb1676a89735b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_ad69401636ed4ca1a338ef653c051d16",
+        "style": "IPY_MODEL_fe84215baa0141b9804adfa4565cc80d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eed9fceaa2a74ab2820f05c38ba7c950": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5234eb9df047469093783a95eb9253ab": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eed9fceaa2a74ab2820f05c38ba7c950",
+        "location": [
+          "43.64758448451909",
+          "-79.46172001592498"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a5a69432c79a40c787fbb1676a89735b",
+        "title": "House Wren, 2021-07-21"
+      }
+    },
+    "805e94f4025640cbb1c38b384f13e0b1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "37f79dd364414f1c8379035c7a5e799c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eb8eacc8f29b4bcb8032ee8cae578049": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_805e94f4025640cbb1c38b384f13e0b1",
+        "style": "IPY_MODEL_37f79dd364414f1c8379035c7a5e799c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b80fca2dd20a45f191948f65bb67f0cd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7c684b34ddd04004bc4c0632ab38e547": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b80fca2dd20a45f191948f65bb67f0cd",
+        "location": [
+          "43.64725545294509",
+          "-79.46718919218104"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eb8eacc8f29b4bcb8032ee8cae578049",
+        "title": "House Wren, 2021-07-18"
+      }
+    },
+    "6cf5652a342d4b3b9332f518fd2dbcb1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "966023656b3c44be816c56faae0e0a27": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "849bcb55b8894aa1a59df4feb7dd5e08": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_6cf5652a342d4b3b9332f518fd2dbcb1",
+        "style": "IPY_MODEL_966023656b3c44be816c56faae0e0a27",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "10f4f325836a44689324e9b6b1b63533": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "314bdaf1e8ab47e7a42b1855d73cd6fa": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_10f4f325836a44689324e9b6b1b63533",
+        "location": [
+          "43.647696398721166",
+          "-79.46183850812662"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_849bcb55b8894aa1a59df4feb7dd5e08",
+        "title": "House Wren, 2021-07-18"
+      }
+    },
+    "f9266c3f8b3f4c6e813ac3e65d317f64": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "94ee45a9377f4827a581e1bd5f2225b6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8148d89aa06d4be598bc2093aac4bb7b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_f9266c3f8b3f4c6e813ac3e65d317f64",
+        "style": "IPY_MODEL_94ee45a9377f4827a581e1bd5f2225b6",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "4ef8536461174ea69c7c4c8ab2ca346b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "479a96372d0d409da37a5c821a9b6937": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4ef8536461174ea69c7c4c8ab2ca346b",
+        "location": [
+          "43.647382235375446",
+          "-79.46272900306768"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8148d89aa06d4be598bc2093aac4bb7b",
+        "title": "House Wren, 2021-07-12"
+      }
+    },
+    "e5c95ca1151741c9a3eec59003f0091c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d894d525b6af4abbad3de240759d6149": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "79e18ef22f3b40b988b2f0cbfb89e40c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_e5c95ca1151741c9a3eec59003f0091c",
+        "style": "IPY_MODEL_d894d525b6af4abbad3de240759d6149",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1b52ca574c1143e7b96d6773de22b744": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5a90d7ce1cff4e2bb0190442b6488896": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1b52ca574c1143e7b96d6773de22b744",
+        "location": [
+          "43.64779056376698",
+          "-79.46757759719455"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_79e18ef22f3b40b988b2f0cbfb89e40c",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "45919d9322da45129450aa7176e7d6eb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "95255e1fc07b405a96350e9c17096289": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ac910f324149419b8e68c3d675a8b5fe": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_45919d9322da45129450aa7176e7d6eb",
+        "style": "IPY_MODEL_95255e1fc07b405a96350e9c17096289",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bf29b6db61a643aa81c26fa34dc46bcc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5b7bf514f04340c487d2bc3747a36e56": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bf29b6db61a643aa81c26fa34dc46bcc",
+        "location": [
+          "43.64762313955269",
+          "-79.4630457370231"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ac910f324149419b8e68c3d675a8b5fe",
+        "title": "House Wren, 2021-07-09"
+      }
+    },
+    "3c97bd4829bc47ecb3f5bb2afcc26f98": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "28252e92ecf14cbd8def754a3823fc7b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3a546f453a7b493e86c6ab6c13ad504d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_3c97bd4829bc47ecb3f5bb2afcc26f98",
+        "style": "IPY_MODEL_28252e92ecf14cbd8def754a3823fc7b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b0fcd08af8924967b2478a58b858490d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9ddfc60eef7a44fca8d5fe56dd168c74": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b0fcd08af8924967b2478a58b858490d",
+        "location": [
+          "43.643991010958175",
+          "-79.46114958301554"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3a546f453a7b493e86c6ab6c13ad504d",
+        "title": "House Wren, 2021-07-18"
+      }
+    },
+    "21f9549ac7f74a44b86faadd819826a9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "96e17aaa827d4273b58b2be30c16f93c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "95c5e587ee124c608e8b44d26d872963": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_21f9549ac7f74a44b86faadd819826a9",
+        "style": "IPY_MODEL_96e17aaa827d4273b58b2be30c16f93c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0ab738c96bb740aa9167e3fce614fae7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cbe637261f2240598ba83abc64fb1aee": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ab738c96bb740aa9167e3fce614fae7",
+        "location": [
+          "43.64736907810439",
+          "-79.46136518218741"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_95c5e587ee124c608e8b44d26d872963",
+        "title": "House Wren, 2021-07-04"
+      }
+    },
+    "93e85d3e1178419cac15675c83c6463e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8d84de5088cc48d586250790127c78f1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c1586ee810394028ac3dc066bb3505a2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_93e85d3e1178419cac15675c83c6463e",
+        "style": "IPY_MODEL_8d84de5088cc48d586250790127c78f1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "705cde52567d493fbab32e0f481eb840": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "db4368103e28487782359d550722c873": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_705cde52567d493fbab32e0f481eb840",
+        "location": [
+          "43.6459163900225",
+          "-79.46115986889293"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c1586ee810394028ac3dc066bb3505a2",
+        "title": "House Wren, 2021-07-18"
+      }
+    },
+    "cf8148f09a374ccfa7fce94e50aa5341": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f86bab7eff894e4f863d7fbaeb8e08c3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a9a177f7dc7c454388300f0682318652": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_cf8148f09a374ccfa7fce94e50aa5341",
+        "style": "IPY_MODEL_f86bab7eff894e4f863d7fbaeb8e08c3",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "441fc05e596b48528f101faa231763e4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bb06ff886b3049b29dd865d3021db901": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_441fc05e596b48528f101faa231763e4",
+        "location": [
+          "43.64709645072024",
+          "-79.46253948267528"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a9a177f7dc7c454388300f0682318652",
+        "title": "House Wren, 2021-07-08"
+      }
+    },
+    "6d4629213d4640da82706d2735031431": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "925a74ce66484d47a37006e2acc23b80": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "06cd102b0bca4ef287658b162f4a59ac": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_6d4629213d4640da82706d2735031431",
+        "style": "IPY_MODEL_925a74ce66484d47a37006e2acc23b80",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6028b6a632de4965942b123df32d54ef": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8f0faac6d2af4cd08612f4e619bb0657": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6028b6a632de4965942b123df32d54ef",
+        "location": [
+          "43.645982728364",
+          "-79.46045922999538"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_06cd102b0bca4ef287658b162f4a59ac",
+        "title": "House Wren, 2021-07-04"
+      }
+    },
+    "1ead4fb8fc9f499b85adb76516872dc1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4dca199b7b4a4c89a54c23bd0db5ea15": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "05de872dd73843ad9dfaf328cc428f05": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_1ead4fb8fc9f499b85adb76516872dc1",
+        "style": "IPY_MODEL_4dca199b7b4a4c89a54c23bd0db5ea15",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a6718003ab6c428b8426c7b9be58bbd1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6227b47c52b6472691247bff74f60b3e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a6718003ab6c428b8426c7b9be58bbd1",
+        "location": [
+          "43.647276778411936",
+          "-79.46147302442566"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_05de872dd73843ad9dfaf328cc428f05",
+        "title": "House Wren, 2021-07-04"
+      }
+    },
+    "360954dccf6649f59d4543887ddea1b8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8aaed2c3b3d649d6ad58216ab6f69391": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e373798d14b64d758a994a8c357c9134": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_360954dccf6649f59d4543887ddea1b8",
+        "style": "IPY_MODEL_8aaed2c3b3d649d6ad58216ab6f69391",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1a8de0d3b7004753ada6baf968b5df76": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d77e92cae2a54862a17b07104f67caef": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1a8de0d3b7004753ada6baf968b5df76",
+        "location": [
+          "43.64585824187624",
+          "-79.46142721023546"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e373798d14b64d758a994a8c357c9134",
+        "title": "House Wren, 2021-07-18"
+      }
+    },
+    "1b2f79c3750c41258f11ed273cb4b92d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4710d27a391b4c8c9f3e59cdb935fd53": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ced713e5b10040c891b3a68239762feb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_1b2f79c3750c41258f11ed273cb4b92d",
+        "style": "IPY_MODEL_4710d27a391b4c8c9f3e59cdb935fd53",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "701dd0b6e37e4024bbd41eec8d4c849b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bafcf3fccce144ed926fa8e77c2bfe46": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_701dd0b6e37e4024bbd41eec8d4c849b",
+        "location": [
+          "43.6475237976363",
+          "-79.46184077237974"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ced713e5b10040c891b3a68239762feb",
+        "title": "House Wren, 2021-07-15"
+      }
+    },
+    "37a64ee75d7e4c31b04498a1a22afdc5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9c5b0bcd1eb848a28925b9177366d955": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9d7e4dc0931d42aca9853132a52872ac": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_37a64ee75d7e4c31b04498a1a22afdc5",
+        "style": "IPY_MODEL_9c5b0bcd1eb848a28925b9177366d955",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "32b1565860d34019b51895062d4b5d40": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "11cca4098d974466bd6df36f3b3eb56d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_32b1565860d34019b51895062d4b5d40",
+        "location": [
+          "43.648626992395876",
+          "-79.46225391245311"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9d7e4dc0931d42aca9853132a52872ac",
+        "title": "House Wren, 2021-08-09"
+      }
+    },
+    "526f01d3f3a7445aa261d886ecfc1620": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1a2087edceea4acbb2eae06c54d39a9b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "24c2da12b5e54241b64a876d8cb3cd03": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_526f01d3f3a7445aa261d886ecfc1620",
+        "style": "IPY_MODEL_1a2087edceea4acbb2eae06c54d39a9b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0504ef0fdbaf483fa84a5370fc456445": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6ac7e07d2c90467482ae801c0bfe9dd7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0504ef0fdbaf483fa84a5370fc456445",
+        "location": [
+          "43.64566045773034",
+          "-79.46019902476917"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_24c2da12b5e54241b64a876d8cb3cd03",
+        "title": "House Wren, 2021-09-07"
+      }
+    },
+    "5c208aff8aee4cc7b4beaf1d805377a2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c232f5ba08ad4f9faa6ed06c0424f360": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b37d33183d6344148e8037f1dbc719bc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_5c208aff8aee4cc7b4beaf1d805377a2",
+        "style": "IPY_MODEL_c232f5ba08ad4f9faa6ed06c0424f360",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "87bdf66462594827a286add9e397e2da": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "90c4772e77eb437c9631081cf1cd7bda": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_87bdf66462594827a286add9e397e2da",
+        "location": [
+          "43.64737852890612",
+          "-79.46541841694157"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b37d33183d6344148e8037f1dbc719bc",
+        "title": "House Wren, 2021-09-14"
+      }
+    },
+    "b01aa8e7e2bd41768477a5be1b986ff3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "63497b89a46f49b0879fa051dd8969da": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5e032a74b5d24b29b80109e5ec7463a8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_b01aa8e7e2bd41768477a5be1b986ff3",
+        "style": "IPY_MODEL_63497b89a46f49b0879fa051dd8969da",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "97456c80bf5741c1a2ebb9cdc6953966": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "74b9e95690c041ee831afb5f9111ee06": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_97456c80bf5741c1a2ebb9cdc6953966",
+        "location": [
+          "43.649059693519405",
+          "-79.46829278217905"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5e032a74b5d24b29b80109e5ec7463a8",
+        "title": "House Wren, 2021-08-23"
+      }
+    },
+    "ff9751b404ea449492708c8a82a2220f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "819ed8c929d0412dab187bc138ec6b3a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0fa69f4dba0a4fcabb0d2188af6ab498": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_ff9751b404ea449492708c8a82a2220f",
+        "style": "IPY_MODEL_819ed8c929d0412dab187bc138ec6b3a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e29b07ca4b52440aa691edf83e6fe2dd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2a69759befaf4eb1ab78a63c29d22946": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e29b07ca4b52440aa691edf83e6fe2dd",
+        "location": [
+          "43.645578483165835",
+          "-79.46027782842829"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0fa69f4dba0a4fcabb0d2188af6ab498",
+        "title": "House Wren, 2021-08-28"
+      }
+    },
+    "08243cb4623e4607a619f6dc76182ac5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e00b8e6c0242459faee78a3d33a5f7c1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ddbb06c818e749e1b3db27fad30f8493": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_08243cb4623e4607a619f6dc76182ac5",
+        "style": "IPY_MODEL_e00b8e6c0242459faee78a3d33a5f7c1",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "0164fc1e16d144b893971f70fa32f5c6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5546241620024326b5db5ac4e145b4a8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0164fc1e16d144b893971f70fa32f5c6",
+        "location": [
+          "43.64751145714482",
+          "-79.46324269304219"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ddbb06c818e749e1b3db27fad30f8493",
+        "title": "House Wren, 2021-07-30"
+      }
+    },
+    "d9968904272d453a801573d37aae162c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0b321734a495416d90fc83f9f1fdc929": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "de68a4b71b104e628174a4c567f01814": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_d9968904272d453a801573d37aae162c",
+        "style": "IPY_MODEL_0b321734a495416d90fc83f9f1fdc929",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0ebf7f1b9c3d476d95e28128a8dc41e8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "70337e5d3e4440fc9f84eb102e6191b7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ebf7f1b9c3d476d95e28128a8dc41e8",
+        "location": [
+          "43.652765549454905",
+          "-79.46237890076435"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_de68a4b71b104e628174a4c567f01814",
+        "title": "House Wren, 2021-08-31"
+      }
+    },
+    "6e630481b3114469a4c02a6a59540e28": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6610af684bc94559a00a229fb3cd795a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d2a85178765f44c68238b3a74911e732": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_6e630481b3114469a4c02a6a59540e28",
+        "style": "IPY_MODEL_6610af684bc94559a00a229fb3cd795a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "017d25bfe2f84b5a8a2969c6545ec5e8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d3d770e6df504cb4acdb99dd8397b9d5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_017d25bfe2f84b5a8a2969c6545ec5e8",
+        "location": [
+          "43.645964233067126",
+          "-79.46039392160125"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d2a85178765f44c68238b3a74911e732",
+        "title": "House Wren, 2021-08-17"
+      }
+    },
+    "fb9eb01f110c46e4a32dfa3eb3694fac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "38fb40dc5f52452d89cd2d370f9ba1a3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0e6190d5d0ac414d9ad3950c7b835d82": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_fb9eb01f110c46e4a32dfa3eb3694fac",
+        "style": "IPY_MODEL_38fb40dc5f52452d89cd2d370f9ba1a3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "18010a24917c4bfbb5096134b1f03223": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "41c940dcf0884900ac07527582274461": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_18010a24917c4bfbb5096134b1f03223",
+        "location": [
+          "43.64756048407031",
+          "-79.46698726227412"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0e6190d5d0ac414d9ad3950c7b835d82",
+        "title": "House Wren, 2021-08-24"
+      }
+    },
+    "9ee60618241e4121ad6e584bc84bd50e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d96153ec670e40d4b454ea5eb54fcd3e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad3cb12fe61b4ca78abc208875ab66ec": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_9ee60618241e4121ad6e584bc84bd50e",
+        "style": "IPY_MODEL_d96153ec670e40d4b454ea5eb54fcd3e",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "35490a045e474924ac79d04a04dd88be": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5e7fb1dce16247f99268d624be8d2864": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_35490a045e474924ac79d04a04dd88be",
+        "location": [
+          "43.64761863606528",
+          "-79.46187951502925"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad3cb12fe61b4ca78abc208875ab66ec",
+        "title": "House Wren, 2021-08-04"
+      }
+    },
+    "3055db7677f347a7a64b267fafa2560a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "98159411af754616adc1b940d281e27b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7bbfdd3140944b2d9333167209670f99": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_3055db7677f347a7a64b267fafa2560a",
+        "style": "IPY_MODEL_98159411af754616adc1b940d281e27b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8b71862191ba431fa9847b39accd5436": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0fe64915d2a441afb7794597c11b1d0a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8b71862191ba431fa9847b39accd5436",
+        "location": [
+          "43.64595977738077",
+          "-79.46057299732543"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7bbfdd3140944b2d9333167209670f99",
+        "title": "House Wren, 2021-08-17"
+      }
+    },
+    "43e64b1f91424934b40d39dcc2c700b1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "027f0d3126d34733805c3e853e36bed5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6190a9945cfb437cb81b5cbbd900a00d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_43e64b1f91424934b40d39dcc2c700b1",
+        "style": "IPY_MODEL_027f0d3126d34733805c3e853e36bed5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "211027eac2ad4a94b5cd6880e4a7d2d7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "06246e7121c7492ea34d742323c4b1af": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_211027eac2ad4a94b5cd6880e4a7d2d7",
+        "location": [
+          "43.647082851860226",
+          "-79.46719145643416"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6190a9945cfb437cb81b5cbbd900a00d",
+        "title": "House Wren, 2021-08-04"
+      }
+    },
+    "483c1f0fd3314aaabb2e1953f9bf7662": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2eb61b2d5ad748b6b2a2ecd4b7c5d815": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6b345b1d749d413c97626545796cd7eb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_483c1f0fd3314aaabb2e1953f9bf7662",
+        "style": "IPY_MODEL_2eb61b2d5ad748b6b2a2ecd4b7c5d815",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e90efe5705d34103b27207acce632599": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "287981f6a6a44672ad111d5c6798ff7f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e90efe5705d34103b27207acce632599",
+        "location": [
+          "43.64620728999451",
+          "-79.46103839017643"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6b345b1d749d413c97626545796cd7eb",
+        "title": "House Wren, 2021-08-30"
+      }
+    },
+    "fca8f34d8f93414688f4593919006a64": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e656c55b1be247e1983f8285efec5533": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cb91b492ef364bf8a5769401c167bc38": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_fca8f34d8f93414688f4593919006a64",
+        "style": "IPY_MODEL_e656c55b1be247e1983f8285efec5533",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "72814dae2c4f467db7306bfaff0c6a4a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6c7386bd6c3f40e0abaf69d100f647e9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_72814dae2c4f467db7306bfaff0c6a4a",
+        "location": [
+          "43.647728633316504",
+          "-79.46696711590788"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cb91b492ef364bf8a5769401c167bc38",
+        "title": "House Wren, 2021-08-24"
+      }
+    },
+    "914e2a70a47341eeb0f427bb8e9bf485": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6afc029fe6b247a2a5e528db0335d964": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "53e934612e794ad1b7660f8d824a11b3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_914e2a70a47341eeb0f427bb8e9bf485",
+        "style": "IPY_MODEL_6afc029fe6b247a2a5e528db0335d964",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "20c4020b2d45440487093d11d8cc389a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4f18d94e5a534c3f9d5200f8f00a405c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_20c4020b2d45440487093d11d8cc389a",
+        "location": [
+          "43.647434608339445",
+          "-79.46270516537518"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_53e934612e794ad1b7660f8d824a11b3",
+        "title": "House Wren, 2021-09-04"
+      }
+    },
+    "afb16e867c3b4510b25c61fb25eff358": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c93e479f4e71430dba6438dc6b31bcb5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5adc67a146e44a2197bb60743f9a3154": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_afb16e867c3b4510b25c61fb25eff358",
+        "style": "IPY_MODEL_c93e479f4e71430dba6438dc6b31bcb5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "44e9be0ff74a4d64bf8ab9fa65b12b8c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b9b1815172a64b088fd0283563bec5d1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_44e9be0ff74a4d64bf8ab9fa65b12b8c",
+        "location": [
+          "43.648626992395876",
+          "-79.46225391245311"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5adc67a146e44a2197bb60743f9a3154",
+        "title": "House Wren, 2021-08-09"
+      }
+    },
+    "f974324bd69845b488d5b7a48c6551dd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1200143d7712482a92ef0ea8fdf490d2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d5e7f8757d754e85b72fd2e2ef25fd42": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_f974324bd69845b488d5b7a48c6551dd",
+        "style": "IPY_MODEL_1200143d7712482a92ef0ea8fdf490d2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "354efe25c8e24426b6e05784c3dc4500": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "66e0952414c548f4bf268d225027b868": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_354efe25c8e24426b6e05784c3dc4500",
+        "location": [
+          "43.645841335112664",
+          "-79.4604329929209"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d5e7f8757d754e85b72fd2e2ef25fd42",
+        "title": "House Wren, 2021-08-29"
+      }
+    },
+    "985d464a8fa04c7dbb1442d7a34bc0fd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a836ae45938b45e8ad26a5ae65f07ff5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "773ce9766f9f4bceb0a267c264aa477b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_985d464a8fa04c7dbb1442d7a34bc0fd",
+        "style": "IPY_MODEL_a836ae45938b45e8ad26a5ae65f07ff5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dc9d35512cb449e19b26d77026db197c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "299bc1611b88403490591bd2c5faefca": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dc9d35512cb449e19b26d77026db197c",
+        "location": [
+          "43.64593826565649",
+          "-79.46051876591767"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_773ce9766f9f4bceb0a267c264aa477b",
+        "title": "House Wren, 2021-08-17"
+      }
+    },
+    "1e439535221749189e010aaca0410734": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "85e22d4a416647b5bfed3fbadb0dc236": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d81008c79a874255b59d69964cf9c516": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_1e439535221749189e010aaca0410734",
+        "style": "IPY_MODEL_85e22d4a416647b5bfed3fbadb0dc236",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "275a60d1dae0458aa58e45df47e81801": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f4703916528441ed90031bbef6ce550e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_275a60d1dae0458aa58e45df47e81801",
+        "location": [
+          "43.645657335395015",
+          "-79.46139644099793"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d81008c79a874255b59d69964cf9c516",
+        "title": "House Wren, 2021-08-21"
+      }
+    },
+    "092bbfa20d67406586ee32a1772ec7cb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "37ea860007af4e2ba35e1addd3bc22ea": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6bf3adb3ae224e8d8260368d7d8db757": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_092bbfa20d67406586ee32a1772ec7cb",
+        "style": "IPY_MODEL_37ea860007af4e2ba35e1addd3bc22ea",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "808d6e4abaca4d6686180d3e1d2e7a01": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fa23406731214159b22c16f5c91605ec": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_808d6e4abaca4d6686180d3e1d2e7a01",
+        "location": [
+          "43.64740542619566",
+          "-79.4628597666185"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6bf3adb3ae224e8d8260368d7d8db757",
+        "title": "House Wren, 2021-07-27"
+      }
+    },
+    "93698916a6884f3a82596f6732353007": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c03e9bc262a84a5f8b4b9117a4a82677": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3d0508ff9cdf4358a3c1e5a5541b34c6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_93698916a6884f3a82596f6732353007",
+        "style": "IPY_MODEL_c03e9bc262a84a5f8b4b9117a4a82677",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eb86dc21751345dcbb8708eb28f25c88": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a8089fb4d3df4fa094a93e7e85a795cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eb86dc21751345dcbb8708eb28f25c88",
+        "location": [
+          "43.64574389343048",
+          "-79.46098029327653"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3d0508ff9cdf4358a3c1e5a5541b34c6",
+        "title": "House Wren, 2021-08-19"
+      }
+    },
+    "0b5feb69c82746cab0aab4026893f982": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a3689932ae0949ff9b42cad1442a857b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4a555c4b8d4b47848fddf21867aa7eb7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_0b5feb69c82746cab0aab4026893f982",
+        "style": "IPY_MODEL_a3689932ae0949ff9b42cad1442a857b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0d63ba868a894a2a855982c4538a7ae6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1fe8287077df469eb7f020f68ef79bec": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0d63ba868a894a2a855982c4538a7ae6",
+        "location": [
+          "43.64726420612625",
+          "-79.46255949686737"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4a555c4b8d4b47848fddf21867aa7eb7",
+        "title": "House Wren, 2021-08-04"
+      }
+    },
+    "83ab6120192e4668b4009254cf01bc59": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e8e2996dc8c2445b90bbdca019088934": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "12321082a26a416786eb28cb9412ca56": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_83ab6120192e4668b4009254cf01bc59",
+        "style": "IPY_MODEL_e8e2996dc8c2445b90bbdca019088934",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3037ac3549be4399a0db39c850a44b68": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fa1602c8270e47c38978299f8e7290c3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3037ac3549be4399a0db39c850a44b68",
+        "location": [
+          "43.64605068926493",
+          "-79.46196672864296"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_12321082a26a416786eb28cb9412ca56",
+        "title": "House Wren, 2021-07-27"
+      }
+    },
+    "1b07c29fab384cba98c97a5697517a75": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f85891aea79a454db3e5daf009cde112": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9005714f719b470e8c3808f2cadf162c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_1b07c29fab384cba98c97a5697517a75",
+        "style": "IPY_MODEL_f85891aea79a454db3e5daf009cde112",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "691e9ae8cf5a43fc9e421fa137cdb7cd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bcde12c7c6104bcbbcf678c960d51de6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_691e9ae8cf5a43fc9e421fa137cdb7cd",
+        "location": [
+          "43.64805799271016",
+          "-79.46751197343785"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9005714f719b470e8c3808f2cadf162c",
+        "title": "House Wren, 2021-08-16"
+      }
+    },
+    "5b308929338248c5a3d0d5ad3c458c4f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4f6f8afd857d4cfa9aec6f4ff0d23dc5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "31488495dec148658939f102a39bf808": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_5b308929338248c5a3d0d5ad3c458c4f",
+        "style": "IPY_MODEL_4f6f8afd857d4cfa9aec6f4ff0d23dc5",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "47507317252a461d97952897307d6c9c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f728311b86fb4dab8c366c3dbdd446a4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_47507317252a461d97952897307d6c9c",
+        "location": [
+          "43.64767574663748",
+          "-79.46185432946358"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_31488495dec148658939f102a39bf808",
+        "title": "House Wren, 2021-07-30"
+      }
+    },
+    "a2e17a7bb937463db8d8818d67d23eec": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "acad2d7d72b54346a4344734f67e1614": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9d12574a8ca04f3a8e5b709bd080ec4b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_a2e17a7bb937463db8d8818d67d23eec",
+        "style": "IPY_MODEL_acad2d7d72b54346a4344734f67e1614",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5278789cd63f42edbbd0b83bac7b784e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "24e79432d12e423a94b8dec6f2642a6c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5278789cd63f42edbbd0b83bac7b784e",
+        "location": [
+          "43.65341886255858",
+          "-79.46215454602957"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9d12574a8ca04f3a8e5b709bd080ec4b",
+        "title": "House Wren, 2021-08-23"
+      }
+    },
+    "fb679eb4bbb848059bd6f82bd3e65281": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d4389cab594548b888f8cd7d98495bad": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "17973dc9513c4873852bb03920b203ab": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_fb679eb4bbb848059bd6f82bd3e65281",
+        "style": "IPY_MODEL_d4389cab594548b888f8cd7d98495bad",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7805cd2783434616bbb09d5e32a0aea1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "76aab4c18e3f4cb887921a0e77771dd1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7805cd2783434616bbb09d5e32a0aea1",
+        "location": [
+          "43.6532121455502",
+          "-79.46188715385614"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_17973dc9513c4873852bb03920b203ab",
+        "title": "House Wren, 2021-08-23"
+      }
+    },
+    "fe26bc0cae39433a82d494dab41748ed": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "74e56d9bd35848f9b17c7c35041637f7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a99a95142a144db0be53b6bda0a7d910": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_fe26bc0cae39433a82d494dab41748ed",
+        "style": "IPY_MODEL_74e56d9bd35848f9b17c7c35041637f7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5a536645e0cd44f4b8fb42e2b746300b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "58cc2d23768641d29937a206d114c4cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5a536645e0cd44f4b8fb42e2b746300b",
+        "location": [
+          "43.647577331897914",
+          "-79.46191115770317"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a99a95142a144db0be53b6bda0a7d910",
+        "title": "House Wren, 2021-07-27"
+      }
+    },
+    "73bbbfe2541a4cf28b4607ae753cc6ff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "930fbafae4054b1a9ac7c6b4353e88d4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "25c5b35703344a54be98436a9f0a502e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_73bbbfe2541a4cf28b4607ae753cc6ff",
+        "style": "IPY_MODEL_930fbafae4054b1a9ac7c6b4353e88d4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "03198735606c49b8bcd5b7f07845de2d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5fe06d0974104011b44cf1b00084ea91": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_03198735606c49b8bcd5b7f07845de2d",
+        "location": [
+          "43.64760770763604",
+          "-79.46723318604164"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_25c5b35703344a54be98436a9f0a502e",
+        "title": "House Wren, 2021-08-24"
+      }
+    },
+    "82380b2881c745808f973d2efa7e47dd": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_84fbd8b0254449d59d0c9c4ea00a15ad",
+          "IPY_MODEL_d03456f2f17c4f9c9276d4ee97910786",
+          "IPY_MODEL_f33f5b465820499e9a05bf2cfec03cb1",
+          "IPY_MODEL_65334c9c24934e28955b8f8a7ca966fb",
+          "IPY_MODEL_d83651b1b0664dd090b573b3e6f55c32",
+          "IPY_MODEL_206e1d98c46d4d918f62113e74834d2a",
+          "IPY_MODEL_9548d42bdfb640fb83368e6e56851803",
+          "IPY_MODEL_ad0d794aa3c74ab685b7de93fb128909",
+          "IPY_MODEL_834baeaba0b2478989fa43226bc7a780",
+          "IPY_MODEL_4930b9547d8c46078372954be41da8c3",
+          "IPY_MODEL_d644d53b8a454b9b8a8def980381a43c",
+          "IPY_MODEL_be147ffa92164fd7a90d591a411ccf09",
+          "IPY_MODEL_20f7c32c8a874a7ea9c5731d256e47a8",
+          "IPY_MODEL_3dad16255af74611954e06c8fa43f3f0",
+          "IPY_MODEL_9f4be700e5c4472482a45ab7e71975d1",
+          "IPY_MODEL_e392536b01374b288f81f34cec69a357",
+          "IPY_MODEL_a44ced5255b947b1b207ba98b89be535",
+          "IPY_MODEL_6c8ff2f470114a38ad6b2d1ddb957b33",
+          "IPY_MODEL_046a1be712694742a9138b0567501ae3",
+          "IPY_MODEL_964b4b3567bc432c9a94fca8348da235",
+          "IPY_MODEL_1525387cd24e4796a455fc23469254f8",
+          "IPY_MODEL_788415b1d5d14aa199291f4892a74db3",
+          "IPY_MODEL_9136a8715d384b3f9ec56e714de67318",
+          "IPY_MODEL_8c8323c7585e4ecd998a003cb89015f6",
+          "IPY_MODEL_272a41efc5894d2ea75bae6e72a0b1d9",
+          "IPY_MODEL_b3bd208ee2094c89be47558629930a9b",
+          "IPY_MODEL_bdc4dbe4595841e58abb92b2bb53053c",
+          "IPY_MODEL_5234eb9df047469093783a95eb9253ab",
+          "IPY_MODEL_7c684b34ddd04004bc4c0632ab38e547",
+          "IPY_MODEL_314bdaf1e8ab47e7a42b1855d73cd6fa",
+          "IPY_MODEL_479a96372d0d409da37a5c821a9b6937",
+          "IPY_MODEL_5a90d7ce1cff4e2bb0190442b6488896",
+          "IPY_MODEL_5b7bf514f04340c487d2bc3747a36e56",
+          "IPY_MODEL_9ddfc60eef7a44fca8d5fe56dd168c74",
+          "IPY_MODEL_cbe637261f2240598ba83abc64fb1aee",
+          "IPY_MODEL_db4368103e28487782359d550722c873",
+          "IPY_MODEL_bb06ff886b3049b29dd865d3021db901",
+          "IPY_MODEL_8f0faac6d2af4cd08612f4e619bb0657",
+          "IPY_MODEL_6227b47c52b6472691247bff74f60b3e",
+          "IPY_MODEL_d77e92cae2a54862a17b07104f67caef",
+          "IPY_MODEL_bafcf3fccce144ed926fa8e77c2bfe46",
+          "IPY_MODEL_11cca4098d974466bd6df36f3b3eb56d",
+          "IPY_MODEL_6ac7e07d2c90467482ae801c0bfe9dd7",
+          "IPY_MODEL_90c4772e77eb437c9631081cf1cd7bda",
+          "IPY_MODEL_74b9e95690c041ee831afb5f9111ee06",
+          "IPY_MODEL_2a69759befaf4eb1ab78a63c29d22946",
+          "IPY_MODEL_5546241620024326b5db5ac4e145b4a8",
+          "IPY_MODEL_70337e5d3e4440fc9f84eb102e6191b7",
+          "IPY_MODEL_d3d770e6df504cb4acdb99dd8397b9d5",
+          "IPY_MODEL_41c940dcf0884900ac07527582274461",
+          "IPY_MODEL_5e7fb1dce16247f99268d624be8d2864",
+          "IPY_MODEL_0fe64915d2a441afb7794597c11b1d0a",
+          "IPY_MODEL_06246e7121c7492ea34d742323c4b1af",
+          "IPY_MODEL_287981f6a6a44672ad111d5c6798ff7f",
+          "IPY_MODEL_6c7386bd6c3f40e0abaf69d100f647e9",
+          "IPY_MODEL_4f18d94e5a534c3f9d5200f8f00a405c",
+          "IPY_MODEL_b9b1815172a64b088fd0283563bec5d1",
+          "IPY_MODEL_66e0952414c548f4bf268d225027b868",
+          "IPY_MODEL_299bc1611b88403490591bd2c5faefca",
+          "IPY_MODEL_f4703916528441ed90031bbef6ce550e",
+          "IPY_MODEL_fa23406731214159b22c16f5c91605ec",
+          "IPY_MODEL_a8089fb4d3df4fa094a93e7e85a795cc",
+          "IPY_MODEL_1fe8287077df469eb7f020f68ef79bec",
+          "IPY_MODEL_fa1602c8270e47c38978299f8e7290c3",
+          "IPY_MODEL_bcde12c7c6104bcbbcf678c960d51de6",
+          "IPY_MODEL_f728311b86fb4dab8c366c3dbdd446a4",
+          "IPY_MODEL_24e79432d12e423a94b8dec6f2642a6c",
+          "IPY_MODEL_76aab4c18e3f4cb887921a0e77771dd1",
+          "IPY_MODEL_58cc2d23768641d29937a206d114c4cc",
+          "IPY_MODEL_5fe06d0974104011b44cf1b00084ea91"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "d9d7769747374f2f86b3cb7d8d1e1a8c"}
+</script>
+
+</body>
+</html>

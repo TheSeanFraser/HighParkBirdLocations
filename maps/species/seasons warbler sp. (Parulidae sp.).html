@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>warbler sp. (Parulidae sp.) Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "cd4d7f6ec43a45ea9e2bfe344dc73236": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "b3699515b353453d86dcbe74f36c07af": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "5001513909b0491dade3e6ac2038b200": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "7c9864356f8347a2bd66e721e850cea2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "77c9fa52d8bf471ca76f06b791fc1629": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "0e75f51189e84e218071247c3e8cf429": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_05abd50d52454c18885d2f3c49c58bae",
+          "IPY_MODEL_7e9dc9a901324548aa1ecea9e051d39b",
+          "IPY_MODEL_1ba2186c4c004808a9a535b59d31ceb0",
+          "IPY_MODEL_9febca9c669f4805a831ff2bb32ceea4"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_cd4d7f6ec43a45ea9e2bfe344dc73236",
+        "dragging_style": "IPY_MODEL_b3699515b353453d86dcbe74f36c07af",
+        "layers": [
+          "IPY_MODEL_5001513909b0491dade3e6ac2038b200",
+          "IPY_MODEL_fb96ccb72ce84eb29dc176d8cbe0f3ef",
+          "IPY_MODEL_17aa4f6f18634b7d897b96dd3c6f0341",
+          "IPY_MODEL_d272023dfc0e49cb815dff96ee760e09",
+          "IPY_MODEL_ac25c312c2274242b1855648e180dab9",
+          "IPY_MODEL_79a65a486c72437e8d3b486702174e63"
+        ],
+        "layout": "IPY_MODEL_7c9864356f8347a2bd66e721e850cea2",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_77c9fa52d8bf471ca76f06b791fc1629",
+        "zoom": 14.0
+      }
+    },
+    "05abd50d52454c18885d2f3c49c58bae": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "7e9dc9a901324548aa1ecea9e051d39b": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "1ba2186c4c004808a9a535b59d31ceb0": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "9febca9c669f4805a831ff2bb32ceea4": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "fb96ccb72ce84eb29dc176d8cbe0f3ef": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "17aa4f6f18634b7d897b96dd3c6f0341": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "d272023dfc0e49cb815dff96ee760e09": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "ac25c312c2274242b1855648e180dab9": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.6494775444917",
+            "-79.46068715080689"
+          ],
+          [
+            "43.649645693737895",
+            "-79.46066700444065"
+          ],
+          [
+            "43.64960267028935",
+            "-79.46055854162515"
+          ],
+          [
+            "43.64940435351534",
+            "-79.46056607135579"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "e9076d4c876b460a97a3b4370af0c16f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "01c494aa4d0445f1ae340ff065e11ae9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ea64cfc5d61442d6a55726e2b44bc28e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_e9076d4c876b460a97a3b4370af0c16f",
+        "style": "IPY_MODEL_01c494aa4d0445f1ae340ff065e11ae9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0bf6c19b1ae14776a8d656227b235d9a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b81e70d8a05a418da866f6451e885b5e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0bf6c19b1ae14776a8d656227b235d9a",
+        "location": [
+          "43.6494775444917",
+          "-79.46068715080689"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ea64cfc5d61442d6a55726e2b44bc28e",
+        "title": "warbler sp. (Parulidae sp.), 2021-08-29"
+      }
+    },
+    "b6af683bdac94388a0ffcfbbbec916c5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "df40579f040b41cc8bd3198a9c6bda4d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5cf2dd88f0354e87877fed7a23466c84": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_b6af683bdac94388a0ffcfbbbec916c5",
+        "style": "IPY_MODEL_df40579f040b41cc8bd3198a9c6bda4d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d36aef6604484be0a01fc576f78dc9ec": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "16668815867e41c98175f1eaa840173e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d36aef6604484be0a01fc576f78dc9ec",
+        "location": [
+          "43.649645693737895",
+          "-79.46066700444065"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5cf2dd88f0354e87877fed7a23466c84",
+        "title": "warbler sp. (Parulidae sp.), 2021-08-29"
+      }
+    },
+    "0b78c840262448148de3d920f3dff45a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e412cc0f54ef4315853b7253d550b72f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f5628747ab20408f9ad79f545f9710c3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_0b78c840262448148de3d920f3dff45a",
+        "style": "IPY_MODEL_e412cc0f54ef4315853b7253d550b72f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "afe3ff9a78e04d659271ef6f6cd07c36": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "23bebb6352684efbaa70d38730f2b94c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_afe3ff9a78e04d659271ef6f6cd07c36",
+        "location": [
+          "43.64960267028935",
+          "-79.46055854162515"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f5628747ab20408f9ad79f545f9710c3",
+        "title": "warbler sp. (Parulidae sp.), 2021-08-29"
+      }
+    },
+    "f0e55c4ba16f4b40afae88eda6c187a4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19ccb5cdb05c46b8ae1cac14c50c1ac2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "01b5c1083855475f9e5cdf9c0db6c04e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_f0e55c4ba16f4b40afae88eda6c187a4",
+        "style": "IPY_MODEL_19ccb5cdb05c46b8ae1cac14c50c1ac2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "871aa081d7ca450a8b171b8ce4e4bff4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "db928511652d4a8aacad3270936a480e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_871aa081d7ca450a8b171b8ce4e4bff4",
+        "location": [
+          "43.64940435351534",
+          "-79.46056607135579"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_01b5c1083855475f9e5cdf9c0db6c04e",
+        "title": "warbler sp. (Parulidae sp.), 2021-08-29"
+      }
+    },
+    "79a65a486c72437e8d3b486702174e63": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_b81e70d8a05a418da866f6451e885b5e",
+          "IPY_MODEL_16668815867e41c98175f1eaa840173e",
+          "IPY_MODEL_23bebb6352684efbaa70d38730f2b94c",
+          "IPY_MODEL_db928511652d4a8aacad3270936a480e"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0e75f51189e84e218071247c3e8cf429"}
+</script>
+
+</body>
+</html>

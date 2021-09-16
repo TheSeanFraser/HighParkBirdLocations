@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Northern Waterthrush Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "6de0f667d235405d99053b8bf7fd4555": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "034ed19551284c9c8a5785a22f52307f": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "3fc20c4f5433440c8ba7daa638aeb8d6": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "15d2e7c2d11c4b30b6d680dc99a4c7dc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "49cbe899dd8449368f0af85fa2fb2092": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "3568349a355f46489c6776dad70cf035": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_ac04baef72344771b0dddcb8b9f6b4ac",
+          "IPY_MODEL_6b31cad4ba504e4da04a38d860767ba4",
+          "IPY_MODEL_93b181c5dd494556871dc7637da50061",
+          "IPY_MODEL_2298723f13914d2aaebf0816c4eecf3a"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_6de0f667d235405d99053b8bf7fd4555",
+        "dragging_style": "IPY_MODEL_034ed19551284c9c8a5785a22f52307f",
+        "layers": [
+          "IPY_MODEL_3fc20c4f5433440c8ba7daa638aeb8d6",
+          "IPY_MODEL_b8d475336cbe4035a9d3ce810b1d8bcb",
+          "IPY_MODEL_19a16f43a1984ee08138574f90ea632e",
+          "IPY_MODEL_87ff8247e7db42b48c9d976af203084d",
+          "IPY_MODEL_9cd37d71173640c0aecae32868ff2099",
+          "IPY_MODEL_2819c9e90bfc427aa8a0167e4239ff1b"
+        ],
+        "layout": "IPY_MODEL_15d2e7c2d11c4b30b6d680dc99a4c7dc",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_49cbe899dd8449368f0af85fa2fb2092",
+        "zoom": 14.0
+      }
+    },
+    "ac04baef72344771b0dddcb8b9f6b4ac": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "6b31cad4ba504e4da04a38d860767ba4": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "93b181c5dd494556871dc7637da50061": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "2298723f13914d2aaebf0816c4eecf3a": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "b8d475336cbe4035a9d3ce810b1d8bcb": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "19a16f43a1984ee08138574f90ea632e": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "87ff8247e7db42b48c9d976af203084d": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64114392885575",
+            "-79.45566389077024"
+          ],
+          [
+            "43.653084870606",
+            "-79.46032829583528"
+          ],
+          [
+            "43.65297572693466",
+            "-79.46067183674215"
+          ],
+          [
+            "43.641560924066724",
+            "-79.4571274777596"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "9cd37d71173640c0aecae32868ff2099": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64260132042274",
+            "-79.45803755670238"
+          ],
+          [
+            "43.643344369402335",
+            "-79.458800661903"
+          ],
+          [
+            "43.65242632869125",
+            "-79.46069904916382"
+          ],
+          [
+            "43.643199959723596",
+            "-79.4587855018149"
+          ],
+          [
+            "43.648889627504346",
+            "-79.47068695361676"
+          ],
+          [
+            "43.641920323203614",
+            "-79.45784322026329"
+          ],
+          [
+            "43.63993620546622",
+            "-79.4564253720507"
+          ],
+          [
+            "43.648650387340375",
+            "-79.47065475100791"
+          ],
+          [
+            "43.652527587136845",
+            "-79.46076401477453"
+          ],
+          [
+            "43.653492948027086",
+            "-79.46116774711398"
+          ],
+          [
+            "43.652398389006606",
+            "-79.46059689466614"
+          ],
+          [
+            "43.65254489874393",
+            "-79.46068078523024"
+          ],
+          [
+            "43.652564310409616",
+            "-79.46066628616198"
+          ],
+          [
+            "43.64323012725142",
+            "-79.4587981184505"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "98f531dd6e054c959c8852b36ba7c464": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e544f3efd0fe4b63b26f6b673c20b695": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a5e3cddcd6ac4eb996ef115676a4f886": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_98f531dd6e054c959c8852b36ba7c464",
+        "style": "IPY_MODEL_e544f3efd0fe4b63b26f6b673c20b695",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bcfb3e32dbdd4f56b36b0af9937cef6f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f346b28cd51b45a1a0f8dbc815206b7d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bcfb3e32dbdd4f56b36b0af9937cef6f",
+        "location": [
+          "43.64114392885575",
+          "-79.45566389077024"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a5e3cddcd6ac4eb996ef115676a4f886",
+        "title": "Northern Waterthrush, 2021-08-14"
+      }
+    },
+    "e8b199de6ae34708b3fb52221c47c56b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ed302989c8194405a4fcb661401e145a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eda155a189a54dfaad5838a941af45db": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_e8b199de6ae34708b3fb52221c47c56b",
+        "style": "IPY_MODEL_ed302989c8194405a4fcb661401e145a",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "e5eec9af687241f9b8f7d7570d5def85": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ec905f19d6d64078b2a47b50315f22bc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e5eec9af687241f9b8f7d7570d5def85",
+        "location": [
+          "43.653084870606",
+          "-79.46032829583528"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eda155a189a54dfaad5838a941af45db",
+        "title": "Northern Waterthrush, 2021-08-04"
+      }
+    },
+    "aa778bbdab1b4b1daed8a2acf8beee35": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3a9a968e4f31466eb9a9bd0e52292fb9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7088fc7aa6ea477cb28f2d25bcb25fef": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_aa778bbdab1b4b1daed8a2acf8beee35",
+        "style": "IPY_MODEL_3a9a968e4f31466eb9a9bd0e52292fb9",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "807cc3fc1e8a451bb31d7fb8bda565f1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c7dc4bdd092a470488ec7c0e7684755d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_807cc3fc1e8a451bb31d7fb8bda565f1",
+        "location": [
+          "43.64260132042274",
+          "-79.45803755670238"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7088fc7aa6ea477cb28f2d25bcb25fef",
+        "title": "Northern Waterthrush, 2021-08-28"
+      }
+    },
+    "17c1453a80284cfda0b3e33b8b7f6e44": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ecc3fa24592c4f98835233139779ab4e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a4b8ae1f6b9f43d9a7b2d9685be03838": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_17c1453a80284cfda0b3e33b8b7f6e44",
+        "style": "IPY_MODEL_ecc3fa24592c4f98835233139779ab4e",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "726c97cf316d4ae0a742b19d88f13bc1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7038669d65d0459d8c84c1c769517244": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_726c97cf316d4ae0a742b19d88f13bc1",
+        "location": [
+          "43.643344369402335",
+          "-79.458800661903"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a4b8ae1f6b9f43d9a7b2d9685be03838",
+        "title": "Northern Waterthrush, 2021-08-23"
+      }
+    },
+    "017c84fe85f14b3b91876e227f07b23e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "17048751300f456893146ded4e809ea2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3810ac93f5cb47df896fe790618e3f97": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_017c84fe85f14b3b91876e227f07b23e",
+        "style": "IPY_MODEL_17048751300f456893146ded4e809ea2",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "d2bd6d8892814d719c5c316cbd6a6f93": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bc7a826f813b426daad4bffc1247ca78": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d2bd6d8892814d719c5c316cbd6a6f93",
+        "location": [
+          "43.65242632869125",
+          "-79.46069904916382"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3810ac93f5cb47df896fe790618e3f97",
+        "title": "Northern Waterthrush, 2021-08-31"
+      }
+    },
+    "4a3fd8d9d6874558b6aa93c8c7272c94": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "810c04bb1ea3456dab39afc43512755b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b7e3651f20b24621b3fa51cda1ef4837": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_4a3fd8d9d6874558b6aa93c8c7272c94",
+        "style": "IPY_MODEL_810c04bb1ea3456dab39afc43512755b",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "41cc2216ff8446b69fb3d1d4eb92d67d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be4d715bd931457b84516947ebc3619b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_41cc2216ff8446b69fb3d1d4eb92d67d",
+        "location": [
+          "43.643199959723596",
+          "-79.4587855018149"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b7e3651f20b24621b3fa51cda1ef4837",
+        "title": "Northern Waterthrush, 2021-08-30"
+      }
+    },
+    "9fe2abd2d9db4fab9471b8afafc15671": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cfc022e8f1a24244a6d40883529b73a6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f27d8f00c7834b66b718268bc760b3e1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_9fe2abd2d9db4fab9471b8afafc15671",
+        "style": "IPY_MODEL_cfc022e8f1a24244a6d40883529b73a6",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "b3952ac3bb8c4ef69a6f3b76bb0a8275": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2cd92ac0fd9e4d36b71163afc6ed9e65": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b3952ac3bb8c4ef69a6f3b76bb0a8275",
+        "location": [
+          "43.648889627504346",
+          "-79.47068695361676"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f27d8f00c7834b66b718268bc760b3e1",
+        "title": "Northern Waterthrush, 2021-09-04"
+      }
+    },
+    "9b505d535d4f47fb9f58e4e739ef2044": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8e93db942d2c4943a1e0c5a1b0dd1d02": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1bc542b7d60c46e28f2469b1a653c417": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_9b505d535d4f47fb9f58e4e739ef2044",
+        "style": "IPY_MODEL_8e93db942d2c4943a1e0c5a1b0dd1d02",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "60a3553173894639a4105d8dabe8e6ec": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1d94a3f855b54f8d865c5e6ce8ab60f2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_60a3553173894639a4105d8dabe8e6ec",
+        "location": [
+          "43.641920323203614",
+          "-79.45784322026329"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1bc542b7d60c46e28f2469b1a653c417",
+        "title": "Northern Waterthrush, 2021-08-24"
+      }
+    },
+    "89a3b9be325b45279f2ce214125c28df": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2ab6994d9a07469796fe31058d49dfde": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "89a1136e7913424d976bcd2f781edcf3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_89a3b9be325b45279f2ce214125c28df",
+        "style": "IPY_MODEL_2ab6994d9a07469796fe31058d49dfde",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "e850e2277d2243f3815af05aa8637111": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bef131e322674a20bdc732f342d46545": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e850e2277d2243f3815af05aa8637111",
+        "location": [
+          "43.63993620546622",
+          "-79.4564253720507"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_89a1136e7913424d976bcd2f781edcf3",
+        "title": "Northern Waterthrush, 2021-08-23"
+      }
+    },
+    "dcf16c6119fb42eb9d0ea2c31e534ccb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "21b1bc38c2854b1e82c4533b1753d877": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "463c14d03cdc412c93c07bf47b335698": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_dcf16c6119fb42eb9d0ea2c31e534ccb",
+        "style": "IPY_MODEL_21b1bc38c2854b1e82c4533b1753d877",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "aee38564ba7e4bd094d03f79589403d6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e77a3b54e7e7408abdc33469cf7d2138": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aee38564ba7e4bd094d03f79589403d6",
+        "location": [
+          "43.648650387340375",
+          "-79.47065475100791"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_463c14d03cdc412c93c07bf47b335698",
+        "title": "Northern Waterthrush, 2021-08-31"
+      }
+    },
+    "26dcfb5fde7b4718bb4c6511c5eb36ea": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e12f08fc29b04ae1b0b54d58b37f6f49": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c6909d8c57df466fb839d625fc530cbb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_26dcfb5fde7b4718bb4c6511c5eb36ea",
+        "style": "IPY_MODEL_e12f08fc29b04ae1b0b54d58b37f6f49",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "c96930183fb645cabf9b05354cb99ae3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9d44e18a93754f739b1a5f96297a70d6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c96930183fb645cabf9b05354cb99ae3",
+        "location": [
+          "43.652527587136845",
+          "-79.46076401477453"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c6909d8c57df466fb839d625fc530cbb",
+        "title": "Northern Waterthrush, 2021-09-07"
+      }
+    },
+    "a4d3028b41e94951bb6516b873b7794c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b8399ff94c714583af7ed61dd4fe05ad": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e90893fb01fa48a6858b78e9bd9984f1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_a4d3028b41e94951bb6516b873b7794c",
+        "style": "IPY_MODEL_b8399ff94c714583af7ed61dd4fe05ad",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "c1dfe8ac21a2447494aa86230620287d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c5dc415e0fef4f5a9170616a31055367": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c1dfe8ac21a2447494aa86230620287d",
+        "location": [
+          "43.653492948027086",
+          "-79.46116774711398"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e90893fb01fa48a6858b78e9bd9984f1",
+        "title": "Northern Waterthrush, 2021-09-04"
+      }
+    },
+    "2fd75380b8d44c5db7664024f18ad2c6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1ed317c0dd464a9fa08e125c285c310d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d24918b364d04581814f75fddbf578f9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_2fd75380b8d44c5db7664024f18ad2c6",
+        "style": "IPY_MODEL_1ed317c0dd464a9fa08e125c285c310d",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "f9781f2ab7234fa286338b6d2879a56c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cb5f348fa70a407cbda7c7d44781ac6e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f9781f2ab7234fa286338b6d2879a56c",
+        "location": [
+          "43.65297572693466",
+          "-79.46067183674215"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d24918b364d04581814f75fddbf578f9",
+        "title": "Northern Waterthrush, 2021-08-04"
+      }
+    },
+    "d820405a5ad94101a5cdf3c7319114d3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2cd73e2ff44547e9a87350c511fa14e8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6d67f06225864490bb0dbcd48dd69a3f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_d820405a5ad94101a5cdf3c7319114d3",
+        "style": "IPY_MODEL_2cd73e2ff44547e9a87350c511fa14e8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a510cd7ba8724a009df0077160d44a00": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cef28131c2804bcf85e9ffdf06418502": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a510cd7ba8724a009df0077160d44a00",
+        "location": [
+          "43.641560924066724",
+          "-79.4571274777596"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6d67f06225864490bb0dbcd48dd69a3f",
+        "title": "Northern Waterthrush, 2021-08-09"
+      }
+    },
+    "a5a3c12f05d84b52b3ddd31bc6b83126": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8743171965084ce4a6122fe15a26f99f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a4fadbadb9414218b8d7eca7391772c9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_a5a3c12f05d84b52b3ddd31bc6b83126",
+        "style": "IPY_MODEL_8743171965084ce4a6122fe15a26f99f",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "5d02bb3424b34da4bb9f843c46b9dd6f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f90fcaa5ac5e4509a2a8b35db5a10f6c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5d02bb3424b34da4bb9f843c46b9dd6f",
+        "location": [
+          "43.652398389006606",
+          "-79.46059689466614"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a4fadbadb9414218b8d7eca7391772c9",
+        "title": "Northern Waterthrush, 2021-08-24"
+      }
+    },
+    "4823671538ee40989248a84907e604bd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "41aab4ed97d04973a925c8ccf0d3420a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "dd4c44a5ec8a419a9625bdebd6ceeba9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_4823671538ee40989248a84907e604bd",
+        "style": "IPY_MODEL_41aab4ed97d04973a925c8ccf0d3420a",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "b70da6eadedd4441bf0d1a9868937627": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3099c9d15ae445518ee0db1013047857": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b70da6eadedd4441bf0d1a9868937627",
+        "location": [
+          "43.65254489874393",
+          "-79.46068078523024"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_dd4c44a5ec8a419a9625bdebd6ceeba9",
+        "title": "Northern Waterthrush, 2021-09-04"
+      }
+    },
+    "932769df844b4b949a7f99e3c9fba836": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c3d47be1792b4b309a0f10e324a3b05b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6c530b0051114a2b909aba7e43737aba": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_932769df844b4b949a7f99e3c9fba836",
+        "style": "IPY_MODEL_c3d47be1792b4b309a0f10e324a3b05b",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "8506a41a1b904142b38917c1895be829": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "272bea498d9748e0bd8d2add6a8d1995": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8506a41a1b904142b38917c1895be829",
+        "location": [
+          "43.652564310409616",
+          "-79.46066628616198"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6c530b0051114a2b909aba7e43737aba",
+        "title": "Northern Waterthrush, 2021-08-23"
+      }
+    },
+    "9820d8e642ff48128811ce85c6f32b64": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d11290e42b644bf4b182ebeeb4c92897": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f841595ae38845f9b9d9a11f15dabd05": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_9820d8e642ff48128811ce85c6f32b64",
+        "style": "IPY_MODEL_d11290e42b644bf4b182ebeeb4c92897",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "5735678f060943f89a548efbe14c15b7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "482b721a5ebc4244b5c24fa4b1bf3462": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5735678f060943f89a548efbe14c15b7",
+        "location": [
+          "43.64323012725142",
+          "-79.4587981184505"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f841595ae38845f9b9d9a11f15dabd05",
+        "title": "Northern Waterthrush, 2021-08-30"
+      }
+    },
+    "2819c9e90bfc427aa8a0167e4239ff1b": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_f346b28cd51b45a1a0f8dbc815206b7d",
+          "IPY_MODEL_ec905f19d6d64078b2a47b50315f22bc",
+          "IPY_MODEL_c7dc4bdd092a470488ec7c0e7684755d",
+          "IPY_MODEL_7038669d65d0459d8c84c1c769517244",
+          "IPY_MODEL_bc7a826f813b426daad4bffc1247ca78",
+          "IPY_MODEL_be4d715bd931457b84516947ebc3619b",
+          "IPY_MODEL_2cd92ac0fd9e4d36b71163afc6ed9e65",
+          "IPY_MODEL_1d94a3f855b54f8d865c5e6ce8ab60f2",
+          "IPY_MODEL_bef131e322674a20bdc732f342d46545",
+          "IPY_MODEL_e77a3b54e7e7408abdc33469cf7d2138",
+          "IPY_MODEL_9d44e18a93754f739b1a5f96297a70d6",
+          "IPY_MODEL_c5dc415e0fef4f5a9170616a31055367",
+          "IPY_MODEL_cb5f348fa70a407cbda7c7d44781ac6e",
+          "IPY_MODEL_cef28131c2804bcf85e9ffdf06418502",
+          "IPY_MODEL_f90fcaa5ac5e4509a2a8b35db5a10f6c",
+          "IPY_MODEL_3099c9d15ae445518ee0db1013047857",
+          "IPY_MODEL_272bea498d9748e0bd8d2add6a8d1995",
+          "IPY_MODEL_482b721a5ebc4244b5c24fa4b1bf3462"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "3568349a355f46489c6776dad70cf035"}
+</script>
+
+</body>
+</html>

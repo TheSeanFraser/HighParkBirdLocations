@@ -1,0 +1,3410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Red-breasted Nuthatch Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "4ed0dee28dc24246876428a153fe5b56": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "4ce3d784b2434181bc30ec44b35df863": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "c6f524590d9146e09572e0408e04d4b8": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "38630bdf949146a0aeb863846514ae78": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "203f2d16069b4354892fefd7ce60b7e4": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "a84ef39dc3324c58bf4e7ff31d5273f6": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_145fc2e3f6c44235a40219cee7df893c",
+          "IPY_MODEL_609b3d878d6e4d149df566b364ae86f6",
+          "IPY_MODEL_b64e0e61c5bc4cf59050b6806be195ea",
+          "IPY_MODEL_528cd86660a541e19cab542193fdbecd"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_4ed0dee28dc24246876428a153fe5b56",
+        "dragging_style": "IPY_MODEL_4ce3d784b2434181bc30ec44b35df863",
+        "layers": [
+          "IPY_MODEL_c6f524590d9146e09572e0408e04d4b8",
+          "IPY_MODEL_75a481894ed1458981e822939559d729",
+          "IPY_MODEL_38ceffcd77d44c52a2a65d8ad67d8bec",
+          "IPY_MODEL_e4135c50eecf47baab1a3e9ddb774af6",
+          "IPY_MODEL_92725d1ee9ca435a90201b64cd077937",
+          "IPY_MODEL_51c296cc5166412e896811b57853c0de"
+        ],
+        "layout": "IPY_MODEL_38630bdf949146a0aeb863846514ae78",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_203f2d16069b4354892fefd7ce60b7e4",
+        "zoom": 14.0
+      }
+    },
+    "145fc2e3f6c44235a40219cee7df893c": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "609b3d878d6e4d149df566b364ae86f6": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "b64e0e61c5bc4cf59050b6806be195ea": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "528cd86660a541e19cab542193fdbecd": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "75a481894ed1458981e822939559d729": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "38ceffcd77d44c52a2a65d8ad67d8bec": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "e4135c50eecf47baab1a3e9ddb774af6": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64592227327541",
+            "-79.46089543467086"
+          ],
+          [
+            "43.64594061841677",
+            "-79.46104847666687"
+          ],
+          [
+            "43.646050225676525",
+            "-79.46133583220148"
+          ],
+          [
+            "43.64592608138021",
+            "-79.4611153120025"
+          ],
+          [
+            "43.64580631917434",
+            "-79.46024161691685"
+          ],
+          [
+            "43.64579017057806",
+            "-79.46142366024766"
+          ],
+          [
+            "43.64588627837531",
+            "-79.46153569534104"
+          ],
+          [
+            "43.64589723910128",
+            "-79.4615644308945"
+          ],
+          [
+            "43.64606222397656",
+            "-79.4611224119781"
+          ],
+          [
+            "43.64611345129584",
+            "-79.4613616606345"
+          ],
+          [
+            "43.645925043806145",
+            "-79.46135746777937"
+          ],
+          [
+            "43.64600892150915",
+            "-79.4613674748754"
+          ],
+          [
+            "43.645845548193584",
+            "-79.46069428579663"
+          ],
+          [
+            "43.64568598298282",
+            "-79.46024097404951"
+          ],
+          [
+            "43.645610527269255",
+            "-79.46011311761917"
+          ],
+          [
+            "43.64593196463312",
+            "-79.46085087778044"
+          ],
+          [
+            "43.648996363913035",
+            "-79.46930669679851"
+          ],
+          [
+            "43.64280587278737",
+            "-79.45947679945766"
+          ],
+          [
+            "43.64575611042825",
+            "-79.46186748114691"
+          ],
+          [
+            "43.648663243261105",
+            "-79.4707505971878"
+          ],
+          [
+            "43.642796642646026",
+            "-79.45906917486242"
+          ],
+          [
+            "43.645822357373376",
+            "-79.46056352224583"
+          ],
+          [
+            "43.64280975413594",
+            "-79.4588484843661"
+          ],
+          [
+            "43.648848704114386",
+            "-79.47064722127728"
+          ],
+          [
+            "43.65268498620336",
+            "-79.46200854345474"
+          ],
+          [
+            "43.642558047783155",
+            "-79.45966665550117"
+          ],
+          [
+            "43.64244697709455",
+            "-79.4596466947674"
+          ],
+          [
+            "43.65280889870547",
+            "-79.46191361543299"
+          ],
+          [
+            "43.65255934358489",
+            "-79.46147843523853"
+          ],
+          [
+            "43.64435361468462",
+            "-79.46892561090978"
+          ],
+          [
+            "43.64857719636401",
+            "-79.47053367155681"
+          ],
+          [
+            "43.64290471240576",
+            "-79.45870725854876"
+          ],
+          [
+            "43.64574690165981",
+            "-79.4604356658155"
+          ],
+          [
+            "43.648637531419645",
+            "-79.47055890482802"
+          ],
+          [
+            "43.6429002567194",
+            "-79.45888633427293"
+          ],
+          [
+            "43.64284412178094",
+            "-79.45899856195375"
+          ],
+          [
+            "43.64120079695311",
+            "-79.46532268527936"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "92725d1ee9ca435a90201b64cd077937": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64364604468054",
+            "-79.45892682825908"
+          ],
+          [
+            "43.64294130789395",
+            "-79.45876779827431"
+          ],
+          [
+            "43.642824837899845",
+            "-79.45885479268391"
+          ],
+          [
+            "43.6429537804609",
+            "-79.45933844946849"
+          ],
+          [
+            "43.647715082967686",
+            "-79.4650615875329"
+          ],
+          [
+            "43.64288517295549",
+            "-79.45888002595512"
+          ],
+          [
+            "43.64287231703476",
+            "-79.45878417977524"
+          ],
+          [
+            "43.64273853543357",
+            "-79.45895440372911"
+          ],
+          [
+            "43.64968700048163",
+            "-79.46023193176583"
+          ],
+          [
+            "43.64880332503807",
+            "-79.47078656466196"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "bde0790713b54f49bcb57bb70f51b113": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6cc2fafc296d41b18a288f71d8f335d9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c06a746d27f54dd6b711af98a72c7f62": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_bde0790713b54f49bcb57bb70f51b113",
+        "style": "IPY_MODEL_6cc2fafc296d41b18a288f71d8f335d9",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "24100f0ae7234c7383c3186ea20b8820": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "504aea3a80004867a0fb05ca182c5823": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_24100f0ae7234c7383c3186ea20b8820",
+        "location": [
+          "43.64592227327541",
+          "-79.46089543467086"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c06a746d27f54dd6b711af98a72c7f62",
+        "title": "Red-breasted Nuthatch, 2021-07-09"
+      }
+    },
+    "d047afc2a5d54040b3af2c77ee4430da": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ffc516818ef347489be7cc8dace5d3b3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "933aea864aa44ab5bb11627edd153682": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_d047afc2a5d54040b3af2c77ee4430da",
+        "style": "IPY_MODEL_ffc516818ef347489be7cc8dace5d3b3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4268a2ea6e5243c5868d01da77ae2156": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cfed7ee727a64d4bb9a11190d564465b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4268a2ea6e5243c5868d01da77ae2156",
+        "location": [
+          "43.64594061841677",
+          "-79.46104847666687"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_933aea864aa44ab5bb11627edd153682",
+        "title": "Red-breasted Nuthatch, 2021-07-15"
+      }
+    },
+    "4092c33b085e4388950ae1f1ee2d96ce": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e2516ef1653f4c4686719e0e35b746ce": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f9f436ebb90b419586c4407b4b641734": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_4092c33b085e4388950ae1f1ee2d96ce",
+        "style": "IPY_MODEL_e2516ef1653f4c4686719e0e35b746ce",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d40e84252ce64232a54d11f83a88e417": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8841343d49f849b58ffa0f77d8d569ef": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d40e84252ce64232a54d11f83a88e417",
+        "location": [
+          "43.646050225676525",
+          "-79.46133583220148"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f9f436ebb90b419586c4407b4b641734",
+        "title": "Red-breasted Nuthatch, 2021-07-21"
+      }
+    },
+    "7a529fa6e84a42839e68ce2e27cdd5d6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "400d7146663a4962b779e8bc951dcd77": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fcf091559896420b8cfc16eff21aa9dd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_7a529fa6e84a42839e68ce2e27cdd5d6",
+        "style": "IPY_MODEL_400d7146663a4962b779e8bc951dcd77",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "17a0e54fedf8476aab4bb094c45d7ee4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "beb58fcbfdd14ad4adc6391989f76da9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_17a0e54fedf8476aab4bb094c45d7ee4",
+        "location": [
+          "43.64592608138021",
+          "-79.4611153120025"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fcf091559896420b8cfc16eff21aa9dd",
+        "title": "Red-breasted Nuthatch, 2021-07-18"
+      }
+    },
+    "5c49603d0a964fb899a5b197547164b5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7597dc8a38d44ba1a475e418158279fb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a7deeaeb7104c80b56f64357749069c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_5c49603d0a964fb899a5b197547164b5",
+        "style": "IPY_MODEL_7597dc8a38d44ba1a475e418158279fb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "008df26481e2458f887d215436910fbc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "63c2dd576dd74d10aaa8c161aa219cfd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_008df26481e2458f887d215436910fbc",
+        "location": [
+          "43.64580631917434",
+          "-79.46024161691685"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a7deeaeb7104c80b56f64357749069c",
+        "title": "Red-breasted Nuthatch, 2021-07-24"
+      }
+    },
+    "6dac5677b51a4fc5a12d06863edb142b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cd005ad28d8746028547d3cc82e170b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "14e70bf19ff443149573eca7259e4b26": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_6dac5677b51a4fc5a12d06863edb142b",
+        "style": "IPY_MODEL_cd005ad28d8746028547d3cc82e170b5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "17e01f31c34840718f562bc65882e17c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "747bcda0a593405dbd0d1495c4bb83eb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_17e01f31c34840718f562bc65882e17c",
+        "location": [
+          "43.64579017057806",
+          "-79.46142366024766"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_14e70bf19ff443149573eca7259e4b26",
+        "title": "Red-breasted Nuthatch, 2021-07-08"
+      }
+    },
+    "78b4bf10e4684636ab8e4e0bc4f151fd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9e3fdfcdd47740faa162d71c4bc9e741": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "667a9dd84171415ab9f367029279984a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_78b4bf10e4684636ab8e4e0bc4f151fd",
+        "style": "IPY_MODEL_9e3fdfcdd47740faa162d71c4bc9e741",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "fa2108f358e141e0a4f3978c36ccfc05": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a6d55822c79145a4a650a726a2dfa75f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fa2108f358e141e0a4f3978c36ccfc05",
+        "location": [
+          "43.64588627837531",
+          "-79.46153569534104"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_667a9dd84171415ab9f367029279984a",
+        "title": "Red-breasted Nuthatch, 2021-07-12"
+      }
+    },
+    "ed43f2fabd60416881d4742eeda6ea25": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "88567a7f234f4f2799fa212e028089f7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c52d9ccc9e0445fd98ddf7934aaaee87": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_ed43f2fabd60416881d4742eeda6ea25",
+        "style": "IPY_MODEL_88567a7f234f4f2799fa212e028089f7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "454b7761d6b04e63bf48c95a42684dad": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "76ebe122657444beb0ebaf60272cdcec": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_454b7761d6b04e63bf48c95a42684dad",
+        "location": [
+          "43.64589723910128",
+          "-79.4615644308945"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c52d9ccc9e0445fd98ddf7934aaaee87",
+        "title": "Red-breasted Nuthatch, 2021-07-08"
+      }
+    },
+    "8ac6b8cd6af64fbab1fc54545947b26c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e88326822fc842fcafd9ac3bbc5cb19f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d87bc1cf77124b37a3bf23eafc1807ce": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_8ac6b8cd6af64fbab1fc54545947b26c",
+        "style": "IPY_MODEL_e88326822fc842fcafd9ac3bbc5cb19f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c45824210af4466cb01493ad1308515e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "523fc82fc8d540dbb2c413cef25de0f2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c45824210af4466cb01493ad1308515e",
+        "location": [
+          "43.64606222397656",
+          "-79.4611224119781"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d87bc1cf77124b37a3bf23eafc1807ce",
+        "title": "Red-breasted Nuthatch, 2021-07-18"
+      }
+    },
+    "ffcbea5a1cb54cb1966943bd2968723a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "59b1bb9ecec84ef48b734fef35972b20": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "df1c045a0d7540049d59813ca92504a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_ffcbea5a1cb54cb1966943bd2968723a",
+        "style": "IPY_MODEL_59b1bb9ecec84ef48b734fef35972b20",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "08551a8e26714189b65c0d7ed69a1dd9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "edd28af70fdb44c29f3651ed8a906b95": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_08551a8e26714189b65c0d7ed69a1dd9",
+        "location": [
+          "43.64611345129584",
+          "-79.4613616606345"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_df1c045a0d7540049d59813ca92504a5",
+        "title": "Red-breasted Nuthatch, 2021-07-21"
+      }
+    },
+    "0507dc0fb7094192a527da2598a5be9a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b97aa4f33b084a91aecb644cf3145381": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "769764f7da5b4c4d9b5a1bff6035a095": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_0507dc0fb7094192a527da2598a5be9a",
+        "style": "IPY_MODEL_b97aa4f33b084a91aecb644cf3145381",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "8e0d179ee08746f49c572a4421485717": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2982186be3b94cc8870f619a2c9498f5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8e0d179ee08746f49c572a4421485717",
+        "location": [
+          "43.645925043806145",
+          "-79.46135746777937"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_769764f7da5b4c4d9b5a1bff6035a095",
+        "title": "Red-breasted Nuthatch, 2021-07-12"
+      }
+    },
+    "cae60d18332f4fc7ae8ee699ea01b2fe": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1b5cda883e70452caf9f3e0dc6ada38b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9b6eaf402aeb4ace8df466d423c469f7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_cae60d18332f4fc7ae8ee699ea01b2fe",
+        "style": "IPY_MODEL_1b5cda883e70452caf9f3e0dc6ada38b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3ac3d9ddf1f644b1a73aa0ca862bb0e9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d1dcbdf0a6864aa69dc4403f8672ec22": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3ac3d9ddf1f644b1a73aa0ca862bb0e9",
+        "location": [
+          "43.64600892150915",
+          "-79.4613674748754"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9b6eaf402aeb4ace8df466d423c469f7",
+        "title": "Red-breasted Nuthatch, 2021-07-15"
+      }
+    },
+    "112931defcfd48c7a8fb6c328c0f070f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f08fdeb1fb424389afa2738ca644ded3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "be1f6c895a2848caaa6adc54141ec98e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_112931defcfd48c7a8fb6c328c0f070f",
+        "style": "IPY_MODEL_f08fdeb1fb424389afa2738ca644ded3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "96a50794b7954ee7ba685ebf73c621a9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "17a37414bfb746278fd1ea803fafc896": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_96a50794b7954ee7ba685ebf73c621a9",
+        "location": [
+          "43.645845548193584",
+          "-79.46069428579663"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_be1f6c895a2848caaa6adc54141ec98e",
+        "title": "Red-breasted Nuthatch, 2021-07-24"
+      }
+    },
+    "da14032afd6942aa890667e4d7c2590d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "411d79a4ffdc476bb4f26939f352768b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2020d3d11a0641d8885a1a4c02e52be4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_da14032afd6942aa890667e4d7c2590d",
+        "style": "IPY_MODEL_411d79a4ffdc476bb4f26939f352768b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8c5a76a87a6c4e0ba8942eaf0e85cba5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1e82a7d8b614497fa42fb62bc039638e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8c5a76a87a6c4e0ba8942eaf0e85cba5",
+        "location": [
+          "43.64568598298282",
+          "-79.46024097404951"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2020d3d11a0641d8885a1a4c02e52be4",
+        "title": "Red-breasted Nuthatch, 2021-07-04"
+      }
+    },
+    "62547050e56347708fae66e5dffd1319": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "002251736dc349789bad88e5192abff5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7cffd9e7de33468d8263c5fe34e1b0cd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_62547050e56347708fae66e5dffd1319",
+        "style": "IPY_MODEL_002251736dc349789bad88e5192abff5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "68b1aef93f024cd982148730ba7f209b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4847749341db404fa0dee5bb4cfeb87e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_68b1aef93f024cd982148730ba7f209b",
+        "location": [
+          "43.645610527269255",
+          "-79.46011311761917"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7cffd9e7de33468d8263c5fe34e1b0cd",
+        "title": "Red-breasted Nuthatch, 2021-07-04"
+      }
+    },
+    "238a0d41d2c8403aa7324bbacd03a6df": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "47631a8f04514a9a891197e73a16ce74": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "512496d03e8141d4b6ff8a10e720026d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_238a0d41d2c8403aa7324bbacd03a6df",
+        "style": "IPY_MODEL_47631a8f04514a9a891197e73a16ce74",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "924fafbed8a846a59b9eb7f4feb620a0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e8a983510a0e49b8b9dadac55da0115f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_924fafbed8a846a59b9eb7f4feb620a0",
+        "location": [
+          "43.64593196463312",
+          "-79.46085087778044"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_512496d03e8141d4b6ff8a10e720026d",
+        "title": "Red-breasted Nuthatch, 2021-07-09"
+      }
+    },
+    "c1f747a90f6e47588775dd9212d64b53": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fff6969ca11a4e6f8320ad67d6dcb72f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ffc685fbab8d4c12b9f33d1397ea6925": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_c1f747a90f6e47588775dd9212d64b53",
+        "style": "IPY_MODEL_fff6969ca11a4e6f8320ad67d6dcb72f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f460462241134b3d9d8bd3c859673c30": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5a44fe08c2774055ac1007107beb3b8e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f460462241134b3d9d8bd3c859673c30",
+        "location": [
+          "43.648996363913035",
+          "-79.46930669679851"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ffc685fbab8d4c12b9f33d1397ea6925",
+        "title": "Red-breasted Nuthatch, 2021-08-15"
+      }
+    },
+    "7d81c251e77a4335b197cc6d02e3f33b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1129635abe214dc7be99282d44a9dc02": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7a83b74c0353443984b9e5f715c49c43": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_7d81c251e77a4335b197cc6d02e3f33b",
+        "style": "IPY_MODEL_1129635abe214dc7be99282d44a9dc02",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6fedc50cb7a04ad8a55fe4e28bceee36": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6ddb851217fa462e8e815b09a1ec8871": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6fedc50cb7a04ad8a55fe4e28bceee36",
+        "location": [
+          "43.64364604468054",
+          "-79.45892682825908"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7a83b74c0353443984b9e5f715c49c43",
+        "title": "Red-breasted Nuthatch, 2021-08-31"
+      }
+    },
+    "a928bd9a837d4d559d79af7c64b11bf7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a48186c58e844684922c1c63fbea10f8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3287e8de290945168faa5d294fbaaab4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_a928bd9a837d4d559d79af7c64b11bf7",
+        "style": "IPY_MODEL_a48186c58e844684922c1c63fbea10f8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fa5549c1330345e3b5ca64dc860b186f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b620efab57be44ed9b7840af73c44d3d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fa5549c1330345e3b5ca64dc860b186f",
+        "location": [
+          "43.64280587278737",
+          "-79.45947679945766"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3287e8de290945168faa5d294fbaaab4",
+        "title": "Red-breasted Nuthatch, 2021-07-27"
+      }
+    },
+    "d21b7fa2f8894cb69d0a713293bffe6c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cf056603ec4f43929ee813263e92f798": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad681a9bc6374177a98805111e492486": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_d21b7fa2f8894cb69d0a713293bffe6c",
+        "style": "IPY_MODEL_cf056603ec4f43929ee813263e92f798",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5c1b23aee2da4c1fa46c210e873f8842": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2ab272789dec4630aa87bdc62d20edaa": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5c1b23aee2da4c1fa46c210e873f8842",
+        "location": [
+          "43.64294130789395",
+          "-79.45876779827431"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad681a9bc6374177a98805111e492486",
+        "title": "Red-breasted Nuthatch, 2021-08-23"
+      }
+    },
+    "8405cfe4776a4a11a8ff0b5da314600f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9ebf32afaee64e0ebdabb1fb4ab555ec": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d6a1640b7cf6494e9a7712f83befaa9c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_8405cfe4776a4a11a8ff0b5da314600f",
+        "style": "IPY_MODEL_9ebf32afaee64e0ebdabb1fb4ab555ec",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eb40b60eabdf43dc8084a59acdfb6914": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "85fd8d430cca45e7936062dd4ae489b5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eb40b60eabdf43dc8084a59acdfb6914",
+        "location": [
+          "43.64575611042825",
+          "-79.46186748114691"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d6a1640b7cf6494e9a7712f83befaa9c",
+        "title": "Red-breasted Nuthatch, 2021-08-09"
+      }
+    },
+    "1b33439417714ebeb08aaabe3c5ec69c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a837de04b39a446bade1237df538f9db": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e71a36400f114aa39fabc2e17e21083d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_1b33439417714ebeb08aaabe3c5ec69c",
+        "style": "IPY_MODEL_a837de04b39a446bade1237df538f9db",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c8c63874e2e04173926245ba1d347ab8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a8c76755683149f3a557e06c2eb59c91": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c8c63874e2e04173926245ba1d347ab8",
+        "location": [
+          "43.648663243261105",
+          "-79.4707505971878"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e71a36400f114aa39fabc2e17e21083d",
+        "title": "Red-breasted Nuthatch, 2021-08-16"
+      }
+    },
+    "f430f788174444af82616d54a09def2d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8efec8d748af440fbe90fc49f16065cb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "139ee6aa8e554519834e3d7867dda108": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_f430f788174444af82616d54a09def2d",
+        "style": "IPY_MODEL_8efec8d748af440fbe90fc49f16065cb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "48646040f5284896b04d643c45f0001c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8d7e270201754d9084557bb471216382": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_48646040f5284896b04d643c45f0001c",
+        "location": [
+          "43.642824837899845",
+          "-79.45885479268391"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_139ee6aa8e554519834e3d7867dda108",
+        "title": "Red-breasted Nuthatch, 2021-08-24"
+      }
+    },
+    "e8e180eed9d94754ac90306e417a12a1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d9ffba1364554653a7ee16b272ec1283": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e8221b47f6114e3f8e8f4b6a692c356e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_e8e180eed9d94754ac90306e417a12a1",
+        "style": "IPY_MODEL_d9ffba1364554653a7ee16b272ec1283",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bbd53ab1ee1b4eef8bb19b8b42b1c65b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c26995732d284ec19958a6bb1e713c36": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bbd53ab1ee1b4eef8bb19b8b42b1c65b",
+        "location": [
+          "43.642796642646026",
+          "-79.45906917486242"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e8221b47f6114e3f8e8f4b6a692c356e",
+        "title": "Red-breasted Nuthatch, 2021-08-21"
+      }
+    },
+    "d4b4c529e7fd4d1aa2f7d0b8deac6e9e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b45c4aac5de7475889ab2531fc67427e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "64e5ce1e43f34024979ceef701b9b2b6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_d4b4c529e7fd4d1aa2f7d0b8deac6e9e",
+        "style": "IPY_MODEL_b45c4aac5de7475889ab2531fc67427e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "22b91fa052cf4ab48e00ba46d033254a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "31822bc373a5466ba6819db42e284e5e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_22b91fa052cf4ab48e00ba46d033254a",
+        "location": [
+          "43.645822357373376",
+          "-79.46056352224583"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_64e5ce1e43f34024979ceef701b9b2b6",
+        "title": "Red-breasted Nuthatch, 2021-07-30"
+      }
+    },
+    "b4a48ed74c5947688040e6801157875b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cd5c34084db44c52b350c30019b9b785": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8a02cb1ecdbb4fe6a32b66eca0b27a11": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_b4a48ed74c5947688040e6801157875b",
+        "style": "IPY_MODEL_cd5c34084db44c52b350c30019b9b785",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1cc09967901b42afb90daa422c9abb5b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5802dc20dd154a1aaf3a4fe25d9257b9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1cc09967901b42afb90daa422c9abb5b",
+        "location": [
+          "43.6429537804609",
+          "-79.45933844946849"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8a02cb1ecdbb4fe6a32b66eca0b27a11",
+        "title": "Red-breasted Nuthatch, 2021-09-04"
+      }
+    },
+    "07a248f0ba4f4c35af1025885d409500": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e9b428c03cf04a73946232c99ff3dbff": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c69cc3ee6a75413f834f1e1faf9f566a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_07a248f0ba4f4c35af1025885d409500",
+        "style": "IPY_MODEL_e9b428c03cf04a73946232c99ff3dbff",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9d84d4ca67bf4210a13813e6ebaa7267": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fe304c18b90e40e28729ea68f5b2a247": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d84d4ca67bf4210a13813e6ebaa7267",
+        "location": [
+          "43.64280975413594",
+          "-79.4588484843661"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c69cc3ee6a75413f834f1e1faf9f566a",
+        "title": "Red-breasted Nuthatch, 2021-08-19"
+      }
+    },
+    "a7d4fdc76ebb4f1f9bd3ebb4146b549d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "df8dd9749d8a42a4bbb85a6ed4f1ece7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "34bb3c1bff134ff0a9198404c076d978": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_a7d4fdc76ebb4f1f9bd3ebb4146b549d",
+        "style": "IPY_MODEL_df8dd9749d8a42a4bbb85a6ed4f1ece7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f4800ac3832241d0b33f3f9af19551e3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "959b4eb5a7944e9696ca51e2401b9fec": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f4800ac3832241d0b33f3f9af19551e3",
+        "location": [
+          "43.648848704114386",
+          "-79.47064722127728"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_34bb3c1bff134ff0a9198404c076d978",
+        "title": "Red-breasted Nuthatch, 2021-08-15"
+      }
+    },
+    "847c49c0ed74472e8fa35b39ea3b0f77": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c9303bc7b8114fb09950f39bba1ff2a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ab8b42138e7a48e4aa03e92bdbe8c9da": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_847c49c0ed74472e8fa35b39ea3b0f77",
+        "style": "IPY_MODEL_c9303bc7b8114fb09950f39bba1ff2a9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "884bf227834041c9ba6455b265491b36": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7a6b1baf64c644478c00bcda2519e69f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_884bf227834041c9ba6455b265491b36",
+        "location": [
+          "43.65268498620336",
+          "-79.46200854345474"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ab8b42138e7a48e4aa03e92bdbe8c9da",
+        "title": "Red-breasted Nuthatch, 2021-08-04"
+      }
+    },
+    "193d77e061394680a867f64b3a850071": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "31f5a1d5da8347e0ba4612e45070bc0b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c7ab70ce62a04d9d94013f7770473044": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_193d77e061394680a867f64b3a850071",
+        "style": "IPY_MODEL_31f5a1d5da8347e0ba4612e45070bc0b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b53af3b5e5d34e158d2287ce9e528b68": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "65907e104b354199a76e61b3a697c6e5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b53af3b5e5d34e158d2287ce9e528b68",
+        "location": [
+          "43.647715082967686",
+          "-79.4650615875329"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c7ab70ce62a04d9d94013f7770473044",
+        "title": "Red-breasted Nuthatch, 2021-09-14"
+      }
+    },
+    "e110cab422894ecdbcf0bf4dc2d98043": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d12096ead46f4f47961bf3a5a79bc91a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e60ab574abd9470ca54560806150e421": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_e110cab422894ecdbcf0bf4dc2d98043",
+        "style": "IPY_MODEL_d12096ead46f4f47961bf3a5a79bc91a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1d53ed988f7744369d84c0d8a2c57672": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7366f4882969446ca20758bf9dd3cc6e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1d53ed988f7744369d84c0d8a2c57672",
+        "location": [
+          "43.64288517295549",
+          "-79.45888002595512"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e60ab574abd9470ca54560806150e421",
+        "title": "Red-breasted Nuthatch, 2021-08-23"
+      }
+    },
+    "5d8439c37ae64da981625b697ed13fef": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "211575f21aa2437fbe3a352b4f9a1249": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "82945bb74ecf4ba894a2f77be07d43f8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_5d8439c37ae64da981625b697ed13fef",
+        "style": "IPY_MODEL_211575f21aa2437fbe3a352b4f9a1249",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "53f4c6feb8dc48ed8948005bb50d851e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6f2f9e49846e466681860dccd9a744bd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_53f4c6feb8dc48ed8948005bb50d851e",
+        "location": [
+          "43.64287231703476",
+          "-79.45878417977524"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_82945bb74ecf4ba894a2f77be07d43f8",
+        "title": "Red-breasted Nuthatch, 2021-08-24"
+      }
+    },
+    "4988ad5aa8774dc5b4e6c1e87d44337f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8e67e978d4c24450a1f5ace6c8e09cb6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1cb69e37205a499684153b502d60101d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_4988ad5aa8774dc5b4e6c1e87d44337f",
+        "style": "IPY_MODEL_8e67e978d4c24450a1f5ace6c8e09cb6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e3c32ed20b3d416f8657147667c290ce": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a61e6d31e6c741dd84b02be46668cad3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e3c32ed20b3d416f8657147667c290ce",
+        "location": [
+          "43.642558047783155",
+          "-79.45966665550117"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1cb69e37205a499684153b502d60101d",
+        "title": "Red-breasted Nuthatch, 2021-07-27"
+      }
+    },
+    "4ef28eb854924832ac6cd7003fbe1d14": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "830e2a7bbfe44e95b779611aade11573": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "de159e5cff424a0d9b274692094686e4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_4ef28eb854924832ac6cd7003fbe1d14",
+        "style": "IPY_MODEL_830e2a7bbfe44e95b779611aade11573",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "96dc18413d2043bf802b4cae5f33c566": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d27a1c92aa4545bfad2651af2a55f31f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_96dc18413d2043bf802b4cae5f33c566",
+        "location": [
+          "43.64244697709455",
+          "-79.4596466947674"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_de159e5cff424a0d9b274692094686e4",
+        "title": "Red-breasted Nuthatch, 2021-08-14"
+      }
+    },
+    "fcac46fd73cc476f97a9533c537861b6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "663d61ad9e904000a02c4862ee547a7a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0002c006f539450aafc3f875ab6c2957": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_fcac46fd73cc476f97a9533c537861b6",
+        "style": "IPY_MODEL_663d61ad9e904000a02c4862ee547a7a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "00909a08f07941c18e834df182c89b88": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6d89689589bc4276a3beb621eb98fdc9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_00909a08f07941c18e834df182c89b88",
+        "location": [
+          "43.65280889870547",
+          "-79.46191361543299"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0002c006f539450aafc3f875ab6c2957",
+        "title": "Red-breasted Nuthatch, 2021-08-04"
+      }
+    },
+    "d614820794904567af874f52364548a9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4a7990b018dc4855b25d3b6bbe528b3b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ab485ed71b14444cb6f0236a2376ed78": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_d614820794904567af874f52364548a9",
+        "style": "IPY_MODEL_4a7990b018dc4855b25d3b6bbe528b3b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "131a0d15ee0a486488b86e61f09d73f7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6253e1bb6ad646dda6013788154e7202": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_131a0d15ee0a486488b86e61f09d73f7",
+        "location": [
+          "43.65255934358489",
+          "-79.46147843523853"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ab485ed71b14444cb6f0236a2376ed78",
+        "title": "Red-breasted Nuthatch, 2021-08-13"
+      }
+    },
+    "726f4f2a4ecc46169ff84270b7277765": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ade6d23a8712488997f1ec6baebbb866": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5095398d090c41cab247544380397868": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_726f4f2a4ecc46169ff84270b7277765",
+        "style": "IPY_MODEL_ade6d23a8712488997f1ec6baebbb866",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2919b03d6b7a4cd78015098ef1b5026b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "94ae8b7e14694367af1fae80bf737ef1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2919b03d6b7a4cd78015098ef1b5026b",
+        "location": [
+          "43.64273853543357",
+          "-79.45895440372911"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5095398d090c41cab247544380397868",
+        "title": "Red-breasted Nuthatch, 2021-08-28"
+      }
+    },
+    "d498cc1374044dc7ac6e5f9673bbf421": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bb9e7dbcb09945ee843f4092eec84b7c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f8c3ed8f688348d8b2fbf647d93c7221": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_d498cc1374044dc7ac6e5f9673bbf421",
+        "style": "IPY_MODEL_bb9e7dbcb09945ee843f4092eec84b7c",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "736fbe196bd943cfbf0fef4131a88eb7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2ec82f9306d045d7b70f03c48f5aef77": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_736fbe196bd943cfbf0fef4131a88eb7",
+        "location": [
+          "43.64435361468462",
+          "-79.46892561090978"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f8c3ed8f688348d8b2fbf647d93c7221",
+        "title": "Red-breasted Nuthatch, 2021-08-09"
+      }
+    },
+    "be751091d63b4b398c03051907a73eba": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2cfe13866dfc409ea49abf6653fe0300": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1400aa02db3846e5bfd810242450b77b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_be751091d63b4b398c03051907a73eba",
+        "style": "IPY_MODEL_2cfe13866dfc409ea49abf6653fe0300",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b2b9e59aa9f74ca2ab12ac44363dac6b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "51c1830f4acf46dd83ae79281aa63cd2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b2b9e59aa9f74ca2ab12ac44363dac6b",
+        "location": [
+          "43.64857719636401",
+          "-79.47053367155681"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1400aa02db3846e5bfd810242450b77b",
+        "title": "Red-breasted Nuthatch, 2021-08-17"
+      }
+    },
+    "2757bf4d49ff4c7f8af15b0cd1e414ac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "53ff2cbfa26d454db4308c8bbdc167dc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b98829166778410b9f8202f0db46b61c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_2757bf4d49ff4c7f8af15b0cd1e414ac",
+        "style": "IPY_MODEL_53ff2cbfa26d454db4308c8bbdc167dc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9db3c37eb63c46b2974b8a6bc1b6dbf8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6d4745671d784fcf8ff9789885de2eb9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9db3c37eb63c46b2974b8a6bc1b6dbf8",
+        "location": [
+          "43.64290471240576",
+          "-79.45870725854876"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b98829166778410b9f8202f0db46b61c",
+        "title": "Red-breasted Nuthatch, 2021-08-19"
+      }
+    },
+    "400d7a2fe39c4b47a5562c7e815ee061": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1105541c9b0e4428822fd1cddb43935c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "506a4893d078437c8b3964b6474907cc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_400d7a2fe39c4b47a5562c7e815ee061",
+        "style": "IPY_MODEL_1105541c9b0e4428822fd1cddb43935c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1d118ea7a7fe4e988fdf6cb620f5b26a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "63ecc282809a4260bf4ebc69e27de2fd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1d118ea7a7fe4e988fdf6cb620f5b26a",
+        "location": [
+          "43.64968700048163",
+          "-79.46023193176583"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_506a4893d078437c8b3964b6474907cc",
+        "title": "Red-breasted Nuthatch, 2021-08-30"
+      }
+    },
+    "4abe035ea6544621b8c740ed1707c35c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2a9863c1f61344e0a7f90602bb167791": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9a2f0dc55d844034b583e4d4113f461d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_4abe035ea6544621b8c740ed1707c35c",
+        "style": "IPY_MODEL_2a9863c1f61344e0a7f90602bb167791",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dacb233b64cc4baeb3f5098930a1028a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e7978abaa73b425e92808eba7930747e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dacb233b64cc4baeb3f5098930a1028a",
+        "location": [
+          "43.64574690165981",
+          "-79.4604356658155"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9a2f0dc55d844034b583e4d4113f461d",
+        "title": "Red-breasted Nuthatch, 2021-07-30"
+      }
+    },
+    "441b9990bfd34eca91d54e68b6e01682": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "965b4a986bcc4928b8541538ec957bc2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "81de1e46fc344b76ba83e9fdbd8fdf07": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_441b9990bfd34eca91d54e68b6e01682",
+        "style": "IPY_MODEL_965b4a986bcc4928b8541538ec957bc2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e2ea6a20c6f9422ca93b2d710088b5f5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f98835863ecd4bc09cf0f71893fa6863": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e2ea6a20c6f9422ca93b2d710088b5f5",
+        "location": [
+          "43.648637531419645",
+          "-79.47055890482802"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_81de1e46fc344b76ba83e9fdbd8fdf07",
+        "title": "Red-breasted Nuthatch, 2021-08-16"
+      }
+    },
+    "7cc7d2c1dff04f0598c9a927f59afbdd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "30a277fe26ab4deda5bdbf4c9a0a59fe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2fdd605d60db49fe8968d8d86eb7aaf3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_7cc7d2c1dff04f0598c9a927f59afbdd",
+        "style": "IPY_MODEL_30a277fe26ab4deda5bdbf4c9a0a59fe",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dbd5243656d54f43a0e068b397e55738": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6fe3414277844d20805e4acbadc0374b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dbd5243656d54f43a0e068b397e55738",
+        "location": [
+          "43.6429002567194",
+          "-79.45888633427293"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2fdd605d60db49fe8968d8d86eb7aaf3",
+        "title": "Red-breasted Nuthatch, 2021-08-13"
+      }
+    },
+    "991fea42be7a4699afe7cbaec5860f27": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ba2f0d4dee644e8bab0220abf43b5939": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "56936592e5ca4b598d2e9df4c283c0ed": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_991fea42be7a4699afe7cbaec5860f27",
+        "style": "IPY_MODEL_ba2f0d4dee644e8bab0220abf43b5939",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "007fe07655184bdc8ea1cc850e7c49b2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "28d1bd4a516f4c9abdac0f26d5e24822": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_007fe07655184bdc8ea1cc850e7c49b2",
+        "location": [
+          "43.64284412178094",
+          "-79.45899856195375"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_56936592e5ca4b598d2e9df4c283c0ed",
+        "title": "Red-breasted Nuthatch, 2021-08-21"
+      }
+    },
+    "d21d5cfc742a4a1c828625d24613a032": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7dba1c8d9f994400aa284b81df1c0c88": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4717107935b64baf92a8367ab58639d7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_d21d5cfc742a4a1c828625d24613a032",
+        "style": "IPY_MODEL_7dba1c8d9f994400aa284b81df1c0c88",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c69129476ad5487fbd6221c122f9c842": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b0705fee839e4dfca97eea3703d2a0da": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c69129476ad5487fbd6221c122f9c842",
+        "location": [
+          "43.64880332503807",
+          "-79.47078656466196"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4717107935b64baf92a8367ab58639d7",
+        "title": "Red-breasted Nuthatch, 2021-09-07"
+      }
+    },
+    "1050bb410d954e93b01578e6e6a00ced": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "797c67ec1d8e42c593b29d10a2c7a4cc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8677f63b03e44164bf9a2ec6823462e3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_1050bb410d954e93b01578e6e6a00ced",
+        "style": "IPY_MODEL_797c67ec1d8e42c593b29d10a2c7a4cc",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "b1cdcc75e78b48098f58beab102b5fa3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d8d007c57aac40e49136f26239eb6455": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b1cdcc75e78b48098f58beab102b5fa3",
+        "location": [
+          "43.64120079695311",
+          "-79.46532268527936"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8677f63b03e44164bf9a2ec6823462e3",
+        "title": "Red-breasted Nuthatch, 2021-08-14"
+      }
+    },
+    "51c296cc5166412e896811b57853c0de": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_504aea3a80004867a0fb05ca182c5823",
+          "IPY_MODEL_cfed7ee727a64d4bb9a11190d564465b",
+          "IPY_MODEL_8841343d49f849b58ffa0f77d8d569ef",
+          "IPY_MODEL_beb58fcbfdd14ad4adc6391989f76da9",
+          "IPY_MODEL_63c2dd576dd74d10aaa8c161aa219cfd",
+          "IPY_MODEL_747bcda0a593405dbd0d1495c4bb83eb",
+          "IPY_MODEL_a6d55822c79145a4a650a726a2dfa75f",
+          "IPY_MODEL_76ebe122657444beb0ebaf60272cdcec",
+          "IPY_MODEL_523fc82fc8d540dbb2c413cef25de0f2",
+          "IPY_MODEL_edd28af70fdb44c29f3651ed8a906b95",
+          "IPY_MODEL_2982186be3b94cc8870f619a2c9498f5",
+          "IPY_MODEL_d1dcbdf0a6864aa69dc4403f8672ec22",
+          "IPY_MODEL_17a37414bfb746278fd1ea803fafc896",
+          "IPY_MODEL_1e82a7d8b614497fa42fb62bc039638e",
+          "IPY_MODEL_4847749341db404fa0dee5bb4cfeb87e",
+          "IPY_MODEL_e8a983510a0e49b8b9dadac55da0115f",
+          "IPY_MODEL_5a44fe08c2774055ac1007107beb3b8e",
+          "IPY_MODEL_6ddb851217fa462e8e815b09a1ec8871",
+          "IPY_MODEL_b620efab57be44ed9b7840af73c44d3d",
+          "IPY_MODEL_2ab272789dec4630aa87bdc62d20edaa",
+          "IPY_MODEL_85fd8d430cca45e7936062dd4ae489b5",
+          "IPY_MODEL_a8c76755683149f3a557e06c2eb59c91",
+          "IPY_MODEL_8d7e270201754d9084557bb471216382",
+          "IPY_MODEL_c26995732d284ec19958a6bb1e713c36",
+          "IPY_MODEL_31822bc373a5466ba6819db42e284e5e",
+          "IPY_MODEL_5802dc20dd154a1aaf3a4fe25d9257b9",
+          "IPY_MODEL_fe304c18b90e40e28729ea68f5b2a247",
+          "IPY_MODEL_959b4eb5a7944e9696ca51e2401b9fec",
+          "IPY_MODEL_7a6b1baf64c644478c00bcda2519e69f",
+          "IPY_MODEL_65907e104b354199a76e61b3a697c6e5",
+          "IPY_MODEL_7366f4882969446ca20758bf9dd3cc6e",
+          "IPY_MODEL_6f2f9e49846e466681860dccd9a744bd",
+          "IPY_MODEL_a61e6d31e6c741dd84b02be46668cad3",
+          "IPY_MODEL_d27a1c92aa4545bfad2651af2a55f31f",
+          "IPY_MODEL_6d89689589bc4276a3beb621eb98fdc9",
+          "IPY_MODEL_6253e1bb6ad646dda6013788154e7202",
+          "IPY_MODEL_94ae8b7e14694367af1fae80bf737ef1",
+          "IPY_MODEL_2ec82f9306d045d7b70f03c48f5aef77",
+          "IPY_MODEL_51c1830f4acf46dd83ae79281aa63cd2",
+          "IPY_MODEL_6d4745671d784fcf8ff9789885de2eb9",
+          "IPY_MODEL_63ecc282809a4260bf4ebc69e27de2fd",
+          "IPY_MODEL_e7978abaa73b425e92808eba7930747e",
+          "IPY_MODEL_f98835863ecd4bc09cf0f71893fa6863",
+          "IPY_MODEL_6fe3414277844d20805e4acbadc0374b",
+          "IPY_MODEL_28d1bd4a516f4c9abdac0f26d5e24822",
+          "IPY_MODEL_b0705fee839e4dfca97eea3703d2a0da",
+          "IPY_MODEL_d8d007c57aac40e49136f26239eb6455"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "a84ef39dc3324c58bf4e7ff31d5273f6"}
+</script>
+
+</body>
+</html>

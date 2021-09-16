@@ -1,0 +1,4202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mourning Dove Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "3b4e69fdaf604eb7864d6de89d88f4e1": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "1c03434779774f01ac659b0c30f72eb6": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "b8c59f9a03e342319f88327d649d756a": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "2ad4c334ebc648779c8b9205bd547642": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "8b8de358b0a94d4eb5bf9ae149f5a1c0": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "df1d06eeb60e47feb1c9b0754215ed9c": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_8dcbb4e7065f4875a46115419955e977",
+          "IPY_MODEL_f29cf723c69e4e8980f03db0a244a8f8",
+          "IPY_MODEL_64c56ded7c134530bba24c17ebe4d089",
+          "IPY_MODEL_02fc9d18e5b04a698feb9d7de5f16b8f"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_3b4e69fdaf604eb7864d6de89d88f4e1",
+        "dragging_style": "IPY_MODEL_1c03434779774f01ac659b0c30f72eb6",
+        "layers": [
+          "IPY_MODEL_b8c59f9a03e342319f88327d649d756a",
+          "IPY_MODEL_ed4af5a539d84ef3bdd6d2c003995b3b",
+          "IPY_MODEL_3aa93082b50b483c8f97cf29a635f64e",
+          "IPY_MODEL_e9baf63ca02e4f5bb2e4f94f5fbbc3da",
+          "IPY_MODEL_86a293e9dc9040f1b9443dced81fc93e",
+          "IPY_MODEL_f34a0762923c4aa1a10751b39e3233fa"
+        ],
+        "layout": "IPY_MODEL_2ad4c334ebc648779c8b9205bd547642",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_8b8de358b0a94d4eb5bf9ae149f5a1c0",
+        "zoom": 14.0
+      }
+    },
+    "8dcbb4e7065f4875a46115419955e977": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "f29cf723c69e4e8980f03db0a244a8f8": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "64c56ded7c134530bba24c17ebe4d089": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "02fc9d18e5b04a698feb9d7de5f16b8f": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "ed4af5a539d84ef3bdd6d2c003995b3b": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "3aa93082b50b483c8f97cf29a635f64e": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "e9baf63ca02e4f5bb2e4f94f5fbbc3da": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64382105900708",
+            "-79.45979448349664"
+          ],
+          [
+            "43.64211972914139",
+            "-79.45701328470294"
+          ],
+          [
+            "43.64264514860558",
+            "-79.45744624660686"
+          ],
+          [
+            "43.64386166779184",
+            "-79.45881649616051"
+          ],
+          [
+            "43.642673990884504",
+            "-79.45699712771487"
+          ],
+          [
+            "43.64379844217252",
+            "-79.45879066772751"
+          ],
+          [
+            "43.64394681486311",
+            "-79.45889979570043"
+          ],
+          [
+            "43.64221352999631",
+            "-79.45729418312929"
+          ],
+          [
+            "43.643903667341824",
+            "-79.4597311981488"
+          ],
+          [
+            "43.64401004048243",
+            "-79.45892562413344"
+          ],
+          [
+            "43.64347412388068",
+            "-79.45909482311752"
+          ],
+          [
+            "43.64273744829803",
+            "-79.45733840436861"
+          ],
+          [
+            "43.64217937845012",
+            "-79.45713468402504"
+          ],
+          [
+            "43.64852710695294",
+            "-79.46419127352263"
+          ],
+          [
+            "43.64391520205345",
+            "-79.45888688148393"
+          ],
+          [
+            "43.64211003778368",
+            "-79.45705784159335"
+          ],
+          [
+            "43.642244911011765",
+            "-79.45699164912506"
+          ],
+          [
+            "43.643734874361755",
+            "-79.45995333973356"
+          ],
+          [
+            "43.642191376750155",
+            "-79.45692126380165"
+          ],
+          [
+            "43.64846895880668",
+            "-79.46445861486515"
+          ],
+          [
+            "43.64401004048243",
+            "-79.45892562413344"
+          ],
+          [
+            "43.64255007838239",
+            "-79.45709205573662"
+          ],
+          [
+            "43.642106925061505",
+            "-79.45778430892392"
+          ],
+          [
+            "43.642503928536165",
+            "-79.45714597685576"
+          ],
+          [
+            "43.64169655015733",
+            "-79.45734252095794"
+          ],
+          [
+            "43.641778652506424",
+            "-79.4571054489607"
+          ],
+          [
+            "43.64054012623245",
+            "-79.45612541810098"
+          ],
+          [
+            "43.64588388303519",
+            "-79.46985519841442"
+          ],
+          [
+            "43.643232738448376",
+            "-79.45823377557413"
+          ],
+          [
+            "43.64110558049574",
+            "-79.45645344488712"
+          ],
+          [
+            "43.6432572163035",
+            "-79.45835124871533"
+          ],
+          [
+            "43.640316038545514",
+            "-79.45586046878132"
+          ],
+          [
+            "43.64224110290697",
+            "-79.45677177179343"
+          ],
+          [
+            "43.64110811923227",
+            "-79.45660002977488"
+          ],
+          [
+            "43.640385029404705",
+            "-79.4558440872804"
+          ],
+          [
+            "43.64030738274197",
+            "-79.45590208355347"
+          ],
+          [
+            "43.64107396768608",
+            "-79.4564405306706"
+          ],
+          [
+            "43.648736608115286",
+            "-79.45816385040165"
+          ],
+          [
+            "43.641905495008885",
+            "-79.45752037526928"
+          ],
+          [
+            "43.64044536446034",
+            "-79.45586932055161"
+          ],
+          [
+            "43.64177839693724",
+            "-79.4574219856369"
+          ],
+          [
+            "43.64234044482336",
+            "-79.45797673643678"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "86a293e9dc9040f1b9443dced81fc93e": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.641528400911135",
+            "-79.45736266732418"
+          ],
+          [
+            "43.64146386573831",
+            "-79.45719997310094"
+          ],
+          [
+            "43.641894611362154",
+            "-79.45765152790351"
+          ],
+          [
+            "43.64199364196457",
+            "-79.45780603137628"
+          ],
+          [
+            "43.647734950266596",
+            "-79.46181299122667"
+          ],
+          [
+            "43.64394339205696",
+            "-79.45907380200123"
+          ],
+          [
+            "43.64178940836856",
+            "-79.45713256466458"
+          ],
+          [
+            "43.64776906234242",
+            "-79.4622796054905"
+          ],
+          [
+            "43.64187297185329",
+            "-79.45775556483385"
+          ],
+          [
+            "43.64308991768986",
+            "-79.45892041931444"
+          ],
+          [
+            "43.642032465295934",
+            "-79.45777703323975"
+          ],
+          [
+            "43.647902843943605",
+            "-79.46210938153662"
+          ],
+          [
+            "43.641737217978104",
+            "-79.45769878997362"
+          ],
+          [
+            "43.64192726230234",
+            "-79.45725807000083"
+          ],
+          [
+            "43.641784952682194",
+            "-79.45731164038875"
+          ],
+          [
+            "43.641963602221345",
+            "-79.45763514640258"
+          ],
+          [
+            "43.64167503843305",
+            "-79.45728828955019"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "f185847d759b40619fcae7579f4201a9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4545e0d4eb0c43fe93a2e829f55966e4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b5bf3bc1e2f34766b81cccc5bce73f97": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_f185847d759b40619fcae7579f4201a9",
+        "style": "IPY_MODEL_4545e0d4eb0c43fe93a2e829f55966e4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "872c0e40630049ccb91949e4498e0eac": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e89c8d8775c746df920943697bb0dc69": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_872c0e40630049ccb91949e4498e0eac",
+        "location": [
+          "43.64382105900708",
+          "-79.45979448349664"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b5bf3bc1e2f34766b81cccc5bce73f97",
+        "title": "Mourning Dove, 2021-07-15"
+      }
+    },
+    "d123db27f65d4162a516763da01ec843": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8325e898f84b476db37e044009ae86c1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "93c01f0ecc884a5b8ab8f60092b3ca1a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_d123db27f65d4162a516763da01ec843",
+        "style": "IPY_MODEL_8325e898f84b476db37e044009ae86c1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "147820e9b4ef48a2b3a74ea26a8aa54d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "735a8786973e44c582b200b5469a8bd1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_147820e9b4ef48a2b3a74ea26a8aa54d",
+        "location": [
+          "43.64211972914139",
+          "-79.45701328470294"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_93c01f0ecc884a5b8ab8f60092b3ca1a",
+        "title": "Mourning Dove, 2021-07-09"
+      }
+    },
+    "62ef07f43e594018a2db746f74836f2d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7bd4d049a07b46b3ba178355b3e889d0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "00d3ab9342cc43fb88e0ef0e105c20b5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_62ef07f43e594018a2db746f74836f2d",
+        "style": "IPY_MODEL_7bd4d049a07b46b3ba178355b3e889d0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6930439887a04beba3f6cf0957accd71": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0a883ba581aa418e8285f1720501f780": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6930439887a04beba3f6cf0957accd71",
+        "location": [
+          "43.64264514860558",
+          "-79.45744624660686"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_00d3ab9342cc43fb88e0ef0e105c20b5",
+        "title": "Mourning Dove, 2021-07-12"
+      }
+    },
+    "bbd1b6d349e441908838dab2f5f4a950": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9b784d7819f2484f9dabc398ff11a282": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "985592cbbc114c9fa6d041ad1c92838d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_bbd1b6d349e441908838dab2f5f4a950",
+        "style": "IPY_MODEL_9b784d7819f2484f9dabc398ff11a282",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "2665a1e6b2564f6aa81a21a0aa2a65fd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5e0727a787704d349348fcd3cf394752": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2665a1e6b2564f6aa81a21a0aa2a65fd",
+        "location": [
+          "43.64386166779184",
+          "-79.45881649616051"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_985592cbbc114c9fa6d041ad1c92838d",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "7e12b6f9faad4330aaae8b2efa6e1a3e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "170409a55e4342499f93a3c59c4c6572": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a3b8261937654333af99778030b90bc5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_7e12b6f9faad4330aaae8b2efa6e1a3e",
+        "style": "IPY_MODEL_170409a55e4342499f93a3c59c4c6572",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "84fccdf82221444bbb6a68427ebafcd0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "18a16d2778bf4571bb309c3ec580a8ca": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_84fccdf82221444bbb6a68427ebafcd0",
+        "location": [
+          "43.642673990884504",
+          "-79.45699712771487"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a3b8261937654333af99778030b90bc5",
+        "title": "Mourning Dove, 2021-07-23"
+      }
+    },
+    "2d52c0183f69441995eca75cf1b4a52c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c739ed94f42f4a3d940dc2edddfd68d2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "404aff8550ee41d6b879d1f656b9f197": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_2d52c0183f69441995eca75cf1b4a52c",
+        "style": "IPY_MODEL_c739ed94f42f4a3d940dc2edddfd68d2",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "221ea54448774c8e8d7df39b55f9efed": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d6889b970c8e4c05b5f291c5a7cc8281": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_221ea54448774c8e8d7df39b55f9efed",
+        "location": [
+          "43.64379844217252",
+          "-79.45879066772751"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_404aff8550ee41d6b879d1f656b9f197",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "90dc8232cb434b71828ec22f12815195": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "025cc4ab65054ffc982fe94d108613bf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e0f71063abb342059f7a4973c88a71cf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_90dc8232cb434b71828ec22f12815195",
+        "style": "IPY_MODEL_025cc4ab65054ffc982fe94d108613bf",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "122793c9daf941e7b13a68828c352dc7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9c47b7509cc840fca4b3a6e1c5fd65df": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_122793c9daf941e7b13a68828c352dc7",
+        "location": [
+          "43.64394681486311",
+          "-79.45889979570043"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e0f71063abb342059f7a4973c88a71cf",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "7b672ef61b4a48f3a5d5f8466ebb4fb2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "03c3fc9b5bde4c15a02b7ea51331ab03": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aad9a7e23dc74af18f0628413b7d60db": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_7b672ef61b4a48f3a5d5f8466ebb4fb2",
+        "style": "IPY_MODEL_03c3fc9b5bde4c15a02b7ea51331ab03",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "cd129d41244346c783d9644c5a9b7fbf": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e9f66c86f60b4acbb6ee0fb929305813": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cd129d41244346c783d9644c5a9b7fbf",
+        "location": [
+          "43.64221352999631",
+          "-79.45729418312929"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aad9a7e23dc74af18f0628413b7d60db",
+        "title": "Mourning Dove, 2021-07-08"
+      }
+    },
+    "8dc4b714841842688f140035f62c532b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4bba8f3713d34b5fadf76a1a66a5fd13": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ef11b2bc5af74c96b8aac2ff5a1c9e53": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_8dc4b714841842688f140035f62c532b",
+        "style": "IPY_MODEL_4bba8f3713d34b5fadf76a1a66a5fd13",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6a272fae94404d3aae39a5cd2417a99c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "82094627f973475f890b8f0cd3546c3f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6a272fae94404d3aae39a5cd2417a99c",
+        "location": [
+          "43.643903667341824",
+          "-79.4597311981488"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ef11b2bc5af74c96b8aac2ff5a1c9e53",
+        "title": "Mourning Dove, 2021-07-15"
+      }
+    },
+    "0bb31651531f44cdb7685d4b6b4c095f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c080f10fcd1d4fdd81a07fa59ac83c82": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "172a9d87be154ee98231cd7fe3cd8ac3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_0bb31651531f44cdb7685d4b6b4c095f",
+        "style": "IPY_MODEL_c080f10fcd1d4fdd81a07fa59ac83c82",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "632fb0d6a0814c0483fc4a2103f1d01e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c78e9ebbf0e8485ca7dda82e1e29727c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_632fb0d6a0814c0483fc4a2103f1d01e",
+        "location": [
+          "43.64401004048243",
+          "-79.45892562413344"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_172a9d87be154ee98231cd7fe3cd8ac3",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "14fc867ad35f47979d5255412b99ca9a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "dbd262ede851421d9e6c0bc0f5317924": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "52b72cf5450d46f0beea3e41d11116e4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_14fc867ad35f47979d5255412b99ca9a",
+        "style": "IPY_MODEL_dbd262ede851421d9e6c0bc0f5317924",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "da54454aa39a4e6f8a416ff077864423": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "67f348bfcca649efb2c180dc52da1f8b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_da54454aa39a4e6f8a416ff077864423",
+        "location": [
+          "43.64347412388068",
+          "-79.45909482311752"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_52b72cf5450d46f0beea3e41d11116e4",
+        "title": "Mourning Dove, 2021-07-24"
+      }
+    },
+    "00cc9e7891cb42a8aa4fb2e1caa54237": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ea92dccf17c04212a943a6d8e58b24ec": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f5cd00dec8cb4c8bad68d4e612aa4cf5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_00cc9e7891cb42a8aa4fb2e1caa54237",
+        "style": "IPY_MODEL_ea92dccf17c04212a943a6d8e58b24ec",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ee0afbacf6754cd89eb4332c7b1d6580": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9a38074e15024194a0f4deeb8b062493": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ee0afbacf6754cd89eb4332c7b1d6580",
+        "location": [
+          "43.64273744829803",
+          "-79.45733840436861"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f5cd00dec8cb4c8bad68d4e612aa4cf5",
+        "title": "Mourning Dove, 2021-07-12"
+      }
+    },
+    "0f6495acac2e4aba8ede8214b53de776": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ecc78db25f2b462687b44290642bbb57": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "76f72ef9159c48a08464d32bbc758744": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_0f6495acac2e4aba8ede8214b53de776",
+        "style": "IPY_MODEL_ecc78db25f2b462687b44290642bbb57",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2850fde6c1b747298c297d7ad781826d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "02cccd093c71456cbe4562d34b0596ac": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2850fde6c1b747298c297d7ad781826d",
+        "location": [
+          "43.64217937845012",
+          "-79.45713468402504"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_76f72ef9159c48a08464d32bbc758744",
+        "title": "Mourning Dove, 2021-07-08"
+      }
+    },
+    "60c2840f47aa4a6a9de9c9a0dbe00267": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c763404e26ed4fdd8770bf55b6ec3a84": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d03fe0e8d0bf445abf81bdc44c0057b6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_60c2840f47aa4a6a9de9c9a0dbe00267",
+        "style": "IPY_MODEL_c763404e26ed4fdd8770bf55b6ec3a84",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "46fa8633c09648bd89fcd9a282977c1d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "836e12e360f046d495372f6b927ff8e5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_46fa8633c09648bd89fcd9a282977c1d",
+        "location": [
+          "43.64852710695294",
+          "-79.46419127352263"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d03fe0e8d0bf445abf81bdc44c0057b6",
+        "title": "Mourning Dove, 2021-07-08"
+      }
+    },
+    "606656532a7b4d458848c9caaf54467b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4cc6253797d94466a66c1b421430e161": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eb4942ac182f4a56ae2e65cdc3bd46e0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_606656532a7b4d458848c9caaf54467b",
+        "style": "IPY_MODEL_4cc6253797d94466a66c1b421430e161",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "4430a8f5e6bb42a58bdf6124292feceb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "73bfb4445f8b4c7a9639ea9af7fe9655": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4430a8f5e6bb42a58bdf6124292feceb",
+        "location": [
+          "43.64391520205345",
+          "-79.45888688148393"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eb4942ac182f4a56ae2e65cdc3bd46e0",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "0c4c8bcf30684b64bcbe105c3b87afbb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a6250c6615934123817ace15aaf25f9d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "837ce368a5b342088854311741ad5e30": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_0c4c8bcf30684b64bcbe105c3b87afbb",
+        "style": "IPY_MODEL_a6250c6615934123817ace15aaf25f9d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2505c73c06ae4634bda89aec5dcd9f99": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "97bce10c8910458c8fc6e760928fe043": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2505c73c06ae4634bda89aec5dcd9f99",
+        "location": [
+          "43.64211003778368",
+          "-79.45705784159335"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_837ce368a5b342088854311741ad5e30",
+        "title": "Mourning Dove, 2021-07-09"
+      }
+    },
+    "fa6063bbc12149cf842c411697eab6d0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3e3c8ac8e12b4c18ae432d86d48fd781": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f58ba7a27dbc46498eb67b21307fdd2e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_fa6063bbc12149cf842c411697eab6d0",
+        "style": "IPY_MODEL_3e3c8ac8e12b4c18ae432d86d48fd781",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7534d7f97fb74696a6202e592d9ccceb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7655bdefe5fc4688b82f26c1e34ef805": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7534d7f97fb74696a6202e592d9ccceb",
+        "location": [
+          "43.642244911011765",
+          "-79.45699164912506"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f58ba7a27dbc46498eb67b21307fdd2e",
+        "title": "Mourning Dove, 2021-07-18"
+      }
+    },
+    "df7d7b8b05674f329b2538a8eef0154a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1c3e1b866a27427181696607f47f4a62": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6ee4d295902e4d7f92e8bf0059a4ed79": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_df7d7b8b05674f329b2538a8eef0154a",
+        "style": "IPY_MODEL_1c3e1b866a27427181696607f47f4a62",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "52235d18aa144da6ad1be7a99a88da12": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2458074b0ac041cb9d5181f6f3ca400d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_52235d18aa144da6ad1be7a99a88da12",
+        "location": [
+          "43.643734874361755",
+          "-79.45995333973356"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6ee4d295902e4d7f92e8bf0059a4ed79",
+        "title": "Mourning Dove, 2021-07-21"
+      }
+    },
+    "7ce283a6926f4c0ea652e7590c8f9d38": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "40d0fdc644ee429e884428e2efa3e757": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "43ee670996224e8cabbe2948211eea7d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_7ce283a6926f4c0ea652e7590c8f9d38",
+        "style": "IPY_MODEL_40d0fdc644ee429e884428e2efa3e757",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "698f4b3829c346fca153a1c4d93b51e9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "53348fa5416745f2a256eae8c1de2659": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_698f4b3829c346fca153a1c4d93b51e9",
+        "location": [
+          "43.642191376750155",
+          "-79.45692126380165"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_43ee670996224e8cabbe2948211eea7d",
+        "title": "Mourning Dove, 2021-07-18"
+      }
+    },
+    "74f826c3bded4ae08cfabe25245281ae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b73ef86382eb41728d0b9bc61410a268": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "980d0ced5df64024b34f6d5dab006299": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_74f826c3bded4ae08cfabe25245281ae",
+        "style": "IPY_MODEL_b73ef86382eb41728d0b9bc61410a268",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "2a9752250a9c4d14b79154acf77c3ed4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "296689c81a3f40d98a61e9337098c30f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2a9752250a9c4d14b79154acf77c3ed4",
+        "location": [
+          "43.64846895880668",
+          "-79.46445861486515"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_980d0ced5df64024b34f6d5dab006299",
+        "title": "Mourning Dove, 2021-07-08"
+      }
+    },
+    "efddd831621c4948890e3c7364f87a40": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c10b4c9056f64b7792795f9c0660376c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "568c8324eb6b4da7badd7e08e7dbd8c3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_efddd831621c4948890e3c7364f87a40",
+        "style": "IPY_MODEL_c10b4c9056f64b7792795f9c0660376c",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "954f60755c8a49abbf15da50335f982d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "19ffd3361bfc4a6d8991a633dbfda5bf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_954f60755c8a49abbf15da50335f982d",
+        "location": [
+          "43.64401004048243",
+          "-79.45892562413344"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_568c8324eb6b4da7badd7e08e7dbd8c3",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "0e8cca0312bf4917b1ba273cafef7839": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f004bffd53524e0db4bf40003d409bda": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2d7e61b6c7984f428667cdfb1cf2f872": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_0e8cca0312bf4917b1ba273cafef7839",
+        "style": "IPY_MODEL_f004bffd53524e0db4bf40003d409bda",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "86fa542a578c4112a88af93772276644": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0b9cb328cf7449b0bac0924526470981": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_86fa542a578c4112a88af93772276644",
+        "location": [
+          "43.64255007838239",
+          "-79.45709205573662"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2d7e61b6c7984f428667cdfb1cf2f872",
+        "title": "Mourning Dove, 2021-07-23"
+      }
+    },
+    "473070edb5f94eff9a1c49bfc4200261": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "16d89caf435b4d15b7487c56b0535ee0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d2bc6125803b404998df732ff0ebef51": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_473070edb5f94eff9a1c49bfc4200261",
+        "style": "IPY_MODEL_16d89caf435b4d15b7487c56b0535ee0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e32a04ab1e8b44b694f3ee50414da322": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f96e1ba5d2df4afca38cc08394289321": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e32a04ab1e8b44b694f3ee50414da322",
+        "location": [
+          "43.642106925061505",
+          "-79.45778430892392"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d2bc6125803b404998df732ff0ebef51",
+        "title": "Mourning Dove, 2021-07-21"
+      }
+    },
+    "22f3e95b267545f8b960d970cf8833ef": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c6dc67c2fb2f4002bc85385bf4814ffe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b2e9e9614c844bb7a44eef50757e0673": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_22f3e95b267545f8b960d970cf8833ef",
+        "style": "IPY_MODEL_c6dc67c2fb2f4002bc85385bf4814ffe",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "e89d05c5425d4a25a1b1f6e7b05c02ba": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "35a49d3bab2b409dba2d93bc4328fad2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e89d05c5425d4a25a1b1f6e7b05c02ba",
+        "location": [
+          "43.642503928536165",
+          "-79.45714597685576"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b2e9e9614c844bb7a44eef50757e0673",
+        "title": "Mourning Dove, 2021-07-04"
+      }
+    },
+    "d78a39618a9f4777a638bb10a161e8a2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c5edbbe63467419cafe6ee9fa58950a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "901af484a4994e68bf8accd15171c147": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_d78a39618a9f4777a638bb10a161e8a2",
+        "style": "IPY_MODEL_c5edbbe63467419cafe6ee9fa58950a5",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "ee60e57525874decb0cf5a86941049ee": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e33d6dc2134640328a9f1fe0e665186b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ee60e57525874decb0cf5a86941049ee",
+        "location": [
+          "43.64169655015733",
+          "-79.45734252095794"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_901af484a4994e68bf8accd15171c147",
+        "title": "Mourning Dove, 2021-08-19"
+      }
+    },
+    "65a8d397a15a4f5f811b93528efa6527": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "de138808e78b49239c06d5b8e2e5b581": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "61552fc80e514263bb5508f7a723723b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_65a8d397a15a4f5f811b93528efa6527",
+        "style": "IPY_MODEL_de138808e78b49239c06d5b8e2e5b581",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "793aef629f9f410b8bda184dcb9e5acd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "addb37c679cb4f3389cafb93bce7c60e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_793aef629f9f410b8bda184dcb9e5acd",
+        "location": [
+          "43.641528400911135",
+          "-79.45736266732418"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_61552fc80e514263bb5508f7a723723b",
+        "title": "Mourning Dove, 2021-08-30"
+      }
+    },
+    "d06c818519824196b54331c3b3a4cefc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "81fa706d41f447cfa621c632049d42dc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2ef02fe1c3b645c3be2717f96f2c5a3a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_d06c818519824196b54331c3b3a4cefc",
+        "style": "IPY_MODEL_81fa706d41f447cfa621c632049d42dc",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "8f5e56112d0846029c2b81ba05ebebb3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ead1b93d11d54461bd470a4fca1dac8a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8f5e56112d0846029c2b81ba05ebebb3",
+        "location": [
+          "43.641778652506424",
+          "-79.4571054489607"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2ef02fe1c3b645c3be2717f96f2c5a3a",
+        "title": "Mourning Dove, 2021-08-19"
+      }
+    },
+    "e4ba682dc8de4288803c0de03f56a3ac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a658451be7714625b5c6397ce4d5e87e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0f82c333fba44db588350e6f79db5eea": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_e4ba682dc8de4288803c0de03f56a3ac",
+        "style": "IPY_MODEL_a658451be7714625b5c6397ce4d5e87e",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "891e3336a490419d808e516c7562d330": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e7867dfb7d4149f68234c5d847224492": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_891e3336a490419d808e516c7562d330",
+        "location": [
+          "43.64054012623245",
+          "-79.45612541810098"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0f82c333fba44db588350e6f79db5eea",
+        "title": "Mourning Dove, 2021-07-27"
+      }
+    },
+    "671d356c15944e798eb95e6e90eada10": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ba2c6ebca84145f4b145da83a7a8603f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3c664572e0bb44c6bab365797d18f68c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_671d356c15944e798eb95e6e90eada10",
+        "style": "IPY_MODEL_ba2c6ebca84145f4b145da83a7a8603f",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "533b86236fc24605a78ae5b22705316d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "48c4a8fb671147f18ad1adc1c45f7158": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_533b86236fc24605a78ae5b22705316d",
+        "location": [
+          "43.64588388303519",
+          "-79.46985519841442"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3c664572e0bb44c6bab365797d18f68c",
+        "title": "Mourning Dove, 2021-07-27"
+      }
+    },
+    "c446930b87dd42a2851daae3ca89ec7d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "25cf728f14ee4d4fb517b26e877f2c3b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9b07a799ca1e4a568028ff47a1c7fd8f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_c446930b87dd42a2851daae3ca89ec7d",
+        "style": "IPY_MODEL_25cf728f14ee4d4fb517b26e877f2c3b",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "452ad840834b4c61a5822996c592d2ab": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d7eceb217d894201881e2fafd8c01044": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_452ad840834b4c61a5822996c592d2ab",
+        "location": [
+          "43.643232738448376",
+          "-79.45823377557413"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9b07a799ca1e4a568028ff47a1c7fd8f",
+        "title": "Mourning Dove, 2021-08-09"
+      }
+    },
+    "1736d758c6f44a419d2974b6a4a5a781": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ebaf5db7d8fa4e01a570a05f4cea18fd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "035f643e42a741a29618e8440fee6f2c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_1736d758c6f44a419d2974b6a4a5a781",
+        "style": "IPY_MODEL_ebaf5db7d8fa4e01a570a05f4cea18fd",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "629c93ba2b69492296109fc7ba554313": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "34a0714889224ba19a601da19be8ae3a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_629c93ba2b69492296109fc7ba554313",
+        "location": [
+          "43.64146386573831",
+          "-79.45719997310094"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_035f643e42a741a29618e8440fee6f2c",
+        "title": "Mourning Dove, 2021-08-30"
+      }
+    },
+    "fc0cdc3a4a6640f3aacd8f08d0463324": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "96fa102ea6dd49bfa248b9d77123d8a8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "abf6d51221fd4a0abf8b21985a1c0e21": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_fc0cdc3a4a6640f3aacd8f08d0463324",
+        "style": "IPY_MODEL_96fa102ea6dd49bfa248b9d77123d8a8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a56590ad4e854937a3658700025f026c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "21384b13231d4f548919bb600ffd0a66": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a56590ad4e854937a3658700025f026c",
+        "location": [
+          "43.64110558049574",
+          "-79.45645344488712"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_abf6d51221fd4a0abf8b21985a1c0e21",
+        "title": "Mourning Dove, 2021-08-04"
+      }
+    },
+    "80981e648b2b4ec3af5ec0e9bb977fba": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f43e66f21b424012ad682c7945b61dfe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "717def8c3fcb4982b26af6c5bf99699d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_80981e648b2b4ec3af5ec0e9bb977fba",
+        "style": "IPY_MODEL_f43e66f21b424012ad682c7945b61dfe",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "118301dc1c2d4d1da744c1d303a8ca75": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3c3d0e32e33d49fd882c2b2cb00456a5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_118301dc1c2d4d1da744c1d303a8ca75",
+        "location": [
+          "43.6432572163035",
+          "-79.45835124871533"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_717def8c3fcb4982b26af6c5bf99699d",
+        "title": "Mourning Dove, 2021-07-27"
+      }
+    },
+    "d28e06f2182d48f48a164588c07046a3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "216e029bd18844b696eb3f83adaf7040": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c7be507eca91463998564014d9a1b8ff": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_d28e06f2182d48f48a164588c07046a3",
+        "style": "IPY_MODEL_216e029bd18844b696eb3f83adaf7040",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "086352a126994e62934814e615953d8f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "372c7c7fd1924c36b4180e40d11a4e0b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_086352a126994e62934814e615953d8f",
+        "location": [
+          "43.641894611362154",
+          "-79.45765152790351"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c7be507eca91463998564014d9a1b8ff",
+        "title": "Mourning Dove, 2021-08-24"
+      }
+    },
+    "35c18145171f40cf91c508bf2b29c96b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8b3d18edbdfc4045a64bfb292fc7ae44": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a5182837ce2433e80d6b38a78dcd660": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_35c18145171f40cf91c508bf2b29c96b",
+        "style": "IPY_MODEL_8b3d18edbdfc4045a64bfb292fc7ae44",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "c59c1935065240c39cfb6fe2976d2ac9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d7afdc83bf9e447c8d0269943a87b7b4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c59c1935065240c39cfb6fe2976d2ac9",
+        "location": [
+          "43.640316038545514",
+          "-79.45586046878132"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a5182837ce2433e80d6b38a78dcd660",
+        "title": "Mourning Dove, 2021-08-16"
+      }
+    },
+    "441dc89a5c2545b8b7e646fdae952fe9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4b70125dbfb54fa8800c5c4e947aa3f6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1b33999e5cfe4a9690fd0191932d1a93": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_441dc89a5c2545b8b7e646fdae952fe9",
+        "style": "IPY_MODEL_4b70125dbfb54fa8800c5c4e947aa3f6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b4fa52ba6d904eff81c65ca5c3217d83": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a93bac320bb247f8bc7afc6e712152b8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b4fa52ba6d904eff81c65ca5c3217d83",
+        "location": [
+          "43.64224110290697",
+          "-79.45677177179343"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1b33999e5cfe4a9690fd0191932d1a93",
+        "title": "Mourning Dove, 2021-08-04"
+      }
+    },
+    "dbf0a400dabd4c9db855d440c2d3809f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3ba5869842fa4b5f864fbc938a50d421": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "849ad6a3de12497cad9823dc918b6ef2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_dbf0a400dabd4c9db855d440c2d3809f",
+        "style": "IPY_MODEL_3ba5869842fa4b5f864fbc938a50d421",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "d88fe19de8374b63bf84ce16ef124489": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cba0bbe2993d44639b3074bc0ff87439": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d88fe19de8374b63bf84ce16ef124489",
+        "location": [
+          "43.64199364196457",
+          "-79.45780603137628"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_849ad6a3de12497cad9823dc918b6ef2",
+        "title": "Mourning Dove, 2021-09-04"
+      }
+    },
+    "1d7a199414d34ff183596a5059720d36": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "38eaa221a00f4b039f35a93e0c51d3e3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5c9d7027e0a94501b8ba93a93e2a7cf3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_1d7a199414d34ff183596a5059720d36",
+        "style": "IPY_MODEL_38eaa221a00f4b039f35a93e0c51d3e3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6f646de8e2694b42b80dd30c6a999643": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "77a82d7d9fb84831bb1bea177d1b54ba": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6f646de8e2694b42b80dd30c6a999643",
+        "location": [
+          "43.64110811923227",
+          "-79.45660002977488"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5c9d7027e0a94501b8ba93a93e2a7cf3",
+        "title": "Mourning Dove, 2021-07-30"
+      }
+    },
+    "a4bd0dca1ccf481e8ec62f0a943d9ab9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fecb248f4e0243b5977d8f7b3123e3d0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "63ec079ad1574386bd24616dc64c7f4a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_a4bd0dca1ccf481e8ec62f0a943d9ab9",
+        "style": "IPY_MODEL_fecb248f4e0243b5977d8f7b3123e3d0",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "fda5dc0188f94f9d977b6978d6d5bd3f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8ae6be6065ca478f935a93eeb47da58d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fda5dc0188f94f9d977b6978d6d5bd3f",
+        "location": [
+          "43.647734950266596",
+          "-79.46181299122667"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_63ec079ad1574386bd24616dc64c7f4a",
+        "title": "Mourning Dove, 2021-08-31"
+      }
+    },
+    "ce1ff3981483410293b10def9257b3a6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2dd5ab13a3a44c85a9db811131231cdb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ae2c87de24414fc0996d646648f9bc11": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_ce1ff3981483410293b10def9257b3a6",
+        "style": "IPY_MODEL_2dd5ab13a3a44c85a9db811131231cdb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e7e5e473054a44079af12b503918e3ae": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be1aeb9f486c4616809dd394e52d9076": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e7e5e473054a44079af12b503918e3ae",
+        "location": [
+          "43.64394339205696",
+          "-79.45907380200123"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ae2c87de24414fc0996d646648f9bc11",
+        "title": "Mourning Dove, 2021-09-07"
+      }
+    },
+    "933c21938289492eaa01d0437473035f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a989ee68840146a19ad7e99a358da384": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c61350cc1b9a40dea0b3db6f3ab7d384": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_933c21938289492eaa01d0437473035f",
+        "style": "IPY_MODEL_a989ee68840146a19ad7e99a358da384",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "add96dffc0534320872ed1f78ffc3df4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9f723228b67b416c858a32d5b459c498": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_add96dffc0534320872ed1f78ffc3df4",
+        "location": [
+          "43.640385029404705",
+          "-79.4558440872804"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c61350cc1b9a40dea0b3db6f3ab7d384",
+        "title": "Mourning Dove, 2021-08-16"
+      }
+    },
+    "8491415016174ff9829cf5fe8837ab26": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f1e194d254474a35a46ade5290984d8c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e9f8d53d4780476182b4bf15cdb4c695": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_8491415016174ff9829cf5fe8837ab26",
+        "style": "IPY_MODEL_f1e194d254474a35a46ade5290984d8c",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "35a6baf12abd4adc843afd60100c87c3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2aba64c31b6c42b6904d8a79dfef9b6e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_35a6baf12abd4adc843afd60100c87c3",
+        "location": [
+          "43.64178940836856",
+          "-79.45713256466458"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e9f8d53d4780476182b4bf15cdb4c695",
+        "title": "Mourning Dove, 2021-09-07"
+      }
+    },
+    "2335e03179c943ebae35f224562b658b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19bc5b18155f4fbbadfa99eaf1bc39b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fc9b1586f5c049ecbcd9f25b229ef948": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_2335e03179c943ebae35f224562b658b",
+        "style": "IPY_MODEL_19bc5b18155f4fbbadfa99eaf1bc39b5",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "7c24b45a2e664bd29b502094c7cc8082": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6bea8906a76c4fa6b75c042adcbc0eae": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7c24b45a2e664bd29b502094c7cc8082",
+        "location": [
+          "43.64776906234242",
+          "-79.4622796054905"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fc9b1586f5c049ecbcd9f25b229ef948",
+        "title": "Mourning Dove, 2021-08-23"
+      }
+    },
+    "8a89eb1ee7e7405189d80f31bb39763e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3d677a5df5cc41de86902498c06a129a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "24ecbb1b4d474e9297399f0a51abcf6c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_8a89eb1ee7e7405189d80f31bb39763e",
+        "style": "IPY_MODEL_3d677a5df5cc41de86902498c06a129a",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "27de82f9c5c84a9ea4de416e6d54e150": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9abeb7661ab044f5ab8ccd1b76080ffe": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_27de82f9c5c84a9ea4de416e6d54e150",
+        "location": [
+          "43.64187297185329",
+          "-79.45775556483385"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_24ecbb1b4d474e9297399f0a51abcf6c",
+        "title": "Mourning Dove, 2021-09-04"
+      }
+    },
+    "771560b8b1a84578b1f06ac87133c89a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7a98c919f8e34e528e635fda694a1795": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4c42710473d045019ec40950cef0116f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_771560b8b1a84578b1f06ac87133c89a",
+        "style": "IPY_MODEL_7a98c919f8e34e528e635fda694a1795",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "eb19fbc91f974efb99d1581ef3955e51": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "db17f00b4ba145ee835c28d080be286c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eb19fbc91f974efb99d1581ef3955e51",
+        "location": [
+          "43.64308991768986",
+          "-79.45892041931444"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4c42710473d045019ec40950cef0116f",
+        "title": "Mourning Dove, 2021-08-28"
+      }
+    },
+    "a162e16d1b224ecd951e7eaedf7918c5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "09f997348cfa446094b6f8155170af6c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0184215fcb814040a343748c3374a03f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_a162e16d1b224ecd951e7eaedf7918c5",
+        "style": "IPY_MODEL_09f997348cfa446094b6f8155170af6c",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "5c594407a1df4a848076d71e4c31ecec": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "97194fa0017041388f0fd5449202be83": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5c594407a1df4a848076d71e4c31ecec",
+        "location": [
+          "43.64030738274197",
+          "-79.45590208355347"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0184215fcb814040a343748c3374a03f",
+        "title": "Mourning Dove, 2021-08-17"
+      }
+    },
+    "eed810a008c140518eb4b197ab3d7eb7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "20e99c1c10294b1da4aa2697f4b48bac": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5393a41706514095bf58dcc23b72eb13": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_eed810a008c140518eb4b197ab3d7eb7",
+        "style": "IPY_MODEL_20e99c1c10294b1da4aa2697f4b48bac",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0beca9c7cfac4bfdaacbfb261b04aac8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4930915315634236abe568a6a2a772b9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0beca9c7cfac4bfdaacbfb261b04aac8",
+        "location": [
+          "43.64107396768608",
+          "-79.4564405306706"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5393a41706514095bf58dcc23b72eb13",
+        "title": "Mourning Dove, 2021-07-30"
+      }
+    },
+    "a4a6663637ed40bfa7ad0e6f055577d7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5c7bd7f2d9384f529531feef6d8e166e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d7eb2ca3baf448a0a284fceac08b179a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_a4a6663637ed40bfa7ad0e6f055577d7",
+        "style": "IPY_MODEL_5c7bd7f2d9384f529531feef6d8e166e",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "a21828d1edd6400aad5a124bba97bda9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8739a4f2e6a54fb2a8bdc0da55ea438e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a21828d1edd6400aad5a124bba97bda9",
+        "location": [
+          "43.642032465295934",
+          "-79.45777703323975"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d7eb2ca3baf448a0a284fceac08b179a",
+        "title": "Mourning Dove, 2021-09-04"
+      }
+    },
+    "4f6d18e367ec4db8bd5e53a77a97159c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "af75bbd5b0194fba81e6c248d58aa37c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9a16d49be7084958b23c8fd22c3a1722": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-25",
+        "layout": "IPY_MODEL_4f6d18e367ec4db8bd5e53a77a97159c",
+        "style": "IPY_MODEL_af75bbd5b0194fba81e6c248d58aa37c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c494ea0e9b924b978216182e0cf0c3f0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a74b9aae183047beab29a690e268a431": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c494ea0e9b924b978216182e0cf0c3f0",
+        "location": [
+          "43.648736608115286",
+          "-79.45816385040165"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9a16d49be7084958b23c8fd22c3a1722",
+        "title": "Mourning Dove, 2021-07-25"
+      }
+    },
+    "dfca63f26e1c44849f9dc09797d65a83": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4674067b346d44d4bdc21e6661a551c9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "50e543bc87b5490eb961e332bdc01689": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_dfca63f26e1c44849f9dc09797d65a83",
+        "style": "IPY_MODEL_4674067b346d44d4bdc21e6661a551c9",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "bf3839bb37564db2be6ae151470afd7d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3fb8b06e4d1f4364aff68d21fbd3835d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bf3839bb37564db2be6ae151470afd7d",
+        "location": [
+          "43.647902843943605",
+          "-79.46210938153662"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_50e543bc87b5490eb961e332bdc01689",
+        "title": "Mourning Dove, 2021-08-31"
+      }
+    },
+    "48c409bbdc3c4b748798c28efddacabc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2dc01400946049349d6740a3a66d0c23": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f8df5c76ed2645ea9c6163261dd53b24": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_48c409bbdc3c4b748798c28efddacabc",
+        "style": "IPY_MODEL_2dc01400946049349d6740a3a66d0c23",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "c0b3cc8ae18a4914be13cbe0cb1aa0f3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fae6c8c6028f457f824ca6a0d3075086": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c0b3cc8ae18a4914be13cbe0cb1aa0f3",
+        "location": [
+          "43.641737217978104",
+          "-79.45769878997362"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f8df5c76ed2645ea9c6163261dd53b24",
+        "title": "Mourning Dove, 2021-09-07"
+      }
+    },
+    "cfc35dfbde794132ac170e1396b4ef38": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7a533be86440480e9f2d8f1e747802e7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fd4a619e1b904db79f4e5f736916f245": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_cfc35dfbde794132ac170e1396b4ef38",
+        "style": "IPY_MODEL_7a533be86440480e9f2d8f1e747802e7",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "c0cc11b8dfba45af9fa01938bf594160": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fc430f598ac6472aa1e36761440e6f61": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c0cc11b8dfba45af9fa01938bf594160",
+        "location": [
+          "43.641905495008885",
+          "-79.45752037526928"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fd4a619e1b904db79f4e5f736916f245",
+        "title": "Mourning Dove, 2021-08-21"
+      }
+    },
+    "da8833ffd1d34a1c8714942c88081166": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b62073c819a04eee94b50913528dcbf5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "db431d32aea64334a24c9fd2c852c0ea": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_da8833ffd1d34a1c8714942c88081166",
+        "style": "IPY_MODEL_b62073c819a04eee94b50913528dcbf5",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "fbf3554f17114ed986cca8f1af434181": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3d104325b4e84cd6af4a91ae49368554": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fbf3554f17114ed986cca8f1af434181",
+        "location": [
+          "43.64044536446034",
+          "-79.45586932055161"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_db431d32aea64334a24c9fd2c852c0ea",
+        "title": "Mourning Dove, 2021-08-17"
+      }
+    },
+    "71aa56f274e740b7bdcdcc51100a5e65": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b535eaf50a6641dc889ea178d7f16c20": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5ebcaea3094947a5a703563de2db729d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_71aa56f274e740b7bdcdcc51100a5e65",
+        "style": "IPY_MODEL_b535eaf50a6641dc889ea178d7f16c20",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "e3dedd0a1e61481d8db266e540f963cb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0d1097a58cfa4e3bb2fcb6e39a7ad331": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e3dedd0a1e61481d8db266e540f963cb",
+        "location": [
+          "43.64192726230234",
+          "-79.45725807000083"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5ebcaea3094947a5a703563de2db729d",
+        "title": "Mourning Dove, 2021-09-14"
+      }
+    },
+    "3399f914471d483f89026f2aa94136f6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "52c65362a83a4a0291733d474fcacab8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9454b67033f44e54886420e2a7a6571d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_3399f914471d483f89026f2aa94136f6",
+        "style": "IPY_MODEL_52c65362a83a4a0291733d474fcacab8",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "aa6a8a3edaa148fe891decdffb66c9ed": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b48990dad3ed4d3195b222b1d36d51d1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aa6a8a3edaa148fe891decdffb66c9ed",
+        "location": [
+          "43.64177839693724",
+          "-79.4574219856369"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9454b67033f44e54886420e2a7a6571d",
+        "title": "Mourning Dove, 2021-08-19"
+      }
+    },
+    "86b75bda7db948598905a527e78b9440": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "118e9283862740f98a99344e97b15c87": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "82a96d6fda9240e1ba731573fe346455": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_86b75bda7db948598905a527e78b9440",
+        "style": "IPY_MODEL_118e9283862740f98a99344e97b15c87",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "bfb314d5fc9f4586b8c07cafc70e9864": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4e31e692254c43a29619eb08c95f72e8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bfb314d5fc9f4586b8c07cafc70e9864",
+        "location": [
+          "43.641784952682194",
+          "-79.45731164038875"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_82a96d6fda9240e1ba731573fe346455",
+        "title": "Mourning Dove, 2021-09-07"
+      }
+    },
+    "b6688ec665be4e23b54239274fe231af": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ed9cd4e79e3b490eb448c7421feb728e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c2661cee9a7a4cec893f8622811a4b49": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_b6688ec665be4e23b54239274fe231af",
+        "style": "IPY_MODEL_ed9cd4e79e3b490eb448c7421feb728e",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "4339388ff6aa4ff7b06abc522d615270": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f32640941f4847f08d6a8202a8600c38": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4339388ff6aa4ff7b06abc522d615270",
+        "location": [
+          "43.641963602221345",
+          "-79.45763514640258"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c2661cee9a7a4cec893f8622811a4b49",
+        "title": "Mourning Dove, 2021-08-29"
+      }
+    },
+    "f15ea2cc84164e87bb8706439fe97424": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fae2c87d3e3847838478ccd4319379d3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "63058054711d405888a3904faaa9388b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_f15ea2cc84164e87bb8706439fe97424",
+        "style": "IPY_MODEL_fae2c87d3e3847838478ccd4319379d3",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "57e0153841d943b8af191a9b3ef36372": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9ac34b5e383d4d9cb26a1f1538959594": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_57e0153841d943b8af191a9b3ef36372",
+        "location": [
+          "43.64234044482336",
+          "-79.45797673643678"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_63058054711d405888a3904faaa9388b",
+        "title": "Mourning Dove, 2021-07-27"
+      }
+    },
+    "6ac001c8f7b1458fa66adb30e3f9bd19": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "44dbfb2f73664997b40f1906c489b324": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f05c37fed76b4b52817e737d7300de97": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_6ac001c8f7b1458fa66adb30e3f9bd19",
+        "style": "IPY_MODEL_44dbfb2f73664997b40f1906c489b324",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "bc58d96a0c744ec5bdbfce594d6ee685": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ba4f239603fb4198ad98a5e6a3d5b892": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bc58d96a0c744ec5bdbfce594d6ee685",
+        "location": [
+          "43.64167503843305",
+          "-79.45728828955019"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f05c37fed76b4b52817e737d7300de97",
+        "title": "Mourning Dove, 2021-08-24"
+      }
+    },
+    "f34a0762923c4aa1a10751b39e3233fa": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_e89c8d8775c746df920943697bb0dc69",
+          "IPY_MODEL_735a8786973e44c582b200b5469a8bd1",
+          "IPY_MODEL_0a883ba581aa418e8285f1720501f780",
+          "IPY_MODEL_5e0727a787704d349348fcd3cf394752",
+          "IPY_MODEL_18a16d2778bf4571bb309c3ec580a8ca",
+          "IPY_MODEL_d6889b970c8e4c05b5f291c5a7cc8281",
+          "IPY_MODEL_9c47b7509cc840fca4b3a6e1c5fd65df",
+          "IPY_MODEL_e9f66c86f60b4acbb6ee0fb929305813",
+          "IPY_MODEL_82094627f973475f890b8f0cd3546c3f",
+          "IPY_MODEL_c78e9ebbf0e8485ca7dda82e1e29727c",
+          "IPY_MODEL_67f348bfcca649efb2c180dc52da1f8b",
+          "IPY_MODEL_9a38074e15024194a0f4deeb8b062493",
+          "IPY_MODEL_02cccd093c71456cbe4562d34b0596ac",
+          "IPY_MODEL_836e12e360f046d495372f6b927ff8e5",
+          "IPY_MODEL_73bfb4445f8b4c7a9639ea9af7fe9655",
+          "IPY_MODEL_97bce10c8910458c8fc6e760928fe043",
+          "IPY_MODEL_7655bdefe5fc4688b82f26c1e34ef805",
+          "IPY_MODEL_2458074b0ac041cb9d5181f6f3ca400d",
+          "IPY_MODEL_53348fa5416745f2a256eae8c1de2659",
+          "IPY_MODEL_296689c81a3f40d98a61e9337098c30f",
+          "IPY_MODEL_19ffd3361bfc4a6d8991a633dbfda5bf",
+          "IPY_MODEL_0b9cb328cf7449b0bac0924526470981",
+          "IPY_MODEL_f96e1ba5d2df4afca38cc08394289321",
+          "IPY_MODEL_35a49d3bab2b409dba2d93bc4328fad2",
+          "IPY_MODEL_e33d6dc2134640328a9f1fe0e665186b",
+          "IPY_MODEL_addb37c679cb4f3389cafb93bce7c60e",
+          "IPY_MODEL_ead1b93d11d54461bd470a4fca1dac8a",
+          "IPY_MODEL_e7867dfb7d4149f68234c5d847224492",
+          "IPY_MODEL_48c4a8fb671147f18ad1adc1c45f7158",
+          "IPY_MODEL_d7eceb217d894201881e2fafd8c01044",
+          "IPY_MODEL_34a0714889224ba19a601da19be8ae3a",
+          "IPY_MODEL_21384b13231d4f548919bb600ffd0a66",
+          "IPY_MODEL_3c3d0e32e33d49fd882c2b2cb00456a5",
+          "IPY_MODEL_372c7c7fd1924c36b4180e40d11a4e0b",
+          "IPY_MODEL_d7afdc83bf9e447c8d0269943a87b7b4",
+          "IPY_MODEL_a93bac320bb247f8bc7afc6e712152b8",
+          "IPY_MODEL_cba0bbe2993d44639b3074bc0ff87439",
+          "IPY_MODEL_77a82d7d9fb84831bb1bea177d1b54ba",
+          "IPY_MODEL_8ae6be6065ca478f935a93eeb47da58d",
+          "IPY_MODEL_be1aeb9f486c4616809dd394e52d9076",
+          "IPY_MODEL_9f723228b67b416c858a32d5b459c498",
+          "IPY_MODEL_2aba64c31b6c42b6904d8a79dfef9b6e",
+          "IPY_MODEL_6bea8906a76c4fa6b75c042adcbc0eae",
+          "IPY_MODEL_9abeb7661ab044f5ab8ccd1b76080ffe",
+          "IPY_MODEL_db17f00b4ba145ee835c28d080be286c",
+          "IPY_MODEL_97194fa0017041388f0fd5449202be83",
+          "IPY_MODEL_4930915315634236abe568a6a2a772b9",
+          "IPY_MODEL_8739a4f2e6a54fb2a8bdc0da55ea438e",
+          "IPY_MODEL_a74b9aae183047beab29a690e268a431",
+          "IPY_MODEL_3fb8b06e4d1f4364aff68d21fbd3835d",
+          "IPY_MODEL_fae6c8c6028f457f824ca6a0d3075086",
+          "IPY_MODEL_fc430f598ac6472aa1e36761440e6f61",
+          "IPY_MODEL_3d104325b4e84cd6af4a91ae49368554",
+          "IPY_MODEL_0d1097a58cfa4e3bb2fcb6e39a7ad331",
+          "IPY_MODEL_b48990dad3ed4d3195b222b1d36d51d1",
+          "IPY_MODEL_4e31e692254c43a29619eb08c95f72e8",
+          "IPY_MODEL_f32640941f4847f08d6a8202a8600c38",
+          "IPY_MODEL_9ac34b5e383d4d9cb26a1f1538959594",
+          "IPY_MODEL_ba4f239603fb4198ad98a5e6a3d5b892"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "df1d06eeb60e47feb1c9b0754215ed9c"}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warbling Vireo Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "f48038d6f9b04e8b9f74ff6cc54e6d26": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "1c5b942826854794b37320ff5c7277d2": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "017811f3f60e4801b5aaa8396ef48987": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "b919dde622014c5190e59957a6a6646f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "6d09ddb907f541ef80f52a2d1c467907": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "b7e3665cffb34e5f925bfd17716dd8d3": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_62e0e2a2d73341c5a582a21777890e81",
+          "IPY_MODEL_19260a18225d467a9612311af62ebf81",
+          "IPY_MODEL_f38a5e9728aa421bb6577663b96d788b",
+          "IPY_MODEL_a9924d135aa04db9a0f51b87bff8e7c5"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_f48038d6f9b04e8b9f74ff6cc54e6d26",
+        "dragging_style": "IPY_MODEL_1c5b942826854794b37320ff5c7277d2",
+        "layers": [
+          "IPY_MODEL_017811f3f60e4801b5aaa8396ef48987",
+          "IPY_MODEL_1cb436bdbefa45508e126855191b87a5",
+          "IPY_MODEL_3deab39b83a9490085bcb3f6aa9253ac",
+          "IPY_MODEL_aa487a6bcc534594b69fbb889decc066",
+          "IPY_MODEL_2c4248d3bf6f4a4faab426b0ba400eb4",
+          "IPY_MODEL_b28522cbe90447cda9ed946bd175145d"
+        ],
+        "layout": "IPY_MODEL_b919dde622014c5190e59957a6a6646f",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_6d09ddb907f541ef80f52a2d1c467907",
+        "zoom": 14.0
+      }
+    },
+    "62e0e2a2d73341c5a582a21777890e81": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "19260a18225d467a9612311af62ebf81": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "f38a5e9728aa421bb6577663b96d788b": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "a9924d135aa04db9a0f51b87bff8e7c5": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "1cb436bdbefa45508e126855191b87a5": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "3deab39b83a9490085bcb3f6aa9253ac": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "aa487a6bcc534594b69fbb889decc066": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64033914645707",
+            "-79.45720769768756"
+          ],
+          [
+            "43.64017462517021",
+            "-79.45828061304545"
+          ],
+          [
+            "43.652874431267115",
+            "-79.46177058053303"
+          ],
+          [
+            "43.643538762264676",
+            "-79.46766003195556"
+          ],
+          [
+            "43.64568344424629",
+            "-79.46009438916175"
+          ],
+          [
+            "43.6399088082158",
+            "-79.46045227219419"
+          ],
+          [
+            "43.64014301236055",
+            "-79.45826769882893"
+          ],
+          [
+            "43.653636483215344",
+            "-79.46166950261924"
+          ],
+          [
+            "43.647714423670536",
+            "-79.46982674164231"
+          ],
+          [
+            "43.643701671991835",
+            "-79.46770232459285"
+          ],
+          [
+            "43.64036487601382",
+            "-79.45748504612614"
+          ],
+          [
+            "43.649808341921265",
+            "-79.46265274663358"
+          ],
+          [
+            "43.64037456737153",
+            "-79.45744048923571"
+          ],
+          [
+            "43.64356068371663",
+            "-79.46771750306247"
+          ],
+          [
+            "43.64969158204034",
+            "-79.46255653287716"
+          ],
+          [
+            "43.64005718090639",
+            "-79.46056140016712"
+          ],
+          [
+            "43.64037653212241",
+            "-79.45846012634179"
+          ],
+          [
+            "43.65280866691127",
+            "-79.46159816721226"
+          ],
+          [
+            "43.64784087490917",
+            "-79.46987839850833"
+          ],
+          [
+            "43.64011958974613",
+            "-79.4578214870574"
+          ],
+          [
+            "43.65354418352289",
+            "-79.4617773448575"
+          ],
+          [
+            "43.652874431267115",
+            "-79.46177058053303"
+          ],
+          [
+            "43.65291319669796",
+            "-79.46159235297134"
+          ],
+          [
+            "43.64053239962562",
+            "-79.45718961209748"
+          ],
+          [
+            "43.63996949509859",
+            "-79.46033151573944"
+          ],
+          [
+            "43.64022238657614",
+            "-79.45711148393114"
+          ],
+          [
+            "43.64047886536401",
+            "-79.45711922677407"
+          ],
+          [
+            "43.64779703200527",
+            "-79.46976345629447"
+          ],
+          [
+            "43.64969158204034",
+            "-79.46255653287716"
+          ],
+          [
+            "43.65281651491506",
+            "-79.46235337009628"
+          ],
+          [
+            "43.6456492927001",
+            "-79.45993489005748"
+          ],
+          [
+            "43.64978642046932",
+            "-79.46259527552667"
+          ],
+          [
+            "43.64953609056307",
+            "-79.46292814081147"
+          ],
+          [
+            "43.64021984783961",
+            "-79.45696489904337"
+          ],
+          [
+            "43.640402372076394",
+            "-79.45723352612058"
+          ],
+          [
+            "43.64040698596104",
+            "-79.45689579945463"
+          ],
+          [
+            "43.64045299798716",
+            "-79.45709385248426"
+          ],
+          [
+            "43.64018149023678",
+            "-79.4569803027638"
+          ],
+          [
+            "43.640529860889096",
+            "-79.45704302720972"
+          ],
+          [
+            "43.64413464836715",
+            "-79.45977704077389"
+          ],
+          [
+            "43.6486703991982",
+            "-79.4618875702543"
+          ],
+          [
+            "43.6400303970285",
+            "-79.45723375626194"
+          ],
+          [
+            "43.63995300593495",
+            "-79.45697521585882"
+          ],
+          [
+            "43.640523745841975",
+            "-79.45699201321105"
+          ],
+          [
+            "43.640082331849776",
+            "-79.45698406762911"
+          ],
+          [
+            "43.64376427011027",
+            "-79.46734470933463"
+          ],
+          [
+            "43.64025468121315",
+            "-79.4571013822149"
+          ],
+          [
+            "43.64032795393689",
+            "-79.45686351391338"
+          ],
+          [
+            "43.64034376034172",
+            "-79.45686997102162"
+          ],
+          [
+            "43.640479902938075",
+            "-79.45687707099721"
+          ],
+          [
+            "43.63998330124736",
+            "-79.45682956415632"
+          ],
+          [
+            "43.64034018403113",
+            "-79.45696554191072"
+          ],
+          [
+            "43.64039729460333",
+            "-79.45694035634504"
+          ],
+          [
+            "43.64013846678823",
+            "-79.45687183994829"
+          ],
+          [
+            "43.64004350851841",
+            "-79.45701306576564"
+          ],
+          [
+            "43.64027084336469",
+            "-79.45688869947904"
+          ],
+          [
+            "43.64034098367942",
+            "-79.45700177116969"
+          ],
+          [
+            "43.64364780011616",
+            "-79.46743170374423"
+          ],
+          [
+            "43.640567588745874",
+            "-79.45710695542489"
+          ],
+          [
+            "43.642264932876586",
+            "-79.46619745776779"
+          ],
+          [
+            "43.64034376034172",
+            "-79.45686997102162"
+          ],
+          [
+            "43.6442083827932",
+            "-79.46725903696469"
+          ],
+          [
+            "43.6400264524805",
+            "-79.45677975863373"
+          ],
+          [
+            "43.640308571221475",
+            "-79.4569526276942"
+          ],
+          [
+            "43.644061731390124",
+            "-79.4597957692313"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "2c4248d3bf6f4a4faab426b0ba400eb4": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.651280529277585",
+            "-79.46218756754391"
+          ],
+          [
+            "43.643850278276545",
+            "-79.45960029497078"
+          ],
+          [
+            "43.64371229655817",
+            "-79.45963305797262"
+          ],
+          [
+            "43.64685045261036",
+            "-79.47071621026579"
+          ],
+          [
+            "43.64023565290124",
+            "-79.45664107626887"
+          ],
+          [
+            "43.640295987956875",
+            "-79.45666630954008"
+          ],
+          [
+            "43.651414438663366",
+            "-79.46185907525194"
+          ],
+          [
+            "43.6402440531356",
+            "-79.45691599817292"
+          ],
+          [
+            "43.65145300642555",
+            "-79.4621466137916"
+          ],
+          [
+            "43.64392792493928",
+            "-79.45954229869771"
+          ],
+          [
+            "43.64025716462551",
+            "-79.45669530767661"
+          ],
+          [
+            "43.64033901140542",
+            "-79.45677477235557"
+          ],
+          [
+            "43.651332464098864",
+            "-79.46193787891107"
+          ],
+          [
+            "43.64012783871068",
+            "-79.45668645590632"
+          ],
+          [
+            "43.643729608165266",
+            "-79.45954982842835"
+          ],
+          [
+            "43.64021808572497",
+            "-79.45704084248935"
+          ],
+          [
+            "43.643763975810266",
+            "-79.45969990601598"
+          ],
+          [
+            "43.64411981375292",
+            "-79.45948684587714"
+          ],
+          [
+            "43.64025716462551",
+            "-79.45669530767661"
+          ],
+          [
+            "43.64024850882197",
+            "-79.45673692244875"
+          ],
+          [
+            "43.65122464990831",
+            "-79.46198325854853"
+          ],
+          [
+            "43.640132038827865",
+            "-79.45682391685835"
+          ],
+          [
+            "43.65135804815573",
+            "-79.46228783960895"
+          ],
+          [
+            "43.65136695952845",
+            "-79.46192968816061"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b76ecea215c74d108fe8daf1d9ab6d9a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "699d2838cddc48349bbbb8f451e72976": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8846c3ba266240d3aab970bc95d173c3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_b76ecea215c74d108fe8daf1d9ab6d9a",
+        "style": "IPY_MODEL_699d2838cddc48349bbbb8f451e72976",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "23155010a4c34b0f9c2447f8e553699c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ce12205aeb2f47008c8a98be903a05bb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_23155010a4c34b0f9c2447f8e553699c",
+        "location": [
+          "43.64033914645707",
+          "-79.45720769768756"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8846c3ba266240d3aab970bc95d173c3",
+        "title": "Warbling Vireo, 2021-07-21"
+      }
+    },
+    "8a5b839c330b4751aa088fe031166f88": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3643d0e2d21946488cfce84689721a6f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e7c1e601496c4df58e602e847a8baf12": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_8a5b839c330b4751aa088fe031166f88",
+        "style": "IPY_MODEL_3643d0e2d21946488cfce84689721a6f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c02ce0a63d9643a9a8c201362398c2ca": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "390f5b1753e1423e952f45a7535afe9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c02ce0a63d9643a9a8c201362398c2ca",
+        "location": [
+          "43.64017462517021",
+          "-79.45828061304545"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e7c1e601496c4df58e602e847a8baf12",
+        "title": "Warbling Vireo, 2021-07-18"
+      }
+    },
+    "7234602467164edd8b9e13b777812dac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2533c18ef14543b09299eb4b31979f86": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f437fb2f2c934d629c32e8932e62c82d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_7234602467164edd8b9e13b777812dac",
+        "style": "IPY_MODEL_2533c18ef14543b09299eb4b31979f86",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3aea493fe41e46c1a6abb8241cdb2cc2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "dd4f249b7bda43259df073e5dd3a762e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3aea493fe41e46c1a6abb8241cdb2cc2",
+        "location": [
+          "43.652874431267115",
+          "-79.46177058053303"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f437fb2f2c934d629c32e8932e62c82d",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "65f8f184baa143068ade9ebae2f42c0a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "52da079cb6304b928e3e752f510ee9b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7cb7a25545614e5da64385c9c286e055": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_65f8f184baa143068ade9ebae2f42c0a",
+        "style": "IPY_MODEL_52da079cb6304b928e3e752f510ee9b5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "07081cb2802741dcb6a83477ec5e75e9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5b67773612944ec8b40f1f0675962f95": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_07081cb2802741dcb6a83477ec5e75e9",
+        "location": [
+          "43.643538762264676",
+          "-79.46766003195556"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7cb7a25545614e5da64385c9c286e055",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "17010089d8cb43029ff9a87b1515b87a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19874df899744d5db14d449c4197477b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bc67ddf87aae46da8845df28334ef6a0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_17010089d8cb43029ff9a87b1515b87a",
+        "style": "IPY_MODEL_19874df899744d5db14d449c4197477b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "620358d5cb664288ad35be5142b20886": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be618eb29ed94ab4885a6069b4b96600": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_620358d5cb664288ad35be5142b20886",
+        "location": [
+          "43.64568344424629",
+          "-79.46009438916175"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bc67ddf87aae46da8845df28334ef6a0",
+        "title": "Warbling Vireo, 2021-07-04"
+      }
+    },
+    "1b3ba2ab19864bcaa5a9908994147c23": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4246b241cdd74af8b1ddbdc17d3b5e1d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "90fa100bc30343028bc579d4f63a9470": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_1b3ba2ab19864bcaa5a9908994147c23",
+        "style": "IPY_MODEL_4246b241cdd74af8b1ddbdc17d3b5e1d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "82f6fb53a82348d1ada2b7135f08cbbb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d60702adea7444d79734831375b95cac": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_82f6fb53a82348d1ada2b7135f08cbbb",
+        "location": [
+          "43.6399088082158",
+          "-79.46045227219419"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_90fa100bc30343028bc579d4f63a9470",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "7a70954b34f14599bcb57a560ce8d328": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b5e862c82851463983499af35fe8b5a0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1388c95c4bcb420d8b25bb378b40ee4c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_7a70954b34f14599bcb57a560ce8d328",
+        "style": "IPY_MODEL_b5e862c82851463983499af35fe8b5a0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "96f4926b47f44840a28a4e928d23304b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c171c9b9c2a24f72bf037b08e5f2a0be": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_96f4926b47f44840a28a4e928d23304b",
+        "location": [
+          "43.64014301236055",
+          "-79.45826769882893"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1388c95c4bcb420d8b25bb378b40ee4c",
+        "title": "Warbling Vireo, 2021-07-18"
+      }
+    },
+    "7bbd6b668c5a4bfe99d7001a1759af0a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e2f1540351ca4401946e282de7a2a102": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fb842de13ca94d84a5126585ca5fc60c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_7bbd6b668c5a4bfe99d7001a1759af0a",
+        "style": "IPY_MODEL_e2f1540351ca4401946e282de7a2a102",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c91a129d93824d48955fe1baf927c856": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "dfbbb5a975f042c5af848ec460c0a47d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c91a129d93824d48955fe1baf927c856",
+        "location": [
+          "43.653636483215344",
+          "-79.46166950261924"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fb842de13ca94d84a5126585ca5fc60c",
+        "title": "Warbling Vireo, 2021-07-15"
+      }
+    },
+    "3c632660680b401f82d5e3639cf681ef": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "21609a0d7f9d4b4288d940ea948afb6a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1aad66aa48364d3db319e3d0f381d9f2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_3c632660680b401f82d5e3639cf681ef",
+        "style": "IPY_MODEL_21609a0d7f9d4b4288d940ea948afb6a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7bcba53b8c114af28bcc0340281e0811": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c253be46044241cb98b35f113e8898bc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7bcba53b8c114af28bcc0340281e0811",
+        "location": [
+          "43.647714423670536",
+          "-79.46982674164231"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1aad66aa48364d3db319e3d0f381d9f2",
+        "title": "Warbling Vireo, 2021-07-08"
+      }
+    },
+    "b6a49ab10f274edcbcab4f61727e449d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2800a071c5bc46f8826590474dfef081": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b0a8b5c66ebd4302a07f4a35ff83a093": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_b6a49ab10f274edcbcab4f61727e449d",
+        "style": "IPY_MODEL_2800a071c5bc46f8826590474dfef081",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8c14f79ebb184e058f52f420acaa2992": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8182af11e7cb4c9fa7b858577a519b7d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8c14f79ebb184e058f52f420acaa2992",
+        "location": [
+          "43.643701671991835",
+          "-79.46770232459285"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b0a8b5c66ebd4302a07f4a35ff83a093",
+        "title": "Warbling Vireo, 2021-07-21"
+      }
+    },
+    "74731d468b184185bf8225d8cd8b2fb4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "477cc75061fa400fa31f33c61a00a8ec": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "22fe7f29dfba4b15a707ac2df4310416": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_74731d468b184185bf8225d8cd8b2fb4",
+        "style": "IPY_MODEL_477cc75061fa400fa31f33c61a00a8ec",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d7a66db2bfcb40bbb9e806bcb5554f3a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7613faa77863447ea8248ba5b0664940": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d7a66db2bfcb40bbb9e806bcb5554f3a",
+        "location": [
+          "43.64036487601382",
+          "-79.45748504612614"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_22fe7f29dfba4b15a707ac2df4310416",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "d34852d7f60b4e1d92f91a655a128317": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "72a74e04cf594673be6de0ddb4de8c4d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c0795cf8d92f4fbe987b009d95f9f0f4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_d34852d7f60b4e1d92f91a655a128317",
+        "style": "IPY_MODEL_72a74e04cf594673be6de0ddb4de8c4d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "14445f1deee84f71b148f98845cc5ac6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9991688e71114e47b6d11c896fb150c7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_14445f1deee84f71b148f98845cc5ac6",
+        "location": [
+          "43.649808341921265",
+          "-79.46265274663358"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c0795cf8d92f4fbe987b009d95f9f0f4",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "4167c2f23ea1469a8a4a537dad7c5c7b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ea0e16b2c5d74cab882e1947b1edb786": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a0fba7e0fac84fa4ab4efa3461b72873": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_4167c2f23ea1469a8a4a537dad7c5c7b",
+        "style": "IPY_MODEL_ea0e16b2c5d74cab882e1947b1edb786",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b11267c828fc45a599dbdca12842dd33": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1715ad826821493da3c5f1c7d6c4f80f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b11267c828fc45a599dbdca12842dd33",
+        "location": [
+          "43.64037456737153",
+          "-79.45744048923571"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a0fba7e0fac84fa4ab4efa3461b72873",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "cb4ed1e9e10f4782ac21083744a96304": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a543a5a76fcd49e2a466979a332f7366": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "64fe389db9e64ae48075cdc22b805262": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_cb4ed1e9e10f4782ac21083744a96304",
+        "style": "IPY_MODEL_a543a5a76fcd49e2a466979a332f7366",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3840747113a34eaea5e992702edc2fe4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "50679c2ff96b4bb8a15fe5115a978b39": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3840747113a34eaea5e992702edc2fe4",
+        "location": [
+          "43.64356068371663",
+          "-79.46771750306247"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_64fe389db9e64ae48075cdc22b805262",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "e3951f1078ab4cec9138c5386d54eef4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "28b4e3fecd9b4d9183c8498060365ae9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5c70890fc58d47c1a3a687e2089a478d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_e3951f1078ab4cec9138c5386d54eef4",
+        "style": "IPY_MODEL_28b4e3fecd9b4d9183c8498060365ae9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b522ca16e56b4d649c9a9ac00e65ad7f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "aa6803ccc7344a30b22a8fb1913e7c48": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b522ca16e56b4d649c9a9ac00e65ad7f",
+        "location": [
+          "43.64969158204034",
+          "-79.46255653287716"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5c70890fc58d47c1a3a687e2089a478d",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "a3caaca50f594537b5db62d7ec10bd94": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f7dae383f72b4c31b5a049b2a219533c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bf7489c7a96344c8a1b34a5208ffd8b1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_a3caaca50f594537b5db62d7ec10bd94",
+        "style": "IPY_MODEL_f7dae383f72b4c31b5a049b2a219533c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4485f1a4898a416fa311773a341bf8e4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "60777140c3914dd8934dc64fdc1c4ca7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4485f1a4898a416fa311773a341bf8e4",
+        "location": [
+          "43.64005718090639",
+          "-79.46056140016712"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bf7489c7a96344c8a1b34a5208ffd8b1",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "a4bdea4b6df7417c896a0cfc62ccecc6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a9a896c82f834cdf97f1026dd3dead13": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "286121ef576749db8584ba2c625bd19d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_a4bdea4b6df7417c896a0cfc62ccecc6",
+        "style": "IPY_MODEL_a9a896c82f834cdf97f1026dd3dead13",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8369b5815eda4a73be75b6760aef2e45": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0e70ebde115a47d2ae6c0b00d03f65d4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8369b5815eda4a73be75b6760aef2e45",
+        "location": [
+          "43.64037653212241",
+          "-79.45846012634179"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_286121ef576749db8584ba2c625bd19d",
+        "title": "Warbling Vireo, 2021-07-18"
+      }
+    },
+    "dc783bae81bc44229621ec485efdd95d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "222866295f884d3383e18f5117178917": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7f784844d7f94932918afeca647795a4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_dc783bae81bc44229621ec485efdd95d",
+        "style": "IPY_MODEL_222866295f884d3383e18f5117178917",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "89697018c7e14ee88e1f8655e8cec917": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d0264cd899b346adae5afd48eb88bece": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_89697018c7e14ee88e1f8655e8cec917",
+        "location": [
+          "43.65280866691127",
+          "-79.46159816721226"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7f784844d7f94932918afeca647795a4",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "c54b68630b944706a5c65484b522a8d5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ecaef33d09b44028917b41dae5aee10c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ee7ce5a6f7134cc5982793798515a920": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_c54b68630b944706a5c65484b522a8d5",
+        "style": "IPY_MODEL_ecaef33d09b44028917b41dae5aee10c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "86c89b1b0d824f768936d4b22fb49b69": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1ea7edf852fa4344b34d31cc6dd7aa3a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_86c89b1b0d824f768936d4b22fb49b69",
+        "location": [
+          "43.64784087490917",
+          "-79.46987839850833"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ee7ce5a6f7134cc5982793798515a920",
+        "title": "Warbling Vireo, 2021-07-08"
+      }
+    },
+    "e190bfa2fc304690a9248350b6783272": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ea8e481a87394fe4a9f700a899cddf3c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f0c0db6116b84020a91a44bb248fcde1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_e190bfa2fc304690a9248350b6783272",
+        "style": "IPY_MODEL_ea8e481a87394fe4a9f700a899cddf3c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b5ef22a2d8504d52bdd6ad53e1f7ff9a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "062f0c6777614dea85922793d4512f7f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b5ef22a2d8504d52bdd6ad53e1f7ff9a",
+        "location": [
+          "43.64011958974613",
+          "-79.4578214870574"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f0c0db6116b84020a91a44bb248fcde1",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "c1254ab1890c406fbe7e98271b982acb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a1b15db920df4832b9a6b08989743b1e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "00c3414ddaef4156a1eb2fb5fbd048b7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_c1254ab1890c406fbe7e98271b982acb",
+        "style": "IPY_MODEL_a1b15db920df4832b9a6b08989743b1e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "82dfc95597a640cbb90c85f317aff2f1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6ad7a554ff3c42f38abd05e220031420": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_82dfc95597a640cbb90c85f317aff2f1",
+        "location": [
+          "43.65354418352289",
+          "-79.4617773448575"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_00c3414ddaef4156a1eb2fb5fbd048b7",
+        "title": "Warbling Vireo, 2021-07-15"
+      }
+    },
+    "6b77e025f6f04745bc4e482f6772eb08": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cf273706bd734947b7d97a5ffb570622": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "61bc575ff7db486fb209a83a74ede5ee": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_6b77e025f6f04745bc4e482f6772eb08",
+        "style": "IPY_MODEL_cf273706bd734947b7d97a5ffb570622",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2ee5425efba641db8ac42898c8d81a79": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "54f920a4b2894f4eae5dd58d16a9bcd6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2ee5425efba641db8ac42898c8d81a79",
+        "location": [
+          "43.652874431267115",
+          "-79.46177058053303"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_61bc575ff7db486fb209a83a74ede5ee",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "5d89b472e85848a29eebef4199a6b058": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "068f714f632c4e2ca3baff565477d0bb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "58032ae6c98349269f230e127b953642": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_5d89b472e85848a29eebef4199a6b058",
+        "style": "IPY_MODEL_068f714f632c4e2ca3baff565477d0bb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2c6281b9c3c3419bbb6cdcd905e7513e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6c65eb833abe42f1bfc711cb44c5b109": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2c6281b9c3c3419bbb6cdcd905e7513e",
+        "location": [
+          "43.65291319669796",
+          "-79.46159235297134"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_58032ae6c98349269f230e127b953642",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "087122502b3648dfae924d873c98d09b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d7ae398b737f47aaa0b227b9e6cd56c1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e338f484846f4b70833f0a2e217826d7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_087122502b3648dfae924d873c98d09b",
+        "style": "IPY_MODEL_d7ae398b737f47aaa0b227b9e6cd56c1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d941c801fbc0482ba547b071232109f0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3330a02cfbe2473cac4e2adfa1c3815b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d941c801fbc0482ba547b071232109f0",
+        "location": [
+          "43.64053239962562",
+          "-79.45718961209748"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e338f484846f4b70833f0a2e217826d7",
+        "title": "Warbling Vireo, 2021-07-15"
+      }
+    },
+    "3bda06aa22cf46fb8c553bab07b15e77": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "db62e9ed463b4f1f9f73604efedf3ea1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8bc1e147aa6240d1ae6095560eec3362": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_3bda06aa22cf46fb8c553bab07b15e77",
+        "style": "IPY_MODEL_db62e9ed463b4f1f9f73604efedf3ea1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fd06641ede5a4c2faa9072c68d320398": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "84a9fa839b70450890ab98f69e28d7b5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fd06641ede5a4c2faa9072c68d320398",
+        "location": [
+          "43.63996949509859",
+          "-79.46033151573944"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8bc1e147aa6240d1ae6095560eec3362",
+        "title": "Warbling Vireo, 2021-07-24"
+      }
+    },
+    "788307f6cda24809914577cedd1ed810": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8195500e017e43ce869fe14668fa352f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "49178438cecf42fe84744dbabb8f7434": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_788307f6cda24809914577cedd1ed810",
+        "style": "IPY_MODEL_8195500e017e43ce869fe14668fa352f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8f97591b091042e19d46793903de88e6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "597d597ae74246d0904d98f473f96ef6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8f97591b091042e19d46793903de88e6",
+        "location": [
+          "43.64022238657614",
+          "-79.45711148393114"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_49178438cecf42fe84744dbabb8f7434",
+        "title": "Warbling Vireo, 2021-07-21"
+      }
+    },
+    "7a80a0bb75f640b4888e71c89cf55662": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "04878c7bd18e45e6866b32deebe3a231": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c920e5cf518e465bbc089c91a4edf042": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_7a80a0bb75f640b4888e71c89cf55662",
+        "style": "IPY_MODEL_04878c7bd18e45e6866b32deebe3a231",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a319b5e24c254b5498e37565eaa0e8ca": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ebcdc322b3934c269f7edc432874d560": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a319b5e24c254b5498e37565eaa0e8ca",
+        "location": [
+          "43.64047886536401",
+          "-79.45711922677407"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c920e5cf518e465bbc089c91a4edf042",
+        "title": "Warbling Vireo, 2021-07-09"
+      }
+    },
+    "b9a664b85e6e4e90a7e629c513e65c04": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ca6510fd41ae47fa81fd88f49a2aa6e9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "460e54bb44764c7c93e3a5673c7c47ac": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_b9a664b85e6e4e90a7e629c513e65c04",
+        "style": "IPY_MODEL_ca6510fd41ae47fa81fd88f49a2aa6e9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8a5e19705ce5469fb7b30b869d0f343e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fbe2c1aeb884448fba5c114bd0ce5a9a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8a5e19705ce5469fb7b30b869d0f343e",
+        "location": [
+          "43.64779703200527",
+          "-79.46976345629447"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_460e54bb44764c7c93e3a5673c7c47ac",
+        "title": "Warbling Vireo, 2021-07-08"
+      }
+    },
+    "e0805384320b4c8dbdf07185856d97ab": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a3cdaaaa654c4580911f4f3889ef205c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0155a9e050a4447c9233ada8342a07a1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_e0805384320b4c8dbdf07185856d97ab",
+        "style": "IPY_MODEL_a3cdaaaa654c4580911f4f3889ef205c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f92989f3e9f94148a30a2e54a5d03e40": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2ceb2d3ad5ca43d88a936d41e7295f3f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f92989f3e9f94148a30a2e54a5d03e40",
+        "location": [
+          "43.64969158204034",
+          "-79.46255653287716"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0155a9e050a4447c9233ada8342a07a1",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "5a848825764e4645a0f436e4eff6fa51": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8a836515ec154f70a48b400c68eaf26e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e30108e4a0ec4798a0404d79c5491f95": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_5a848825764e4645a0f436e4eff6fa51",
+        "style": "IPY_MODEL_8a836515ec154f70a48b400c68eaf26e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d531ba39a5f74a279e43f5d0670343c0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "86faf5941bd847c3b016c21d0ef3615f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d531ba39a5f74a279e43f5d0670343c0",
+        "location": [
+          "43.65281651491506",
+          "-79.46235337009628"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e30108e4a0ec4798a0404d79c5491f95",
+        "title": "Warbling Vireo, 2021-07-21"
+      }
+    },
+    "f73fb2e10fc842f78df8b9c553e09f68": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "41008bcb431e40b7bace6d6a09edc4bf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "88d618f9803b4ee896937bdc2bbf4336": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_f73fb2e10fc842f78df8b9c553e09f68",
+        "style": "IPY_MODEL_41008bcb431e40b7bace6d6a09edc4bf",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dbcee0ddb66d458d89a6b8fae853db78": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6ca764f7c37b46f7a8c3126c2946262a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dbcee0ddb66d458d89a6b8fae853db78",
+        "location": [
+          "43.6456492927001",
+          "-79.45993489005748"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_88d618f9803b4ee896937bdc2bbf4336",
+        "title": "Warbling Vireo, 2021-07-04"
+      }
+    },
+    "aece78b6f7034f31bcccfea636a66203": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c28ca0e419ee4b038719d0ddaa373a6e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6a111e4650c141638c10df1d8444ce3d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_aece78b6f7034f31bcccfea636a66203",
+        "style": "IPY_MODEL_c28ca0e419ee4b038719d0ddaa373a6e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6b23220e972a4fe388f6166c91ba99a5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9850696270434005857c3b90f42576d9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6b23220e972a4fe388f6166c91ba99a5",
+        "location": [
+          "43.64978642046932",
+          "-79.46259527552667"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6a111e4650c141638c10df1d8444ce3d",
+        "title": "Warbling Vireo, 2021-07-12"
+      }
+    },
+    "de83c7014c5d4da0b72b510c34c3edec": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6f1ad861459541a08d8171434abecb9d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "857b5996bbcf45b08b5a65f6b6a75a89": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_de83c7014c5d4da0b72b510c34c3edec",
+        "style": "IPY_MODEL_6f1ad861459541a08d8171434abecb9d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bd691d6b7cce49cd926669d6b8003145": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f53f81b37e5840dcadaaa114f205ac0d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bd691d6b7cce49cd926669d6b8003145",
+        "location": [
+          "43.651280529277585",
+          "-79.46218756754391"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_857b5996bbcf45b08b5a65f6b6a75a89",
+        "title": "Warbling Vireo, 2021-09-04"
+      }
+    },
+    "62198e8e597b474081da0093ae8295cb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "24916731e7304ded82bf0d9b62b72e37": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d96ca7222eb04d68bb8e284f896f3682": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_62198e8e597b474081da0093ae8295cb",
+        "style": "IPY_MODEL_24916731e7304ded82bf0d9b62b72e37",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ca652f5ceaa04e96867287df013dc85c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "00bafdd29ab44ad2995cb98571a06c6f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ca652f5ceaa04e96867287df013dc85c",
+        "location": [
+          "43.643850278276545",
+          "-79.45960029497078"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d96ca7222eb04d68bb8e284f896f3682",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "8c675cb2799f4515adbb643e00b47593": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c298f4ab45f243aa89f038151a6ec42b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7eb85619ae564a5e801d3814854e24fc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_8c675cb2799f4515adbb643e00b47593",
+        "style": "IPY_MODEL_c298f4ab45f243aa89f038151a6ec42b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ae6ee3c3e0ba45c79d43f9068a05e52e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7fc1f773adb64ad1b3af9d8ac87870ad": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ae6ee3c3e0ba45c79d43f9068a05e52e",
+        "location": [
+          "43.64371229655817",
+          "-79.45963305797262"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7eb85619ae564a5e801d3814854e24fc",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "9abacefbdfd746d9947adb39773eb1d4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "912815c88a494009bd053a7ece0fa32b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5e690bf01a5f4872b26169519aa10a5f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_9abacefbdfd746d9947adb39773eb1d4",
+        "style": "IPY_MODEL_912815c88a494009bd053a7ece0fa32b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1bd4a8c080e642e0a77211a41803eb31": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2c8802c148244605a25e69c94f82ff38": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1bd4a8c080e642e0a77211a41803eb31",
+        "location": [
+          "43.64685045261036",
+          "-79.47071621026579"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5e690bf01a5f4872b26169519aa10a5f",
+        "title": "Warbling Vireo, 2021-08-24"
+      }
+    },
+    "b16c564a9cff47fa97eeb7a378c79702": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7b1427b19bc54000938d5f89501da36c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "22759bbf99ba46b682f111a38d8793fd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_b16c564a9cff47fa97eeb7a378c79702",
+        "style": "IPY_MODEL_7b1427b19bc54000938d5f89501da36c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "287dfb4b8d364b07959d78fc68ce8795": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0732747a308d441db92bf0631094d59b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_287dfb4b8d364b07959d78fc68ce8795",
+        "location": [
+          "43.64953609056307",
+          "-79.46292814081147"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_22759bbf99ba46b682f111a38d8793fd",
+        "title": "Warbling Vireo, 2021-08-13"
+      }
+    },
+    "0c94b07628fc48238ba9148cf75c6d23": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4524a9c34b954ee5980ae3cf18e2c1a1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c8be97c08ab748eb8a7fb02448e0ac6a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_0c94b07628fc48238ba9148cf75c6d23",
+        "style": "IPY_MODEL_4524a9c34b954ee5980ae3cf18e2c1a1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3d251e42d74446b89fdec8ee1738f5fb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e73e697406fe48d9986aee75255eb467": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3d251e42d74446b89fdec8ee1738f5fb",
+        "location": [
+          "43.64023565290124",
+          "-79.45664107626887"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c8be97c08ab748eb8a7fb02448e0ac6a",
+        "title": "Warbling Vireo, 2021-08-24"
+      }
+    },
+    "7d6d872a4c5f419eb407bbf749a628ae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "348505cae1a74f148e6516c812c276df": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8bcfba164838494397ae5c357123e7c6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_7d6d872a4c5f419eb407bbf749a628ae",
+        "style": "IPY_MODEL_348505cae1a74f148e6516c812c276df",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2663e5d6b47942f2ae8e9b0f290f6ed5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "89992df10e794f7897db388b0df62b2e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2663e5d6b47942f2ae8e9b0f290f6ed5",
+        "location": [
+          "43.64021984783961",
+          "-79.45696489904337"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8bcfba164838494397ae5c357123e7c6",
+        "title": "Warbling Vireo, 2021-07-27"
+      }
+    },
+    "045f88b5f56348239f45b0ee09ad05a2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b6db4a79adeb48868dc727c03b4bd3f8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "236798f8e7034037ab4b88ebb782dffe": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_045f88b5f56348239f45b0ee09ad05a2",
+        "style": "IPY_MODEL_b6db4a79adeb48868dc727c03b4bd3f8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b837b144796d4dbe9695c5e85904907a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7dc7ee694a5c4984a74ef3fd4836a927": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b837b144796d4dbe9695c5e85904907a",
+        "location": [
+          "43.640295987956875",
+          "-79.45666630954008"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_236798f8e7034037ab4b88ebb782dffe",
+        "title": "Warbling Vireo, 2021-08-30"
+      }
+    },
+    "1fe5cde2995349e1b7bbfcd8599947e8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b0d941af235040dc920391e77907a99f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "05d2cdbfbcb04f5d9043651adb9100b8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_1fe5cde2995349e1b7bbfcd8599947e8",
+        "style": "IPY_MODEL_b0d941af235040dc920391e77907a99f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3049b55bd4754711b74e892659d7b738": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a9a883a6b208408b9d58148979e0375a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3049b55bd4754711b74e892659d7b738",
+        "location": [
+          "43.640402372076394",
+          "-79.45723352612058"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_05d2cdbfbcb04f5d9043651adb9100b8",
+        "title": "Warbling Vireo, 2021-08-04"
+      }
+    },
+    "f48b6fedd8fb43979b21954deee7463a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5b44affe447947e383649896a32dc187": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "92cbd565724e4cba929c171adf2232ef": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_f48b6fedd8fb43979b21954deee7463a",
+        "style": "IPY_MODEL_5b44affe447947e383649896a32dc187",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a2db3b664ddc48f2b3dc2ebb3222207f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "70567ca62e5444a691a8fd9291b54082": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a2db3b664ddc48f2b3dc2ebb3222207f",
+        "location": [
+          "43.64040698596104",
+          "-79.45689579945463"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_92cbd565724e4cba929c171adf2232ef",
+        "title": "Warbling Vireo, 2021-08-04"
+      }
+    },
+    "3529bd30999e48919c6023f89660826a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0f13d0530ee04f4681452bda828a268e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0236ad899dd644a78c1ae3c591ec1e68": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_3529bd30999e48919c6023f89660826a",
+        "style": "IPY_MODEL_0f13d0530ee04f4681452bda828a268e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "29cfbcabc569460687ea04c2efa0d9aa": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1a06a567f9654735a86ced8fd585f708": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_29cfbcabc569460687ea04c2efa0d9aa",
+        "location": [
+          "43.64045299798716",
+          "-79.45709385248426"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0236ad899dd644a78c1ae3c591ec1e68",
+        "title": "Warbling Vireo, 2021-08-19"
+      }
+    },
+    "9267b43c979a4a88a10b5ae78ad2d8d4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f162f1784469411b83f1c460d5e78bd2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1e3ea0570d964575b40bcd016ec8e828": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_9267b43c979a4a88a10b5ae78ad2d8d4",
+        "style": "IPY_MODEL_f162f1784469411b83f1c460d5e78bd2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "49e499d5ee1e4ea5ab029c56803de06f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "91a19de731dc42c490f40d5b7019e125": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_49e499d5ee1e4ea5ab029c56803de06f",
+        "location": [
+          "43.651414438663366",
+          "-79.46185907525194"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1e3ea0570d964575b40bcd016ec8e828",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "33e22a4de828457d8b078a461eb02a89": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "edb38e78a84d424eafa36d443b790694": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ef33511ed8ec4567b48d8f5cb11009c9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_33e22a4de828457d8b078a461eb02a89",
+        "style": "IPY_MODEL_edb38e78a84d424eafa36d443b790694",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "52fe7b0b34d74cee97b3d2897f4cebe9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "db519133710b497298eeda8eb6499724": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_52fe7b0b34d74cee97b3d2897f4cebe9",
+        "location": [
+          "43.64018149023678",
+          "-79.4569803027638"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ef33511ed8ec4567b48d8f5cb11009c9",
+        "title": "Warbling Vireo, 2021-08-19"
+      }
+    },
+    "1f07dd1685fb47899980fd53371eef43": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e1824fc1f67a4078897aca0b98560619": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "38e3018b70324337ba6afadb5af13e68": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_1f07dd1685fb47899980fd53371eef43",
+        "style": "IPY_MODEL_e1824fc1f67a4078897aca0b98560619",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fc812f8c92984b1a96f0ec67cd91c3b2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5f5b5a647a634bc1889709aac12d8da2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fc812f8c92984b1a96f0ec67cd91c3b2",
+        "location": [
+          "43.640529860889096",
+          "-79.45704302720972"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_38e3018b70324337ba6afadb5af13e68",
+        "title": "Warbling Vireo, 2021-07-30"
+      }
+    },
+    "415879ed393343f3915e4e6ead850974": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2d6b345f47e549fc97ff442d7025629c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c25c281de9e4440b9e85e879118e4c83": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_415879ed393343f3915e4e6ead850974",
+        "style": "IPY_MODEL_2d6b345f47e549fc97ff442d7025629c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0d5dc3dd9c5346669dbc7c46b00b6f72": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "09212e66c458470dbf024f86adc74468": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0d5dc3dd9c5346669dbc7c46b00b6f72",
+        "location": [
+          "43.64413464836715",
+          "-79.45977704077389"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c25c281de9e4440b9e85e879118e4c83",
+        "title": "Warbling Vireo, 2021-07-30"
+      }
+    },
+    "d47e552013cb429e8c0a688dc025f798": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ca0ea605008549de8e9c181d7ad26cbc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2130d992ccb04a4c8a878209cc2382f0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_d47e552013cb429e8c0a688dc025f798",
+        "style": "IPY_MODEL_ca0ea605008549de8e9c181d7ad26cbc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7d46a57d34fe42a0816f68172c1c2c95": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "44989dae1d4147968d1d1171cb7646e6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7d46a57d34fe42a0816f68172c1c2c95",
+        "location": [
+          "43.6402440531356",
+          "-79.45691599817292"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2130d992ccb04a4c8a878209cc2382f0",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "5009df09ad5f4665860a36b8a0a46628": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1d57765617ea46e09f16f00b9352a694": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8b5fae01a6c04704b0a6b9bc2727f226": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_5009df09ad5f4665860a36b8a0a46628",
+        "style": "IPY_MODEL_1d57765617ea46e09f16f00b9352a694",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "06162b81378d445aabc18c7ae7f3432a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e37228890a3b44948a0dffb61c966392": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_06162b81378d445aabc18c7ae7f3432a",
+        "location": [
+          "43.6486703991982",
+          "-79.4618875702543"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8b5fae01a6c04704b0a6b9bc2727f226",
+        "title": "Warbling Vireo, 2021-08-15"
+      }
+    },
+    "637cbd0a816d4742ab8d2885fdb8466a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "02dac3e3d8aa410b89e5b66a1a65c7b0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "77cc705e255643a5a0134c389bd82ef9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_637cbd0a816d4742ab8d2885fdb8466a",
+        "style": "IPY_MODEL_02dac3e3d8aa410b89e5b66a1a65c7b0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "63f2eb9d865643afaeddc009d360145c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "94a2638a6f4d4d39b25b2a55878223c2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_63f2eb9d865643afaeddc009d360145c",
+        "location": [
+          "43.65145300642555",
+          "-79.4621466137916"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_77cc705e255643a5a0134c389bd82ef9",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "1e1456eb33a8489e9341b59a4058bea3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "21f1dd8f117c48b7bcfca2d4360d84ce": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "610d289d386847d7bf8df6db86496234": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_1e1456eb33a8489e9341b59a4058bea3",
+        "style": "IPY_MODEL_21f1dd8f117c48b7bcfca2d4360d84ce",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b96eb90df99f4d879b07a975c59d71f9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fe23df1d285b4d48bdfc5775c4ebe7a3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b96eb90df99f4d879b07a975c59d71f9",
+        "location": [
+          "43.6400303970285",
+          "-79.45723375626194"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_610d289d386847d7bf8df6db86496234",
+        "title": "Warbling Vireo, 2021-08-21"
+      }
+    },
+    "02d74b9859eb4feeb6d1f12ca3191b7d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e79cb43182374461ba6df1e82e279824": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a449336ff8f5428b862da2d4c2018d70": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_02d74b9859eb4feeb6d1f12ca3191b7d",
+        "style": "IPY_MODEL_e79cb43182374461ba6df1e82e279824",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0eb72c5cc86545e1af824dd5bae57cf2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f0bb2289f554476fa7d8ddb171083ce5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0eb72c5cc86545e1af824dd5bae57cf2",
+        "location": [
+          "43.64392792493928",
+          "-79.45954229869771"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a449336ff8f5428b862da2d4c2018d70",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "3ae9c628ebd14172a62e5fd3c7c0a15c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b1b6954c93514cb691dff45e5cf43a8d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f58022e327b24ad9934a08de9cc64a8f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_3ae9c628ebd14172a62e5fd3c7c0a15c",
+        "style": "IPY_MODEL_b1b6954c93514cb691dff45e5cf43a8d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9c89cda1039542dd9872b1a7383899d3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "50bf0798ccba4277a9e871c135769e8b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9c89cda1039542dd9872b1a7383899d3",
+        "location": [
+          "43.64025716462551",
+          "-79.45669530767661"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f58022e327b24ad9934a08de9cc64a8f",
+        "title": "Warbling Vireo, 2021-08-29"
+      }
+    },
+    "92a829f66b8145abada98387b9e599f5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fcc7dd236d0d4642b63c6579d413de07": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9174af03860749409e85bd90aecc4284": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_92a829f66b8145abada98387b9e599f5",
+        "style": "IPY_MODEL_fcc7dd236d0d4642b63c6579d413de07",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "796329db343441529121b3e74d80868d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c53745ab1523421a8d07391db7aa7613": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_796329db343441529121b3e74d80868d",
+        "location": [
+          "43.64033901140542",
+          "-79.45677477235557"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9174af03860749409e85bd90aecc4284",
+        "title": "Warbling Vireo, 2021-08-29"
+      }
+    },
+    "055b2766e3ce47b5b94f9eaaab9657a1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "78229ba71ff04984a622c88d44c02fac": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "38c1d0edaa0e46f79da002a1c024f538": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_055b2766e3ce47b5b94f9eaaab9657a1",
+        "style": "IPY_MODEL_78229ba71ff04984a622c88d44c02fac",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "91ab449689744069a284dfef7e202194": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c432af9629b2410ba168a0e4679bd464": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_91ab449689744069a284dfef7e202194",
+        "location": [
+          "43.651332464098864",
+          "-79.46193787891107"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_38c1d0edaa0e46f79da002a1c024f538",
+        "title": "Warbling Vireo, 2021-09-04"
+      }
+    },
+    "df4a1a61895249179722d1a780d3ce10": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "959d8e789bd640fe80b60f5d2bea7ee4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "673c0732a50c4f0a8036b6bb77d9452a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_df4a1a61895249179722d1a780d3ce10",
+        "style": "IPY_MODEL_959d8e789bd640fe80b60f5d2bea7ee4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "93b2fe2c8c8c459e8a12885217e20483": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "95459ce376444244ac807d7222456e9f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_93b2fe2c8c8c459e8a12885217e20483",
+        "location": [
+          "43.63995300593495",
+          "-79.45697521585882"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_673c0732a50c4f0a8036b6bb77d9452a",
+        "title": "Warbling Vireo, 2021-08-16"
+      }
+    },
+    "5d11d166b26449108b179cc9a0064db9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "04467057079f485883b66fc1f8050d1d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3757dc1bf9b049c9bb86b91916a3853d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_5d11d166b26449108b179cc9a0064db9",
+        "style": "IPY_MODEL_04467057079f485883b66fc1f8050d1d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8d11b88111204310be58a33f096c9483": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "512c1b15e42046e88dea0e0e98a7574a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8d11b88111204310be58a33f096c9483",
+        "location": [
+          "43.640523745841975",
+          "-79.45699201321105"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3757dc1bf9b049c9bb86b91916a3853d",
+        "title": "Warbling Vireo, 2021-08-04"
+      }
+    },
+    "b42bab967ed44f2bad489616e0f657a9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5102bfb2615f4839b474b710e5a9d5ec": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "262054d2b2ce4aa0926b2c579c2547ef": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_b42bab967ed44f2bad489616e0f657a9",
+        "style": "IPY_MODEL_5102bfb2615f4839b474b710e5a9d5ec",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "aedbbdeb897c4899bef1e3af9752b0df": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "15fc274bde7942f5ae015d7c459890a6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aedbbdeb897c4899bef1e3af9752b0df",
+        "location": [
+          "43.64012783871068",
+          "-79.45668645590632"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_262054d2b2ce4aa0926b2c579c2547ef",
+        "title": "Warbling Vireo, 2021-08-30"
+      }
+    },
+    "009fb92c5c41438495172566675e3b37": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7ebfc8f5db75408390ee38d56c02b583": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "61b17acff45c441a84d891ceb79dc64b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_009fb92c5c41438495172566675e3b37",
+        "style": "IPY_MODEL_7ebfc8f5db75408390ee38d56c02b583",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "40e95a4c06404a4c803f8081224dbe11": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c61add64392a4527abb2dc20c4b076b0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_40e95a4c06404a4c803f8081224dbe11",
+        "location": [
+          "43.643729608165266",
+          "-79.45954982842835"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_61b17acff45c441a84d891ceb79dc64b",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "d09f2020f8e144fdad2c0e14b11f7009": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7ac9e356806c46b4917758284b7cb965": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "409a6293ad864726aed5d2b5a3711434": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_d09f2020f8e144fdad2c0e14b11f7009",
+        "style": "IPY_MODEL_7ac9e356806c46b4917758284b7cb965",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fd3bd9318e9b487082ea9db6b4571b62": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f7f53d7615fc4eda80254a6631817be2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fd3bd9318e9b487082ea9db6b4571b62",
+        "location": [
+          "43.640082331849776",
+          "-79.45698406762911"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_409a6293ad864726aed5d2b5a3711434",
+        "title": "Warbling Vireo, 2021-08-21"
+      }
+    },
+    "64865bb07dd547a485153aeafdf9f0c0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a080b76c973e411383df2972a842f92c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d9d99cace43447e1acaad4823c23dc75": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_64865bb07dd547a485153aeafdf9f0c0",
+        "style": "IPY_MODEL_a080b76c973e411383df2972a842f92c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5e25a42508c84f17b3cf23ffe7c31062": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "556f3a86d8d74bc4a216eb3c327df6b7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5e25a42508c84f17b3cf23ffe7c31062",
+        "location": [
+          "43.64376427011027",
+          "-79.46734470933463"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d9d99cace43447e1acaad4823c23dc75",
+        "title": "Warbling Vireo, 2021-08-15"
+      }
+    },
+    "04313622126a430092312176cbab5c99": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19c519827b2640a58f5c2b42291aa5d1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "425a5182e8034f46b3bd055e1d6f66b9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_04313622126a430092312176cbab5c99",
+        "style": "IPY_MODEL_19c519827b2640a58f5c2b42291aa5d1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "aa0bf2e2bf4b4439be17ac7a3250b7d9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "37778f9f8c3646cca3cc018e9db2c43a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aa0bf2e2bf4b4439be17ac7a3250b7d9",
+        "location": [
+          "43.64021808572497",
+          "-79.45704084248935"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_425a5182e8034f46b3bd055e1d6f66b9",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "51e6cec0d386479cb90bb8758898b34f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6ef1083093124d9484754e05c5a2849e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b5c8ce509f8340cdb0a8d693efe7abdc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_51e6cec0d386479cb90bb8758898b34f",
+        "style": "IPY_MODEL_6ef1083093124d9484754e05c5a2849e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1c666f495a6d45c0b45e0c8e4870bd91": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5188987576fc43478c5ffdb156d9badd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1c666f495a6d45c0b45e0c8e4870bd91",
+        "location": [
+          "43.643763975810266",
+          "-79.45969990601598"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b5c8ce509f8340cdb0a8d693efe7abdc",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "5d4175f5e73d48928694e27dbbc9014f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8f9f9537ab624143aa2aae431d5c466b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7ac7fa4b31de4e86a0aa46adb1068b5e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_5d4175f5e73d48928694e27dbbc9014f",
+        "style": "IPY_MODEL_8f9f9537ab624143aa2aae431d5c466b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "099c2d942c604853a9d9b4160bce6812": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d679b269f43b449586e0ba76f71f7697": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_099c2d942c604853a9d9b4160bce6812",
+        "location": [
+          "43.64025468121315",
+          "-79.4571013822149"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7ac7fa4b31de4e86a0aa46adb1068b5e",
+        "title": "Warbling Vireo, 2021-08-19"
+      }
+    },
+    "982482e4a1634334b8c7859d0621c47f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "79c894a7d7e74672b2a3d8780670620a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ce3363574e2b42cea3c92d0751c3f8c3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_982482e4a1634334b8c7859d0621c47f",
+        "style": "IPY_MODEL_79c894a7d7e74672b2a3d8780670620a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d215cd9230624a3eb1f7a6cb7a99d2e4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "54ff617f9e3b46d1acdc4c25dfad874d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d215cd9230624a3eb1f7a6cb7a99d2e4",
+        "location": [
+          "43.64032795393689",
+          "-79.45686351391338"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ce3363574e2b42cea3c92d0751c3f8c3",
+        "title": "Warbling Vireo, 2021-07-30"
+      }
+    },
+    "1e11c2fbb9da45389dc5b6542eb86c14": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4145035d720245298b3fa1af9b515bb7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "32b9fbc17cb2492b8a30263dcf8e79ba": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_1e11c2fbb9da45389dc5b6542eb86c14",
+        "style": "IPY_MODEL_4145035d720245298b3fa1af9b515bb7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bb838cf1a6f643f593ef1918950e070b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8ebf39b8450f44d8a1e45f45730395ac": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bb838cf1a6f643f593ef1918950e070b",
+        "location": [
+          "43.64411981375292",
+          "-79.45948684587714"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_32b9fbc17cb2492b8a30263dcf8e79ba",
+        "title": "Warbling Vireo, 2021-09-14"
+      }
+    },
+    "954c50bfb3314ae983edc00a43dab8d5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "21632f9e41f94b7c9c02870f3d95f6dd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "51fb93554c174939b080c4a9e952cdd5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_954c50bfb3314ae983edc00a43dab8d5",
+        "style": "IPY_MODEL_21632f9e41f94b7c9c02870f3d95f6dd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1b2793e141ea40d28bc70930d1979845": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "643c8b4d5b0c4ecca5c858d47fe17056": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1b2793e141ea40d28bc70930d1979845",
+        "location": [
+          "43.64034376034172",
+          "-79.45686997102162"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_51fb93554c174939b080c4a9e952cdd5",
+        "title": "Warbling Vireo, 2021-07-27"
+      }
+    },
+    "9b88024bf7754dbe9f0ba57068c4d0be": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d453aa2be64d49a6952bc73221d635bb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "76820f91553a4cf1a47386cf3b66736d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_9b88024bf7754dbe9f0ba57068c4d0be",
+        "style": "IPY_MODEL_d453aa2be64d49a6952bc73221d635bb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7c95e4ea2cbd4b51b5d70ee86c1c88f8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6756c455d172403c9ddcd634f6c0691c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7c95e4ea2cbd4b51b5d70ee86c1c88f8",
+        "location": [
+          "43.640479902938075",
+          "-79.45687707099721"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_76820f91553a4cf1a47386cf3b66736d",
+        "title": "Warbling Vireo, 2021-08-04"
+      }
+    },
+    "e5f29722bf23492c9fb34d2ecd06c2e9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1c9c180727324d99a54a1b3deeb9d445": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c44fffba9cb545b5acdf63253f1cbc52": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_e5f29722bf23492c9fb34d2ecd06c2e9",
+        "style": "IPY_MODEL_1c9c180727324d99a54a1b3deeb9d445",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6647bc4136f545f791aea882a7cc9cc5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0a1a2450bf8547fd9f5cca8a98d18140": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6647bc4136f545f791aea882a7cc9cc5",
+        "location": [
+          "43.63998330124736",
+          "-79.45682956415632"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c44fffba9cb545b5acdf63253f1cbc52",
+        "title": "Warbling Vireo, 2021-08-09"
+      }
+    },
+    "5224673381be4c14802b9c239700dbbe": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "009c32af03fe42889a343b1c36d06d23": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "42727d696e984c1887bbbc5e06e1d5f1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_5224673381be4c14802b9c239700dbbe",
+        "style": "IPY_MODEL_009c32af03fe42889a343b1c36d06d23",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bb654702c37f4fa5821c799f7ab564bd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "425edc53916e4785b24ca06da5920880": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bb654702c37f4fa5821c799f7ab564bd",
+        "location": [
+          "43.64025716462551",
+          "-79.45669530767661"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_42727d696e984c1887bbbc5e06e1d5f1",
+        "title": "Warbling Vireo, 2021-08-30"
+      }
+    },
+    "92c7bdd80092494fb5411cb8513724aa": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0d46d80bc59340cca056f46198b05da4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "985a474d0f7d4e90a31bf7b01b1a9415": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_92c7bdd80092494fb5411cb8513724aa",
+        "style": "IPY_MODEL_0d46d80bc59340cca056f46198b05da4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ca40c7e147644f30a9e1dd543b8681f7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7b877959e7f24a958b41ef0ee9516a32": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ca40c7e147644f30a9e1dd543b8681f7",
+        "location": [
+          "43.64024850882197",
+          "-79.45673692244875"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_985a474d0f7d4e90a31bf7b01b1a9415",
+        "title": "Warbling Vireo, 2021-08-24"
+      }
+    },
+    "fa47eaa2d5634c0980f0aa996368b1b6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "01f7024b999d4fd78b754b95660ad66e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "95152de4ce69467db5c9402e2bcc3660": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_fa47eaa2d5634c0980f0aa996368b1b6",
+        "style": "IPY_MODEL_01f7024b999d4fd78b754b95660ad66e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d4d939b2371a42b291faecbc56528da0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1a7233509f714727897c2700d9c80195": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d4d939b2371a42b291faecbc56528da0",
+        "location": [
+          "43.64034018403113",
+          "-79.45696554191072"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_95152de4ce69467db5c9402e2bcc3660",
+        "title": "Warbling Vireo, 2021-07-30"
+      }
+    },
+    "98143a0dc8514d8dbe37a3438784c8ce": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "04cd71f4d2b64bde833318d969109beb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b27e47a209f243999fa05df0e43e4e7d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_98143a0dc8514d8dbe37a3438784c8ce",
+        "style": "IPY_MODEL_04cd71f4d2b64bde833318d969109beb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0c96f70293bb4955948277b445892cdd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "62b363c9813348f79d9c16679660e2f9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0c96f70293bb4955948277b445892cdd",
+        "location": [
+          "43.64039729460333",
+          "-79.45694035634504"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b27e47a209f243999fa05df0e43e4e7d",
+        "title": "Warbling Vireo, 2021-07-27"
+      }
+    },
+    "d3203a6db2a84715b28a7f112b4057f3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "01605f5fd3134475aa7e2e3c08b9e2a1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "58b73f1c55c749dfa412558effe8fef5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_d3203a6db2a84715b28a7f112b4057f3",
+        "style": "IPY_MODEL_01605f5fd3134475aa7e2e3c08b9e2a1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e775ad8af3384906b855c9f9427bcc7c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "71dfa1deedd3466d99f3384fa0ccabfb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e775ad8af3384906b855c9f9427bcc7c",
+        "location": [
+          "43.64013846678823",
+          "-79.45687183994829"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_58b73f1c55c749dfa412558effe8fef5",
+        "title": "Warbling Vireo, 2021-08-16"
+      }
+    },
+    "09ad52cd329b4b80ab55c294e073fc5c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d74b79cab57e446c9f4aa82409a7fc19": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "91d7d74269de4ecb9a386aae440425b0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_09ad52cd329b4b80ab55c294e073fc5c",
+        "style": "IPY_MODEL_d74b79cab57e446c9f4aa82409a7fc19",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7b931a03baf44a2f83d250861925e109": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "755bb1e90ff144b8a070488101b9fa39": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7b931a03baf44a2f83d250861925e109",
+        "location": [
+          "43.65122464990831",
+          "-79.46198325854853"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_91d7d74269de4ecb9a386aae440425b0",
+        "title": "Warbling Vireo, 2021-09-04"
+      }
+    },
+    "cb7dc252e3a542ae9b59903471804c85": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fd488d26477b409ebda613725f3ec0f2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f143f988b80045ca835347790e6544a9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_cb7dc252e3a542ae9b59903471804c85",
+        "style": "IPY_MODEL_fd488d26477b409ebda613725f3ec0f2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ff7e12ab4ed242998cef065a46ce7b3b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "326bc87749654724a490817035754889": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ff7e12ab4ed242998cef065a46ce7b3b",
+        "location": [
+          "43.64004350851841",
+          "-79.45701306576564"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f143f988b80045ca835347790e6544a9",
+        "title": "Warbling Vireo, 2021-08-21"
+      }
+    },
+    "eb0c80912c024e2db3cfbbd49a4f2e72": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c5b1b2edc48544e194ad4aa38e9cb377": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "906339fd825342d988f416689871c0fa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_eb0c80912c024e2db3cfbbd49a4f2e72",
+        "style": "IPY_MODEL_c5b1b2edc48544e194ad4aa38e9cb377",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4c509baea463435fa9e6d1fafc8ac727": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ad2a5e2e60294a60acbad7d73bb70d50": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4c509baea463435fa9e6d1fafc8ac727",
+        "location": [
+          "43.640132038827865",
+          "-79.45682391685835"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_906339fd825342d988f416689871c0fa",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "a52cc5e6e3384e1a92a0e90bdbc7047b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bd846a46d1a7428da58cbef172c836cc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4d6440fb67d44264ba35bddc53b3f715": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_a52cc5e6e3384e1a92a0e90bdbc7047b",
+        "style": "IPY_MODEL_bd846a46d1a7428da58cbef172c836cc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "007e3af4cbcc428ca9f7eef09af766b0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0d330aeaa8c14b6186cad2140ea3a277": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_007e3af4cbcc428ca9f7eef09af766b0",
+        "location": [
+          "43.64027084336469",
+          "-79.45688869947904"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4d6440fb67d44264ba35bddc53b3f715",
+        "title": "Warbling Vireo, 2021-07-27"
+      }
+    },
+    "d5fdd8faa11d4eec81705acde50a98de": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "47537e84b1be486db32e7ebc00eab4c0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c4bedf8d43594717b04605ebeed1b4f1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_d5fdd8faa11d4eec81705acde50a98de",
+        "style": "IPY_MODEL_47537e84b1be486db32e7ebc00eab4c0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ab40b9e104d6450c9d4cb653b0bbe2e2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7c1a4a2aae3d477fbf9e069533d10303": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ab40b9e104d6450c9d4cb653b0bbe2e2",
+        "location": [
+          "43.64034098367942",
+          "-79.45700177116969"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c4bedf8d43594717b04605ebeed1b4f1",
+        "title": "Warbling Vireo, 2021-08-19"
+      }
+    },
+    "5e4e7335ab784a23ae0b10f84927e6ff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "27776fa4492b4300a3b9b8f96959375d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3270804d17ac4277892fbeb6843c63dd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_5e4e7335ab784a23ae0b10f84927e6ff",
+        "style": "IPY_MODEL_27776fa4492b4300a3b9b8f96959375d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "cd7545b9f6f74a20bfdc2b1cc5be2f98": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ae2175c96d65483ca470f98d21b1004d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cd7545b9f6f74a20bfdc2b1cc5be2f98",
+        "location": [
+          "43.65135804815573",
+          "-79.46228783960895"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3270804d17ac4277892fbeb6843c63dd",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "5a4de02eb27546f6916b8e9eb8214764": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6331120a9b0245acaf17f410b711d3aa": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "433e8f2f1032462395a77e3394295552": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_5a4de02eb27546f6916b8e9eb8214764",
+        "style": "IPY_MODEL_6331120a9b0245acaf17f410b711d3aa",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f8b5c655b3b94551b98e729898fcd28d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e0e1bad17dac4defb2728bbe1946c404": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f8b5c655b3b94551b98e729898fcd28d",
+        "location": [
+          "43.64364780011616",
+          "-79.46743170374423"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_433e8f2f1032462395a77e3394295552",
+        "title": "Warbling Vireo, 2021-08-15"
+      }
+    },
+    "d24773e8fcf14b7399cbbf0a0c55e2ff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9208c26298034228a2393eb11aa89c57": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "68b81e8775c94ff48111947bd2eb691c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_d24773e8fcf14b7399cbbf0a0c55e2ff",
+        "style": "IPY_MODEL_9208c26298034228a2393eb11aa89c57",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "46761fe7e5f74103b341aa2cd8e126c1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2db124e02df440128206156cc0218bc6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_46761fe7e5f74103b341aa2cd8e126c1",
+        "location": [
+          "43.640567588745874",
+          "-79.45710695542489"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_68b81e8775c94ff48111947bd2eb691c",
+        "title": "Warbling Vireo, 2021-08-04"
+      }
+    },
+    "394f1c6d4b5c4a8a8023595280b180e1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7f8a727d169e40f383ff4934d3a4e46d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "817a4b995eb04abc8c601c72304d2228": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_394f1c6d4b5c4a8a8023595280b180e1",
+        "style": "IPY_MODEL_7f8a727d169e40f383ff4934d3a4e46d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d765496b78c44d56a5087377d962eaa9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2f2d8aca768b4f059f659ee4f76b2b80": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d765496b78c44d56a5087377d962eaa9",
+        "location": [
+          "43.642264932876586",
+          "-79.46619745776779"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_817a4b995eb04abc8c601c72304d2228",
+        "title": "Warbling Vireo, 2021-08-09"
+      }
+    },
+    "966100016333437f9af4c946189f2d46": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9fbc45a2052d4e79aa0e5f28408b6a4f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2a86754c62f4451680f391877f543864": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_966100016333437f9af4c946189f2d46",
+        "style": "IPY_MODEL_9fbc45a2052d4e79aa0e5f28408b6a4f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e77cdbb45a1243799ad8ec4b0aabcb17": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "49c38e7187ba4ec1a1512832d22eb442": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e77cdbb45a1243799ad8ec4b0aabcb17",
+        "location": [
+          "43.64034376034172",
+          "-79.45686997102162"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2a86754c62f4451680f391877f543864",
+        "title": "Warbling Vireo, 2021-07-27"
+      }
+    },
+    "add295b9f8d245ba9ec3c49cf9bac75a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bd3bf46198334a55b77e3736cc8c1d94": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f0b79470754149b5bf4db2954d8ebb4d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_add295b9f8d245ba9ec3c49cf9bac75a",
+        "style": "IPY_MODEL_bd3bf46198334a55b77e3736cc8c1d94",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c963ae4438ec4192b43689a1a34f9bc0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "acde9aa2c1764fc491e6042c04fb6363": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c963ae4438ec4192b43689a1a34f9bc0",
+        "location": [
+          "43.65136695952845",
+          "-79.46192968816061"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f0b79470754149b5bf4db2954d8ebb4d",
+        "title": "Warbling Vireo, 2021-08-23"
+      }
+    },
+    "af57fb41f0684ee6b05ca7a9531b56c2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fdeb9988be7e4cfca8e68f519edbc90f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3e4f474310e843668b16e634e445e718": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_af57fb41f0684ee6b05ca7a9531b56c2",
+        "style": "IPY_MODEL_fdeb9988be7e4cfca8e68f519edbc90f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f6474fdad78d438d94fe3a130e65f6db": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0e1514b52acd4a048c3cfbc0c42a4461": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f6474fdad78d438d94fe3a130e65f6db",
+        "location": [
+          "43.6442083827932",
+          "-79.46725903696469"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3e4f474310e843668b16e634e445e718",
+        "title": "Warbling Vireo, 2021-08-15"
+      }
+    },
+    "777d1df815664ca7afdbd7b00f00eda4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "df72d92d222e45bc81feb31ea2350999": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "299194c42a974c7c96d1b10c8a26d12d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_777d1df815664ca7afdbd7b00f00eda4",
+        "style": "IPY_MODEL_df72d92d222e45bc81feb31ea2350999",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d5bc699308ae490990d59092a5dcc6f1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "79ea30179dce4437add68f702fa116fc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d5bc699308ae490990d59092a5dcc6f1",
+        "location": [
+          "43.6400264524805",
+          "-79.45677975863373"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_299194c42a974c7c96d1b10c8a26d12d",
+        "title": "Warbling Vireo, 2021-08-16"
+      }
+    },
+    "81c05e296c4a4fb5bb43da60561b3242": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1eca93b278474ce4b73fb63772cc3a05": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ce6117ecc9cb4a9fa73858d4a9942dca": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_81c05e296c4a4fb5bb43da60561b3242",
+        "style": "IPY_MODEL_1eca93b278474ce4b73fb63772cc3a05",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f3388fc0bc8c48d8bde060f1574885f4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9705886eb8eb481e963790dd911dbeaa": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f3388fc0bc8c48d8bde060f1574885f4",
+        "location": [
+          "43.640308571221475",
+          "-79.4569526276942"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ce6117ecc9cb4a9fa73858d4a9942dca",
+        "title": "Warbling Vireo, 2021-07-30"
+      }
+    },
+    "7875511905ce4c99ad1fd834ba496cfc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "de7b1ec6309b4ad6941a839bacb57b07": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d56a947b02374a0bb62c7cd5c95ef8d4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_7875511905ce4c99ad1fd834ba496cfc",
+        "style": "IPY_MODEL_de7b1ec6309b4ad6941a839bacb57b07",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "faac3f048c044a9cbf05ff38f54da49f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "77a82485453a4d18bd8ec5cb88b2c21d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_faac3f048c044a9cbf05ff38f54da49f",
+        "location": [
+          "43.644061731390124",
+          "-79.4597957692313"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d56a947b02374a0bb62c7cd5c95ef8d4",
+        "title": "Warbling Vireo, 2021-07-30"
+      }
+    },
+    "b28522cbe90447cda9ed946bd175145d": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_ce12205aeb2f47008c8a98be903a05bb",
+          "IPY_MODEL_390f5b1753e1423e952f45a7535afe9d",
+          "IPY_MODEL_dd4f249b7bda43259df073e5dd3a762e",
+          "IPY_MODEL_5b67773612944ec8b40f1f0675962f95",
+          "IPY_MODEL_be618eb29ed94ab4885a6069b4b96600",
+          "IPY_MODEL_d60702adea7444d79734831375b95cac",
+          "IPY_MODEL_c171c9b9c2a24f72bf037b08e5f2a0be",
+          "IPY_MODEL_dfbbb5a975f042c5af848ec460c0a47d",
+          "IPY_MODEL_c253be46044241cb98b35f113e8898bc",
+          "IPY_MODEL_8182af11e7cb4c9fa7b858577a519b7d",
+          "IPY_MODEL_7613faa77863447ea8248ba5b0664940",
+          "IPY_MODEL_9991688e71114e47b6d11c896fb150c7",
+          "IPY_MODEL_1715ad826821493da3c5f1c7d6c4f80f",
+          "IPY_MODEL_50679c2ff96b4bb8a15fe5115a978b39",
+          "IPY_MODEL_aa6803ccc7344a30b22a8fb1913e7c48",
+          "IPY_MODEL_60777140c3914dd8934dc64fdc1c4ca7",
+          "IPY_MODEL_0e70ebde115a47d2ae6c0b00d03f65d4",
+          "IPY_MODEL_d0264cd899b346adae5afd48eb88bece",
+          "IPY_MODEL_1ea7edf852fa4344b34d31cc6dd7aa3a",
+          "IPY_MODEL_062f0c6777614dea85922793d4512f7f",
+          "IPY_MODEL_6ad7a554ff3c42f38abd05e220031420",
+          "IPY_MODEL_54f920a4b2894f4eae5dd58d16a9bcd6",
+          "IPY_MODEL_6c65eb833abe42f1bfc711cb44c5b109",
+          "IPY_MODEL_3330a02cfbe2473cac4e2adfa1c3815b",
+          "IPY_MODEL_84a9fa839b70450890ab98f69e28d7b5",
+          "IPY_MODEL_597d597ae74246d0904d98f473f96ef6",
+          "IPY_MODEL_ebcdc322b3934c269f7edc432874d560",
+          "IPY_MODEL_fbe2c1aeb884448fba5c114bd0ce5a9a",
+          "IPY_MODEL_2ceb2d3ad5ca43d88a936d41e7295f3f",
+          "IPY_MODEL_86faf5941bd847c3b016c21d0ef3615f",
+          "IPY_MODEL_6ca764f7c37b46f7a8c3126c2946262a",
+          "IPY_MODEL_9850696270434005857c3b90f42576d9",
+          "IPY_MODEL_f53f81b37e5840dcadaaa114f205ac0d",
+          "IPY_MODEL_00bafdd29ab44ad2995cb98571a06c6f",
+          "IPY_MODEL_7fc1f773adb64ad1b3af9d8ac87870ad",
+          "IPY_MODEL_2c8802c148244605a25e69c94f82ff38",
+          "IPY_MODEL_0732747a308d441db92bf0631094d59b",
+          "IPY_MODEL_e73e697406fe48d9986aee75255eb467",
+          "IPY_MODEL_89992df10e794f7897db388b0df62b2e",
+          "IPY_MODEL_7dc7ee694a5c4984a74ef3fd4836a927",
+          "IPY_MODEL_a9a883a6b208408b9d58148979e0375a",
+          "IPY_MODEL_70567ca62e5444a691a8fd9291b54082",
+          "IPY_MODEL_1a06a567f9654735a86ced8fd585f708",
+          "IPY_MODEL_91a19de731dc42c490f40d5b7019e125",
+          "IPY_MODEL_db519133710b497298eeda8eb6499724",
+          "IPY_MODEL_5f5b5a647a634bc1889709aac12d8da2",
+          "IPY_MODEL_09212e66c458470dbf024f86adc74468",
+          "IPY_MODEL_44989dae1d4147968d1d1171cb7646e6",
+          "IPY_MODEL_e37228890a3b44948a0dffb61c966392",
+          "IPY_MODEL_94a2638a6f4d4d39b25b2a55878223c2",
+          "IPY_MODEL_fe23df1d285b4d48bdfc5775c4ebe7a3",
+          "IPY_MODEL_f0bb2289f554476fa7d8ddb171083ce5",
+          "IPY_MODEL_50bf0798ccba4277a9e871c135769e8b",
+          "IPY_MODEL_c53745ab1523421a8d07391db7aa7613",
+          "IPY_MODEL_c432af9629b2410ba168a0e4679bd464",
+          "IPY_MODEL_95459ce376444244ac807d7222456e9f",
+          "IPY_MODEL_512c1b15e42046e88dea0e0e98a7574a",
+          "IPY_MODEL_15fc274bde7942f5ae015d7c459890a6",
+          "IPY_MODEL_c61add64392a4527abb2dc20c4b076b0",
+          "IPY_MODEL_f7f53d7615fc4eda80254a6631817be2",
+          "IPY_MODEL_556f3a86d8d74bc4a216eb3c327df6b7",
+          "IPY_MODEL_37778f9f8c3646cca3cc018e9db2c43a",
+          "IPY_MODEL_5188987576fc43478c5ffdb156d9badd",
+          "IPY_MODEL_d679b269f43b449586e0ba76f71f7697",
+          "IPY_MODEL_54ff617f9e3b46d1acdc4c25dfad874d",
+          "IPY_MODEL_8ebf39b8450f44d8a1e45f45730395ac",
+          "IPY_MODEL_643c8b4d5b0c4ecca5c858d47fe17056",
+          "IPY_MODEL_6756c455d172403c9ddcd634f6c0691c",
+          "IPY_MODEL_0a1a2450bf8547fd9f5cca8a98d18140",
+          "IPY_MODEL_425edc53916e4785b24ca06da5920880",
+          "IPY_MODEL_7b877959e7f24a958b41ef0ee9516a32",
+          "IPY_MODEL_1a7233509f714727897c2700d9c80195",
+          "IPY_MODEL_62b363c9813348f79d9c16679660e2f9",
+          "IPY_MODEL_71dfa1deedd3466d99f3384fa0ccabfb",
+          "IPY_MODEL_755bb1e90ff144b8a070488101b9fa39",
+          "IPY_MODEL_326bc87749654724a490817035754889",
+          "IPY_MODEL_ad2a5e2e60294a60acbad7d73bb70d50",
+          "IPY_MODEL_0d330aeaa8c14b6186cad2140ea3a277",
+          "IPY_MODEL_7c1a4a2aae3d477fbf9e069533d10303",
+          "IPY_MODEL_ae2175c96d65483ca470f98d21b1004d",
+          "IPY_MODEL_e0e1bad17dac4defb2728bbe1946c404",
+          "IPY_MODEL_2db124e02df440128206156cc0218bc6",
+          "IPY_MODEL_2f2d8aca768b4f059f659ee4f76b2b80",
+          "IPY_MODEL_49c38e7187ba4ec1a1512832d22eb442",
+          "IPY_MODEL_acde9aa2c1764fc491e6042c04fb6363",
+          "IPY_MODEL_0e1514b52acd4a048c3cfbc0c42a4461",
+          "IPY_MODEL_79ea30179dce4437add68f702fa116fc",
+          "IPY_MODEL_9705886eb8eb481e963790dd911dbeaa",
+          "IPY_MODEL_77a82485453a4d18bd8ec5cb88b2c21d"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "b7e3665cffb34e5f925bfd17716dd8d3"}
+</script>
+
+</body>
+</html>

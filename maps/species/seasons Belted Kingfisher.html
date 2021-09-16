@@ -1,0 +1,3146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belted Kingfisher Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "cdd0b4a6ccc04501972f2e457e4f099e": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "9e67cff20c6b45d6b8a3d5b8ff76cf19": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "a9a41b576b394e8a89e58d1ef02e2395": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "0e9190f673ba4a1eb91338dc06969ff9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "9b4749fe7bed45158f9283ec119722e1": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "e6505f0672c1475e8c68fbb511e4d896": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_09a41f947e3a420b860b349897505b8a",
+          "IPY_MODEL_11da33be0d7648188d0be637d414c17b",
+          "IPY_MODEL_82afdda6f11642c3ae34650011ba824d",
+          "IPY_MODEL_96ff58008191412f8af640e76e429142"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_cdd0b4a6ccc04501972f2e457e4f099e",
+        "dragging_style": "IPY_MODEL_9e67cff20c6b45d6b8a3d5b8ff76cf19",
+        "layers": [
+          "IPY_MODEL_a9a41b576b394e8a89e58d1ef02e2395",
+          "IPY_MODEL_49a94f4c46ca44c38356a2b8ec1f6d03",
+          "IPY_MODEL_d734845892494c42b60c1e410e9ec38a",
+          "IPY_MODEL_5762518a246f4df181e45c2fcdd166db",
+          "IPY_MODEL_7729ebca566445c7bb382f72d44bb679",
+          "IPY_MODEL_4e999f869a2d49288c8b1f82f0a3088a"
+        ],
+        "layout": "IPY_MODEL_0e9190f673ba4a1eb91338dc06969ff9",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_9b4749fe7bed45158f9283ec119722e1",
+        "zoom": 14.0
+      }
+    },
+    "09a41f947e3a420b860b349897505b8a": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "11da33be0d7648188d0be637d414c17b": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "82afdda6f11642c3ae34650011ba824d": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "96ff58008191412f8af640e76e429142": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "49a94f4c46ca44c38356a2b8ec1f6d03": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "d734845892494c42b60c1e410e9ec38a": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "5762518a246f4df181e45c2fcdd166db": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64031378109122",
+            "-79.46238853989057"
+          ],
+          [
+            "43.65196100430336",
+            "-79.46098504914464"
+          ],
+          [
+            "43.64731049936889",
+            "-79.47097166370939"
+          ],
+          [
+            "43.640873330102146",
+            "-79.45633430981813"
+          ],
+          [
+            "43.64289413258082",
+            "-79.45883363166702"
+          ],
+          [
+            "43.640342259179256",
+            "-79.45648123035701"
+          ],
+          [
+            "43.640444250229415",
+            "-79.45632883122833"
+          ],
+          [
+            "43.640296915112884",
+            "-79.45597754747855"
+          ],
+          [
+            "43.64496272946461",
+            "-79.47013386102255"
+          ],
+          [
+            "43.64023368062724",
+            "-79.45641407745475"
+          ],
+          [
+            "43.64178508046679",
+            "-79.45715337205066"
+          ],
+          [
+            "43.64176356874251",
+            "-79.4570991406429"
+          ],
+          [
+            "43.64280552047011",
+            "-79.4694316556326"
+          ],
+          [
+            "43.64014540588696",
+            "-79.45628668968585"
+          ],
+          [
+            "43.645746702864784",
+            "-79.47009025421569"
+          ],
+          [
+            "43.64586496390818",
+            "-79.47057520863673"
+          ],
+          [
+            "43.651366120541454",
+            "-79.46563859041288"
+          ],
+          [
+            "43.64449318532321",
+            "-79.46959465173634"
+          ],
+          [
+            "43.64014540588696",
+            "-79.45628668968585"
+          ],
+          [
+            "43.653174272216106",
+            "-79.46340929751156"
+          ],
+          [
+            "43.64748747638367",
+            "-79.4693089383705"
+          ],
+          [
+            "43.64061096806136",
+            "-79.45659100119727"
+          ],
+          [
+            "43.648412386291504",
+            "-79.46107852502324"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "7729ebca566445c7bb382f72d44bb679": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64032889446624",
+            "-79.45595631496121"
+          ],
+          [
+            "43.64029204340888",
+            "-79.45621231191186"
+          ],
+          [
+            "43.64596261059826",
+            "-79.47041274999137"
+          ],
+          [
+            "43.641754912938964",
+            "-79.45714075541504"
+          ],
+          [
+            "43.65250200307998",
+            "-79.46041405407665"
+          ],
+          [
+            "43.64464389517772",
+            "-79.46981600325248"
+          ],
+          [
+            "43.641632270553686",
+            "-79.4568632900585"
+          ],
+          [
+            "43.640078642870954",
+            "-79.45621353332469"
+          ],
+          [
+            "43.64445436199185",
+            "-79.46962364987287"
+          ],
+          [
+            "43.640317883034925",
+            "-79.45624573593354"
+          ],
+          [
+            "43.640244564273964",
+            "-79.45628292482053"
+          ],
+          [
+            "43.64688953151091",
+            "-79.47037067545307"
+          ],
+          [
+            "43.642416115138644",
+            "-79.4578243959367"
+          ],
+          [
+            "43.64566329094783",
+            "-79.47003877743511"
+          ],
+          [
+            "43.6403565785817",
+            "-79.4563750061351"
+          ],
+          [
+            "43.64016074522005",
+            "-79.45597646132745"
+          ],
+          [
+            "43.640119566260914",
+            "-79.45625326566417"
+          ],
+          [
+            "43.65218276062551",
+            "-79.46068765394105"
+          ],
+          [
+            "43.6400872986745",
+            "-79.45617191855254"
+          ],
+          [
+            "43.640564190082216",
+            "-79.45553451994184"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "fbe9492b81c8432cb2baf1037127eadd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0e3b6a64eccf4c4db37c257b55a72712": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1c8f51be01c0427183fbb676b4c1a1c7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_fbe9492b81c8432cb2baf1037127eadd",
+        "style": "IPY_MODEL_0e3b6a64eccf4c4db37c257b55a72712",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "05ce9d278e0a44c8b9244665f799e167": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bc4cdce8905f409391086e38fcaccaf0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_05ce9d278e0a44c8b9244665f799e167",
+        "location": [
+          "43.64031378109122",
+          "-79.46238853989057"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1c8f51be01c0427183fbb676b4c1a1c7",
+        "title": "Belted Kingfisher, 2021-07-21"
+      }
+    },
+    "51a066265c694a54bb2eb7888f6a2991": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e2452a4bbd7f4e75901518352b340d07": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2a34e6cf477347ec888ad4b6bbed51e8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_51a066265c694a54bb2eb7888f6a2991",
+        "style": "IPY_MODEL_e2452a4bbd7f4e75901518352b340d07",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "71f9b49d46c44b2fb47e5d666fa38ec6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c8cc90e2ea8c472b8a3fb30e8f068bcb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_71f9b49d46c44b2fb47e5d666fa38ec6",
+        "location": [
+          "43.65196100430336",
+          "-79.46098504914464"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2a34e6cf477347ec888ad4b6bbed51e8",
+        "title": "Belted Kingfisher, 2021-07-23"
+      }
+    },
+    "ebc075d9b5ee4a949fac2f473af8b40b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5040a1b201194a378f0495d62c14977d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ff2e497f239741b2a5d9622ae2b1a657": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_ebc075d9b5ee4a949fac2f473af8b40b",
+        "style": "IPY_MODEL_5040a1b201194a378f0495d62c14977d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f2ec6a860eaf4e73a83717137550a55e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2cec69da77eb45959fcb4fe1cc2d1393": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f2ec6a860eaf4e73a83717137550a55e",
+        "location": [
+          "43.64731049936889",
+          "-79.47097166370939"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ff2e497f239741b2a5d9622ae2b1a657",
+        "title": "Belted Kingfisher, 2021-07-15"
+      }
+    },
+    "c251a096d56c4559987868b19f3ccdcf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4caad933537d47b9bd7ca6a9d3d55fd8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b1464b9e39d943398146f2528de720ec": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_c251a096d56c4559987868b19f3ccdcf",
+        "style": "IPY_MODEL_4caad933537d47b9bd7ca6a9d3d55fd8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a6c6d22f5a7c44ad8a0657ec7b42c715": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "35448a51d924426d99540692784c315a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a6c6d22f5a7c44ad8a0657ec7b42c715",
+        "location": [
+          "43.640873330102146",
+          "-79.45633430981813"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b1464b9e39d943398146f2528de720ec",
+        "title": "Belted Kingfisher, 2021-07-24"
+      }
+    },
+    "85b4c4a7c37f440c8ce3506de1bd00d3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0250352c0af8498d978327f686f53736": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fa8b777a584d436990de635e352559f2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_85b4c4a7c37f440c8ce3506de1bd00d3",
+        "style": "IPY_MODEL_0250352c0af8498d978327f686f53736",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "5dd7f3f8b4294be0a1a00d5638d4a3dd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "728715faa59941288bdc74a7cea0d869": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5dd7f3f8b4294be0a1a00d5638d4a3dd",
+        "location": [
+          "43.64289413258082",
+          "-79.45883363166702"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fa8b777a584d436990de635e352559f2",
+        "title": "Belted Kingfisher, 2021-07-23"
+      }
+    },
+    "040e9575e7b9447cbbcec55917b4a14c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d3f34a8ed21440828db13c126fe80532": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a875db4cd4aa48de9cbf119491c7678b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_040e9575e7b9447cbbcec55917b4a14c",
+        "style": "IPY_MODEL_d3f34a8ed21440828db13c126fe80532",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d4644de93e0841daaa37eb5fe7d658d5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a23e1a2dabe24ce88113783acc60c3a6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d4644de93e0841daaa37eb5fe7d658d5",
+        "location": [
+          "43.640342259179256",
+          "-79.45648123035701"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a875db4cd4aa48de9cbf119491c7678b",
+        "title": "Belted Kingfisher, 2021-07-15"
+      }
+    },
+    "20ad535b87dc4a618f2a2b31c218d9e2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "23589205a0564b4594d73eab8c99d893": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "27158a6f18e243f59b3afa6eb9bc039c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_20ad535b87dc4a618f2a2b31c218d9e2",
+        "style": "IPY_MODEL_23589205a0564b4594d73eab8c99d893",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "28811b1637584bcba98994eab614afb7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "931bc38bd0b947a29c9087d6da7211e4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_28811b1637584bcba98994eab614afb7",
+        "location": [
+          "43.640444250229415",
+          "-79.45632883122833"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_27158a6f18e243f59b3afa6eb9bc039c",
+        "title": "Belted Kingfisher, 2021-07-09"
+      }
+    },
+    "ed67ab7662fd422e897de5fccf69bfb8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6a12706ee3a64dc2ac55a554661887ca": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3d50249461b44099a8ce01b10d20d7ba": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_ed67ab7662fd422e897de5fccf69bfb8",
+        "style": "IPY_MODEL_6a12706ee3a64dc2ac55a554661887ca",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "44774e18bc8e492ea0759da427109e96": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6e7ec8196d4548a3a3c28460048ce05b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_44774e18bc8e492ea0759da427109e96",
+        "location": [
+          "43.640296915112884",
+          "-79.45597754747855"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3d50249461b44099a8ce01b10d20d7ba",
+        "title": "Belted Kingfisher, 2021-07-21"
+      }
+    },
+    "b81a9fe57cba4217b7b4b47a17a6580b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "487c5d8ab43b4d89a30d87d892b09625": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b32251343d544783ae513037a63964bf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_b81a9fe57cba4217b7b4b47a17a6580b",
+        "style": "IPY_MODEL_487c5d8ab43b4d89a30d87d892b09625",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0ca5d378ac6b4cd2be22aa80e94a9d6c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "21f3ae3f401549f8b3f7a049755bedc7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ca5d378ac6b4cd2be22aa80e94a9d6c",
+        "location": [
+          "43.64496272946461",
+          "-79.47013386102255"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b32251343d544783ae513037a63964bf",
+        "title": "Belted Kingfisher, 2021-07-24"
+      }
+    },
+    "4331c8fed05f4d5692011f5d558715c3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d800892d57734226ba45b48276384ba3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b777c0b6e4a943209803e6758cd2d2d9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_4331c8fed05f4d5692011f5d558715c3",
+        "style": "IPY_MODEL_d800892d57734226ba45b48276384ba3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "44e96476ea4e4a72aa06f5e7d73207b3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3f04877aae1e4a10a86045669b22ddf2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_44e96476ea4e4a72aa06f5e7d73207b3",
+        "location": [
+          "43.64023368062724",
+          "-79.45641407745475"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b777c0b6e4a943209803e6758cd2d2d9",
+        "title": "Belted Kingfisher, 2021-08-16"
+      }
+    },
+    "a87f963fb2934e4da57f0b1553f105cd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ff0b1f1619d246d28c9daa9b6ca915bf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad3ab19c42d54fb9a089923e82e68802": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_a87f963fb2934e4da57f0b1553f105cd",
+        "style": "IPY_MODEL_ff0b1f1619d246d28c9daa9b6ca915bf",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "28402204e97b42389c5c15dd4d88192f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3e9cb7b68ecb4af78aeca3405f595041": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_28402204e97b42389c5c15dd4d88192f",
+        "location": [
+          "43.64032889446624",
+          "-79.45595631496121"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad3ab19c42d54fb9a089923e82e68802",
+        "title": "Belted Kingfisher, 2021-08-31"
+      }
+    },
+    "bc569c178e234b48983bd4edaf7c42c9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3895825cd53b4bc6a887e3815ef27f5f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "212cc375d9f147188838ddbf8bba3d9c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_bc569c178e234b48983bd4edaf7c42c9",
+        "style": "IPY_MODEL_3895825cd53b4bc6a887e3815ef27f5f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5302e3b28547433cabbd4895ec382be0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0cb79b30f838411eb08548ab739ad719": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5302e3b28547433cabbd4895ec382be0",
+        "location": [
+          "43.64178508046679",
+          "-79.45715337205066"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_212cc375d9f147188838ddbf8bba3d9c",
+        "title": "Belted Kingfisher, 2021-08-21"
+      }
+    },
+    "39005f65bea146069c83a8dfc09bb01c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "793ad8c0736640ecac25bb35c8d6715f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5166781fe10744718b8f041d48570b36": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_39005f65bea146069c83a8dfc09bb01c",
+        "style": "IPY_MODEL_793ad8c0736640ecac25bb35c8d6715f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "97ef881c17c649b59e4b2b53df2ea194": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0e6ed87a15884a15a1db89b81491b9c5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_97ef881c17c649b59e4b2b53df2ea194",
+        "location": [
+          "43.64029204340888",
+          "-79.45621231191186"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5166781fe10744718b8f041d48570b36",
+        "title": "Belted Kingfisher, 2021-08-23"
+      }
+    },
+    "e8ab7273662947bf8a4f780705db3e50": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7f894d9fda2e4f84b92177de6fa2b009": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8ce5b141953a415faee6bc679bb78b36": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_e8ab7273662947bf8a4f780705db3e50",
+        "style": "IPY_MODEL_7f894d9fda2e4f84b92177de6fa2b009",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4736fc357f6b4af4bf34ee6821ef817c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "49ff2b301b6e4a01b1a2c8baea00938e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4736fc357f6b4af4bf34ee6821ef817c",
+        "location": [
+          "43.64176356874251",
+          "-79.4570991406429"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8ce5b141953a415faee6bc679bb78b36",
+        "title": "Belted Kingfisher, 2021-08-21"
+      }
+    },
+    "ce53270f9edf4bd9b6de9fb2f7720b5a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "57abbb2cd12545958549fa2843cfeeaf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a465aec2cc0e4fba814ad92029795a7c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_ce53270f9edf4bd9b6de9fb2f7720b5a",
+        "style": "IPY_MODEL_57abbb2cd12545958549fa2843cfeeaf",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "69c46d81d3c04d9a9500634427a449b4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5884e92084fe4c77ae2a9aff33aa53fc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_69c46d81d3c04d9a9500634427a449b4",
+        "location": [
+          "43.64596261059826",
+          "-79.47041274999137"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a465aec2cc0e4fba814ad92029795a7c",
+        "title": "Belted Kingfisher, 2021-09-07"
+      }
+    },
+    "515672c4b8f349feb4b56a40abfbce02": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c8313a15adea49868825beb4ac4ce1c7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "351d7d4b6c08475d8d61700e7d2d6e30": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_515672c4b8f349feb4b56a40abfbce02",
+        "style": "IPY_MODEL_c8313a15adea49868825beb4ac4ce1c7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6f146618be1e44aebeabb09358c33e91": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1d2054af324a43d8ab9e0e8ff0202e3d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6f146618be1e44aebeabb09358c33e91",
+        "location": [
+          "43.641754912938964",
+          "-79.45714075541504"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_351d7d4b6c08475d8d61700e7d2d6e30",
+        "title": "Belted Kingfisher, 2021-08-28"
+      }
+    },
+    "34833262d8d048b9908d61bb7adf7c26": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "639ee6320fc74ee090102f23945eaa85": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "478927e8ac824e9c86ddc9274e3d94a8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_34833262d8d048b9908d61bb7adf7c26",
+        "style": "IPY_MODEL_639ee6320fc74ee090102f23945eaa85",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3169366e52124e808d36476eb4f2e93d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8f04a1b852dc49edb8e598e01f651f74": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3169366e52124e808d36476eb4f2e93d",
+        "location": [
+          "43.65250200307998",
+          "-79.46041405407665"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_478927e8ac824e9c86ddc9274e3d94a8",
+        "title": "Belted Kingfisher, 2021-08-24"
+      }
+    },
+    "39d7112de0f74d62bbfd92357780131b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5ec0c2dadb084ab7a74e4178bf881b78": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fc796962e81f4f199b23a73a4b60f104": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_39d7112de0f74d62bbfd92357780131b",
+        "style": "IPY_MODEL_5ec0c2dadb084ab7a74e4178bf881b78",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "26ef5613a48e4d0ba6978158069d76c3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "32b9ac9c0b6143ffbd75604c13297cdf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_26ef5613a48e4d0ba6978158069d76c3",
+        "location": [
+          "43.64464389517772",
+          "-79.46981600325248"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fc796962e81f4f199b23a73a4b60f104",
+        "title": "Belted Kingfisher, 2021-09-04"
+      }
+    },
+    "e7bdb52dd671408da21ad95ded426aff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "707f401371ab4dbdabb5a2224f91bf74": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9c1620bc0f324b0c864acc59054d5080": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_e7bdb52dd671408da21ad95ded426aff",
+        "style": "IPY_MODEL_707f401371ab4dbdabb5a2224f91bf74",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "014446678a2a422e8e012c3defe5e8b7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9eb0095126954448b212d1178d69925a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_014446678a2a422e8e012c3defe5e8b7",
+        "location": [
+          "43.641632270553686",
+          "-79.4568632900585"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9c1620bc0f324b0c864acc59054d5080",
+        "title": "Belted Kingfisher, 2021-08-24"
+      }
+    },
+    "a30c252414bb401a9119ed24649bfa5a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bbd107b446a6434f958e11e55dc7f703": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fa3b0f020a6a4d50afdb38674461b02e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_a30c252414bb401a9119ed24649bfa5a",
+        "style": "IPY_MODEL_bbd107b446a6434f958e11e55dc7f703",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2e8140b71b9e40cfbc2aded02231668b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0ac8dbc8925c4eb2b8885b2ea4ab940e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2e8140b71b9e40cfbc2aded02231668b",
+        "location": [
+          "43.64280552047011",
+          "-79.4694316556326"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fa3b0f020a6a4d50afdb38674461b02e",
+        "title": "Belted Kingfisher, 2021-08-21"
+      }
+    },
+    "a94c8f7bf8a348a2befd9aea0d87f2f8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "be2d03af140749a78624559ef099b410": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "56b5d2416d054e35b3dce5f52a282639": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_a94c8f7bf8a348a2befd9aea0d87f2f8",
+        "style": "IPY_MODEL_be2d03af140749a78624559ef099b410",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f362132380474872b78881cbc36e5224": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ab599d1012664e979cc00b87e6a94507": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f362132380474872b78881cbc36e5224",
+        "location": [
+          "43.64014540588696",
+          "-79.45628668968585"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_56b5d2416d054e35b3dce5f52a282639",
+        "title": "Belted Kingfisher, 2021-08-19"
+      }
+    },
+    "b008215d7ef746b3809f0f85a760ce05": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c33e1c8dc93e4cae8fb2583883617b49": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4af7b7f61e184616bed6f1110b915dbd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_b008215d7ef746b3809f0f85a760ce05",
+        "style": "IPY_MODEL_c33e1c8dc93e4cae8fb2583883617b49",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3ab618ede83340e3b7ecbb5aeb157687": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3b0b5448bbd24aa88049f494faf7924e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3ab618ede83340e3b7ecbb5aeb157687",
+        "location": [
+          "43.640078642870954",
+          "-79.45621353332469"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4af7b7f61e184616bed6f1110b915dbd",
+        "title": "Belted Kingfisher, 2021-09-14"
+      }
+    },
+    "0099092a220b41f497a54d00dafc5566": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "47390ed7db704e8ba99006f8554beb60": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ed1fecb674e243179086575d09322e44": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_0099092a220b41f497a54d00dafc5566",
+        "style": "IPY_MODEL_47390ed7db704e8ba99006f8554beb60",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "056ab41d8265447c97da9abde61ba72e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "84c51d2346804733bdabd04a91528ec3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_056ab41d8265447c97da9abde61ba72e",
+        "location": [
+          "43.645746702864784",
+          "-79.47009025421569"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ed1fecb674e243179086575d09322e44",
+        "title": "Belted Kingfisher, 2021-07-30"
+      }
+    },
+    "ae1af0e2d5c24f0c947cc6eb6ece2405": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a278fbd11c394b62b62856a57b438e3d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fb001d60836d44d7aa3a47fee7133d79": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_ae1af0e2d5c24f0c947cc6eb6ece2405",
+        "style": "IPY_MODEL_a278fbd11c394b62b62856a57b438e3d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4d61f7bf412946db96c5677b1a52f03e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9249f980e02b4122b5c1088596bb2d00": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4d61f7bf412946db96c5677b1a52f03e",
+        "location": [
+          "43.64586496390818",
+          "-79.47057520863673"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fb001d60836d44d7aa3a47fee7133d79",
+        "title": "Belted Kingfisher, 2021-08-04"
+      }
+    },
+    "a5f4527392c74756af6c64ff1ed1db73": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cec9e53b64fc44f696a5dedf2cce27d1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d099e38614b74e9d91eae5977538d46f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_a5f4527392c74756af6c64ff1ed1db73",
+        "style": "IPY_MODEL_cec9e53b64fc44f696a5dedf2cce27d1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c0da0a2df81a471ebe5ff5752187bed8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cb178d80fe834331a6581450d17bcb69": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c0da0a2df81a471ebe5ff5752187bed8",
+        "location": [
+          "43.64445436199185",
+          "-79.46962364987287"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d099e38614b74e9d91eae5977538d46f",
+        "title": "Belted Kingfisher, 2021-08-23"
+      }
+    },
+    "04939a2d34d54253a4dc7e08faf4f7b0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "05cb7ce85a844eea934de7ec54a9e8b4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4652dd1ab26c495fb9aea630e1f9d344": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_04939a2d34d54253a4dc7e08faf4f7b0",
+        "style": "IPY_MODEL_05cb7ce85a844eea934de7ec54a9e8b4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "86174cfe2ff347f68a414f2abf5dd2fd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "de23adbaf523405eba794363d446a645": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_86174cfe2ff347f68a414f2abf5dd2fd",
+        "location": [
+          "43.640317883034925",
+          "-79.45624573593354"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4652dd1ab26c495fb9aea630e1f9d344",
+        "title": "Belted Kingfisher, 2021-09-04"
+      }
+    },
+    "21fb5abb515b4f3dbfcaaf94854ce567": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0b7a90b7a6d045bf9a73a2ec94a9e32e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "39e411f2d8b048be97163ae8803e5151": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_21fb5abb515b4f3dbfcaaf94854ce567",
+        "style": "IPY_MODEL_0b7a90b7a6d045bf9a73a2ec94a9e32e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "20712d8ff69b40e499895c63985b5ad1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "55cafe44ad3d42b49c5c93fef4625e4f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_20712d8ff69b40e499895c63985b5ad1",
+        "location": [
+          "43.651366120541454",
+          "-79.46563859041288"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_39e411f2d8b048be97163ae8803e5151",
+        "title": "Belted Kingfisher, 2021-08-13"
+      }
+    },
+    "24f4bf9edbbe4359a68f107ab570e38e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8027b9311918463ba6f96a753f68c433": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "08424efa83564155bd24e892dcc39706": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_24f4bf9edbbe4359a68f107ab570e38e",
+        "style": "IPY_MODEL_8027b9311918463ba6f96a753f68c433",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "032254ab58724f28b13a6643f3a6ebd4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9e1a7aa3f2c047faa35476e3669871fc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_032254ab58724f28b13a6643f3a6ebd4",
+        "location": [
+          "43.64449318532321",
+          "-79.46959465173634"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_08424efa83564155bd24e892dcc39706",
+        "title": "Belted Kingfisher, 2021-08-19"
+      }
+    },
+    "8f9478cb4b5f4fcd8938eefc9c0fc5c9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9dc0796ec0a14a44954e3b3ecd3e6c34": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "682eba58141b4e038f3b6f835c9c7e58": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_8f9478cb4b5f4fcd8938eefc9c0fc5c9",
+        "style": "IPY_MODEL_9dc0796ec0a14a44954e3b3ecd3e6c34",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a02a3f1d2fc94c3cb309a6cc61ce4888": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5f0c5380b92e412098f338d9fc153093": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a02a3f1d2fc94c3cb309a6cc61ce4888",
+        "location": [
+          "43.640244564273964",
+          "-79.45628292482053"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_682eba58141b4e038f3b6f835c9c7e58",
+        "title": "Belted Kingfisher, 2021-08-23"
+      }
+    },
+    "9aac2476c3e34a709b1d1723048a8cf5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3e97533f9ada43e6b74536f9228f24e5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "db84f6d00a3d444b9a0ec4c261812963": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_9aac2476c3e34a709b1d1723048a8cf5",
+        "style": "IPY_MODEL_3e97533f9ada43e6b74536f9228f24e5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b256bededa9948bb86f0ea045cd166b6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "082d5a596b4248e4897d01e5e67a1cb0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b256bededa9948bb86f0ea045cd166b6",
+        "location": [
+          "43.64688953151091",
+          "-79.47037067545307"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_db84f6d00a3d444b9a0ec4c261812963",
+        "title": "Belted Kingfisher, 2021-08-24"
+      }
+    },
+    "bba8a3256e774c79a2424c1eef827d5c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "75df5781305240ccb5678a78487f7000": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1ab09d6b18c64369954c88c1c25d1688": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_bba8a3256e774c79a2424c1eef827d5c",
+        "style": "IPY_MODEL_75df5781305240ccb5678a78487f7000",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "91d3d316f69d4be4a64c9b58ec3aa38b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "317f1464a92a4ab5ba31f8a54acdb317": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_91d3d316f69d4be4a64c9b58ec3aa38b",
+        "location": [
+          "43.64014540588696",
+          "-79.45628668968585"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1ab09d6b18c64369954c88c1c25d1688",
+        "title": "Belted Kingfisher, 2021-08-19"
+      }
+    },
+    "665162f6c0a2476da9b2526abcceb538": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "59b10396cfcb4df3af2830be41157c3b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a8596242e4b6433a8d755380bd65f7af": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_665162f6c0a2476da9b2526abcceb538",
+        "style": "IPY_MODEL_59b10396cfcb4df3af2830be41157c3b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6f471e2cc4f0412b8df2d7acc0d09c5b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "06014d0bb430483493ea6b4842cd45fb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6f471e2cc4f0412b8df2d7acc0d09c5b",
+        "location": [
+          "43.642416115138644",
+          "-79.4578243959367"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a8596242e4b6433a8d755380bd65f7af",
+        "title": "Belted Kingfisher, 2021-08-24"
+      }
+    },
+    "caa3890b1024488a81d471253324d294": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e9cb4d702b124d21827741710f9274eb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cfd88d93c39446169c9b7314c23e5582": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_caa3890b1024488a81d471253324d294",
+        "style": "IPY_MODEL_e9cb4d702b124d21827741710f9274eb",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "4743d4b5b9fa4fd090c1978fb255e769": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "77128355cd5948a9a388fead57fe29f9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4743d4b5b9fa4fd090c1978fb255e769",
+        "location": [
+          "43.64566329094783",
+          "-79.47003877743511"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cfd88d93c39446169c9b7314c23e5582",
+        "title": "Belted Kingfisher, 2021-08-31"
+      }
+    },
+    "a87529a6829642429d27b03a0530bc22": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "94081fd8fda54966b56caf2574dff594": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "99d06558897246098caf7f7b66a7f7ee": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_a87529a6829642429d27b03a0530bc22",
+        "style": "IPY_MODEL_94081fd8fda54966b56caf2574dff594",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fb86a1c1dc92490b99f38d20bbaf62ac": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e4999c29b4ec4e1c98c46283f84cce1c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fb86a1c1dc92490b99f38d20bbaf62ac",
+        "location": [
+          "43.653174272216106",
+          "-79.46340929751156"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_99d06558897246098caf7f7b66a7f7ee",
+        "title": "Belted Kingfisher, 2021-08-14"
+      }
+    },
+    "88bee54278ed47b99ed770a729eacdb1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5290ecc931ce487a8d24b18262bf8a44": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1278eabf50114939aded854518b97e3c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_88bee54278ed47b99ed770a729eacdb1",
+        "style": "IPY_MODEL_5290ecc931ce487a8d24b18262bf8a44",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "60f905dceb924492a03fab0502624131": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c3bce192e8e14d8691858892f3917dcd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_60f905dceb924492a03fab0502624131",
+        "location": [
+          "43.6403565785817",
+          "-79.4563750061351"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1278eabf50114939aded854518b97e3c",
+        "title": "Belted Kingfisher, 2021-08-29"
+      }
+    },
+    "6fb6033fc858483bac5cb7f891bbf94f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "34835bf298534bebb51d4db071e33bad": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b9fe869f153146dab294716882088dd7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_6fb6033fc858483bac5cb7f891bbf94f",
+        "style": "IPY_MODEL_34835bf298534bebb51d4db071e33bad",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a5c8e09f920e4215aea3d6f5e95ad9e9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f3b1c45e79c8452ea55f94286b097602": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a5c8e09f920e4215aea3d6f5e95ad9e9",
+        "location": [
+          "43.64748747638367",
+          "-79.4693089383705"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b9fe869f153146dab294716882088dd7",
+        "title": "Belted Kingfisher, 2021-08-15"
+      }
+    },
+    "bdaccb41fd6442ccafaf038c886161e0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ea62d186fe824d2c8c6f5e1fb3572cd5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f9b27f76a06049eb8a8fc997098d9104": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_bdaccb41fd6442ccafaf038c886161e0",
+        "style": "IPY_MODEL_ea62d186fe824d2c8c6f5e1fb3572cd5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "89019aea23bd4cc8b6dfd2fda874c8da": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f1d762c337fa4d47989fe7c4daf45b70": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_89019aea23bd4cc8b6dfd2fda874c8da",
+        "location": [
+          "43.64016074522005",
+          "-79.45597646132745"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f9b27f76a06049eb8a8fc997098d9104",
+        "title": "Belted Kingfisher, 2021-08-31"
+      }
+    },
+    "0636c5de4d4749369b051e08cfaf7011": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e44bfff35d2847ccb80b6e692a335682": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "48bdf5db493447c4afb62ef91c201b8b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_0636c5de4d4749369b051e08cfaf7011",
+        "style": "IPY_MODEL_e44bfff35d2847ccb80b6e692a335682",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "407437dc03ba47dda3f1f84f2c9c0b38": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "89dc83bca6704a61b25671ae4e068498": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_407437dc03ba47dda3f1f84f2c9c0b38",
+        "location": [
+          "43.640119566260914",
+          "-79.45625326566417"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_48bdf5db493447c4afb62ef91c201b8b",
+        "title": "Belted Kingfisher, 2021-09-07"
+      }
+    },
+    "ccf19f64d5094c8bba89cbdeb9f468bc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b499524563234ac3b23ccf5d115b5e23": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "696ee00a97f34ef79e64ea483fbbb198": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_ccf19f64d5094c8bba89cbdeb9f468bc",
+        "style": "IPY_MODEL_b499524563234ac3b23ccf5d115b5e23",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "fc3ab8db9be840a1ae4792d6ca9997a8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1fd38e750d264074ac78202d0e8ea48d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fc3ab8db9be840a1ae4792d6ca9997a8",
+        "location": [
+          "43.65218276062551",
+          "-79.46068765394105"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_696ee00a97f34ef79e64ea483fbbb198",
+        "title": "Belted Kingfisher, 2021-08-30"
+      }
+    },
+    "c69e151fba474702b59df50b049476a8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bf4b4d95c05b47aaab02716db6ee3ede": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5c6e47383b89470d98c18ec255a5f074": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_c69e151fba474702b59df50b049476a8",
+        "style": "IPY_MODEL_bf4b4d95c05b47aaab02716db6ee3ede",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1765c700f69543ffbe3f267f21144ce6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "91740823f6ed4b74bb0c201a3b3e63b3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1765c700f69543ffbe3f267f21144ce6",
+        "location": [
+          "43.64061096806136",
+          "-79.45659100119727"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5c6e47383b89470d98c18ec255a5f074",
+        "title": "Belted Kingfisher, 2021-07-27"
+      }
+    },
+    "467ef7fac5ac453a803b080dddd37ac8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5a91ea280026482db61c0546da237727": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "10beba49262846799b3687acf65c19c6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_467ef7fac5ac453a803b080dddd37ac8",
+        "style": "IPY_MODEL_5a91ea280026482db61c0546da237727",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "235a4c1cf8d94f4ba8b659e6fa607cdf": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "31ca9b382ea7489cbde5417b4dfea49a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_235a4c1cf8d94f4ba8b659e6fa607cdf",
+        "location": [
+          "43.648412386291504",
+          "-79.46107852502324"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_10beba49262846799b3687acf65c19c6",
+        "title": "Belted Kingfisher, 2021-08-09"
+      }
+    },
+    "3a87bd0e79bf4a89902a04b7726eb900": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "905848ff64134ec0b42c64c1136eadd4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad1c664025474b7aa09b76f9a2fc49bd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_3a87bd0e79bf4a89902a04b7726eb900",
+        "style": "IPY_MODEL_905848ff64134ec0b42c64c1136eadd4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a1fc1da37dcd49b8973f12ac84f99211": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e9d496cbe90740168935c2bd2cb48b25": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a1fc1da37dcd49b8973f12ac84f99211",
+        "location": [
+          "43.6400872986745",
+          "-79.45617191855254"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad1c664025474b7aa09b76f9a2fc49bd",
+        "title": "Belted Kingfisher, 2021-08-28"
+      }
+    },
+    "4be0834021804e46bad22b6e7606f830": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "50bf08886ed84afeb892cb2a15074d69": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2a7d654f54bf4efaa3d2049dc27048e5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_4be0834021804e46bad22b6e7606f830",
+        "style": "IPY_MODEL_50bf08886ed84afeb892cb2a15074d69",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6668bd4ec40d4e57852967907034a3f4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "96fda65119804a81947fd43772dc19bf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6668bd4ec40d4e57852967907034a3f4",
+        "location": [
+          "43.640564190082216",
+          "-79.45553451994184"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2a7d654f54bf4efaa3d2049dc27048e5",
+        "title": "Belted Kingfisher, 2021-09-04"
+      }
+    },
+    "4e999f869a2d49288c8b1f82f0a3088a": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_bc4cdce8905f409391086e38fcaccaf0",
+          "IPY_MODEL_c8cc90e2ea8c472b8a3fb30e8f068bcb",
+          "IPY_MODEL_2cec69da77eb45959fcb4fe1cc2d1393",
+          "IPY_MODEL_35448a51d924426d99540692784c315a",
+          "IPY_MODEL_728715faa59941288bdc74a7cea0d869",
+          "IPY_MODEL_a23e1a2dabe24ce88113783acc60c3a6",
+          "IPY_MODEL_931bc38bd0b947a29c9087d6da7211e4",
+          "IPY_MODEL_6e7ec8196d4548a3a3c28460048ce05b",
+          "IPY_MODEL_21f3ae3f401549f8b3f7a049755bedc7",
+          "IPY_MODEL_3f04877aae1e4a10a86045669b22ddf2",
+          "IPY_MODEL_3e9cb7b68ecb4af78aeca3405f595041",
+          "IPY_MODEL_0cb79b30f838411eb08548ab739ad719",
+          "IPY_MODEL_0e6ed87a15884a15a1db89b81491b9c5",
+          "IPY_MODEL_49ff2b301b6e4a01b1a2c8baea00938e",
+          "IPY_MODEL_5884e92084fe4c77ae2a9aff33aa53fc",
+          "IPY_MODEL_1d2054af324a43d8ab9e0e8ff0202e3d",
+          "IPY_MODEL_8f04a1b852dc49edb8e598e01f651f74",
+          "IPY_MODEL_32b9ac9c0b6143ffbd75604c13297cdf",
+          "IPY_MODEL_9eb0095126954448b212d1178d69925a",
+          "IPY_MODEL_0ac8dbc8925c4eb2b8885b2ea4ab940e",
+          "IPY_MODEL_ab599d1012664e979cc00b87e6a94507",
+          "IPY_MODEL_3b0b5448bbd24aa88049f494faf7924e",
+          "IPY_MODEL_84c51d2346804733bdabd04a91528ec3",
+          "IPY_MODEL_9249f980e02b4122b5c1088596bb2d00",
+          "IPY_MODEL_cb178d80fe834331a6581450d17bcb69",
+          "IPY_MODEL_de23adbaf523405eba794363d446a645",
+          "IPY_MODEL_55cafe44ad3d42b49c5c93fef4625e4f",
+          "IPY_MODEL_9e1a7aa3f2c047faa35476e3669871fc",
+          "IPY_MODEL_5f0c5380b92e412098f338d9fc153093",
+          "IPY_MODEL_082d5a596b4248e4897d01e5e67a1cb0",
+          "IPY_MODEL_317f1464a92a4ab5ba31f8a54acdb317",
+          "IPY_MODEL_06014d0bb430483493ea6b4842cd45fb",
+          "IPY_MODEL_77128355cd5948a9a388fead57fe29f9",
+          "IPY_MODEL_e4999c29b4ec4e1c98c46283f84cce1c",
+          "IPY_MODEL_c3bce192e8e14d8691858892f3917dcd",
+          "IPY_MODEL_f3b1c45e79c8452ea55f94286b097602",
+          "IPY_MODEL_f1d762c337fa4d47989fe7c4daf45b70",
+          "IPY_MODEL_89dc83bca6704a61b25671ae4e068498",
+          "IPY_MODEL_1fd38e750d264074ac78202d0e8ea48d",
+          "IPY_MODEL_91740823f6ed4b74bb0c201a3b3e63b3",
+          "IPY_MODEL_31ca9b382ea7489cbde5417b4dfea49a",
+          "IPY_MODEL_e9d496cbe90740168935c2bd2cb48b25",
+          "IPY_MODEL_96fda65119804a81947fd43772dc19bf"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "e6505f0672c1475e8c68fbb511e4d896"}
+</script>
+
+</body>
+</html>

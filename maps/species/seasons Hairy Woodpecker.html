@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hairy Woodpecker Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "50295862fccc433eaa03466f8060c7da": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "2f5eb31d97054b87b0c478deaf328e5c": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "e83a7f359b13484f83647d4311562729": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "00b759f2ad9042dda58265fbeaf33f5a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "f614418689fc472083b39312d232d144": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "767913cdded3458caa6209383873e62d": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_ebd46caead9d4aa1beab63f23a5c3712",
+          "IPY_MODEL_2a31abba09c04ae3bf13281f992338a9",
+          "IPY_MODEL_14bc6f26cbdd4947977607799d74f09b",
+          "IPY_MODEL_a0c99098e41b4ac2b807a2232386956b"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_50295862fccc433eaa03466f8060c7da",
+        "dragging_style": "IPY_MODEL_2f5eb31d97054b87b0c478deaf328e5c",
+        "layers": [
+          "IPY_MODEL_e83a7f359b13484f83647d4311562729",
+          "IPY_MODEL_635e620db1d94766865b44097de3a19b",
+          "IPY_MODEL_2aa5ef8998c14d1ba9f1e174f1006bc4",
+          "IPY_MODEL_26a172cfc17a4431b52bbabb0d87f2f9",
+          "IPY_MODEL_a7f11e3530f64ad89c3602f231615459",
+          "IPY_MODEL_485b94d7bd7d497ca84a97c58add39dc"
+        ],
+        "layout": "IPY_MODEL_00b759f2ad9042dda58265fbeaf33f5a",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_f614418689fc472083b39312d232d144",
+        "zoom": 14.0
+      }
+    },
+    "ebd46caead9d4aa1beab63f23a5c3712": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "2a31abba09c04ae3bf13281f992338a9": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "14bc6f26cbdd4947977607799d74f09b": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "a0c99098e41b4ac2b807a2232386956b": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "635e620db1d94766865b44097de3a19b": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "2aa5ef8998c14d1ba9f1e174f1006bc4": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "26a172cfc17a4431b52bbabb0d87f2f9": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64597096185817",
+            "-79.4609880984395"
+          ],
+          [
+            "43.64970256476576",
+            "-79.46923195951125"
+          ],
+          [
+            "43.6459735005947",
+            "-79.46113468332726"
+          ],
+          [
+            "43.64988532079675",
+            "-79.46981603480917"
+          ],
+          [
+            "43.645556650816204",
+            "-79.4612312327348"
+          ],
+          [
+            "43.649178878258255",
+            "-79.46950318649266"
+          ],
+          [
+            "43.64925687270834",
+            "-79.46977762781077"
+          ],
+          [
+            "43.64940524539893",
+            "-79.4698867557837"
+          ],
+          [
+            "43.650196371420286",
+            "-79.46965200719866"
+          ],
+          [
+            "43.645619876435525",
+            "-79.4612570611678"
+          ],
+          [
+            "43.64868703635461",
+            "-79.47010277591133"
+          ],
+          [
+            "43.648657962281476",
+            "-79.47023644658259"
+          ],
+          [
+            "43.64736192548321",
+            "-79.4615563239656"
+          ],
+          [
+            "43.649741330196605",
+            "-79.46905373194956"
+          ],
+          [
+            "43.649167111752426",
+            "-79.4700320549368"
+          ],
+          [
+            "43.649020814209955",
+            "-79.46943861541016"
+          ],
+          [
+            "43.6479668625594",
+            "-79.46929915893286"
+          ],
+          [
+            "43.652940891005585",
+            "-79.46288933851599"
+          ],
+          [
+            "43.65271922038131",
+            "-79.46102509863015"
+          ],
+          [
+            "43.644798110721325",
+            "-79.46836513352555"
+          ],
+          [
+            "43.652782826957285",
+            "-79.46282476743347"
+          ],
+          [
+            "43.64917539680595",
+            "-79.46915539779805"
+          ],
+          [
+            "43.64805662351532",
+            "-79.46904473180685"
+          ],
+          [
+            "43.648766162906384",
+            "-79.46875807440323"
+          ],
+          [
+            "43.648711838734535",
+            "-79.46911833146696"
+          ],
+          [
+            "43.648772525617325",
+            "-79.4689975750122"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "a7f11e3530f64ad89c3602f231615459": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.649999470352775",
+            "-79.46834655382064"
+          ],
+          [
+            "43.650433738440036",
+            "-79.46176557127087"
+          ],
+          [
+            "43.64686038625982",
+            "-79.46909191211267"
+          ],
+          [
+            "43.64706038100783",
+            "-79.46166657787751"
+          ],
+          [
+            "43.643854606178316",
+            "-79.4595794875847"
+          ],
+          [
+            "43.64689908180659",
+            "-79.46922118231424"
+          ],
+          [
+            "43.64673971614853",
+            "-79.46904144557024"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "ab774107f11d4b0ca3f277a6284c7e43": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "26a0e4bb2be14761a94b2a2183ef3ade": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "27791e6cfb7e4db4896e2646ec91ff2a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_ab774107f11d4b0ca3f277a6284c7e43",
+        "style": "IPY_MODEL_26a0e4bb2be14761a94b2a2183ef3ade",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f038fce92d56486cbd4d453a3b29d384": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a94717e611fc4de98d538136c35e84db": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f038fce92d56486cbd4d453a3b29d384",
+        "location": [
+          "43.64597096185817",
+          "-79.4609880984395"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_27791e6cfb7e4db4896e2646ec91ff2a",
+        "title": "Hairy Woodpecker, 2021-07-12"
+      }
+    },
+    "6322c9794619486e89741dff14e40d2f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "46d663b0b5a542b499f97dcbdf41c4a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "17e0d205eec74ce08af700491d167d8b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_6322c9794619486e89741dff14e40d2f",
+        "style": "IPY_MODEL_46d663b0b5a542b499f97dcbdf41c4a9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0e927f502d784c2990389813d341e5ad": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5a89d2c46bdc44a2a2ab5739fa3b3e5f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0e927f502d784c2990389813d341e5ad",
+        "location": [
+          "43.64970256476576",
+          "-79.46923195951125"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_17e0d205eec74ce08af700491d167d8b",
+        "title": "Hairy Woodpecker, 2021-07-21"
+      }
+    },
+    "12f6b482a42f4bb18be2f42002e83015": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7828a7945b724994afbd5772407fcb52": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "404258e0933444428044808dc10ccaa7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_12f6b482a42f4bb18be2f42002e83015",
+        "style": "IPY_MODEL_7828a7945b724994afbd5772407fcb52",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c384785035ad47babc8151f7a22e9d41": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2cdfde5d7a1b43f28a5dbe2f89710bb7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c384785035ad47babc8151f7a22e9d41",
+        "location": [
+          "43.6459735005947",
+          "-79.46113468332726"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_404258e0933444428044808dc10ccaa7",
+        "title": "Hairy Woodpecker, 2021-07-12"
+      }
+    },
+    "74723d0d83744ee8870c8566bf35a23a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8989f0a4547f47c7b06799b9edc54377": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "430f1707b3564305bd49cef02bb62947": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_74723d0d83744ee8870c8566bf35a23a",
+        "style": "IPY_MODEL_8989f0a4547f47c7b06799b9edc54377",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8f772445ac55463cbaf593c121ec2c9d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "744996c34b284470a2b25594eb75e859": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8f772445ac55463cbaf593c121ec2c9d",
+        "location": [
+          "43.64988532079675",
+          "-79.46981603480917"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_430f1707b3564305bd49cef02bb62947",
+        "title": "Hairy Woodpecker, 2021-07-18"
+      }
+    },
+    "b157cae4dd72488da0940ddaf05e1d5e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3740ac27bce1403b814e52d6cb24bbe0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fea79032301d4807a11332694d4a0f9e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_b157cae4dd72488da0940ddaf05e1d5e",
+        "style": "IPY_MODEL_3740ac27bce1403b814e52d6cb24bbe0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "cce271acd7c846d896faa85c24f2f9d5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8d2aac393eb74772946f7b60c61e9d81": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cce271acd7c846d896faa85c24f2f9d5",
+        "location": [
+          "43.645556650816204",
+          "-79.4612312327348"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fea79032301d4807a11332694d4a0f9e",
+        "title": "Hairy Woodpecker, 2021-07-08"
+      }
+    },
+    "0e45536d0b8847a2986b72708101fd4a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b2a7c0a08f4c492fa6f3c1fcfc07fd9f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9c138dff5708475383268ebb23409e62": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_0e45536d0b8847a2986b72708101fd4a",
+        "style": "IPY_MODEL_b2a7c0a08f4c492fa6f3c1fcfc07fd9f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "392c9a9f76624fff9e735269596a3ac6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "67ccb337a3594b40ba20d1ee6553b160": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_392c9a9f76624fff9e735269596a3ac6",
+        "location": [
+          "43.649178878258255",
+          "-79.46950318649266"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9c138dff5708475383268ebb23409e62",
+        "title": "Hairy Woodpecker, 2021-07-09"
+      }
+    },
+    "84476032ff76413fbe06c1e1746842e7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2731ba0fee92431b98dde7848d151e64": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "60c355f2f6b34929a55e84f33f3446b4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_84476032ff76413fbe06c1e1746842e7",
+        "style": "IPY_MODEL_2731ba0fee92431b98dde7848d151e64",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9dfdd719c352474c8fd5c507f3c486d5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a9d612ff694c4a189f2dfdcc405cc400": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9dfdd719c352474c8fd5c507f3c486d5",
+        "location": [
+          "43.64925687270834",
+          "-79.46977762781077"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_60c355f2f6b34929a55e84f33f3446b4",
+        "title": "Hairy Woodpecker, 2021-07-15"
+      }
+    },
+    "0df0259faac34bb58ea97d1b651f8862": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d00dde9bd2774b1a924e83582c6b29c9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4d898439d24e42b2adbfd2176e3a2c47": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_0df0259faac34bb58ea97d1b651f8862",
+        "style": "IPY_MODEL_d00dde9bd2774b1a924e83582c6b29c9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f7ef643c9f5c481496a635484377e0a7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9c1d46caac6c48bf8027bb989fdfbe5f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f7ef643c9f5c481496a635484377e0a7",
+        "location": [
+          "43.64940524539893",
+          "-79.4698867557837"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4d898439d24e42b2adbfd2176e3a2c47",
+        "title": "Hairy Woodpecker, 2021-07-15"
+      }
+    },
+    "f4acd3c3b60e45ce870e2af57fd0a49c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "185d321b8f4b4a139fa595e5c1868981": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bafdeb2be83d4d79bec5d6930b282c76": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_f4acd3c3b60e45ce870e2af57fd0a49c",
+        "style": "IPY_MODEL_185d321b8f4b4a139fa595e5c1868981",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "647eae39710645bfa9687c0517c3da02": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fb608cd703924f888363bfdd7c7f24ba": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_647eae39710645bfa9687c0517c3da02",
+        "location": [
+          "43.650196371420286",
+          "-79.46965200719866"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bafdeb2be83d4d79bec5d6930b282c76",
+        "title": "Hairy Woodpecker, 2021-07-18"
+      }
+    },
+    "de42b99cdb634aa599e57140030eb611": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1858763106274960bb3ded641c145daa": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "867c3b2cd75a4245b8b9419647ff318a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_de42b99cdb634aa599e57140030eb611",
+        "style": "IPY_MODEL_1858763106274960bb3ded641c145daa",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fe2e1b3ddb9242448bc7f31521041c6e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2afeb0a1dea14f2487abee2d9ad76a60": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fe2e1b3ddb9242448bc7f31521041c6e",
+        "location": [
+          "43.645619876435525",
+          "-79.4612570611678"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_867c3b2cd75a4245b8b9419647ff318a",
+        "title": "Hairy Woodpecker, 2021-07-08"
+      }
+    },
+    "8485534446ec463084a16b902ee60f6f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bf9502ec8ac94b6f861d6fd6051eb100": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad2c968018b247138ca5311a1010ec60": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_8485534446ec463084a16b902ee60f6f",
+        "style": "IPY_MODEL_bf9502ec8ac94b6f861d6fd6051eb100",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "963606e99cca4a098a7a432fa975f558": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0bc87330f7be41928680843c3370d152": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_963606e99cca4a098a7a432fa975f558",
+        "location": [
+          "43.64868703635461",
+          "-79.47010277591133"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad2c968018b247138ca5311a1010ec60",
+        "title": "Hairy Woodpecker, 2021-07-24"
+      }
+    },
+    "95fa16e0f76245b7afcf804f87029d2c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "34267ff0521f46ada0fd6a9653813026": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e3c6ce8abfb64898a39a78561321771e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_95fa16e0f76245b7afcf804f87029d2c",
+        "style": "IPY_MODEL_34267ff0521f46ada0fd6a9653813026",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "15dda871779a41aaa48f0b0fa8e36679": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5c0f813de2174321876e8c38367f08f2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_15dda871779a41aaa48f0b0fa8e36679",
+        "location": [
+          "43.648657962281476",
+          "-79.47023644658259"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e3c6ce8abfb64898a39a78561321771e",
+        "title": "Hairy Woodpecker, 2021-07-24"
+      }
+    },
+    "60366be859044356b93a665f9fdbfff5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "da14db55fd074267aac4c671740dd6a1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d50c10152a7d4223a491bf40cac4932f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_60366be859044356b93a665f9fdbfff5",
+        "style": "IPY_MODEL_da14db55fd074267aac4c671740dd6a1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "98e87dc9c830445f9c3f6a07214ba729": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "55c232d6bce346dd967694bdfd19fb9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_98e87dc9c830445f9c3f6a07214ba729",
+        "location": [
+          "43.64736192548321",
+          "-79.4615563239656"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d50c10152a7d4223a491bf40cac4932f",
+        "title": "Hairy Woodpecker, 2021-07-04"
+      }
+    },
+    "fb5fe91f81744747bb5e90547e5c9d46": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0fa8f597016c4cd69a19455344670fa6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "13c4aed94cd243d68f0b53a500e738ab": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_fb5fe91f81744747bb5e90547e5c9d46",
+        "style": "IPY_MODEL_0fa8f597016c4cd69a19455344670fa6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "54891b19051944a39ddd352abbee707b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8f8ba5b1528b43bcb84753b96da52855": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_54891b19051944a39ddd352abbee707b",
+        "location": [
+          "43.649741330196605",
+          "-79.46905373194956"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_13c4aed94cd243d68f0b53a500e738ab",
+        "title": "Hairy Woodpecker, 2021-07-21"
+      }
+    },
+    "10045c65bd87446d9d0ba4e0a867f920": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b5e6c0d87af2497fb63b0aeebf19fa86": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "61634b773c1646adb356f9fd8175b2f3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_10045c65bd87446d9d0ba4e0a867f920",
+        "style": "IPY_MODEL_b5e6c0d87af2497fb63b0aeebf19fa86",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f635f474f54f4eb2bac4fde88957967c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "15531f1fa5c04314a6e0a3781e6f04c4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f635f474f54f4eb2bac4fde88957967c",
+        "location": [
+          "43.649167111752426",
+          "-79.4700320549368"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_61634b773c1646adb356f9fd8175b2f3",
+        "title": "Hairy Woodpecker, 2021-07-15"
+      }
+    },
+    "580e81df2f6944ee9d20a1c99a4c44b1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1e00e9f806e3417d872204eb2261d0fc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "416d34c9e17e4717be671919565fe921": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_580e81df2f6944ee9d20a1c99a4c44b1",
+        "style": "IPY_MODEL_1e00e9f806e3417d872204eb2261d0fc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3ce30f8f09b14cc7afd3ac0bbad7ffe6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1f4215490c254bc3bd2ff2a4eef91a97": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3ce30f8f09b14cc7afd3ac0bbad7ffe6",
+        "location": [
+          "43.649020814209955",
+          "-79.46943861541016"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_416d34c9e17e4717be671919565fe921",
+        "title": "Hairy Woodpecker, 2021-07-09"
+      }
+    },
+    "0296a36793c64ff2b5cbc58ebc16450c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7b4deae0a421447192ba77dd7a118a48": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e1cdaa001906477798070307fccd6d6b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_0296a36793c64ff2b5cbc58ebc16450c",
+        "style": "IPY_MODEL_7b4deae0a421447192ba77dd7a118a48",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6785ea7b880c42eead8c931535bdc37a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d8bb8e06ac6746c5a2c2ec85439e5c61": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6785ea7b880c42eead8c931535bdc37a",
+        "location": [
+          "43.6479668625594",
+          "-79.46929915893286"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e1cdaa001906477798070307fccd6d6b",
+        "title": "Hairy Woodpecker, 2021-08-04"
+      }
+    },
+    "797a5bdb38b4442dab116349cbe46a4f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5c1b5d0e1102466889d4f111ec905508": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8b7e25c4e2cd4aa892b8c14520e4e87d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_797a5bdb38b4442dab116349cbe46a4f",
+        "style": "IPY_MODEL_5c1b5d0e1102466889d4f111ec905508",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dbcc2edfa3e8458c9ac21db3106edfe0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5beaf5a5f38044bc8d6e073d37c43681": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dbcc2edfa3e8458c9ac21db3106edfe0",
+        "location": [
+          "43.652940891005585",
+          "-79.46288933851599"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8b7e25c4e2cd4aa892b8c14520e4e87d",
+        "title": "Hairy Woodpecker, 2021-07-27"
+      }
+    },
+    "8d304784536746e49e846b5300b98850": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0e0eeee477fb4f7182b9bc9da985f77b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1c25562b9f0346a8abf4776ec167ade9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_8d304784536746e49e846b5300b98850",
+        "style": "IPY_MODEL_0e0eeee477fb4f7182b9bc9da985f77b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a0463530fe0247e086f2ac1e20d67879": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8d96e45c2f7c4138be5630d4fae05e9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a0463530fe0247e086f2ac1e20d67879",
+        "location": [
+          "43.65271922038131",
+          "-79.46102509863015"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1c25562b9f0346a8abf4776ec167ade9",
+        "title": "Hairy Woodpecker, 2021-08-09"
+      }
+    },
+    "8c8179349af549afae7f75a114407a10": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0bb1c05741c94afab06d233300438f08": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e5577ddcc1484e219cf08bbecf644add": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_8c8179349af549afae7f75a114407a10",
+        "style": "IPY_MODEL_0bb1c05741c94afab06d233300438f08",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "605744a7f50f4adb986f36d4a9de1411": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be1452f887c146d78d4647c45059a379": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_605744a7f50f4adb986f36d4a9de1411",
+        "location": [
+          "43.644798110721325",
+          "-79.46836513352555"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e5577ddcc1484e219cf08bbecf644add",
+        "title": "Hairy Woodpecker, 2021-08-17"
+      }
+    },
+    "281dd0b1784c4ad9a08e05c1093954df": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3b265ab5f7f248afa5c50c41d199ca94": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6d393d13dd7c434887c8ac986326b8f4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_281dd0b1784c4ad9a08e05c1093954df",
+        "style": "IPY_MODEL_3b265ab5f7f248afa5c50c41d199ca94",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ef6f368f364a40d1b9b6985f54e04705": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4958c342740a4e9bba762a7771cbab71": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ef6f368f364a40d1b9b6985f54e04705",
+        "location": [
+          "43.652782826957285",
+          "-79.46282476743347"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6d393d13dd7c434887c8ac986326b8f4",
+        "title": "Hairy Woodpecker, 2021-07-27"
+      }
+    },
+    "673e4566aa7e4eacad6cd0ffd3bebf89": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4cb96a4ff3d04f71bdf7ee18196b6f7f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b939099f659c4211ab8593498f0efa9f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_673e4566aa7e4eacad6cd0ffd3bebf89",
+        "style": "IPY_MODEL_4cb96a4ff3d04f71bdf7ee18196b6f7f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2c71c6f41dd7423aa669715e903ba2e8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "55419ec9ec5b4d4c912eb93675d56a40": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2c71c6f41dd7423aa669715e903ba2e8",
+        "location": [
+          "43.649999470352775",
+          "-79.46834655382064"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b939099f659c4211ab8593498f0efa9f",
+        "title": "Hairy Woodpecker, 2021-09-07"
+      }
+    },
+    "3fdf4ade5165483b88d0b13acedca074": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "428d3a9a7a81479ca969fa017c6b1297": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "492b7f3984044e03995c7d2cba151167": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_3fdf4ade5165483b88d0b13acedca074",
+        "style": "IPY_MODEL_428d3a9a7a81479ca969fa017c6b1297",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c4a1afffa7904a32b6eaa00822b635ce": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "71f173c292d24dfd8842fac2710e4cd0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c4a1afffa7904a32b6eaa00822b635ce",
+        "location": [
+          "43.650433738440036",
+          "-79.46176557127087"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_492b7f3984044e03995c7d2cba151167",
+        "title": "Hairy Woodpecker, 2021-08-31"
+      }
+    },
+    "da6a050bbc3742368cd2b234137ae387": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4370e7f4f3f84d5f8132df18ce19534b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "26c81ad711d04bc0a485aae30a7e885a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_da6a050bbc3742368cd2b234137ae387",
+        "style": "IPY_MODEL_4370e7f4f3f84d5f8132df18ce19534b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4ac613007245462b98b668b7f311b5c9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "641b404d3574455ca8c44d421a2f60fd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4ac613007245462b98b668b7f311b5c9",
+        "location": [
+          "43.64917539680595",
+          "-79.46915539779805"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_26c81ad711d04bc0a485aae30a7e885a",
+        "title": "Hairy Woodpecker, 2021-08-19"
+      }
+    },
+    "bf78d771ba2a4987951125bc44f4d95c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d41b40c6d6f743ce9888282b744553d3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ff370c0eec164d428a5326ec6e45b8cc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_bf78d771ba2a4987951125bc44f4d95c",
+        "style": "IPY_MODEL_d41b40c6d6f743ce9888282b744553d3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "55306f8e5b764fea80162d80cbc906f3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3a4be3c65d8c4ac984962494c6835c6e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_55306f8e5b764fea80162d80cbc906f3",
+        "location": [
+          "43.64686038625982",
+          "-79.46909191211267"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ff370c0eec164d428a5326ec6e45b8cc",
+        "title": "Hairy Woodpecker, 2021-08-23"
+      }
+    },
+    "8653d57f07cf4cd8bdef2fe1231ebc26": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "475a973da14245ba8666b934476f1c5b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f843db38ff3e470eb7c07c43090b57a8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_8653d57f07cf4cd8bdef2fe1231ebc26",
+        "style": "IPY_MODEL_475a973da14245ba8666b934476f1c5b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2ef9e839f4a145f787bad6aa84a0ce35": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ac2c7320e5e844a9a0a73f8a2d062458": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2ef9e839f4a145f787bad6aa84a0ce35",
+        "location": [
+          "43.64805662351532",
+          "-79.46904473180685"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f843db38ff3e470eb7c07c43090b57a8",
+        "title": "Hairy Woodpecker, 2021-08-04"
+      }
+    },
+    "862b671d54c84404a5c49e625478d79f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c844b8623ce04f48a8cb73137efc2e56": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "33e6dad38cdd4f11b03b8b967f82e5f0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_862b671d54c84404a5c49e625478d79f",
+        "style": "IPY_MODEL_c844b8623ce04f48a8cb73137efc2e56",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ebaa107173304df9b187f84938b094c7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bf3520b876944462adc50c02daac01d2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ebaa107173304df9b187f84938b094c7",
+        "location": [
+          "43.64706038100783",
+          "-79.46166657787751"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_33e6dad38cdd4f11b03b8b967f82e5f0",
+        "title": "Hairy Woodpecker, 2021-08-30"
+      }
+    },
+    "4cb7279bac934eb4abfe5a142e5c3dd9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "534dd75886dd4f149d870c8f7a68483f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6a8391e12fad4bfd9a919186fd5fe3c9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_4cb7279bac934eb4abfe5a142e5c3dd9",
+        "style": "IPY_MODEL_534dd75886dd4f149d870c8f7a68483f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f5005cb117404649a1d93491a34bc79a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4e547cc008824f528eb9d2c26f5ae78b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f5005cb117404649a1d93491a34bc79a",
+        "location": [
+          "43.643854606178316",
+          "-79.4595794875847"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6a8391e12fad4bfd9a919186fd5fe3c9",
+        "title": "Hairy Woodpecker, 2021-09-04"
+      }
+    },
+    "3fe47e211ae644f7872b3a35926d2d1c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0e7e0d98dcd74f6b95f9780f40d44b1f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b18be0d0bb32414fbd0dcd6d69d2b4ef": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_3fe47e211ae644f7872b3a35926d2d1c",
+        "style": "IPY_MODEL_0e7e0d98dcd74f6b95f9780f40d44b1f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d18aaf4d2ed54ff1ad9042ae6e0043d1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2016200aa69447acb85147756af50e2e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d18aaf4d2ed54ff1ad9042ae6e0043d1",
+        "location": [
+          "43.64689908180659",
+          "-79.46922118231424"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b18be0d0bb32414fbd0dcd6d69d2b4ef",
+        "title": "Hairy Woodpecker, 2021-09-04"
+      }
+    },
+    "bf478c2f1cb247a9b37ec6a12c0d62d0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e9a21d4bf8d349a692675e8f1e398260": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b73a796ee82e4e449b3c07ef310f8006": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_bf478c2f1cb247a9b37ec6a12c0d62d0",
+        "style": "IPY_MODEL_e9a21d4bf8d349a692675e8f1e398260",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4d4d9d8f2ad44c159ea891fd7a885159": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ea4ad3bc79f54cf480da1fa9e551dedd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4d4d9d8f2ad44c159ea891fd7a885159",
+        "location": [
+          "43.648766162906384",
+          "-79.46875807440323"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b73a796ee82e4e449b3c07ef310f8006",
+        "title": "Hairy Woodpecker, 2021-08-19"
+      }
+    },
+    "d2a1e61d8c544144b8a4664f7de21ca0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "055df9df04124beb83a61b2b350cfe5b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0cc6f855bd6b408f9b39cb48f8af295c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_d2a1e61d8c544144b8a4664f7de21ca0",
+        "style": "IPY_MODEL_055df9df04124beb83a61b2b350cfe5b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b8f72831543b43da96587c14a4b2bfeb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "37fb48c45aeb4f899c7ebecc6f00d15e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b8f72831543b43da96587c14a4b2bfeb",
+        "location": [
+          "43.648711838734535",
+          "-79.46911833146696"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0cc6f855bd6b408f9b39cb48f8af295c",
+        "title": "Hairy Woodpecker, 2021-07-30"
+      }
+    },
+    "73b8e37166a74bf290b6ec8bba106f50": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eef54f12fd2d47009e924649e87cdabe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "95c1bddb830e4a09a22d745e838088a1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_73b8e37166a74bf290b6ec8bba106f50",
+        "style": "IPY_MODEL_eef54f12fd2d47009e924649e87cdabe",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7d3a79427bf945e49f35c0161ac1ccaa": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b36914d2ea2c4cca8418a2d5b623c94e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7d3a79427bf945e49f35c0161ac1ccaa",
+        "location": [
+          "43.648772525617325",
+          "-79.4689975750122"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_95c1bddb830e4a09a22d745e838088a1",
+        "title": "Hairy Woodpecker, 2021-07-30"
+      }
+    },
+    "144782c53fbc46d895020b4bd9c0d7f1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "368d88472f4e4fe0ba30972853d3caf9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4776c924db894a47ba588a7de07ad309": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_144782c53fbc46d895020b4bd9c0d7f1",
+        "style": "IPY_MODEL_368d88472f4e4fe0ba30972853d3caf9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9ab38379b0fd4fac9eb9ef73a79e0f2b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2a850f526a7e4850988dd97c9caeb0bb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9ab38379b0fd4fac9eb9ef73a79e0f2b",
+        "location": [
+          "43.64673971614853",
+          "-79.46904144557024"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4776c924db894a47ba588a7de07ad309",
+        "title": "Hairy Woodpecker, 2021-08-23"
+      }
+    },
+    "485b94d7bd7d497ca84a97c58add39dc": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_a94717e611fc4de98d538136c35e84db",
+          "IPY_MODEL_5a89d2c46bdc44a2a2ab5739fa3b3e5f",
+          "IPY_MODEL_2cdfde5d7a1b43f28a5dbe2f89710bb7",
+          "IPY_MODEL_744996c34b284470a2b25594eb75e859",
+          "IPY_MODEL_8d2aac393eb74772946f7b60c61e9d81",
+          "IPY_MODEL_67ccb337a3594b40ba20d1ee6553b160",
+          "IPY_MODEL_a9d612ff694c4a189f2dfdcc405cc400",
+          "IPY_MODEL_9c1d46caac6c48bf8027bb989fdfbe5f",
+          "IPY_MODEL_fb608cd703924f888363bfdd7c7f24ba",
+          "IPY_MODEL_2afeb0a1dea14f2487abee2d9ad76a60",
+          "IPY_MODEL_0bc87330f7be41928680843c3370d152",
+          "IPY_MODEL_5c0f813de2174321876e8c38367f08f2",
+          "IPY_MODEL_55c232d6bce346dd967694bdfd19fb9d",
+          "IPY_MODEL_8f8ba5b1528b43bcb84753b96da52855",
+          "IPY_MODEL_15531f1fa5c04314a6e0a3781e6f04c4",
+          "IPY_MODEL_1f4215490c254bc3bd2ff2a4eef91a97",
+          "IPY_MODEL_d8bb8e06ac6746c5a2c2ec85439e5c61",
+          "IPY_MODEL_5beaf5a5f38044bc8d6e073d37c43681",
+          "IPY_MODEL_8d96e45c2f7c4138be5630d4fae05e9d",
+          "IPY_MODEL_be1452f887c146d78d4647c45059a379",
+          "IPY_MODEL_4958c342740a4e9bba762a7771cbab71",
+          "IPY_MODEL_55419ec9ec5b4d4c912eb93675d56a40",
+          "IPY_MODEL_71f173c292d24dfd8842fac2710e4cd0",
+          "IPY_MODEL_641b404d3574455ca8c44d421a2f60fd",
+          "IPY_MODEL_3a4be3c65d8c4ac984962494c6835c6e",
+          "IPY_MODEL_ac2c7320e5e844a9a0a73f8a2d062458",
+          "IPY_MODEL_bf3520b876944462adc50c02daac01d2",
+          "IPY_MODEL_4e547cc008824f528eb9d2c26f5ae78b",
+          "IPY_MODEL_2016200aa69447acb85147756af50e2e",
+          "IPY_MODEL_ea4ad3bc79f54cf480da1fa9e551dedd",
+          "IPY_MODEL_37fb48c45aeb4f899c7ebecc6f00d15e",
+          "IPY_MODEL_b36914d2ea2c4cca8418a2d5b623c94e",
+          "IPY_MODEL_2a850f526a7e4850988dd97c9caeb0bb"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "767913cdded3458caa6209383873e62d"}
+</script>
+
+</body>
+</html>

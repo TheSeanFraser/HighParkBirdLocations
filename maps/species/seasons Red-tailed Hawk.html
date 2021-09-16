@@ -1,0 +1,2684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Red-tailed Hawk Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "b06237b038b446b7b8010ece1c888bfa": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "35d061d8f9d44c3e8d955f4b87981026": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "aad3eeafcaa34001b87c61c292535a53": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "d18d837c00c2470abca0d865c822b40f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "cbfd06caab18430397de41ac1b6bb7d7": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "6914ee7f1efb4a20a9e4e819f65b985f": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_1c46309da7a044fea0688fa8337d5e61",
+          "IPY_MODEL_c646789b26bc49c99b5e730de429c68c",
+          "IPY_MODEL_a16625be5db84060bd6335fd6aa9a108",
+          "IPY_MODEL_a4f98217f16e4987b39e0022da199768"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_b06237b038b446b7b8010ece1c888bfa",
+        "dragging_style": "IPY_MODEL_35d061d8f9d44c3e8d955f4b87981026",
+        "layers": [
+          "IPY_MODEL_aad3eeafcaa34001b87c61c292535a53",
+          "IPY_MODEL_802dfae18ef24cb59d9650f371cd4e9a",
+          "IPY_MODEL_e494af578aef47fca8ef79887438b505",
+          "IPY_MODEL_c53c2659d614473f98cd2013cd95712e",
+          "IPY_MODEL_15b4dd5f6b354d28a59f689349d0308c",
+          "IPY_MODEL_7121d88d7be6416c95c70e5f1f64a625"
+        ],
+        "layout": "IPY_MODEL_d18d837c00c2470abca0d865c822b40f",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_cbfd06caab18430397de41ac1b6bb7d7",
+        "zoom": 14.0
+      }
+    },
+    "1c46309da7a044fea0688fa8337d5e61": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "c646789b26bc49c99b5e730de429c68c": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "a16625be5db84060bd6335fd6aa9a108": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "a4f98217f16e4987b39e0022da199768": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "802dfae18ef24cb59d9650f371cd4e9a": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "e494af578aef47fca8ef79887438b505": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "c53c2659d614473f98cd2013cd95712e": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.65245470056065",
+            "-79.46290904549186"
+          ],
+          [
+            "43.65357430616981",
+            "-79.4647248639497"
+          ],
+          [
+            "43.64496099650793",
+            "-79.4694296721372"
+          ],
+          [
+            "43.64302233877559",
+            "-79.46623616849901"
+          ],
+          [
+            "43.64755393128294",
+            "-79.46811163701226"
+          ],
+          [
+            "43.65434453731355",
+            "-79.46086714294057"
+          ],
+          [
+            "43.640981667993636",
+            "-79.45654837290887"
+          ],
+          [
+            "43.65327790298007",
+            "-79.46331810756479"
+          ],
+          [
+            "43.654246928353835",
+            "-79.46036636718257"
+          ],
+          [
+            "43.65439379988195",
+            "-79.46008675449089"
+          ],
+          [
+            "43.65362148259037",
+            "-79.46110544151341"
+          ],
+          [
+            "43.652217483091235",
+            "-79.46099279198756"
+          ],
+          [
+            "43.65395976393312",
+            "-79.46160750300608"
+          ],
+          [
+            "43.648113723087796",
+            "-79.46569620070086"
+          ],
+          [
+            "43.643274788664186",
+            "-79.46903193132987"
+          ],
+          [
+            "43.65371124354629",
+            "-79.46085101438739"
+          ],
+          [
+            "43.64847182685501",
+            "-79.46221163666114"
+          ],
+          [
+            "43.64787837639942",
+            "-79.47105563801438"
+          ],
+          [
+            "43.65276872729535",
+            "-79.46378250842116"
+          ],
+          [
+            "43.65350749324017",
+            "-79.46147126086548"
+          ],
+          [
+            "43.64932574978637",
+            "-79.46922357380097"
+          ],
+          [
+            "43.64875593495693",
+            "-79.46273756923769"
+          ],
+          [
+            "43.65275886592536",
+            "-79.4626475143506"
+          ],
+          [
+            "43.65056242543191",
+            "-79.46256576473165"
+          ],
+          [
+            "43.64830164498963",
+            "-79.45842280603391"
+          ],
+          [
+            "43.647780751427504",
+            "-79.46916018282252"
+          ],
+          [
+            "43.65357983623155",
+            "-79.46232558462638"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "15b4dd5f6b354d28a59f689349d0308c": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64378822651609",
+            "-79.45903152620926"
+          ],
+          [
+            "43.64552582036782",
+            "-79.46943846708457"
+          ],
+          [
+            "43.64710108755942",
+            "-79.46998418688803"
+          ],
+          [
+            "43.65309452549479",
+            "-79.46339856330862"
+          ],
+          [
+            "43.647617385716316",
+            "-79.46592542456472"
+          ],
+          [
+            "43.64347617872952",
+            "-79.45840343913501"
+          ],
+          [
+            "43.65438626800228",
+            "-79.46002598495944"
+          ],
+          [
+            "43.64189777242829",
+            "-79.46441545166958"
+          ],
+          [
+            "43.64315041926091",
+            "-79.46674872424241"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "24d36466b7e3485884da56712cfc426f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "16d685bbe942480c98b9fdc907a15c98": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aac224837bda46d4b46af67c82cab5ac": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_24d36466b7e3485884da56712cfc426f",
+        "style": "IPY_MODEL_16d685bbe942480c98b9fdc907a15c98",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b98c18b95925400a95a49b026edcb884": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1b28b40f6925430d8721f932076e0a4a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b98c18b95925400a95a49b026edcb884",
+        "location": [
+          "43.65245470056065",
+          "-79.46290904549186"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aac224837bda46d4b46af67c82cab5ac",
+        "title": "Red-tailed Hawk, 2021-07-24"
+      }
+    },
+    "7048d7d0879f4c03ab7041aaf45da660": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fea64e4c60224d0698adc4606cc5481d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad2d7419a52846418adc9b5433efc7aa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_7048d7d0879f4c03ab7041aaf45da660",
+        "style": "IPY_MODEL_fea64e4c60224d0698adc4606cc5481d",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "86c3d50e29a94bca9b2009f9affe9ef1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "687a9ba0a9ad4ba2aa577c8046179fbf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_86c3d50e29a94bca9b2009f9affe9ef1",
+        "location": [
+          "43.65357430616981",
+          "-79.4647248639497"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad2d7419a52846418adc9b5433efc7aa",
+        "title": "Red-tailed Hawk, 2021-07-18"
+      }
+    },
+    "ee7656e465a84041a02ba77a7fb0975c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eec600ee3eaf47cc8d6eeb107e3608fe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f8826ce7ce564924bbb4c4b690bb531f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_ee7656e465a84041a02ba77a7fb0975c",
+        "style": "IPY_MODEL_eec600ee3eaf47cc8d6eeb107e3608fe",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "f674eea60eaa4be7b5022fee4f42f274": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "63dadd27289646779b53fd3d21b1e8d8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f674eea60eaa4be7b5022fee4f42f274",
+        "location": [
+          "43.64496099650793",
+          "-79.4694296721372"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f8826ce7ce564924bbb4c4b690bb531f",
+        "title": "Red-tailed Hawk, 2021-07-15"
+      }
+    },
+    "d3e53c6eaca64a78a709173b7f490039": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "748697766f664a7c86558884eb432f70": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aad2200b220b499ab9a333a826aaf506": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_d3e53c6eaca64a78a709173b7f490039",
+        "style": "IPY_MODEL_748697766f664a7c86558884eb432f70",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "0ca6b66ede214ccbbe8d54223ef741a4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c3d2d5df00ce481fad1c886570967019": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ca6b66ede214ccbbe8d54223ef741a4",
+        "location": [
+          "43.64302233877559",
+          "-79.46623616849901"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aad2200b220b499ab9a333a826aaf506",
+        "title": "Red-tailed Hawk, 2021-07-18"
+      }
+    },
+    "db3843ee4d5f4ab1870138fea577f56d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8ece71c7127f450eb8cd93798bd41128": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1f0f7ead62b240ec94d4aa0f454ea2fd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_db3843ee4d5f4ab1870138fea577f56d",
+        "style": "IPY_MODEL_8ece71c7127f450eb8cd93798bd41128",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "e23e12c032ee4ac490158277c8cc838a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6beb6e135ee94ad7a65a18be7260c476": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e23e12c032ee4ac490158277c8cc838a",
+        "location": [
+          "43.64755393128294",
+          "-79.46811163701226"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1f0f7ead62b240ec94d4aa0f454ea2fd",
+        "title": "Red-tailed Hawk, 2021-07-09"
+      }
+    },
+    "12c2cc2144e4426fbc8c9ea05b901eb7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3a85e543ceef41bea901540146970415": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "46e3ac8d3978495cb04d3a794fc6b496": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_12c2cc2144e4426fbc8c9ea05b901eb7",
+        "style": "IPY_MODEL_3a85e543ceef41bea901540146970415",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d7f1488bbd614aa49e43fefaf617fd2c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5903b27d85cf401ba649d81bfcb22d67": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d7f1488bbd614aa49e43fefaf617fd2c",
+        "location": [
+          "43.65434453731355",
+          "-79.46086714294057"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_46e3ac8d3978495cb04d3a794fc6b496",
+        "title": "Red-tailed Hawk, 2021-07-24"
+      }
+    },
+    "926fffdd1d8444a99ed9911ff9d58c95": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d4837e8804e24e5b92b2b8dc082c0794": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1811543f298a4a55b157a4116d8f9b08": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_926fffdd1d8444a99ed9911ff9d58c95",
+        "style": "IPY_MODEL_d4837e8804e24e5b92b2b8dc082c0794",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "981c651a0a044a6782fee53638fbb4a1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "07714be0139646089f400d995ee5ce18": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_981c651a0a044a6782fee53638fbb4a1",
+        "location": [
+          "43.640981667993636",
+          "-79.45654837290887"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1811543f298a4a55b157a4116d8f9b08",
+        "title": "Red-tailed Hawk, 2021-07-15"
+      }
+    },
+    "eb2a1c805adb44d4996efa4247e9cfab": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3f36b7345e0a40a598bfe84c92f44d72": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0d6f79d65ad343ae8d30b40e2df8cb2b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_eb2a1c805adb44d4996efa4247e9cfab",
+        "style": "IPY_MODEL_3f36b7345e0a40a598bfe84c92f44d72",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e8027430efab44d9be308f26f17d72df": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4bba6e622e104c4fa0bc292f679a1d41": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e8027430efab44d9be308f26f17d72df",
+        "location": [
+          "43.65327790298007",
+          "-79.46331810756479"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0d6f79d65ad343ae8d30b40e2df8cb2b",
+        "title": "Red-tailed Hawk, 2021-07-15"
+      }
+    },
+    "1903767c935b405a890b9caeb009d3d9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1f6c3b1b7dad44afb79527060ae99fde": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f911e98ce58b44c0ad4f18ad38124cc1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_1903767c935b405a890b9caeb009d3d9",
+        "style": "IPY_MODEL_1f6c3b1b7dad44afb79527060ae99fde",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "b2eba1a3460c48d1b4f0d6e599087455": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "150d9e3b912b4c628f51a6a3fba78577": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b2eba1a3460c48d1b4f0d6e599087455",
+        "location": [
+          "43.654246928353835",
+          "-79.46036636718257"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f911e98ce58b44c0ad4f18ad38124cc1",
+        "title": "Red-tailed Hawk, 2021-07-08"
+      }
+    },
+    "7aaca36ca6514cbcaaaed58c3ce3c766": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ae4fa8944c0545dfa3cee0d64aaf582b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0a17e7abea044f78b2a5876f6063c942": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_7aaca36ca6514cbcaaaed58c3ce3c766",
+        "style": "IPY_MODEL_ae4fa8944c0545dfa3cee0d64aaf582b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b48c44c8e3b347d0ad364908ddc880c5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "702e2f0f3e364daf910b703dfbfd74f5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b48c44c8e3b347d0ad364908ddc880c5",
+        "location": [
+          "43.65439379988195",
+          "-79.46008675449089"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0a17e7abea044f78b2a5876f6063c942",
+        "title": "Red-tailed Hawk, 2021-07-15"
+      }
+    },
+    "f134ebdebb1145469037b8dd662b404f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "243c274ee5644ab68d33d90828f98c25": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fd668ea9e3b9497b86665e10d0856ba8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_f134ebdebb1145469037b8dd662b404f",
+        "style": "IPY_MODEL_243c274ee5644ab68d33d90828f98c25",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "73064dd081774934916264942ed48f01": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d01df55e08e04c679755cba66a7fc5ba": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_73064dd081774934916264942ed48f01",
+        "location": [
+          "43.65362148259037",
+          "-79.46110544151341"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fd668ea9e3b9497b86665e10d0856ba8",
+        "title": "Red-tailed Hawk, 2021-07-12"
+      }
+    },
+    "effabdf8be3649688397184a6aeae5e8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5aee7c6dc6224c52ab76c47f37163731": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "625afb1aa7c048eb892128aa5b6f0867": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_effabdf8be3649688397184a6aeae5e8",
+        "style": "IPY_MODEL_5aee7c6dc6224c52ab76c47f37163731",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "1806cc8fa6fb4d3784e55c2501ef0b41": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a5bc3378158e4fc197e4d3ed4d6b6daf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1806cc8fa6fb4d3784e55c2501ef0b41",
+        "location": [
+          "43.652217483091235",
+          "-79.46099279198756"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_625afb1aa7c048eb892128aa5b6f0867",
+        "title": "Red-tailed Hawk, 2021-07-21"
+      }
+    },
+    "37e2d89404a849a69a17ee51620430f5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "211424fa407744b9ac2bcd40550a249c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6ab2131564104b7d82eb272e87c88bdd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_37e2d89404a849a69a17ee51620430f5",
+        "style": "IPY_MODEL_211424fa407744b9ac2bcd40550a249c",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "4df27c7c7eef47e4a60f38d69a863e04": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "700fe4d2c07c47b4be1ad0bed3b6ae02": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4df27c7c7eef47e4a60f38d69a863e04",
+        "location": [
+          "43.65395976393312",
+          "-79.46160750300608"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6ab2131564104b7d82eb272e87c88bdd",
+        "title": "Red-tailed Hawk, 2021-07-09"
+      }
+    },
+    "9916282808b64d08b01238a06769618e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e491d220517f4530a108fb584431f4f0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6facf5c9984b4573818417f65ae77a40": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_9916282808b64d08b01238a06769618e",
+        "style": "IPY_MODEL_e491d220517f4530a108fb584431f4f0",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "d3295b3062494f948901534dcd01f35c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "986fcb7e4f534f08bd688ab8d3b4bcc7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d3295b3062494f948901534dcd01f35c",
+        "location": [
+          "43.648113723087796",
+          "-79.46569620070086"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6facf5c9984b4573818417f65ae77a40",
+        "title": "Red-tailed Hawk, 2021-07-12"
+      }
+    },
+    "a8b54066a1d34f4d9802972957b91d51": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3f76fa9085b94aff9b36848a89950e10": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d9db9edf9e624d668c2d9189574ba624": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_a8b54066a1d34f4d9802972957b91d51",
+        "style": "IPY_MODEL_3f76fa9085b94aff9b36848a89950e10",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "74e1c20f8367445f9b35b2275ea70f74": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8af04a139ecd4f96928cc27caab874e9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_74e1c20f8367445f9b35b2275ea70f74",
+        "location": [
+          "43.643274788664186",
+          "-79.46903193132987"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d9db9edf9e624d668c2d9189574ba624",
+        "title": "Red-tailed Hawk, 2021-07-08"
+      }
+    },
+    "4aee5b0d85734b11a3900d6c63813ec1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bf58109dbfea4d6390877c914e26a53f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4880d725177e45b089fb3cd005b4095d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_4aee5b0d85734b11a3900d6c63813ec1",
+        "style": "IPY_MODEL_bf58109dbfea4d6390877c914e26a53f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c4697cdec38447a69ecf53a2ed196127": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d7e9f9c755744c5cabbec277e79d1c6f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c4697cdec38447a69ecf53a2ed196127",
+        "location": [
+          "43.65371124354629",
+          "-79.46085101438739"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4880d725177e45b089fb3cd005b4095d",
+        "title": "Red-tailed Hawk, 2021-07-04"
+      }
+    },
+    "8346fe2bb18148429c5f7a725ad15648": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "998dbe2a9b2544c79095666b26798e06": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7ebf02f64cbf43d3bfad4db4fd57ab5b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_8346fe2bb18148429c5f7a725ad15648",
+        "style": "IPY_MODEL_998dbe2a9b2544c79095666b26798e06",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "50919fd87e61446594eebe174d6d8efe": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "821503228e0e4f829295a8b2cb0934a8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_50919fd87e61446594eebe174d6d8efe",
+        "location": [
+          "43.64847182685501",
+          "-79.46221163666114"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7ebf02f64cbf43d3bfad4db4fd57ab5b",
+        "title": "Red-tailed Hawk, 2021-08-14"
+      }
+    },
+    "9157f0b3bf804bfba0bd900fc9f52974": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d71108b9d7ec4aec8511d51760321c3a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f79dd8cfbe83408c9f58fc239b98817d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_9157f0b3bf804bfba0bd900fc9f52974",
+        "style": "IPY_MODEL_d71108b9d7ec4aec8511d51760321c3a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d122b75810b04067b29c6ca422a06a21": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "55948f0d72ed48d1ae8cdad86d6ffd00": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d122b75810b04067b29c6ca422a06a21",
+        "location": [
+          "43.64378822651609",
+          "-79.45903152620926"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f79dd8cfbe83408c9f58fc239b98817d",
+        "title": "Red-tailed Hawk, 2021-08-31"
+      }
+    },
+    "6dd83198b2f8405ca3d4775c33499dc5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2ec7dfed021e415cbe55b369f8fde8ee": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8e29564bcf1c449c88ea932382fe41a1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_6dd83198b2f8405ca3d4775c33499dc5",
+        "style": "IPY_MODEL_2ec7dfed021e415cbe55b369f8fde8ee",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "ac1c815cdde04e64aa5c7444b8204929": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "43791a1988f04a7aa83508c488e290eb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ac1c815cdde04e64aa5c7444b8204929",
+        "location": [
+          "43.64552582036782",
+          "-79.46943846708457"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8e29564bcf1c449c88ea932382fe41a1",
+        "title": "Red-tailed Hawk, 2021-09-14"
+      }
+    },
+    "01c5246623924ed7b9f1dc5a9f987e07": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "be17572d3b7d42daad2da5705de9fc2a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "33e6df5427f3444fb24b26c580d435ec": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_01c5246623924ed7b9f1dc5a9f987e07",
+        "style": "IPY_MODEL_be17572d3b7d42daad2da5705de9fc2a",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "9dc1f37c2b584c73bfe37e304388d2c6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0baf37a3926544af8b105f9316dfde46": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9dc1f37c2b584c73bfe37e304388d2c6",
+        "location": [
+          "43.64710108755942",
+          "-79.46998418688803"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_33e6df5427f3444fb24b26c580d435ec",
+        "title": "Red-tailed Hawk, 2021-09-04"
+      }
+    },
+    "7ab5c3cfc7884f63addee96ea032dc89": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ea9a0bd1c97647989964e04cd5ed9ec8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "382642a7e52e4220a495b7e4ed8b8778": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_7ab5c3cfc7884f63addee96ea032dc89",
+        "style": "IPY_MODEL_ea9a0bd1c97647989964e04cd5ed9ec8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d71a6504be4a49bea0d909e573e3bd86": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8b264b1efdf84454873fc7e370224640": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d71a6504be4a49bea0d909e573e3bd86",
+        "location": [
+          "43.64787837639942",
+          "-79.47105563801438"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_382642a7e52e4220a495b7e4ed8b8778",
+        "title": "Red-tailed Hawk, 2021-08-15"
+      }
+    },
+    "0d1832aca058441cbe9073e9bdad68a4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "def47918731a424baa07f03dd74ea19c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a3699b93243a455dbd11a48eeba43c48": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_0d1832aca058441cbe9073e9bdad68a4",
+        "style": "IPY_MODEL_def47918731a424baa07f03dd74ea19c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "782594f576d8485488c987d34b159d92": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "01c50f18ab7241408bcb6fabfb799f1c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_782594f576d8485488c987d34b159d92",
+        "location": [
+          "43.65309452549479",
+          "-79.46339856330862"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a3699b93243a455dbd11a48eeba43c48",
+        "title": "Red-tailed Hawk, 2021-09-07"
+      }
+    },
+    "5686908ba5d94224996254e451e36114": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2c87d779fa48456e9f854e9683a3d90f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "45512245348d43d7a63f52a98797f976": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_5686908ba5d94224996254e451e36114",
+        "style": "IPY_MODEL_2c87d779fa48456e9f854e9683a3d90f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "816aa4cd7e1747419e2a29c45a18d468": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1eef5bb8142e4498a7d9503e257fd03f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_816aa4cd7e1747419e2a29c45a18d468",
+        "location": [
+          "43.65276872729535",
+          "-79.46378250842116"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_45512245348d43d7a63f52a98797f976",
+        "title": "Red-tailed Hawk, 2021-08-16"
+      }
+    },
+    "f52c274430a5492da0f752aaf4fd82b4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "964d30ca39614bc5b1bb5c8b86ba3395": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c67cf86155e14b418a759ac26efdc6df": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_f52c274430a5492da0f752aaf4fd82b4",
+        "style": "IPY_MODEL_964d30ca39614bc5b1bb5c8b86ba3395",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "687ddcc227cd472d8878f4f111f7d64a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f93ca33e72ad42deae02c690e1b93cd5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_687ddcc227cd472d8878f4f111f7d64a",
+        "location": [
+          "43.65350749324017",
+          "-79.46147126086548"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c67cf86155e14b418a759ac26efdc6df",
+        "title": "Red-tailed Hawk, 2021-07-30"
+      }
+    },
+    "d5c0c9bdb75d440fb6eacd0b3e8bff31": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9dfe61971f1548429fa384ac94fae679": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a227370b29154f4987b416c7affba2fa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_d5c0c9bdb75d440fb6eacd0b3e8bff31",
+        "style": "IPY_MODEL_9dfe61971f1548429fa384ac94fae679",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "6afb51311d5540ee85e57d0e3fba945f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "aa6c2a2c372345bb960eaddaac162275": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6afb51311d5540ee85e57d0e3fba945f",
+        "location": [
+          "43.647617385716316",
+          "-79.46592542456472"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a227370b29154f4987b416c7affba2fa",
+        "title": "Red-tailed Hawk, 2021-08-30"
+      }
+    },
+    "0869f8f0f38b49f3b142d8f96a1783fe": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0d79d5f1f1f949ffa970cdd77ab5a7ee": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cd1e84242a604ec795640d2fbd961aca": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_0869f8f0f38b49f3b142d8f96a1783fe",
+        "style": "IPY_MODEL_0d79d5f1f1f949ffa970cdd77ab5a7ee",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "50251e72ab364d67958374fcf031e09f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "65d2fafdf22e43ffac390dfa66b5946c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_50251e72ab364d67958374fcf031e09f",
+        "location": [
+          "43.64932574978637",
+          "-79.46922357380097"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cd1e84242a604ec795640d2fbd961aca",
+        "title": "Red-tailed Hawk, 2021-08-04"
+      }
+    },
+    "2f514f0a2885459f813e65a7deadc4e5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "58737707d96e43d6bbcaf2eb285c6dc3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "730344bf36fb4ca08cfe2620b7e995bd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_2f514f0a2885459f813e65a7deadc4e5",
+        "style": "IPY_MODEL_58737707d96e43d6bbcaf2eb285c6dc3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "38444ba250ba436f8d79e98428b938b7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d64ea2e55c884db484d64a6428261547": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_38444ba250ba436f8d79e98428b938b7",
+        "location": [
+          "43.64875593495693",
+          "-79.46273756923769"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_730344bf36fb4ca08cfe2620b7e995bd",
+        "title": "Red-tailed Hawk, 2021-08-13"
+      }
+    },
+    "9b5db621923c4676abdf0c74f452b990": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a3fc1ecbd42c413282ab454c65e7817b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b3b571d9a2084ebfa27ffbc2df20c9d4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_9b5db621923c4676abdf0c74f452b990",
+        "style": "IPY_MODEL_a3fc1ecbd42c413282ab454c65e7817b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "15e4fd0ee8b6426181b1f466a2e4e426": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "087037c98e2d462bb8427bd6c658cc5a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_15e4fd0ee8b6426181b1f466a2e4e426",
+        "location": [
+          "43.65275886592536",
+          "-79.4626475143506"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b3b571d9a2084ebfa27ffbc2df20c9d4",
+        "title": "Red-tailed Hawk, 2021-08-19"
+      }
+    },
+    "4506ee862cdb4134b6a8f00823521c75": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "45415f36768d48f9b03e1d4606c84d1b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6c3f179b39c6410592a3026fccfa9021": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_4506ee862cdb4134b6a8f00823521c75",
+        "style": "IPY_MODEL_45415f36768d48f9b03e1d4606c84d1b",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "b3dc1ac849ab4e968adf6300f93d95b4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "63ca3a44f13c4f8d92aff17632a3fca4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b3dc1ac849ab4e968adf6300f93d95b4",
+        "location": [
+          "43.65056242543191",
+          "-79.46256576473165"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6c3f179b39c6410592a3026fccfa9021",
+        "title": "Red-tailed Hawk, 2021-08-09"
+      }
+    },
+    "d86249789d3c4466bd012d31d30573de": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "92737e03fcdf4b07aea66fd1d1b6aa4d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "be55629419ad4872932c842b4fa9bcde": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-25",
+        "layout": "IPY_MODEL_d86249789d3c4466bd012d31d30573de",
+        "style": "IPY_MODEL_92737e03fcdf4b07aea66fd1d1b6aa4d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "460ebac509654c0fbbe1a0cfb1f93481": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "659876a12ec148169b7783d1c5b76bb3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_460ebac509654c0fbbe1a0cfb1f93481",
+        "location": [
+          "43.64830164498963",
+          "-79.45842280603391"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_be55629419ad4872932c842b4fa9bcde",
+        "title": "Red-tailed Hawk, 2021-07-25"
+      }
+    },
+    "20c08315f28040c6abbf680fcfb0fece": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ceee3336192d4979a23357935949ce69": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c43cb2406d6d4c01858465a2006b7444": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_20c08315f28040c6abbf680fcfb0fece",
+        "style": "IPY_MODEL_ceee3336192d4979a23357935949ce69",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "8c891ca6eba546e08ce0764c30416d27": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "489a35f10feb4af0b72133e0fff6ea60": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8c891ca6eba546e08ce0764c30416d27",
+        "location": [
+          "43.64347617872952",
+          "-79.45840343913501"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c43cb2406d6d4c01858465a2006b7444",
+        "title": "Red-tailed Hawk, 2021-08-23"
+      }
+    },
+    "81ab55383cb14b02807a1ff62dd1d056": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5a3464221b9e493d99834776288fee39": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9d9d96f9294341d78bc6d9c894ce0104": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_81ab55383cb14b02807a1ff62dd1d056",
+        "style": "IPY_MODEL_5a3464221b9e493d99834776288fee39",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bcc34d24a1b9408d8ca6b80bc5a05336": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "655a4417d313483fb0de886577c546f3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bcc34d24a1b9408d8ca6b80bc5a05336",
+        "location": [
+          "43.65438626800228",
+          "-79.46002598495944"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9d9d96f9294341d78bc6d9c894ce0104",
+        "title": "Red-tailed Hawk, 2021-08-23"
+      }
+    },
+    "b8a456409d2140a694aa4ed301bdcaf0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "079e4de78a6540999ebdbc385fc86a2c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ff6b7cd46dc44bb6a3a37ace1328e8c3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_b8a456409d2140a694aa4ed301bdcaf0",
+        "style": "IPY_MODEL_079e4de78a6540999ebdbc385fc86a2c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "409d6ae8bbfa41cfb3414f8b36396c3c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "86213cbe4bac49feabd61632e2e0ae8e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_409d6ae8bbfa41cfb3414f8b36396c3c",
+        "location": [
+          "43.647780751427504",
+          "-79.46916018282252"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ff6b7cd46dc44bb6a3a37ace1328e8c3",
+        "title": "Red-tailed Hawk, 2021-08-15"
+      }
+    },
+    "66d56bb82d3340769f28a1340282d753": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "aed30ba3e17d454992cfb698642ee98b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9971ee8d9fdc4758a0d58fe2ab097ef3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_66d56bb82d3340769f28a1340282d753",
+        "style": "IPY_MODEL_aed30ba3e17d454992cfb698642ee98b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "063f313e1db143c2971004d780105df8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3761a14a87e4439c8be45c56655066b9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_063f313e1db143c2971004d780105df8",
+        "location": [
+          "43.64189777242829",
+          "-79.46441545166958"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9971ee8d9fdc4758a0d58fe2ab097ef3",
+        "title": "Red-tailed Hawk, 2021-09-04"
+      }
+    },
+    "4ae88c69940d47a5aaed68b1e6a43591": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eab5b47cc367490184065392ff1d11d3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "56544c08678b4a889631cb0647ef63bd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_4ae88c69940d47a5aaed68b1e6a43591",
+        "style": "IPY_MODEL_eab5b47cc367490184065392ff1d11d3",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "8504ecaa9f7047eda936e45990b19c1c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "794167a7b6b141b081ee31bd72b97c9c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8504ecaa9f7047eda936e45990b19c1c",
+        "location": [
+          "43.65357983623155",
+          "-79.46232558462638"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_56544c08678b4a889631cb0647ef63bd",
+        "title": "Red-tailed Hawk, 2021-07-27"
+      }
+    },
+    "4febd3cbe7cb4d46a7c62d2060b7ee17": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "99efb5aaca8d4b0d9d0b81d86d626a59": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c9df03558e3a4d339eed2ceef8e19a49": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_4febd3cbe7cb4d46a7c62d2060b7ee17",
+        "style": "IPY_MODEL_99efb5aaca8d4b0d9d0b81d86d626a59",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "cbd28072b51d4bf8b73d51218914022c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6581445b78a24d7c980aedc4a4cbbad0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cbd28072b51d4bf8b73d51218914022c",
+        "location": [
+          "43.64315041926091",
+          "-79.46674872424241"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c9df03558e3a4d339eed2ceef8e19a49",
+        "title": "Red-tailed Hawk, 2021-09-07"
+      }
+    },
+    "7121d88d7be6416c95c70e5f1f64a625": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_1b28b40f6925430d8721f932076e0a4a",
+          "IPY_MODEL_687a9ba0a9ad4ba2aa577c8046179fbf",
+          "IPY_MODEL_63dadd27289646779b53fd3d21b1e8d8",
+          "IPY_MODEL_c3d2d5df00ce481fad1c886570967019",
+          "IPY_MODEL_6beb6e135ee94ad7a65a18be7260c476",
+          "IPY_MODEL_5903b27d85cf401ba649d81bfcb22d67",
+          "IPY_MODEL_07714be0139646089f400d995ee5ce18",
+          "IPY_MODEL_4bba6e622e104c4fa0bc292f679a1d41",
+          "IPY_MODEL_150d9e3b912b4c628f51a6a3fba78577",
+          "IPY_MODEL_702e2f0f3e364daf910b703dfbfd74f5",
+          "IPY_MODEL_d01df55e08e04c679755cba66a7fc5ba",
+          "IPY_MODEL_a5bc3378158e4fc197e4d3ed4d6b6daf",
+          "IPY_MODEL_700fe4d2c07c47b4be1ad0bed3b6ae02",
+          "IPY_MODEL_986fcb7e4f534f08bd688ab8d3b4bcc7",
+          "IPY_MODEL_8af04a139ecd4f96928cc27caab874e9",
+          "IPY_MODEL_d7e9f9c755744c5cabbec277e79d1c6f",
+          "IPY_MODEL_821503228e0e4f829295a8b2cb0934a8",
+          "IPY_MODEL_55948f0d72ed48d1ae8cdad86d6ffd00",
+          "IPY_MODEL_43791a1988f04a7aa83508c488e290eb",
+          "IPY_MODEL_0baf37a3926544af8b105f9316dfde46",
+          "IPY_MODEL_8b264b1efdf84454873fc7e370224640",
+          "IPY_MODEL_01c50f18ab7241408bcb6fabfb799f1c",
+          "IPY_MODEL_1eef5bb8142e4498a7d9503e257fd03f",
+          "IPY_MODEL_f93ca33e72ad42deae02c690e1b93cd5",
+          "IPY_MODEL_aa6c2a2c372345bb960eaddaac162275",
+          "IPY_MODEL_65d2fafdf22e43ffac390dfa66b5946c",
+          "IPY_MODEL_d64ea2e55c884db484d64a6428261547",
+          "IPY_MODEL_087037c98e2d462bb8427bd6c658cc5a",
+          "IPY_MODEL_63ca3a44f13c4f8d92aff17632a3fca4",
+          "IPY_MODEL_659876a12ec148169b7783d1c5b76bb3",
+          "IPY_MODEL_489a35f10feb4af0b72133e0fff6ea60",
+          "IPY_MODEL_655a4417d313483fb0de886577c546f3",
+          "IPY_MODEL_86213cbe4bac49feabd61632e2e0ae8e",
+          "IPY_MODEL_3761a14a87e4439c8be45c56655066b9",
+          "IPY_MODEL_794167a7b6b141b081ee31bd72b97c9c",
+          "IPY_MODEL_6581445b78a24d7c980aedc4a4cbbad0"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "6914ee7f1efb4a20a9e4e819f65b985f"}
+</script>
+
+</body>
+</html>

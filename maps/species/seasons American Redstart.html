@@ -1,0 +1,2882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>American Redstart Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "fa7db386961a43759d1a2e9123413446": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "7841ae6da4ad44948219af4c7a4af753": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "9045a271c77b46a2a7e3b4e89cbea590": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "e970daf2f0b540bda352a12de18c9608": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "62c9f2826bc24a6c87a868e237da5fb4": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "293dedb2e2a54b979bb94240c4bab228": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_d7573b51defa474687b2b9f7c692bd99",
+          "IPY_MODEL_1e7cf25d2a574b0db158f9b2ea7159ab",
+          "IPY_MODEL_90b179539d394c87b860b92b6c6482ee",
+          "IPY_MODEL_3701ff3a15e940dd908d696f51d46569"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_fa7db386961a43759d1a2e9123413446",
+        "dragging_style": "IPY_MODEL_7841ae6da4ad44948219af4c7a4af753",
+        "layers": [
+          "IPY_MODEL_9045a271c77b46a2a7e3b4e89cbea590",
+          "IPY_MODEL_f81edcc1d9834bcb951178ff218ae282",
+          "IPY_MODEL_7549793bfccb4ecb888215c4bbc9b3aa",
+          "IPY_MODEL_47429a792c794ba6a05a2e3cf6e0ada9",
+          "IPY_MODEL_289518ce0e8844d2829398b32c8ca0a9",
+          "IPY_MODEL_229078abce614ba1adba15958d4a5f22"
+        ],
+        "layout": "IPY_MODEL_e970daf2f0b540bda352a12de18c9608",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_62c9f2826bc24a6c87a868e237da5fb4",
+        "zoom": 14.0
+      }
+    },
+    "d7573b51defa474687b2b9f7c692bd99": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "1e7cf25d2a574b0db158f9b2ea7159ab": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "90b179539d394c87b860b92b6c6482ee": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "3701ff3a15e940dd908d696f51d46569": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "f81edcc1d9834bcb951178ff218ae282": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "7549793bfccb4ecb888215c4bbc9b3aa": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "47429a792c794ba6a05a2e3cf6e0ada9": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.651013093859795",
+            "-79.46236974711357"
+          ],
+          [
+            "43.64929029465414",
+            "-79.46300628345078"
+          ],
+          [
+            "43.64022316355996",
+            "-79.46143074118395"
+          ],
+          [
+            "43.651263345455085",
+            "-79.4621125287501"
+          ],
+          [
+            "43.64718974565347",
+            "-79.46963676964265"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "289518ce0e8844d2829398b32c8ca0a9": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.65128262933617",
+            "-79.46225629801992"
+          ],
+          [
+            "43.65320495088229",
+            "-79.46278884079479"
+          ],
+          [
+            "43.647691198841315",
+            "-79.4706154784346"
+          ],
+          [
+            "43.64420363280684",
+            "-79.45979330937021"
+          ],
+          [
+            "43.64423380033466",
+            "-79.45980592600583"
+          ],
+          [
+            "43.64362822193508",
+            "-79.45964313115574"
+          ],
+          [
+            "43.65328234197584",
+            "-79.46304738119791"
+          ],
+          [
+            "43.6491631965825",
+            "-79.4629078938184"
+          ],
+          [
+            "43.642239693442676",
+            "-79.45741135206079"
+          ],
+          [
+            "43.64379662675045",
+            "-79.45930644811331"
+          ],
+          [
+            "43.644091618499104",
+            "-79.45970122805565"
+          ],
+          [
+            "43.64424245613821",
+            "-79.45976431123368"
+          ],
+          [
+            "43.642538246385556",
+            "-79.45873493464563"
+          ],
+          [
+            "43.648154940028306",
+            "-79.46223743032536"
+          ],
+          [
+            "43.643953636780736",
+            "-79.45973399105749"
+          ],
+          [
+            "43.643863134197275",
+            "-79.45969614115067"
+          ],
+          [
+            "43.64378574310373",
+            "-79.45943760074753"
+          ],
+          [
+            "43.65361387370754",
+            "-79.46090167698021"
+          ],
+          [
+            "43.648090532640076",
+            "-79.46191646776401"
+          ],
+          [
+            "43.64786179276906",
+            "-79.46222791753523"
+          ],
+          [
+            "43.64819611898744",
+            "-79.46196062598864"
+          ],
+          [
+            "43.643760159046856",
+            "-79.45908764004966"
+          ],
+          [
+            "43.64790914411938",
+            "-79.46231557296466"
+          ],
+          [
+            "43.643507551823795",
+            "-79.45959266461331"
+          ],
+          [
+            "43.64803216985843",
+            "-79.46211823330691"
+          ],
+          [
+            "43.643774859457",
+            "-79.45956875338176"
+          ],
+          [
+            "43.64807519330698",
+            "-79.4622266961224"
+          ],
+          [
+            "43.65326083025157",
+            "-79.46299314979017"
+          ],
+          [
+            "43.6477258220555",
+            "-79.47044901934603"
+          ],
+          [
+            "43.64399691579846",
+            "-79.45952591719679"
+          ],
+          [
+            "43.64349246805989",
+            "-79.45958635629552"
+          ],
+          [
+            "43.642727907356026",
+            "-79.45876901968714"
+          ],
+          [
+            "43.6437040241084",
+            "-79.45919986773048"
+          ],
+          [
+            "43.64377931514336",
+            "-79.4593896776576"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "8c3fd7f710234c36af953a42aafc297c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b2962b6a282c4b6886e1914b767d6288": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "36f5160487bf455e80ba12c29243b30b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_8c3fd7f710234c36af953a42aafc297c",
+        "style": "IPY_MODEL_b2962b6a282c4b6886e1914b767d6288",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3fa48b36ab0b4741b554258c95cac34c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a647ce85744d4bbc9327acb7195e3281": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3fa48b36ab0b4741b554258c95cac34c",
+        "location": [
+          "43.65128262933617",
+          "-79.46225629801992"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_36f5160487bf455e80ba12c29243b30b",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "7c00d3f66106433e9bdf49bd253f887b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6fcc87d419aa47df91fe96d7a51c41bc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1c1c0c6ba55a4b75b2c1b3030ac9ebc3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_7c00d3f66106433e9bdf49bd253f887b",
+        "style": "IPY_MODEL_6fcc87d419aa47df91fe96d7a51c41bc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "02bbe2854f7b4fb69d0662d4a4eb239b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6fbb1e4959c848fb8070c950b404ab7b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_02bbe2854f7b4fb69d0662d4a4eb239b",
+        "location": [
+          "43.65320495088229",
+          "-79.46278884079479"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1c1c0c6ba55a4b75b2c1b3030ac9ebc3",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "f96f2176bcd443a8b062c4d7081e9652": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f1cd1bf022484bd5a5a080de138c1c44": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a2f9e40731e4ab6801f232a531d6e24": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_f96f2176bcd443a8b062c4d7081e9652",
+        "style": "IPY_MODEL_f1cd1bf022484bd5a5a080de138c1c44",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f6da87f7c0c44362bc32c153b91ca60f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e55ac3fb1bfe452c8846ecbeb377049d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f6da87f7c0c44362bc32c153b91ca60f",
+        "location": [
+          "43.647691198841315",
+          "-79.4706154784346"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a2f9e40731e4ab6801f232a531d6e24",
+        "title": "American Redstart, 2021-08-28"
+      }
+    },
+    "87e78a443f0d43c98b398b2aa3d3f67b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "884642b3563f45a0bb5236f23ced2c1d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a17232a54828462e9faeda2179b09f6f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_87e78a443f0d43c98b398b2aa3d3f67b",
+        "style": "IPY_MODEL_884642b3563f45a0bb5236f23ced2c1d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2e46c00217544717b89543e024dab455": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "00af7c061bcd461a9e58808ee8526634": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2e46c00217544717b89543e024dab455",
+        "location": [
+          "43.64420363280684",
+          "-79.45979330937021"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a17232a54828462e9faeda2179b09f6f",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "05d295c65d7c40bca5a5e3d468f4790e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "af844d06a16a4f95b162091c2857b553": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5b2bc7d23c1a4c12a6e59bc3314cb580": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_05d295c65d7c40bca5a5e3d468f4790e",
+        "style": "IPY_MODEL_af844d06a16a4f95b162091c2857b553",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4850be7e2e1a4da3b2ad0193a59aec01": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a1250bf40d6c425697319611c9405215": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4850be7e2e1a4da3b2ad0193a59aec01",
+        "location": [
+          "43.64423380033466",
+          "-79.45980592600583"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5b2bc7d23c1a4c12a6e59bc3314cb580",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "c1154b14d1d04544a24f207d43d87d71": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e0256fb6c5fc463490e1173c3b9f937c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "89e600cf5615414e8c4db72fb7323ae0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_c1154b14d1d04544a24f207d43d87d71",
+        "style": "IPY_MODEL_e0256fb6c5fc463490e1173c3b9f937c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "93ea390ec9b645dea878d28f70b22073": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c9fedee75a344bccad0da053618a7b6e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_93ea390ec9b645dea878d28f70b22073",
+        "location": [
+          "43.651013093859795",
+          "-79.46236974711357"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_89e600cf5615414e8c4db72fb7323ae0",
+        "title": "American Redstart, 2021-08-19"
+      }
+    },
+    "09a2dc8387184bf1bb538a811a1401c2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ebb80029756d4059bc261ca88385b8c3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "64bea4e563644f97806e6f334032c4ea": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_09a2dc8387184bf1bb538a811a1401c2",
+        "style": "IPY_MODEL_ebb80029756d4059bc261ca88385b8c3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7fefa58094414711a6af2c5c2e86d664": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "59ab2a8f938c4a83b6f9ac7b730a14b4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7fefa58094414711a6af2c5c2e86d664",
+        "location": [
+          "43.64362822193508",
+          "-79.45964313115574"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_64bea4e563644f97806e6f334032c4ea",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "5b4db415691843d2977929c020cde587": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0825793b548240fdaf883dbc0b8fb965": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5f004d45e5be4289bbd70a28f02e217d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_5b4db415691843d2977929c020cde587",
+        "style": "IPY_MODEL_0825793b548240fdaf883dbc0b8fb965",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8a0da5a717fb4e9aa13fa5ddab2a8f64": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7de6139672ca44f9b18286032f37ba10": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8a0da5a717fb4e9aa13fa5ddab2a8f64",
+        "location": [
+          "43.64929029465414",
+          "-79.46300628345078"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5f004d45e5be4289bbd70a28f02e217d",
+        "title": "American Redstart, 2021-08-15"
+      }
+    },
+    "9eff7c4031e8443fb34671435bbfa36c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "dd0597115ed243089a441fbfe9a6b484": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bf83816c0c2241028b1f5012d89f41ad": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_9eff7c4031e8443fb34671435bbfa36c",
+        "style": "IPY_MODEL_dd0597115ed243089a441fbfe9a6b484",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ca63d92205f34a8f90ee314a927c2102": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b7148a03bfee45918351cc959d8b59eb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ca63d92205f34a8f90ee314a927c2102",
+        "location": [
+          "43.65328234197584",
+          "-79.46304738119791"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bf83816c0c2241028b1f5012d89f41ad",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "f73860617d23482eb65180f643dfe257": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "624faf2be11647ccb3ae5028454f5664": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9d10f83cf28444e89de15df1290636f2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_f73860617d23482eb65180f643dfe257",
+        "style": "IPY_MODEL_624faf2be11647ccb3ae5028454f5664",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8722dd68516044df8ee61459e3b586b5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e2439695a8da4c5ea21cf4b9dfe13492": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8722dd68516044df8ee61459e3b586b5",
+        "location": [
+          "43.6491631965825",
+          "-79.4629078938184"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9d10f83cf28444e89de15df1290636f2",
+        "title": "American Redstart, 2021-08-24"
+      }
+    },
+    "3d6f8b06b68f4c53ad45dcd6983be1fe": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "baffae8d5f224490b2dcbb5b924e620a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "67806e7dd5d54d5ab251a4621cdacc98": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_3d6f8b06b68f4c53ad45dcd6983be1fe",
+        "style": "IPY_MODEL_baffae8d5f224490b2dcbb5b924e620a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0f23bfa6e6bc4409953343d588008d4c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c7badaabcae84b76aac13b5d7e4f9461": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0f23bfa6e6bc4409953343d588008d4c",
+        "location": [
+          "43.642239693442676",
+          "-79.45741135206079"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_67806e7dd5d54d5ab251a4621cdacc98",
+        "title": "American Redstart, 2021-09-07"
+      }
+    },
+    "eb67341565874d2ba92a3cceb3257d54": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d8826c8b261f488fb1ea0dadc5075249": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2ff313a6a1f641e49cfa0a919428ecf7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_eb67341565874d2ba92a3cceb3257d54",
+        "style": "IPY_MODEL_d8826c8b261f488fb1ea0dadc5075249",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3449664ec0dc41f1b513170bec3f13f0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9e7ecc8a284e441f9fb9760490d6b9bc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3449664ec0dc41f1b513170bec3f13f0",
+        "location": [
+          "43.64379662675045",
+          "-79.45930644811331"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2ff313a6a1f641e49cfa0a919428ecf7",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "fed59e08479b46aca4ff34ec9c773ace": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2a3765286e034d3aa16d1619b6a5d3d1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6c66014e9b0842dd9b3f4f65ddabdb33": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_fed59e08479b46aca4ff34ec9c773ace",
+        "style": "IPY_MODEL_2a3765286e034d3aa16d1619b6a5d3d1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "75f8d1d47ea54f3c8591727e5c2a8e36": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c75e262fa1e140489fd1f57be5208814": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_75f8d1d47ea54f3c8591727e5c2a8e36",
+        "location": [
+          "43.644091618499104",
+          "-79.45970122805565"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6c66014e9b0842dd9b3f4f65ddabdb33",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "d5c896accaf9405e88061af5c4312007": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c39dc386c6804682a687a9dd10699a76": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8791c557e4874c15982b6c658d8c0da2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_d5c896accaf9405e88061af5c4312007",
+        "style": "IPY_MODEL_c39dc386c6804682a687a9dd10699a76",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7e18a7362060457fb08de2b3439c21ed": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e7eb455a334b49ed9395302ff1b77f43": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7e18a7362060457fb08de2b3439c21ed",
+        "location": [
+          "43.64424245613821",
+          "-79.45976431123368"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8791c557e4874c15982b6c658d8c0da2",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "328352b48f314995b61fd857f8f8fded": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d528413360104e3097565e791b6960fd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4ae6e8803236414192758e50ed1a7dfd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_328352b48f314995b61fd857f8f8fded",
+        "style": "IPY_MODEL_d528413360104e3097565e791b6960fd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "290683cd366740ada3101c38971e35a7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2599f37dae4b470681ad9d1d629dac96": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_290683cd366740ada3101c38971e35a7",
+        "location": [
+          "43.642538246385556",
+          "-79.45873493464563"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4ae6e8803236414192758e50ed1a7dfd",
+        "title": "American Redstart, 2021-08-29"
+      }
+    },
+    "3e3292aaac314089a787eba988346efd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "376a58b5acde449fb94314e11c8c4ece": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "50203f4dfb7c4fd3ba335f9e0f13facc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_3e3292aaac314089a787eba988346efd",
+        "style": "IPY_MODEL_376a58b5acde449fb94314e11c8c4ece",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6410b2fc675b48b5bfd78eb30c7441d9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "829c325e54d54d3c9e9720ec6b6b5347": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6410b2fc675b48b5bfd78eb30c7441d9",
+        "location": [
+          "43.648154940028306",
+          "-79.46223743032536"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_50203f4dfb7c4fd3ba335f9e0f13facc",
+        "title": "American Redstart, 2021-09-07"
+      }
+    },
+    "645e5820479d40a289694f948d3c8b5c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d82cdbfbe6d740ff81eec7407b575648": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "63cde3b11a1647f4bf7802a3942ce619": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_645e5820479d40a289694f948d3c8b5c",
+        "style": "IPY_MODEL_d82cdbfbe6d740ff81eec7407b575648",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bbb1955b77324252bb7b89c20403092b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "68068c284ca94dc9a8184282cc3124bb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bbb1955b77324252bb7b89c20403092b",
+        "location": [
+          "43.643953636780736",
+          "-79.45973399105749"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_63cde3b11a1647f4bf7802a3942ce619",
+        "title": "American Redstart, 2021-08-24"
+      }
+    },
+    "043b97cc87f54246af0d3230e47d35e0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c11cb412e1d1482981e246638177c2d1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2dbf6bc8983f4b21a4dfe5c6321086e5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_043b97cc87f54246af0d3230e47d35e0",
+        "style": "IPY_MODEL_c11cb412e1d1482981e246638177c2d1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d0927d5c0c9149089121e6a10a6e0108": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4ed7c93777fc4e0f9e3f50923a29c852": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d0927d5c0c9149089121e6a10a6e0108",
+        "location": [
+          "43.643863134197275",
+          "-79.45969614115067"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2dbf6bc8983f4b21a4dfe5c6321086e5",
+        "title": "American Redstart, 2021-08-24"
+      }
+    },
+    "862feaf1f4c9460a8dece57f4ced2905": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f340b80b0c80429b964f9ddf84be23f5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ccc6fe06a6b84a888e6603ac14faf18a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_862feaf1f4c9460a8dece57f4ced2905",
+        "style": "IPY_MODEL_f340b80b0c80429b964f9ddf84be23f5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "572704e5b4714986bc78284b5bf6c7fa": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2bcc6664ac0841e7a6fef1797fa93937": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_572704e5b4714986bc78284b5bf6c7fa",
+        "location": [
+          "43.64378574310373",
+          "-79.45943760074753"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ccc6fe06a6b84a888e6603ac14faf18a",
+        "title": "American Redstart, 2021-08-24"
+      }
+    },
+    "965d0e136771491e9793ddf666da5d27": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "633a3e63f9074a6b8a6564fe2acb75e7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "65335ff64a8d4a24b342cf2b9dfe17bd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_965d0e136771491e9793ddf666da5d27",
+        "style": "IPY_MODEL_633a3e63f9074a6b8a6564fe2acb75e7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c6759d5919d7451db86535ee0dad408f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6dcbeb5eac0542ee9fdff86aaced1fa4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c6759d5919d7451db86535ee0dad408f",
+        "location": [
+          "43.65361387370754",
+          "-79.46090167698021"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_65335ff64a8d4a24b342cf2b9dfe17bd",
+        "title": "American Redstart, 2021-09-07"
+      }
+    },
+    "95b198e923104614826d01e8144ef58a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "623534c8abc94a1aba88129241df2975": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "558ea32a0b644839851d28e99bd01b51": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_95b198e923104614826d01e8144ef58a",
+        "style": "IPY_MODEL_623534c8abc94a1aba88129241df2975",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b8cd11b1054c476dab853254a2aa44f8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4be0c5ea344f4b00907ca9ad8eabcab0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b8cd11b1054c476dab853254a2aa44f8",
+        "location": [
+          "43.648090532640076",
+          "-79.46191646776401"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_558ea32a0b644839851d28e99bd01b51",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "43270024ad7346a591f4b36a66f8da66": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6fe3826583174fcaafaa3924318ca646": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5994f4eda5624f45ab843b50f1a75911": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_43270024ad7346a591f4b36a66f8da66",
+        "style": "IPY_MODEL_6fe3826583174fcaafaa3924318ca646",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7cba94033d81439db988e1a9a3f251a3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9d1f4530555e4e32a320c0f360009a76": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7cba94033d81439db988e1a9a3f251a3",
+        "location": [
+          "43.64786179276906",
+          "-79.46222791753523"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5994f4eda5624f45ab843b50f1a75911",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "f357ca9888f8476caa2f01a6f1c1a899": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6fe0f882444e41b6a0ea7666e82036f1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4f9cc488f6214f7aafcec5d876f4edc3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_f357ca9888f8476caa2f01a6f1c1a899",
+        "style": "IPY_MODEL_6fe0f882444e41b6a0ea7666e82036f1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e081d21a34584076bb31a037f3fa9e4f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "eb856a3a32fb404e849ff6595f9e65fe": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e081d21a34584076bb31a037f3fa9e4f",
+        "location": [
+          "43.64022316355996",
+          "-79.46143074118395"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4f9cc488f6214f7aafcec5d876f4edc3",
+        "title": "American Redstart, 2021-08-19"
+      }
+    },
+    "979d55f779014800a2afa3024fdbb410": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2c1918824f9a4693b232f814f08d73c7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "acdf622e4f584ee8a16b850c9d01ccb0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_979d55f779014800a2afa3024fdbb410",
+        "style": "IPY_MODEL_2c1918824f9a4693b232f814f08d73c7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3ffa9ebc1fd848769d381ce3d73546c8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7e4010e44c824868bb7d25e37bf20465": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3ffa9ebc1fd848769d381ce3d73546c8",
+        "location": [
+          "43.64819611898744",
+          "-79.46196062598864"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_acdf622e4f584ee8a16b850c9d01ccb0",
+        "title": "American Redstart, 2021-08-29"
+      }
+    },
+    "8e14cd9bdb8e4c27833fd8c53f9fc636": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "69ec420eab054b1f956b910755dc53a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b10ad43801e1413da97638b6875f0e50": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_8e14cd9bdb8e4c27833fd8c53f9fc636",
+        "style": "IPY_MODEL_69ec420eab054b1f956b910755dc53a5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "562d208380f44158abf27bc592777fd6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6e5a8ef0b9c4403db4b3bfabfa8a205a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_562d208380f44158abf27bc592777fd6",
+        "location": [
+          "43.643760159046856",
+          "-79.45908764004966"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b10ad43801e1413da97638b6875f0e50",
+        "title": "American Redstart, 2021-09-04"
+      }
+    },
+    "9e43e68824a045718bba969884be31da": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4c2e9c6a64b64dddb27a313d0b62eb45": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c96b37d460974d07ac70a48b01a59c28": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_9e43e68824a045718bba969884be31da",
+        "style": "IPY_MODEL_4c2e9c6a64b64dddb27a313d0b62eb45",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fe3113312fa844e2a84a75e94b0eb9af": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3b5f7cb6917c4d0b9095a16f7210b5f8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fe3113312fa844e2a84a75e94b0eb9af",
+        "location": [
+          "43.64790914411938",
+          "-79.46231557296466"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c96b37d460974d07ac70a48b01a59c28",
+        "title": "American Redstart, 2021-09-04"
+      }
+    },
+    "f72519053ebe4453b351ad757914cc82": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "881c57563e004c85b1cc1a38ce03f5b1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0d0aad0b143f41be97c119510e5f2bad": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_f72519053ebe4453b351ad757914cc82",
+        "style": "IPY_MODEL_881c57563e004c85b1cc1a38ce03f5b1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9444763b361b4e24854c6249caf85f1c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "dc7022b38ae04b25ade7b7c1d8c36f9f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9444763b361b4e24854c6249caf85f1c",
+        "location": [
+          "43.643507551823795",
+          "-79.45959266461331"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0d0aad0b143f41be97c119510e5f2bad",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "8cbdc2257ef0468eadfa48b8b3547ff4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9bf79cfc4031433d9a134fe203ce8108": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6c9c0294bd334c01a0002fd5ead7c66f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_8cbdc2257ef0468eadfa48b8b3547ff4",
+        "style": "IPY_MODEL_9bf79cfc4031433d9a134fe203ce8108",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "21f849845d4f46eb9eb7c181fb7ff90a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "264dfab37c2b42eba9946bfa04d43f3a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_21f849845d4f46eb9eb7c181fb7ff90a",
+        "location": [
+          "43.64803216985843",
+          "-79.46211823330691"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6c9c0294bd334c01a0002fd5ead7c66f",
+        "title": "American Redstart, 2021-08-29"
+      }
+    },
+    "be5a2fd792a64b06adb60aea20c79f95": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6b1b146d48e9401abdca2a29eb6a442d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "36a0dbe8571340c5b1b8d7107403d405": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_be5a2fd792a64b06adb60aea20c79f95",
+        "style": "IPY_MODEL_6b1b146d48e9401abdca2a29eb6a442d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e71ac19f66eb4189acf2342d44a39a58": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7984c9e52c8b4a9dae1025ef27515d7b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e71ac19f66eb4189acf2342d44a39a58",
+        "location": [
+          "43.643774859457",
+          "-79.45956875338176"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_36a0dbe8571340c5b1b8d7107403d405",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "a352f15a4ebb4a8d8a71b061450ff19e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "712d22c5a71148b48d2fc2dcfaacc613": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1604c97fb9b046e48bee933473d74458": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_a352f15a4ebb4a8d8a71b061450ff19e",
+        "style": "IPY_MODEL_712d22c5a71148b48d2fc2dcfaacc613",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a433b624af3e48f2b94b54959143b9e7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2bfb85ad7abe41e68ed812c91893ba93": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a433b624af3e48f2b94b54959143b9e7",
+        "location": [
+          "43.64807519330698",
+          "-79.4622266961224"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1604c97fb9b046e48bee933473d74458",
+        "title": "American Redstart, 2021-08-31"
+      }
+    },
+    "8784b2be3c0948a69430082fd409c9d3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7a43dd7ea0bd48c7bf78c6a0f0084f22": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "282f643a440741ae85d1259c3d11e581": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_8784b2be3c0948a69430082fd409c9d3",
+        "style": "IPY_MODEL_7a43dd7ea0bd48c7bf78c6a0f0084f22",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3feff031c9b745849393678a372ce413": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d1f5c5c269a943c9914cad9ba02cdc9a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3feff031c9b745849393678a372ce413",
+        "location": [
+          "43.65326083025157",
+          "-79.46299314979017"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_282f643a440741ae85d1259c3d11e581",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "421532fa029643669f4941236c0ba50f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6a9fb8385f654529ae1277698791d108": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6428f9926944426685086e4863c9c204": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_421532fa029643669f4941236c0ba50f",
+        "style": "IPY_MODEL_6a9fb8385f654529ae1277698791d108",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "177ac1b91cb14191940ac49115c1aed8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "17a07f03baba4cbf814e2837c9a16275": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_177ac1b91cb14191940ac49115c1aed8",
+        "location": [
+          "43.6477258220555",
+          "-79.47044901934603"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6428f9926944426685086e4863c9c204",
+        "title": "American Redstart, 2021-08-28"
+      }
+    },
+    "a34548e5e3714eb0a92852d94ddd07ec": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1ef720d742d247588d30e0e387a0920e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "523edc13722c4403893e9a3d083f3e98": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_a34548e5e3714eb0a92852d94ddd07ec",
+        "style": "IPY_MODEL_1ef720d742d247588d30e0e387a0920e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c645cf91af9048ef8865f240c717a2ae": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b5b3e73d5f90441c908fc77932f0ca83": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c645cf91af9048ef8865f240c717a2ae",
+        "location": [
+          "43.64399691579846",
+          "-79.45952591719679"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_523edc13722c4403893e9a3d083f3e98",
+        "title": "American Redstart, 2021-08-30"
+      }
+    },
+    "6787adf00aa14d2a9ef085abc8a5d428": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0c0fd74fd0134466818afb3d423e9265": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b3ae003d8a7f43f98a51ba67fd851caf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_6787adf00aa14d2a9ef085abc8a5d428",
+        "style": "IPY_MODEL_0c0fd74fd0134466818afb3d423e9265",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5e9c0ca4e1ec4e8f86836e58979e53cb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8404388a7c9f4dbd960d245b1b0735a1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5e9c0ca4e1ec4e8f86836e58979e53cb",
+        "location": [
+          "43.64349246805989",
+          "-79.45958635629552"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b3ae003d8a7f43f98a51ba67fd851caf",
+        "title": "American Redstart, 2021-08-28"
+      }
+    },
+    "ee1d833d25154a0c9f3933d5699a3a17": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8cf72b154e1d4465ac4dcfbb3b0d664b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0c4cb6d25c704980ae566b59b544c96f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_ee1d833d25154a0c9f3933d5699a3a17",
+        "style": "IPY_MODEL_8cf72b154e1d4465ac4dcfbb3b0d664b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8de05ce1202641d3a2c68e24d2cd93b1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c934185ad0f242b5bd8be49201fa55a2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8de05ce1202641d3a2c68e24d2cd93b1",
+        "location": [
+          "43.642727907356026",
+          "-79.45876901968714"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0c4cb6d25c704980ae566b59b544c96f",
+        "title": "American Redstart, 2021-08-29"
+      }
+    },
+    "eb721524f2a1454ca0ff063ac0775425": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7a4800db5c934458b7db3d48ca6e17c6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "df87d06364694f9c90e651bf0eece943": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_eb721524f2a1454ca0ff063ac0775425",
+        "style": "IPY_MODEL_7a4800db5c934458b7db3d48ca6e17c6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b3dc8337b7b04326a0eee9e9ef52a7f1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2677c0dfd146467ebaa3bdf2203e8f5f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b3dc8337b7b04326a0eee9e9ef52a7f1",
+        "location": [
+          "43.6437040241084",
+          "-79.45919986773048"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_df87d06364694f9c90e651bf0eece943",
+        "title": "American Redstart, 2021-09-04"
+      }
+    },
+    "a0b41fb574dd4935a27246f8d57870ca": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cfecd3834e684957aaa84dc9b30d1f54": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4e8f36f4ef304b0ca76bddf3a13218ea": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_a0b41fb574dd4935a27246f8d57870ca",
+        "style": "IPY_MODEL_cfecd3834e684957aaa84dc9b30d1f54",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "81a1ab4753f541e2830f0318dc4575f3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f00dc167b37a47e3b9e17340c91d9ec8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_81a1ab4753f541e2830f0318dc4575f3",
+        "location": [
+          "43.64377931514336",
+          "-79.4593896776576"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4e8f36f4ef304b0ca76bddf3a13218ea",
+        "title": "American Redstart, 2021-08-23"
+      }
+    },
+    "c693c91c240449098769a3f471cca09d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b104d30bf834409c98f3e8ebd9ed0316": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "162dbc2e0a3547a58ab4dfbcb5048173": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_c693c91c240449098769a3f471cca09d",
+        "style": "IPY_MODEL_b104d30bf834409c98f3e8ebd9ed0316",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1f5476be62434d85b973cc98d34dae80": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0286cc7813c74781a87f23914c0d79f7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1f5476be62434d85b973cc98d34dae80",
+        "location": [
+          "43.651263345455085",
+          "-79.4621125287501"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_162dbc2e0a3547a58ab4dfbcb5048173",
+        "title": "American Redstart, 2021-08-19"
+      }
+    },
+    "1f7ce693092647f7b0130f4594705886": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "07b8ed696f9745198972c6d075512a59": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "648d4c21da3e49d6a4ba435028eb1c02": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_1f7ce693092647f7b0130f4594705886",
+        "style": "IPY_MODEL_07b8ed696f9745198972c6d075512a59",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a43cff8a1df74a0fb8aa8386dee756ef": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cf7848f7027c4d2bb826b372a2f3a249": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a43cff8a1df74a0fb8aa8386dee756ef",
+        "location": [
+          "43.64718974565347",
+          "-79.46963676964265"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_648d4c21da3e49d6a4ba435028eb1c02",
+        "title": "American Redstart, 2021-08-21"
+      }
+    },
+    "229078abce614ba1adba15958d4a5f22": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_a647ce85744d4bbc9327acb7195e3281",
+          "IPY_MODEL_6fbb1e4959c848fb8070c950b404ab7b",
+          "IPY_MODEL_e55ac3fb1bfe452c8846ecbeb377049d",
+          "IPY_MODEL_00af7c061bcd461a9e58808ee8526634",
+          "IPY_MODEL_a1250bf40d6c425697319611c9405215",
+          "IPY_MODEL_c9fedee75a344bccad0da053618a7b6e",
+          "IPY_MODEL_59ab2a8f938c4a83b6f9ac7b730a14b4",
+          "IPY_MODEL_7de6139672ca44f9b18286032f37ba10",
+          "IPY_MODEL_b7148a03bfee45918351cc959d8b59eb",
+          "IPY_MODEL_e2439695a8da4c5ea21cf4b9dfe13492",
+          "IPY_MODEL_c7badaabcae84b76aac13b5d7e4f9461",
+          "IPY_MODEL_9e7ecc8a284e441f9fb9760490d6b9bc",
+          "IPY_MODEL_c75e262fa1e140489fd1f57be5208814",
+          "IPY_MODEL_e7eb455a334b49ed9395302ff1b77f43",
+          "IPY_MODEL_2599f37dae4b470681ad9d1d629dac96",
+          "IPY_MODEL_829c325e54d54d3c9e9720ec6b6b5347",
+          "IPY_MODEL_68068c284ca94dc9a8184282cc3124bb",
+          "IPY_MODEL_4ed7c93777fc4e0f9e3f50923a29c852",
+          "IPY_MODEL_2bcc6664ac0841e7a6fef1797fa93937",
+          "IPY_MODEL_6dcbeb5eac0542ee9fdff86aaced1fa4",
+          "IPY_MODEL_4be0c5ea344f4b00907ca9ad8eabcab0",
+          "IPY_MODEL_9d1f4530555e4e32a320c0f360009a76",
+          "IPY_MODEL_eb856a3a32fb404e849ff6595f9e65fe",
+          "IPY_MODEL_7e4010e44c824868bb7d25e37bf20465",
+          "IPY_MODEL_6e5a8ef0b9c4403db4b3bfabfa8a205a",
+          "IPY_MODEL_3b5f7cb6917c4d0b9095a16f7210b5f8",
+          "IPY_MODEL_dc7022b38ae04b25ade7b7c1d8c36f9f",
+          "IPY_MODEL_264dfab37c2b42eba9946bfa04d43f3a",
+          "IPY_MODEL_7984c9e52c8b4a9dae1025ef27515d7b",
+          "IPY_MODEL_2bfb85ad7abe41e68ed812c91893ba93",
+          "IPY_MODEL_d1f5c5c269a943c9914cad9ba02cdc9a",
+          "IPY_MODEL_17a07f03baba4cbf814e2837c9a16275",
+          "IPY_MODEL_b5b3e73d5f90441c908fc77932f0ca83",
+          "IPY_MODEL_8404388a7c9f4dbd960d245b1b0735a1",
+          "IPY_MODEL_c934185ad0f242b5bd8be49201fa55a2",
+          "IPY_MODEL_2677c0dfd146467ebaa3bdf2203e8f5f",
+          "IPY_MODEL_f00dc167b37a47e3b9e17340c91d9ec8",
+          "IPY_MODEL_0286cc7813c74781a87f23914c0d79f7",
+          "IPY_MODEL_cf7848f7027c4d2bb826b372a2f3a249"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "293dedb2e2a54b979bb94240c4bab228"}
+</script>
+
+</body>
+</html>

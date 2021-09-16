@@ -1,0 +1,4532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Red-bellied Woodpecker Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "14072d7a12144c3a941f7d5d139b5eaf": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "ea61d738ae754e72b6a80fb6b0fc8ed8": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "a160ff601ab54993b7f6d9d221b7fed4": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "d090609a35f24ca5b91f49a0fc0ca0f1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "143fee0e484f41d698a5ed351a283a57": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "c6b02f384ccf4188af6fa89c20791124": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_ffade64532df43c897d1247ccba8218b",
+          "IPY_MODEL_e0fa9f18b46f4035917e585725e51e45",
+          "IPY_MODEL_146212a0fb634a92b7f5a79164b8e41c",
+          "IPY_MODEL_a7d39b394a4c419a9a6338abd1e0f176"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_14072d7a12144c3a941f7d5d139b5eaf",
+        "dragging_style": "IPY_MODEL_ea61d738ae754e72b6a80fb6b0fc8ed8",
+        "layers": [
+          "IPY_MODEL_a160ff601ab54993b7f6d9d221b7fed4",
+          "IPY_MODEL_bb79c3a58e2a46f09427150d84992e5b",
+          "IPY_MODEL_643e3416fc934bb8ae8ac58bd956f2c6",
+          "IPY_MODEL_4e3182a657194ffe83401cced477a051",
+          "IPY_MODEL_ee23ecdc995949f0b0f3d08c9269a98d",
+          "IPY_MODEL_c1c56bcd9fe248e1bf4ada48588035a0"
+        ],
+        "layout": "IPY_MODEL_d090609a35f24ca5b91f49a0fc0ca0f1",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_143fee0e484f41d698a5ed351a283a57",
+        "zoom": 14.0
+      }
+    },
+    "ffade64532df43c897d1247ccba8218b": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "e0fa9f18b46f4035917e585725e51e45": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "146212a0fb634a92b7f5a79164b8e41c": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "a7d39b394a4c419a9a6338abd1e0f176": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "bb79c3a58e2a46f09427150d84992e5b": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "643e3416fc934bb8ae8ac58bd956f2c6": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "4e3182a657194ffe83401cced477a051": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.65304645836633",
+            "-79.46264136849823"
+          ],
+          [
+            "43.6519655187905",
+            "-79.46547461667879"
+          ],
+          [
+            "43.64479240232289",
+            "-79.45999722532176"
+          ],
+          [
+            "43.64454679586321",
+            "-79.46816885777271"
+          ],
+          [
+            "43.64816311805289",
+            "-79.47005855467201"
+          ],
+          [
+            "43.64804635817196",
+            "-79.46996234091559"
+          ],
+          [
+            "43.644697563893914",
+            "-79.45995848267225"
+          ],
+          [
+            "43.64405861866794",
+            "-79.46052223656186"
+          ],
+          [
+            "43.646523380247366",
+            "-79.46177170122587"
+          ],
+          [
+            "43.644013042807366",
+            "-79.45970310546267"
+          ],
+          [
+            "43.644080540119894",
+            "-79.46057970766878"
+          ],
+          [
+            "43.65052148449226",
+            "-79.46546690227075"
+          ],
+          [
+            "43.650640783109715",
+            "-79.46570970091494"
+          ],
+          [
+            "43.6466059885821",
+            "-79.46170841587804"
+          ],
+          [
+            "43.64245816488029",
+            "-79.46930477969707"
+          ],
+          [
+            "43.644432574718806",
+            "-79.46821922890405"
+          ],
+          [
+            "43.6482166523145",
+            "-79.47012893999543"
+          ],
+          [
+            "43.644547921835056",
+            "-79.45977606225544"
+          ],
+          [
+            "43.64393781888801",
+            "-79.45989069725306"
+          ],
+          [
+            "43.642647841738246",
+            "-79.46938226499609"
+          ],
+          [
+            "43.64417537854887",
+            "-79.4606184503183"
+          ],
+          [
+            "43.644389857786756",
+            "-79.45971149117294"
+          ],
+          [
+            "43.6449601577289",
+            "-79.46001723951385"
+          ],
+          [
+            "43.64912164628909",
+            "-79.46770897517781"
+          ],
+          [
+            "43.644080540119894",
+            "-79.46057970766878"
+          ],
+          [
+            "43.65196966908674",
+            "-79.46450599357138"
+          ],
+          [
+            "43.651962980053966",
+            "-79.46532803179103"
+          ],
+          [
+            "43.651953288696255",
+            "-79.46537258868145"
+          ],
+          [
+            "43.6520855745125",
+            "-79.46091841762048"
+          ],
+          [
+            "43.65152396955874",
+            "-79.46235723110479"
+          ],
+          [
+            "43.65161892782856",
+            "-79.46221600528744"
+          ],
+          [
+            "43.65151779716756",
+            "-79.46199277133866"
+          ],
+          [
+            "43.640294015682876",
+            "-79.45643931072597"
+          ],
+          [
+            "43.65156724857646",
+            "-79.46214915724408"
+          ],
+          [
+            "43.64588907090549",
+            "-79.46864441953016"
+          ],
+          [
+            "43.65163623943565",
+            "-79.46213277574317"
+          ],
+          [
+            "43.64019931298223",
+            "-79.45626399986712"
+          ],
+          [
+            "43.64507106735609",
+            "-79.47034792411327"
+          ],
+          [
+            "43.6457406982149",
+            "-79.46853529155723"
+          ],
+          [
+            "43.65151111363801",
+            "-79.4622613849249"
+          ],
+          [
+            "43.64434624667706",
+            "-79.45991199717982"
+          ],
+          [
+            "43.651640439552835",
+            "-79.46227023669519"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "ee23ecdc995949f0b0f3d08c9269a98d": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64383729457123",
+            "-79.45966271712899"
+          ],
+          [
+            "43.64406985120565",
+            "-79.45996353332409"
+          ],
+          [
+            "43.6439924601121",
+            "-79.45970499292096"
+          ],
+          [
+            "43.644074306892016",
+            "-79.45978445759992"
+          ],
+          [
+            "43.64384805043336",
+            "-79.45968983283286"
+          ],
+          [
+            "43.64379414333809",
+            "-79.45971252265159"
+          ],
+          [
+            "43.643845950374775",
+            "-79.45962110235685"
+          ],
+          [
+            "43.6440268277571",
+            "-79.4598550705086"
+          ],
+          [
+            "43.64384582259018",
+            "-79.45977937069495"
+          ],
+          [
+            "43.64398800442574",
+            "-79.45988406864512"
+          ],
+          [
+            "43.643830738826274",
+            "-79.45977306237714"
+          ],
+          [
+            "43.64382653870909",
+            "-79.45963560142512"
+          ],
+          [
+            "43.6440785070092",
+            "-79.45992191855196"
+          ],
+          [
+            "43.643841622473",
+            "-79.45964190974291"
+          ],
+          [
+            "43.64402695554169",
+            "-79.4596968021705"
+          ],
+          [
+            "43.64403548356065",
+            "-79.45981345573645"
+          ],
+          [
+            "43.64370364075463",
+            "-79.45967467274477"
+          ],
+          [
+            "43.64395783689792",
+            "-79.45987145200952"
+          ],
+          [
+            "43.64390615764582",
+            "-79.45980460396616"
+          ],
+          [
+            "43.643940908644595",
+            "-79.4594798765395"
+          ],
+          [
+            "43.64419052131693",
+            "-79.46001399986652"
+          ],
+          [
+            "43.64386090635409",
+            "-79.45978567901275"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "da55663ada2648339a7b3d2cbe630e9b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "31bb3d8db26b4a47950d9f852436883d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c5144ad1dc4e452988019553c710e2a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_da55663ada2648339a7b3d2cbe630e9b",
+        "style": "IPY_MODEL_31bb3d8db26b4a47950d9f852436883d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bd0ab4fd4f4b4d5d995708976726dec2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5d3cc8e793ad480c887675c30ce94155": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bd0ab4fd4f4b4d5d995708976726dec2",
+        "location": [
+          "43.65304645836633",
+          "-79.46264136849823"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c5144ad1dc4e452988019553c710e2a6",
+        "title": "Red-bellied Woodpecker, 2021-07-15"
+      }
+    },
+    "485c11a449b241198b6324fb641368d2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e2a08830102c4ca5919459453fa22212": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "dc5187b46996404ea1984ba55dedbf45": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_485c11a449b241198b6324fb641368d2",
+        "style": "IPY_MODEL_e2a08830102c4ca5919459453fa22212",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "70d310fb28c448d0ad3232ce808f6da6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5bf31d23349f4162a4ac14f9624ef95f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_70d310fb28c448d0ad3232ce808f6da6",
+        "location": [
+          "43.6519655187905",
+          "-79.46547461667879"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_dc5187b46996404ea1984ba55dedbf45",
+        "title": "Red-bellied Woodpecker, 2021-07-18"
+      }
+    },
+    "d6d39c5daac54f0b8e86c67985b3d052": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ac71055c553b41e799230460487b817f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "19adeb76fdcc491e989913ac350a90f5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_d6d39c5daac54f0b8e86c67985b3d052",
+        "style": "IPY_MODEL_ac71055c553b41e799230460487b817f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "693a3502b7a347099294edce89a4ca70": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7c38458c50474f67ae9b1ad7b781e500": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_693a3502b7a347099294edce89a4ca70",
+        "location": [
+          "43.64479240232289",
+          "-79.45999722532176"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_19adeb76fdcc491e989913ac350a90f5",
+        "title": "Red-bellied Woodpecker, 2021-07-21"
+      }
+    },
+    "71add60289224fc295ce0b882f6b1650": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "03a279f0d84a46ffadceee81d5ce97d1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e43947f85da84af6a96322c78bf55d97": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_71add60289224fc295ce0b882f6b1650",
+        "style": "IPY_MODEL_03a279f0d84a46ffadceee81d5ce97d1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0e128789f846431aab3b0c506bc535e4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a508b93e398e4c3c8719686c3b563a84": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0e128789f846431aab3b0c506bc535e4",
+        "location": [
+          "43.64454679586321",
+          "-79.46816885777271"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e43947f85da84af6a96322c78bf55d97",
+        "title": "Red-bellied Woodpecker, 2021-07-12"
+      }
+    },
+    "9180f2304a6547a39a3e6572f5a0c8cd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b83ffe9a0d3d4976821f5cffa9d1e286": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c8f62a2f877c4184a7e1daff79f043a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_9180f2304a6547a39a3e6572f5a0c8cd",
+        "style": "IPY_MODEL_b83ffe9a0d3d4976821f5cffa9d1e286",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3e6d472ea21f4e6488a1eb3a6bf43414": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c245b9c7ba354614b3a471369e0acfe7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3e6d472ea21f4e6488a1eb3a6bf43414",
+        "location": [
+          "43.64816311805289",
+          "-79.47005855467201"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c8f62a2f877c4184a7e1daff79f043a5",
+        "title": "Red-bellied Woodpecker, 2021-07-15"
+      }
+    },
+    "5920570069ff4caaa60913e7a653bf0e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d12afcc1238b4ce1a7b11b0f4525c3a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "37078cd931a74a7e912fc1789bf9fb7d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_5920570069ff4caaa60913e7a653bf0e",
+        "style": "IPY_MODEL_d12afcc1238b4ce1a7b11b0f4525c3a9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0c4d217847f24127883f0ef5f356d9ea": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "dcfec06939ed4df79b123adf98cf7c18": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0c4d217847f24127883f0ef5f356d9ea",
+        "location": [
+          "43.64804635817196",
+          "-79.46996234091559"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_37078cd931a74a7e912fc1789bf9fb7d",
+        "title": "Red-bellied Woodpecker, 2021-07-15"
+      }
+    },
+    "cd0e233ca2fb4ae08b908b1ee3a12990": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "97db9baf84134a46b7157ac2000b3ad8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3eaa540a92c7467c95ee5735d76fbbe5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_cd0e233ca2fb4ae08b908b1ee3a12990",
+        "style": "IPY_MODEL_97db9baf84134a46b7157ac2000b3ad8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d538db8bbf2e4ffcb9105dd3a426ca94": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b7b6879f5b42490f8bc8c4076bdcc94b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d538db8bbf2e4ffcb9105dd3a426ca94",
+        "location": [
+          "43.644697563893914",
+          "-79.45995848267225"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3eaa540a92c7467c95ee5735d76fbbe5",
+        "title": "Red-bellied Woodpecker, 2021-07-21"
+      }
+    },
+    "f08a84c757d14f479e20c7eb404bcbc1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d1952d976c924bd3b72ae501b07f25ab": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d3f649e952dd4664995320019da34771": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_f08a84c757d14f479e20c7eb404bcbc1",
+        "style": "IPY_MODEL_d1952d976c924bd3b72ae501b07f25ab",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9eebb62e30494cae909a5800a1766701": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "068cc35e7cf64e35b10a974320428fe5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9eebb62e30494cae909a5800a1766701",
+        "location": [
+          "43.64405861866794",
+          "-79.46052223656186"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d3f649e952dd4664995320019da34771",
+        "title": "Red-bellied Woodpecker, 2021-07-08"
+      }
+    },
+    "1544b0bbdf784eeab20472524f631c30": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "faa432de0327463c8481afce63faf57d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f71d8dc47a9b44cf91c82d71890c7c1e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_1544b0bbdf784eeab20472524f631c30",
+        "style": "IPY_MODEL_faa432de0327463c8481afce63faf57d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "afda1496a44443ca84a1e35152c7c612": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "72813c0f43124adc804b82a2e0562015": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_afda1496a44443ca84a1e35152c7c612",
+        "location": [
+          "43.646523380247366",
+          "-79.46177170122587"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f71d8dc47a9b44cf91c82d71890c7c1e",
+        "title": "Red-bellied Woodpecker, 2021-07-09"
+      }
+    },
+    "cb730159b745412d8e3c81f83564eedc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9e703a79dc414077843722d74de14e0e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cc7bcf7210fc446390bd43bd55fe200e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_cb730159b745412d8e3c81f83564eedc",
+        "style": "IPY_MODEL_9e703a79dc414077843722d74de14e0e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c0c29b158a6a4ad3a428f3aa65f86ecf": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "82ccb014eb23441eb87c23e1d8d67dc5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c0c29b158a6a4ad3a428f3aa65f86ecf",
+        "location": [
+          "43.644013042807366",
+          "-79.45970310546267"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cc7bcf7210fc446390bd43bd55fe200e",
+        "title": "Red-bellied Woodpecker, 2021-07-04"
+      }
+    },
+    "acb0aeb65abe429098708c1214e651aa": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "54eeefe413124c52a7d63e78ff280e1a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "093f83c636ad49419ebbc683300e3a56": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_acb0aeb65abe429098708c1214e651aa",
+        "style": "IPY_MODEL_54eeefe413124c52a7d63e78ff280e1a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d1ef660d2fcf4935a3cc08cf2653326a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b7a55789109c42d8bb90154ff5890526": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d1ef660d2fcf4935a3cc08cf2653326a",
+        "location": [
+          "43.644080540119894",
+          "-79.46057970766878"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_093f83c636ad49419ebbc683300e3a56",
+        "title": "Red-bellied Woodpecker, 2021-07-08"
+      }
+    },
+    "c4f8ab1f637e42d6aa2516a9e731636d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cfb4762efd60425bb5442f2da5e93b75": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "26fe4295eda741b08e2711978796e963": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_c4f8ab1f637e42d6aa2516a9e731636d",
+        "style": "IPY_MODEL_cfb4762efd60425bb5442f2da5e93b75",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a1af352ec7a4429a9edca53fcbf2a6d5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "adaa1fcd135446f5999933e31171b914": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a1af352ec7a4429a9edca53fcbf2a6d5",
+        "location": [
+          "43.65052148449226",
+          "-79.46546690227075"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_26fe4295eda741b08e2711978796e963",
+        "title": "Red-bellied Woodpecker, 2021-07-24"
+      }
+    },
+    "4555f68c2d26489f9bda6163903d0588": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "81cf291ee843434bbd6e52c83d4043a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4322e408d8ad48bb8ec2d2ec799c6f10": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_4555f68c2d26489f9bda6163903d0588",
+        "style": "IPY_MODEL_81cf291ee843434bbd6e52c83d4043a9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "26534d8bd33b452ba3d2f6e080be229d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "505b35d4a0284b8e92e0b18ccbd3c409": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_26534d8bd33b452ba3d2f6e080be229d",
+        "location": [
+          "43.650640783109715",
+          "-79.46570970091494"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4322e408d8ad48bb8ec2d2ec799c6f10",
+        "title": "Red-bellied Woodpecker, 2021-07-24"
+      }
+    },
+    "e554d070b19d4f51999c26bf59b9a720": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5cc76718e6264907aa9801418ce02da4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5792af33083e4d6cb4d79a0439acab78": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_e554d070b19d4f51999c26bf59b9a720",
+        "style": "IPY_MODEL_5cc76718e6264907aa9801418ce02da4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0aab70cc2729425a9a41018a1d219eb5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a71f243912f24f0f83918474391d1aa7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0aab70cc2729425a9a41018a1d219eb5",
+        "location": [
+          "43.6466059885821",
+          "-79.46170841587804"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5792af33083e4d6cb4d79a0439acab78",
+        "title": "Red-bellied Woodpecker, 2021-07-09"
+      }
+    },
+    "d3f22bf310c64d2fbde7d3fb6a0b6e40": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2452d74e41fc47f59d16237c00133f09": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2793b8197ac14fe5a1a73754698d000f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_d3f22bf310c64d2fbde7d3fb6a0b6e40",
+        "style": "IPY_MODEL_2452d74e41fc47f59d16237c00133f09",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4a6395a290e4494f8c372857efad52ac": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7469431688c143e8a70297218237e68b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4a6395a290e4494f8c372857efad52ac",
+        "location": [
+          "43.64245816488029",
+          "-79.46930477969707"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2793b8197ac14fe5a1a73754698d000f",
+        "title": "Red-bellied Woodpecker, 2021-07-24"
+      }
+    },
+    "252d3e2a5fa947e68cd9f25677943311": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4d09e16dcc9646c8a7bb8231210349bb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cd7c0f1ad81b450e845666864ce29c0e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_252d3e2a5fa947e68cd9f25677943311",
+        "style": "IPY_MODEL_4d09e16dcc9646c8a7bb8231210349bb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "96b8d735d1ba49269a2a2ed4d37c8013": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5100936b00a3421cae60a963ae0235fc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_96b8d735d1ba49269a2a2ed4d37c8013",
+        "location": [
+          "43.644432574718806",
+          "-79.46821922890405"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cd7c0f1ad81b450e845666864ce29c0e",
+        "title": "Red-bellied Woodpecker, 2021-07-12"
+      }
+    },
+    "0e686f0e3db64b3683d19c420750c41c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b31682d7aec7474ca6d7048c3342aae3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4a60cf9abed34caf81595579e9103e5b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_0e686f0e3db64b3683d19c420750c41c",
+        "style": "IPY_MODEL_b31682d7aec7474ca6d7048c3342aae3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a994b78e50214f5598128d59046ae24a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fdb9e9f35f854c63af802e3ab25d1e20": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a994b78e50214f5598128d59046ae24a",
+        "location": [
+          "43.6482166523145",
+          "-79.47012893999543"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4a60cf9abed34caf81595579e9103e5b",
+        "title": "Red-bellied Woodpecker, 2021-07-15"
+      }
+    },
+    "0c1a2a20d5c343d59ff934e39a95fc53": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "378b4d9826124c288d7ccd01ed2ee222": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "893c99b8b022487f903237ebe000d171": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_0c1a2a20d5c343d59ff934e39a95fc53",
+        "style": "IPY_MODEL_378b4d9826124c288d7ccd01ed2ee222",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "352abae2e6874a6dac4b418a93552a62": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c8f2ec14aa5d4a84b04e2ce1e42ba8be": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_352abae2e6874a6dac4b418a93552a62",
+        "location": [
+          "43.644547921835056",
+          "-79.45977606225544"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_893c99b8b022487f903237ebe000d171",
+        "title": "Red-bellied Woodpecker, 2021-07-04"
+      }
+    },
+    "7d77ceea5d6744c597546d880f46e9af": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f58dd2387cee4e42b69113cadbc6312e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3fe311aa92b34707bf0221a9fc78c401": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_7d77ceea5d6744c597546d880f46e9af",
+        "style": "IPY_MODEL_f58dd2387cee4e42b69113cadbc6312e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "78803689eedf460d8e85a7e8517fcbe2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8f2ebbe5213444d39242578ba37ad507": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_78803689eedf460d8e85a7e8517fcbe2",
+        "location": [
+          "43.64393781888801",
+          "-79.45989069725306"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3fe311aa92b34707bf0221a9fc78c401",
+        "title": "Red-bellied Woodpecker, 2021-07-09"
+      }
+    },
+    "04c78511ba5b415f8260dafaab70acec": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "25f8040b40fe44499b3dc96f3fa79310": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0f72bbad1b8c4ad095e0090824a45e31": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_04c78511ba5b415f8260dafaab70acec",
+        "style": "IPY_MODEL_25f8040b40fe44499b3dc96f3fa79310",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c92130e8d5ab4279899d266fe9de0b72": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "65a29a7bb30348b18a8f1d62ecfa5b14": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c92130e8d5ab4279899d266fe9de0b72",
+        "location": [
+          "43.642647841738246",
+          "-79.46938226499609"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0f72bbad1b8c4ad095e0090824a45e31",
+        "title": "Red-bellied Woodpecker, 2021-07-24"
+      }
+    },
+    "c0cbd2865f124034bbe65bf7d8b57332": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "47324cb4b0904794a124b3d8f8038650": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a051d6b6b1724aa3bc1f5c25b23b28a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_c0cbd2865f124034bbe65bf7d8b57332",
+        "style": "IPY_MODEL_47324cb4b0904794a124b3d8f8038650",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c147e4bf48ea417d8c680794efff19b1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ceba8b1602f849b8b6c9c3b2c23e3ea4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c147e4bf48ea417d8c680794efff19b1",
+        "location": [
+          "43.64417537854887",
+          "-79.4606184503183"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a051d6b6b1724aa3bc1f5c25b23b28a6",
+        "title": "Red-bellied Woodpecker, 2021-07-08"
+      }
+    },
+    "c54f2a76017f4db5a26f4f45cdc71fb1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e64a4ba760b14e0ead72b340e56488d2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "983e92e374434161bb381c988accaa90": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_c54f2a76017f4db5a26f4f45cdc71fb1",
+        "style": "IPY_MODEL_e64a4ba760b14e0ead72b340e56488d2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c5416a47927a44118251314406208448": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b792749012334ef18d7f1f12dc2a2a3d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c5416a47927a44118251314406208448",
+        "location": [
+          "43.644389857786756",
+          "-79.45971149117294"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_983e92e374434161bb381c988accaa90",
+        "title": "Red-bellied Woodpecker, 2021-07-04"
+      }
+    },
+    "218f4463e8f74c788ae20d2dab0a7b1c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7e11eed2e8bf49f1a4e928f64866d10e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9806a8fc6ed4458686395067f6f905f8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_218f4463e8f74c788ae20d2dab0a7b1c",
+        "style": "IPY_MODEL_7e11eed2e8bf49f1a4e928f64866d10e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a09fc27499d740a2acee1be27e248aab": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "901d3330799140c88628fc712bdcea2b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a09fc27499d740a2acee1be27e248aab",
+        "location": [
+          "43.6449601577289",
+          "-79.46001723951385"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9806a8fc6ed4458686395067f6f905f8",
+        "title": "Red-bellied Woodpecker, 2021-07-21"
+      }
+    },
+    "0e4b3fb8c83b47e499f1d61e0b766349": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7255931b14dc4a8e8516ae1cc10e1984": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b39730dbb8f240ac8404cc5a1f655ccd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_0e4b3fb8c83b47e499f1d61e0b766349",
+        "style": "IPY_MODEL_7255931b14dc4a8e8516ae1cc10e1984",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d9628cccec0d4fcdaa475dbc010e9e49": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "808013961b9d49e5a8fe9878dd0472c5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d9628cccec0d4fcdaa475dbc010e9e49",
+        "location": [
+          "43.64912164628909",
+          "-79.46770897517781"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b39730dbb8f240ac8404cc5a1f655ccd",
+        "title": "Red-bellied Woodpecker, 2021-07-12"
+      }
+    },
+    "23623788560d4684ac3a7c175da8884f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c2576c0808d94d7fa6792a80fc126245": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d06231056ecf4a2883c8af5c21d73398": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_23623788560d4684ac3a7c175da8884f",
+        "style": "IPY_MODEL_c2576c0808d94d7fa6792a80fc126245",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a053d9f99b594cfb84155169ec893c29": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e7fa0d8a35854c8999552bac06df0747": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a053d9f99b594cfb84155169ec893c29",
+        "location": [
+          "43.644080540119894",
+          "-79.46057970766878"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d06231056ecf4a2883c8af5c21d73398",
+        "title": "Red-bellied Woodpecker, 2021-07-08"
+      }
+    },
+    "d7baf10b3d6f4475a457f0bd9d2e2146": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8079c920b8c0401280d52025d583553e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6840825f5792403f84a431432d4577a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_d7baf10b3d6f4475a457f0bd9d2e2146",
+        "style": "IPY_MODEL_8079c920b8c0401280d52025d583553e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fd99bef619884d9f848ce5b80cb3d0de": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "eb9e815022a34194a0334983fd7f9df8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fd99bef619884d9f848ce5b80cb3d0de",
+        "location": [
+          "43.65196966908674",
+          "-79.46450599357138"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6840825f5792403f84a431432d4577a5",
+        "title": "Red-bellied Woodpecker, 2021-07-18"
+      }
+    },
+    "a97b58aa38db44979ab42ae5dfdecb16": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "25737ce73796479bb3db595d96b4eb62": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0c1c666785cc4a5292f94544938034ae": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_a97b58aa38db44979ab42ae5dfdecb16",
+        "style": "IPY_MODEL_25737ce73796479bb3db595d96b4eb62",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f5681ddd6eba468a89e1c52d1cf03d46": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "908f17498b2b4fe88b6967d6946d19ae": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f5681ddd6eba468a89e1c52d1cf03d46",
+        "location": [
+          "43.651962980053966",
+          "-79.46532803179103"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0c1c666785cc4a5292f94544938034ae",
+        "title": "Red-bellied Woodpecker, 2021-07-18"
+      }
+    },
+    "9f2f203fb7ad419ab48e3cba8da42c71": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "08c63bd5395642a296fbaf4ae5a1d946": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6545f75f372845c593781eedf60d5cb8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_9f2f203fb7ad419ab48e3cba8da42c71",
+        "style": "IPY_MODEL_08c63bd5395642a296fbaf4ae5a1d946",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "28b2eed4210d4cf08b4cd9e1efab7653": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "07b3cb131d854e62985e03140eae801a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_28b2eed4210d4cf08b4cd9e1efab7653",
+        "location": [
+          "43.651953288696255",
+          "-79.46537258868145"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6545f75f372845c593781eedf60d5cb8",
+        "title": "Red-bellied Woodpecker, 2021-07-18"
+      }
+    },
+    "7ccafce16f17469695e5ae9c706f0fe7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9b270ec7f1f44200872b0c07fa154357": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a83054bb1b543868c59380f651e0adb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_7ccafce16f17469695e5ae9c706f0fe7",
+        "style": "IPY_MODEL_9b270ec7f1f44200872b0c07fa154357",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3df970fc503445d9b339fcb3128faa07": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "792f8a0b256646d5b36786285b63d3cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3df970fc503445d9b339fcb3128faa07",
+        "location": [
+          "43.64383729457123",
+          "-79.45966271712899"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a83054bb1b543868c59380f651e0adb",
+        "title": "Red-bellied Woodpecker, 2021-09-04"
+      }
+    },
+    "2a1174afb15044a58e3742815b4a15f5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6254959d672c457e96c19f69609fe863": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "246d6449fb86493d8f5eefb4b3e3c5aa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_2a1174afb15044a58e3742815b4a15f5",
+        "style": "IPY_MODEL_6254959d672c457e96c19f69609fe863",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f140ad608a0340cbbe3bd151631e9c70": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "808ff81221cd4d9eaf9684f75a0c25c7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f140ad608a0340cbbe3bd151631e9c70",
+        "location": [
+          "43.6520855745125",
+          "-79.46091841762048"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_246d6449fb86493d8f5eefb4b3e3c5aa",
+        "title": "Red-bellied Woodpecker, 2021-08-13"
+      }
+    },
+    "ff242d902a98474fa5ca6280b98a49bf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2ef7aa747bcc45f2b37669ce5e85d3c0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "92518e4a1d3e46278e324a6cc78f5c32": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_ff242d902a98474fa5ca6280b98a49bf",
+        "style": "IPY_MODEL_2ef7aa747bcc45f2b37669ce5e85d3c0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ee75f1b1231c435d8e73462ab4fb3e9d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0024b9f3559e44fba2b02d6dd7214ea9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ee75f1b1231c435d8e73462ab4fb3e9d",
+        "location": [
+          "43.64406985120565",
+          "-79.45996353332409"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_92518e4a1d3e46278e324a6cc78f5c32",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "946be2d3afa34bd0a489a8217d4cf250": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "dd335a047ec041de89624a7eef4d9e3a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cea691c28cb446e8af87050058275441": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_946be2d3afa34bd0a489a8217d4cf250",
+        "style": "IPY_MODEL_dd335a047ec041de89624a7eef4d9e3a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9df5faa43e6d41c6b65aaf62ec9ed813": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "eed1df188a6d462991384b4f455407c9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9df5faa43e6d41c6b65aaf62ec9ed813",
+        "location": [
+          "43.6439924601121",
+          "-79.45970499292096"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cea691c28cb446e8af87050058275441",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "2fe3a3093333410d985889cdc11f4e22": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0cb03e9f98ab4513b6246ba020312aa3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "25ee74f1f657426288d78301e7e305c7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_2fe3a3093333410d985889cdc11f4e22",
+        "style": "IPY_MODEL_0cb03e9f98ab4513b6246ba020312aa3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a6e6c1f7d4c74238a9a9111b355d9184": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0eb3b1021bae49a9a31f1d28bbd80ba0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a6e6c1f7d4c74238a9a9111b355d9184",
+        "location": [
+          "43.644074306892016",
+          "-79.45978445759992"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_25ee74f1f657426288d78301e7e305c7",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "2547e707fd7746bca8def25d66ec37df": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2038d3c641e54c9e9bb0bb2c7bcc8771": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1f0e861ac02b424090de5cecafa78a1b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_2547e707fd7746bca8def25d66ec37df",
+        "style": "IPY_MODEL_2038d3c641e54c9e9bb0bb2c7bcc8771",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "29b9186e67724458839d9fdf2d12936d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b16d131a8de24ea3afdf6c282b63ae62": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_29b9186e67724458839d9fdf2d12936d",
+        "location": [
+          "43.64384805043336",
+          "-79.45968983283286"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1f0e861ac02b424090de5cecafa78a1b",
+        "title": "Red-bellied Woodpecker, 2021-08-28"
+      }
+    },
+    "6445dcfabf5d49ab9fb772cbed79a4c7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4b745b4176644eb1bcf44c5056860479": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5f0b8bddb33c45f0a2f6021f4b02a877": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_6445dcfabf5d49ab9fb772cbed79a4c7",
+        "style": "IPY_MODEL_4b745b4176644eb1bcf44c5056860479",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7c51ea5103ea4f9b87e969302a0046c9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0fef928a8ada498dbbc75c3400e11743": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7c51ea5103ea4f9b87e969302a0046c9",
+        "location": [
+          "43.65152396955874",
+          "-79.46235723110479"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5f0b8bddb33c45f0a2f6021f4b02a877",
+        "title": "Red-bellied Woodpecker, 2021-08-14"
+      }
+    },
+    "d60591f5502c45fbb656ec863701931b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "246a4c73855b4b3c9074175498accc2a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6b582cd115fc4e43866d57d68163eeef": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_d60591f5502c45fbb656ec863701931b",
+        "style": "IPY_MODEL_246a4c73855b4b3c9074175498accc2a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8b6465d2d2574114a6f4ff25a7bf57cb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5a6e529adbfb487b94cacb8ea749452b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8b6465d2d2574114a6f4ff25a7bf57cb",
+        "location": [
+          "43.64379414333809",
+          "-79.45971252265159"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6b582cd115fc4e43866d57d68163eeef",
+        "title": "Red-bellied Woodpecker, 2021-08-29"
+      }
+    },
+    "d3d676ed6c0148d98356b7e71daaac4b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1ddd3f20248744a882958bc893420f61": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "dd3027431bec400d9c9a7afc58cf45a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_d3d676ed6c0148d98356b7e71daaac4b",
+        "style": "IPY_MODEL_1ddd3f20248744a882958bc893420f61",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "57155c92f5814f3eb42dbf54ec5e4b3f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f5bc8f23205c4e3f8d939e6896658b6a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_57155c92f5814f3eb42dbf54ec5e4b3f",
+        "location": [
+          "43.643845950374775",
+          "-79.45962110235685"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_dd3027431bec400d9c9a7afc58cf45a5",
+        "title": "Red-bellied Woodpecker, 2021-09-04"
+      }
+    },
+    "3eaaaa66af934ef28c05a400c7334e6f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b5c60033011948ef92737094df01f56e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e2fbb0c0b01a4d3d9b5f4383daf698bd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_3eaaaa66af934ef28c05a400c7334e6f",
+        "style": "IPY_MODEL_b5c60033011948ef92737094df01f56e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d3b883045eb2426da6a9abac2edaaaca": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "541c2aadd89e44beaf5c8e5136e4296c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d3b883045eb2426da6a9abac2edaaaca",
+        "location": [
+          "43.65161892782856",
+          "-79.46221600528744"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e2fbb0c0b01a4d3d9b5f4383daf698bd",
+        "title": "Red-bellied Woodpecker, 2021-08-16"
+      }
+    },
+    "54195ea74fad4a8c8b9a59d194519967": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b0a26c97c0a44fcb9fa3204d7325f9da": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4c77ec42d86f4b8c8c477c972324ac20": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_54195ea74fad4a8c8b9a59d194519967",
+        "style": "IPY_MODEL_b0a26c97c0a44fcb9fa3204d7325f9da",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b1928dc61a404994ab9bc858c15bde30": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5b44f4e5fe9b44b28835a483eaa2255f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b1928dc61a404994ab9bc858c15bde30",
+        "location": [
+          "43.65151779716756",
+          "-79.46199277133866"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4c77ec42d86f4b8c8c477c972324ac20",
+        "title": "Red-bellied Woodpecker, 2021-08-19"
+      }
+    },
+    "be1587dd311b4b2984ed9d98710208ba": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "daa4f7fd10634e4bad6a57a4eb65d2bf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c2cdff30bd374a9bbda9cd1b9be8c6b8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_be1587dd311b4b2984ed9d98710208ba",
+        "style": "IPY_MODEL_daa4f7fd10634e4bad6a57a4eb65d2bf",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8e541850bb67456985f7d5d951a27206": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "94350f576ad44b4a84d9b45a15121ce7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8e541850bb67456985f7d5d951a27206",
+        "location": [
+          "43.6440268277571",
+          "-79.4598550705086"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c2cdff30bd374a9bbda9cd1b9be8c6b8",
+        "title": "Red-bellied Woodpecker, 2021-08-24"
+      }
+    },
+    "b495c6447aa74b168d0ff96a0c2eb4ca": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ad6d81849e0e4dbd95bd057636552917": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "161adf9dcb8c4944a8019f194da93a64": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_b495c6447aa74b168d0ff96a0c2eb4ca",
+        "style": "IPY_MODEL_ad6d81849e0e4dbd95bd057636552917",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b2f0e5a5efe2467cac61ea07cf5d86c7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e2272961362f4689ba67a24726c0ed02": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b2f0e5a5efe2467cac61ea07cf5d86c7",
+        "location": [
+          "43.640294015682876",
+          "-79.45643931072597"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_161adf9dcb8c4944a8019f194da93a64",
+        "title": "Red-bellied Woodpecker, 2021-08-15"
+      }
+    },
+    "d8a10e3694234cd892a67e24428cb2b3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "47459e826cbe4f20a6e9344cb5e178c7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b3838d39ee014edaa0fe4d8c76cd51da": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_d8a10e3694234cd892a67e24428cb2b3",
+        "style": "IPY_MODEL_47459e826cbe4f20a6e9344cb5e178c7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e727f5fe181f48068436ea1b516fbb35": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "dec6aca7ea104b039e30c1fcfd99b838": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e727f5fe181f48068436ea1b516fbb35",
+        "location": [
+          "43.64384582259018",
+          "-79.45977937069495"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b3838d39ee014edaa0fe4d8c76cd51da",
+        "title": "Red-bellied Woodpecker, 2021-08-29"
+      }
+    },
+    "01f87b763275457b930e05ebf0656798": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "39fd2974370148ab88aace3cc051c424": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "350cf0f74e3b4a12bc74961b30087102": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_01f87b763275457b930e05ebf0656798",
+        "style": "IPY_MODEL_39fd2974370148ab88aace3cc051c424",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1dd6516a96854d1c81fa72a70d0d140c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0a2309c785d6410cbd0dfc8e465ded4e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1dd6516a96854d1c81fa72a70d0d140c",
+        "location": [
+          "43.64398800442574",
+          "-79.45988406864512"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_350cf0f74e3b4a12bc74961b30087102",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "5f5b1bb8db5644338fbe3399894ff800": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b47065d3df304d3a8082f33a1fbb48c5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "68861d33224c47baa8fd0efb59a7df8f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_5f5b1bb8db5644338fbe3399894ff800",
+        "style": "IPY_MODEL_b47065d3df304d3a8082f33a1fbb48c5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "86d93f921a5e400b91d253e0b5990f70": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c6306198f757453fa4fad2c25728af2a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_86d93f921a5e400b91d253e0b5990f70",
+        "location": [
+          "43.643830738826274",
+          "-79.45977306237714"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_68861d33224c47baa8fd0efb59a7df8f",
+        "title": "Red-bellied Woodpecker, 2021-08-31"
+      }
+    },
+    "f11e5cd07baf4fb993e5155989085711": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "36a5a10af2bb4e93924ee86512d13e56": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "54e6ea00daf74127885a86e72172aabb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_f11e5cd07baf4fb993e5155989085711",
+        "style": "IPY_MODEL_36a5a10af2bb4e93924ee86512d13e56",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eedb02273e7b4ca98d67234f35ca793a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "459680d0678944f09cf7d8ab9dfbc929": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eedb02273e7b4ca98d67234f35ca793a",
+        "location": [
+          "43.64382653870909",
+          "-79.45963560142512"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_54e6ea00daf74127885a86e72172aabb",
+        "title": "Red-bellied Woodpecker, 2021-08-31"
+      }
+    },
+    "8676af18ca934d05ad7947a3a5b0f830": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "25b444af8be54750ad1c872955500fb2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ae29bb5cf4ad4b43b62b9658d71325e6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_8676af18ca934d05ad7947a3a5b0f830",
+        "style": "IPY_MODEL_25b444af8be54750ad1c872955500fb2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ed42c9e368b14041b64a1321a54860f7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "269dff3092cb496c98a2e82c147b2c32": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ed42c9e368b14041b64a1321a54860f7",
+        "location": [
+          "43.65156724857646",
+          "-79.46214915724408"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ae29bb5cf4ad4b43b62b9658d71325e6",
+        "title": "Red-bellied Woodpecker, 2021-08-14"
+      }
+    },
+    "6e93ed5afca04f2ab7220504333fca6b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "77c90f9e8e9a4f9c8dd98cc2c2214bfe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4d27070679ca45d0838621a7eada1a53": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_6e93ed5afca04f2ab7220504333fca6b",
+        "style": "IPY_MODEL_77c90f9e8e9a4f9c8dd98cc2c2214bfe",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d3aa78d2a95141809d299dcefd3a289d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "503469467fb2473bbd15956992791246": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d3aa78d2a95141809d299dcefd3a289d",
+        "location": [
+          "43.6440785070092",
+          "-79.45992191855196"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4d27070679ca45d0838621a7eada1a53",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "bf004f6a275b49e2b9eccd82bc046794": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9643a1ce6f2d4d4e83ec38a2b680099b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eb001b2466bf4dbb8ae25f85dbcbe2ba": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_bf004f6a275b49e2b9eccd82bc046794",
+        "style": "IPY_MODEL_9643a1ce6f2d4d4e83ec38a2b680099b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "37c156bb786d43e0949c1831cf993531": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "57ba0eb7637b4089923483d968dd6006": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_37c156bb786d43e0949c1831cf993531",
+        "location": [
+          "43.643841622473",
+          "-79.45964190974291"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eb001b2466bf4dbb8ae25f85dbcbe2ba",
+        "title": "Red-bellied Woodpecker, 2021-08-30"
+      }
+    },
+    "e143e836ef8441f3af504799b9063a12": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0b49c38a581d4e6680faa80b3d357f93": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f9a00f259f444232a0bd6168957d2e38": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_e143e836ef8441f3af504799b9063a12",
+        "style": "IPY_MODEL_0b49c38a581d4e6680faa80b3d357f93",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "abae48b739994109adcb9dbbbe937407": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "285f2e9548824ae19d735e81ba6fe382": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_abae48b739994109adcb9dbbbe937407",
+        "location": [
+          "43.64588907090549",
+          "-79.46864441953016"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f9a00f259f444232a0bd6168957d2e38",
+        "title": "Red-bellied Woodpecker, 2021-07-30"
+      }
+    },
+    "b75adf50f1814ee1ae0c3ae926a8eacc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9fcac67644c8418abb9fdd1ca1a265b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b89610e6c4a94e58911392d9300c072c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_b75adf50f1814ee1ae0c3ae926a8eacc",
+        "style": "IPY_MODEL_9fcac67644c8418abb9fdd1ca1a265b5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d814297ad36c48088b20585b62054a4e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "afde0796498b488c8c14373eea516047": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d814297ad36c48088b20585b62054a4e",
+        "location": [
+          "43.65163623943565",
+          "-79.46213277574317"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b89610e6c4a94e58911392d9300c072c",
+        "title": "Red-bellied Woodpecker, 2021-08-15"
+      }
+    },
+    "7f67d428864c4658ab7f6e6443c32b15": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "155bfb77868946ea8cd0a3bddae769be": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "21004f7787c74cfc97b512f09cd8e17a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_7f67d428864c4658ab7f6e6443c32b15",
+        "style": "IPY_MODEL_155bfb77868946ea8cd0a3bddae769be",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4d534f2de25c4580a7abcff9128d830c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "56de7dfde6604b9094efe1c87ec46827": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4d534f2de25c4580a7abcff9128d830c",
+        "location": [
+          "43.64402695554169",
+          "-79.4596968021705"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_21004f7787c74cfc97b512f09cd8e17a",
+        "title": "Red-bellied Woodpecker, 2021-09-04"
+      }
+    },
+    "4f4db13c9cbd41f287543e74ca8b8b46": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b6b7cd6e57a4478196a8da9fc77764b2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ac0de1287b7e4b23af35a2358a1a5f1c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_4f4db13c9cbd41f287543e74ca8b8b46",
+        "style": "IPY_MODEL_b6b7cd6e57a4478196a8da9fc77764b2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4b8ef582f5954caf8193a169feb3705e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "453335aaf4eb4fab89b960bc5718694c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4b8ef582f5954caf8193a169feb3705e",
+        "location": [
+          "43.64403548356065",
+          "-79.45981345573645"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ac0de1287b7e4b23af35a2358a1a5f1c",
+        "title": "Red-bellied Woodpecker, 2021-08-24"
+      }
+    },
+    "f9a561d47a054d76a36c6760aa0c5a00": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "57e09517a59e4047bfff5c99f4530351": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0298a1c633794ef6983d4831a31a25d9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_f9a561d47a054d76a36c6760aa0c5a00",
+        "style": "IPY_MODEL_57e09517a59e4047bfff5c99f4530351",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "18dc947659754eb09b3a038bd62f618f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4c911c5fa4df4cc79e43a7a33b4c40af": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_18dc947659754eb09b3a038bd62f618f",
+        "location": [
+          "43.64370364075463",
+          "-79.45967467274477"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0298a1c633794ef6983d4831a31a25d9",
+        "title": "Red-bellied Woodpecker, 2021-08-30"
+      }
+    },
+    "213cf0ba1a2d4d35821d1ded81515750": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b61d6b7f45c544c5acc02689f5772bf5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b3cefb72cb2f4352a23b6c72303867e4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_213cf0ba1a2d4d35821d1ded81515750",
+        "style": "IPY_MODEL_b61d6b7f45c544c5acc02689f5772bf5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d75448293826429f8a6a245f766adaf4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4089de59510d4a10a70780003d1edc2b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d75448293826429f8a6a245f766adaf4",
+        "location": [
+          "43.64395783689792",
+          "-79.45987145200952"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b3cefb72cb2f4352a23b6c72303867e4",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "7d19126df1e0467a9463f241cc292cc7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c440bfe30c1044259a4caf7ef8499408": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e25f36902ff446f598452eab08b932f4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_7d19126df1e0467a9463f241cc292cc7",
+        "style": "IPY_MODEL_c440bfe30c1044259a4caf7ef8499408",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "920b91d7db42412d9c107e573b81a9d7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8e4321d8ff7740cfa59b1f596112ad8a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_920b91d7db42412d9c107e573b81a9d7",
+        "location": [
+          "43.64019931298223",
+          "-79.45626399986712"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e25f36902ff446f598452eab08b932f4",
+        "title": "Red-bellied Woodpecker, 2021-08-14"
+      }
+    },
+    "13543180be5d49fd91577210ca330721": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7dcf6ca172e54baf823c33238b80bdb4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bee41d997c3248be80de45d9f5d58c68": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_13543180be5d49fd91577210ca330721",
+        "style": "IPY_MODEL_7dcf6ca172e54baf823c33238b80bdb4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2e8b400772b9444d92d07ca43c114462": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "01c94ec96b3e4e4e82edf251a4b7d342": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2e8b400772b9444d92d07ca43c114462",
+        "location": [
+          "43.64390615764582",
+          "-79.45980460396616"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bee41d997c3248be80de45d9f5d58c68",
+        "title": "Red-bellied Woodpecker, 2021-08-24"
+      }
+    },
+    "ed9e119ba2a948cd9a247599df3485f3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4e10c0415071479b9371e2ecf1cbc8cb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d086d45170ef4a94b22a2f1a1606b287": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_ed9e119ba2a948cd9a247599df3485f3",
+        "style": "IPY_MODEL_4e10c0415071479b9371e2ecf1cbc8cb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "676a168c6e894f0792854eabe9ffbee8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "61a8de801de54f139bffc685162e938c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_676a168c6e894f0792854eabe9ffbee8",
+        "location": [
+          "43.64507106735609",
+          "-79.47034792411327"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d086d45170ef4a94b22a2f1a1606b287",
+        "title": "Red-bellied Woodpecker, 2021-07-30"
+      }
+    },
+    "d40d385e9d1e446ea58b302cc4e3777b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "692a6698847a49cd90742c68ec62485d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "17d0ad79199a4a52b23d4e114071b0ed": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_d40d385e9d1e446ea58b302cc4e3777b",
+        "style": "IPY_MODEL_692a6698847a49cd90742c68ec62485d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "17d6db05e4fa4353832c9acde1d2e777": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4925922caec44e988109eae3230c1cd3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_17d6db05e4fa4353832c9acde1d2e777",
+        "location": [
+          "43.643940908644595",
+          "-79.4594798765395"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_17d0ad79199a4a52b23d4e114071b0ed",
+        "title": "Red-bellied Woodpecker, 2021-09-04"
+      }
+    },
+    "30c05313ed26470cad51b79cd10a8255": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b06d36ec9b0a4898875400ff6c38f040": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f9ecf65cf50d43e199efd73a23003ce3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_30c05313ed26470cad51b79cd10a8255",
+        "style": "IPY_MODEL_b06d36ec9b0a4898875400ff6c38f040",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "cb4c572a65904099b8340fa2ba2f8387": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6d2510cd1b2d40f7814cfe6041748640": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cb4c572a65904099b8340fa2ba2f8387",
+        "location": [
+          "43.6457406982149",
+          "-79.46853529155723"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f9ecf65cf50d43e199efd73a23003ce3",
+        "title": "Red-bellied Woodpecker, 2021-07-30"
+      }
+    },
+    "ca5a9341870e40f9872064323c5e5304": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "40cc6e9f0c9242f3947a1a260f51cfef": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "733078b38abf4bda9789964cddf1b47a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_ca5a9341870e40f9872064323c5e5304",
+        "style": "IPY_MODEL_40cc6e9f0c9242f3947a1a260f51cfef",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9c7b1a0e610344cf8d06bd859a18a358": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f804eea596044003a1ea0886163c31bf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9c7b1a0e610344cf8d06bd859a18a358",
+        "location": [
+          "43.64419052131693",
+          "-79.46001399986652"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_733078b38abf4bda9789964cddf1b47a",
+        "title": "Red-bellied Woodpecker, 2021-08-23"
+      }
+    },
+    "54f9c2d61aa44fbbb5e817cd5f55a146": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d63ff41634a34e2bbc75d1d65834eea6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e32ba06fa0454d019c2163a3ded4ba7e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_54f9c2d61aa44fbbb5e817cd5f55a146",
+        "style": "IPY_MODEL_d63ff41634a34e2bbc75d1d65834eea6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b3aaaab7eff74124b1198328d29ad5dc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "468ac2a4222d4981b71ab83aa54c2063": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b3aaaab7eff74124b1198328d29ad5dc",
+        "location": [
+          "43.65151111363801",
+          "-79.4622613849249"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e32ba06fa0454d019c2163a3ded4ba7e",
+        "title": "Red-bellied Woodpecker, 2021-08-16"
+      }
+    },
+    "6df49b4c552c41e2a1bb58f10d2e4ba0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f2951e4c3bfd4bb5a452dc2739f86ab8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "43be68a006824d65b4dae63fc26561a2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_6df49b4c552c41e2a1bb58f10d2e4ba0",
+        "style": "IPY_MODEL_f2951e4c3bfd4bb5a452dc2739f86ab8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dec320721b5847238612e84a75e39312": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "13c865883e9a4471816201ce02db4c55": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dec320721b5847238612e84a75e39312",
+        "location": [
+          "43.64434624667706",
+          "-79.45991199717982"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_43be68a006824d65b4dae63fc26561a2",
+        "title": "Red-bellied Woodpecker, 2021-07-30"
+      }
+    },
+    "1519533904d748f89a5a9d151aae8d53": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e73899f5dc984683a6bd8aa5ecb0cc20": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "530430c9ab5f476fa51e82a58259e41d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_1519533904d748f89a5a9d151aae8d53",
+        "style": "IPY_MODEL_e73899f5dc984683a6bd8aa5ecb0cc20",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e77e72ad26544804b705aaddb970da24": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ab755043a2224104bc5840ce1e1d0c4c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e77e72ad26544804b705aaddb970da24",
+        "location": [
+          "43.64386090635409",
+          "-79.45978567901275"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_530430c9ab5f476fa51e82a58259e41d",
+        "title": "Red-bellied Woodpecker, 2021-08-28"
+      }
+    },
+    "6e70ef2c79ac4f1bb6a00f77f9a79542": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "037099065fd245aca177ca1869f90dcc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2ff4fce6227c4209b7a563afc392579e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_6e70ef2c79ac4f1bb6a00f77f9a79542",
+        "style": "IPY_MODEL_037099065fd245aca177ca1869f90dcc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "28f8e5a0404c4b4fb295787ad91b3050": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d7a21c5bfdf5442aab253989ccb86343": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_28f8e5a0404c4b4fb295787ad91b3050",
+        "location": [
+          "43.651640439552835",
+          "-79.46227023669519"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2ff4fce6227c4209b7a563afc392579e",
+        "title": "Red-bellied Woodpecker, 2021-08-17"
+      }
+    },
+    "c1c56bcd9fe248e1bf4ada48588035a0": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_5d3cc8e793ad480c887675c30ce94155",
+          "IPY_MODEL_5bf31d23349f4162a4ac14f9624ef95f",
+          "IPY_MODEL_7c38458c50474f67ae9b1ad7b781e500",
+          "IPY_MODEL_a508b93e398e4c3c8719686c3b563a84",
+          "IPY_MODEL_c245b9c7ba354614b3a471369e0acfe7",
+          "IPY_MODEL_dcfec06939ed4df79b123adf98cf7c18",
+          "IPY_MODEL_b7b6879f5b42490f8bc8c4076bdcc94b",
+          "IPY_MODEL_068cc35e7cf64e35b10a974320428fe5",
+          "IPY_MODEL_72813c0f43124adc804b82a2e0562015",
+          "IPY_MODEL_82ccb014eb23441eb87c23e1d8d67dc5",
+          "IPY_MODEL_b7a55789109c42d8bb90154ff5890526",
+          "IPY_MODEL_adaa1fcd135446f5999933e31171b914",
+          "IPY_MODEL_505b35d4a0284b8e92e0b18ccbd3c409",
+          "IPY_MODEL_a71f243912f24f0f83918474391d1aa7",
+          "IPY_MODEL_7469431688c143e8a70297218237e68b",
+          "IPY_MODEL_5100936b00a3421cae60a963ae0235fc",
+          "IPY_MODEL_fdb9e9f35f854c63af802e3ab25d1e20",
+          "IPY_MODEL_c8f2ec14aa5d4a84b04e2ce1e42ba8be",
+          "IPY_MODEL_8f2ebbe5213444d39242578ba37ad507",
+          "IPY_MODEL_65a29a7bb30348b18a8f1d62ecfa5b14",
+          "IPY_MODEL_ceba8b1602f849b8b6c9c3b2c23e3ea4",
+          "IPY_MODEL_b792749012334ef18d7f1f12dc2a2a3d",
+          "IPY_MODEL_901d3330799140c88628fc712bdcea2b",
+          "IPY_MODEL_808013961b9d49e5a8fe9878dd0472c5",
+          "IPY_MODEL_e7fa0d8a35854c8999552bac06df0747",
+          "IPY_MODEL_eb9e815022a34194a0334983fd7f9df8",
+          "IPY_MODEL_908f17498b2b4fe88b6967d6946d19ae",
+          "IPY_MODEL_07b3cb131d854e62985e03140eae801a",
+          "IPY_MODEL_792f8a0b256646d5b36786285b63d3cc",
+          "IPY_MODEL_808ff81221cd4d9eaf9684f75a0c25c7",
+          "IPY_MODEL_0024b9f3559e44fba2b02d6dd7214ea9",
+          "IPY_MODEL_eed1df188a6d462991384b4f455407c9",
+          "IPY_MODEL_0eb3b1021bae49a9a31f1d28bbd80ba0",
+          "IPY_MODEL_b16d131a8de24ea3afdf6c282b63ae62",
+          "IPY_MODEL_0fef928a8ada498dbbc75c3400e11743",
+          "IPY_MODEL_5a6e529adbfb487b94cacb8ea749452b",
+          "IPY_MODEL_f5bc8f23205c4e3f8d939e6896658b6a",
+          "IPY_MODEL_541c2aadd89e44beaf5c8e5136e4296c",
+          "IPY_MODEL_5b44f4e5fe9b44b28835a483eaa2255f",
+          "IPY_MODEL_94350f576ad44b4a84d9b45a15121ce7",
+          "IPY_MODEL_e2272961362f4689ba67a24726c0ed02",
+          "IPY_MODEL_dec6aca7ea104b039e30c1fcfd99b838",
+          "IPY_MODEL_0a2309c785d6410cbd0dfc8e465ded4e",
+          "IPY_MODEL_c6306198f757453fa4fad2c25728af2a",
+          "IPY_MODEL_459680d0678944f09cf7d8ab9dfbc929",
+          "IPY_MODEL_269dff3092cb496c98a2e82c147b2c32",
+          "IPY_MODEL_503469467fb2473bbd15956992791246",
+          "IPY_MODEL_57ba0eb7637b4089923483d968dd6006",
+          "IPY_MODEL_285f2e9548824ae19d735e81ba6fe382",
+          "IPY_MODEL_afde0796498b488c8c14373eea516047",
+          "IPY_MODEL_56de7dfde6604b9094efe1c87ec46827",
+          "IPY_MODEL_453335aaf4eb4fab89b960bc5718694c",
+          "IPY_MODEL_4c911c5fa4df4cc79e43a7a33b4c40af",
+          "IPY_MODEL_4089de59510d4a10a70780003d1edc2b",
+          "IPY_MODEL_8e4321d8ff7740cfa59b1f596112ad8a",
+          "IPY_MODEL_01c94ec96b3e4e4e82edf251a4b7d342",
+          "IPY_MODEL_61a8de801de54f139bffc685162e938c",
+          "IPY_MODEL_4925922caec44e988109eae3230c1cd3",
+          "IPY_MODEL_6d2510cd1b2d40f7814cfe6041748640",
+          "IPY_MODEL_f804eea596044003a1ea0886163c31bf",
+          "IPY_MODEL_468ac2a4222d4981b71ab83aa54c2063",
+          "IPY_MODEL_13c865883e9a4471816201ce02db4c55",
+          "IPY_MODEL_ab755043a2224104bc5840ce1e1d0c4c",
+          "IPY_MODEL_d7a21c5bfdf5442aab253989ccb86343"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "c6b02f384ccf4188af6fa89c20791124"}
+</script>
+
+</body>
+</html>

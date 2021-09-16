@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Finch Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "5d703e66f3334fe78b1bf8a9c2817164": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "a23fd716538249fe9489b13913e40c4f": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "3eccb653e4ef4027bf2e69b3996ffa70": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "5bd0bf3ee046417dbdf7873d8986ea61": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "e34e3a8c01534b2f800751b0cede74a9": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "d0c95a6b607f4165a8daded495711209": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_af28302e0bbf46178e5f35a06363d9be",
+          "IPY_MODEL_e06ba149b5fb4e2e8c4cbf4f1f27560c",
+          "IPY_MODEL_49b4402271ed4570bf03c295e893db39",
+          "IPY_MODEL_b48d5a2ff0fb4914b44bec9f6c4a754e"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_5d703e66f3334fe78b1bf8a9c2817164",
+        "dragging_style": "IPY_MODEL_a23fd716538249fe9489b13913e40c4f",
+        "layers": [
+          "IPY_MODEL_3eccb653e4ef4027bf2e69b3996ffa70",
+          "IPY_MODEL_a29479406c6744c19294fe2cc5ab6960",
+          "IPY_MODEL_21d94581ddd441b49194e444091ca1c2",
+          "IPY_MODEL_a75157c323ac48d780879dbf06780720",
+          "IPY_MODEL_2e415ecf600a4b9f95863a0922a2bc53",
+          "IPY_MODEL_04e87dfd4c214679ba1a8e6eb22276a3"
+        ],
+        "layout": "IPY_MODEL_5bd0bf3ee046417dbdf7873d8986ea61",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_e34e3a8c01534b2f800751b0cede74a9",
+        "zoom": 14.0
+      }
+    },
+    "af28302e0bbf46178e5f35a06363d9be": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "e06ba149b5fb4e2e8c4cbf4f1f27560c": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "49b4402271ed4570bf03c295e893db39": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "b48d5a2ff0fb4914b44bec9f6c4a754e": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "a29479406c6744c19294fe2cc5ab6960": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "21d94581ddd441b49194e444091ca1c2": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "a75157c323ac48d780879dbf06780720": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64726905180511",
+            "-79.46253721842217"
+          ],
+          [
+            "43.64348358344418",
+            "-79.45873481800636"
+          ],
+          [
+            "43.64356365304239",
+            "-79.45852494777077"
+          ],
+          [
+            "43.64730551029362",
+            "-79.46252785419345"
+          ],
+          [
+            "43.64730551029362",
+            "-79.46252785419345"
+          ],
+          [
+            "43.64354427032697",
+            "-79.45861406155161"
+          ],
+          [
+            "43.64835080816052",
+            "-79.46246971178432"
+          ],
+          [
+            "43.64726905180511",
+            "-79.46253721842217"
+          ],
+          [
+            "43.64780520020106",
+            "-79.46268346765882"
+          ],
+          [
+            "43.643400975109444",
+            "-79.4587981033542"
+          ],
+          [
+            "43.64722832162339",
+            "-79.46169580887776"
+          ],
+          [
+            "43.64712840572135",
+            "-79.46136389645274"
+          ],
+          [
+            "43.64789749989351",
+            "-79.46257562542057"
+          ],
+          [
+            "43.647346814460995",
+            "-79.46249621151954"
+          ],
+          [
+            "43.64738407872936",
+            "-79.46192924329324"
+          ],
+          [
+            "43.644068884011304",
+            "-79.45960462745312"
+          ],
+          [
+            "43.64559287751051",
+            "-79.46090642028535"
+          ],
+          [
+            "43.64731774038786",
+            "-79.4626298821908"
+          ],
+          [
+            "43.64731603828675",
+            "-79.46272342930877"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "2e415ecf600a4b9f95863a0922a2bc53": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64755788964768",
+            "-79.46219128904123"
+          ],
+          [
+            "43.648068765346615",
+            "-79.46217877303246"
+          ],
+          [
+            "43.64797393486138",
+            "-79.46216173051171"
+          ],
+          [
+            "43.6479393116472",
+            "-79.46232818960027"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "792d557c322343e29eb3daa74c1da393": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4242d2ba34274542b9b8d29203205b66": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "602f2e78471d4ac6912dd80b35f2497f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_792d557c322343e29eb3daa74c1da393",
+        "style": "IPY_MODEL_4242d2ba34274542b9b8d29203205b66",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "44347934284540da80dde29b2e251b74": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5a0dff99a95c446cbffa9b1d3784f158": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_44347934284540da80dde29b2e251b74",
+        "location": [
+          "43.64726905180511",
+          "-79.46253721842217"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_602f2e78471d4ac6912dd80b35f2497f",
+        "title": "House Finch, 2021-07-18"
+      }
+    },
+    "b1cf1eb8ffe3430ca6fdfdd00968f91a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5f639a09a22347b2a89acd933ab115eb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "15a6966976b448148bfd84eaa97bae12": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_b1cf1eb8ffe3430ca6fdfdd00968f91a",
+        "style": "IPY_MODEL_5f639a09a22347b2a89acd933ab115eb",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "00e898d9dfe04e3b834fc751024a9d08": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5067c721a8e94933aae6d9cd186a7df1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_00e898d9dfe04e3b834fc751024a9d08",
+        "location": [
+          "43.64348358344418",
+          "-79.45873481800636"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_15a6966976b448148bfd84eaa97bae12",
+        "title": "House Finch, 2021-07-08"
+      }
+    },
+    "8c2edad78d5244018d3bab0d6373bae2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5d5328a218f1445f80f8437ca6c0be49": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f3811d7bccbd4109927ee240e53f1421": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_8c2edad78d5244018d3bab0d6373bae2",
+        "style": "IPY_MODEL_5d5328a218f1445f80f8437ca6c0be49",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "6aebe8468f804167b9db6f8dfc68a580": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a788b75bbc4c44e2844bb19386bb2550": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6aebe8468f804167b9db6f8dfc68a580",
+        "location": [
+          "43.64356365304239",
+          "-79.45852494777077"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f3811d7bccbd4109927ee240e53f1421",
+        "title": "House Finch, 2021-07-08"
+      }
+    },
+    "cc6296d341274011a6fc1e2f20831c14": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19b281b59f6340b2956b19808efdc37a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2d95b6b9c3d849e2833d53c51e5173f1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_cc6296d341274011a6fc1e2f20831c14",
+        "style": "IPY_MODEL_19b281b59f6340b2956b19808efdc37a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7f20256640724ec0bc7c218925225ec2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ae173fadfc244d1a977f88c703d9f115": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7f20256640724ec0bc7c218925225ec2",
+        "location": [
+          "43.64730551029362",
+          "-79.46252785419345"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2d95b6b9c3d849e2833d53c51e5173f1",
+        "title": "House Finch, 2021-07-21"
+      }
+    },
+    "0611de95fa0f4a6a9449ce49735b7fd4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bab01c068854457082865aa40e65e7b9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a9d0e1dd1e8b4f13aef3cd7ab086cc1d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_0611de95fa0f4a6a9449ce49735b7fd4",
+        "style": "IPY_MODEL_bab01c068854457082865aa40e65e7b9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9094648fecd846f090b3e43f7fd7f03d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "179ae92af6144e03907177e106913144": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9094648fecd846f090b3e43f7fd7f03d",
+        "location": [
+          "43.64730551029362",
+          "-79.46252785419345"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a9d0e1dd1e8b4f13aef3cd7ab086cc1d",
+        "title": "House Finch, 2021-07-21"
+      }
+    },
+    "c072aecc806740efb8cd8981a95fd8ac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "15da6c393f5146a086d88269157a488d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a352f8b581884321821fb69d95e2e928": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_c072aecc806740efb8cd8981a95fd8ac",
+        "style": "IPY_MODEL_15da6c393f5146a086d88269157a488d",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "ec36d149edc340339eb4c5f1af34278b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "003bdd13c0104fb5bc954191c7ee3acd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ec36d149edc340339eb4c5f1af34278b",
+        "location": [
+          "43.64354427032697",
+          "-79.45861406155161"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a352f8b581884321821fb69d95e2e928",
+        "title": "House Finch, 2021-07-08"
+      }
+    },
+    "9f7ecefe8f1b48319e4fbaa1a0179634": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e127a544775d498e9306a19c9f839d69": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3c74d40b6e934666b9ba1c07341a67d4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_9f7ecefe8f1b48319e4fbaa1a0179634",
+        "style": "IPY_MODEL_e127a544775d498e9306a19c9f839d69",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "085e397b47ec4b86ae32e85f66eee02d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "260e6455fe6d4cff9aaab9b8d1de0d16": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_085e397b47ec4b86ae32e85f66eee02d",
+        "location": [
+          "43.64835080816052",
+          "-79.46246971178432"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3c74d40b6e934666b9ba1c07341a67d4",
+        "title": "House Finch, 2021-07-21"
+      }
+    },
+    "b5ecbcc5a945497a9d6e05bf6ade5d92": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "03f47939c2a24b87ba282236ad42571c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b7973c9807cb4c3e93619bdde5bfdd9c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_b5ecbcc5a945497a9d6e05bf6ade5d92",
+        "style": "IPY_MODEL_03f47939c2a24b87ba282236ad42571c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3f5b45219c2e4ffebc9b3845a69ea86b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e4a5c14502ca435bacc39ff6ce15afa4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3f5b45219c2e4ffebc9b3845a69ea86b",
+        "location": [
+          "43.64726905180511",
+          "-79.46253721842217"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b7973c9807cb4c3e93619bdde5bfdd9c",
+        "title": "House Finch, 2021-07-18"
+      }
+    },
+    "838d222e39014700ae7bdbdd00322075": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "71202b46ffdb4ab38138b8c99f9aee21": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f8c863fbe3f44fb2b62dc64b88955182": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_838d222e39014700ae7bdbdd00322075",
+        "style": "IPY_MODEL_71202b46ffdb4ab38138b8c99f9aee21",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4abd80f0412447d8b295e578622989ac": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "11161c8d9f5047f09d73641da26b50d1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4abd80f0412447d8b295e578622989ac",
+        "location": [
+          "43.64780520020106",
+          "-79.46268346765882"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f8c863fbe3f44fb2b62dc64b88955182",
+        "title": "House Finch, 2021-07-09"
+      }
+    },
+    "f808072faa53464e8d0ad94c62dedc69": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c4453f27489145ac8af8e07a9cea72a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ee1eb4dda5594684952d2baa4ce668f0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_f808072faa53464e8d0ad94c62dedc69",
+        "style": "IPY_MODEL_c4453f27489145ac8af8e07a9cea72a9",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "06d6b4ee251948c4a7fb2ea74442318a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "840b094bb7384baf8ef04d6d3473f219": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_06d6b4ee251948c4a7fb2ea74442318a",
+        "location": [
+          "43.643400975109444",
+          "-79.4587981033542"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ee1eb4dda5594684952d2baa4ce668f0",
+        "title": "House Finch, 2021-07-08"
+      }
+    },
+    "fedcd6e819ee497294f6f42e2450d5f8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8e5a49318f0547bf9410bdffe29cb6be": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "db0669c071244ab08c6afc653e263429": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_fedcd6e819ee497294f6f42e2450d5f8",
+        "style": "IPY_MODEL_8e5a49318f0547bf9410bdffe29cb6be",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "acb345f0311e49efbafe4bf6b2b74889": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b169bd8a66b0496f9a1707e24d5388b3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_acb345f0311e49efbafe4bf6b2b74889",
+        "location": [
+          "43.64722832162339",
+          "-79.46169580887776"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_db0669c071244ab08c6afc653e263429",
+        "title": "House Finch, 2021-07-04"
+      }
+    },
+    "6435b47b1fe04db09a1647f26e329b42": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "265a14324ebf4f2ebb68cd5c42885433": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "00295cd6173f4b18bcaa1723a387525d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_6435b47b1fe04db09a1647f26e329b42",
+        "style": "IPY_MODEL_265a14324ebf4f2ebb68cd5c42885433",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f4b99090f52a4e37a564137bf0583ccf": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6fdc03b6a4f944a2b836c2b0de49bc28": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f4b99090f52a4e37a564137bf0583ccf",
+        "location": [
+          "43.64712840572135",
+          "-79.46136389645274"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_00295cd6173f4b18bcaa1723a387525d",
+        "title": "House Finch, 2021-07-04"
+      }
+    },
+    "97bd1a2768d742efac9c8b8dd38763a6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "56ac8e44741c4eebba09e28dd18224a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fb7d53df4e944638a1390c12a94e5309": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_97bd1a2768d742efac9c8b8dd38763a6",
+        "style": "IPY_MODEL_56ac8e44741c4eebba09e28dd18224a9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "85f93232b0dc445597dcdad402151715": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d61ff3c3790b46e195d0fd3c3506a7db": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_85f93232b0dc445597dcdad402151715",
+        "location": [
+          "43.64789749989351",
+          "-79.46257562542057"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fb7d53df4e944638a1390c12a94e5309",
+        "title": "House Finch, 2021-07-09"
+      }
+    },
+    "b218a750732247389a1153fa23c95503": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ccd2b31fda2d4abb83f477f790386716": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fd72a9f9a0814c4891c4194268f7cc94": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_b218a750732247389a1153fa23c95503",
+        "style": "IPY_MODEL_ccd2b31fda2d4abb83f477f790386716",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6a73efa060ac447a9c732d95e3df4726": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e8e7916a65a641fcbffbc413cd462c97": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6a73efa060ac447a9c732d95e3df4726",
+        "location": [
+          "43.647346814460995",
+          "-79.46249621151954"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fd72a9f9a0814c4891c4194268f7cc94",
+        "title": "House Finch, 2021-07-27"
+      }
+    },
+    "4d71e8dea4034257bb16cf0be05c7a2d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9d9ac36c72884dc1823523e7a9d96b7c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7587f7d9576d487986858cef4ecce52d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_4d71e8dea4034257bb16cf0be05c7a2d",
+        "style": "IPY_MODEL_9d9ac36c72884dc1823523e7a9d96b7c",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "bc264f0bb16e495194607ab9e0ead849": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b3f36eedab1e476fa22c6f0220dac0c4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bc264f0bb16e495194607ab9e0ead849",
+        "location": [
+          "43.64755788964768",
+          "-79.46219128904123"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7587f7d9576d487986858cef4ecce52d",
+        "title": "House Finch, 2021-08-29"
+      }
+    },
+    "17e965c8274641868a3cd7651d7fc38c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "054b4b7ea62441d58678f167511cb177": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b5e3a18d6b2144869297b791802c192c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_17e965c8274641868a3cd7651d7fc38c",
+        "style": "IPY_MODEL_054b4b7ea62441d58678f167511cb177",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "49150ccb77ce44f78820296d8b53f23b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "470e7c30b095450ab4a6eb06d4652686": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_49150ccb77ce44f78820296d8b53f23b",
+        "location": [
+          "43.648068765346615",
+          "-79.46217877303246"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b5e3a18d6b2144869297b791802c192c",
+        "title": "House Finch, 2021-08-24"
+      }
+    },
+    "753f89242fa0447db30e55661044f4a7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2b373b66df9a418eb03193430156719c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ab25eb1f00f94117ab93ddd9e6a4f81c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_753f89242fa0447db30e55661044f4a7",
+        "style": "IPY_MODEL_2b373b66df9a418eb03193430156719c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e077eacf4edb40d1a8376b151136d2a7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e747bc2c988b472b927ccc542078e205": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e077eacf4edb40d1a8376b151136d2a7",
+        "location": [
+          "43.64738407872936",
+          "-79.46192924329324"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ab25eb1f00f94117ab93ddd9e6a4f81c",
+        "title": "House Finch, 2021-07-30"
+      }
+    },
+    "59085b0722384c9f9c80d868b6213787": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "829a6c5be20146679136daa7831d9200": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "81c6c6e1b460404ba0ce01c96462c97f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_59085b0722384c9f9c80d868b6213787",
+        "style": "IPY_MODEL_829a6c5be20146679136daa7831d9200",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "94cf4c28e34f4fa885d69689f79d56fb": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6cdee8ad913347a7a29598840e6b58e7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_94cf4c28e34f4fa885d69689f79d56fb",
+        "location": [
+          "43.644068884011304",
+          "-79.45960462745312"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_81c6c6e1b460404ba0ce01c96462c97f",
+        "title": "House Finch, 2021-07-30"
+      }
+    },
+    "8e8e0ea846314aee96c5bcbb8b20ba99": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cff935577a43488b99a832b406eed7cb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ac48e21e950d45319cb234368073bdbc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_8e8e0ea846314aee96c5bcbb8b20ba99",
+        "style": "IPY_MODEL_cff935577a43488b99a832b406eed7cb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2aad4a203e354c9dbd3456cad96e0113": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cebde8a454dc458a9a118889e5235f33": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2aad4a203e354c9dbd3456cad96e0113",
+        "location": [
+          "43.64559287751051",
+          "-79.46090642028535"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ac48e21e950d45319cb234368073bdbc",
+        "title": "House Finch, 2021-08-04"
+      }
+    },
+    "94bc17fbe54846b3ae58b14b43d4e79f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "13400a747a734d718b335c327f88e3f8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "286a962beb7e49e7b3bf875906be7851": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_94bc17fbe54846b3ae58b14b43d4e79f",
+        "style": "IPY_MODEL_13400a747a734d718b335c327f88e3f8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9a9277cf01d343039f3b25dd409060d3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "337198c92525486ab241510f1b6f7e06": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9a9277cf01d343039f3b25dd409060d3",
+        "location": [
+          "43.64797393486138",
+          "-79.46216173051171"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_286a962beb7e49e7b3bf875906be7851",
+        "title": "House Finch, 2021-09-04"
+      }
+    },
+    "5afee6511c154a338810cbf7c696627a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "70ac1d67937a40dea421a3a567a2e964": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "51d4bb7c2ad242b7a4eec41b149d0803": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_5afee6511c154a338810cbf7c696627a",
+        "style": "IPY_MODEL_70ac1d67937a40dea421a3a567a2e964",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c4b8d4d048ef4851a933a4e1609e47b7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "19856a0367564d9082d6b995b95546c8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c4b8d4d048ef4851a933a4e1609e47b7",
+        "location": [
+          "43.64731774038786",
+          "-79.4626298821908"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_51d4bb7c2ad242b7a4eec41b149d0803",
+        "title": "House Finch, 2021-07-27"
+      }
+    },
+    "ff4c9bd78f5b4ef9b45bea96f8aa3c4e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c7d61bca507140eab30f1dcf1fe927fd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "19f97053e12e45729166db668a6d2532": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_ff4c9bd78f5b4ef9b45bea96f8aa3c4e",
+        "style": "IPY_MODEL_c7d61bca507140eab30f1dcf1fe927fd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f1f877cdb8c64291972bc5566b083a27": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7b1ff8a7cc6344339984bc720792df97": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f1f877cdb8c64291972bc5566b083a27",
+        "location": [
+          "43.64731603828675",
+          "-79.46272342930877"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_19f97053e12e45729166db668a6d2532",
+        "title": "House Finch, 2021-08-19"
+      }
+    },
+    "984171f5200345e1a83ddecc2f211286": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f61df9ec19114482aaf0886795ce4c61": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "35d50d396344484bba1264b372fa36f9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_984171f5200345e1a83ddecc2f211286",
+        "style": "IPY_MODEL_f61df9ec19114482aaf0886795ce4c61",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a0c8c374ea2e4d66ab0abef87e835f86": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e10a49cefa57433f95a0080f29a73b6f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a0c8c374ea2e4d66ab0abef87e835f86",
+        "location": [
+          "43.6479393116472",
+          "-79.46232818960027"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_35d50d396344484bba1264b372fa36f9",
+        "title": "House Finch, 2021-09-07"
+      }
+    },
+    "04e87dfd4c214679ba1a8e6eb22276a3": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_5a0dff99a95c446cbffa9b1d3784f158",
+          "IPY_MODEL_5067c721a8e94933aae6d9cd186a7df1",
+          "IPY_MODEL_a788b75bbc4c44e2844bb19386bb2550",
+          "IPY_MODEL_ae173fadfc244d1a977f88c703d9f115",
+          "IPY_MODEL_179ae92af6144e03907177e106913144",
+          "IPY_MODEL_003bdd13c0104fb5bc954191c7ee3acd",
+          "IPY_MODEL_260e6455fe6d4cff9aaab9b8d1de0d16",
+          "IPY_MODEL_e4a5c14502ca435bacc39ff6ce15afa4",
+          "IPY_MODEL_11161c8d9f5047f09d73641da26b50d1",
+          "IPY_MODEL_840b094bb7384baf8ef04d6d3473f219",
+          "IPY_MODEL_b169bd8a66b0496f9a1707e24d5388b3",
+          "IPY_MODEL_6fdc03b6a4f944a2b836c2b0de49bc28",
+          "IPY_MODEL_d61ff3c3790b46e195d0fd3c3506a7db",
+          "IPY_MODEL_e8e7916a65a641fcbffbc413cd462c97",
+          "IPY_MODEL_b3f36eedab1e476fa22c6f0220dac0c4",
+          "IPY_MODEL_470e7c30b095450ab4a6eb06d4652686",
+          "IPY_MODEL_e747bc2c988b472b927ccc542078e205",
+          "IPY_MODEL_6cdee8ad913347a7a29598840e6b58e7",
+          "IPY_MODEL_cebde8a454dc458a9a118889e5235f33",
+          "IPY_MODEL_337198c92525486ab241510f1b6f7e06",
+          "IPY_MODEL_19856a0367564d9082d6b995b95546c8",
+          "IPY_MODEL_7b1ff8a7cc6344339984bc720792df97",
+          "IPY_MODEL_e10a49cefa57433f95a0080f29a73b6f"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "d0c95a6b607f4165a8daded495711209"}
+</script>
+
+</body>
+</html>

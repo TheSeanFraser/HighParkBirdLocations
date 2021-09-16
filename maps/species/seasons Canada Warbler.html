@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canada Warbler Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "953deaed97b94c1086077b9c1924e637": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "d6e2ca2c32164b95b8dcec0d5775ef4a": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "afa0d5b673674085b314c6de50d2ce87": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "aee419c7ac2a4bf19240660a20fa91c4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "74f0c1959a4b4f368525d5033d606cf4": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "7d8eeffe8b884376bdc4859afcb68208": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_32428467854b4dc6bc3adb5de1aa2018",
+          "IPY_MODEL_2cd95b44a8cb448fb0ec90d1c7200811",
+          "IPY_MODEL_b9730844b5e2499ab2251c478ce6aa38",
+          "IPY_MODEL_ec854e359ebc408e924eac353b62468c"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_953deaed97b94c1086077b9c1924e637",
+        "dragging_style": "IPY_MODEL_d6e2ca2c32164b95b8dcec0d5775ef4a",
+        "layers": [
+          "IPY_MODEL_afa0d5b673674085b314c6de50d2ce87",
+          "IPY_MODEL_723fd5b226c245f0b13ab41b3516e414",
+          "IPY_MODEL_40bbf5f9df594347b43b49f9cf52065d",
+          "IPY_MODEL_c78e73f7b9084a3a86c271a6e66da801",
+          "IPY_MODEL_b0f0462332aa4c1fbb5300bb7f464721",
+          "IPY_MODEL_67fd3fc0ce8a486d9f838a357cbe7b11"
+        ],
+        "layout": "IPY_MODEL_aee419c7ac2a4bf19240660a20fa91c4",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_74f0c1959a4b4f368525d5033d606cf4",
+        "zoom": 14.0
+      }
+    },
+    "32428467854b4dc6bc3adb5de1aa2018": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "2cd95b44a8cb448fb0ec90d1c7200811": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "b9730844b5e2499ab2251c478ce6aa38": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "ec854e359ebc408e924eac353b62468c": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "723fd5b226c245f0b13ab41b3516e414": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "40bbf5f9df594347b43b49f9cf52065d": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "c78e73f7b9084a3a86c271a6e66da801": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64105711525111",
+            "-79.45639657516783"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b0f0462332aa4c1fbb5300bb7f464721": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.643665200777036",
+            "-79.459228865867"
+          ],
+          [
+            "43.6434023488302",
+            "-79.4590737013744"
+          ],
+          [
+            "43.64369116818767",
+            "-79.45910402155059"
+          ],
+          [
+            "43.64427065139203",
+            "-79.45954992905519"
+          ],
+          [
+            "43.64962920434348",
+            "-79.46240164784192"
+          ],
+          [
+            "43.64921933152096",
+            "-79.4627956661376"
+          ],
+          [
+            "43.649335545945874",
+            "-79.46302520840419"
+          ],
+          [
+            "43.64350150721721",
+            "-79.45906993650908"
+          ],
+          [
+            "43.64400115464646",
+            "-79.46762471814367"
+          ],
+          [
+            "43.649534246073664",
+            "-79.46254287365926"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b3286c2f2b38425a89c68c776634833f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fafa918e21624a51ba1eb524116c5db2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9cf57f26e3f7467ab2ea63ddec08add3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_b3286c2f2b38425a89c68c776634833f",
+        "style": "IPY_MODEL_fafa918e21624a51ba1eb524116c5db2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6b00841f30e74015aafecf61d9ea3660": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "266fdf3ec78e44c295ada7c916aa61b1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6b00841f30e74015aafecf61d9ea3660",
+        "location": [
+          "43.643665200777036",
+          "-79.459228865867"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9cf57f26e3f7467ab2ea63ddec08add3",
+        "title": "Canada Warbler, 2021-09-04"
+      }
+    },
+    "e48b61a15c054cb796f47b4371a09f54": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9de34134875841f1b30f7e3198cef08b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fa938f6ab61c446ea8162b8119e2bb59": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_e48b61a15c054cb796f47b4371a09f54",
+        "style": "IPY_MODEL_9de34134875841f1b30f7e3198cef08b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b4ed48bea7e247e8b961100b3ed37ea0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ca6b23e8b5e34178a86ad7479701510e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b4ed48bea7e247e8b961100b3ed37ea0",
+        "location": [
+          "43.6434023488302",
+          "-79.4590737013744"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fa938f6ab61c446ea8162b8119e2bb59",
+        "title": "Canada Warbler, 2021-09-04"
+      }
+    },
+    "9da1bf32da78410989c5af8c18629074": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "be1718379be746f2b5c6b359b21aca46": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4b4851277ac7457bbcc91ef62e4ad01a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_9da1bf32da78410989c5af8c18629074",
+        "style": "IPY_MODEL_be1718379be746f2b5c6b359b21aca46",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ef14a3615d89491e942d15e7f13a8fdc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fb9a439430714d18bfe46f81c2cc85bd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ef14a3615d89491e942d15e7f13a8fdc",
+        "location": [
+          "43.64369116818767",
+          "-79.45910402155059"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4b4851277ac7457bbcc91ef62e4ad01a",
+        "title": "Canada Warbler, 2021-09-04"
+      }
+    },
+    "72dd8b0539bd47429e33daf772caf8eb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "60253ed6d9004eae96e8df8d557164d7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e3d8ffa8ae024ee3ba180ac0e41a6fee": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_72dd8b0539bd47429e33daf772caf8eb",
+        "style": "IPY_MODEL_60253ed6d9004eae96e8df8d557164d7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c842b2d7bb72454db7cf8d410083c546": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9a427d4dc410478c9d1fea3c54119e10": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c842b2d7bb72454db7cf8d410083c546",
+        "location": [
+          "43.64427065139203",
+          "-79.45954992905519"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e3d8ffa8ae024ee3ba180ac0e41a6fee",
+        "title": "Canada Warbler, 2021-08-23"
+      }
+    },
+    "2d24e83ea5e04441bf529e54f1a70c57": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d39def2ff2b54bf9a62ce418e0b66617": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ec00c00604454e7784c24a68cff6c04f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_2d24e83ea5e04441bf529e54f1a70c57",
+        "style": "IPY_MODEL_d39def2ff2b54bf9a62ce418e0b66617",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c876f882afd54bc98e91e39c81a01d06": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a9752b3d24ec4709b8b8bd9a645d8e19": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c876f882afd54bc98e91e39c81a01d06",
+        "location": [
+          "43.64962920434348",
+          "-79.46240164784192"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ec00c00604454e7784c24a68cff6c04f",
+        "title": "Canada Warbler, 2021-09-04"
+      }
+    },
+    "9cec5f543ee1487883eeb865c05af1ea": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ad0b13111bf249aaaea7248586bcb3b6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1b5a8a689e8748ec9e321cacf02b5f5a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_9cec5f543ee1487883eeb865c05af1ea",
+        "style": "IPY_MODEL_ad0b13111bf249aaaea7248586bcb3b6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "caa4a05dd4884fbb98d21ceb48b30eee": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "50f3edab6221411d868471b03283ef52": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_caa4a05dd4884fbb98d21ceb48b30eee",
+        "location": [
+          "43.64921933152096",
+          "-79.4627956661376"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1b5a8a689e8748ec9e321cacf02b5f5a",
+        "title": "Canada Warbler, 2021-08-24"
+      }
+    },
+    "46a04f83c1b9450ab838346f4dd54742": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4f1cb6423f22437a8af2f1c88ef6c467": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "37fa18523bb948fe8443b869e6b3b145": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_46a04f83c1b9450ab838346f4dd54742",
+        "style": "IPY_MODEL_4f1cb6423f22437a8af2f1c88ef6c467",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2b3a5798faaa4eadb34781d0a18d2b19": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fd0130aa3a1048bdbf2737bb7edf62dd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2b3a5798faaa4eadb34781d0a18d2b19",
+        "location": [
+          "43.649335545945874",
+          "-79.46302520840419"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_37fa18523bb948fe8443b869e6b3b145",
+        "title": "Canada Warbler, 2021-08-24"
+      }
+    },
+    "cca39aecc8ee4459821dc5d685264482": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7cce4d66decb435cbaafbcb8adedd193": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2356cdfc86544e24a434f7b857eb5fbc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_cca39aecc8ee4459821dc5d685264482",
+        "style": "IPY_MODEL_7cce4d66decb435cbaafbcb8adedd193",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1fd99f5d1b0647adb541027d74b74503": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3117b1bc7e984a85b66e7057ef9c20d3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1fd99f5d1b0647adb541027d74b74503",
+        "location": [
+          "43.64350150721721",
+          "-79.45906993650908"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2356cdfc86544e24a434f7b857eb5fbc",
+        "title": "Canada Warbler, 2021-09-04"
+      }
+    },
+    "e9f19a7e50274c2a981b10f075059e82": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2e6d96c310404a30b075b93ed43cbe85": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fcf7442d366f4631abdb5aa93b368298": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_e9f19a7e50274c2a981b10f075059e82",
+        "style": "IPY_MODEL_2e6d96c310404a30b075b93ed43cbe85",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f329e5fac67a400ca9fbfd615355a1f9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6b2f1e4fe1044d79bb7c40d4f06735b0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f329e5fac67a400ca9fbfd615355a1f9",
+        "location": [
+          "43.64105711525111",
+          "-79.45639657516783"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fcf7442d366f4631abdb5aa93b368298",
+        "title": "Canada Warbler, 2021-08-14"
+      }
+    },
+    "12411ba20d7b437596be0ed5172ecda2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "796d782da63a41ffb5c37057c4dec02d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6ce0ef2480b54a5fa3f4036d150849d3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_12411ba20d7b437596be0ed5172ecda2",
+        "style": "IPY_MODEL_796d782da63a41ffb5c37057c4dec02d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "24e530a13ce04f178a804ee31e49e306": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bcc365c442994ce883dc4aa5f9fb8210": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_24e530a13ce04f178a804ee31e49e306",
+        "location": [
+          "43.64400115464646",
+          "-79.46762471814367"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6ce0ef2480b54a5fa3f4036d150849d3",
+        "title": "Canada Warbler, 2021-08-31"
+      }
+    },
+    "518a0ffee7eb42d9903b90179e5b9c51": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a6de83aafbf34629adbed5fe6381779a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad59e8fc25ba46e8919f186ffe726b70": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_518a0ffee7eb42d9903b90179e5b9c51",
+        "style": "IPY_MODEL_a6de83aafbf34629adbed5fe6381779a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "448aea3baaff4ec5949394512ba7713c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5d33ab4d8f5044648b99e5cd6afda5ad": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_448aea3baaff4ec5949394512ba7713c",
+        "location": [
+          "43.649534246073664",
+          "-79.46254287365926"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad59e8fc25ba46e8919f186ffe726b70",
+        "title": "Canada Warbler, 2021-09-04"
+      }
+    },
+    "67fd3fc0ce8a486d9f838a357cbe7b11": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_266fdf3ec78e44c295ada7c916aa61b1",
+          "IPY_MODEL_ca6b23e8b5e34178a86ad7479701510e",
+          "IPY_MODEL_fb9a439430714d18bfe46f81c2cc85bd",
+          "IPY_MODEL_9a427d4dc410478c9d1fea3c54119e10",
+          "IPY_MODEL_a9752b3d24ec4709b8b8bd9a645d8e19",
+          "IPY_MODEL_50f3edab6221411d868471b03283ef52",
+          "IPY_MODEL_fd0130aa3a1048bdbf2737bb7edf62dd",
+          "IPY_MODEL_3117b1bc7e984a85b66e7057ef9c20d3",
+          "IPY_MODEL_6b2f1e4fe1044d79bb7c40d4f06735b0",
+          "IPY_MODEL_bcc365c442994ce883dc4aa5f9fb8210",
+          "IPY_MODEL_5d33ab4d8f5044648b99e5cd6afda5ad"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "7d8eeffe8b884376bdc4859afcb68208"}
+</script>
+
+</body>
+</html>

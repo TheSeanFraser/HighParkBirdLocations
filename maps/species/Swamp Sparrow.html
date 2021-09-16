@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swamp Sparrow Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "b503afcb8f0e46eaa0d2cd5dd7018a42": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "6c928295745440f991775196bda750be": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "50911a481b2e40659358dbb9e8d3aaf4": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "74bd350adbb94f778ab8f4f3f0882d75": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "aafd4d460b2343bba69ced139725c757": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "f020ee2b44d444bdbe0bd67cbb3022b3": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_9086010c340649ee813d6d205ee8f896",
+          "IPY_MODEL_f7b426790500471cae4636e8a801c29c",
+          "IPY_MODEL_853201deb52645899f398277ff5fb533",
+          "IPY_MODEL_2c7b1fbfb94843b685502972d4ed0bf4"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_b503afcb8f0e46eaa0d2cd5dd7018a42",
+        "dragging_style": "IPY_MODEL_6c928295745440f991775196bda750be",
+        "layers": [
+          "IPY_MODEL_50911a481b2e40659358dbb9e8d3aaf4",
+          "IPY_MODEL_b57973f1e5844f978c3a5905cd116098",
+          "IPY_MODEL_42ab681cc0ef416f88789dcc844b185d"
+        ],
+        "layout": "IPY_MODEL_74bd350adbb94f778ab8f4f3f0882d75",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_aafd4d460b2343bba69ced139725c757",
+        "zoom": 14.0
+      }
+    },
+    "9086010c340649ee813d6d205ee8f896": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "f7b426790500471cae4636e8a801c29c": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "853201deb52645899f398277ff5fb533": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "2c7b1fbfb94843b685502972d4ed0bf4": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "b57973f1e5844f978c3a5905cd116098": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "blue",
+          "0.6": "cyan",
+          "0.7": "lime",
+          "0.8": "yellow",
+          "1.0": "red"
+        },
+        "locations": [
+          [
+            "43.6487816855292",
+            "-79.47089060159232"
+          ],
+          [
+            "43.64798421831597",
+            "-79.47078325956282"
+          ],
+          [
+            "43.64769985464486",
+            "-79.47057386366245"
+          ],
+          [
+            "43.64839790790191",
+            "-79.47100150723347"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "4019ee98c33246ca9c8540aa384f5b9f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6dedc06c07ee48858c5ee80bd398df24": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a54cddbc50c45759add9cfb0b18a9c0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-16",
+        "layout": "IPY_MODEL_4019ee98c33246ca9c8540aa384f5b9f",
+        "style": "IPY_MODEL_6dedc06c07ee48858c5ee80bd398df24",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "74f29ef307964b83836cde5cf030ee22": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6487816855292",
+          "-79.47089060159232"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a54cddbc50c45759add9cfb0b18a9c0",
+        "title": "Swamp Sparrow, 2021-09-16"
+      }
+    },
+    "2785a1a7b2444de6b4a505d23f428ae6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "489b3d865e0642da954620c892fcccd2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fa285d83afd64b5fa84b3f8a44e4ba08": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-16",
+        "layout": "IPY_MODEL_2785a1a7b2444de6b4a505d23f428ae6",
+        "style": "IPY_MODEL_489b3d865e0642da954620c892fcccd2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3ebec2561df5426ab78f4c7d24debe3d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64798421831597",
+          "-79.47078325956282"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fa285d83afd64b5fa84b3f8a44e4ba08",
+        "title": "Swamp Sparrow, 2021-09-16"
+      }
+    },
+    "d7ba9e84c17f427a88a8d1a51ebd4b05": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d94c95af9c1140bbbf530873361fef71": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "94d8595135294413a8a641b9e4b61284": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-16",
+        "layout": "IPY_MODEL_d7ba9e84c17f427a88a8d1a51ebd4b05",
+        "style": "IPY_MODEL_d94c95af9c1140bbbf530873361fef71",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1f158d86756143c8bfe6a5076fa82c56": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64769985464486",
+          "-79.47057386366245"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_94d8595135294413a8a641b9e4b61284",
+        "title": "Swamp Sparrow, 2021-09-16"
+      }
+    },
+    "f96dc535d2da48b1bf0b32bb16cf0d67": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "92585831476b437e901a3d15331e49fd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "129c4f39f40e4470b82c9fa3d400c053": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-16",
+        "layout": "IPY_MODEL_f96dc535d2da48b1bf0b32bb16cf0d67",
+        "style": "IPY_MODEL_92585831476b437e901a3d15331e49fd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e3554420f0134770b4947515c4707600": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64839790790191",
+          "-79.47100150723347"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_129c4f39f40e4470b82c9fa3d400c053",
+        "title": "Swamp Sparrow, 2021-09-16"
+      }
+    },
+    "42ab681cc0ef416f88789dcc844b185d": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_74f29ef307964b83836cde5cf030ee22",
+          "IPY_MODEL_3ebec2561df5426ab78f4c7d24debe3d",
+          "IPY_MODEL_1f158d86756143c8bfe6a5076fa82c56",
+          "IPY_MODEL_e3554420f0134770b4947515c4707600"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "f020ee2b44d444bdbe0bd67cbb3022b3"}
+</script>
+
+</body>
+</html>

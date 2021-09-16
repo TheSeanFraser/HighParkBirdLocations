@@ -63,6 +63,7 @@ Great Egret
 American Crow
 American Black Duck
 Gray Catbird
+Yellow-rumped Warbler
 Magnolia Warbler
 Canada Warbler
 Northern Waterthrush
@@ -78,26 +79,26 @@ passerine sp.
 Chestnut-sided Warbler
 Bay-breasted Warbler
 Palm Warbler
-Yellow-rumped Warbler
 Carolina Wren
 Least Flycatcher
 Common Yellowthroat
 Blackpoll Warbler
+Swainson's Thrush
+Empidonax sp.
 Blackburnian Warbler
 Eastern Phoebe
 Rose-breasted Grosbeak
 warbler sp. (Parulidae sp.)
-Swainson's Thrush
 Green-winged Teal
 Cape May Warbler
 Mallard x American Black Duck (hybrid)
 Turkey Vulture
+Blue-winged Teal
 Ovenbird
 Pied-billed Grebe
 Scarlet Tanager
 Willow Flycatcher
 Philadelphia Vireo
-Empidonax sp.
 Yellow-bellied Flycatcher
 Nashville Warbler
 Gray-cheeked Thrush

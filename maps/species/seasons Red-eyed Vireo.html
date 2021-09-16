@@ -1,0 +1,4532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Red-eyed Vireo Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "40ab931320464d619ca26ae6cdbd1817": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "1317011b7f564cdab561ccbb71dbd520": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "b0b9f95539ae4853bb5393a3fe2cde5d": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "2b2a2359c05a4bb6ad20d0d437fb7587": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "2240569664f54709b00dd741ed6f8f2d": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "631b037335594c7abff8a6295f86a320": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_e7d47de5f9cf493e981964cc1a453060",
+          "IPY_MODEL_bca8ecf65f514f73b5bf54eba24d48ca",
+          "IPY_MODEL_1501c18cfca64412889d73529cd7dc44",
+          "IPY_MODEL_5a144acce3da401d8073bed84bcfd713"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_40ab931320464d619ca26ae6cdbd1817",
+        "dragging_style": "IPY_MODEL_1317011b7f564cdab561ccbb71dbd520",
+        "layers": [
+          "IPY_MODEL_b0b9f95539ae4853bb5393a3fe2cde5d",
+          "IPY_MODEL_ea076e89426746e0967df5be3d5dfa39",
+          "IPY_MODEL_3fc204d069624db291ccb92d40614215",
+          "IPY_MODEL_4ddf1aa0ed2f4b4ca7414bf47a8076a2",
+          "IPY_MODEL_83f22d39862b4c229726e082543608c1",
+          "IPY_MODEL_dfcbd51a729e4291ab183a7ce15c76ee"
+        ],
+        "layout": "IPY_MODEL_2b2a2359c05a4bb6ad20d0d437fb7587",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_2240569664f54709b00dd741ed6f8f2d",
+        "zoom": 14.0
+      }
+    },
+    "e7d47de5f9cf493e981964cc1a453060": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "bca8ecf65f514f73b5bf54eba24d48ca": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "1501c18cfca64412889d73529cd7dc44": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "5a144acce3da401d8073bed84bcfd713": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "ea076e89426746e0967df5be3d5dfa39": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "3fc204d069624db291ccb92d40614215": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "4ddf1aa0ed2f4b4ca7414bf47a8076a2": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.65092483480825",
+            "-79.46519503242199"
+          ],
+          [
+            "43.64913628272317",
+            "-79.46281484564207"
+          ],
+          [
+            "43.648867021854855",
+            "-79.47022481810076"
+          ],
+          [
+            "43.6489674897431",
+            "-79.46303698722684"
+          ],
+          [
+            "43.648664419520045",
+            "-79.4690989601422"
+          ],
+          [
+            "43.64930947979313",
+            "-79.46858622025125"
+          ],
+          [
+            "43.64915141574483",
+            "-79.46852164916875"
+          ],
+          [
+            "43.6489417821858",
+            "-79.4694063298689"
+          ],
+          [
+            "43.64884510040291",
+            "-79.47016734699383"
+          ],
+          [
+            "43.64912047631834",
+            "-79.46280838853383"
+          ],
+          [
+            "43.648759257949024",
+            "-79.46913770279171"
+          ],
+          [
+            "43.64888824792419",
+            "-79.46933594454548"
+          ],
+          [
+            "43.6490817108875",
+            "-79.4629866160955"
+          ],
+          [
+            "43.649003716437406",
+            "-79.4627121747774"
+          ],
+          [
+            "43.650927373544775",
+            "-79.46534161730975"
+          ],
+          [
+            "43.648996563816226",
+            "-79.46290331655558"
+          ],
+          [
+            "43.649342485044606",
+            "-79.46244005814174"
+          ],
+          [
+            "43.64904500988359",
+            "-79.46245135273769"
+          ],
+          [
+            "43.6491875320419",
+            "-79.4697007853791"
+          ],
+          [
+            "43.649282370470885",
+            "-79.4697395280286"
+          ],
+          [
+            "43.64900198643504",
+            "-79.4623428899222"
+          ],
+          [
+            "43.650401159300465",
+            "-79.46878960494372"
+          ],
+          [
+            "43.64878610248475",
+            "-79.4627501858733"
+          ],
+          [
+            "43.648988874945125",
+            "-79.4625635804185"
+          ],
+          [
+            "43.64999273151141",
+            "-79.46876830501697"
+          ],
+          [
+            "43.6489760190244",
+            "-79.46246773423861"
+          ],
+          [
+            "43.648643665080016",
+            "-79.46296202459932"
+          ],
+          [
+            "43.64925329639775",
+            "-79.46987319869986"
+          ],
+          [
+            "43.64913551246705",
+            "-79.46248920264452"
+          ],
+          [
+            "43.64914391270141",
+            "-79.46276412454857"
+          ],
+          [
+            "43.64348830667352",
+            "-79.46741023533832"
+          ],
+          [
+            "43.64924752677478",
+            "-79.46258128395908"
+          ],
+          [
+            "43.64929713930165",
+            "-79.46998814091371"
+          ],
+          [
+            "43.6490924890185",
+            "-79.46238073982902"
+          ],
+          [
+            "43.64961793734298",
+            "-79.46300760549043"
+          ],
+          [
+            "43.64723594694247",
+            "-79.47114884011495"
+          ],
+          [
+            "43.649040809766404",
+            "-79.46231389178567"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "83f22d39862b4c229726e082543608c1": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64911820085995",
+            "-79.4625724321888"
+          ],
+          [
+            "43.64917210795523",
+            "-79.46254974237007"
+          ],
+          [
+            "43.648924084203124",
+            "-79.46271742287145"
+          ],
+          [
+            "43.64264803285011",
+            "-79.45891655382229"
+          ],
+          [
+            "43.643897501842275",
+            "-79.4598462187383"
+          ],
+          [
+            "43.65153485320546",
+            "-79.46222607847056"
+          ],
+          [
+            "43.64897773572922",
+            "-79.46301126972892"
+          ],
+          [
+            "43.64956835814948",
+            "-79.4630094879231"
+          ],
+          [
+            "43.65079784883247",
+            "-79.46198570137419"
+          ],
+          [
+            "43.64329886254142",
+            "-79.45909827362578"
+          ],
+          [
+            "43.643806999258814",
+            "-79.45980836883147"
+          ],
+          [
+            "43.65137090407645",
+            "-79.46238368578884"
+          ],
+          [
+            "43.64911374517359",
+            "-79.46275150791297"
+          ],
+          [
+            "43.65151754159837",
+            "-79.46230930801485"
+          ],
+          [
+            "43.64886794926466",
+            "-79.46282965055227"
+          ],
+          [
+            "43.65133233631427",
+            "-79.46209614724917"
+          ],
+          [
+            "43.64412229716529",
+            "-79.45908077133886"
+          ],
+          [
+            "43.65132813619709",
+            "-79.46195868629714"
+          ],
+          [
+            "43.64854227884983",
+            "-79.46305532732671"
+          ],
+          [
+            "43.643725408048084",
+            "-79.45941236747632"
+          ],
+          [
+            "43.64382011074873",
+            "-79.45958767833517"
+          ],
+          [
+            "43.64936584125829",
+            "-79.4628795567017"
+          ],
+          [
+            "43.64429439095948",
+            "-79.45951462260085"
+          ],
+          [
+            "43.65086263957447",
+            "-79.46183185892123"
+          ],
+          [
+            "43.64369944063745",
+            "-79.45953721179274"
+          ],
+          [
+            "43.64255753026665",
+            "-79.45887870391547"
+          ],
+          [
+            "43.64867606045102",
+            "-79.46288510337284"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "f35a8faef8df43928b31151db430d05b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1bf8b80554d5460fa29eeb41d84c61a6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "abdf7021351b476e8bad7d29cdfe7c75": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_f35a8faef8df43928b31151db430d05b",
+        "style": "IPY_MODEL_1bf8b80554d5460fa29eeb41d84c61a6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "30d2f0fc308b4e2a9dced1bf99d29423": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0a0a5720760b4866ba7b25e39038ab41": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_30d2f0fc308b4e2a9dced1bf99d29423",
+        "location": [
+          "43.65092483480825",
+          "-79.46519503242199"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_abdf7021351b476e8bad7d29cdfe7c75",
+        "title": "Red-eyed Vireo, 2021-07-24"
+      }
+    },
+    "627210c86575497a9dbccbc087313e36": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c5f187743ae64dea8394e10fae7a85c2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9d846216ef734402a68d1f1dd30b1ac5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_627210c86575497a9dbccbc087313e36",
+        "style": "IPY_MODEL_c5f187743ae64dea8394e10fae7a85c2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "878245f63e7841b7bb27856335e32962": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0c49e79148954df783704f0542b68918": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_878245f63e7841b7bb27856335e32962",
+        "location": [
+          "43.64913628272317",
+          "-79.46281484564207"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9d846216ef734402a68d1f1dd30b1ac5",
+        "title": "Red-eyed Vireo, 2021-07-24"
+      }
+    },
+    "a3fc191008ff473085e1f6379130f09f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c056d4c43ba44288919bd9a08c6f4fd5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "66483a02b0c5481282bf03c7647de3cc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_a3fc191008ff473085e1f6379130f09f",
+        "style": "IPY_MODEL_c056d4c43ba44288919bd9a08c6f4fd5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "380515c1e9b147949fd41e7c2b20ec28": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "69191179247c49fcba498bb77b36cf52": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_380515c1e9b147949fd41e7c2b20ec28",
+        "location": [
+          "43.648867021854855",
+          "-79.47022481810076"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_66483a02b0c5481282bf03c7647de3cc",
+        "title": "Red-eyed Vireo, 2021-07-18"
+      }
+    },
+    "c43b5b43a6644a2a8a9cb878f522c761": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "baedb07d764e476a9663a1431177db07": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "29103ad6860e4fdaadcbe40b42cad89e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_c43b5b43a6644a2a8a9cb878f522c761",
+        "style": "IPY_MODEL_baedb07d764e476a9663a1431177db07",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eede3d03c4fd4d049385173a492d11a3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7c49e4e7b09e448e875ced4b007efe07": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eede3d03c4fd4d049385173a492d11a3",
+        "location": [
+          "43.6489674897431",
+          "-79.46303698722684"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_29103ad6860e4fdaadcbe40b42cad89e",
+        "title": "Red-eyed Vireo, 2021-07-12"
+      }
+    },
+    "8c1a7cf4397241cc8079c2b5a89b00a6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5f88e27ac25c4f8981d35ea1c288be27": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9ffd37e864a748c4b30f8c9bea227f73": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_8c1a7cf4397241cc8079c2b5a89b00a6",
+        "style": "IPY_MODEL_5f88e27ac25c4f8981d35ea1c288be27",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "625851f00087482e88a1d0289f1ca72b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ce335d0d804c463f88ad9431657c0107": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_625851f00087482e88a1d0289f1ca72b",
+        "location": [
+          "43.648664419520045",
+          "-79.4690989601422"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9ffd37e864a748c4b30f8c9bea227f73",
+        "title": "Red-eyed Vireo, 2021-07-08"
+      }
+    },
+    "81781d76ea6d4d62af0d5edfe6fdac8c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b85a26a8bbfc42eebf640d35bf6b6232": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e65b034949c24070b114cb04d0f8dbd2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_81781d76ea6d4d62af0d5edfe6fdac8c",
+        "style": "IPY_MODEL_b85a26a8bbfc42eebf640d35bf6b6232",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ffe91c70fbd74f298322828e4c0fa89e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "20148146c49644ad8da933f4454b688d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ffe91c70fbd74f298322828e4c0fa89e",
+        "location": [
+          "43.64930947979313",
+          "-79.46858622025125"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e65b034949c24070b114cb04d0f8dbd2",
+        "title": "Red-eyed Vireo, 2021-07-15"
+      }
+    },
+    "149ac4b5c3ac43718bb0994a0b08dc5e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c58f2b3bbdff4ec5aae9f42f9e5f735b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eb165e67c50c4a80a7ddd6bc6ff84088": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_149ac4b5c3ac43718bb0994a0b08dc5e",
+        "style": "IPY_MODEL_c58f2b3bbdff4ec5aae9f42f9e5f735b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5f9f7d89caf64b36acc1d1160e0445af": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1b75398617be46f383e7bf410eb621bc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5f9f7d89caf64b36acc1d1160e0445af",
+        "location": [
+          "43.64915141574483",
+          "-79.46852164916875"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eb165e67c50c4a80a7ddd6bc6ff84088",
+        "title": "Red-eyed Vireo, 2021-07-15"
+      }
+    },
+    "32de7628ae5c4ebcb0a5ef293062a622": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e2e42fc574f148f897d1f82c2e42a685": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3d39059d614c4151b1ad522d3e6fc13a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_32de7628ae5c4ebcb0a5ef293062a622",
+        "style": "IPY_MODEL_e2e42fc574f148f897d1f82c2e42a685",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "664ae5a6af3349a6bbaaf1c5f86a1e7a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "15bb39be20014193b4acd9040c05a737": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_664ae5a6af3349a6bbaaf1c5f86a1e7a",
+        "location": [
+          "43.6489417821858",
+          "-79.4694063298689"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3d39059d614c4151b1ad522d3e6fc13a",
+        "title": "Red-eyed Vireo, 2021-07-21"
+      }
+    },
+    "419958d803e5458e829d1c3a26d9270b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1afd7ed077794451a7d18e13dd03d31b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "69b7d741364547f59287f109f3120874": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_419958d803e5458e829d1c3a26d9270b",
+        "style": "IPY_MODEL_1afd7ed077794451a7d18e13dd03d31b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ce71a5a14f184f138088f5e6098541ad": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5cf5debfd59b4265a1e2bf42170ad5b6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ce71a5a14f184f138088f5e6098541ad",
+        "location": [
+          "43.64884510040291",
+          "-79.47016734699383"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_69b7d741364547f59287f109f3120874",
+        "title": "Red-eyed Vireo, 2021-07-18"
+      }
+    },
+    "e0205b8e769d4f16b58634e1726a2002": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f4bc46781ed3406193cea36e35c186ae": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3a5c1683a02147adb1b3898934c76969": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_e0205b8e769d4f16b58634e1726a2002",
+        "style": "IPY_MODEL_f4bc46781ed3406193cea36e35c186ae",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2b9dc711dccf43a88c0016237be48218": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9e63a1d6f72543ce813e5c25f3698b91": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2b9dc711dccf43a88c0016237be48218",
+        "location": [
+          "43.64912047631834",
+          "-79.46280838853383"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3a5c1683a02147adb1b3898934c76969",
+        "title": "Red-eyed Vireo, 2021-07-12"
+      }
+    },
+    "5392b88a7d6a4b2bbc15136dc2a5cad7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9ecf2d045c0443b19935838a6d0efdfa": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fd6d57e89c074957ad91e3ae209ec4a4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_5392b88a7d6a4b2bbc15136dc2a5cad7",
+        "style": "IPY_MODEL_9ecf2d045c0443b19935838a6d0efdfa",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0c95f0d2b4b749dd9deb301de77dbdd5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0c237f8dd770454f8c534668044496dd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0c95f0d2b4b749dd9deb301de77dbdd5",
+        "location": [
+          "43.648759257949024",
+          "-79.46913770279171"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fd6d57e89c074957ad91e3ae209ec4a4",
+        "title": "Red-eyed Vireo, 2021-07-08"
+      }
+    },
+    "2264532e8a00484881d90b2450827836": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ccf5296dad8f42bf8a96e97468b6739a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f9170e17abb24cf39af414a6d24f8c5a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_2264532e8a00484881d90b2450827836",
+        "style": "IPY_MODEL_ccf5296dad8f42bf8a96e97468b6739a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1078f90926ce4c1d9da0738adf1e6b71": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4a950e9dd02c44f2bb37f9b72fcf228a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1078f90926ce4c1d9da0738adf1e6b71",
+        "location": [
+          "43.64888824792419",
+          "-79.46933594454548"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f9170e17abb24cf39af414a6d24f8c5a",
+        "title": "Red-eyed Vireo, 2021-07-21"
+      }
+    },
+    "a7993903e61945b187ce7f8e4601afdb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c9f382a8e2eb4484bd379283e2071fe5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7448f4ca5e39461889de9e0d941c35a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_a7993903e61945b187ce7f8e4601afdb",
+        "style": "IPY_MODEL_c9f382a8e2eb4484bd379283e2071fe5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "28e1d5eccf7c4051939c85a461261853": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be4f05d73ad342caba4db510acc6dc6a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_28e1d5eccf7c4051939c85a461261853",
+        "location": [
+          "43.6490817108875",
+          "-79.4629866160955"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7448f4ca5e39461889de9e0d941c35a6",
+        "title": "Red-eyed Vireo, 2021-07-12"
+      }
+    },
+    "9a116eaaca4f487dbe31c4eed9a61863": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a7f067192a674e1dbf418963fdc93cee": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "68d9175f719644bda880c8a4cc8f3f05": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_9a116eaaca4f487dbe31c4eed9a61863",
+        "style": "IPY_MODEL_a7f067192a674e1dbf418963fdc93cee",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e2eb4f84442d4a32881794049e742a45": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6c4db59faf3f4b63887b668e53026ad5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e2eb4f84442d4a32881794049e742a45",
+        "location": [
+          "43.649003716437406",
+          "-79.4627121747774"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_68d9175f719644bda880c8a4cc8f3f05",
+        "title": "Red-eyed Vireo, 2021-07-12"
+      }
+    },
+    "eade68b8cfae4a67841eda53d45c3941": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "45a331e5054a41c59bef1c3d05bfb26f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "658b009852a7432e9a9c47aaf900ec32": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_eade68b8cfae4a67841eda53d45c3941",
+        "style": "IPY_MODEL_45a331e5054a41c59bef1c3d05bfb26f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "190fb993f20a4c0295127bec183a7a15": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e8f603b52b794122801ac0abc44aaf00": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_190fb993f20a4c0295127bec183a7a15",
+        "location": [
+          "43.650927373544775",
+          "-79.46534161730975"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_658b009852a7432e9a9c47aaf900ec32",
+        "title": "Red-eyed Vireo, 2021-07-24"
+      }
+    },
+    "60ce4b4ecfb3430d879e90ef29963e59": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d921a5fb1bca401081b64521fdbb34d7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "91b117bae2164a36bb1e62e94e2f3dc2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_60ce4b4ecfb3430d879e90ef29963e59",
+        "style": "IPY_MODEL_d921a5fb1bca401081b64521fdbb34d7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "00308d39bf8347898dcba3ea9b8ba500": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ccc9d98c03ac4802ae67a3ed850550d1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_00308d39bf8347898dcba3ea9b8ba500",
+        "location": [
+          "43.648996563816226",
+          "-79.46290331655558"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_91b117bae2164a36bb1e62e94e2f3dc2",
+        "title": "Red-eyed Vireo, 2021-07-12"
+      }
+    },
+    "0118c96f2ae548dcbab19e7c3718a732": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1f7ec702cf7f401e8711527594c6bea1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "49e6b5f6e16c458bace3c13c59bb1913": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_0118c96f2ae548dcbab19e7c3718a732",
+        "style": "IPY_MODEL_1f7ec702cf7f401e8711527594c6bea1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "692792ab1bb34b688ddf28492fe50228": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6a271a75a3234b519f210c32bd3547e0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_692792ab1bb34b688ddf28492fe50228",
+        "location": [
+          "43.649342485044606",
+          "-79.46244005814174"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_49e6b5f6e16c458bace3c13c59bb1913",
+        "title": "Red-eyed Vireo, 2021-08-16"
+      }
+    },
+    "af5f012da75f4351b4674b825852569b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1ea520e676ac49d28e1d29f8a93b227e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "85d7264a7c764d96a9d9a068c31811af": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_af5f012da75f4351b4674b825852569b",
+        "style": "IPY_MODEL_1ea520e676ac49d28e1d29f8a93b227e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6762ae10458a43918bb3964144c8d1d6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "23ec9ba38b304a6ab42816a1e99767cd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6762ae10458a43918bb3964144c8d1d6",
+        "location": [
+          "43.64904500988359",
+          "-79.46245135273769"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_85d7264a7c764d96a9d9a068c31811af",
+        "title": "Red-eyed Vireo, 2021-08-14"
+      }
+    },
+    "46fa932428be4054bc651eb22fada5f8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bd0b09b897c94236b1b0b199fcb58d6d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "96e7281d60d34fe89f15e493bc73da13": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_46fa932428be4054bc651eb22fada5f8",
+        "style": "IPY_MODEL_bd0b09b897c94236b1b0b199fcb58d6d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3888ef88570944dea22590b45800a3ef": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3516ea14e5ca42acb55b12b6e3d2b663": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3888ef88570944dea22590b45800a3ef",
+        "location": [
+          "43.6491875320419",
+          "-79.4697007853791"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_96e7281d60d34fe89f15e493bc73da13",
+        "title": "Red-eyed Vireo, 2021-07-27"
+      }
+    },
+    "bf0c3aa33f144633a3fd412e032dff28": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fa425e00fd9e4568953183bf9ee05492": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6850bf616ab84fbf9366bba2f9d1957f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_bf0c3aa33f144633a3fd412e032dff28",
+        "style": "IPY_MODEL_fa425e00fd9e4568953183bf9ee05492",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fe03667c901140feba08274b2396413b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "420c397fc6bf4684950b0e9126df04e6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fe03667c901140feba08274b2396413b",
+        "location": [
+          "43.649282370470885",
+          "-79.4697395280286"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6850bf616ab84fbf9366bba2f9d1957f",
+        "title": "Red-eyed Vireo, 2021-07-27"
+      }
+    },
+    "abceba91b7bd4c00a3d16e23673280bd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e9af78d6cb944fcaa2bc78a642cfb99f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5efddb09736f477c938b90b31e22e092": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_abceba91b7bd4c00a3d16e23673280bd",
+        "style": "IPY_MODEL_e9af78d6cb944fcaa2bc78a642cfb99f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a7419be8d5774351a3fe59330a0c2db3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c741a4e1f870426ebbaf5267df8e6893": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a7419be8d5774351a3fe59330a0c2db3",
+        "location": [
+          "43.64911820085995",
+          "-79.4625724321888"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5efddb09736f477c938b90b31e22e092",
+        "title": "Red-eyed Vireo, 2021-08-31"
+      }
+    },
+    "f21c62ccadfc4946a194dcdf784ef177": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d7c83b97f45845738f026d70d5d51d3c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eef05a6485de4e2a9d04a6d9e7cf1152": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_f21c62ccadfc4946a194dcdf784ef177",
+        "style": "IPY_MODEL_d7c83b97f45845738f026d70d5d51d3c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "29a1cdacb41642b49d0a014439801d59": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ca06bfb479884b018e1866a0887212f0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_29a1cdacb41642b49d0a014439801d59",
+        "location": [
+          "43.64917210795523",
+          "-79.46254974237007"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eef05a6485de4e2a9d04a6d9e7cf1152",
+        "title": "Red-eyed Vireo, 2021-08-23"
+      }
+    },
+    "50e3f576ab9343f9804bb1d76236aa8c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2d4e398b57764f0ab7d2fc87b2c7b4b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cbd3a7c25c364c02b57c6f395c83b71c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_50e3f576ab9343f9804bb1d76236aa8c",
+        "style": "IPY_MODEL_2d4e398b57764f0ab7d2fc87b2c7b4b5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "09f68b3929f54cebb9719ac2e45d2109": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9fb4c9eba1e849fe858313f7cf373ed1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_09f68b3929f54cebb9719ac2e45d2109",
+        "location": [
+          "43.64900198643504",
+          "-79.4623428899222"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cbd3a7c25c364c02b57c6f395c83b71c",
+        "title": "Red-eyed Vireo, 2021-08-15"
+      }
+    },
+    "d0afb57ba8c8417aa8ddcfa4a9535144": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "aebf341b7d9e4feda861dddbf4ac6e81": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f11691bf484b4262874b578248876004": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_d0afb57ba8c8417aa8ddcfa4a9535144",
+        "style": "IPY_MODEL_aebf341b7d9e4feda861dddbf4ac6e81",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8b09423fa4fe40d5a6f10354485418a4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bb1e50a5867a47c3bac5f86c3aff2465": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8b09423fa4fe40d5a6f10354485418a4",
+        "location": [
+          "43.650401159300465",
+          "-79.46878960494372"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f11691bf484b4262874b578248876004",
+        "title": "Red-eyed Vireo, 2021-07-30"
+      }
+    },
+    "a26558fbb05e453ca4c9a366b063a99a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "41ea443ae2b54b57a9009cd16ec61750": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "286cf3f03ac34c2b84bb30183b98e4a3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_a26558fbb05e453ca4c9a366b063a99a",
+        "style": "IPY_MODEL_41ea443ae2b54b57a9009cd16ec61750",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5f8d390e17b841a7a3aec8e8dca9c992": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4e3b01f8a5c5428b9a6a0bbc74fc74f3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5f8d390e17b841a7a3aec8e8dca9c992",
+        "location": [
+          "43.64878610248475",
+          "-79.4627501858733"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_286cf3f03ac34c2b84bb30183b98e4a3",
+        "title": "Red-eyed Vireo, 2021-08-21"
+      }
+    },
+    "3a00020084664c9c906e913bd1c6c4c8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "57d419a72bfa41b39704a5e1514eda90": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9fa818f19c104b79b0035ec2fa657fb8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_3a00020084664c9c906e913bd1c6c4c8",
+        "style": "IPY_MODEL_57d419a72bfa41b39704a5e1514eda90",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d757bc4bc09d4883b6d6523787446539": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4e062b0165ff4cbb8ea0d9e0584dde8a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d757bc4bc09d4883b6d6523787446539",
+        "location": [
+          "43.648924084203124",
+          "-79.46271742287145"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9fa818f19c104b79b0035ec2fa657fb8",
+        "title": "Red-eyed Vireo, 2021-08-31"
+      }
+    },
+    "685b11c9cf704532a4f04abee7145ad0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "85598f9f276e4819918c9971b67a8d90": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d4d60cb69d78488084e17789db27f49e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_685b11c9cf704532a4f04abee7145ad0",
+        "style": "IPY_MODEL_85598f9f276e4819918c9971b67a8d90",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1a374362a61f40aab6820d9102b19045": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f3039d280a3c4619873f1d7a1febf002": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1a374362a61f40aab6820d9102b19045",
+        "location": [
+          "43.648988874945125",
+          "-79.4625635804185"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d4d60cb69d78488084e17789db27f49e",
+        "title": "Red-eyed Vireo, 2021-08-15"
+      }
+    },
+    "93e7f8595ed44ee68c8d24f32759c17a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "150b8b0e7e1948e3a059cd6ca0938133": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "71657c9c2bb6428a99ccfde9d6a5ee63": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_93e7f8595ed44ee68c8d24f32759c17a",
+        "style": "IPY_MODEL_150b8b0e7e1948e3a059cd6ca0938133",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c629dc03a4f14c8d9bcb3c17dc409b8a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "03058379173747ba9e183ba821862e95": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c629dc03a4f14c8d9bcb3c17dc409b8a",
+        "location": [
+          "43.64264803285011",
+          "-79.45891655382229"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_71657c9c2bb6428a99ccfde9d6a5ee63",
+        "title": "Red-eyed Vireo, 2021-08-29"
+      }
+    },
+    "3e8d3f19e63344888114d13e9028dacf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "66336dad02f44712a6e67cd2490556df": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6798a8c77279406cb8027d5e3278eefd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_3e8d3f19e63344888114d13e9028dacf",
+        "style": "IPY_MODEL_66336dad02f44712a6e67cd2490556df",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b56ffd4b9b274270a02c7730d61613e7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "315b172f390e44b590e218634131c76f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b56ffd4b9b274270a02c7730d61613e7",
+        "location": [
+          "43.643897501842275",
+          "-79.4598462187383"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6798a8c77279406cb8027d5e3278eefd",
+        "title": "Red-eyed Vireo, 2021-08-30"
+      }
+    },
+    "76fa25cc2c5c480faf08130dbad03f43": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "973a32f1202841e58e7eba03e83a1c2c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5c87e6ed4a3e4b4c88a857d157729921": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_76fa25cc2c5c480faf08130dbad03f43",
+        "style": "IPY_MODEL_973a32f1202841e58e7eba03e83a1c2c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "afa41b13cd824080ae78ac29da32bc37": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "372a03a394884a94b8a6e6fc2cde303b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_afa41b13cd824080ae78ac29da32bc37",
+        "location": [
+          "43.65153485320546",
+          "-79.46222607847056"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5c87e6ed4a3e4b4c88a857d157729921",
+        "title": "Red-eyed Vireo, 2021-08-24"
+      }
+    },
+    "9a6482402c044448a9fa61ca062e87cd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0c8959152162449ea0bb837ae4558db1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9867f1099005458d8e5bf968c1ebb0d5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_9a6482402c044448a9fa61ca062e87cd",
+        "style": "IPY_MODEL_0c8959152162449ea0bb837ae4558db1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b88f0cfe339f4681a53ce83b5f13de54": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bc438cb5ddce4943aca2b14866e35b9f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b88f0cfe339f4681a53ce83b5f13de54",
+        "location": [
+          "43.64897773572922",
+          "-79.46301126972892"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9867f1099005458d8e5bf968c1ebb0d5",
+        "title": "Red-eyed Vireo, 2021-08-24"
+      }
+    },
+    "3fff5f31ae0d470b9c9e65f96a7b2905": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3a994a138e294a55ba6fba7308a63614": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a5f778ecfd042c8ad5418fee59271b6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_3fff5f31ae0d470b9c9e65f96a7b2905",
+        "style": "IPY_MODEL_3a994a138e294a55ba6fba7308a63614",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "459189d609aa4296a08ebf4ea4dc7ba9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "00dd5d32504744bd8997ac1431192161": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_459189d609aa4296a08ebf4ea4dc7ba9",
+        "location": [
+          "43.64999273151141",
+          "-79.46876830501697"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a5f778ecfd042c8ad5418fee59271b6",
+        "title": "Red-eyed Vireo, 2021-07-30"
+      }
+    },
+    "98a33c6ac8214c6e8b08bec91bf0d1d6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "da5eab38b7474727b9da960494e5aec2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "68217892e7c84afe84edf6b113fd2617": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_98a33c6ac8214c6e8b08bec91bf0d1d6",
+        "style": "IPY_MODEL_da5eab38b7474727b9da960494e5aec2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5c07cf9b4c144784a0a6a366625e2fe6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d9e22ba71b51455fb3756743dc8d61ac": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5c07cf9b4c144784a0a6a366625e2fe6",
+        "location": [
+          "43.64956835814948",
+          "-79.4630094879231"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_68217892e7c84afe84edf6b113fd2617",
+        "title": "Red-eyed Vireo, 2021-09-04"
+      }
+    },
+    "84fd76ebd8564b78bb49e0807e250c45": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d4b88af120be4351942ae1d5ca12d0ab": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "13143f83ca6040f4abbaec3d006e95b0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_84fd76ebd8564b78bb49e0807e250c45",
+        "style": "IPY_MODEL_d4b88af120be4351942ae1d5ca12d0ab",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1f6f50e969234810ba4089c3d047d962": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "62e04a957e7946a1a4c722dacfaf0150": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1f6f50e969234810ba4089c3d047d962",
+        "location": [
+          "43.65079784883247",
+          "-79.46198570137419"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_13143f83ca6040f4abbaec3d006e95b0",
+        "title": "Red-eyed Vireo, 2021-09-04"
+      }
+    },
+    "4a4f1960e40e4425b4179af34e8a2c1c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "61b509caae854ec48d3fcba6f54563e6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ac9378e584bb4f77a059b46dcdf0791f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_4a4f1960e40e4425b4179af34e8a2c1c",
+        "style": "IPY_MODEL_61b509caae854ec48d3fcba6f54563e6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2fa41725be0a4b80b9d110f970977920": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ef9cbefeb7ac4fa2bd96abddc68bee2c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2fa41725be0a4b80b9d110f970977920",
+        "location": [
+          "43.64329886254142",
+          "-79.45909827362578"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ac9378e584bb4f77a059b46dcdf0791f",
+        "title": "Red-eyed Vireo, 2021-08-29"
+      }
+    },
+    "c1d9fcdef8234592994f6140df8f9ef3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ec0312aec20a47f9b19221ec7df7b4db": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eb621a1aceac46208e92f870e6d138a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_c1d9fcdef8234592994f6140df8f9ef3",
+        "style": "IPY_MODEL_ec0312aec20a47f9b19221ec7df7b4db",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0ed1efd1a4c14b2aaa655fe624f05c98": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3d30df8ebce24608b2491b34f1780f02": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ed1efd1a4c14b2aaa655fe624f05c98",
+        "location": [
+          "43.643806999258814",
+          "-79.45980836883147"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eb621a1aceac46208e92f870e6d138a5",
+        "title": "Red-eyed Vireo, 2021-08-30"
+      }
+    },
+    "d79e831315924275af292e62c60a978c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "36f2794a287240e9baa6d57338df8ebd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "72d00a367982421eb76a4cd3a1d33408": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_d79e831315924275af292e62c60a978c",
+        "style": "IPY_MODEL_36f2794a287240e9baa6d57338df8ebd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a767225cda5d42caacd0394cc2d0d51c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "79d82b7d76c848f2a84665c54fc00105": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a767225cda5d42caacd0394cc2d0d51c",
+        "location": [
+          "43.65137090407645",
+          "-79.46238368578884"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_72d00a367982421eb76a4cd3a1d33408",
+        "title": "Red-eyed Vireo, 2021-08-24"
+      }
+    },
+    "f456644e60ea4b0ea4687ba3c30268d4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e13a72f632f840fca21d9d92da47c949": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ee35a07619714762a59a2f9e6d367f77": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_f456644e60ea4b0ea4687ba3c30268d4",
+        "style": "IPY_MODEL_e13a72f632f840fca21d9d92da47c949",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a58bd9676fad44c9ba1eee3b49881b08": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cc0d2d9b66bd466f86d356f573e440d2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a58bd9676fad44c9ba1eee3b49881b08",
+        "location": [
+          "43.64911374517359",
+          "-79.46275150791297"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ee35a07619714762a59a2f9e6d367f77",
+        "title": "Red-eyed Vireo, 2021-08-31"
+      }
+    },
+    "6bcd98f3c9b34f2eb1d8a1c2157b40a9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "03f058a0917c484e9d1abb2407ddd3d2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "28f6aafc63e94212b64a53d617f70cc6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_6bcd98f3c9b34f2eb1d8a1c2157b40a9",
+        "style": "IPY_MODEL_03f058a0917c484e9d1abb2407ddd3d2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "728c21297f3f47ca866c008f21eee3b1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5f19e1da0a5c45d6a5eaa13e6e60e30f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_728c21297f3f47ca866c008f21eee3b1",
+        "location": [
+          "43.65151754159837",
+          "-79.46230930801485"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_28f6aafc63e94212b64a53d617f70cc6",
+        "title": "Red-eyed Vireo, 2021-08-24"
+      }
+    },
+    "79919c6ce08242fda9a3b098fc9c1d0d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "279a795073ee47aca09d7aca9e0db0f9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0bc23385c8a54651bf21df8093c8667c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_79919c6ce08242fda9a3b098fc9c1d0d",
+        "style": "IPY_MODEL_279a795073ee47aca09d7aca9e0db0f9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4c2f9dd1f5a34494ac1a684f0f5da031": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f6df3d51a2084bff9269d4baf2e09927": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4c2f9dd1f5a34494ac1a684f0f5da031",
+        "location": [
+          "43.6489760190244",
+          "-79.46246773423861"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0bc23385c8a54651bf21df8093c8667c",
+        "title": "Red-eyed Vireo, 2021-08-15"
+      }
+    },
+    "ee770f5837044e889f2ddd4570bd81fa": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8fffdb3763e6421686c9b2d68d98a353": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b32a48c5b78d4f0890b0448a16b20580": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_ee770f5837044e889f2ddd4570bd81fa",
+        "style": "IPY_MODEL_8fffdb3763e6421686c9b2d68d98a353",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a7aad4f03cf44e4d85dc08ade51c3b8f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "992cb13eccdf4a688fcc733b7264adf3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a7aad4f03cf44e4d85dc08ade51c3b8f",
+        "location": [
+          "43.64886794926466",
+          "-79.46282965055227"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b32a48c5b78d4f0890b0448a16b20580",
+        "title": "Red-eyed Vireo, 2021-08-31"
+      }
+    },
+    "6362a214ee6646df8d4fc765884c88b1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "582093c95d6145e7a2042a4ab24d36a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cf9ce82bfcbe4b0bae45b8824d080623": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_6362a214ee6646df8d4fc765884c88b1",
+        "style": "IPY_MODEL_582093c95d6145e7a2042a4ab24d36a5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6584e691c71246b7b0ad34738cfa0e5e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0514e8075ecb454fb4bdada61f79e7c9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6584e691c71246b7b0ad34738cfa0e5e",
+        "location": [
+          "43.65133233631427",
+          "-79.46209614724917"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cf9ce82bfcbe4b0bae45b8824d080623",
+        "title": "Red-eyed Vireo, 2021-08-23"
+      }
+    },
+    "7cb718e6ff9849e691410b1cc296b9b9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d3b4b7d119e94594ab9d3aa54207dde9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ab4b8bf7feae4eb9a23efb297e61a049": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_7cb718e6ff9849e691410b1cc296b9b9",
+        "style": "IPY_MODEL_d3b4b7d119e94594ab9d3aa54207dde9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9b396c3c8b4349718182070bc0b8c504": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9c0be55a7b364bd2bdc86dd46ace6107": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9b396c3c8b4349718182070bc0b8c504",
+        "location": [
+          "43.648643665080016",
+          "-79.46296202459932"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ab4b8bf7feae4eb9a23efb297e61a049",
+        "title": "Red-eyed Vireo, 2021-08-21"
+      }
+    },
+    "d0f5b92a61284f14b50ca3f80766a481": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "83b2fa133c9f4b00a8ab76dda5d030aa": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "baefbe2622004edeb2356162df07a112": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_d0f5b92a61284f14b50ca3f80766a481",
+        "style": "IPY_MODEL_83b2fa133c9f4b00a8ab76dda5d030aa",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0ccb7c3c1333426fa2e82844d521b1f9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d838e376e352471bb45bbdfda2a45455": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ccb7c3c1333426fa2e82844d521b1f9",
+        "location": [
+          "43.64412229716529",
+          "-79.45908077133886"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_baefbe2622004edeb2356162df07a112",
+        "title": "Red-eyed Vireo, 2021-08-30"
+      }
+    },
+    "817b7a7ada6842d9959fda5930d3e72a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "afa2ab41ebad4a938dbb094f539d152f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c5297fb8399240b09dca3fb97968c280": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_817b7a7ada6842d9959fda5930d3e72a",
+        "style": "IPY_MODEL_afa2ab41ebad4a938dbb094f539d152f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "745bd9ded9ea4a709f3c27a47394835e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4ae0f24b286147d492b7ce7c4fa64033": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_745bd9ded9ea4a709f3c27a47394835e",
+        "location": [
+          "43.64925329639775",
+          "-79.46987319869986"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c5297fb8399240b09dca3fb97968c280",
+        "title": "Red-eyed Vireo, 2021-08-04"
+      }
+    },
+    "75b7a7df95824de29ec75624dc6d4aae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "56c2300c921143f79ca8c6ae82e808b6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6d4d064befc04882a187bc74417f67ab": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_75b7a7df95824de29ec75624dc6d4aae",
+        "style": "IPY_MODEL_56c2300c921143f79ca8c6ae82e808b6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c328168c7de04c0b9a8d1f686010334b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fa234584b24c41d9bd7bf358fd119138": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c328168c7de04c0b9a8d1f686010334b",
+        "location": [
+          "43.64913551246705",
+          "-79.46248920264452"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6d4d064befc04882a187bc74417f67ab",
+        "title": "Red-eyed Vireo, 2021-08-19"
+      }
+    },
+    "2a785fff9cf0437cb9425da6598d07ca": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eeec8cc252d94b6eb0bfb97e03e53cb5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ebeb29dabfdc4517b1333b11a7473b04": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_2a785fff9cf0437cb9425da6598d07ca",
+        "style": "IPY_MODEL_eeec8cc252d94b6eb0bfb97e03e53cb5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5f85b68352a3465085e1e6072ce31110": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bec7df3f55094432843b4cd609c11c30": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5f85b68352a3465085e1e6072ce31110",
+        "location": [
+          "43.64914391270141",
+          "-79.46276412454857"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ebeb29dabfdc4517b1333b11a7473b04",
+        "title": "Red-eyed Vireo, 2021-08-17"
+      }
+    },
+    "e657c85f39454500aa5153dbfd710aae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "68a37645ad13418286ab70cf5c1805d5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7ebcca740de94115895a8504d9c4d886": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_e657c85f39454500aa5153dbfd710aae",
+        "style": "IPY_MODEL_68a37645ad13418286ab70cf5c1805d5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "64d5ccf32278439eaa9b148050dd7370": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "aea9248dea5746d293ffcb178641fa47": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_64d5ccf32278439eaa9b148050dd7370",
+        "location": [
+          "43.64348830667352",
+          "-79.46741023533832"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7ebcca740de94115895a8504d9c4d886",
+        "title": "Red-eyed Vireo, 2021-08-15"
+      }
+    },
+    "6f6ff0bb7ff44f4797eea9e312da9f78": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3b68e881fc344781a48f3885cf980dfe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e7bfbc758c2444ef9ee0bb4776988565": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_6f6ff0bb7ff44f4797eea9e312da9f78",
+        "style": "IPY_MODEL_3b68e881fc344781a48f3885cf980dfe",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5e22ec3a0dfb4cf08b9983b992852b5d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8e85009763634ec8848942e152c2b310": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5e22ec3a0dfb4cf08b9983b992852b5d",
+        "location": [
+          "43.64924752677478",
+          "-79.46258128395908"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e7bfbc758c2444ef9ee0bb4776988565",
+        "title": "Red-eyed Vireo, 2021-08-14"
+      }
+    },
+    "49331d56655e488e8a513d8e89668b28": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8071bd48e9de4b0086801b6048d9516d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7a23f1447faa4f869c3a623eb21ce5f5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_49331d56655e488e8a513d8e89668b28",
+        "style": "IPY_MODEL_8071bd48e9de4b0086801b6048d9516d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3b8bb0f5b9d6477a82078792d7cc8bae": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a596ca51dc0c46d3b022fefb3f8b7145": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3b8bb0f5b9d6477a82078792d7cc8bae",
+        "location": [
+          "43.65132813619709",
+          "-79.46195868629714"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7a23f1447faa4f869c3a623eb21ce5f5",
+        "title": "Red-eyed Vireo, 2021-08-23"
+      }
+    },
+    "41a8c19a510148fea3403ab1760cad4d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d1c25d7f85d44325996c8f2cab5fa8bb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d5df02032e774ecc9355211346471d6d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_41a8c19a510148fea3403ab1760cad4d",
+        "style": "IPY_MODEL_d1c25d7f85d44325996c8f2cab5fa8bb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "aab56e2e1b50488f90a9c5840825ef53": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9ed70f211e024b76bec80d0a0785f2e2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aab56e2e1b50488f90a9c5840825ef53",
+        "location": [
+          "43.64929713930165",
+          "-79.46998814091371"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d5df02032e774ecc9355211346471d6d",
+        "title": "Red-eyed Vireo, 2021-08-04"
+      }
+    },
+    "4e107b0030eb4ee9a0bb11ce89e092ee": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "496940f3a69c45fab50bed114c36163d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "31eb6beae7b54ca5a82975362b7c23df": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_4e107b0030eb4ee9a0bb11ce89e092ee",
+        "style": "IPY_MODEL_496940f3a69c45fab50bed114c36163d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "99ce2a39e1df41febef645a77edc10ae": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "67b4d457b2694ca1b5213ab06d01862f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_99ce2a39e1df41febef645a77edc10ae",
+        "location": [
+          "43.6490924890185",
+          "-79.46238073982902"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_31eb6beae7b54ca5a82975362b7c23df",
+        "title": "Red-eyed Vireo, 2021-08-16"
+      }
+    },
+    "46feb84a3a9b4e15bc4e263ef963e571": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3f2afa974db34214a54bdd5535823d9a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5a17172ab35c4724b3115a70e5046eb7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_46feb84a3a9b4e15bc4e263ef963e571",
+        "style": "IPY_MODEL_3f2afa974db34214a54bdd5535823d9a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ae8384a830514edab340011a1dcd555b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6a91522211674e86805b0a47d5e8425f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ae8384a830514edab340011a1dcd555b",
+        "location": [
+          "43.64854227884983",
+          "-79.46305532732671"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5a17172ab35c4724b3115a70e5046eb7",
+        "title": "Red-eyed Vireo, 2021-08-24"
+      }
+    },
+    "cdea51516ff245f58de8a39686483158": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "84cba2edbc794521bc03247b4773dd77": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fbcb958839b3470799170592d884acec": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_cdea51516ff245f58de8a39686483158",
+        "style": "IPY_MODEL_84cba2edbc794521bc03247b4773dd77",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5b1c046dd4c6470d9c8a8ea61c11d43e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c78e91f7660f4785b25b18c179f28a34": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5b1c046dd4c6470d9c8a8ea61c11d43e",
+        "location": [
+          "43.643725408048084",
+          "-79.45941236747632"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fbcb958839b3470799170592d884acec",
+        "title": "Red-eyed Vireo, 2021-08-23"
+      }
+    },
+    "bdaf4b8e41fc4d27bf49de39582968fd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "abc7b9bd0e9e432dabee6316553c41cb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a25445089b0b46ecb189618e16e80f73": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_bdaf4b8e41fc4d27bf49de39582968fd",
+        "style": "IPY_MODEL_abc7b9bd0e9e432dabee6316553c41cb",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ea07dd13bcdb4cb1ac788bf8ada03fb8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a6860ff33b524e9f904555335b05cca0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ea07dd13bcdb4cb1ac788bf8ada03fb8",
+        "location": [
+          "43.64382011074873",
+          "-79.45958767833517"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a25445089b0b46ecb189618e16e80f73",
+        "title": "Red-eyed Vireo, 2021-08-23"
+      }
+    },
+    "a6c7745b0fe44689ba708bab6d48fb35": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "46906ce515054f17b2b2566b2f977475": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "940e24cf047b42dab25ab5a3f9438c21": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_a6c7745b0fe44689ba708bab6d48fb35",
+        "style": "IPY_MODEL_46906ce515054f17b2b2566b2f977475",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ed56f7921dd945dc9a25bd89a216e945": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bd6287dd4a5641d6ba88a32f801edda3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ed56f7921dd945dc9a25bd89a216e945",
+        "location": [
+          "43.64936584125829",
+          "-79.4628795567017"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_940e24cf047b42dab25ab5a3f9438c21",
+        "title": "Red-eyed Vireo, 2021-09-04"
+      }
+    },
+    "09c6944db64143be9ccce2dd434e932d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d8e93a0a38024d3a938a0fb7607c7834": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a7178242c517490798f1b58582dfaf8c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_09c6944db64143be9ccce2dd434e932d",
+        "style": "IPY_MODEL_d8e93a0a38024d3a938a0fb7607c7834",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5147b9c4dab34d8fad28b64c062d1aac": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f4527ea5f930475d8181a3adb4945c50": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5147b9c4dab34d8fad28b64c062d1aac",
+        "location": [
+          "43.64961793734298",
+          "-79.46300760549043"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a7178242c517490798f1b58582dfaf8c",
+        "title": "Red-eyed Vireo, 2021-08-19"
+      }
+    },
+    "1609fe1c03a542b9aa7ccf129b4fed66": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "98dfbf5da8ed4e07a4182f02ce5768f4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "164525fd389d454f89ffe3225c686581": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_1609fe1c03a542b9aa7ccf129b4fed66",
+        "style": "IPY_MODEL_98dfbf5da8ed4e07a4182f02ce5768f4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "71e127d6070049c4ae26b6f590d5cb75": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f98e60ce881148f9b27e7c3fc1d6240e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_71e127d6070049c4ae26b6f590d5cb75",
+        "location": [
+          "43.64429439095948",
+          "-79.45951462260085"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_164525fd389d454f89ffe3225c686581",
+        "title": "Red-eyed Vireo, 2021-08-30"
+      }
+    },
+    "a78f764aaae9443ead8e96997fcce4b2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0e0ab24113ab4d9395937d6dec7717cf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "81b846bb03f147a18290dd0c4b733169": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_a78f764aaae9443ead8e96997fcce4b2",
+        "style": "IPY_MODEL_0e0ab24113ab4d9395937d6dec7717cf",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "30f0b1eaa82546b98442c3a90d45d36e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "19c103fa494a417397b10b6cc53ac3c0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_30f0b1eaa82546b98442c3a90d45d36e",
+        "location": [
+          "43.65086263957447",
+          "-79.46183185892123"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_81b846bb03f147a18290dd0c4b733169",
+        "title": "Red-eyed Vireo, 2021-09-04"
+      }
+    },
+    "c56e1e90367c4b6682bcc7ba388da52a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d31ecf45f80444c9b8887cb68ace767a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e38945212bc743b88a1c39c31b44a815": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_c56e1e90367c4b6682bcc7ba388da52a",
+        "style": "IPY_MODEL_d31ecf45f80444c9b8887cb68ace767a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7c95f17465514e76b212bbc152043f43": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "41d165a01ee643049fbbae0561e40990": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7c95f17465514e76b212bbc152043f43",
+        "location": [
+          "43.64369944063745",
+          "-79.45953721179274"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e38945212bc743b88a1c39c31b44a815",
+        "title": "Red-eyed Vireo, 2021-08-23"
+      }
+    },
+    "c895fb4b75f84fb7bdab6145b67da387": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a8db94f65a2f49b38dacde870ed2d993": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b684a3a75b6f437e873c88453df20bcc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_c895fb4b75f84fb7bdab6145b67da387",
+        "style": "IPY_MODEL_a8db94f65a2f49b38dacde870ed2d993",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5f63e05164914caa8ae537deb5c17916": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0724e656657f401bba1f0156d504a313": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5f63e05164914caa8ae537deb5c17916",
+        "location": [
+          "43.64255753026665",
+          "-79.45887870391547"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b684a3a75b6f437e873c88453df20bcc",
+        "title": "Red-eyed Vireo, 2021-08-29"
+      }
+    },
+    "a0f9b233816f4383aee276acdb4d2cb6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cec50dc489f84e6e80cacfd0a039fa21": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3863790ea6ba4135ada2b2d9d97aa65e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_a0f9b233816f4383aee276acdb4d2cb6",
+        "style": "IPY_MODEL_cec50dc489f84e6e80cacfd0a039fa21",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b4ccc63574c749359b6da9b0fdd94d77": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2a4e0d1766c5421d8451d6e5bb38d43e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b4ccc63574c749359b6da9b0fdd94d77",
+        "location": [
+          "43.64723594694247",
+          "-79.47114884011495"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3863790ea6ba4135ada2b2d9d97aa65e",
+        "title": "Red-eyed Vireo, 2021-08-14"
+      }
+    },
+    "10c991b7cbda4967a786a76f2e605943": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1805e3a8c1884dd19df55cb3a55e3ad1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e9dd43f835364e45971f3e1fb607307a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_10c991b7cbda4967a786a76f2e605943",
+        "style": "IPY_MODEL_1805e3a8c1884dd19df55cb3a55e3ad1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9393caa2febd431996e0ea39bdd07624": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "14066c19ce2e4b62a40f9c5a0bd5cdc3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9393caa2febd431996e0ea39bdd07624",
+        "location": [
+          "43.649040809766404",
+          "-79.46231389178567"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e9dd43f835364e45971f3e1fb607307a",
+        "title": "Red-eyed Vireo, 2021-08-15"
+      }
+    },
+    "0093e2263c194d8a9bcd8e523503a5f7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "40d7e6ff2e144cdf84c9429c95361e42": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0b06efe755514c1d821a063f96ad8508": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_0093e2263c194d8a9bcd8e523503a5f7",
+        "style": "IPY_MODEL_40d7e6ff2e144cdf84c9429c95361e42",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "70beb57baf9e4372a340ca6420590519": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "621bc6ef82804b408d2e62c6d0d5b512": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_70beb57baf9e4372a340ca6420590519",
+        "location": [
+          "43.64867606045102",
+          "-79.46288510337284"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0b06efe755514c1d821a063f96ad8508",
+        "title": "Red-eyed Vireo, 2021-08-24"
+      }
+    },
+    "dfcbd51a729e4291ab183a7ce15c76ee": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_0a0a5720760b4866ba7b25e39038ab41",
+          "IPY_MODEL_0c49e79148954df783704f0542b68918",
+          "IPY_MODEL_69191179247c49fcba498bb77b36cf52",
+          "IPY_MODEL_7c49e4e7b09e448e875ced4b007efe07",
+          "IPY_MODEL_ce335d0d804c463f88ad9431657c0107",
+          "IPY_MODEL_20148146c49644ad8da933f4454b688d",
+          "IPY_MODEL_1b75398617be46f383e7bf410eb621bc",
+          "IPY_MODEL_15bb39be20014193b4acd9040c05a737",
+          "IPY_MODEL_5cf5debfd59b4265a1e2bf42170ad5b6",
+          "IPY_MODEL_9e63a1d6f72543ce813e5c25f3698b91",
+          "IPY_MODEL_0c237f8dd770454f8c534668044496dd",
+          "IPY_MODEL_4a950e9dd02c44f2bb37f9b72fcf228a",
+          "IPY_MODEL_be4f05d73ad342caba4db510acc6dc6a",
+          "IPY_MODEL_6c4db59faf3f4b63887b668e53026ad5",
+          "IPY_MODEL_e8f603b52b794122801ac0abc44aaf00",
+          "IPY_MODEL_ccc9d98c03ac4802ae67a3ed850550d1",
+          "IPY_MODEL_6a271a75a3234b519f210c32bd3547e0",
+          "IPY_MODEL_23ec9ba38b304a6ab42816a1e99767cd",
+          "IPY_MODEL_3516ea14e5ca42acb55b12b6e3d2b663",
+          "IPY_MODEL_420c397fc6bf4684950b0e9126df04e6",
+          "IPY_MODEL_c741a4e1f870426ebbaf5267df8e6893",
+          "IPY_MODEL_ca06bfb479884b018e1866a0887212f0",
+          "IPY_MODEL_9fb4c9eba1e849fe858313f7cf373ed1",
+          "IPY_MODEL_bb1e50a5867a47c3bac5f86c3aff2465",
+          "IPY_MODEL_4e3b01f8a5c5428b9a6a0bbc74fc74f3",
+          "IPY_MODEL_4e062b0165ff4cbb8ea0d9e0584dde8a",
+          "IPY_MODEL_f3039d280a3c4619873f1d7a1febf002",
+          "IPY_MODEL_03058379173747ba9e183ba821862e95",
+          "IPY_MODEL_315b172f390e44b590e218634131c76f",
+          "IPY_MODEL_372a03a394884a94b8a6e6fc2cde303b",
+          "IPY_MODEL_bc438cb5ddce4943aca2b14866e35b9f",
+          "IPY_MODEL_00dd5d32504744bd8997ac1431192161",
+          "IPY_MODEL_d9e22ba71b51455fb3756743dc8d61ac",
+          "IPY_MODEL_62e04a957e7946a1a4c722dacfaf0150",
+          "IPY_MODEL_ef9cbefeb7ac4fa2bd96abddc68bee2c",
+          "IPY_MODEL_3d30df8ebce24608b2491b34f1780f02",
+          "IPY_MODEL_79d82b7d76c848f2a84665c54fc00105",
+          "IPY_MODEL_cc0d2d9b66bd466f86d356f573e440d2",
+          "IPY_MODEL_5f19e1da0a5c45d6a5eaa13e6e60e30f",
+          "IPY_MODEL_f6df3d51a2084bff9269d4baf2e09927",
+          "IPY_MODEL_992cb13eccdf4a688fcc733b7264adf3",
+          "IPY_MODEL_0514e8075ecb454fb4bdada61f79e7c9",
+          "IPY_MODEL_9c0be55a7b364bd2bdc86dd46ace6107",
+          "IPY_MODEL_d838e376e352471bb45bbdfda2a45455",
+          "IPY_MODEL_4ae0f24b286147d492b7ce7c4fa64033",
+          "IPY_MODEL_fa234584b24c41d9bd7bf358fd119138",
+          "IPY_MODEL_bec7df3f55094432843b4cd609c11c30",
+          "IPY_MODEL_aea9248dea5746d293ffcb178641fa47",
+          "IPY_MODEL_8e85009763634ec8848942e152c2b310",
+          "IPY_MODEL_a596ca51dc0c46d3b022fefb3f8b7145",
+          "IPY_MODEL_9ed70f211e024b76bec80d0a0785f2e2",
+          "IPY_MODEL_67b4d457b2694ca1b5213ab06d01862f",
+          "IPY_MODEL_6a91522211674e86805b0a47d5e8425f",
+          "IPY_MODEL_c78e91f7660f4785b25b18c179f28a34",
+          "IPY_MODEL_a6860ff33b524e9f904555335b05cca0",
+          "IPY_MODEL_bd6287dd4a5641d6ba88a32f801edda3",
+          "IPY_MODEL_f4527ea5f930475d8181a3adb4945c50",
+          "IPY_MODEL_f98e60ce881148f9b27e7c3fc1d6240e",
+          "IPY_MODEL_19c103fa494a417397b10b6cc53ac3c0",
+          "IPY_MODEL_41d165a01ee643049fbbae0561e40990",
+          "IPY_MODEL_0724e656657f401bba1f0156d504a313",
+          "IPY_MODEL_2a4e0d1766c5421d8451d6e5bb38d43e",
+          "IPY_MODEL_14066c19ce2e4b62a40f9c5a0bd5cdc3",
+          "IPY_MODEL_621bc6ef82804b408d2e62c6d0d5b512"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "631b037335594c7abff8a6295f86a320"}
+</script>
+
+</body>
+</html>

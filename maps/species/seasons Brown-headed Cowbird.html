@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brown-headed Cowbird Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "7a29ef7e5050425cbfc6e1ca0c230818": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "efb3ff361dbd4565af65342410c89c92": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "ab43a8dfad8a479ab82b5db1893477c0": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "5a64782653bc4b1293f405afa98f7681": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "3e915b366e6a40e982b9e68aaf5a1b4a": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "fd550e4f0f754991a9fd50be459ece43": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_c6a807fc398c4b86b415e8267973b753",
+          "IPY_MODEL_52ed2f6fbbd54dd4b65fb7fd3c240385",
+          "IPY_MODEL_ddbc5f6183e642b79779efc4e0c27378",
+          "IPY_MODEL_0b7e4688476042a48a514f0ed7fd8c78"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_7a29ef7e5050425cbfc6e1ca0c230818",
+        "dragging_style": "IPY_MODEL_efb3ff361dbd4565af65342410c89c92",
+        "layers": [
+          "IPY_MODEL_ab43a8dfad8a479ab82b5db1893477c0",
+          "IPY_MODEL_c8fe202db2fb486e997083e78be745bf",
+          "IPY_MODEL_cdae12b1e432482d963a88ec91b00d66",
+          "IPY_MODEL_83a44f0540e749db92ee696017ad7f0a",
+          "IPY_MODEL_09d0c21e6bb9402a8f63f61a235f7847",
+          "IPY_MODEL_6b5f61e000884bb5998eb1b1d34859ec"
+        ],
+        "layout": "IPY_MODEL_5a64782653bc4b1293f405afa98f7681",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_3e915b366e6a40e982b9e68aaf5a1b4a",
+        "zoom": 14.0
+      }
+    },
+    "c6a807fc398c4b86b415e8267973b753": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "52ed2f6fbbd54dd4b65fb7fd3c240385": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "ddbc5f6183e642b79779efc4e0c27378": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "0b7e4688476042a48a514f0ed7fd8c78": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "c8fe202db2fb486e997083e78be745bf": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "cdae12b1e432482d963a88ec91b00d66": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "83a44f0540e749db92ee696017ad7f0a": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.64151045397365",
+            "-79.4632170067836"
+          ],
+          [
+            "43.64761679271137",
+            "-79.46267927480369"
+          ],
+          [
+            "43.647589330197945",
+            "-79.46169773747977"
+          ],
+          [
+            "43.65274244996673",
+            "-79.46411820299033"
+          ],
+          [
+            "43.647711631140346",
+            "-79.4627180174532"
+          ],
+          [
+            "43.647751202351046",
+            "-79.46198218589393"
+          ],
+          [
+            "43.6451734005977",
+            "-79.46900702454555"
+          ],
+          [
+            "43.64773158784142",
+            "-79.46175585145403"
+          ],
+          [
+            "43.64767574663748",
+            "-79.46185432946358"
+          ],
+          [
+            "43.64827074956204",
+            "-79.46600292756023"
+          ],
+          [
+            "43.64744372803809",
+            "-79.46205064261534"
+          ],
+          [
+            "43.64713567973949",
+            "-79.46299215155507"
+          ],
+          [
+            "43.647084220626006",
+            "-79.46243745467794"
+          ],
+          [
+            "43.64747326569963",
+            "-79.46254786838554"
+          ],
+          [
+            "43.64771566638551",
+            "-79.46166922195683"
+          ],
+          [
+            "43.64770281046478",
+            "-79.46157337577694"
+          ],
+          [
+            "43.64784904310496",
+            "-79.46279840987266"
+          ],
+          [
+            "43.64754923384413",
+            "-79.46223290381337"
+          ],
+          [
+            "43.6477329779926",
+            "-79.46158599241255"
+          ],
+          [
+            "43.64762671586328",
+            "-79.46295016613401"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "09d0c21e6bb9402a8f63f61a235f7847": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b83ee7f840f748cdb96f4e24e00b63cc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "462192acef344985b508aae0379a40b7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2170ab3c4a344de2a0ee236f6eaf3b0d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_b83ee7f840f748cdb96f4e24e00b63cc",
+        "style": "IPY_MODEL_462192acef344985b508aae0379a40b7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "37345b4dd603401ca14e7a0c0c538ea3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2f237eaca0714c1886635588888ef90f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_37345b4dd603401ca14e7a0c0c538ea3",
+        "location": [
+          "43.64151045397365",
+          "-79.4632170067836"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2170ab3c4a344de2a0ee236f6eaf3b0d",
+        "title": "Brown-headed Cowbird, 2021-07-15"
+      }
+    },
+    "20b052486b1d47be8cdcd2fd404b8dfa": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "63985286250441cfb4511e898638abab": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ba2295f4beb147adb47ea6e9fbc4606d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_20b052486b1d47be8cdcd2fd404b8dfa",
+        "style": "IPY_MODEL_63985286250441cfb4511e898638abab",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a061ec13b5104fbc8dbf9a234a47547e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8a8d43e398e845289ed47dcaba82fa3b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a061ec13b5104fbc8dbf9a234a47547e",
+        "location": [
+          "43.64761679271137",
+          "-79.46267927480369"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ba2295f4beb147adb47ea6e9fbc4606d",
+        "title": "Brown-headed Cowbird, 2021-07-24"
+      }
+    },
+    "de02effa05524c1ba62fa2bc54547736": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "96c2c2dd42e84e2c9a9361242e1a3812": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "32cb94a55f994879b3553eae8f4210b6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_de02effa05524c1ba62fa2bc54547736",
+        "style": "IPY_MODEL_96c2c2dd42e84e2c9a9361242e1a3812",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "dce4b22975344fc2931beffe4c9328ee": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f54e72017e264c6f954529321b980097": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_dce4b22975344fc2931beffe4c9328ee",
+        "location": [
+          "43.647589330197945",
+          "-79.46169773747977"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_32cb94a55f994879b3553eae8f4210b6",
+        "title": "Brown-headed Cowbird, 2021-07-24"
+      }
+    },
+    "c709b4cf40b040ab971f21907932cd36": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "09abade0df1f46dd93b0ffd3efd48417": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "79af80e4efcb4c7b89f3415adca4e0a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_c709b4cf40b040ab971f21907932cd36",
+        "style": "IPY_MODEL_09abade0df1f46dd93b0ffd3efd48417",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e9490040b3a34b35aeb6abcfad5d90b7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "aa95382eb6664f7ca9d8012d548af345": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e9490040b3a34b35aeb6abcfad5d90b7",
+        "location": [
+          "43.65274244996673",
+          "-79.46411820299033"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_79af80e4efcb4c7b89f3415adca4e0a6",
+        "title": "Brown-headed Cowbird, 2021-07-08"
+      }
+    },
+    "a0e63e234d5b4b64afdbb32ec1401ff6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7bbc802e5fe84753aafe01c586603dc8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aaaf9d81ce404fcea23b6e3ac458f98f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_a0e63e234d5b4b64afdbb32ec1401ff6",
+        "style": "IPY_MODEL_7bbc802e5fe84753aafe01c586603dc8",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "e41d36adb29e4fb2b3b7bdb0d583fc4e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "93d1f89441444267b2c7201500897b3e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e41d36adb29e4fb2b3b7bdb0d583fc4e",
+        "location": [
+          "43.647711631140346",
+          "-79.4627180174532"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aaaf9d81ce404fcea23b6e3ac458f98f",
+        "title": "Brown-headed Cowbird, 2021-07-18"
+      }
+    },
+    "d076f584c572478ab4810225ea79563c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fbecc48649fc48c1987432d99999494b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4b52513c1e264da0aac909d3d975941c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_d076f584c572478ab4810225ea79563c",
+        "style": "IPY_MODEL_fbecc48649fc48c1987432d99999494b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "67891145c76440dda7f77255510b8c9e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "74d451ca356d42df842a467b02a6f3d4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_67891145c76440dda7f77255510b8c9e",
+        "location": [
+          "43.647751202351046",
+          "-79.46198218589393"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4b52513c1e264da0aac909d3d975941c",
+        "title": "Brown-headed Cowbird, 2021-07-09"
+      }
+    },
+    "d250afaef5ce4bad818e5316351003cc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0c6217fec12d4b38ace339fe2665e4ef": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8191f9252a8f411d8e958246f3df5b35": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_d250afaef5ce4bad818e5316351003cc",
+        "style": "IPY_MODEL_0c6217fec12d4b38ace339fe2665e4ef",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a6e192a0e2cf4f629e16642c249044a3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fe47cb35b246475c993653de3e9b7b57": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a6e192a0e2cf4f629e16642c249044a3",
+        "location": [
+          "43.6451734005977",
+          "-79.46900702454555"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8191f9252a8f411d8e958246f3df5b35",
+        "title": "Brown-headed Cowbird, 2021-07-24"
+      }
+    },
+    "368016d882364d68999677370689150a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1ab3e31b4ed047d39142b3ecc617b23a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "80cc3eee6ead49e7b9fc8baf575a1557": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_368016d882364d68999677370689150a",
+        "style": "IPY_MODEL_1ab3e31b4ed047d39142b3ecc617b23a",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "474d473c02fe4466857db077f64dec89": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4b338bcc10ec4adb895c7c81286f3948": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_474d473c02fe4466857db077f64dec89",
+        "location": [
+          "43.64773158784142",
+          "-79.46175585145403"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_80cc3eee6ead49e7b9fc8baf575a1557",
+        "title": "Brown-headed Cowbird, 2021-07-12"
+      }
+    },
+    "345fb34a7cec48db8568cb524c923f84": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0428307c13ea4a14a416b6043a105776": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3d7fdcc98f8d46b18955414b3cc6d18e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_345fb34a7cec48db8568cb524c923f84",
+        "style": "IPY_MODEL_0428307c13ea4a14a416b6043a105776",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "81225f2eef684733a378c236243dd006": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "25b54a8c604e4dfb85651a7243250373": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_81225f2eef684733a378c236243dd006",
+        "location": [
+          "43.64767574663748",
+          "-79.46185432946358"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3d7fdcc98f8d46b18955414b3cc6d18e",
+        "title": "Brown-headed Cowbird, 2021-07-09"
+      }
+    },
+    "b0023d6de54c43e79074884461e4c263": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a605ba5414204c7d9220aa094e3b91b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d548fb3fe9794aea9cdc72b2c859dc28": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_b0023d6de54c43e79074884461e4c263",
+        "style": "IPY_MODEL_a605ba5414204c7d9220aa094e3b91b5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f55313ed1dcf4e84a0eec12d3129a3e9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e774b81678c94b6da917152ce8d368d8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f55313ed1dcf4e84a0eec12d3129a3e9",
+        "location": [
+          "43.64827074956204",
+          "-79.46600292756023"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d548fb3fe9794aea9cdc72b2c859dc28",
+        "title": "Brown-headed Cowbird, 2021-07-24"
+      }
+    },
+    "799dec29d86a425991db1ee7d2147956": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "45ce19f7ea8348b59fb28cef08f98262": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "beb23a718e4d491ca13dd6c747315aa7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_799dec29d86a425991db1ee7d2147956",
+        "style": "IPY_MODEL_45ce19f7ea8348b59fb28cef08f98262",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3eedd085cff7428a83ca2d38035117c2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ee288d88e70e4266a28c8a560c16ef95": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3eedd085cff7428a83ca2d38035117c2",
+        "location": [
+          "43.64744372803809",
+          "-79.46205064261534"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_beb23a718e4d491ca13dd6c747315aa7",
+        "title": "Brown-headed Cowbird, 2021-08-04"
+      }
+    },
+    "7014aed16f004828af3de6caa0d9b224": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b57fdb46e51b4caf877e6a4b24c8f5db": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "baba9ebc9baf4409a00407d3f942313a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_7014aed16f004828af3de6caa0d9b224",
+        "style": "IPY_MODEL_b57fdb46e51b4caf877e6a4b24c8f5db",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b46965e6c31341f7b074e033edcba671": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8ae24b776def45609c14bf41dbf39063": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b46965e6c31341f7b074e033edcba671",
+        "location": [
+          "43.64713567973949",
+          "-79.46299215155507"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_baba9ebc9baf4409a00407d3f942313a",
+        "title": "Brown-headed Cowbird, 2021-07-27"
+      }
+    },
+    "294cf0ab69534928b3fe4c807b004dc8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "025ff01deeb04900ad0e4d13cd7732c9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9ee8df3a01a1413d8e9730fb35478df7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_294cf0ab69534928b3fe4c807b004dc8",
+        "style": "IPY_MODEL_025ff01deeb04900ad0e4d13cd7732c9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c8309ddd6c92458394efa8a9abf55e86": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ddea8a4e5f334bc6aab8af125d44ef23": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c8309ddd6c92458394efa8a9abf55e86",
+        "location": [
+          "43.647084220626006",
+          "-79.46243745467794"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9ee8df3a01a1413d8e9730fb35478df7",
+        "title": "Brown-headed Cowbird, 2021-07-27"
+      }
+    },
+    "628422b08c6140c5a946efffa72ef275": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "966f427f4c1f47b28a2f9ee8677a88eb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f694b144b09841b684431fe6f7b6f813": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_628422b08c6140c5a946efffa72ef275",
+        "style": "IPY_MODEL_966f427f4c1f47b28a2f9ee8677a88eb",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "2794d5a6e8ee4a6dad9d16dea32d5c80": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1892595fe34744a8aa641b82235be992": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2794d5a6e8ee4a6dad9d16dea32d5c80",
+        "location": [
+          "43.64747326569963",
+          "-79.46254786838554"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f694b144b09841b684431fe6f7b6f813",
+        "title": "Brown-headed Cowbird, 2021-08-04"
+      }
+    },
+    "1787fa59c4134fa784fb123d0f0d1953": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19d97b0ba1f44162b419b863cffc4d1d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1fb3e46efba445b786c3ced28e6e4b8c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_1787fa59c4134fa784fb123d0f0d1953",
+        "style": "IPY_MODEL_19d97b0ba1f44162b419b863cffc4d1d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d07f60806f77411398eb294df5441584": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bf3da4e586c34945a25922780196a9d5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d07f60806f77411398eb294df5441584",
+        "location": [
+          "43.64771566638551",
+          "-79.46166922195683"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1fb3e46efba445b786c3ced28e6e4b8c",
+        "title": "Brown-headed Cowbird, 2021-08-19"
+      }
+    },
+    "7269a8b7cbbb4a17bb5e8625eed29ccb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2d9dd00ea43740e088babb7920b53807": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "27111e456c1040cf8e5fb15f7ccdcad9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_7269a8b7cbbb4a17bb5e8625eed29ccb",
+        "style": "IPY_MODEL_2d9dd00ea43740e088babb7920b53807",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d47c1e6d27e9496c95ad0d68332a483a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a19a1c77c62d42219953816886073c0b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d47c1e6d27e9496c95ad0d68332a483a",
+        "location": [
+          "43.64770281046478",
+          "-79.46157337577694"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_27111e456c1040cf8e5fb15f7ccdcad9",
+        "title": "Brown-headed Cowbird, 2021-08-19"
+      }
+    },
+    "541c1d871b5740c3a8a4075278950950": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "34b610b5cd674577bc835286303ac55a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ea2c646841b643849d4ed46e2d0f3c80": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_541c1d871b5740c3a8a4075278950950",
+        "style": "IPY_MODEL_34b610b5cd674577bc835286303ac55a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fc812631483d4e1e9307dd26e3317921": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2337bab767b4448985e08a42df81fd3e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fc812631483d4e1e9307dd26e3317921",
+        "location": [
+          "43.64784904310496",
+          "-79.46279840987266"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ea2c646841b643849d4ed46e2d0f3c80",
+        "title": "Brown-headed Cowbird, 2021-07-30"
+      }
+    },
+    "67a9f0d9edca452aa18f5ab1d82545c8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7f0bca3c7a9c49b6b1c6cdf419587bb6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "45e16776f26e4c9797aa5d07578a6dba": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_67a9f0d9edca452aa18f5ab1d82545c8",
+        "style": "IPY_MODEL_7f0bca3c7a9c49b6b1c6cdf419587bb6",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "50a60b0afa9d4df79cfc357d750dd243": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8d0f9759b2cf41e28d785247c6336749": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_50a60b0afa9d4df79cfc357d750dd243",
+        "location": [
+          "43.64754923384413",
+          "-79.46223290381337"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_45e16776f26e4c9797aa5d07578a6dba",
+        "title": "Brown-headed Cowbird, 2021-08-16"
+      }
+    },
+    "638de4e8bd0f466d9646630954dcc578": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eb0b4c429c154930873e4b15eb84b197": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "251b8bae83d6401092b711cafffbb26d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_638de4e8bd0f466d9646630954dcc578",
+        "style": "IPY_MODEL_eb0b4c429c154930873e4b15eb84b197",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ae39d480e6ba45f594eb857e7c3de145": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "be5dff099f834b1fbbc3559a1a4cd2e2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ae39d480e6ba45f594eb857e7c3de145",
+        "location": [
+          "43.6477329779926",
+          "-79.46158599241255"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_251b8bae83d6401092b711cafffbb26d",
+        "title": "Brown-headed Cowbird, 2021-08-19"
+      }
+    },
+    "ed63a19761754c689ae98b89135a2705": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "88b8fc29f9d2413781fb102884caa84e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9fe03fbf4b5c4b0aa46f21aa45cc191f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_ed63a19761754c689ae98b89135a2705",
+        "style": "IPY_MODEL_88b8fc29f9d2413781fb102884caa84e",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "2f527c3ea8284f4683f67fd8050166c1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7b44f16d1e9147499b6234ae61b481ef": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2f527c3ea8284f4683f67fd8050166c1",
+        "location": [
+          "43.64762671586328",
+          "-79.46295016613401"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9fe03fbf4b5c4b0aa46f21aa45cc191f",
+        "title": "Brown-headed Cowbird, 2021-08-04"
+      }
+    },
+    "6b5f61e000884bb5998eb1b1d34859ec": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_2f237eaca0714c1886635588888ef90f",
+          "IPY_MODEL_8a8d43e398e845289ed47dcaba82fa3b",
+          "IPY_MODEL_f54e72017e264c6f954529321b980097",
+          "IPY_MODEL_aa95382eb6664f7ca9d8012d548af345",
+          "IPY_MODEL_93d1f89441444267b2c7201500897b3e",
+          "IPY_MODEL_74d451ca356d42df842a467b02a6f3d4",
+          "IPY_MODEL_fe47cb35b246475c993653de3e9b7b57",
+          "IPY_MODEL_4b338bcc10ec4adb895c7c81286f3948",
+          "IPY_MODEL_25b54a8c604e4dfb85651a7243250373",
+          "IPY_MODEL_e774b81678c94b6da917152ce8d368d8",
+          "IPY_MODEL_ee288d88e70e4266a28c8a560c16ef95",
+          "IPY_MODEL_8ae24b776def45609c14bf41dbf39063",
+          "IPY_MODEL_ddea8a4e5f334bc6aab8af125d44ef23",
+          "IPY_MODEL_1892595fe34744a8aa641b82235be992",
+          "IPY_MODEL_bf3da4e586c34945a25922780196a9d5",
+          "IPY_MODEL_a19a1c77c62d42219953816886073c0b",
+          "IPY_MODEL_2337bab767b4448985e08a42df81fd3e",
+          "IPY_MODEL_8d0f9759b2cf41e28d785247c6336749",
+          "IPY_MODEL_be5dff099f834b1fbbc3559a1a4cd2e2",
+          "IPY_MODEL_7b44f16d1e9147499b6234ae61b481ef"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "fd550e4f0f754991a9fd50be459ece43"}
+</script>
+
+</body>
+</html>

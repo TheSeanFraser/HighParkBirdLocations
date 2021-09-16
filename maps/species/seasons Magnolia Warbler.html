@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnolia Warbler Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "976e4df76f084c839624a4bf6ecdf172": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "fceeb8e670ad4e38b4b192d367208bc2": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "348f1aa287f64ee2ad72d98e2608ceef": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "fd82f14a2d184414b1e5f199f2891be4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "39a8ea14f95d4c3dbea75c40c01fa813": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "7cac116212054c5e80a1067209af9ba4": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_17fe73225843430e9b116f0fbb67c560",
+          "IPY_MODEL_1528284c120a4662bd9949ee36550b97",
+          "IPY_MODEL_242756f910eb4fb99a026348327f3574",
+          "IPY_MODEL_fcaa5d79619c4904bb1e1cd061842719"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_976e4df76f084c839624a4bf6ecdf172",
+        "dragging_style": "IPY_MODEL_fceeb8e670ad4e38b4b192d367208bc2",
+        "layers": [
+          "IPY_MODEL_348f1aa287f64ee2ad72d98e2608ceef",
+          "IPY_MODEL_f3d08bc5fa414d2d843ba50f360f48b4",
+          "IPY_MODEL_16764202a47a45f887efe74d523978d7",
+          "IPY_MODEL_b2493905f3354107b87bb8ccc367a243",
+          "IPY_MODEL_44e2e9e1458348ffb93dc5e60f39bda1",
+          "IPY_MODEL_2016a5ac4924464e9f58c8cec6976d32"
+        ],
+        "layout": "IPY_MODEL_fd82f14a2d184414b1e5f199f2891be4",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_39a8ea14f95d4c3dbea75c40c01fa813",
+        "zoom": 14.0
+      }
+    },
+    "17fe73225843430e9b116f0fbb67c560": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "1528284c120a4662bd9949ee36550b97": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "242756f910eb4fb99a026348327f3574": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "fcaa5d79619c4904bb1e1cd061842719": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "f3d08bc5fa414d2d843ba50f360f48b4": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "16764202a47a45f887efe74d523978d7": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b2493905f3354107b87bb8ccc367a243": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.651521741715555",
+            "-79.46244676896687"
+          ],
+          [
+            "43.64931651763396",
+            "-79.46256490245817"
+          ],
+          [
+            "43.64922353163814",
+            "-79.46293312708961"
+          ],
+          [
+            "43.6404647593517",
+            "-79.46121513759262"
+          ],
+          [
+            "43.64715957812565",
+            "-79.46962415300703"
+          ],
+          [
+            "43.647125210480645",
+            "-79.4694740754194"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "44e2e9e1458348ffb93dc5e60f39bda1": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64745405873594",
+            "-79.47065200630176"
+          ],
+          [
+            "43.64384805043336",
+            "-79.45968983283286"
+          ],
+          [
+            "43.64272765178684",
+            "-79.45908555636333"
+          ],
+          [
+            "43.64159344722232",
+            "-79.45689228819504"
+          ],
+          [
+            "43.642274061087676",
+            "-79.45756142964842"
+          ],
+          [
+            "43.6475101936744",
+            "-79.47053977862095"
+          ],
+          [
+            "43.643736291694815",
+            "-79.4592812148421"
+          ],
+          [
+            "43.64273210747321",
+            "-79.45890648063917"
+          ],
+          [
+            "43.64972180698554",
+            "-79.46250822822476"
+          ],
+          [
+            "43.64393880858601",
+            "-79.45941114606349"
+          ],
+          [
+            "43.64479832755969",
+            "-79.46008725685452"
+          ],
+          [
+            "43.647596240571495",
+            "-79.47075670425194"
+          ],
+          [
+            "43.64364776138535",
+            "-79.45947036374939"
+          ],
+          [
+            "43.643440661023206",
+            "-79.45967777659025"
+          ],
+          [
+            "43.642650260693294",
+            "-79.45882701596021"
+          ],
+          [
+            "43.6465627833142",
+            "-79.46926147504672"
+          ],
+          [
+            "43.64381145494518",
+            "-79.45962929310731"
+          ],
+          [
+            "43.65336807779862",
+            "-79.46097981961952"
+          ],
+          [
+            "43.64182982062015",
+            "-79.45780537035645"
+          ],
+          [
+            "43.64381813847473",
+            "-79.45936067952105"
+          ],
+          [
+            "43.64364368905276",
+            "-79.45917463445926"
+          ],
+          [
+            "43.653954500101705",
+            "-79.46084057686167"
+          ],
+          [
+            "43.64365418934572",
+            "-79.45951828683933"
+          ],
+          [
+            "43.64224389355986",
+            "-79.4575488130128"
+          ],
+          [
+            "43.647866120670834",
+            "-79.46220711014917"
+          ],
+          [
+            "43.64470139701587",
+            "-79.46000148385775"
+          ],
+          [
+            "43.64757472884722",
+            "-79.4707024728442"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "aabf583c0eeb42878fe6e567e6d65224": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "96f0c1ff2ff145efba2016d700dccb10": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8c3532df739e42c882d8d1642f9a2fec": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_aabf583c0eeb42878fe6e567e6d65224",
+        "style": "IPY_MODEL_96f0c1ff2ff145efba2016d700dccb10",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c5589abae2ba4398a8591ecea15a49b0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cbb3b47cee114a938b1b3ab7bda1a8fb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c5589abae2ba4398a8591ecea15a49b0",
+        "location": [
+          "43.64745405873594",
+          "-79.47065200630176"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8c3532df739e42c882d8d1642f9a2fec",
+        "title": "Magnolia Warbler, 2021-08-28"
+      }
+    },
+    "9035db6ccb86445d88c2f07768620aeb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c67d9e651ec345e683fc885c93f1f418": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b175ccb2c5e840d19214465ec8e2a103": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_9035db6ccb86445d88c2f07768620aeb",
+        "style": "IPY_MODEL_c67d9e651ec345e683fc885c93f1f418",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6c80a442d15046d194158bb8ac8f2a36": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "54d3fb5ff07c4c2e8b929cb0978b38f7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6c80a442d15046d194158bb8ac8f2a36",
+        "location": [
+          "43.64384805043336",
+          "-79.45968983283286"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b175ccb2c5e840d19214465ec8e2a103",
+        "title": "Magnolia Warbler, 2021-08-23"
+      }
+    },
+    "4fc72266b78647d997555effee566e4a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d0c372e26eb54834b735e9e80aefed2c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "41c97618f65343048318b506d825dafa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_4fc72266b78647d997555effee566e4a",
+        "style": "IPY_MODEL_d0c372e26eb54834b735e9e80aefed2c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "de67c9280b794ca0a0a0d3cec1d7f6d9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ae19a351e2e44d518d98261c1adb55f4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_de67c9280b794ca0a0a0d3cec1d7f6d9",
+        "location": [
+          "43.64272765178684",
+          "-79.45908555636333"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_41c97618f65343048318b506d825dafa",
+        "title": "Magnolia Warbler, 2021-08-29"
+      }
+    },
+    "ea0498ff498c406a9b70b4f8c746a17d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "886ea709a1b3498fb23779dd5354b5ef": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "530718a543bb4d8caa9a17eba7ff2ac6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_ea0498ff498c406a9b70b4f8c746a17d",
+        "style": "IPY_MODEL_886ea709a1b3498fb23779dd5354b5ef",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ef68f1d97ac94471a2153d80b8a1b28b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9ed4098c55e1453b88076b28d9808fd7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ef68f1d97ac94471a2153d80b8a1b28b",
+        "location": [
+          "43.64159344722232",
+          "-79.45689228819504"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_530718a543bb4d8caa9a17eba7ff2ac6",
+        "title": "Magnolia Warbler, 2021-08-24"
+      }
+    },
+    "93afff6219f04787a0a00477abeb8ed5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ff40e073fb3247f69736a7161df3ab3b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d72996006d9d42289ec59b83c4613ee4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_93afff6219f04787a0a00477abeb8ed5",
+        "style": "IPY_MODEL_ff40e073fb3247f69736a7161df3ab3b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6c5ce68af8c64d0c9bb36ec962d68935": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "242ed1f8ed4b4624b78d6e1efb5106d3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6c5ce68af8c64d0c9bb36ec962d68935",
+        "location": [
+          "43.651521741715555",
+          "-79.46244676896687"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d72996006d9d42289ec59b83c4613ee4",
+        "title": "Magnolia Warbler, 2021-08-19"
+      }
+    },
+    "8e83e6e41508487cb0cd4d35442e934d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0cc06c2bb58a41dc9c486f87ad2c83a2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f6da97eafc5441fdb271c2ad771901f6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_8e83e6e41508487cb0cd4d35442e934d",
+        "style": "IPY_MODEL_0cc06c2bb58a41dc9c486f87ad2c83a2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "fcd8ad393b1e44d199d6dbf4630122dd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "da31881e3c3646cba78bfdfa50f293b9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_fcd8ad393b1e44d199d6dbf4630122dd",
+        "location": [
+          "43.64931651763396",
+          "-79.46256490245817"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f6da97eafc5441fdb271c2ad771901f6",
+        "title": "Magnolia Warbler, 2021-08-15"
+      }
+    },
+    "8349b3a25cff424aa8da911145100a89": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "804e30a314f24cbca6a387aedc008c71": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f248d4ac784f4a2b911242fb68900eb4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_8349b3a25cff424aa8da911145100a89",
+        "style": "IPY_MODEL_804e30a314f24cbca6a387aedc008c71",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2ab994a1f4874faf892b6791caf01264": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4e93c3dc5a4b44cfba851c9acbd6d1c6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2ab994a1f4874faf892b6791caf01264",
+        "location": [
+          "43.642274061087676",
+          "-79.45756142964842"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f248d4ac784f4a2b911242fb68900eb4",
+        "title": "Magnolia Warbler, 2021-09-07"
+      }
+    },
+    "87381360fe31493bb46becc98f275f80": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6dd52d68b79d4176a8467b942b75d69f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eb64ae4183c94ef9a12919f507526bbe": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_87381360fe31493bb46becc98f275f80",
+        "style": "IPY_MODEL_6dd52d68b79d4176a8467b942b75d69f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ed1775379c7f42b399b6c98568e1fb3a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "08d6f8df3e1c4a9695c323f47008fb30": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ed1775379c7f42b399b6c98568e1fb3a",
+        "location": [
+          "43.6475101936744",
+          "-79.47053977862095"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eb64ae4183c94ef9a12919f507526bbe",
+        "title": "Magnolia Warbler, 2021-08-28"
+      }
+    },
+    "97fe73de62274b309016c1b797978406": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "dca6d8df0b0b43188d88cf8a13e5216e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "71db8f5dcfc94013878e02da9c923420": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_97fe73de62274b309016c1b797978406",
+        "style": "IPY_MODEL_dca6d8df0b0b43188d88cf8a13e5216e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f8fecc1a65794636bdb95202ca0911a2": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6ee22718b5134373b4260cb0f6275423": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f8fecc1a65794636bdb95202ca0911a2",
+        "location": [
+          "43.643736291694815",
+          "-79.4592812148421"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_71db8f5dcfc94013878e02da9c923420",
+        "title": "Magnolia Warbler, 2021-08-23"
+      }
+    },
+    "46947a9a827f479fa82fcdcabc006a4e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8fdf714e97a649ed85e1acaa011d9a89": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5272d50d20ec45fd9d035ae12a670856": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_46947a9a827f479fa82fcdcabc006a4e",
+        "style": "IPY_MODEL_8fdf714e97a649ed85e1acaa011d9a89",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4e39abd00b3e4f7f82263613728fef40": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a1f377065a5e463b94e8ff35b778b727": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4e39abd00b3e4f7f82263613728fef40",
+        "location": [
+          "43.64273210747321",
+          "-79.45890648063917"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5272d50d20ec45fd9d035ae12a670856",
+        "title": "Magnolia Warbler, 2021-08-29"
+      }
+    },
+    "b4a65bf77d1548e0acc76e1ba015bae5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "379ad4d0adaf41949a77053b62662378": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "100f0e42880c4fdaaf83e136b6d82740": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_b4a65bf77d1548e0acc76e1ba015bae5",
+        "style": "IPY_MODEL_379ad4d0adaf41949a77053b62662378",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c18af262654a45a6a2af404e7dbf60e4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5223807addad4e5e9a748a791a33013d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c18af262654a45a6a2af404e7dbf60e4",
+        "location": [
+          "43.64972180698554",
+          "-79.46250822822476"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_100f0e42880c4fdaaf83e136b6d82740",
+        "title": "Magnolia Warbler, 2021-08-23"
+      }
+    },
+    "f18d027796da4414abf8b5a07eb46d67": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e99f8c55bac04e5ea7b1cb4e3c24ba31": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "52e0ad1ed05342ba8a2184fa80cab898": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_f18d027796da4414abf8b5a07eb46d67",
+        "style": "IPY_MODEL_e99f8c55bac04e5ea7b1cb4e3c24ba31",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a0b591a5938f49b1a623c5c9c6b5cdb8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "2302d1049eec4ae180a4ea6308e6d9a7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a0b591a5938f49b1a623c5c9c6b5cdb8",
+        "location": [
+          "43.64393880858601",
+          "-79.45941114606349"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_52e0ad1ed05342ba8a2184fa80cab898",
+        "title": "Magnolia Warbler, 2021-08-23"
+      }
+    },
+    "3f661354e6704d78b0f16bf87a2d8455": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d9e70e2d517f4cd99db882d66bf3a37a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a077701347534029ae8171f72808fe28": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_3f661354e6704d78b0f16bf87a2d8455",
+        "style": "IPY_MODEL_d9e70e2d517f4cd99db882d66bf3a37a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3124784f5309473788455c999abbea56": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "40b1eda528f24f549c52581f95aa9654": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3124784f5309473788455c999abbea56",
+        "location": [
+          "43.64479832755969",
+          "-79.46008725685452"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a077701347534029ae8171f72808fe28",
+        "title": "Magnolia Warbler, 2021-08-30"
+      }
+    },
+    "df65f2aea2244aa3bd9eac0dedea9306": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cedf24e5f60d4c61b5d7707be22c22fc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "936e7e5adcc74df3851e940a522d58e4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_df65f2aea2244aa3bd9eac0dedea9306",
+        "style": "IPY_MODEL_cedf24e5f60d4c61b5d7707be22c22fc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0c19d6f7b3684815a485025f264a7f87": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9d80487e162d46cb8cad5cb7015ae620": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0c19d6f7b3684815a485025f264a7f87",
+        "location": [
+          "43.647596240571495",
+          "-79.47075670425194"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_936e7e5adcc74df3851e940a522d58e4",
+        "title": "Magnolia Warbler, 2021-08-28"
+      }
+    },
+    "bd77550b6b1b4cf7a67161da1be85023": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a5f8707b5d9e4007991434b965281652": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "35afc1f253e14ad4a6845a94bd536476": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_bd77550b6b1b4cf7a67161da1be85023",
+        "style": "IPY_MODEL_a5f8707b5d9e4007991434b965281652",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "30b72005fc4f411cb4bd6600de5c02ff": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0a35a6f076454e02b55cf311e9837600": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_30b72005fc4f411cb4bd6600de5c02ff",
+        "location": [
+          "43.64364776138535",
+          "-79.45947036374939"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_35afc1f253e14ad4a6845a94bd536476",
+        "title": "Magnolia Warbler, 2021-08-24"
+      }
+    },
+    "77867ebf9a7f4dbfb70dcec6fae5a8cb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3d494acb42d14dc7b11379c7d2a35e1c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bcbc6fe1e59c4facab1449d03a63306b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_77867ebf9a7f4dbfb70dcec6fae5a8cb",
+        "style": "IPY_MODEL_3d494acb42d14dc7b11379c7d2a35e1c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "734ad21dbd2e4b3b9ee9777dafae9190": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e69fbf78face4753add428a4561b844c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_734ad21dbd2e4b3b9ee9777dafae9190",
+        "location": [
+          "43.643440661023206",
+          "-79.45967777659025"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bcbc6fe1e59c4facab1449d03a63306b",
+        "title": "Magnolia Warbler, 2021-09-04"
+      }
+    },
+    "254819a7f96b470f8596e8e5d7ff39b1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2b9682ea30954fd388276717368c4f83": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3e26f81d63b44fa4ba0c9743d8dc7ed4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-29",
+        "layout": "IPY_MODEL_254819a7f96b470f8596e8e5d7ff39b1",
+        "style": "IPY_MODEL_2b9682ea30954fd388276717368c4f83",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bb7044b3b2164cb3a20f38d9598248c9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "126bfcceb6a44e9bb09a4db28dd306b1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bb7044b3b2164cb3a20f38d9598248c9",
+        "location": [
+          "43.642650260693294",
+          "-79.45882701596021"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3e26f81d63b44fa4ba0c9743d8dc7ed4",
+        "title": "Magnolia Warbler, 2021-08-29"
+      }
+    },
+    "df900ee4629f4675a88aa53a6363e078": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7f0afa90858242a2bfd2be6167d0dc78": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4bf8599305434a07ae748a5e44b1e0b5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_df900ee4629f4675a88aa53a6363e078",
+        "style": "IPY_MODEL_7f0afa90858242a2bfd2be6167d0dc78",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8d7b5420e2b94b8793eb30e927016ef7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1e79c470cc434942af21267c8fb27bb8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8d7b5420e2b94b8793eb30e927016ef7",
+        "location": [
+          "43.6465627833142",
+          "-79.46926147504672"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4bf8599305434a07ae748a5e44b1e0b5",
+        "title": "Magnolia Warbler, 2021-09-04"
+      }
+    },
+    "e4494b700c9a4802b0cf79a399d8a7f6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "882412331c9e4271bace7dbc21ce6791": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d2119a6ecd754cb9bb1f7f6a19668201": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_e4494b700c9a4802b0cf79a399d8a7f6",
+        "style": "IPY_MODEL_882412331c9e4271bace7dbc21ce6791",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6b95ef64ea924566af7b8b53662775db": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8dda61b248c44f269dbf5ab81c90a25d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6b95ef64ea924566af7b8b53662775db",
+        "location": [
+          "43.64381145494518",
+          "-79.45962929310731"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d2119a6ecd754cb9bb1f7f6a19668201",
+        "title": "Magnolia Warbler, 2021-08-30"
+      }
+    },
+    "fddc3dde6de5425980fa072ed7b1da16": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4a3687c046b240d786a2a4d5c2205d37": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b70273a88c7a4ac0845d1156409cb418": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_fddc3dde6de5425980fa072ed7b1da16",
+        "style": "IPY_MODEL_4a3687c046b240d786a2a4d5c2205d37",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "37db918dc3bf4b62bb55c31bd90a45a8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e9cc77e42b0b4d1db325aa3ae01ec4f2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_37db918dc3bf4b62bb55c31bd90a45a8",
+        "location": [
+          "43.65336807779862",
+          "-79.46097981961952"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b70273a88c7a4ac0845d1156409cb418",
+        "title": "Magnolia Warbler, 2021-09-07"
+      }
+    },
+    "b071e87bb06946bd94a7389d66e294bf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d9008daf75094ced93704f562a15fe64": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8a466a95ab744dea8d57a7204a3e71d9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_b071e87bb06946bd94a7389d66e294bf",
+        "style": "IPY_MODEL_d9008daf75094ced93704f562a15fe64",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "73b89a3bc8194351bc07ad5e2e8a284d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b57b3ee936ab47419551cec5d8e4439f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_73b89a3bc8194351bc07ad5e2e8a284d",
+        "location": [
+          "43.64922353163814",
+          "-79.46293312708961"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8a466a95ab744dea8d57a7204a3e71d9",
+        "title": "Magnolia Warbler, 2021-08-19"
+      }
+    },
+    "6c2e67fdb3ca496e8c4bff35ab29e42c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1588fd7f497f4f6699b59ae8ecda8c4d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6f83bba133c24206909d4645172a4f16": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_6c2e67fdb3ca496e8c4bff35ab29e42c",
+        "style": "IPY_MODEL_1588fd7f497f4f6699b59ae8ecda8c4d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ab570871208644deb7ecf2990c12529f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fd99b8c8e2374b36acfadf5d2b2e3a90": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ab570871208644deb7ecf2990c12529f",
+        "location": [
+          "43.6404647593517",
+          "-79.46121513759262"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6f83bba133c24206909d4645172a4f16",
+        "title": "Magnolia Warbler, 2021-08-19"
+      }
+    },
+    "d403b2c2473a41b2888b78c87d62c054": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fe5044edabd64dfd93953678e9d6c72d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c12b2d897fe64430919764dedbb2f081": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-30",
+        "layout": "IPY_MODEL_d403b2c2473a41b2888b78c87d62c054",
+        "style": "IPY_MODEL_fe5044edabd64dfd93953678e9d6c72d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4ead387f205d4acfaeb37861c176be55": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6f727f55a3234dce8a2155c8451fd4f0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4ead387f205d4acfaeb37861c176be55",
+        "location": [
+          "43.64182982062015",
+          "-79.45780537035645"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c12b2d897fe64430919764dedbb2f081",
+        "title": "Magnolia Warbler, 2021-08-30"
+      }
+    },
+    "074ef002effb4896b9838143d0201661": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a2da80177f7b465491ef365c2e26d94b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4de7404516934bedb0dc63f736fd8325": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_074ef002effb4896b9838143d0201661",
+        "style": "IPY_MODEL_a2da80177f7b465491ef365c2e26d94b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "affeeea727b44e9d8beddf32c18eeb2d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f7e4ad01ff764b6ca2b824e1787151f4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_affeeea727b44e9d8beddf32c18eeb2d",
+        "location": [
+          "43.64381813847473",
+          "-79.45936067952105"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4de7404516934bedb0dc63f736fd8325",
+        "title": "Magnolia Warbler, 2021-08-23"
+      }
+    },
+    "b1542d004e534654812f3364476d2677": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "61a51179afba49cea9b7dfbf32f00a00": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6a245ef35723497dbbddb9e73f98aac9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_b1542d004e534654812f3364476d2677",
+        "style": "IPY_MODEL_61a51179afba49cea9b7dfbf32f00a00",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "55b05e9f8bdd449084b540c0d2181ecf": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ca91366e97fb48fe98c03565402e5222": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_55b05e9f8bdd449084b540c0d2181ecf",
+        "location": [
+          "43.64715957812565",
+          "-79.46962415300703"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6a245ef35723497dbbddb9e73f98aac9",
+        "title": "Magnolia Warbler, 2021-08-21"
+      }
+    },
+    "f7b6795148fc43a3af3749da62ee45b7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "be942d17d5754b638dc5649022bcae3f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "42e433a191a1423590135eb1e6eca10c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_f7b6795148fc43a3af3749da62ee45b7",
+        "style": "IPY_MODEL_be942d17d5754b638dc5649022bcae3f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f12a29b72bd345fd802f09686af935e7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0925aa88e7064cd98187da6f41903f34": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f12a29b72bd345fd802f09686af935e7",
+        "location": [
+          "43.64364368905276",
+          "-79.45917463445926"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_42e433a191a1423590135eb1e6eca10c",
+        "title": "Magnolia Warbler, 2021-09-04"
+      }
+    },
+    "260845acce3e4c628d95eaa8030de5d9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c856078bcdb548c180c956a40fb21660": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8d0876b6b68042838edcaa9d326ac989": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_260845acce3e4c628d95eaa8030de5d9",
+        "style": "IPY_MODEL_c856078bcdb548c180c956a40fb21660",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "68c017ac98804f86bb7a46833a7c9fbd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "86e8edb832f04467b3ce25fee1dbce42": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_68c017ac98804f86bb7a46833a7c9fbd",
+        "location": [
+          "43.653954500101705",
+          "-79.46084057686167"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8d0876b6b68042838edcaa9d326ac989",
+        "title": "Magnolia Warbler, 2021-08-24"
+      }
+    },
+    "917816792c5541ff953d98fbf12c145a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bcd7037d0ee8403c8c839e96bb1ab2b9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "651fedd9ebb14bf9890ea769d3cae9d0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-21",
+        "layout": "IPY_MODEL_917816792c5541ff953d98fbf12c145a",
+        "style": "IPY_MODEL_bcd7037d0ee8403c8c839e96bb1ab2b9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b90c2f040ea24b8d99c8040df21f772e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8e622512542c40acbc95cbcb73c3bc84": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b90c2f040ea24b8d99c8040df21f772e",
+        "location": [
+          "43.647125210480645",
+          "-79.4694740754194"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_651fedd9ebb14bf9890ea769d3cae9d0",
+        "title": "Magnolia Warbler, 2021-08-21"
+      }
+    },
+    "96ea6ea00e51424bb866ee2c32a610dc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2c39cc2a1d79458f9474b756854e90ff": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "703e792501c34c7fbe93a1d53018b494": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_96ea6ea00e51424bb866ee2c32a610dc",
+        "style": "IPY_MODEL_2c39cc2a1d79458f9474b756854e90ff",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "03be0f9a96264d6791a68684d22c4b43": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "814ecd9db8cb4926876dc1f2378a327d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_03be0f9a96264d6791a68684d22c4b43",
+        "location": [
+          "43.64365418934572",
+          "-79.45951828683933"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_703e792501c34c7fbe93a1d53018b494",
+        "title": "Magnolia Warbler, 2021-08-23"
+      }
+    },
+    "833150fa4fc840938e5ec9567edc9d3c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "98d484c3d9334594a04d9c6cc2d5c9e1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d402653152cf4476943af9225c83dc90": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_833150fa4fc840938e5ec9567edc9d3c",
+        "style": "IPY_MODEL_98d484c3d9334594a04d9c6cc2d5c9e1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8b15da8fda8c4a7997ceffc450feecd0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8202a0a7520d4a45afa5ab75293d1a34": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8b15da8fda8c4a7997ceffc450feecd0",
+        "location": [
+          "43.64224389355986",
+          "-79.4575488130128"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d402653152cf4476943af9225c83dc90",
+        "title": "Magnolia Warbler, 2021-09-07"
+      }
+    },
+    "a7b6d45438a94aae9d03acb4f6272056": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0dab8111aac44d26a8343922563e1921": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6a61e78bb37f4accaaa948403cf15085": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_a7b6d45438a94aae9d03acb4f6272056",
+        "style": "IPY_MODEL_0dab8111aac44d26a8343922563e1921",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b9844514857b4b6eb8295b21569ef401": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c7377432e6f641c8b3add7bf13ae5f49": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b9844514857b4b6eb8295b21569ef401",
+        "location": [
+          "43.647866120670834",
+          "-79.46220711014917"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6a61e78bb37f4accaaa948403cf15085",
+        "title": "Magnolia Warbler, 2021-09-04"
+      }
+    },
+    "723098dceee6464cbaf3703d4ef87541": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c044811a38dc4e8fbd07e216c89bf83d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "afd89040862a4cbe94f93c35d3b0d294": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_723098dceee6464cbaf3703d4ef87541",
+        "style": "IPY_MODEL_c044811a38dc4e8fbd07e216c89bf83d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "aaf877c9a082455c9925ff653a3c589a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "67cf4abc34994fa8a21ca77147f609ff": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aaf877c9a082455c9925ff653a3c589a",
+        "location": [
+          "43.64470139701587",
+          "-79.46000148385775"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_afd89040862a4cbe94f93c35d3b0d294",
+        "title": "Magnolia Warbler, 2021-08-31"
+      }
+    },
+    "1c89f27ab1a84250aeaa1ba4ade22ded": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1f71a855c3f64e7dabb1363f8d3732f3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d50dda2d52b14d2d800e0014d7c5479c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-28",
+        "layout": "IPY_MODEL_1c89f27ab1a84250aeaa1ba4ade22ded",
+        "style": "IPY_MODEL_1f71a855c3f64e7dabb1363f8d3732f3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "620eb254a81b4ce2934fa5bea97ffce8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8dd50d4854c14463b2f0e53142276f9b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_620eb254a81b4ce2934fa5bea97ffce8",
+        "location": [
+          "43.64757472884722",
+          "-79.4707024728442"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d50dda2d52b14d2d800e0014d7c5479c",
+        "title": "Magnolia Warbler, 2021-08-28"
+      }
+    },
+    "2016a5ac4924464e9f58c8cec6976d32": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_cbb3b47cee114a938b1b3ab7bda1a8fb",
+          "IPY_MODEL_54d3fb5ff07c4c2e8b929cb0978b38f7",
+          "IPY_MODEL_ae19a351e2e44d518d98261c1adb55f4",
+          "IPY_MODEL_9ed4098c55e1453b88076b28d9808fd7",
+          "IPY_MODEL_242ed1f8ed4b4624b78d6e1efb5106d3",
+          "IPY_MODEL_da31881e3c3646cba78bfdfa50f293b9",
+          "IPY_MODEL_4e93c3dc5a4b44cfba851c9acbd6d1c6",
+          "IPY_MODEL_08d6f8df3e1c4a9695c323f47008fb30",
+          "IPY_MODEL_6ee22718b5134373b4260cb0f6275423",
+          "IPY_MODEL_a1f377065a5e463b94e8ff35b778b727",
+          "IPY_MODEL_5223807addad4e5e9a748a791a33013d",
+          "IPY_MODEL_2302d1049eec4ae180a4ea6308e6d9a7",
+          "IPY_MODEL_40b1eda528f24f549c52581f95aa9654",
+          "IPY_MODEL_9d80487e162d46cb8cad5cb7015ae620",
+          "IPY_MODEL_0a35a6f076454e02b55cf311e9837600",
+          "IPY_MODEL_e69fbf78face4753add428a4561b844c",
+          "IPY_MODEL_126bfcceb6a44e9bb09a4db28dd306b1",
+          "IPY_MODEL_1e79c470cc434942af21267c8fb27bb8",
+          "IPY_MODEL_8dda61b248c44f269dbf5ab81c90a25d",
+          "IPY_MODEL_e9cc77e42b0b4d1db325aa3ae01ec4f2",
+          "IPY_MODEL_b57b3ee936ab47419551cec5d8e4439f",
+          "IPY_MODEL_fd99b8c8e2374b36acfadf5d2b2e3a90",
+          "IPY_MODEL_6f727f55a3234dce8a2155c8451fd4f0",
+          "IPY_MODEL_f7e4ad01ff764b6ca2b824e1787151f4",
+          "IPY_MODEL_ca91366e97fb48fe98c03565402e5222",
+          "IPY_MODEL_0925aa88e7064cd98187da6f41903f34",
+          "IPY_MODEL_86e8edb832f04467b3ce25fee1dbce42",
+          "IPY_MODEL_8e622512542c40acbc95cbcb73c3bc84",
+          "IPY_MODEL_814ecd9db8cb4926876dc1f2378a327d",
+          "IPY_MODEL_8202a0a7520d4a45afa5ab75293d1a34",
+          "IPY_MODEL_c7377432e6f641c8b3add7bf13ae5f49",
+          "IPY_MODEL_67cf4abc34994fa8a21ca77147f609ff",
+          "IPY_MODEL_8dd50d4854c14463b2f0e53142276f9b"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "7cac116212054c5e80a1067209af9ba4"}
+</script>
+
+</body>
+</html>

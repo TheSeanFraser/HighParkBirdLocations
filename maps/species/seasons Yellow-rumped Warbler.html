@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yellow-rumped Warbler Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "0db6328a7adb465b91952d7f1cc4d23b": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "969b5c10d11b4f23982deb757017e8a6": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "5935cc92e9664f5f9b74ab04c1ff1cf6": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "08cf60926aa3410a846c1e7490c3e61e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "07ab352b8b624396b21aec715fc350ad": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "ed56fbb1a7334c0d8e53ca44d41f1f5b": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_48978cfa336741d9af793755348de2b1",
+          "IPY_MODEL_48eb686af4b747c58dcfa32cb9b232e1",
+          "IPY_MODEL_e2cbee13112d4d31a59b04515bcf2c92",
+          "IPY_MODEL_367d36681e1449e6813ed129c4dd18e1"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_0db6328a7adb465b91952d7f1cc4d23b",
+        "dragging_style": "IPY_MODEL_969b5c10d11b4f23982deb757017e8a6",
+        "layers": [
+          "IPY_MODEL_5935cc92e9664f5f9b74ab04c1ff1cf6",
+          "IPY_MODEL_6f0e0bf790564d2abee5a5f675ade616",
+          "IPY_MODEL_f64705f51dd04624843b7fa72fe3d224",
+          "IPY_MODEL_a48d5f07b1a246c8b944ee12983420b6",
+          "IPY_MODEL_36ed45405c804317ab768ed3d4c3f19f",
+          "IPY_MODEL_b0641959f7cd4da7af5b5e8962c22415"
+        ],
+        "layout": "IPY_MODEL_08cf60926aa3410a846c1e7490c3e61e",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_07ab352b8b624396b21aec715fc350ad",
+        "zoom": 14.0
+      }
+    },
+    "48978cfa336741d9af793755348de2b1": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "48eb686af4b747c58dcfa32cb9b232e1": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "e2cbee13112d4d31a59b04515bcf2c92": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "367d36681e1449e6813ed129c4dd18e1": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "6f0e0bf790564d2abee5a5f675ade616": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "f64705f51dd04624843b7fa72fe3d224": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "a48d5f07b1a246c8b944ee12983420b6": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "36ed45405c804317ab768ed3d4c3f19f": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.641659954669144",
+            "-79.45728198123238"
+          ],
+          [
+            "43.641627942651915",
+            "-79.45688409744457"
+          ],
+          [
+            "43.64174180144906",
+            "-79.45736144591135"
+          ],
+          [
+            "43.641709533862645",
+            "-79.45728009879973"
+          ],
+          [
+            "43.64234279637768",
+            "-79.45786158482369"
+          ],
+          [
+            "43.6424590108026",
+            "-79.4580911270903"
+          ],
+          [
+            "43.64178928058397",
+            "-79.45729083300267"
+          ],
+          [
+            "43.64198104161302",
+            "-79.4573936485202"
+          ],
+          [
+            "43.64181314793601",
+            "-79.45709725821024"
+          ],
+          [
+            "43.64185617138456",
+            "-79.45720572102574"
+          ],
+          [
+            "43.641812892366836",
+            "-79.45741379488643"
+          ],
+          [
+            "43.64184751558102",
+            "-79.45724733579787"
+          ],
+          [
+            "43.64169247782473",
+            "-79.4570467916678"
+          ],
+          [
+            "43.64167726627623",
+            "-79.45719875168811"
+          ],
+          [
+            "43.64169012219696",
+            "-79.457294597868"
+          ],
+          [
+            "43.6420025533373",
+            "-79.45744787992795"
+          ],
+          [
+            "43.64178928058397",
+            "-79.45729083300267"
+          ],
+          [
+            "43.64194667396802",
+            "-79.45724357093256"
+          ],
+          [
+            "43.641938018164474",
+            "-79.4572851857047"
+          ],
+          [
+            "43.641770124487465",
+            "-79.45698879539475"
+          ],
+          [
+            "43.64170978943183",
+            "-79.45696356212353"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "cd1b673a67a245fe9b8002fe6ac3149d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "02a8c94e3a1443d8bdb988669d8c56e0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ad9632d5fe214bdca2049293a3dc7148": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_cd1b673a67a245fe9b8002fe6ac3149d",
+        "style": "IPY_MODEL_02a8c94e3a1443d8bdb988669d8c56e0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "28a4a541af634bcb816e9bfee1041863": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c2e06537c875442ba591284a2c8d3d91": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_28a4a541af634bcb816e9bfee1041863",
+        "location": [
+          "43.641659954669144",
+          "-79.45728198123238"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ad9632d5fe214bdca2049293a3dc7148",
+        "title": "Yellow-rumped Warbler, 2021-09-14"
+      }
+    },
+    "5e65163a56c54b44ae4eb7f9c88b4dd4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f377de80675b41928928c266f7545651": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8c7a77f4ad9f4231842cfc47baf8354a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_5e65163a56c54b44ae4eb7f9c88b4dd4",
+        "style": "IPY_MODEL_f377de80675b41928928c266f7545651",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6e9eca3624804ec2873618d918fedb3c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "3649709058a649e7b282a80310cefe6c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6e9eca3624804ec2873618d918fedb3c",
+        "location": [
+          "43.641627942651915",
+          "-79.45688409744457"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8c7a77f4ad9f4231842cfc47baf8354a",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "3c04b77d71a54a4eab85431f9accb47c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8b6533ae139b4121bfb80ce8e5142bac": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e9eed3f29b294c8e9c5eb852bae9446b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_3c04b77d71a54a4eab85431f9accb47c",
+        "style": "IPY_MODEL_8b6533ae139b4121bfb80ce8e5142bac",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "20003c563b624033a7306d007284c12b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "5bdde55f3559412c9d815ade17e51694": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_20003c563b624033a7306d007284c12b",
+        "location": [
+          "43.64174180144906",
+          "-79.45736144591135"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e9eed3f29b294c8e9c5eb852bae9446b",
+        "title": "Yellow-rumped Warbler, 2021-09-14"
+      }
+    },
+    "f19cd01b50cf425f9746e64366992edf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ffeaf47bff8348b098c06096af9bed93": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d1963c56149d494080537d72a80ef228": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_f19cd01b50cf425f9746e64366992edf",
+        "style": "IPY_MODEL_ffeaf47bff8348b098c06096af9bed93",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7ba05a19cdc2409f9548e4af0ed81275": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "51f828230dee4e40a4fdce6e10247ad9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7ba05a19cdc2409f9548e4af0ed81275",
+        "location": [
+          "43.641709533862645",
+          "-79.45728009879973"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d1963c56149d494080537d72a80ef228",
+        "title": "Yellow-rumped Warbler, 2021-09-07"
+      }
+    },
+    "c9d8796d8f304e2597b8c754d6c8d3f9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cd91b2daa2b44a6994a9ea7a5228c962": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c8ab9b4797b9438d83081f158071b5f8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_c9d8796d8f304e2597b8c754d6c8d3f9",
+        "style": "IPY_MODEL_cd91b2daa2b44a6994a9ea7a5228c962",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4432d26407ad4a0c85dd4ebee3f3bf90": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bbf82d2aabe0422dae5e43b95cd3bb4a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4432d26407ad4a0c85dd4ebee3f3bf90",
+        "location": [
+          "43.64234279637768",
+          "-79.45786158482369"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c8ab9b4797b9438d83081f158071b5f8",
+        "title": "Yellow-rumped Warbler, 2021-09-07"
+      }
+    },
+    "a739bef13b1640088e3c94f0432f9e3b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9dc7d3d46ee74d388c8b88050d469f1a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "494ba59265814f788876e548b47a16e8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_a739bef13b1640088e3c94f0432f9e3b",
+        "style": "IPY_MODEL_9dc7d3d46ee74d388c8b88050d469f1a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2c6a606546d94effa1df092b39088871": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ce97ac95cb2a4208897e55a91d22a7fd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2c6a606546d94effa1df092b39088871",
+        "location": [
+          "43.6424590108026",
+          "-79.4580911270903"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_494ba59265814f788876e548b47a16e8",
+        "title": "Yellow-rumped Warbler, 2021-09-07"
+      }
+    },
+    "367ebd260ae74475b89b679de24d1dd6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "946194b9131b4622b43262761f194859": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f73ff734e5a44a17a79c96fc164a4058": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_367ebd260ae74475b89b679de24d1dd6",
+        "style": "IPY_MODEL_946194b9131b4622b43262761f194859",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4b43187dbf5b4263838fb1da06af8b8b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e78661db4575408ca57e49350faf70ac": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4b43187dbf5b4263838fb1da06af8b8b",
+        "location": [
+          "43.64178928058397",
+          "-79.45729083300267"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f73ff734e5a44a17a79c96fc164a4058",
+        "title": "Yellow-rumped Warbler, 2021-09-14"
+      }
+    },
+    "4abb11457627485e8e44e1c2c00952db": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "72bee834cb12457bbc8d1c037b606ca2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "02d502d625a9409c9e78886484ddfbce": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_4abb11457627485e8e44e1c2c00952db",
+        "style": "IPY_MODEL_72bee834cb12457bbc8d1c037b606ca2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b5fae94128e346ffac9b0bc6c813e9d8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c5f35595f8eb4040945d6d2428a3fa79": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b5fae94128e346ffac9b0bc6c813e9d8",
+        "location": [
+          "43.64198104161302",
+          "-79.4573936485202"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_02d502d625a9409c9e78886484ddfbce",
+        "title": "Yellow-rumped Warbler, 2021-09-07"
+      }
+    },
+    "a3f6a9e21cb8437daa5a5765d7dfaf68": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "85b621eb6bf540bb8739ea676a2c28c7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4b01760177524fcfb186c4ba5d442432": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_a3f6a9e21cb8437daa5a5765d7dfaf68",
+        "style": "IPY_MODEL_85b621eb6bf540bb8739ea676a2c28c7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a4998d7ac277485c8ebd0467fa806840": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bf54a0574427442ca0797e37927fd309": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a4998d7ac277485c8ebd0467fa806840",
+        "location": [
+          "43.64181314793601",
+          "-79.45709725821024"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4b01760177524fcfb186c4ba5d442432",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "6dc11a7b19894938abbe02e9602d00de": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4d621495beca4ca9a2abdf39fedff8bf": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "19a9a968cbb64743b4b826bd45be97a8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_6dc11a7b19894938abbe02e9602d00de",
+        "style": "IPY_MODEL_4d621495beca4ca9a2abdf39fedff8bf",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8e9726dbcf6d497296c117d0c63652fd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ab75036d825b4150829c9772d0f26c7a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8e9726dbcf6d497296c117d0c63652fd",
+        "location": [
+          "43.64185617138456",
+          "-79.45720572102574"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_19a9a968cbb64743b4b826bd45be97a8",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "2c7e5d1150d04a889ff6b315e8540d41": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0a6e22da730d4063890f6da4e28da56b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "27ee4822ae1b4d0aae966f02385e0d6e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_2c7e5d1150d04a889ff6b315e8540d41",
+        "style": "IPY_MODEL_0a6e22da730d4063890f6da4e28da56b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "926f6976a4224508971610ae7ab8f4a4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4b0ba99c70ee47a486f55632f33782c7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_926f6976a4224508971610ae7ab8f4a4",
+        "location": [
+          "43.641812892366836",
+          "-79.45741379488643"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_27ee4822ae1b4d0aae966f02385e0d6e",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "a597ae3ee52e4e85a99651be1e694f13": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3932cbf54ee145e4974f3c2cefa9463b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a64f0c5fc3cb42229bdab04dabb0f98b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_a597ae3ee52e4e85a99651be1e694f13",
+        "style": "IPY_MODEL_3932cbf54ee145e4974f3c2cefa9463b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "95bcfde962e14874828cf877b3c7e881": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "418f09db6cec41cab24fbe627f4199ef": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_95bcfde962e14874828cf877b3c7e881",
+        "location": [
+          "43.64184751558102",
+          "-79.45724733579787"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a64f0c5fc3cb42229bdab04dabb0f98b",
+        "title": "Yellow-rumped Warbler, 2021-09-07"
+      }
+    },
+    "eeea687b58834132b10e48f1a195efe8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "758d6beed8e3421bb27bea8cfc155ab9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a17a0a70a65e4b8699a24682a6357989": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_eeea687b58834132b10e48f1a195efe8",
+        "style": "IPY_MODEL_758d6beed8e3421bb27bea8cfc155ab9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d7092eb09b6f4b0483d3d1ed231912a6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9d77ab0cb37d4e7ab4eec152f184ebff": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d7092eb09b6f4b0483d3d1ed231912a6",
+        "location": [
+          "43.64169247782473",
+          "-79.4570467916678"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a17a0a70a65e4b8699a24682a6357989",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "49e81c024e8949e3b501bb79d1cc556b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "773586fc399746b0b6de51f6633b4110": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a9600697ef11426094654b122f99ad4a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_49e81c024e8949e3b501bb79d1cc556b",
+        "style": "IPY_MODEL_773586fc399746b0b6de51f6633b4110",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "da9e8949224642088822f6d01c6b473f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cdf0536032514f7aa944a807fc2aa125": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_da9e8949224642088822f6d01c6b473f",
+        "location": [
+          "43.64167726627623",
+          "-79.45719875168811"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a9600697ef11426094654b122f99ad4a",
+        "title": "Yellow-rumped Warbler, 2021-09-14"
+      }
+    },
+    "b1f5f95e8e2e42858c8c307ff0d3386f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "55bafed6dee14b0aa07d97ee8d2ea1b0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aeea7e50ce4d4298928807e784e0295c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_b1f5f95e8e2e42858c8c307ff0d3386f",
+        "style": "IPY_MODEL_55bafed6dee14b0aa07d97ee8d2ea1b0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4c90a60dd94244de9f55bea6ad42dcb7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "910ae3200237482aa6de1c937b320388": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4c90a60dd94244de9f55bea6ad42dcb7",
+        "location": [
+          "43.64169012219696",
+          "-79.457294597868"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aeea7e50ce4d4298928807e784e0295c",
+        "title": "Yellow-rumped Warbler, 2021-09-14"
+      }
+    },
+    "fc27113ae176494995ac04d9aa318c1d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5565d1ca1a464aa39c112a54c1bba5bd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f0ff4ad6aa3d4212b51978e21400263f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_fc27113ae176494995ac04d9aa318c1d",
+        "style": "IPY_MODEL_5565d1ca1a464aa39c112a54c1bba5bd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2d94217adf9442ca87c148230a527e2b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b531c4b1748848bcb9c5c06d5c7e2be0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2d94217adf9442ca87c148230a527e2b",
+        "location": [
+          "43.6420025533373",
+          "-79.45744787992795"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f0ff4ad6aa3d4212b51978e21400263f",
+        "title": "Yellow-rumped Warbler, 2021-09-07"
+      }
+    },
+    "f7c2f7faf9264b63a4555dd662b4485d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6d6077c980474b7294e076df309e86e1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5a6cbd4c62f046dd94d3581747d618ff": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-14",
+        "layout": "IPY_MODEL_f7c2f7faf9264b63a4555dd662b4485d",
+        "style": "IPY_MODEL_6d6077c980474b7294e076df309e86e1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "82be0f8dae1944a09021169cebdc2890": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e4f10aca4b0c4ee7874399b4f8a4ba07": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_82be0f8dae1944a09021169cebdc2890",
+        "location": [
+          "43.64178928058397",
+          "-79.45729083300267"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5a6cbd4c62f046dd94d3581747d618ff",
+        "title": "Yellow-rumped Warbler, 2021-09-14"
+      }
+    },
+    "6fd806f9197243ccb6c69f13a1c237ea": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "16f253057e8d40e4becd602269d540f2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c24161e9e5ed4bbc91b9b668d4fa5691": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_6fd806f9197243ccb6c69f13a1c237ea",
+        "style": "IPY_MODEL_16f253057e8d40e4becd602269d540f2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "aea0723eb1fe480499a1508e959395ed": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "df75e209760a4306b2af43ae44a37c30": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_aea0723eb1fe480499a1508e959395ed",
+        "location": [
+          "43.64194667396802",
+          "-79.45724357093256"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c24161e9e5ed4bbc91b9b668d4fa5691",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "6294426d911443e0a9190c8b6f06d39a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "73f098b67a0649f08cbfcad0af47c544": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7911c3167c254f8b96d99ace499aa37f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_6294426d911443e0a9190c8b6f06d39a",
+        "style": "IPY_MODEL_73f098b67a0649f08cbfcad0af47c544",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5783c0ea205940cbbd8806348256c8e9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "33c56aed219749629ba5fd1dafb9f6d0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5783c0ea205940cbbd8806348256c8e9",
+        "location": [
+          "43.641938018164474",
+          "-79.4572851857047"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7911c3167c254f8b96d99ace499aa37f",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "581bc3d363954c7eb4e67c2bb7f3dcce": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c3901ed50ac840e181757bf4a46cb7c3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "becc2960976b4a44ae77378f1d622a3f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_581bc3d363954c7eb4e67c2bb7f3dcce",
+        "style": "IPY_MODEL_c3901ed50ac840e181757bf4a46cb7c3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "baacb9da5006458fa5ed4a1ba7d1c974": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7d186428b3894664bbce111e774183a1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_baacb9da5006458fa5ed4a1ba7d1c974",
+        "location": [
+          "43.641770124487465",
+          "-79.45698879539475"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_becc2960976b4a44ae77378f1d622a3f",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "8e364d1725344c5ebf2c416f206ecadc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "20ddb69d44534e5b9f99456f5c3d242c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7a99c0129487448695125acfd6a313ae": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_8e364d1725344c5ebf2c416f206ecadc",
+        "style": "IPY_MODEL_20ddb69d44534e5b9f99456f5c3d242c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "20daf24a84d6441c87c17e436041a0dc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d004bfb528784ab3af742632d9f90767": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_20daf24a84d6441c87c17e436041a0dc",
+        "location": [
+          "43.64170978943183",
+          "-79.45696356212353"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7a99c0129487448695125acfd6a313ae",
+        "title": "Yellow-rumped Warbler, 2021-09-04"
+      }
+    },
+    "b0641959f7cd4da7af5b5e8962c22415": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_c2e06537c875442ba591284a2c8d3d91",
+          "IPY_MODEL_3649709058a649e7b282a80310cefe6c",
+          "IPY_MODEL_5bdde55f3559412c9d815ade17e51694",
+          "IPY_MODEL_51f828230dee4e40a4fdce6e10247ad9",
+          "IPY_MODEL_bbf82d2aabe0422dae5e43b95cd3bb4a",
+          "IPY_MODEL_ce97ac95cb2a4208897e55a91d22a7fd",
+          "IPY_MODEL_e78661db4575408ca57e49350faf70ac",
+          "IPY_MODEL_c5f35595f8eb4040945d6d2428a3fa79",
+          "IPY_MODEL_bf54a0574427442ca0797e37927fd309",
+          "IPY_MODEL_ab75036d825b4150829c9772d0f26c7a",
+          "IPY_MODEL_4b0ba99c70ee47a486f55632f33782c7",
+          "IPY_MODEL_418f09db6cec41cab24fbe627f4199ef",
+          "IPY_MODEL_9d77ab0cb37d4e7ab4eec152f184ebff",
+          "IPY_MODEL_cdf0536032514f7aa944a807fc2aa125",
+          "IPY_MODEL_910ae3200237482aa6de1c937b320388",
+          "IPY_MODEL_b531c4b1748848bcb9c5c06d5c7e2be0",
+          "IPY_MODEL_e4f10aca4b0c4ee7874399b4f8a4ba07",
+          "IPY_MODEL_df75e209760a4306b2af43ae44a37c30",
+          "IPY_MODEL_33c56aed219749629ba5fd1dafb9f6d0",
+          "IPY_MODEL_7d186428b3894664bbce111e774183a1",
+          "IPY_MODEL_d004bfb528784ab3af742632d9f90767"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ed56fbb1a7334c0d8e53ca44d41f1f5b"}
+</script>
+
+</body>
+</html>

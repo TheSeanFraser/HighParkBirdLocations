@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baltimore Oriole Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "62326d1c6a9c4b539ac45c713aae4c65": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "3a067570818647b5bc2daaf060f0c233": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "8856aae0911f488fb8dd0b5e46657515": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "32a21780eef649a9b248b45e1a6cef34": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "0dac6a447d614b888f867085333845ec": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "ce5aee83b64a4e6e946990ac7198b6fe": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_e3343dbdef5c443c98d0c883129a6bcd",
+          "IPY_MODEL_9ba32d2be8494a41917021d505762430",
+          "IPY_MODEL_53d06a24fd1c4b4e9b3a5fae112f7e8e",
+          "IPY_MODEL_804ac291770148b0bb51f5163379abb8"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_62326d1c6a9c4b539ac45c713aae4c65",
+        "dragging_style": "IPY_MODEL_3a067570818647b5bc2daaf060f0c233",
+        "layers": [
+          "IPY_MODEL_8856aae0911f488fb8dd0b5e46657515",
+          "IPY_MODEL_7dfe7571e748466ea8383d2e4a84560d",
+          "IPY_MODEL_99ec58f04a714ead96ffd3d1d9eaef1b",
+          "IPY_MODEL_890c0e10563e441d82b96ab4efa3dc2b",
+          "IPY_MODEL_0808a07131074da9ae4c426915f24593",
+          "IPY_MODEL_6dacc59ad90943d2a001ef3e0d1b2829"
+        ],
+        "layout": "IPY_MODEL_32a21780eef649a9b248b45e1a6cef34",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_0dac6a447d614b888f867085333845ec",
+        "zoom": 14.0
+      }
+    },
+    "e3343dbdef5c443c98d0c883129a6bcd": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "9ba32d2be8494a41917021d505762430": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "53d06a24fd1c4b4e9b3a5fae112f7e8e": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "804ac291770148b0bb51f5163379abb8": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "7dfe7571e748466ea8383d2e4a84560d": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "99ec58f04a714ead96ffd3d1d9eaef1b": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "890c0e10563e441d82b96ab4efa3dc2b": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.643744565719466",
+            "-79.45990878284314"
+          ],
+          [
+            "43.64733276301229",
+            "-79.46984063437726"
+          ],
+          [
+            "43.64131212333204",
+            "-79.46294192259815"
+          ],
+          [
+            "43.64253822347877",
+            "-79.46577156392117"
+          ],
+          [
+            "43.64252711935638",
+            "-79.45727674040656"
+          ],
+          [
+            "43.647743961332075",
+            "-79.47032396741253"
+          ],
+          [
+            "43.64131212333204",
+            "-79.46294192259815"
+          ],
+          [
+            "43.643732335625224",
+            "-79.4598067548458"
+          ],
+          [
+            "43.643732335625224",
+            "-79.4598067548458"
+          ],
+          [
+            "43.64222910460694",
+            "-79.45698519201682"
+          ],
+          [
+            "43.64711251091873",
+            "-79.46950807908489"
+          ],
+          [
+            "43.64711681024628",
+            "-79.46919915351535"
+          ],
+          [
+            "43.64690983766872",
+            "-79.46924829801812"
+          ],
+          [
+            "43.6433184019917",
+            "-79.45892550621942"
+          ],
+          [
+            "43.64224628791845",
+            "-79.46526234680748"
+          ],
+          [
+            "43.64252027908119",
+            "-79.46496982198967"
+          ],
+          [
+            "43.64794794343239",
+            "-79.47001916915517"
+          ],
+          [
+            "43.638705036809235",
+            "-79.46486696310416"
+          ],
+          [
+            "43.647432447120124",
+            "-79.46985709858156"
+          ],
+          [
+            "43.64404443366419",
+            "-79.46741664428296"
+          ],
+          [
+            "43.64820627465744",
+            "-79.47074042337785"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "0808a07131074da9ae4c426915f24593": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64649614808279",
+            "-79.46903005034746"
+          ],
+          [
+            "43.65322175135102",
+            "-79.46333868460289"
+          ],
+          [
+            "43.64217558035444",
+            "-79.4647351928181"
+          ],
+          [
+            "43.649344457318605",
+            "-79.46266705695585"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "2bf9f0baed244dd083032db373414e4d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b09f359e759d424ead2e7becbf8eec52": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "24012db9c15947438cbf2821127ed6f1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_2bf9f0baed244dd083032db373414e4d",
+        "style": "IPY_MODEL_b09f359e759d424ead2e7becbf8eec52",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "38690ea6c9884db69a26d72dd28e3a6e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b4601200263c496f87f763594a51c516": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_38690ea6c9884db69a26d72dd28e3a6e",
+        "location": [
+          "43.643744565719466",
+          "-79.45990878284314"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_24012db9c15947438cbf2821127ed6f1",
+        "title": "Baltimore Oriole, 2021-07-21"
+      }
+    },
+    "ee3aa065be684069b104ed15e51cd91c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e5a0a559455d4623a70dee5ceddefd9f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "636c62f184cd45578b0c2f73846594de": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_ee3aa065be684069b104ed15e51cd91c",
+        "style": "IPY_MODEL_e5a0a559455d4623a70dee5ceddefd9f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "be1291d457f64a60a10345e18bce4365": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a8ab91fddc684d7090d9baa60b4c2498": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_be1291d457f64a60a10345e18bce4365",
+        "location": [
+          "43.64733276301229",
+          "-79.46984063437726"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_636c62f184cd45578b0c2f73846594de",
+        "title": "Baltimore Oriole, 2021-07-24"
+      }
+    },
+    "458d522e1008402aab34d38d2fb5b327": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "aeec6028b66f40a8900f85a5b4ca5436": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e5922587e6024c0782ec143df484e587": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_458d522e1008402aab34d38d2fb5b327",
+        "style": "IPY_MODEL_aeec6028b66f40a8900f85a5b4ca5436",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5aaddd986e91488791cc2a3adb390539": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a21e7c756e0343a58a9ec988bae77806": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5aaddd986e91488791cc2a3adb390539",
+        "location": [
+          "43.64131212333204",
+          "-79.46294192259815"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e5922587e6024c0782ec143df484e587",
+        "title": "Baltimore Oriole, 2021-07-09"
+      }
+    },
+    "5c0eba6960a24984bdb50c2aae203d77": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9bea6cbf23e540b2b5a383e6edb7417d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "11d9c307095d4910bb89f8518547cba4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_5c0eba6960a24984bdb50c2aae203d77",
+        "style": "IPY_MODEL_9bea6cbf23e540b2b5a383e6edb7417d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7b5aaeec92954d23b34b8e5dbe97ef03": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7318e97a720f46ffb6a280d7c20556bf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7b5aaeec92954d23b34b8e5dbe97ef03",
+        "location": [
+          "43.64253822347877",
+          "-79.46577156392117"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_11d9c307095d4910bb89f8518547cba4",
+        "title": "Baltimore Oriole, 2021-07-08"
+      }
+    },
+    "b66cee0c66854dd2bfdb4401ccb784a3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e5d5414ddfac4f72b1894671f61b8707": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ce88847ca94e4cacade9f2c5f0a7a647": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_b66cee0c66854dd2bfdb4401ccb784a3",
+        "style": "IPY_MODEL_e5d5414ddfac4f72b1894671f61b8707",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "52a5e6aff5c544b2b2d144cc1996d891": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d8af61a166b44b69b40eb3ec27d2280d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_52a5e6aff5c544b2b2d144cc1996d891",
+        "location": [
+          "43.64252711935638",
+          "-79.45727674040656"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ce88847ca94e4cacade9f2c5f0a7a647",
+        "title": "Baltimore Oriole, 2021-07-08"
+      }
+    },
+    "700ddb886a814a2ca2153436a2d2ae42": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "98df1d571c074eadafc6097094f4e3e5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0a0b095dfd9a4edb9f5bf4f4c66cf72d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_700ddb886a814a2ca2153436a2d2ae42",
+        "style": "IPY_MODEL_98df1d571c074eadafc6097094f4e3e5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3d0f7db7b3ae47aaabd3513c833ff867": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cbf1f6c056ed40f595ae471b347ff6e4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3d0f7db7b3ae47aaabd3513c833ff867",
+        "location": [
+          "43.647743961332075",
+          "-79.47032396741253"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0a0b095dfd9a4edb9f5bf4f4c66cf72d",
+        "title": "Baltimore Oriole, 2021-07-08"
+      }
+    },
+    "8c9c73ac08474ea4ae8e4787acbad437": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "29ca4d9f6d5c438085d691f71d6a349f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "10bb20cff27f40e6af2453f1184fe9d4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_8c9c73ac08474ea4ae8e4787acbad437",
+        "style": "IPY_MODEL_29ca4d9f6d5c438085d691f71d6a349f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "075c544910fb4c61898b09b5d6d5c151": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f3477b3bc0e0444e8800cac4a924e7e5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_075c544910fb4c61898b09b5d6d5c151",
+        "location": [
+          "43.64131212333204",
+          "-79.46294192259815"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_10bb20cff27f40e6af2453f1184fe9d4",
+        "title": "Baltimore Oriole, 2021-07-09"
+      }
+    },
+    "e45440ca14464c409f9e932f9b117f4b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "74be0e2cce1243f1929bd8bf13cbc763": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f0c1c74f9cf24fc2a49d7475f6c9aabe": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_e45440ca14464c409f9e932f9b117f4b",
+        "style": "IPY_MODEL_74be0e2cce1243f1929bd8bf13cbc763",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "75ad1025a550403ba6121e81be61d2d9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "4669045b26d4443c9f6d30cb3aa697bc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_75ad1025a550403ba6121e81be61d2d9",
+        "location": [
+          "43.643732335625224",
+          "-79.4598067548458"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f0c1c74f9cf24fc2a49d7475f6c9aabe",
+        "title": "Baltimore Oriole, 2021-07-21"
+      }
+    },
+    "7b546ec09efe44b38ef9deea9ff89c8f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "469136f731a74ead97b0b0156b88a777": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4c63213dca4b4dcabb1f92c4aa81465b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_7b546ec09efe44b38ef9deea9ff89c8f",
+        "style": "IPY_MODEL_469136f731a74ead97b0b0156b88a777",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8424691784e94a8a857a68382336fd3e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ff981963b0e14e8c9236dfd11e8d6b7f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8424691784e94a8a857a68382336fd3e",
+        "location": [
+          "43.643732335625224",
+          "-79.4598067548458"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4c63213dca4b4dcabb1f92c4aa81465b",
+        "title": "Baltimore Oriole, 2021-07-21"
+      }
+    },
+    "ad4f6b058bbe475187668b6607fca741": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1547cdcb66224c73a7374b02d064d646": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1b7a608b2a0a40b08478f86e4fefd639": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_ad4f6b058bbe475187668b6607fca741",
+        "style": "IPY_MODEL_1547cdcb66224c73a7374b02d064d646",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "47223e22c0a84d5b96b34c10e6d467c3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "672ed63e580d4b01b003bf2df7aced8f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_47223e22c0a84d5b96b34c10e6d467c3",
+        "location": [
+          "43.64222910460694",
+          "-79.45698519201682"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1b7a608b2a0a40b08478f86e4fefd639",
+        "title": "Baltimore Oriole, 2021-07-04"
+      }
+    },
+    "7ac9cbe95f394dac97c1545b63e39cf3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7f46d76e3ec741e398462b880ac6d6fe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "496cfdb895994833a8d9a696ebca9efb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_7ac9cbe95f394dac97c1545b63e39cf3",
+        "style": "IPY_MODEL_7f46d76e3ec741e398462b880ac6d6fe",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "42140a9053ef41e5800b31ff2e323a15": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "42efbf4564fc465cabda6b45d1054f7c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_42140a9053ef41e5800b31ff2e323a15",
+        "location": [
+          "43.64711251091873",
+          "-79.46950807908489"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_496cfdb895994833a8d9a696ebca9efb",
+        "title": "Baltimore Oriole, 2021-07-12"
+      }
+    },
+    "31d2b7cfc9994893b75e811acd28f99c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9107aeef84f942a9b049a25d8fc1ce0d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "00f3790e0a4b4eef8e9e6c4de8edb2e0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_31d2b7cfc9994893b75e811acd28f99c",
+        "style": "IPY_MODEL_9107aeef84f942a9b049a25d8fc1ce0d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0ed5e4c854f3407bba7332173183c823": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7af662f6329349d88531d7b497419c47": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0ed5e4c854f3407bba7332173183c823",
+        "location": [
+          "43.64711681024628",
+          "-79.46919915351535"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_00f3790e0a4b4eef8e9e6c4de8edb2e0",
+        "title": "Baltimore Oriole, 2021-08-16"
+      }
+    },
+    "a52343364cb34cb79b6b794f9bdf9819": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d2b32ca20ce348e1a0e37f229274cdda": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3eece0a4a6474695a68b8c803150abe6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_a52343364cb34cb79b6b794f9bdf9819",
+        "style": "IPY_MODEL_d2b32ca20ce348e1a0e37f229274cdda",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eae5c960ed5f4054880e257efd39067c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fd5ab060e6164ca5a03b9b4de2b7c341": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eae5c960ed5f4054880e257efd39067c",
+        "location": [
+          "43.64690983766872",
+          "-79.46924829801812"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3eece0a4a6474695a68b8c803150abe6",
+        "title": "Baltimore Oriole, 2021-08-16"
+      }
+    },
+    "9822688d19bf484ca1b7afd93788e97f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "acdd832368e047148175fbbd82320a58": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "09f95219d63d401ba5b009d83c289120": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_9822688d19bf484ca1b7afd93788e97f",
+        "style": "IPY_MODEL_acdd832368e047148175fbbd82320a58",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "cb3731929a7a48bc9104b430901197dd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e1bb757b130f44a5bf94b1ab1a1d5d0f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cb3731929a7a48bc9104b430901197dd",
+        "location": [
+          "43.6433184019917",
+          "-79.45892550621942"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_09f95219d63d401ba5b009d83c289120",
+        "title": "Baltimore Oriole, 2021-08-14"
+      }
+    },
+    "95357c43e4e942898f2b349ffb70fd9f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b14b212b87f146379760009bd9061f74": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7d28610c4cc442e6b58b5d2e9e5bff37": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_95357c43e4e942898f2b349ffb70fd9f",
+        "style": "IPY_MODEL_b14b212b87f146379760009bd9061f74",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d16ca2c454314a90968219b9cd6114d9": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e75b6d53dd4743f193aa05f160946e85": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d16ca2c454314a90968219b9cd6114d9",
+        "location": [
+          "43.64224628791845",
+          "-79.46526234680748"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7d28610c4cc442e6b58b5d2e9e5bff37",
+        "title": "Baltimore Oriole, 2021-08-19"
+      }
+    },
+    "b767c364347d4016947102fdd2277e34": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5846e1b0b71e4b24a8b9ae5ecd8ab5bd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a035fdc5ae784ff2b89d0df112b7a1e0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-17",
+        "layout": "IPY_MODEL_b767c364347d4016947102fdd2277e34",
+        "style": "IPY_MODEL_5846e1b0b71e4b24a8b9ae5ecd8ab5bd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d1bbc7e62c1f4f1ca1d7127e1002fb39": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1d3dbea58a3a4ffc844b7ed82515b6fe": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d1bbc7e62c1f4f1ca1d7127e1002fb39",
+        "location": [
+          "43.64252027908119",
+          "-79.46496982198967"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a035fdc5ae784ff2b89d0df112b7a1e0",
+        "title": "Baltimore Oriole, 2021-08-17"
+      }
+    },
+    "cb48f5c72fba49f6bbe02be8d8457779": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "809f036f30dc4a41ac38a96b88470b6c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f353d2f232734fa5893bed73432ab5a9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_cb48f5c72fba49f6bbe02be8d8457779",
+        "style": "IPY_MODEL_809f036f30dc4a41ac38a96b88470b6c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c577c8185f6245ffb210c692b2dc9a6d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b8ba8d98fab545d787011ea6b487ce94": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c577c8185f6245ffb210c692b2dc9a6d",
+        "location": [
+          "43.64794794343239",
+          "-79.47001916915517"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f353d2f232734fa5893bed73432ab5a9",
+        "title": "Baltimore Oriole, 2021-08-04"
+      }
+    },
+    "3ce3ec6eab3541bf98cdbb59846e55ba": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "23d62845a4494101bde204a366e93c88": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "89f2c11fc999444388198e2873ba2dd3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_3ce3ec6eab3541bf98cdbb59846e55ba",
+        "style": "IPY_MODEL_23d62845a4494101bde204a366e93c88",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bfe7c26aac0b47cbaec4e995f743f651": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "13e0b61b63a6463d99581b8a4a89a59b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_bfe7c26aac0b47cbaec4e995f743f651",
+        "location": [
+          "43.64649614808279",
+          "-79.46903005034746"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_89f2c11fc999444388198e2873ba2dd3",
+        "title": "Baltimore Oriole, 2021-08-23"
+      }
+    },
+    "c87414f2ce5345e59faf11ce771bb7f0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ca282206efa84a8babbdc2e18d89fc62": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a0211a0734f4bdfa49709ada136c9dd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_c87414f2ce5345e59faf11ce771bb7f0",
+        "style": "IPY_MODEL_ca282206efa84a8babbdc2e18d89fc62",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1644b641c007489b8fafc4c748853aa5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bb1a2650850641cb9c8ada8bed3f4718": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_1644b641c007489b8fafc4c748853aa5",
+        "location": [
+          "43.65322175135102",
+          "-79.46333868460289"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1a0211a0734f4bdfa49709ada136c9dd",
+        "title": "Baltimore Oriole, 2021-08-23"
+      }
+    },
+    "ad8b85a4150b4ed39fa0c26f57b0b6d4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "703e09dddc4d4dc9adb8225bcb6cf9fd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f6c54c445b2045d2a5613f695f401ec7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_ad8b85a4150b4ed39fa0c26f57b0b6d4",
+        "style": "IPY_MODEL_703e09dddc4d4dc9adb8225bcb6cf9fd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "972d0c83242e4bab96f162cdcca050ae": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "838d9dc62a4f42d3ae8c1ee98aa54ee5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_972d0c83242e4bab96f162cdcca050ae",
+        "location": [
+          "43.64217558035444",
+          "-79.4647351928181"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f6c54c445b2045d2a5613f695f401ec7",
+        "title": "Baltimore Oriole, 2021-08-23"
+      }
+    },
+    "b151d34e92ed4b48a231d635e93105e0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b0ec87cc45434616871ed2986b3dee9c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a6673c051780461593894e405ac58c50": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_b151d34e92ed4b48a231d635e93105e0",
+        "style": "IPY_MODEL_b0ec87cc45434616871ed2986b3dee9c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "cdda2d4a7f5c4c078ced8f07c65beddc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "aa8603a81e2c47c8abfcb7dabfedba68": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_cdda2d4a7f5c4c078ced8f07c65beddc",
+        "location": [
+          "43.638705036809235",
+          "-79.46486696310416"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a6673c051780461593894e405ac58c50",
+        "title": "Baltimore Oriole, 2021-08-14"
+      }
+    },
+    "7a5ff1613e064abbafdcc128534423de": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fb032d699b4d4757a8d1e97e13aa0d33": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "be86bc64910640ccad39ef157fb911bf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_7a5ff1613e064abbafdcc128534423de",
+        "style": "IPY_MODEL_fb032d699b4d4757a8d1e97e13aa0d33",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7bc178690c2a443a824125b488d1da7a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "df23d523be9a42468246ececaed69d4d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7bc178690c2a443a824125b488d1da7a",
+        "location": [
+          "43.647432447120124",
+          "-79.46985709858156"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_be86bc64910640ccad39ef157fb911bf",
+        "title": "Baltimore Oriole, 2021-07-27"
+      }
+    },
+    "7e9f19797d9a422a954b9bb7d98c835a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "026e6e9df2f9441fa7c476a096bb1b41": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0163e0a2a60d4e8a84793855ccc70c33": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-24",
+        "layout": "IPY_MODEL_7e9f19797d9a422a954b9bb7d98c835a",
+        "style": "IPY_MODEL_026e6e9df2f9441fa7c476a096bb1b41",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3b18c204ef5e49b5ae068710b454c777": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "37b14643feeb427fac2bb4b6e5837f6f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3b18c204ef5e49b5ae068710b454c777",
+        "location": [
+          "43.649344457318605",
+          "-79.46266705695585"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0163e0a2a60d4e8a84793855ccc70c33",
+        "title": "Baltimore Oriole, 2021-08-24"
+      }
+    },
+    "040cfc805b3f442c967771f8004f19a2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e7a54fdfd1374097a756ebbf94e97e30": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "80a62e800de94ee194c612006242c58b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_040cfc805b3f442c967771f8004f19a2",
+        "style": "IPY_MODEL_e7a54fdfd1374097a756ebbf94e97e30",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f0f824d2dc1743ecbcf5330b3bfcfa50": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a1fe0b8d103a4039902eefca725739be": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f0f824d2dc1743ecbcf5330b3bfcfa50",
+        "location": [
+          "43.64404443366419",
+          "-79.46741664428296"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_80a62e800de94ee194c612006242c58b",
+        "title": "Baltimore Oriole, 2021-08-15"
+      }
+    },
+    "e27c017707df4b18b57d36c21aeabfb0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0e42639b33c546078f4646ac7728955e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e039220967cc405c8136361a09de1a66": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-15",
+        "layout": "IPY_MODEL_e27c017707df4b18b57d36c21aeabfb0",
+        "style": "IPY_MODEL_0e42639b33c546078f4646ac7728955e",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5b66a848ecc048c581a693f41596bdb5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "cfa1c4c00d184949878975f999e9ec55": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5b66a848ecc048c581a693f41596bdb5",
+        "location": [
+          "43.64820627465744",
+          "-79.47074042337785"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e039220967cc405c8136361a09de1a66",
+        "title": "Baltimore Oriole, 2021-08-15"
+      }
+    },
+    "6dacc59ad90943d2a001ef3e0d1b2829": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_b4601200263c496f87f763594a51c516",
+          "IPY_MODEL_a8ab91fddc684d7090d9baa60b4c2498",
+          "IPY_MODEL_a21e7c756e0343a58a9ec988bae77806",
+          "IPY_MODEL_7318e97a720f46ffb6a280d7c20556bf",
+          "IPY_MODEL_d8af61a166b44b69b40eb3ec27d2280d",
+          "IPY_MODEL_cbf1f6c056ed40f595ae471b347ff6e4",
+          "IPY_MODEL_f3477b3bc0e0444e8800cac4a924e7e5",
+          "IPY_MODEL_4669045b26d4443c9f6d30cb3aa697bc",
+          "IPY_MODEL_ff981963b0e14e8c9236dfd11e8d6b7f",
+          "IPY_MODEL_672ed63e580d4b01b003bf2df7aced8f",
+          "IPY_MODEL_42efbf4564fc465cabda6b45d1054f7c",
+          "IPY_MODEL_7af662f6329349d88531d7b497419c47",
+          "IPY_MODEL_fd5ab060e6164ca5a03b9b4de2b7c341",
+          "IPY_MODEL_e1bb757b130f44a5bf94b1ab1a1d5d0f",
+          "IPY_MODEL_e75b6d53dd4743f193aa05f160946e85",
+          "IPY_MODEL_1d3dbea58a3a4ffc844b7ed82515b6fe",
+          "IPY_MODEL_b8ba8d98fab545d787011ea6b487ce94",
+          "IPY_MODEL_13e0b61b63a6463d99581b8a4a89a59b",
+          "IPY_MODEL_bb1a2650850641cb9c8ada8bed3f4718",
+          "IPY_MODEL_838d9dc62a4f42d3ae8c1ee98aa54ee5",
+          "IPY_MODEL_aa8603a81e2c47c8abfcb7dabfedba68",
+          "IPY_MODEL_df23d523be9a42468246ececaed69d4d",
+          "IPY_MODEL_37b14643feeb427fac2bb4b6e5837f6f",
+          "IPY_MODEL_a1fe0b8d103a4039902eefca725739be",
+          "IPY_MODEL_cfa1c4c00d184949878975f999e9ec55"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ce5aee83b64a4e6e946990ac7198b6fe"}
+</script>
+
+</body>
+</html>

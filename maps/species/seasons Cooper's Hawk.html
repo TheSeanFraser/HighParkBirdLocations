@@ -1,0 +1,3344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooper's Hawk Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "a4179a0a83ac4eb5b2ac54f9ef88b730": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "69ebd6b13790471ea216b079de5d6d51": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "c190e1cffc1e4e2a98588e0d8bfec55b": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "4d5ad2e452df45ddadd11e2f3f423339": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "03554f448229459c936fe7a95185f759": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "2976e22ed4a14021a02bd71d02e8bb17": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_819efe60207744d4a993050063d65ab1",
+          "IPY_MODEL_00b901a771cc4251aed40d107f85d883",
+          "IPY_MODEL_64663424b2494476ae58f9eb8a7e46d8",
+          "IPY_MODEL_b1edb58a14104ffaa0a01a89a365ec69"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_a4179a0a83ac4eb5b2ac54f9ef88b730",
+        "dragging_style": "IPY_MODEL_69ebd6b13790471ea216b079de5d6d51",
+        "layers": [
+          "IPY_MODEL_c190e1cffc1e4e2a98588e0d8bfec55b",
+          "IPY_MODEL_b43b2e71af184033b22415c5bccbe88d",
+          "IPY_MODEL_95f8505bd9ad4740be520b1ef03eabf6",
+          "IPY_MODEL_5bb70dee4c8a4f05806bdb05c58ba98f",
+          "IPY_MODEL_24aaf858fa8f445e85a1b89e233f6524",
+          "IPY_MODEL_1ed70f5cf989466aa8e356cab046b3b8"
+        ],
+        "layout": "IPY_MODEL_4d5ad2e452df45ddadd11e2f3f423339",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_03554f448229459c936fe7a95185f759",
+        "zoom": 14.0
+      }
+    },
+    "819efe60207744d4a993050063d65ab1": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "00b901a771cc4251aed40d107f85d883": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "64663424b2494476ae58f9eb8a7e46d8": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "b1edb58a14104ffaa0a01a89a365ec69": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "b43b2e71af184033b22415c5bccbe88d": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "95f8505bd9ad4740be520b1ef03eabf6": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "5bb70dee4c8a4f05806bdb05c58ba98f": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [
+          [
+            "43.6505454700926",
+            "-79.46171671628366"
+          ],
+          [
+            "43.64996744354363",
+            "-79.46247516193924"
+          ],
+          [
+            "43.65057835227053",
+            "-79.46180292294405"
+          ],
+          [
+            "43.650812103826595",
+            "-79.46231079867763"
+          ],
+          [
+            "43.6505454700926",
+            "-79.46171671628366"
+          ],
+          [
+            "43.64952994168145",
+            "-79.46258753268374"
+          ],
+          [
+            "43.64917204582907",
+            "-79.46185913675117"
+          ],
+          [
+            "43.65001105465332",
+            "-79.46227465593235"
+          ],
+          [
+            "43.65057835227053",
+            "-79.46180292294405"
+          ],
+          [
+            "43.649528208724774",
+            "-79.46188334379839"
+          ],
+          [
+            "43.65045951724148",
+            "-79.46219102074132"
+          ],
+          [
+            "43.650316222023946",
+            "-79.46237506254391"
+          ],
+          [
+            "43.64938745224377",
+            "-79.46221397048875"
+          ],
+          [
+            "43.6505760453282",
+            "-79.461971786277"
+          ],
+          [
+            "43.647547683839136",
+            "-79.46291788059274"
+          ],
+          [
+            "43.65078049101693",
+            "-79.46229788446112"
+          ],
+          [
+            "43.64948102130449",
+            "-79.46217942069437"
+          ],
+          [
+            "43.649319149151395",
+            "-79.46189497228022"
+          ],
+          [
+            "43.649634007879726",
+            "-79.46195082200136"
+          ],
+          [
+            "43.649201119902195",
+            "-79.46172546607991"
+          ],
+          [
+            "43.650054897557226",
+            "-79.4623895981462"
+          ],
+          [
+            "43.649870298172324",
+            "-79.4626052826227"
+          ],
+          [
+            "43.64986522069926",
+            "-79.46231211284719"
+          ],
+          [
+            "43.65045951724148",
+            "-79.46219102074132"
+          ],
+          [
+            "43.65078049101693",
+            "-79.46229788446112"
+          ],
+          [
+            "43.649451947231356",
+            "-79.46231309136563"
+          ],
+          [
+            "43.65087301208283",
+            "-79.4623337796394"
+          ],
+          [
+            "43.649865684287676",
+            "-79.46294300928865"
+          ],
+          [
+            "43.649969176500306",
+            "-79.46317935082459"
+          ],
+          [
+            "43.64577136070756",
+            "-79.46967686112146"
+          ],
+          [
+            "43.65010935899565",
+            "-79.46372177635256"
+          ],
+          [
+            "43.64971523644896",
+            "-79.46331819286942"
+          ],
+          [
+            "43.645933809970124",
+            "-79.46069784164185"
+          ],
+          [
+            "43.648082387974895",
+            "-79.46132500918375"
+          ],
+          [
+            "43.64318929809741",
+            "-79.46932074999145"
+          ],
+          [
+            "43.64969539014513",
+            "-79.4627764102088"
+          ],
+          [
+            "43.65018227597268",
+            "-79.46370304789514"
+          ],
+          [
+            "43.65008951269182",
+            "-79.46317999369192"
+          ],
+          [
+            "43.65001001707926",
+            "-79.46251681170921"
+          ],
+          [
+            "43.650040592314866",
+            "-79.46277188170257"
+          ],
+          [
+            "43.64412016355806",
+            "-79.46973267308137"
+          ],
+          [
+            "43.65025980683436",
+            "-79.46334659277179"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "24aaf858fa8f445e85a1b89e233f6524": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.64839392462309",
+            "-79.4625861696104"
+          ],
+          [
+            "43.641532439695084",
+            "-79.46837902883283"
+          ],
+          [
+            "43.64399691579846",
+            "-79.45952591719679"
+          ],
+          [
+            "43.6441221693807",
+            "-79.45923903967696"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "3b3de4428c5b4dcf9c82cc1dd935139a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ddb0972fafef469e917bf59b1e12fd31": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7da479a136c444b6a7c56a94ed8c6f7e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_3b3de4428c5b4dcf9c82cc1dd935139a",
+        "style": "IPY_MODEL_ddb0972fafef469e917bf59b1e12fd31",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "004a23f0b28a4fe48ec31f43b8867a01": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ff9bff3e671b4c88949fb2085e7782c2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_004a23f0b28a4fe48ec31f43b8867a01",
+        "location": [
+          "43.6505454700926",
+          "-79.46171671628366"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7da479a136c444b6a7c56a94ed8c6f7e",
+        "title": "Cooper's Hawk, 2021-07-08"
+      }
+    },
+    "f465c867f92142ddb192d6e08982bc3c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "19fd77b0a2ea4e0ea37b63e5adf224db": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "937653c4ee384048b10f8794c33e085f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_f465c867f92142ddb192d6e08982bc3c",
+        "style": "IPY_MODEL_19fd77b0a2ea4e0ea37b63e5adf224db",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "19c16e5c1f194c6ebaddec1c148eaee0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b9d2d6957a694985b2d0341b2ecee2fb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_19c16e5c1f194c6ebaddec1c148eaee0",
+        "location": [
+          "43.64996744354363",
+          "-79.46247516193924"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_937653c4ee384048b10f8794c33e085f",
+        "title": "Cooper's Hawk, 2021-07-24"
+      }
+    },
+    "79c07130e2a641dd9d76a8b7e03f3cac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1932e626e09b4b6c8c5d6a74c6452719": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f5ff75f6140a4c36a04e255068318759": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_79c07130e2a641dd9d76a8b7e03f3cac",
+        "style": "IPY_MODEL_1932e626e09b4b6c8c5d6a74c6452719",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ed8ac035a0b84815ab0cbff58d1cef5d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b5e2e99f33fb4e8bb1e423046649352d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ed8ac035a0b84815ab0cbff58d1cef5d",
+        "location": [
+          "43.65057835227053",
+          "-79.46180292294405"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f5ff75f6140a4c36a04e255068318759",
+        "title": "Cooper's Hawk, 2021-07-04"
+      }
+    },
+    "cef00d3520134dddbf1c6c986a2a8e00": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e10ef24322344fcab5d3a71d8111455b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e460080418444b3c8ad7ecc21d6a5e80": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_cef00d3520134dddbf1c6c986a2a8e00",
+        "style": "IPY_MODEL_e10ef24322344fcab5d3a71d8111455b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d85e284dda0b47b280642d9df22ad26e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fd5dc79b3bff40e9a6a9d41446725270": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d85e284dda0b47b280642d9df22ad26e",
+        "location": [
+          "43.650812103826595",
+          "-79.46231079867763"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e460080418444b3c8ad7ecc21d6a5e80",
+        "title": "Cooper's Hawk, 2021-07-15"
+      }
+    },
+    "208f4e9b062043e5931eb3306cd17e08": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7bb1641c9e164f26afdd0fb92f6fcd7c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0e1077aa9749447d8e76639793365164": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_208f4e9b062043e5931eb3306cd17e08",
+        "style": "IPY_MODEL_7bb1641c9e164f26afdd0fb92f6fcd7c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2b65d4bb222e4a4baf199dd059eff37b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "74024895865c47f9a58479eadd96b9ea": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_2b65d4bb222e4a4baf199dd059eff37b",
+        "location": [
+          "43.6505454700926",
+          "-79.46171671628366"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0e1077aa9749447d8e76639793365164",
+        "title": "Cooper's Hawk, 2021-07-08"
+      }
+    },
+    "8a6a99121aa048c68678f2d480aededc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "62dc90b32a7c4cbd9635287dc448df8d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2a45108b597449f08742add13dfe012c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_8a6a99121aa048c68678f2d480aededc",
+        "style": "IPY_MODEL_62dc90b32a7c4cbd9635287dc448df8d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0decc1560f89404f9672df8eef20dfa8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e43157e233e048d7962b45264135649b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0decc1560f89404f9672df8eef20dfa8",
+        "location": [
+          "43.64952994168145",
+          "-79.46258753268374"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2a45108b597449f08742add13dfe012c",
+        "title": "Cooper's Hawk, 2021-07-24"
+      }
+    },
+    "39f645d9fbd4451aaaffd9de94d92ecc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1ab68501671e460f8e91e7f1ce159591": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8cb9a25a6d364672b7bfdcc41de43712": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_39f645d9fbd4451aaaffd9de94d92ecc",
+        "style": "IPY_MODEL_1ab68501671e460f8e91e7f1ce159591",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e64487eda05d49ceadf4afed4c7a24b7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e118b140e1eb4bf2889357100cc48635": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e64487eda05d49ceadf4afed4c7a24b7",
+        "location": [
+          "43.64917204582907",
+          "-79.46185913675117"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8cb9a25a6d364672b7bfdcc41de43712",
+        "title": "Cooper's Hawk, 2021-07-18"
+      }
+    },
+    "bb270122df5546a08d8dc56f4800a19d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0d9fa3b290234bdc8e1e7f93fe33cf8f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b63926e5099b4daa9075278aee235676": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_bb270122df5546a08d8dc56f4800a19d",
+        "style": "IPY_MODEL_0d9fa3b290234bdc8e1e7f93fe33cf8f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f6653e6f7aae46af8c9de0c39200b62f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "bfd67835d96747d2bdcf506cc9bed5da": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f6653e6f7aae46af8c9de0c39200b62f",
+        "location": [
+          "43.65001105465332",
+          "-79.46227465593235"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b63926e5099b4daa9075278aee235676",
+        "title": "Cooper's Hawk, 2021-07-21"
+      }
+    },
+    "5eb71fe0137d42f9af9f8aa9565cf9f7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "17b65ae218474058a1515554b3766715": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e8bd8e39a5314dcca885818ccb842e46": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_5eb71fe0137d42f9af9f8aa9565cf9f7",
+        "style": "IPY_MODEL_17b65ae218474058a1515554b3766715",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "eba5e105c6304c91a92eaf27bd3a6b6a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "311ad0c62b8f41f08a20ebe47734f81c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_eba5e105c6304c91a92eaf27bd3a6b6a",
+        "location": [
+          "43.65057835227053",
+          "-79.46180292294405"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e8bd8e39a5314dcca885818ccb842e46",
+        "title": "Cooper's Hawk, 2021-07-04"
+      }
+    },
+    "c1c5572f90324ba69ebc27dafc412166": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2c766a674ec84f41b0950231584e97de": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b35f9705c3af4837b307e84652ed0d71": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_c1c5572f90324ba69ebc27dafc412166",
+        "style": "IPY_MODEL_2c766a674ec84f41b0950231584e97de",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d69e522f7bc046ff8b372b8851bbb308": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6d9708c3419a4ffcaaf91fca49e0c622": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d69e522f7bc046ff8b372b8851bbb308",
+        "location": [
+          "43.649528208724774",
+          "-79.46188334379839"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b35f9705c3af4837b307e84652ed0d71",
+        "title": "Cooper's Hawk, 2021-07-23"
+      }
+    },
+    "f3c26b0550c145ab81f49074d50b53fd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "978dcbb86e2942dabd291b49db0a66c8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "87b8d14e09324981b388847931926b76": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_f3c26b0550c145ab81f49074d50b53fd",
+        "style": "IPY_MODEL_978dcbb86e2942dabd291b49db0a66c8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "476936d5ffa3499aa6fb13078647fb92": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7aacff99c3dc461dbd859af2a1d9c4c9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_476936d5ffa3499aa6fb13078647fb92",
+        "location": [
+          "43.65045951724148",
+          "-79.46219102074132"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_87b8d14e09324981b388847931926b76",
+        "title": "Cooper's Hawk, 2021-07-12"
+      }
+    },
+    "c6a56e28edb44d1a88f9f9a2b5df8f81": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ee0cec7477904f5ba6fea04f807af908": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c61eec0210f54d57b1513f103856e406": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_c6a56e28edb44d1a88f9f9a2b5df8f81",
+        "style": "IPY_MODEL_ee0cec7477904f5ba6fea04f807af908",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3cb0dbdc79e74cddb56b6701c855caa8": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "c5fb36d85cbf4b329a556cb9d44ceb09": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3cb0dbdc79e74cddb56b6701c855caa8",
+        "location": [
+          "43.650316222023946",
+          "-79.46237506254391"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c61eec0210f54d57b1513f103856e406",
+        "title": "Cooper's Hawk, 2021-07-12"
+      }
+    },
+    "5a48866bbe2e434399f0e5d3b12de37c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "78fa90a8bae14937818f7b4b8883dc7d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "289662799a654078aeabcb4a2c29019b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_5a48866bbe2e434399f0e5d3b12de37c",
+        "style": "IPY_MODEL_78fa90a8bae14937818f7b4b8883dc7d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4da44c55a44048628adee99dcfe741ce": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "61e2dd88081a4d3dba7d94dce504224f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4da44c55a44048628adee99dcfe741ce",
+        "location": [
+          "43.64938745224377",
+          "-79.46221397048875"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_289662799a654078aeabcb4a2c29019b",
+        "title": "Cooper's Hawk, 2021-07-23"
+      }
+    },
+    "0f3bc5fd48e846f3b8cbd96fe2d4f761": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "145e6c4460a94f319004001d566de19c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "13871b4a8e8541538d5b239af0834bbc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_0f3bc5fd48e846f3b8cbd96fe2d4f761",
+        "style": "IPY_MODEL_145e6c4460a94f319004001d566de19c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "6fb5879077a746079a04f6a979b959cd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "679690ab2b2e4c4d897d44af4c28f1f6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6fb5879077a746079a04f6a979b959cd",
+        "location": [
+          "43.6505760453282",
+          "-79.461971786277"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_13871b4a8e8541538d5b239af0834bbc",
+        "title": "Cooper's Hawk, 2021-07-09"
+      }
+    },
+    "2f7badf9a60a43cfb310eb96b248ee24": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "105e93119d5a44e0a0f4a7cbefbd483c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8f1ee086d3974f1894bffc7d30b2d9bb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-09",
+        "layout": "IPY_MODEL_2f7badf9a60a43cfb310eb96b248ee24",
+        "style": "IPY_MODEL_105e93119d5a44e0a0f4a7cbefbd483c",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "e4454479c41c4a78b813c7f4289325f6": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "49f26d0380d14601b4c794fffad654da": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e4454479c41c4a78b813c7f4289325f6",
+        "location": [
+          "43.647547683839136",
+          "-79.46291788059274"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8f1ee086d3974f1894bffc7d30b2d9bb",
+        "title": "Cooper's Hawk, 2021-07-09"
+      }
+    },
+    "75621b8e1faa4a97bbd8d2ca2f12c1ff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2faade0f95e145dfb3ddf986cb509bf8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e4ac3c2be1504a51bcd3702e7fee6909": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_75621b8e1faa4a97bbd8d2ca2f12c1ff",
+        "style": "IPY_MODEL_2faade0f95e145dfb3ddf986cb509bf8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a7d603080fbf46b2a9f24205f562b8fc": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "44aafb5beb854163bda03f2cb8db89fe": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a7d603080fbf46b2a9f24205f562b8fc",
+        "location": [
+          "43.65078049101693",
+          "-79.46229788446112"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e4ac3c2be1504a51bcd3702e7fee6909",
+        "title": "Cooper's Hawk, 2021-07-15"
+      }
+    },
+    "2a42338c9083454eaddf496f06ae455b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "66bb2d7561a24c40b752f34114de7fc1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "828a8bf9cd4741bcb43e333e40d3c101": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_2a42338c9083454eaddf496f06ae455b",
+        "style": "IPY_MODEL_66bb2d7561a24c40b752f34114de7fc1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "22a38ff16bef4e0bb6888e3c0de1c17e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "83706cb063124367a57b3f26499cdf0f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_22a38ff16bef4e0bb6888e3c0de1c17e",
+        "location": [
+          "43.64948102130449",
+          "-79.46217942069437"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_828a8bf9cd4741bcb43e333e40d3c101",
+        "title": "Cooper's Hawk, 2021-07-24"
+      }
+    },
+    "3fc21ccb19754409ac80e09524b7be4d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d90bf715a259455cba643df4609b766a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cfd4761876fa4103926db1f5febc7795": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-23",
+        "layout": "IPY_MODEL_3fc21ccb19754409ac80e09524b7be4d",
+        "style": "IPY_MODEL_d90bf715a259455cba643df4609b766a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "77630c3d9e6e48b287995974c26945a1": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "1fe39ecc64104a9a947ac9eb5b4d7c0a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_77630c3d9e6e48b287995974c26945a1",
+        "location": [
+          "43.649319149151395",
+          "-79.46189497228022"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cfd4761876fa4103926db1f5febc7795",
+        "title": "Cooper's Hawk, 2021-07-23"
+      }
+    },
+    "92e1efd6092f4311afaeefd9baf296f6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b1f0a307e7054d70b349fb47166087c4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0641fdb3dbea4924822a71f49dfc9093": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_92e1efd6092f4311afaeefd9baf296f6",
+        "style": "IPY_MODEL_b1f0a307e7054d70b349fb47166087c4",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d60ce914e2614106a9fd51c18dcce071": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a5a40887bb5941b39191dd26c099c2b7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_d60ce914e2614106a9fd51c18dcce071",
+        "location": [
+          "43.649634007879726",
+          "-79.46195082200136"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0641fdb3dbea4924822a71f49dfc9093",
+        "title": "Cooper's Hawk, 2021-07-24"
+      }
+    },
+    "2aab46daa7b84d0896211b7c402fc09f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "798fad28a3bd4104b27a917be991a414": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "81bf974cee704c31a658ed81ba82ea4f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-18",
+        "layout": "IPY_MODEL_2aab46daa7b84d0896211b7c402fc09f",
+        "style": "IPY_MODEL_798fad28a3bd4104b27a917be991a414",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b4ad3231f56c4ee1a2424091295a8d3d": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "db30980a6fa846efb4b00ee7fc2b5650": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_b4ad3231f56c4ee1a2424091295a8d3d",
+        "location": [
+          "43.649201119902195",
+          "-79.46172546607991"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_81bf974cee704c31a658ed81ba82ea4f",
+        "title": "Cooper's Hawk, 2021-07-18"
+      }
+    },
+    "611fd3a982824746848f09b226f684b0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "48e077aee5b94694a6230e7675892a73": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ea6fb2c8bd484adabb4a19e3ee71c613": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_611fd3a982824746848f09b226f684b0",
+        "style": "IPY_MODEL_48e077aee5b94694a6230e7675892a73",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a67d7a176a0d41e7a81ee7f6e4fa392b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e07cbe7e058b442d871c98231682010e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a67d7a176a0d41e7a81ee7f6e4fa392b",
+        "location": [
+          "43.650054897557226",
+          "-79.4623895981462"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ea6fb2c8bd484adabb4a19e3ee71c613",
+        "title": "Cooper's Hawk, 2021-07-21"
+      }
+    },
+    "bf29145751754fb5b7ea224461b97407": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "01215a64ccbe4fdfb9571ac6907ddbe0": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "44dfbc4fefb5436ab64aba9d4fdc4ccd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_bf29145751754fb5b7ea224461b97407",
+        "style": "IPY_MODEL_01215a64ccbe4fdfb9571ac6907ddbe0",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "87c0215c701c4a2798637a141402e7d7": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "714dabfaeed04735aee74dcad3b55d82": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_87c0215c701c4a2798637a141402e7d7",
+        "location": [
+          "43.649870298172324",
+          "-79.4626052826227"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_44dfbc4fefb5436ab64aba9d4fdc4ccd",
+        "title": "Cooper's Hawk, 2021-07-21"
+      }
+    },
+    "49699432778a42b6a73823707765d376": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3c8af1b7cd4549a1b2ba287f992e1238": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "69e654f9836a44bd9e0638054194bb08": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-21",
+        "layout": "IPY_MODEL_49699432778a42b6a73823707765d376",
+        "style": "IPY_MODEL_3c8af1b7cd4549a1b2ba287f992e1238",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f6b71f3fc937411983a5cb34cdd7b367": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0a30fdbe09ca499ca3f75ea7256990ef": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f6b71f3fc937411983a5cb34cdd7b367",
+        "location": [
+          "43.64986522069926",
+          "-79.46231211284719"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_69e654f9836a44bd9e0638054194bb08",
+        "title": "Cooper's Hawk, 2021-07-21"
+      }
+    },
+    "ab4f1afa11634e5c8732a2ae439fa2a7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "35ed6734898f476a8dcaf093a1ff3047": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cb96e4f8471f4e93b5819656685673cf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_ab4f1afa11634e5c8732a2ae439fa2a7",
+        "style": "IPY_MODEL_35ed6734898f476a8dcaf093a1ff3047",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8d25fa36bc1c4117ac5ec1bcb6bfac96": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b460049d6f8b42789448307757b3015f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8d25fa36bc1c4117ac5ec1bcb6bfac96",
+        "location": [
+          "43.65045951724148",
+          "-79.46219102074132"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cb96e4f8471f4e93b5819656685673cf",
+        "title": "Cooper's Hawk, 2021-07-12"
+      }
+    },
+    "a450da2adb8c44deb2c639d1ef360f2d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6829938181e5493e9c718229d5276965": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3b19b692b8c4470b89b77c0519bbf56d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-15",
+        "layout": "IPY_MODEL_a450da2adb8c44deb2c639d1ef360f2d",
+        "style": "IPY_MODEL_6829938181e5493e9c718229d5276965",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7c0d6aee115046c8bdf3b1696a79716a": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "53d5164abb434c86a2ba996cca307fab": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_7c0d6aee115046c8bdf3b1696a79716a",
+        "location": [
+          "43.65078049101693",
+          "-79.46229788446112"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3b19b692b8c4470b89b77c0519bbf56d",
+        "title": "Cooper's Hawk, 2021-07-15"
+      }
+    },
+    "c8ecbf0ac3e34745b26f8cc86ae2f781": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d6282df9020648ba8e664b7c7fb52a4b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ce4f015aca0e4a2f8081636e62c3b2cc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-24",
+        "layout": "IPY_MODEL_c8ecbf0ac3e34745b26f8cc86ae2f781",
+        "style": "IPY_MODEL_d6282df9020648ba8e664b7c7fb52a4b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9d3fac2a12864e468736c19da9735121": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d68d475e4bb84127ac27659fdcc7df83": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d3fac2a12864e468736c19da9735121",
+        "location": [
+          "43.649451947231356",
+          "-79.46231309136563"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ce4f015aca0e4a2f8081636e62c3b2cc",
+        "title": "Cooper's Hawk, 2021-07-24"
+      }
+    },
+    "363a025dd97f496fbec9285fbe6d3699": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e33817ecb00e43ca864a1bb8c132b0ba": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "197539f344944998a30465147d785dff": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_363a025dd97f496fbec9285fbe6d3699",
+        "style": "IPY_MODEL_e33817ecb00e43ca864a1bb8c132b0ba",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "e05b79839b694bd1af54747a1e7efffd": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "432c2134bd774aabac0fe1951913cc16": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e05b79839b694bd1af54747a1e7efffd",
+        "location": [
+          "43.65087301208283",
+          "-79.4623337796394"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_197539f344944998a30465147d785dff",
+        "title": "Cooper's Hawk, 2021-08-09"
+      }
+    },
+    "2958da9686ab488caa0d99ce80333199": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fdf93abb2de743cf854f1e27082ab548": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6343bfa5a4354553a010c1f7c90b6a85": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_2958da9686ab488caa0d99ce80333199",
+        "style": "IPY_MODEL_fdf93abb2de743cf854f1e27082ab548",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5384afb59acd4be4aef68536ab8e70ef": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "07d343c6a7004509acceca5ca88a3598": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5384afb59acd4be4aef68536ab8e70ef",
+        "location": [
+          "43.649865684287676",
+          "-79.46294300928865"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6343bfa5a4354553a010c1f7c90b6a85",
+        "title": "Cooper's Hawk, 2021-08-04"
+      }
+    },
+    "68e5320e86ae4696956ed0332f1bf4f2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "453d7e348c644833aafa54422a3d770c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "41b7d01132804d6a944470b21c6038f2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_68e5320e86ae4696956ed0332f1bf4f2",
+        "style": "IPY_MODEL_453d7e348c644833aafa54422a3d770c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "a462a8a7a39a45b1997e2b69e6d06d3b": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "724d570dcb2f470eb58b31c0fa91c8c5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_a462a8a7a39a45b1997e2b69e6d06d3b",
+        "location": [
+          "43.649969176500306",
+          "-79.46317935082459"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_41b7d01132804d6a944470b21c6038f2",
+        "title": "Cooper's Hawk, 2021-07-30"
+      }
+    },
+    "1cf154bef4f4455eaf4d17776e6f9317": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ae915e588b324e6395cec0a4cd03fea3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8cf2206d5977415cb39afa8f05a0a6a7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-13",
+        "layout": "IPY_MODEL_1cf154bef4f4455eaf4d17776e6f9317",
+        "style": "IPY_MODEL_ae915e588b324e6395cec0a4cd03fea3",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "90dc2dee44f0423e833daaed681d877e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "877430d2c2e040b4bb0b6a0c35004dd3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_90dc2dee44f0423e833daaed681d877e",
+        "location": [
+          "43.64577136070756",
+          "-79.46967686112146"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8cf2206d5977415cb39afa8f05a0a6a7",
+        "title": "Cooper's Hawk, 2021-08-13"
+      }
+    },
+    "16b9ef78ce624e4ea77e399c5a227810": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fc539a7d8eca41e0be2d3e1039e8bb47": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "70f4f4fc2596464d8a7cf06120b8f37d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_16b9ef78ce624e4ea77e399c5a227810",
+        "style": "IPY_MODEL_fc539a7d8eca41e0be2d3e1039e8bb47",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "3f51289385d54ba8b8ac98def43c1606": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "6906e16fe430407fba65e41189e4af2a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_3f51289385d54ba8b8ac98def43c1606",
+        "location": [
+          "43.65010935899565",
+          "-79.46372177635256"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_70f4f4fc2596464d8a7cf06120b8f37d",
+        "title": "Cooper's Hawk, 2021-07-27"
+      }
+    },
+    "2eb5bef5c9944c3da965e58caba60834": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a1c7db28e64948339f07d0fd5387e6c6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a8ffc7dfcd90465c8ae7467fdb793d4e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_2eb5bef5c9944c3da965e58caba60834",
+        "style": "IPY_MODEL_a1c7db28e64948339f07d0fd5387e6c6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "029979c4c69248a3bf37dc4119cfd8c0": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d8bbeb53010941a2988175f17eddaf8a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_029979c4c69248a3bf37dc4119cfd8c0",
+        "location": [
+          "43.64971523644896",
+          "-79.46331819286942"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a8ffc7dfcd90465c8ae7467fdb793d4e",
+        "title": "Cooper's Hawk, 2021-08-04"
+      }
+    },
+    "ca7996c70c114c16adfc472946804f37": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ef570bf3054143adba58d5bd355c6d72": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b74d6ac664ec49bdb9ba4dd0b8963746": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_ca7996c70c114c16adfc472946804f37",
+        "style": "IPY_MODEL_ef570bf3054143adba58d5bd355c6d72",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0f9b63185a6641f59b004f4e14f6c28e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8860b87e61a243f5a74e81dca06c3a7c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_0f9b63185a6641f59b004f4e14f6c28e",
+        "location": [
+          "43.64839392462309",
+          "-79.4625861696104"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b74d6ac664ec49bdb9ba4dd0b8963746",
+        "title": "Cooper's Hawk, 2021-08-31"
+      }
+    },
+    "7e087b18a81a49cf99b64f62742d22d9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "943ee7931a984f2887739fa5c075d4f4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b3c74a545e94420f91faf4fc79b37b2b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-16",
+        "layout": "IPY_MODEL_7e087b18a81a49cf99b64f62742d22d9",
+        "style": "IPY_MODEL_943ee7931a984f2887739fa5c075d4f4",
+        "value": "<b>STRUCTURE</b>"
+      }
+    },
+    "be11e9faba93408c98c2f9acc27f2b42": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8175c387a4844a4296b38924842791dd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_be11e9faba93408c98c2f9acc27f2b42",
+        "location": [
+          "43.645933809970124",
+          "-79.46069784164185"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b3c74a545e94420f91faf4fc79b37b2b",
+        "title": "Cooper's Hawk, 2021-08-16"
+      }
+    },
+    "f3505a8433de4e42983f3e4e81cedcbf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "78325af4584e425e97407e90bf2b1919": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cf7367ccf7834f309206569879d81f2f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-19",
+        "layout": "IPY_MODEL_f3505a8433de4e42983f3e4e81cedcbf",
+        "style": "IPY_MODEL_78325af4584e425e97407e90bf2b1919",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "9f38b131b5b74c529a743bf1f914bd66": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "01591a9c0ecf451b86f72af0e034ad46": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9f38b131b5b74c529a743bf1f914bd66",
+        "location": [
+          "43.648082387974895",
+          "-79.46132500918375"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cf7367ccf7834f309206569879d81f2f",
+        "title": "Cooper's Hawk, 2021-08-19"
+      }
+    },
+    "31c76f69590148f585773cc762e0d07f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3fc4eab98eea406780a76e2445d23503": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "26bbab222d804139879326f162e5ffe6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-07",
+        "layout": "IPY_MODEL_31c76f69590148f585773cc762e0d07f",
+        "style": "IPY_MODEL_3fc4eab98eea406780a76e2445d23503",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "e34dd269aacc436c8e130c2bb8e4d68f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "264b789fd47c45e895159d76a1523bcf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e34dd269aacc436c8e130c2bb8e4d68f",
+        "location": [
+          "43.641532439695084",
+          "-79.46837902883283"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_26bbab222d804139879326f162e5ffe6",
+        "title": "Cooper's Hawk, 2021-09-07"
+      }
+    },
+    "c70c2fd7e2f647709b18e02112e7bc2a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "46ca303b1df74d8195b4a64df40ec79f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5cd2e63e3a4f4270b27af94d8ed42179": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-14",
+        "layout": "IPY_MODEL_c70c2fd7e2f647709b18e02112e7bc2a",
+        "style": "IPY_MODEL_46ca303b1df74d8195b4a64df40ec79f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8d65086a561747bbb8db010552c90808": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "7c866bdea226495ab0ab4cd067967d02": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_8d65086a561747bbb8db010552c90808",
+        "location": [
+          "43.64318929809741",
+          "-79.46932074999145"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5cd2e63e3a4f4270b27af94d8ed42179",
+        "title": "Cooper's Hawk, 2021-08-14"
+      }
+    },
+    "0053e45b4a4246429559ecf02e658c08": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f51fe9045cf04ffc9b10a25a7c6d5dc9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bbd1b62d40924405935da9633272098e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_0053e45b4a4246429559ecf02e658c08",
+        "style": "IPY_MODEL_f51fe9045cf04ffc9b10a25a7c6d5dc9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c23880545fc84227b6ff6adebee53ef4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b26a7ff2bf7e4e99b43942a9c4bf561b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c23880545fc84227b6ff6adebee53ef4",
+        "location": [
+          "43.64969539014513",
+          "-79.4627764102088"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bbd1b62d40924405935da9633272098e",
+        "title": "Cooper's Hawk, 2021-08-04"
+      }
+    },
+    "f2f52c2e43ea4cce87535b92797680e5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6f77eb26fa814e78880eb65123f4aade": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0c862ec965d3444488b1ac92462aaeb0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-23",
+        "layout": "IPY_MODEL_f2f52c2e43ea4cce87535b92797680e5",
+        "style": "IPY_MODEL_6f77eb26fa814e78880eb65123f4aade",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "4555e14ada124df2a0b7e4cede4c3325": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ed58d8d54a4949a2b9a08b027bd2a2ac": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4555e14ada124df2a0b7e4cede4c3325",
+        "location": [
+          "43.64399691579846",
+          "-79.45952591719679"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0c862ec965d3444488b1ac92462aaeb0",
+        "title": "Cooper's Hawk, 2021-08-23"
+      }
+    },
+    "f1160801fee44862971925bf2b830766": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ae1e411b40764a7b95f6bccf167b7675": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "202293961b244535a5400b4cf7c55ce0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_f1160801fee44862971925bf2b830766",
+        "style": "IPY_MODEL_ae1e411b40764a7b95f6bccf167b7675",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "047fbd07422447ceaf9af9370fe8767f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d1962a92f0e74e30beb327ad17b981c9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_047fbd07422447ceaf9af9370fe8767f",
+        "location": [
+          "43.65018227597268",
+          "-79.46370304789514"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_202293961b244535a5400b4cf7c55ce0",
+        "title": "Cooper's Hawk, 2021-07-27"
+      }
+    },
+    "ca95d24a677644a4adbd35a9a5c9be1f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fd5fb8db76de4afaa241047145580c83": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2fa0e35b69124741b4d972f4350398c5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_ca95d24a677644a4adbd35a9a5c9be1f",
+        "style": "IPY_MODEL_fd5fb8db76de4afaa241047145580c83",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "41767d80b20f4c80a19b41077c81fb13": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "20ac254b047549b4952b9a6883b8ed23": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_41767d80b20f4c80a19b41077c81fb13",
+        "location": [
+          "43.65008951269182",
+          "-79.46317999369192"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2fa0e35b69124741b4d972f4350398c5",
+        "title": "Cooper's Hawk, 2021-07-27"
+      }
+    },
+    "c45175d2d3c34f4d8c07a73cd9b4896a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2fe43323572c44c4b332a705824030ed": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6ffbd29880dc4247bbdec8a2bf64ca1b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-30",
+        "layout": "IPY_MODEL_c45175d2d3c34f4d8c07a73cd9b4896a",
+        "style": "IPY_MODEL_2fe43323572c44c4b332a705824030ed",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "19ed330271e34b1d846d78a9e9f164e5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "fdd3436b68324148854437857bffe66d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_19ed330271e34b1d846d78a9e9f164e5",
+        "location": [
+          "43.65001001707926",
+          "-79.46251681170921"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6ffbd29880dc4247bbdec8a2bf64ca1b",
+        "title": "Cooper's Hawk, 2021-07-30"
+      }
+    },
+    "440c2ac38ead4dfe9758ec8f1e4017ad": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ea694bb728b3479494ecb2a3270fe4ae": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d62f4b340cb8424a859c18f67a035d85": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_440c2ac38ead4dfe9758ec8f1e4017ad",
+        "style": "IPY_MODEL_ea694bb728b3479494ecb2a3270fe4ae",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "e09df184f805452e9de2ff97e81fedd4": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "ffd39adc868645d6890e2b4a57914230": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_e09df184f805452e9de2ff97e81fedd4",
+        "location": [
+          "43.650040592314866",
+          "-79.46277188170257"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d62f4b340cb8424a859c18f67a035d85",
+        "title": "Cooper's Hawk, 2021-08-04"
+      }
+    },
+    "f762889c2e5d4448a12ee4b13b3f92b5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c0b6b5d22f76473bab5b02c056ec081c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3de822582a0640a2a151c4dc7c2bcd77": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-04",
+        "layout": "IPY_MODEL_f762889c2e5d4448a12ee4b13b3f92b5",
+        "style": "IPY_MODEL_c0b6b5d22f76473bab5b02c056ec081c",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "54742570406a481f8a082e647107c127": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "f7d3563db69749c3a983a6bbb16d42ca": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_54742570406a481f8a082e647107c127",
+        "location": [
+          "43.6441221693807",
+          "-79.45923903967696"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3de822582a0640a2a151c4dc7c2bcd77",
+        "title": "Cooper's Hawk, 2021-09-04"
+      }
+    },
+    "7b5a7243787843328b048c4015ccfe22": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2589ace1418c485c9a7bd5fa67fa20f8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9e8e37adc23b4cd48ea42eeb7014fcef": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_7b5a7243787843328b048c4015ccfe22",
+        "style": "IPY_MODEL_2589ace1418c485c9a7bd5fa67fa20f8",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ef3c11ce0e624118b455800be1e13cca": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a4d83d33171f47bc86763e288c587293": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ef3c11ce0e624118b455800be1e13cca",
+        "location": [
+          "43.64412016355806",
+          "-79.46973267308137"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9e8e37adc23b4cd48ea42eeb7014fcef",
+        "title": "Cooper's Hawk, 2021-08-09"
+      }
+    },
+    "4f5942219b93472a9bd94877f6999f05": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d86fc2c8153248a38d6ae97cd58c3723": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7f79baaede894055bc38b3e4c7debdd1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_4f5942219b93472a9bd94877f6999f05",
+        "style": "IPY_MODEL_d86fc2c8153248a38d6ae97cd58c3723",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c82dc316f2c44056a75b3d9ad873873e": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkred",
+        "marker_color": "red",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "b42a49bf321249e38c6506ad4109590a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c82dc316f2c44056a75b3d9ad873873e",
+        "location": [
+          "43.65025980683436",
+          "-79.46334659277179"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7f79baaede894055bc38b3e4c7debdd1",
+        "title": "Cooper's Hawk, 2021-07-27"
+      }
+    },
+    "1ed70f5cf989466aa8e356cab046b3b8": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_ff9bff3e671b4c88949fb2085e7782c2",
+          "IPY_MODEL_b9d2d6957a694985b2d0341b2ecee2fb",
+          "IPY_MODEL_b5e2e99f33fb4e8bb1e423046649352d",
+          "IPY_MODEL_fd5dc79b3bff40e9a6a9d41446725270",
+          "IPY_MODEL_74024895865c47f9a58479eadd96b9ea",
+          "IPY_MODEL_e43157e233e048d7962b45264135649b",
+          "IPY_MODEL_e118b140e1eb4bf2889357100cc48635",
+          "IPY_MODEL_bfd67835d96747d2bdcf506cc9bed5da",
+          "IPY_MODEL_311ad0c62b8f41f08a20ebe47734f81c",
+          "IPY_MODEL_6d9708c3419a4ffcaaf91fca49e0c622",
+          "IPY_MODEL_7aacff99c3dc461dbd859af2a1d9c4c9",
+          "IPY_MODEL_c5fb36d85cbf4b329a556cb9d44ceb09",
+          "IPY_MODEL_61e2dd88081a4d3dba7d94dce504224f",
+          "IPY_MODEL_679690ab2b2e4c4d897d44af4c28f1f6",
+          "IPY_MODEL_49f26d0380d14601b4c794fffad654da",
+          "IPY_MODEL_44aafb5beb854163bda03f2cb8db89fe",
+          "IPY_MODEL_83706cb063124367a57b3f26499cdf0f",
+          "IPY_MODEL_1fe39ecc64104a9a947ac9eb5b4d7c0a",
+          "IPY_MODEL_a5a40887bb5941b39191dd26c099c2b7",
+          "IPY_MODEL_db30980a6fa846efb4b00ee7fc2b5650",
+          "IPY_MODEL_e07cbe7e058b442d871c98231682010e",
+          "IPY_MODEL_714dabfaeed04735aee74dcad3b55d82",
+          "IPY_MODEL_0a30fdbe09ca499ca3f75ea7256990ef",
+          "IPY_MODEL_b460049d6f8b42789448307757b3015f",
+          "IPY_MODEL_53d5164abb434c86a2ba996cca307fab",
+          "IPY_MODEL_d68d475e4bb84127ac27659fdcc7df83",
+          "IPY_MODEL_432c2134bd774aabac0fe1951913cc16",
+          "IPY_MODEL_07d343c6a7004509acceca5ca88a3598",
+          "IPY_MODEL_724d570dcb2f470eb58b31c0fa91c8c5",
+          "IPY_MODEL_877430d2c2e040b4bb0b6a0c35004dd3",
+          "IPY_MODEL_6906e16fe430407fba65e41189e4af2a",
+          "IPY_MODEL_d8bbeb53010941a2988175f17eddaf8a",
+          "IPY_MODEL_8860b87e61a243f5a74e81dca06c3a7c",
+          "IPY_MODEL_8175c387a4844a4296b38924842791dd",
+          "IPY_MODEL_01591a9c0ecf451b86f72af0e034ad46",
+          "IPY_MODEL_264b789fd47c45e895159d76a1523bcf",
+          "IPY_MODEL_7c866bdea226495ab0ab4cd067967d02",
+          "IPY_MODEL_b26a7ff2bf7e4e99b43942a9c4bf561b",
+          "IPY_MODEL_ed58d8d54a4949a2b9a08b027bd2a2ac",
+          "IPY_MODEL_d1962a92f0e74e30beb327ad17b981c9",
+          "IPY_MODEL_20ac254b047549b4952b9a6883b8ed23",
+          "IPY_MODEL_fdd3436b68324148854437857bffe66d",
+          "IPY_MODEL_ffd39adc868645d6890e2b4a57914230",
+          "IPY_MODEL_f7d3563db69749c3a983a6bbb16d42ca",
+          "IPY_MODEL_a4d83d33171f47bc86763e288c587293",
+          "IPY_MODEL_b42a49bf321249e38c6506ad4109590a"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2976e22ed4a14021a02bd71d02e8bb17"}
+</script>
+
+</body>
+</html>
