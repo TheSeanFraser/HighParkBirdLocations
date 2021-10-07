@@ -1,4 +1,5 @@
 var path = 'https://theseanfraser.github.io/HighParkBirdLocations/maps/checklists/';
+//path = "maps/checklists/";
 var eBirdChecklistPath = 'https://ebird.org/checklist/'
 var selectDateButton = document.getElementById("selectDateButton");
 

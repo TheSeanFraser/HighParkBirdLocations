@@ -141,6 +141,16 @@ p {
 	display: table-column;
 }
 
+#right_col_map{
+	margin: 3%;
+	top: 50%;
+	float:right;
+	width: 45%;
+	text-align: center;
+	display: table-column;
+}
+
+
 #owl_photo{
 	width: 80%;	
 }
@@ -151,6 +161,11 @@ p {
 	min-width: 100%;
   }
   #right_col {
+	  float: left;
+	  min-width: 100%;
+	  margin: auto;
+  }
+	#right_col_map {
 	  float: left;
 	  min-width: 100%;
 	  margin: auto;
