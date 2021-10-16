@@ -23,24 +23,57 @@ h3 {
 }
 
 ul {
+	
+  }
+
+.navbar_ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
 	border-radius: 5px;
-  }
+}
+.navbar_li {
+	
+}
+
+.location_separator {
+	
+}
+
+hr { 
+  display: block;
+	height: 5px;
+	width:100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+	background: #369200;
+} 
 
 .map_area{
-	list-style-type: none;
-	background-color: whitesmoke;
-		overflow:auto;
+	list-style-type:none;
+	overflow:auto;
+	float:left;
+	display: grid;
+	width: 80%;
 }
 
 .season_section{
 	float:left;
-	text-align: left;
-	padding: none;
+	width: 80%;
+}
+
+.park_location {
+	width: 100%;
+	float:left;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
   
 li {
@@ -190,6 +223,7 @@ footer {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
 	color: gray;
+	float:left;
 	width: 100%;
 	text-align-last: center;
 
