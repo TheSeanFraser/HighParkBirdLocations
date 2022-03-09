@@ -47,7 +47,7 @@ function getWeatherData(){
     	async: false
 	});
 	
-	var urlWithAPIkey = "http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=43.646372&lon=-79.465778&dt=" + todayMS + "&appid=" + weatherAPIkey;
+	var urlWithAPIkey = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=43.646372&lon=-79.465778&dt=" + todayMS + "&appid=" + weatherAPIkey;
 	$.getJSON(urlWithAPIkey, function(data) {
 		// Log data to display for production
 		console.log(data);
@@ -55,7 +55,7 @@ function getWeatherData(){
 		document.getElementById("t_weather").innerHTML = "Weather for today (" + today.toDateString() + "):";
 	});
 	
-	var urlWithAPIkey = "http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=43.646372&lon=-79.465778&dt=" + yesterdayMS + "&appid=" + weatherAPIkey;
+	var urlWithAPIkey = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=43.646372&lon=-79.465778&dt=" + yesterdayMS + "&appid=" + weatherAPIkey;
 	$.getJSON(urlWithAPIkey, function(data) {
 		// Log data to display for production
 		console.log(data);
