@@ -1,23 +1,102 @@
 Howard and Ridout Pond
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Bloor Street Savannah
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Behind Nature Centre
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Behind All Star Cafe
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Allotment Gardens
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Behind Greenhouse
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Lower Duck Pond
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Uppder Duck Pond
-
-Colborne Lodge
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Grenadier Pond (South)
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Grenadier Pond Marsh (North)
+	Spring:
+	Summer:
+	Fall:
+	Winter:
 
 Hawk Hill
+	Spring:
+	Summer:
+	Fall:
+	Winter:
+
+
+1  red
+2  orange
+3  light green
+4  dark blue
+5  light blue
+6  yellow
+7  gray
+8  dark green
+9  pink
+10 purple
+11 white
+
+
+			<h3>Hawk Hill [Light Blue]</h3>
+			<iframe class="heatmap" src="maps/park_areas_map.html" height="500" width="95%" style="border:none;" scrolling="no" title="All birds heatmap"></iframe>
+			<ul class="map_area">
+				<li><b>Spring:</b> A few migrants can be found here, but not as many as the rest of the park. Eastern Towhees and some skulking warblers along with the groups of other birds can be found around the hill.</li>
+				<li><b>Summer:</b> House Wrens, Indigo Buntings, and American Goldfinches nest here. Lots of wildflowers to see as well.</li>
+				<li><b>Fall:</b> Participate in the High Park Hawk Watch! From September 1st to November 30th, there will be most of the raptors you could expect to see! Watch for cloudy days with North or North-West winds.</li>
+				<li><b>Winter:</b> Mostly a hunting area for the local Red-tailed and Cooper’s Hawks.</li>
+			</ul>
+
+
+
+
+			<h3>Bloor Street Savannah [Orange]</h3>
+			<ul class="map_area">
+				<li><b>Spring:</b> </li>
+				<li><b>Summer:</b> </li>
+				<li><b>Fall:</b> </li>
+				<li><b>Winter:</b> </li>
+			</ul>
+
+
+		

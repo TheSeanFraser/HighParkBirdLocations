@@ -42,6 +42,24 @@ ul {
 	
 }
 
+/* Table styles*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+	text-align: center;
+	padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr:hover {background-color: #369200;}
+
 hr { 
   display: block;
 	height: 5px;
