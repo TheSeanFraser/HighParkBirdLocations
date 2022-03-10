@@ -93,31 +93,34 @@ function applyYesterdaysData(data){
 // Must convert m/S to Beaufort Scale first
 function applyTWindSpeed(data) {
 	for (let i = startHour; i < startHour + 10; i++) {
-		var tableRowIndex = i - startHour;
-		var curWindSpeed = data.hourly[i].wind_speed;
-		var BeaufortWindSpeed = 0;
-		
-		if (curWindSpeed < 0.3){
-			BeaufortWindSpeed = 0;
-		} else if (curWindSpeed < 1.5) {
-			BeaufortWindSpeed = 1;
-		} else if (curWindSpeed < 3.3) {
-			BeaufortWindSpeed = 2;
-		} else if (curWindSpeed < 5.4) {
-			BeaufortWindSpeed = 3;
-		} else if (curWindSpeed < 7.9) {
-			BeaufortWindSpeed = 4;
-		} else if (curWindSpeed < 10.7) {
-			BeaufortWindSpeed = 5;
-		} else if (curWindSpeed < 13.8) {
-			BeaufortWindSpeed = 6;
-		} else if (curWindSpeed < 17.1) {
-			BeaufortWindSpeed = 7;
-		} else {
-			BeaufortWindSpeed = 8;
-		}
-		
-		document.getElementById(T_WIND_SPEED_IDS[tableRowIndex]).innerHTML = BeaufortWindSpeed;
+		if (data.hourly[i] !== undefined){
+			var tableRowIndex = i - startHour;
+			var curWindSpeed = data.hourly[i].wind_speed;
+			var BeaufortWindSpeed = 0;
+			
+			// Converts the wind speed in metres per second to Beaufort Scale
+			if (curWindSpeed < 0.3){
+				BeaufortWindSpeed = 0;
+			} else if (curWindSpeed < 1.5) {
+				BeaufortWindSpeed = 1;
+			} else if (curWindSpeed < 3.3) {
+				BeaufortWindSpeed = 2;
+			} else if (curWindSpeed < 5.4) {
+				BeaufortWindSpeed = 3;
+			} else if (curWindSpeed < 7.9) {
+				BeaufortWindSpeed = 4;
+			} else if (curWindSpeed < 10.7) {
+				BeaufortWindSpeed = 5;
+			} else if (curWindSpeed < 13.8) {
+				BeaufortWindSpeed = 6;
+			} else if (curWindSpeed < 17.1) {
+				BeaufortWindSpeed = 7;
+			} else {
+				BeaufortWindSpeed = 8;
+			}
+			
+			document.getElementById(T_WIND_SPEED_IDS[tableRowIndex]).innerHTML = BeaufortWindSpeed;
+		}	
 	}
 }
 
@@ -126,44 +129,46 @@ function applyTWindSpeed(data) {
 function applyTWindDirection(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curWindDeg = data.hourly[i].wind_deg;
-		var WindDirStr = "NW";
-		
-		if ( (348.75 <= curWindDeg && curWindDeg <= 360) || (0 <= curWindDeg && curWindDeg <= 11.25)) {
-			WindDirStr = "N";
-		} else if ( 11.25 <= curWindDeg && curWindDeg < 33.75 ) {
-			WindDirStr = "NNE";
-		} else if ( 33.75 <= curWindDeg && curWindDeg < 56.25 ) {
-			WindDirStr = "NE";
-		} else if ( 56.25 <= curWindDeg && curWindDeg < 78.75 ) {
-			WindDirStr = "ENE";
-		} else if ( 78.75 <= curWindDeg && curWindDeg < 101.25 ) {
-			WindDirStr = "E";
-		} else if ( 101.25 <= curWindDeg && curWindDeg < 123.75 ) {
-			WindDirStr = "ESE";
-		} else if ( 123.75 <= curWindDeg && curWindDeg < 146.25 ) {
-			WindDirStr = "SE";
-		} else if ( 146.25 <= curWindDeg && curWindDeg < 168.75 ) {
-			WindDirStr = "SSE";
-		} else if ( 168.75 <= curWindDeg && curWindDeg < 191.25 ) {
-			WindDirStr = "S";
-		} else if ( 191.25 <= curWindDeg && curWindDeg < 213.75 ) {
-			WindDirStr = "SSW";
-		} else if ( 213.75 <= curWindDeg && curWindDeg < 236.25 ) {
-			WindDirStr = "SW";
-		} else if ( 236.25 <= curWindDeg && curWindDeg < 258.75 ) {
-			WindDirStr = "WSW";
-		} else if ( 258.75 <= curWindDeg && curWindDeg < 281.25 ) {
-			WindDirStr = "W";
-		} else if ( 281.25 <= curWindDeg && curWindDeg < 303.75 ) {
-			WindDirStr = "WNW";
-		} else if ( 303.75 <= curWindDeg && curWindDeg < 326.25 ) {
-			WindDirStr = "NW";
-		} else {
-			WindDirStr = "NNW";
+		if (data.hourly[i] !== undefined) {
+			var curWindDeg = data.hourly[i].wind_deg;
+			var WindDirStr = "NW";
+			
+			if ( (348.75 <= curWindDeg && curWindDeg <= 360) || (0 <= curWindDeg && curWindDeg <= 11.25)) {
+				WindDirStr = "N";
+			} else if ( 11.25 <= curWindDeg && curWindDeg < 33.75 ) {
+				WindDirStr = "NNE";
+			} else if ( 33.75 <= curWindDeg && curWindDeg < 56.25 ) {
+				WindDirStr = "NE";
+			} else if ( 56.25 <= curWindDeg && curWindDeg < 78.75 ) {
+				WindDirStr = "ENE";
+			} else if ( 78.75 <= curWindDeg && curWindDeg < 101.25 ) {
+				WindDirStr = "E";
+			} else if ( 101.25 <= curWindDeg && curWindDeg < 123.75 ) {
+				WindDirStr = "ESE";
+			} else if ( 123.75 <= curWindDeg && curWindDeg < 146.25 ) {
+				WindDirStr = "SE";
+			} else if ( 146.25 <= curWindDeg && curWindDeg < 168.75 ) {
+				WindDirStr = "SSE";
+			} else if ( 168.75 <= curWindDeg && curWindDeg < 191.25 ) {
+				WindDirStr = "S";
+			} else if ( 191.25 <= curWindDeg && curWindDeg < 213.75 ) {
+				WindDirStr = "SSW";
+			} else if ( 213.75 <= curWindDeg && curWindDeg < 236.25 ) {
+				WindDirStr = "SW";
+			} else if ( 236.25 <= curWindDeg && curWindDeg < 258.75 ) {
+				WindDirStr = "WSW";
+			} else if ( 258.75 <= curWindDeg && curWindDeg < 281.25 ) {
+				WindDirStr = "W";
+			} else if ( 281.25 <= curWindDeg && curWindDeg < 303.75 ) {
+				WindDirStr = "WNW";
+			} else if ( 303.75 <= curWindDeg && curWindDeg < 326.25 ) {
+				WindDirStr = "NW";
+			} else {
+				WindDirStr = "NNW";
+			}
+					
+			document.getElementById(T_WIND_DIRECTION_IDS[tableRowIndex]).innerHTML = WindDirStr;
 		}
-				
-		document.getElementById(T_WIND_DIRECTION_IDS[tableRowIndex]).innerHTML = WindDirStr;
 	}
 }
 
@@ -172,10 +177,12 @@ function applyTWindDirection(data){
 function applyTTemp(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curTemp = data.hourly[i].temp;
-		var CelciusTemp = Math.floor(data.hourly[i].temp - 273.15);
+		if (data.hourly[i] !== undefined){
+			var curTemp = data.hourly[i].temp;
+			var CelciusTemp = Math.floor(data.hourly[i].temp - 273.15);
 
-		document.getElementById(T_TEMP_IDS[tableRowIndex]).innerHTML = CelciusTemp;
+			document.getElementById(T_TEMP_IDS[tableRowIndex]).innerHTML = CelciusTemp;
+		}
 	}
 }
 
@@ -183,9 +190,11 @@ function applyTTemp(data){
 function applyTHumidity(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curHumidity = data.hourly[i].humidity;
+		if (data.hourly[i] !== undefined){
+			var curHumidity = data.hourly[i].humidity;
 
-		document.getElementById(T_HUMIDITY_IDS[tableRowIndex]).innerHTML = curHumidity;
+			document.getElementById(T_HUMIDITY_IDS[tableRowIndex]).innerHTML = curHumidity;
+		}
 	}
 }
 
@@ -193,9 +202,11 @@ function applyTHumidity(data){
 function applyTPressure(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curPressure = data.hourly[i].pressure;
+		if (data.hourly[i] !== undefined){
+			var curPressure = data.hourly[i].pressure;
 
-		document.getElementById(T_PRES_IDS[tableRowIndex]).innerHTML = curPressure;
+			document.getElementById(T_PRES_IDS[tableRowIndex]).innerHTML = curPressure;
+		}
 	}
 }
 
@@ -203,9 +214,11 @@ function applyTPressure(data){
 function applyTCloudCover(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curClouds = data.hourly[i].clouds;
+		if (data.hourly[i] !== undefined){
+			var curClouds = data.hourly[i].clouds;
 
-		document.getElementById(T_CLOUD_COVER_IDS[tableRowIndex]).innerHTML = curClouds;
+			document.getElementById(T_CLOUD_COVER_IDS[tableRowIndex]).innerHTML = curClouds;
+		}
 	}
 }
 
@@ -214,10 +227,12 @@ function applyTCloudCover(data){
 function applyTVisibility(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curVisibility = data.hourly[i].visibility;
-		var convertedVisibility = curVisibility / 1000;
+		if (data.hourly[i] !== undefined){
+			var curVisibility = data.hourly[i].visibility;
+			var convertedVisibility = curVisibility / 1000;
 
-		document.getElementById(T_VISIBILITY_IDS[tableRowIndex]).innerHTML = convertedVisibility;
+			document.getElementById(T_VISIBILITY_IDS[tableRowIndex]).innerHTML = convertedVisibility;
+		}
 	}
 }
 
@@ -226,24 +241,26 @@ function applyTVisibility(data){
 function applyTPrecipitation(data){
 	for (let i = startHour; i < startHour + 10; i++) {
 		var tableRowIndex = i - startHour;
-		var curPrec = data.hourly[i].weather[0].main;
-		var convertedPrec = 0;
-		
-		if (curPrec == "Haze" || curPrec == "Fog") {
-			convertedPrec = 1;
-		} else if (curPrec == "Drizzle") {
-			convertedPrec = 2;
-		} else if (curPrec == "Rain") {
-			convertedPrec = 3;
-		} else if (curPrec == "Thunderstorm") {
-			convertedPrec = 4;
-		} else if (curPrec == "Snow") {
-			convertedPrec = 5;
-		} else if (curPrec == "Dust" || curPrec == "Sand") {
-			convertedPrec = 6;
-		}
+		if (data.hourly[i] !== undefined){
+			var curPrec = data.hourly[i].weather[0].main;
+			var convertedPrec = 0;
+			
+			if (curPrec == "Haze" || curPrec == "Fog") {
+				convertedPrec = 1;
+			} else if (curPrec == "Drizzle") {
+				convertedPrec = 2;
+			} else if (curPrec == "Rain") {
+				convertedPrec = 3;
+			} else if (curPrec == "Thunderstorm") {
+				convertedPrec = 4;
+			} else if (curPrec == "Snow") {
+				convertedPrec = 5;
+			} else if (curPrec == "Dust" || curPrec == "Sand") {
+				convertedPrec = 6;
+			}
 
-		document.getElementById(T_PREC_IDS[tableRowIndex]).innerHTML = convertedPrec;
+			document.getElementById(T_PREC_IDS[tableRowIndex]).innerHTML = convertedPrec;
+		}
 	}
 }
 
