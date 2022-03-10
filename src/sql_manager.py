@@ -95,7 +95,7 @@ def insert_data_to_sql(data, checklistID, date, time, duration, location):
 
 # Adjusts the format of the date from Mmm D, YYYY to YYYY-MM-DD
 def adjustDate(date):
-    datetime_object = datetime.strptime(date,"%b %d, %Y")
+    datetime_object = datetime.strptime(date,"%d %b %Y")
     adjustedDate = datetime_object.strftime("%Y-%m-%d")
 
     return adjustedDate
