@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Common Redpoll Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "48e2e6cdf1124cfda284162a070df852": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "572635951b2b4f6d8f623d4b52caddcb": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "d77d9cb719a24188a03defa22dc57816": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "4ed04de67e5f4a5dbc45286032ae3224": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "51d5eb3255664de6a804504d4a3bb187": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "34c73d016afb4e22a1bed196f8f95a2f": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_09496506217f42d6b87321ca47053990",
+          "IPY_MODEL_78cf1feaae9641deb23245f3903e9cf3",
+          "IPY_MODEL_470d239139b9415a8f69e39a89ffcbe6",
+          "IPY_MODEL_1bda8d1f54ba4f359c3834fbda14efd4"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_48e2e6cdf1124cfda284162a070df852",
+        "dragging_style": "IPY_MODEL_572635951b2b4f6d8f623d4b52caddcb",
+        "layers": [
+          "IPY_MODEL_d77d9cb719a24188a03defa22dc57816",
+          "IPY_MODEL_33aa4732f44542959cd0e84644136058",
+          "IPY_MODEL_eaaf12bea1af4daa8e70099f4f2f0c1f"
+        ],
+        "layout": "IPY_MODEL_4ed04de67e5f4a5dbc45286032ae3224",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_51d5eb3255664de6a804504d4a3bb187",
+        "zoom": 14.0
+      }
+    },
+    "09496506217f42d6b87321ca47053990": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "78cf1feaae9641deb23245f3903e9cf3": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "470d239139b9415a8f69e39a89ffcbe6": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "1bda8d1f54ba4f359c3834fbda14efd4": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "33aa4732f44542959cd0e84644136058": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "blue",
+          "0.6": "cyan",
+          "0.7": "lime",
+          "0.8": "yellow",
+          "1.0": "red"
+        },
+        "locations": [
+          [
+            "43.64770032705241",
+            "-79.46197945031521"
+          ],
+          [
+            "43.64912835652995",
+            "-79.471352229578"
+          ],
+          [
+            "43.64877945768602",
+            "-79.4709801394544"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "7ab10dc6fc944c929f99bf4e16803887": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "12d70078cb034cc0abbb5164b9da1525": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "40ccf5ec51da4eda90e4120484d8baa7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-05",
+        "layout": "IPY_MODEL_7ab10dc6fc944c929f99bf4e16803887",
+        "style": "IPY_MODEL_12d70078cb034cc0abbb5164b9da1525",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "6e93e9c9ead74fbfbc7f95734b24ff76": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64770032705241",
+          "-79.46197945031521"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_40ccf5ec51da4eda90e4120484d8baa7",
+        "title": "Common Redpoll, 2022-01-05"
+      }
+    },
+    "29264cdb918c4f2fb4e62f00ac4d2796": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "02f33ce7b6854922bdb0ab1769a0544f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "585c22cd0ab44d2a9de8f6ffc8d4425b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-02-18",
+        "layout": "IPY_MODEL_29264cdb918c4f2fb4e62f00ac4d2796",
+        "style": "IPY_MODEL_02f33ce7b6854922bdb0ab1769a0544f",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "7a3ab97cd7674708bbb2640e721ae1ec": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64912835652995",
+          "-79.471352229578"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_585c22cd0ab44d2a9de8f6ffc8d4425b",
+        "title": "Common Redpoll, 2022-02-18"
+      }
+    },
+    "2201522a9ebe4021b3843432cefe83fa": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "99284922972142629db308fa37c0e5ae": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0f4b98892fb8495888ae0a41122ad2d1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-05",
+        "layout": "IPY_MODEL_2201522a9ebe4021b3843432cefe83fa",
+        "style": "IPY_MODEL_99284922972142629db308fa37c0e5ae",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "906b1bab069c406896cf7959cac96044": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64877945768602",
+          "-79.4709801394544"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0f4b98892fb8495888ae0a41122ad2d1",
+        "title": "Common Redpoll, 2022-01-05"
+      }
+    },
+    "eaaf12bea1af4daa8e70099f4f2f0c1f": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_6e93e9c9ead74fbfbc7f95734b24ff76",
+          "IPY_MODEL_7a3ab97cd7674708bbb2640e721ae1ec",
+          "IPY_MODEL_906b1bab069c406896cf7959cac96044"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "34c73d016afb4e22a1bed196f8f95a2f"}
+</script>
+
+</body>
+</html>

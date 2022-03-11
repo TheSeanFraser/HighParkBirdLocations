@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Red-breasted Merganser Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "a2a434ae913549d681d8e12e0a7d90ee": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "0b9e667b44a447559ce31d68f3210923": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "2a1a792fad71490f89d0583d8d7fa963": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "7cfdd603ffbd40d982b2c8fb1dcfa73e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "1442fe835ca44ef0987e29048f6fddae": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "04c720d5e42141f2aa21d6ca6fc44298": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_e668c695c8af4cc8a941eee9a28400a7",
+          "IPY_MODEL_aad500f006ce431da713fd4dab2f3d69",
+          "IPY_MODEL_e995a285ba9e476cb172e5b8bfb62103",
+          "IPY_MODEL_14eaeebc0c9d47d89ff4c60fdf130647"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_a2a434ae913549d681d8e12e0a7d90ee",
+        "dragging_style": "IPY_MODEL_0b9e667b44a447559ce31d68f3210923",
+        "layers": [
+          "IPY_MODEL_2a1a792fad71490f89d0583d8d7fa963",
+          "IPY_MODEL_8accf5d378024a7e85bd3d606d65e484",
+          "IPY_MODEL_1badb3bdcfcf425b966a66595fc96674"
+        ],
+        "layout": "IPY_MODEL_7cfdd603ffbd40d982b2c8fb1dcfa73e",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_1442fe835ca44ef0987e29048f6fddae",
+        "zoom": 14.0
+      }
+    },
+    "e668c695c8af4cc8a941eee9a28400a7": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "aad500f006ce431da713fd4dab2f3d69": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "e995a285ba9e476cb172e5b8bfb62103": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "14eaeebc0c9d47d89ff4c60fdf130647": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "8accf5d378024a7e85bd3d606d65e484": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "blue",
+          "0.6": "cyan",
+          "0.7": "lime",
+          "0.8": "yellow",
+          "1.0": "red"
+        },
+        "locations": [
+          [
+            "43.64024230288214",
+            "-79.46709309490114"
+          ],
+          [
+            "43.640794740893995",
+            "-79.46632896954135"
+          ],
+          [
+            "43.6402123909235",
+            "-79.46676394158933"
+          ],
+          [
+            "43.6402428140205",
+            "-79.46646002154874"
+          ],
+          [
+            "43.64056154533662",
+            "-79.46681949503675"
+          ],
+          [
+            "43.640398490699745",
+            "-79.46586922398832"
+          ],
+          [
+            "43.63985410311712",
+            "-79.45666244404794"
+          ],
+          [
+            "43.6402944932726",
+            "-79.4665268695921"
+          ],
+          [
+            "43.64017309000241",
+            "-79.45670538085973"
+          ],
+          [
+            "43.6405140662017",
+            "-79.46689010794542"
+          ],
+          [
+            "43.64033306103478",
+            "-79.46681440813177"
+          ],
+          [
+            "43.6403288609176",
+            "-79.46667694717974"
+          ],
+          [
+            "43.64021748553282",
+            "-79.46579352417467"
+          ],
+          [
+            "43.64026432574478",
+            "-79.4665142529565"
+          ],
+          [
+            "43.63980242386503",
+            "-79.45659559600458"
+          ],
+          [
+            "43.6402944932726",
+            "-79.4665268695921"
+          ],
+          [
+            "43.64019953500278",
+            "-79.46666809540945"
+          ],
+          [
+            "43.64015625598505",
+            "-79.46687616927015"
+          ],
+          [
+            "43.64055288953307",
+            "-79.46686110980889"
+          ],
+          [
+            "43.64029869338978",
+            "-79.46666433054413"
+          ],
+          [
+            "43.63989712656567",
+            "-79.45677090686343"
+          ],
+          [
+            "43.64028163735187",
+            "-79.46643102341221"
+          ],
+          [
+            "43.640544489298705",
+            "-79.46658618790482"
+          ],
+          [
+            "43.64085087583245",
+            "-79.46621674186055"
+          ],
+          [
+            "43.64062633607862",
+            "-79.46666565258379"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "0669f83a69a04954b041ef4967428c7d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b5865002c0cd4cdb8c188e13b4b22921": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c72edf6d14424364a1abdb253f7d136f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_0669f83a69a04954b041ef4967428c7d",
+        "style": "IPY_MODEL_b5865002c0cd4cdb8c188e13b4b22921",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "8423572004c243cbadb6e13cc0321c84": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64024230288214",
+          "-79.46709309490114"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c72edf6d14424364a1abdb253f7d136f",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "1a64791250ff485ebbe05d0fc6467ac4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2c97c791c8e94e4aa1b07800f37435a9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fdf13c5a1b244e308e1cc678cdb6110c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-09",
+        "layout": "IPY_MODEL_1a64791250ff485ebbe05d0fc6467ac4",
+        "style": "IPY_MODEL_2c97c791c8e94e4aa1b07800f37435a9",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "85869bdce263411493e9e13e8c10622d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.640794740893995",
+          "-79.46632896954135"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fdf13c5a1b244e308e1cc678cdb6110c",
+        "title": "Red-breasted Merganser, 2021-12-09"
+      }
+    },
+    "138380d9b14846da954d1eea86365972": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "11c54ef1f2ad4f9c9cc9b73b5b4aca47": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e25b777ca25e464c8b2294c514b519a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_138380d9b14846da954d1eea86365972",
+        "style": "IPY_MODEL_11c54ef1f2ad4f9c9cc9b73b5b4aca47",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "9cb71b7c3b3645e081c149f248338c14": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6402123909235",
+          "-79.46676394158933"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e25b777ca25e464c8b2294c514b519a5",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "020f3b09f4404987850c496133ba32c0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "45939031e3f54da6a232ed584816d507": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "01bdc55e6f0a43ee97582b03ac83f575": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_020f3b09f4404987850c496133ba32c0",
+        "style": "IPY_MODEL_45939031e3f54da6a232ed584816d507",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "7b4ed49c23584ef480875686bca9f592": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6402428140205",
+          "-79.46646002154874"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_01bdc55e6f0a43ee97582b03ac83f575",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "397225c30fd54d60a4252c3a61fbd561": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f9b0998a03354d40b72b04e2f14d16e9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "64ff1e800a0f43fbb5250c8029dee0ff": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_397225c30fd54d60a4252c3a61fbd561",
+        "style": "IPY_MODEL_f9b0998a03354d40b72b04e2f14d16e9",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "a3a5d4491f1147c5849fd549ba4639de": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64056154533662",
+          "-79.46681949503675"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_64ff1e800a0f43fbb5250c8029dee0ff",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "e17a7401d30c4f4798cd9bac0852dac7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5ac8f39a4e6c40dc9e73effe4e4e218d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b0f048664ea44be6939e7f2092fb117f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-01",
+        "layout": "IPY_MODEL_e17a7401d30c4f4798cd9bac0852dac7",
+        "style": "IPY_MODEL_5ac8f39a4e6c40dc9e73effe4e4e218d",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "fc209947f729460794b13a1b17d68500": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.640398490699745",
+          "-79.46586922398832"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b0f048664ea44be6939e7f2092fb117f",
+        "title": "Red-breasted Merganser, 2022-01-01"
+      }
+    },
+    "1745b0e03327482c85c89c98d9a74b5e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0637a5dfbba749999975c07c60a1d6a2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "442139eb3b2346d48c6ded17964d1022": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-09",
+        "layout": "IPY_MODEL_1745b0e03327482c85c89c98d9a74b5e",
+        "style": "IPY_MODEL_0637a5dfbba749999975c07c60a1d6a2",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "a22d7aea3fd54ff18512585bdfbbd522": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.63985410311712",
+          "-79.45666244404794"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_442139eb3b2346d48c6ded17964d1022",
+        "title": "Red-breasted Merganser, 2022-03-09"
+      }
+    },
+    "6b79f10089d14956a5f4bf63a19c46e2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3fca275f815b41229e0abbdc2f9cde8b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "226e9b94b0f547e2a6b9b8c70f675598": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_6b79f10089d14956a5f4bf63a19c46e2",
+        "style": "IPY_MODEL_3fca275f815b41229e0abbdc2f9cde8b",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "2f534bec9c42474d9fbd069f1e340a36": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6402944932726",
+          "-79.4665268695921"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_226e9b94b0f547e2a6b9b8c70f675598",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "e9c59d0f91e04fcb93cc38d1db10b18b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "35f2913109574b9587e386a3b9475d80": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a90a6348194040fdb9cea11f0ef9bae8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-09",
+        "layout": "IPY_MODEL_e9c59d0f91e04fcb93cc38d1db10b18b",
+        "style": "IPY_MODEL_35f2913109574b9587e386a3b9475d80",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "d9bd90716b8a44619817af177a25d0e0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64017309000241",
+          "-79.45670538085973"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a90a6348194040fdb9cea11f0ef9bae8",
+        "title": "Red-breasted Merganser, 2022-03-09"
+      }
+    },
+    "3e501b2d0c3b432c9fd789925bd62df8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "00600da9996d4e9bbdd5ab67956885a3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d1a471640b9c415996a4af184e611ef7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_3e501b2d0c3b432c9fd789925bd62df8",
+        "style": "IPY_MODEL_00600da9996d4e9bbdd5ab67956885a3",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "176d6daa40104f559ffa7f52a26de4bf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6405140662017",
+          "-79.46689010794542"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d1a471640b9c415996a4af184e611ef7",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "2a905a38da104431a9efdb7cc0648ef2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f83b53ea7a4348e480f19f322a1349b5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0eebf3af7f8a4a8aad33d1c935843138": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_2a905a38da104431a9efdb7cc0648ef2",
+        "style": "IPY_MODEL_f83b53ea7a4348e480f19f322a1349b5",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "651f2b6494664ca68a1874aa989134e3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64033306103478",
+          "-79.46681440813177"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0eebf3af7f8a4a8aad33d1c935843138",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "f0f899e9ae6e46228a29ef14763510f9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "53961cedcdd44294a2da0d2ebecdefe1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e2d3e0edc5b945bb9318cc99c96c6bbf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_f0f899e9ae6e46228a29ef14763510f9",
+        "style": "IPY_MODEL_53961cedcdd44294a2da0d2ebecdefe1",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "32f602bc687e4a918f12879ae2a8b819": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6403288609176",
+          "-79.46667694717974"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e2d3e0edc5b945bb9318cc99c96c6bbf",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "159fd4535b86463b89ac5ec78f93608f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "04864af707af4da9b0cef582561bb915": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a06015e92f7c40139f14a3cc7ab513a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-01",
+        "layout": "IPY_MODEL_159fd4535b86463b89ac5ec78f93608f",
+        "style": "IPY_MODEL_04864af707af4da9b0cef582561bb915",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "3aa5d55103b044cbbbfaaacfd813498b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64021748553282",
+          "-79.46579352417467"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a06015e92f7c40139f14a3cc7ab513a6",
+        "title": "Red-breasted Merganser, 2022-01-01"
+      }
+    },
+    "54656f4fb79243ccbc60acc53c675eda": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0877d2b10c0a4fc7baed58f361de0acc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c1c98b6c323c4cc88ca40a8cb137d681": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_54656f4fb79243ccbc60acc53c675eda",
+        "style": "IPY_MODEL_0877d2b10c0a4fc7baed58f361de0acc",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "81da1f5d5c6d46929c7cf30858f317e5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64026432574478",
+          "-79.4665142529565"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c1c98b6c323c4cc88ca40a8cb137d681",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "5f5d8babfbc04a66ab9707f88b41c5c0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6aa1c3423af54aca997bb610f085ac7f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aa66dec15a8244ff87825cc7bbf91b1f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-09",
+        "layout": "IPY_MODEL_5f5d8babfbc04a66ab9707f88b41c5c0",
+        "style": "IPY_MODEL_6aa1c3423af54aca997bb610f085ac7f",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "128ce8cf8887418e9f9426027f2df1c7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.63980242386503",
+          "-79.45659559600458"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aa66dec15a8244ff87825cc7bbf91b1f",
+        "title": "Red-breasted Merganser, 2022-03-09"
+      }
+    },
+    "c6cd3e6d52e24bfcb6bd1978b1239a1f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1cca62604724462f94530df128ce1c9e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f056c29a0228406bac18eba279b7869b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_c6cd3e6d52e24bfcb6bd1978b1239a1f",
+        "style": "IPY_MODEL_1cca62604724462f94530df128ce1c9e",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "31a10a469bef40e9a627fe1af87149a5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6402944932726",
+          "-79.4665268695921"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f056c29a0228406bac18eba279b7869b",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "2fad7ccc062d4f10ba8a82dc51f30176": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "88effcd5446949488c45bc21443a3dcc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8b4022528dda4caab54909d27ad86bb0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_2fad7ccc062d4f10ba8a82dc51f30176",
+        "style": "IPY_MODEL_88effcd5446949488c45bc21443a3dcc",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "ac19fca32b6a4e52bc0da8e6aea591a1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64019953500278",
+          "-79.46666809540945"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8b4022528dda4caab54909d27ad86bb0",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "73a5aa0b7f404b7e889fefda38cb12a3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "026822f7f74b4672a2bcc61b99405246": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b5186eea83b9480da4ee0868c81a4e00": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_73a5aa0b7f404b7e889fefda38cb12a3",
+        "style": "IPY_MODEL_026822f7f74b4672a2bcc61b99405246",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "cde7cdbe4ab44f5f8a7dfb807d0688da": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64015625598505",
+          "-79.46687616927015"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b5186eea83b9480da4ee0868c81a4e00",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "0dfec70de35b45cdbbd9de633c0b2fb3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d4a70a217fb94422b9587c2424878ee1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "334dfbe4861b4208ab437eaca4659f86": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_0dfec70de35b45cdbbd9de633c0b2fb3",
+        "style": "IPY_MODEL_d4a70a217fb94422b9587c2424878ee1",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "8bdc20bc8b954feb8e0d83d5f3de0f09": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64055288953307",
+          "-79.46686110980889"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_334dfbe4861b4208ab437eaca4659f86",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "77247f44040643c29fc60ea41c5cf431": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7b258ae2f1294af6a23a705b79b244d4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "264cf59afb034506b6d662701ba805b3": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_77247f44040643c29fc60ea41c5cf431",
+        "style": "IPY_MODEL_7b258ae2f1294af6a23a705b79b244d4",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "042b9157d463496fa211f4a07c87d877": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64029869338978",
+          "-79.46666433054413"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_264cf59afb034506b6d662701ba805b3",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "a77f72f65f4b446cad827b204f434977": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "743ae6631de2414399e8e3e6480833d5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e9657c027e5f463fb486f03945a2aecf": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-09",
+        "layout": "IPY_MODEL_a77f72f65f4b446cad827b204f434977",
+        "style": "IPY_MODEL_743ae6631de2414399e8e3e6480833d5",
+        "value": "<b>AIR</b>"
+      }
+    },
+    "7d49921ee5d4498793450154ad5583d0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.63989712656567",
+          "-79.45677090686343"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e9657c027e5f463fb486f03945a2aecf",
+        "title": "Red-breasted Merganser, 2022-03-09"
+      }
+    },
+    "8d20436180304ce9b2a469afab61f427": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "02e0ecaa61fc44929297f7f8196984a4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3cb61b4c95234b9f967f17826f0e8875": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_8d20436180304ce9b2a469afab61f427",
+        "style": "IPY_MODEL_02e0ecaa61fc44929297f7f8196984a4",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "830a6094ff804dd6b316f69144e1273a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64028163735187",
+          "-79.46643102341221"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3cb61b4c95234b9f967f17826f0e8875",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "d0cd68a930774a0d81d373128faea08d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "57ed633d5f044d73b696b64af851df5c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "59f5ce5fae744ef6b8b8c12213f77d9e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_d0cd68a930774a0d81d373128faea08d",
+        "style": "IPY_MODEL_57ed633d5f044d73b696b64af851df5c",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "de37af9625f44e898e77709392051904": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.640544489298705",
+          "-79.46658618790482"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_59f5ce5fae744ef6b8b8c12213f77d9e",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "2206724d53be4ec4b00c2154df9933c7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "99d9325b75414016a2861b956bd33454": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "940811915e1f498abb0bfd5d5e2e47c4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-09",
+        "layout": "IPY_MODEL_2206724d53be4ec4b00c2154df9933c7",
+        "style": "IPY_MODEL_99d9325b75414016a2861b956bd33454",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "8bc83695c46e4c6480377fcfc9094044": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64085087583245",
+          "-79.46621674186055"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_940811915e1f498abb0bfd5d5e2e47c4",
+        "title": "Red-breasted Merganser, 2021-12-09"
+      }
+    },
+    "c23eb2102c1d4401ba8881db3321808a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3e8a3b975a524776bc66c39d962e2777": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2974e719e6ad4660848de59e9a84c4c1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-17",
+        "layout": "IPY_MODEL_c23eb2102c1d4401ba8881db3321808a",
+        "style": "IPY_MODEL_3e8a3b975a524776bc66c39d962e2777",
+        "value": "<b>WATER</b>"
+      }
+    },
+    "db297034ea5e46ad8e56f61e1914bf9c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64062633607862",
+          "-79.46666565258379"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2974e719e6ad4660848de59e9a84c4c1",
+        "title": "Red-breasted Merganser, 2021-12-17"
+      }
+    },
+    "1badb3bdcfcf425b966a66595fc96674": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_8423572004c243cbadb6e13cc0321c84",
+          "IPY_MODEL_85869bdce263411493e9e13e8c10622d",
+          "IPY_MODEL_9cb71b7c3b3645e081c149f248338c14",
+          "IPY_MODEL_7b4ed49c23584ef480875686bca9f592",
+          "IPY_MODEL_a3a5d4491f1147c5849fd549ba4639de",
+          "IPY_MODEL_fc209947f729460794b13a1b17d68500",
+          "IPY_MODEL_a22d7aea3fd54ff18512585bdfbbd522",
+          "IPY_MODEL_2f534bec9c42474d9fbd069f1e340a36",
+          "IPY_MODEL_d9bd90716b8a44619817af177a25d0e0",
+          "IPY_MODEL_176d6daa40104f559ffa7f52a26de4bf",
+          "IPY_MODEL_651f2b6494664ca68a1874aa989134e3",
+          "IPY_MODEL_32f602bc687e4a918f12879ae2a8b819",
+          "IPY_MODEL_3aa5d55103b044cbbbfaaacfd813498b",
+          "IPY_MODEL_81da1f5d5c6d46929c7cf30858f317e5",
+          "IPY_MODEL_128ce8cf8887418e9f9426027f2df1c7",
+          "IPY_MODEL_31a10a469bef40e9a627fe1af87149a5",
+          "IPY_MODEL_ac19fca32b6a4e52bc0da8e6aea591a1",
+          "IPY_MODEL_cde7cdbe4ab44f5f8a7dfb807d0688da",
+          "IPY_MODEL_8bdc20bc8b954feb8e0d83d5f3de0f09",
+          "IPY_MODEL_042b9157d463496fa211f4a07c87d877",
+          "IPY_MODEL_7d49921ee5d4498793450154ad5583d0",
+          "IPY_MODEL_830a6094ff804dd6b316f69144e1273a",
+          "IPY_MODEL_de37af9625f44e898e77709392051904",
+          "IPY_MODEL_8bc83695c46e4c6480377fcfc9094044",
+          "IPY_MODEL_db297034ea5e46ad8e56f61e1914bf9c"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "04c720d5e42141f2aa21d6ca6fc44298"}
+</script>
+
+</body>
+</html>

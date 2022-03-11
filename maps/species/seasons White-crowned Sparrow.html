@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>White-crowned Sparrow Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "e68e5b1c3de14f28bd3a452b948c9f33": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "7361be8f5f62440f90fa248068a22296": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "71e8431a153a494fbaca3e57c58012b9": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "cecf8924611b4c28a8ab9d6b08c25c2f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "91ce812dbf424e359cd61dc7a400cac0": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "d43ffd2dc0c5409c976e14b704766abe": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_dffbd3f661734d04be84a8cf6b455838",
+          "IPY_MODEL_9ad93b6fc8ab4420aa6f08d4f408cbbb",
+          "IPY_MODEL_00dc8a1658c445c9b280ed8ed7b19129",
+          "IPY_MODEL_f61d639c8f2b4e58b06850220f619fff"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_e68e5b1c3de14f28bd3a452b948c9f33",
+        "dragging_style": "IPY_MODEL_7361be8f5f62440f90fa248068a22296",
+        "layers": [
+          "IPY_MODEL_71e8431a153a494fbaca3e57c58012b9",
+          "IPY_MODEL_bff28d4ed6d84381ace09aa101e2bf21",
+          "IPY_MODEL_b74e5be5bccb414287ac33b6c2d2218e",
+          "IPY_MODEL_a867c0ead5934c08b2e5bb1b64d848bb",
+          "IPY_MODEL_b6d1d5b541e7489d8f2c41bedf77c2da",
+          "IPY_MODEL_203e3d9045d2456ca981a74f6cecfcc0"
+        ],
+        "layout": "IPY_MODEL_cecf8924611b4c28a8ab9d6b08c25c2f",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_91ce812dbf424e359cd61dc7a400cac0",
+        "zoom": 14.0
+      }
+    },
+    "dffbd3f661734d04be84a8cf6b455838": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "9ad93b6fc8ab4420aa6f08d4f408cbbb": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "00dc8a1658c445c9b280ed8ed7b19129": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "f61d639c8f2b4e58b06850220f619fff": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "bff28d4ed6d84381ace09aa101e2bf21": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#c2f9ff",
+          "0.6": "#b1ebff",
+          "0.8": "#97dfff",
+          "1.0": "#007dd3"
+        },
+        "locations": [
+          [
+            "43.6475363779234",
+            "-79.46213705763348"
+          ],
+          [
+            "43.64174218480283",
+            "-79.45688664089705"
+          ],
+          [
+            "43.641793864054925",
+            "-79.45695348894041"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Winter Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b74e5be5bccb414287ac33b6c2d2218e": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#2f5014",
+          "0.6": "#55910e",
+          "0.8": "#70ac0f",
+          "1.0": "#b8d867"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Spring Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "a867c0ead5934c08b2e5bb1b64d848bb": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#ee0026",
+          "0.6": "#ff004c",
+          "0.8": "#ff001e",
+          "1.0": "#ff403a"
+        },
+        "locations": [],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Summer Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "b6d1d5b541e7489d8f2c41bedf77c2da": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "#b2600d",
+          "0.6": "#ea9900",
+          "0.8": "#ffce00",
+          "1.0": "#fff741"
+        },
+        "locations": [
+          [
+            "43.647583857058315",
+            "-79.46206644472481"
+          ],
+          [
+            "43.64734671695294",
+            "-79.46210297259198"
+          ],
+          [
+            "43.650849144730785",
+            "-79.46252735443184"
+          ],
+          [
+            "43.64751906631631",
+            "-79.46222028717777"
+          ],
+          [
+            "43.64776040653887",
+            "-79.46232122026264"
+          ],
+          [
+            "43.64743301941922",
+            "-79.46200336154678"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Autumn Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "95ea1b725f6e4743addab3176e17738b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "62d13f83c25c4d80a10a73b17f9bc0c7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d3776a8899e742dc8e59558d438dfea8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-07",
+        "layout": "IPY_MODEL_95ea1b725f6e4743addab3176e17738b",
+        "style": "IPY_MODEL_62d13f83c25c4d80a10a73b17f9bc0c7",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "ad14325f51844a46a2850cf6b9b39079": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "31a6f6e75dea4b009c57fa6636c2e7c1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_ad14325f51844a46a2850cf6b9b39079",
+        "location": [
+          "43.647583857058315",
+          "-79.46206644472481"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d3776a8899e742dc8e59558d438dfea8",
+        "title": "White-crowned Sparrow, 2021-10-07"
+      }
+    },
+    "fcae11eab83344078ef98e5ca2c9e5b6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "accacd0b21414676970fa3cb949b16a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5cb415c1bc8045b0b004ae7cf0990b60": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-24",
+        "layout": "IPY_MODEL_fcae11eab83344078ef98e5ca2c9e5b6",
+        "style": "IPY_MODEL_accacd0b21414676970fa3cb949b16a5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f4e2c31324074421aba0bcd48ffd1cfe": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "blue",
+        "marker_color": "white",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "8b6a0caac2da40e8bc683fb13cfda16a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_f4e2c31324074421aba0bcd48ffd1cfe",
+        "location": [
+          "43.6475363779234",
+          "-79.46213705763348"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5cb415c1bc8045b0b004ae7cf0990b60",
+        "title": "White-crowned Sparrow, 2021-10-24"
+      }
+    },
+    "c0051bfc4ae844f6b85a6d01d7872550": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a22221bbc87c48cc83e259158941a3d8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a607cd960d964a71bd70eb68d22bb9d2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-07",
+        "layout": "IPY_MODEL_c0051bfc4ae844f6b85a6d01d7872550",
+        "style": "IPY_MODEL_a22221bbc87c48cc83e259158941a3d8",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "78c49727fd58402b86108e24fa2bbe20": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "d8befed308164e728153b9e8682e5f9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_78c49727fd58402b86108e24fa2bbe20",
+        "location": [
+          "43.64734671695294",
+          "-79.46210297259198"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a607cd960d964a71bd70eb68d22bb9d2",
+        "title": "White-crowned Sparrow, 2021-10-07"
+      }
+    },
+    "00a65679aec141b3a8158a8fba9e64b4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3b2c496788e34b018ddf2fadd5b58e27": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b489117711a04977a75b5f6cdffde6a9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-09-28",
+        "layout": "IPY_MODEL_00a65679aec141b3a8158a8fba9e64b4",
+        "style": "IPY_MODEL_3b2c496788e34b018ddf2fadd5b58e27",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "5c9623023c1b4a80a01c58fdf6a494ef": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "0b260b974565471db75308d83da98a89": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_5c9623023c1b4a80a01c58fdf6a494ef",
+        "location": [
+          "43.650849144730785",
+          "-79.46252735443184"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b489117711a04977a75b5f6cdffde6a9",
+        "title": "White-crowned Sparrow, 2021-09-28"
+      }
+    },
+    "9314bea6fcff434680598a79ed8c7a5a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "be4fdf15219e4a1089bfd1128ab72c72": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e2ad3c414c8147ff95ef7daa85e5a9b8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-15",
+        "layout": "IPY_MODEL_9314bea6fcff434680598a79ed8c7a5a",
+        "style": "IPY_MODEL_be4fdf15219e4a1089bfd1128ab72c72",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4c34d828cf2c43a28c30dfbc4f5dca35": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "blue",
+        "marker_color": "white",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "e2890acb8a7c48aa93286c6451b79d3b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4c34d828cf2c43a28c30dfbc4f5dca35",
+        "location": [
+          "43.64174218480283",
+          "-79.45688664089705"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e2ad3c414c8147ff95ef7daa85e5a9b8",
+        "title": "White-crowned Sparrow, 2021-10-15"
+      }
+    },
+    "9abe755fac9d4160829817f79628a17a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ced9d9f4fb1b4154aa260af785f24d3f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "87b452cbc5124c2ca60e134954bda9c1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-07",
+        "layout": "IPY_MODEL_9abe755fac9d4160829817f79628a17a",
+        "style": "IPY_MODEL_ced9d9f4fb1b4154aa260af785f24d3f",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "c1a5e9865a5d46f998faceb0f99c4c3f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "32f6cf97d7e54bf6a55267d30838ff8d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c1a5e9865a5d46f998faceb0f99c4c3f",
+        "location": [
+          "43.64751906631631",
+          "-79.46222028717777"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_87b452cbc5124c2ca60e134954bda9c1",
+        "title": "White-crowned Sparrow, 2021-10-07"
+      }
+    },
+    "49a6354e061844d29853bd2376d1fc4c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f49cb69189d74a64821a61f7160685b2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "76c74d5e2a4e4d9ba34035f963c6cd50": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-15",
+        "layout": "IPY_MODEL_49a6354e061844d29853bd2376d1fc4c",
+        "style": "IPY_MODEL_f49cb69189d74a64821a61f7160685b2",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4378e3450795468fa13cd59055fd9c25": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "blue",
+        "marker_color": "white",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "a568706a178747c38364b536cf00bc75": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_4378e3450795468fa13cd59055fd9c25",
+        "location": [
+          "43.641793864054925",
+          "-79.45695348894041"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_76c74d5e2a4e4d9ba34035f963c6cd50",
+        "title": "White-crowned Sparrow, 2021-10-15"
+      }
+    },
+    "2ec28dd971164964849013a4a591ed56": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f596edf13a4e4713b4175fe8f21c722c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b1351f19a34749029d65a8812d3e0a9d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-01",
+        "layout": "IPY_MODEL_2ec28dd971164964849013a4a591ed56",
+        "style": "IPY_MODEL_f596edf13a4e4713b4175fe8f21c722c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "907590724ca145609f6fe09499cea1c5": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "9958c099b0fc45368f0ffba2e3c3164d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_907590724ca145609f6fe09499cea1c5",
+        "location": [
+          "43.64776040653887",
+          "-79.46232122026264"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b1351f19a34749029d65a8812d3e0a9d",
+        "title": "White-crowned Sparrow, 2021-10-01"
+      }
+    },
+    "4e3a913f6ef34e179f0aebf6aba23aeb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6b77d639896f474ebd37c635642dd82a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f8a6b318e42c4fa78f058db391752611": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-10-07",
+        "layout": "IPY_MODEL_4e3a913f6ef34e179f0aebf6aba23aeb",
+        "style": "IPY_MODEL_6b77d639896f474ebd37c635642dd82a",
+        "value": "<b>GROUND</b>"
+      }
+    },
+    "c3a44bd5aec847da9d3c6d1e6b59e6e3": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "black",
+        "marker_color": "darkred",
+        "name": "circle",
+        "options": []
+      }
+    },
+    "67b9c36b1f3b4b13bd73be073aa92657": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c3a44bd5aec847da9d3c6d1e6b59e6e3",
+        "location": [
+          "43.64743301941922",
+          "-79.46200336154678"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f8a6b318e42c4fa78f058db391752611",
+        "title": "White-crowned Sparrow, 2021-10-07"
+      }
+    },
+    "203e3d9045d2456ca981a74f6cecfcc0": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_31a6f6e75dea4b009c57fa6636c2e7c1",
+          "IPY_MODEL_8b6a0caac2da40e8bc683fb13cfda16a",
+          "IPY_MODEL_d8befed308164e728153b9e8682e5f9d",
+          "IPY_MODEL_0b260b974565471db75308d83da98a89",
+          "IPY_MODEL_e2890acb8a7c48aa93286c6451b79d3b",
+          "IPY_MODEL_32f6cf97d7e54bf6a55267d30838ff8d",
+          "IPY_MODEL_a568706a178747c38364b536cf00bc75",
+          "IPY_MODEL_9958c099b0fc45368f0ffba2e3c3164d",
+          "IPY_MODEL_67b9c36b1f3b4b13bd73be073aa92657"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "d43ffd2dc0c5409c976e14b704766abe"}
+</script>
+
+</body>
+</html>

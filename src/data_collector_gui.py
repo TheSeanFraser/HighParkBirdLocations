@@ -298,18 +298,13 @@ class OutputData:
                            self.time,
                            self.duration,
                            self.location)
-        ## For faster data entry, the following block of code will be commented
-        ## and the maps, charts, and graphs will all be made once the data
-        ## entry is completed
-        # print("==========================================================")
-        # checklist_map_maker(self.checklist_id)
-        # print("==========================================================")
-        # map_all_species(self.checklist_species)
-        # print("==========================================================")
-        # make_all_species_charts(self.checklist_species)
         print("==========================================================")
+        checklist_map_maker(self.checklist_id)
         print("==========================================================")
-        print("          Data entered and next checklist can be started")
+        map_all_species(self.checklist_species)
+        print("==========================================================")
+        make_all_species_charts(self.checklist_species)
+        print("==========================================================")
         print("==========================================================")
         print("                All media created!")
         print("Use this link for eBird checklist comment:")

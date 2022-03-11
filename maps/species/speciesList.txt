@@ -66,7 +66,10 @@ Gray Catbird
 Yellow-rumped Warbler
 White-throated Sparrow
 Dark-eyed Junco
+Northern Shoveler
+Hooded Merganser
 Eastern Phoebe
+Common Raven
 Common Loon
 Ruby-crowned Kinglet
 Magnolia Warbler
@@ -74,17 +77,21 @@ Golden-crowned Kinglet
 Canada Warbler
 Northern Waterthrush
 Black-throated Green Warbler
+Common Merganser
 Merlin
-Black-and-white Warbler
 Brown Creeper
+Black-and-white Warbler
+Winter Wren
 White-crowned Sparrow
+Swamp Sparrow
+Mallard x American Black Duck (hybrid)
+Red-breasted Merganser
 Solitary Sandpiper
 Hermit Thrush
 American Redstart
 Black-throated Blue Warbler
 Northern Parula
-Hooded Merganser
-Swamp Sparrow
+American Tree Sparrow
 passerine sp.
 Chestnut-sided Warbler
 Blue-headed Vireo
@@ -95,37 +102,44 @@ Palm Warbler
 Carolina Wren
 Least Flycatcher
 Common Yellowthroat
-Mallard x American Black Duck (hybrid)
+Bufflehead
+Bald Eagle
 Blackpoll Warbler
 Field Sparrow
 Nashville Warbler
 Swainson's Thrush
+Muscovy Duck (Domestic type)
 Empidonax sp.
 Horned Lark
 Blackburnian Warbler
 Wilson's Warbler
+Common Goldeneye
 Eastern Bluebird
 Rose-breasted Grosbeak
 Green-winged Teal
 warbler sp. (Parulidae sp.)
+Common Redpoll
+Snow Goose
 Cape May Warbler
 American Kestrel
 Turkey Vulture
-Winter Wren
 Eastern Towhee
+Snow Bunting
 Blue-winged Teal
+Mallard (Domestic type)
 Ovenbird
 Sharp-shinned Hawk
 Wood Thrush
 Scarlet Tanager
 Willow Flycatcher
+Ruddy Duck
 Philadelphia Vireo
 Tennessee Warbler
 Yellow-bellied Flycatcher
-Bufflehead
 Gray-cheeked Thrush
 Orchard Oriole
 Olive-sided Flycatcher
+Pine Siskin
 American Coot
 Black-billed Cuckoo
 Alder or Willow Flycatcher (Traill's Flycatcher)
