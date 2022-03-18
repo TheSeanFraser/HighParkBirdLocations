@@ -129,6 +129,7 @@ Blue-winged Teal
 Mallard (Domestic type)
 Ovenbird
 Sharp-shinned Hawk
+Sandhill Crane
 Wood Thrush
 Scarlet Tanager
 Willow Flycatcher
@@ -148,6 +149,7 @@ Purple Finch
 Green Heron
 Veery
 Least Bittern
+Eastern Meadowlark
 Lincoln's Sparrow
 Greater Scaup
 Northern Harrier

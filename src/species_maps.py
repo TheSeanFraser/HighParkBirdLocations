@@ -2,6 +2,7 @@ import sys
 import timeit
 from ipywidgets import HTML
 import config
+import json
 from ipyleaflet import Map, Heatmap, FullScreenControl, Marker, LayersControl, \
     MarkerCluster
 from sql_manager import create_db_connection, read_query
@@ -50,11 +51,22 @@ def create_species_list(connection):
     # TODO: add species to file in order of families
     # Loop through dictionary of families
     ordered_species_list = []
+    family_dict = {}
     for family in ont_species_list:
+
         for species in ont_species_list[family]:
             if species in species_list_non_protected:
-                ordered_species_list.append(species)
+                if family in family_dict:
+                    family_dict[family].append(species)
+                else:
+                    family_dict[family] = []
+                    family_dict[family].append(species)
+
     print(ordered_species_list)
+    json_families = json.dumps(family_dict, indent=4)
+    print(json_families)
+    with open(config.dir_path + "maps\\species\\species.json", 'w') as outfile:
+        outfile.write(json_families)
 
     print("SpeciesList created.")
     return species_list_non_protected
@@ -195,3 +207,8 @@ def map_all_species(checklist_species=None):
 
 
 # map_all_species()
+
+### Species list stub
+# connection = create_db_connection(config.my_host, config.my_user,
+#                                   config.my_pwd, config.my_db)
+# create_species_list(connection)
