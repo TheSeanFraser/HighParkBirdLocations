@@ -20,7 +20,6 @@
         "Red-breasted Merganser",
         "Ruddy Duck"
     ],
-    "Grouse, Quail, and Allies": [],
     "Grebes": [
         "Pied-billed Grebe"
     ],
@@ -51,8 +50,6 @@
         "Spotted Sandpiper",
         "Solitary Sandpiper"
     ],
-    "Skuas and Jaegers": [],
-    "Alcids": [],
     "Gulls, Terns, and Skimmers": [
         "Ring-billed Gull",
         "Herring Gull",
@@ -62,14 +59,9 @@
     "Loons": [
         "Common Loon"
     ],
-    "Albatrosses": [],
-    "Petrels, Shearwaters, and Diving-Petrels": [],
-    "Storks": [],
-    "Frigatebirds, Boobies, and Gannets": [],
     "Cormorants and Anhingas": [
         "Double-crested Cormorant"
     ],
-    "Pelicans": [],
     "Herons, Ibis, and Allies": [
         "Least Bittern",
         "Great Blue Heron",
@@ -86,7 +78,6 @@
         "Bald Eagle",
         "Red-tailed Hawk"
     ],
-    "Owls": [],
     "Kingfishers": [
         "Belted Kingfisher"
     ],
@@ -101,8 +92,6 @@
         "American Kestrel",
         "Merlin"
     ],
-    "Cockatoos": [],
-    "Parrots, Parakeets, and Allies": [],
     "Tyrant Flycatchers: Pewees, Kingbirds, and Allies": [
         "Olive-sided Flycatcher",
         "Eastern Wood-Pewee",
@@ -121,7 +110,6 @@
         "Warbling Vireo",
         "Red-eyed Vireo"
     ],
-    "Shrikes": [],
     "Jays, Magpies, Crows, and Ravens": [
         "Blue Jay",
         "American Crow",
@@ -175,15 +163,12 @@
         "Wood Thrush",
         "American Robin"
     ],
-    "Old World Flycatchers": [],
     "Waxwings": [
         "Cedar Waxwing"
     ],
-    "Silky-flycatchers": [],
     "Old World Sparrows": [
         "House Sparrow"
     ],
-    "Wagtails and Pipits": [],
     "Finches, Euphonias, and Allies": [
         "House Finch",
         "Purple Finch",
@@ -206,7 +191,6 @@
         "Swamp Sparrow",
         "Eastern Towhee"
     ],
-    "Yellow-breasted Chat": [],
     "Blackbirds": [
         "Eastern Meadowlark",
         "Orchard Oriole",
