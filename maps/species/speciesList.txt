@@ -79,6 +79,7 @@ Northern Waterthrush
 Black-throated Green Warbler
 Common Merganser
 Merlin
+Turkey Vulture
 Brown Creeper
 Black-and-white Warbler
 Winter Wren
@@ -112,6 +113,7 @@ Muscovy Duck (Domestic type)
 Empidonax sp.
 Horned Lark
 Blackburnian Warbler
+Trumpeter Swan
 Wilson's Warbler
 Common Goldeneye
 Eastern Bluebird
@@ -122,7 +124,6 @@ Common Redpoll
 Snow Goose
 Cape May Warbler
 American Kestrel
-Turkey Vulture
 Eastern Towhee
 Snow Bunting
 Blue-winged Teal
@@ -137,6 +138,7 @@ Ruddy Duck
 Philadelphia Vireo
 Tennessee Warbler
 Yellow-bellied Flycatcher
+Peregrine Falcon
 Gray-cheeked Thrush
 Orchard Oriole
 Olive-sided Flycatcher

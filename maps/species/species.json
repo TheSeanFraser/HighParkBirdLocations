@@ -3,6 +3,7 @@
         "Snow Goose",
         "Canada Goose",
         "Mute Swan",
+        "Trumpeter Swan",
         "Muscovy Duck (Domestic type)",
         "Wood Duck",
         "Blue-winged Teal",
@@ -90,7 +91,8 @@
     ],
     "Falcons and Caracaras": [
         "American Kestrel",
-        "Merlin"
+        "Merlin",
+        "Peregrine Falcon"
     ],
     "Tyrant Flycatchers: Pewees, Kingbirds, and Allies": [
         "Olive-sided Flycatcher",

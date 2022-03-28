@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Great Horned Owl Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "5278e69f989a4732bab89a8003a65105": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "39066b66789542c79b388a873cca7c83": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "0954ef73eeb3432998443c940ffcffdf": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "d7623feb796241bbbdc2275f40e79ee9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "500px",
+        "width": "100%"
+      }
+    },
+    "6da7a7ec13584bc5834eeedb72cb5d09": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "7015af5c722d4e329aa7aadf2dd53fe1": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          43.64632654828124,
+          -79.46253966380962
+        ],
+        "controls": [
+          "IPY_MODEL_db527d5d4d7c4e4ea6514983eaf80358",
+          "IPY_MODEL_6ad65dab20464d269089bdd873ca233e",
+          "IPY_MODEL_c1a34467ca9b481789a52c05875aa193",
+          "IPY_MODEL_0f5cddf00f874054b95b4158eb33e650"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_5278e69f989a4732bab89a8003a65105",
+        "dragging_style": "IPY_MODEL_39066b66789542c79b388a873cca7c83",
+        "layers": [
+          "IPY_MODEL_0954ef73eeb3432998443c940ffcffdf",
+          "IPY_MODEL_a259e3ac4eb54d8781876b12ce54fa84",
+          "IPY_MODEL_e9b51478ccd54f738e84811db07d122c"
+        ],
+        "layout": "IPY_MODEL_d7623feb796241bbbdc2275f40e79ee9",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "scroll_wheel_zoom": true,
+        "style": "IPY_MODEL_6da7a7ec13584bc5834eeedb72cb5d09",
+        "zoom": 14.0
+      }
+    },
+    "db527d5d4d7c4e4ea6514983eaf80358": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "6ad65dab20464d269089bdd873ca233e": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "c1a34467ca9b481789a52c05875aa193": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "0f5cddf00f874054b95b4158eb33e650": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    },
+    "a259e3ac4eb54d8781876b12ce54fa84": {
+      "model_name": "LeafletHeatmapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "gradient": {
+          "0.4": "blue",
+          "0.6": "cyan",
+          "0.7": "lime",
+          "0.8": "yellow",
+          "1.0": "red"
+        },
+        "locations": [
+          [
+            "43.647820079429074",
+            "-79.46142813188413"
+          ],
+          [
+            "43.648249159301805",
+            "-79.46143361047393"
+          ],
+          [
+            "43.64737623072557",
+            "-79.46117404040922"
+          ],
+          [
+            "43.648091095253506",
+            "-79.46136903939143"
+          ],
+          [
+            "43.64816147349401",
+            "-79.46120372604625"
+          ],
+          [
+            "43.64788203568013",
+            "-79.46138066787326"
+          ],
+          [
+            "43.64770205017988",
+            "-79.46125862568383"
+          ],
+          [
+            "43.64823692920757",
+            "-79.4613315824766"
+          ],
+          [
+            "43.64785042287047",
+            "-79.46136775365676"
+          ],
+          [
+            "43.64572289284457",
+            "-79.46029298851639"
+          ],
+          [
+            "43.65129382405722",
+            "-79.46440963259509"
+          ],
+          [
+            "43.645675413709654",
+            "-79.46036360142506"
+          ],
+          [
+            "43.64848856231658",
+            "-79.46136160376473"
+          ],
+          [
+            "43.64813655063935",
+            "-79.46098578268884"
+          ],
+          [
+            "43.64606326366955",
+            "-79.46054842507404"
+          ],
+          [
+            "43.64574020445166",
+            "-79.46020975897211"
+          ],
+          [
+            "43.64570558123748",
+            "-79.46037621806067"
+          ],
+          [
+            "43.646114431783275",
+            "-79.46124834646979"
+          ],
+          [
+            "43.643891201666506",
+            "-79.45964002731026"
+          ],
+          [
+            "43.648153051504565",
+            "-79.46132157538055"
+          ],
+          [
+            "43.643925569311506",
+            "-79.45979010489789"
+          ],
+          [
+            "43.64583267930912",
+            "-79.46047460769304"
+          ],
+          [
+            "43.645628190143924",
+            "-79.46011767765754"
+          ],
+          [
+            "43.643921369194324",
+            "-79.45965264394587"
+          ],
+          [
+            "43.64421871657075",
+            "-79.45979961768802"
+          ],
+          [
+            "43.64582625134876",
+            "-79.4604266846031"
+          ],
+          [
+            "43.64574020445166",
+            "-79.46020975897211"
+          ],
+          [
+            "43.64574020445166",
+            "-79.46020975897211"
+          ],
+          [
+            "43.645699153277114",
+            "-79.46032829497072"
+          ],
+          [
+            "43.64400741609142",
+            "-79.45986956957687"
+          ],
+          [
+            "43.646175022408094",
+            "-79.46095704306481"
+          ],
+          [
+            "43.645486008308374",
+            "-79.46001297970736"
+          ],
+          [
+            "43.645656129828566",
+            "-79.46021983215523"
+          ],
+          [
+            "43.64574020445166",
+            "-79.46020975897211"
+          ],
+          [
+            "43.644240228295025",
+            "-79.45985384909577"
+          ],
+          [
+            "43.6441280862027",
+            "-79.45992003611929"
+          ],
+          [
+            "43.6456153342232",
+            "-79.46002183147765"
+          ]
+        ],
+        "max": 1.5,
+        "min_opacity": 0.01,
+        "name": "Heatmap",
+        "options": [
+          "blur",
+          "gradient",
+          "max",
+          "max_zoom",
+          "min_opacity",
+          "radius"
+        ],
+        "radius": 15.0
+      }
+    },
+    "eb502be011d2496091308e3669289938": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3c5ee719e7054605a5676167637c5843": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b8a1bfe796774d9bb27a94f1e3e2fc93": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-08",
+        "layout": "IPY_MODEL_eb502be011d2496091308e3669289938",
+        "style": "IPY_MODEL_3c5ee719e7054605a5676167637c5843",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "1bc443fbc41d4022b81a4ea97013db8f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.647820079429074",
+          "-79.46142813188413"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b8a1bfe796774d9bb27a94f1e3e2fc93",
+        "title": "Great Horned Owl, 2021-07-08"
+      }
+    },
+    "d519a894483741afaf6b90bb55a16e0f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "dd4394ec2b4741e9a3293962b1cffcea": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c1b94f1d5f69440e8142c13784536887": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_d519a894483741afaf6b90bb55a16e0f",
+        "style": "IPY_MODEL_dd4394ec2b4741e9a3293962b1cffcea",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "4f3e51d5985b474d8f92338d73c1f802": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.648249159301805",
+          "-79.46143361047393"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c1b94f1d5f69440e8142c13784536887",
+        "title": "Great Horned Owl, 2021-07-12"
+      }
+    },
+    "04fb195376f8428a8337e531764ceb26": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c9810f9327fe4046b6973ef2323d8a50": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "041436bf08e94442bc4547960a52ee71": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_04fb195376f8428a8337e531764ceb26",
+        "style": "IPY_MODEL_c9810f9327fe4046b6973ef2323d8a50",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "f089bc272715482f94190aeb66a97070": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64737623072557",
+          "-79.46117404040922"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_041436bf08e94442bc4547960a52ee71",
+        "title": "Great Horned Owl, 2021-07-04"
+      }
+    },
+    "44893c8224f24485a501b2f6b0bc5e9e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4de43c621fcf4e66b1f9fd49ff4a63fc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fd55e43f3af4400c9e53139efaf00995": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_44893c8224f24485a501b2f6b0bc5e9e",
+        "style": "IPY_MODEL_4de43c621fcf4e66b1f9fd49ff4a63fc",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8ff20fdc14f245fbbd388d2dc8058aa6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.648091095253506",
+          "-79.46136903939143"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fd55e43f3af4400c9e53139efaf00995",
+        "title": "Great Horned Owl, 2021-07-12"
+      }
+    },
+    "e320bb6502b546d2b48182358b387318": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b5618a66b7894749b1c34546ee9b527a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "52bea6e19cdb46f19530bf6a9940a97e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_e320bb6502b546d2b48182358b387318",
+        "style": "IPY_MODEL_b5618a66b7894749b1c34546ee9b527a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "8d3b56e197ee4ed589fa392904abc276": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64816147349401",
+          "-79.46120372604625"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_52bea6e19cdb46f19530bf6a9940a97e",
+        "title": "Great Horned Owl, 2021-07-12"
+      }
+    },
+    "50c9b1c58997435ea02a0004671430cc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0edae39a72c14e12b206548578a9d1f1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "af9e8324b7124520b7366eaf4d275d75": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_50c9b1c58997435ea02a0004671430cc",
+        "style": "IPY_MODEL_0edae39a72c14e12b206548578a9d1f1",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "307f4d0f5bc14af78e4b53031486ae1b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64788203568013",
+          "-79.46138066787326"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_af9e8324b7124520b7366eaf4d275d75",
+        "title": "Great Horned Owl, 2021-07-04"
+      }
+    },
+    "b72bd19ca8764cf49c61b0ed206e1ba2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cf6edc77f13f41d9b2b5bb4ef3d5534d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3717e3e78aa54ab28dd1f04d11bd784a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_b72bd19ca8764cf49c61b0ed206e1ba2",
+        "style": "IPY_MODEL_cf6edc77f13f41d9b2b5bb4ef3d5534d",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "518b2e1127ad438cadc8087c81fff117": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64770205017988",
+          "-79.46125862568383"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3717e3e78aa54ab28dd1f04d11bd784a",
+        "title": "Great Horned Owl, 2021-07-04"
+      }
+    },
+    "cecde7a2eb154163959d2ac7935a9da1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0a0d4e29f16c4ee09597d9115d719aea": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "933e33e02a2a4a3a8f1eed6742228e6d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-12",
+        "layout": "IPY_MODEL_cecde7a2eb154163959d2ac7935a9da1",
+        "style": "IPY_MODEL_0a0d4e29f16c4ee09597d9115d719aea",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7d47d0423a584b4f9d55e137faada38f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64823692920757",
+          "-79.4613315824766"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_933e33e02a2a4a3a8f1eed6742228e6d",
+        "title": "Great Horned Owl, 2021-07-12"
+      }
+    },
+    "7b6a064aa0a14429bc9ab6e82eb304b8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "63c38c788da34a8aac0cb3be285746fd": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "817c321c819341c691fabe3659be31bd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-04",
+        "layout": "IPY_MODEL_7b6a064aa0a14429bc9ab6e82eb304b8",
+        "style": "IPY_MODEL_63c38c788da34a8aac0cb3be285746fd",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "06cc7b51b4cf4da6a60b4ae833118ff4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64785042287047",
+          "-79.46136775365676"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_817c321c819341c691fabe3659be31bd",
+        "title": "Great Horned Owl, 2021-07-04"
+      }
+    },
+    "c739f52d8aa84fa38c6fc9eff9f49864": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f49e9caa957643469994e224962c5ad7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c6fe695ac3cc469bbd75f54bbf5479fa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-02",
+        "layout": "IPY_MODEL_c739f52d8aa84fa38c6fc9eff9f49864",
+        "style": "IPY_MODEL_f49e9caa957643469994e224962c5ad7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bdf2a24263184cd38f0c603e6ecb9aa0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64572289284457",
+          "-79.46029298851639"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c6fe695ac3cc469bbd75f54bbf5479fa",
+        "title": "Great Horned Owl, 2021-12-02"
+      }
+    },
+    "d55b02c6dcd44f77a5adcbb7b3cde12a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fe040869a22d4b95b53cd197132f4286": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2c6e3a044cfb43f38ab80a983edc4b85": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-09",
+        "layout": "IPY_MODEL_d55b02c6dcd44f77a5adcbb7b3cde12a",
+        "style": "IPY_MODEL_fe040869a22d4b95b53cd197132f4286",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ecf0b07e1817456bb3ad56f6198b9196": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.65129382405722",
+          "-79.46440963259509"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2c6e3a044cfb43f38ab80a983edc4b85",
+        "title": "Great Horned Owl, 2021-08-09"
+      }
+    },
+    "6aade794b81c41f4af4f8b4f4c84b942": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "75e8199ee61443d2a5936723bfdd74fa": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5191a08dd0b44a60a51781ab051e130c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-09",
+        "layout": "IPY_MODEL_6aade794b81c41f4af4f8b4f4c84b942",
+        "style": "IPY_MODEL_75e8199ee61443d2a5936723bfdd74fa",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "57c92da797234e0e9885a4607a886b86": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.645675413709654",
+          "-79.46036360142506"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5191a08dd0b44a60a51781ab051e130c",
+        "title": "Great Horned Owl, 2022-03-09"
+      }
+    },
+    "fc18f41902c94f29b13089e90d4adb2e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "55ee9c265fb44266b68b299762373819": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "193dc2dcd9c6473a8882441dbe86e36e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-07-27",
+        "layout": "IPY_MODEL_fc18f41902c94f29b13089e90d4adb2e",
+        "style": "IPY_MODEL_55ee9c265fb44266b68b299762373819",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "20d290c62b054f60b9420b6108939e8f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64848856231658",
+          "-79.46136160376473"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_193dc2dcd9c6473a8882441dbe86e36e",
+        "title": "Great Horned Owl, 2021-07-27"
+      }
+    },
+    "467a707bc7c34dbda8c3d01578037c50": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "604fa73b3ff94e18a70ef07a18086d54": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cc13aac663ea4d848c829b0f68ae0384": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-31",
+        "layout": "IPY_MODEL_467a707bc7c34dbda8c3d01578037c50",
+        "style": "IPY_MODEL_604fa73b3ff94e18a70ef07a18086d54",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7a6d588fbe554704b9bc7412b6619189": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64813655063935",
+          "-79.46098578268884"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cc13aac663ea4d848c829b0f68ae0384",
+        "title": "Great Horned Owl, 2021-08-31"
+      }
+    },
+    "a05fbb82da9a41b99e3f3dac75731df5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6a1b5e30e1064dfdb0038782781e1ad9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d07f5982580541659af8ce2f1083cd9e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-19",
+        "layout": "IPY_MODEL_a05fbb82da9a41b99e3f3dac75731df5",
+        "style": "IPY_MODEL_6a1b5e30e1064dfdb0038782781e1ad9",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "76e9bf3dd47240b6b29dfa6aae23699f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64606326366955",
+          "-79.46054842507404"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d07f5982580541659af8ce2f1083cd9e",
+        "title": "Great Horned Owl, 2021-12-19"
+      }
+    },
+    "e03da602590e4c619506d8e96b8698d6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "852b1c6c27e7412cb37e9721dcc845c3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "661729078ae949119e70ea34b41fd4a5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-02",
+        "layout": "IPY_MODEL_e03da602590e4c619506d8e96b8698d6",
+        "style": "IPY_MODEL_852b1c6c27e7412cb37e9721dcc845c3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "c4363f30c7ba49fb97123cd6281fe65b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64574020445166",
+          "-79.46020975897211"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_661729078ae949119e70ea34b41fd4a5",
+        "title": "Great Horned Owl, 2021-12-02"
+      }
+    },
+    "885e1236888145829df3656c143620d2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "143896c876414a3a9785e225a5b9ab34": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4f06dbce978a448d9b0a246390d54d62": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-04",
+        "layout": "IPY_MODEL_885e1236888145829df3656c143620d2",
+        "style": "IPY_MODEL_143896c876414a3a9785e225a5b9ab34",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "75d5d5bf48f24d0ba55839b8d0659fcd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64570558123748",
+          "-79.46037621806067"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4f06dbce978a448d9b0a246390d54d62",
+        "title": "Great Horned Owl, 2022-01-04"
+      }
+    },
+    "5a1dcb8e6d2f4f96949277262213870f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b32fbe52d2074321aebb66e81d4d4d6b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bcf62bcc5c65416eb9af5639f04c6cd7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-31",
+        "layout": "IPY_MODEL_5a1dcb8e6d2f4f96949277262213870f",
+        "style": "IPY_MODEL_b32fbe52d2074321aebb66e81d4d4d6b",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ff740e08800340439f56bd0d5e309839": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.646114431783275",
+          "-79.46124834646979"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bcf62bcc5c65416eb9af5639f04c6cd7",
+        "title": "Great Horned Owl, 2021-12-31"
+      }
+    },
+    "f0d0535c265540c7a7fc66a6f5aac4b4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "91a8c5a12db34c1c9afd43729af61774": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "180a1d0dba30494e9e13b1dbb6d31c5c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-30",
+        "layout": "IPY_MODEL_f0d0535c265540c7a7fc66a6f5aac4b4",
+        "style": "IPY_MODEL_91a8c5a12db34c1c9afd43729af61774",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "16d300d6a48c4397befc5ec612917f60": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.643891201666506",
+          "-79.45964002731026"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_180a1d0dba30494e9e13b1dbb6d31c5c",
+        "title": "Great Horned Owl, 2021-12-30"
+      }
+    },
+    "e135acc38a3944d2842cd9c290eda9d0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "89bb45d67cf746a28bd1ba7ab20ba34f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "45a962a4af0f4ed2a27eb611b4162bf6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-08-04",
+        "layout": "IPY_MODEL_e135acc38a3944d2842cd9c290eda9d0",
+        "style": "IPY_MODEL_89bb45d67cf746a28bd1ba7ab20ba34f",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bba2ccc44b1e40469deb714a7fa0c300": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.648153051504565",
+          "-79.46132157538055"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_45a962a4af0f4ed2a27eb611b4162bf6",
+        "title": "Great Horned Owl, 2021-08-04"
+      }
+    },
+    "bc8a9d3ccb31478d9e536661649a8760": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ff86b386505d47a9bd7c8a61639f8561": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f545c01798d94d849d86a9af7566a7df": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-01",
+        "layout": "IPY_MODEL_bc8a9d3ccb31478d9e536661649a8760",
+        "style": "IPY_MODEL_ff86b386505d47a9bd7c8a61639f8561",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "bcdef5d65dce4d81972883568b531c7e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.643925569311506",
+          "-79.45979010489789"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f545c01798d94d849d86a9af7566a7df",
+        "title": "Great Horned Owl, 2022-01-01"
+      }
+    },
+    "58ef5f63dcc440bc893c914fe8545f87": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "232aaab330234c51930a4889baf269ca": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d3b298c5076c451b944176d7c988b343": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-11-08",
+        "layout": "IPY_MODEL_58ef5f63dcc440bc893c914fe8545f87",
+        "style": "IPY_MODEL_232aaab330234c51930a4889baf269ca",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5a3920d450584810bf50d49215799f07": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64583267930912",
+          "-79.46047460769304"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d3b298c5076c451b944176d7c988b343",
+        "title": "Great Horned Owl, 2021-11-08"
+      }
+    },
+    "ab7b5cc1fc3845a599caa4d999feefc4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2424bbf29904401eadb2a256611a140c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7608d0d6312c4c25bc78722d0cdf893e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-02-18",
+        "layout": "IPY_MODEL_ab7b5cc1fc3845a599caa4d999feefc4",
+        "style": "IPY_MODEL_2424bbf29904401eadb2a256611a140c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "2d3f172d914e4acc9bcddc44a0948d1c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.645628190143924",
+          "-79.46011767765754"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7608d0d6312c4c25bc78722d0cdf893e",
+        "title": "Great Horned Owl, 2022-02-18"
+      }
+    },
+    "223588ec6b294c1588e7eab0fd14bafc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c1dd1eca674d4cbca4ce0b5cebd301b3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2563c870da724357b367cecc5b667124": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-30",
+        "layout": "IPY_MODEL_223588ec6b294c1588e7eab0fd14bafc",
+        "style": "IPY_MODEL_c1dd1eca674d4cbca4ce0b5cebd301b3",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5bbf677836134921af475b088db95d1f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.643921369194324",
+          "-79.45965264394587"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2563c870da724357b367cecc5b667124",
+        "title": "Great Horned Owl, 2021-12-30"
+      }
+    },
+    "55eb1e2ded004325a33ea3155628fba6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "663d47ea94c54960a3669efefebf2569": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "83caff8b71b343e2883141acec1926d9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-13",
+        "layout": "IPY_MODEL_55eb1e2ded004325a33ea3155628fba6",
+        "style": "IPY_MODEL_663d47ea94c54960a3669efefebf2569",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "467fcd641b6f4affb9aceda9e6fdfbd4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64421871657075",
+          "-79.45979961768802"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_83caff8b71b343e2883141acec1926d9",
+        "title": "Great Horned Owl, 2021-12-13"
+      }
+    },
+    "ffd8de5c734b481a981dbb285963edab": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "10c913798b9943ffad242d10f1193735": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6ff062b9ccf64496b3235e91a1fa80db": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-05",
+        "layout": "IPY_MODEL_ffd8de5c734b481a981dbb285963edab",
+        "style": "IPY_MODEL_10c913798b9943ffad242d10f1193735",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b145c8929b77468ebb2a00bece3a61a4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64582625134876",
+          "-79.4604266846031"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6ff062b9ccf64496b3235e91a1fa80db",
+        "title": "Great Horned Owl, 2022-01-05"
+      }
+    },
+    "0372dce0c4194a04a5da7c4e099592fb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6674924fb1724bb98c9f91aa56c4663c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cc27c5451e784d4cb8b7d37bafa1e65b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-12",
+        "layout": "IPY_MODEL_0372dce0c4194a04a5da7c4e099592fb",
+        "style": "IPY_MODEL_6674924fb1724bb98c9f91aa56c4663c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b378caddae604815bbbc68dd4933f83f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64574020445166",
+          "-79.46020975897211"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cc27c5451e784d4cb8b7d37bafa1e65b",
+        "title": "Great Horned Owl, 2021-12-12"
+      }
+    },
+    "b7761ce7817a40d68fad79d292385c51": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "302137565bcc414895096a1be6475bc5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c3ff3c19b8584c5bbb83079b89dd6ca1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-08",
+        "layout": "IPY_MODEL_b7761ce7817a40d68fad79d292385c51",
+        "style": "IPY_MODEL_302137565bcc414895096a1be6475bc5",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "7477e08d5aad41cca40a87b0ed9732e7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64574020445166",
+          "-79.46020975897211"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c3ff3c19b8584c5bbb83079b89dd6ca1",
+        "title": "Great Horned Owl, 2021-12-08"
+      }
+    },
+    "f4a0ecd462694a50b480997b111bc67e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eee37ccfd74e4c039265a8ae461c6e9c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c5051b9c45b6468ea1813ffdf2ac3100": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-28",
+        "layout": "IPY_MODEL_f4a0ecd462694a50b480997b111bc67e",
+        "style": "IPY_MODEL_eee37ccfd74e4c039265a8ae461c6e9c",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "076cd97be40c47ae80c36a354d4b803e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.645699153277114",
+          "-79.46032829497072"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c5051b9c45b6468ea1813ffdf2ac3100",
+        "title": "Great Horned Owl, 2022-03-28"
+      }
+    },
+    "7774b45272d347889f4e08dd25661f0d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fa774c3859a9420b94d1d44e7f587573": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b5e9ec9c44624d7fa480407b53b636b1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-01-01",
+        "layout": "IPY_MODEL_7774b45272d347889f4e08dd25661f0d",
+        "style": "IPY_MODEL_fa774c3859a9420b94d1d44e7f587573",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "0cfe9ed1151f490786fa421db97f9913": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64400741609142",
+          "-79.45986956957687"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b5e9ec9c44624d7fa480407b53b636b1",
+        "title": "Great Horned Owl, 2022-01-01"
+      }
+    },
+    "6f52ffab91a24228a0e7d2c861403c8b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7e24c7da3ad24067a9c909ee7eb9045a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "23125292c0ed4346a96e6cde24545dc6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-31",
+        "layout": "IPY_MODEL_6f52ffab91a24228a0e7d2c861403c8b",
+        "style": "IPY_MODEL_7e24c7da3ad24067a9c909ee7eb9045a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b9fca8536631427ca2ee65af75d1ffab": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.646175022408094",
+          "-79.46095704306481"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_23125292c0ed4346a96e6cde24545dc6",
+        "title": "Great Horned Owl, 2021-12-31"
+      }
+    },
+    "f9e6072f866940ebaff57822629f9710": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e142883ecf434b5281ebd831223f45f6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eba3a43e0862408899cd0c122786f79d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-02-24",
+        "layout": "IPY_MODEL_f9e6072f866940ebaff57822629f9710",
+        "style": "IPY_MODEL_e142883ecf434b5281ebd831223f45f6",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5232797c3b71406d89f020d14fa4a761": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.645486008308374",
+          "-79.46001297970736"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_eba3a43e0862408899cd0c122786f79d",
+        "title": "Great Horned Owl, 2022-02-24"
+      }
+    },
+    "5b45aa547af042adaf3f1d67fd59219e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "94203de885144f1fac08facd6f680534": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a24551b7b9194474adf506fb54406546": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-02-03",
+        "layout": "IPY_MODEL_5b45aa547af042adaf3f1d67fd59219e",
+        "style": "IPY_MODEL_94203de885144f1fac08facd6f680534",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "ad80674e05f54db380b0a8d576a243f6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.645656129828566",
+          "-79.46021983215523"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_a24551b7b9194474adf506fb54406546",
+        "title": "Great Horned Owl, 2022-02-03"
+      }
+    },
+    "d5cac008e32f4c389597a10e1661f256": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8e1bb7e7fada49fa9d5468a3ce6a6e9a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cb4696f015fc489499d9ba4028354f92": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-08",
+        "layout": "IPY_MODEL_d5cac008e32f4c389597a10e1661f256",
+        "style": "IPY_MODEL_8e1bb7e7fada49fa9d5468a3ce6a6e9a",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "d08fc6cc44e04b80839bd9f47c0db2cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.64574020445166",
+          "-79.46020975897211"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cb4696f015fc489499d9ba4028354f92",
+        "title": "Great Horned Owl, 2021-12-08"
+      }
+    },
+    "571c27be825548f09c1584550b612fd7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1c28fc727f2b45f997369a5a32430c01": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "279dc80dfa224d1c80f995124a8b93fa": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-16",
+        "layout": "IPY_MODEL_571c27be825548f09c1584550b612fd7",
+        "style": "IPY_MODEL_1c28fc727f2b45f997369a5a32430c01",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "552eaed7a754481db1bd7ad1bf4e203c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.644240228295025",
+          "-79.45985384909577"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_279dc80dfa224d1c80f995124a8b93fa",
+        "title": "Great Horned Owl, 2021-12-16"
+      }
+    },
+    "5fc46ad72dc54590b38a01164de61a87": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ff8c9712696b440fbe1dc911cd0777d7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fbadc5203e2c484d91a707f741079b5b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2021-12-19",
+        "layout": "IPY_MODEL_5fc46ad72dc54590b38a01164de61a87",
+        "style": "IPY_MODEL_ff8c9712696b440fbe1dc911cd0777d7",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "b62d0b554ddd42cfadc616a6b28f1061": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6441280862027",
+          "-79.45992003611929"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fbadc5203e2c484d91a707f741079b5b",
+        "title": "Great Horned Owl, 2021-12-19"
+      }
+    },
+    "a952575355864653b2581e607a7d1128": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e6e9bcbbd8a244eca4315dbba1628019": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b6a79f019c0c4af1b661c888e4e545ba": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "2022-03-21",
+        "layout": "IPY_MODEL_a952575355864653b2581e607a7d1128",
+        "style": "IPY_MODEL_e6e9bcbbd8a244eca4315dbba1628019",
+        "value": "<b>TREE</b>"
+      }
+    },
+    "5f5b7e8f2d17409abdf144b9ffc358a2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6456153342232",
+          "-79.46002183147765"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b6a79f019c0c4af1b661c888e4e545ba",
+        "title": "Great Horned Owl, 2022-03-21"
+      }
+    },
+    "e9b51478ccd54f738e84811db07d122c": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_1bc443fbc41d4022b81a4ea97013db8f",
+          "IPY_MODEL_4f3e51d5985b474d8f92338d73c1f802",
+          "IPY_MODEL_f089bc272715482f94190aeb66a97070",
+          "IPY_MODEL_8ff20fdc14f245fbbd388d2dc8058aa6",
+          "IPY_MODEL_8d3b56e197ee4ed589fa392904abc276",
+          "IPY_MODEL_307f4d0f5bc14af78e4b53031486ae1b",
+          "IPY_MODEL_518b2e1127ad438cadc8087c81fff117",
+          "IPY_MODEL_7d47d0423a584b4f9d55e137faada38f",
+          "IPY_MODEL_06cc7b51b4cf4da6a60b4ae833118ff4",
+          "IPY_MODEL_bdf2a24263184cd38f0c603e6ecb9aa0",
+          "IPY_MODEL_ecf0b07e1817456bb3ad56f6198b9196",
+          "IPY_MODEL_57c92da797234e0e9885a4607a886b86",
+          "IPY_MODEL_20d290c62b054f60b9420b6108939e8f",
+          "IPY_MODEL_7a6d588fbe554704b9bc7412b6619189",
+          "IPY_MODEL_76e9bf3dd47240b6b29dfa6aae23699f",
+          "IPY_MODEL_c4363f30c7ba49fb97123cd6281fe65b",
+          "IPY_MODEL_75d5d5bf48f24d0ba55839b8d0659fcd",
+          "IPY_MODEL_ff740e08800340439f56bd0d5e309839",
+          "IPY_MODEL_16d300d6a48c4397befc5ec612917f60",
+          "IPY_MODEL_bba2ccc44b1e40469deb714a7fa0c300",
+          "IPY_MODEL_bcdef5d65dce4d81972883568b531c7e",
+          "IPY_MODEL_5a3920d450584810bf50d49215799f07",
+          "IPY_MODEL_2d3f172d914e4acc9bcddc44a0948d1c",
+          "IPY_MODEL_5bbf677836134921af475b088db95d1f",
+          "IPY_MODEL_467fcd641b6f4affb9aceda9e6fdfbd4",
+          "IPY_MODEL_b145c8929b77468ebb2a00bece3a61a4",
+          "IPY_MODEL_b378caddae604815bbbc68dd4933f83f",
+          "IPY_MODEL_7477e08d5aad41cca40a87b0ed9732e7",
+          "IPY_MODEL_076cd97be40c47ae80c36a354d4b803e",
+          "IPY_MODEL_0cfe9ed1151f490786fa421db97f9913",
+          "IPY_MODEL_b9fca8536631427ca2ee65af75d1ffab",
+          "IPY_MODEL_5232797c3b71406d89f020d14fa4a761",
+          "IPY_MODEL_ad80674e05f54db380b0a8d576a243f6",
+          "IPY_MODEL_d08fc6cc44e04b80839bd9f47c0db2cc",
+          "IPY_MODEL_552eaed7a754481db1bd7ad1bf4e203c",
+          "IPY_MODEL_b62d0b554ddd42cfadc616a6b28f1061",
+          "IPY_MODEL_5f5b7e8f2d17409abdf144b9ffc358a2"
+        ],
+        "name": "Markers",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "7015af5c722d4e329aa7aadf2dd53fe1"}
+</script>
+
+</body>
+</html>
