@@ -32,7 +32,7 @@ def import_checklist():
         checklist_data = list(csv.reader(csv_file))
 
     # Find checklist ID in filename
-    checklist_match = re.search('(S(.\d*))',filename)
+    checklist_match = re.search('(S(.\d*))', filename)
     if checklist_match:
         checklist_id = checklist_match.group(0)
 
