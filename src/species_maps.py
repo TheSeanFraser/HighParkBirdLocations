@@ -206,9 +206,8 @@ def map_all_species(checklist_species=None):
         total_time) + "seconds ---")
 
 
-# map_all_species()
 
-### Species list stub
+# ### Species list stub
 # connection = create_db_connection(config.my_host, config.my_user,
 #                                   config.my_pwd, config.my_db)
 # create_species_list(connection)

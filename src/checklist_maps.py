@@ -193,4 +193,3 @@ def remake_all_checklist_maps():
 
 
 # checklist_map_maker("S93979335")
-# remake_all_checklist_maps()

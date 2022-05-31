@@ -217,28 +217,28 @@ def create_map(species, single_species_data):
 
     winter_heatmap = Heatmap(name="Winter Heatmap",
                              locations=winter_heatmap_locations,
-                             min_opacity=0.01,
+                             min_opacity=0.5,
                              gradient=winter_gradient,
                              max=1.5,
                              radius=15)
 
     spring_heatmap = Heatmap(name="Spring Heatmap",
                              locations=spring_heatmap_locations,
-                             min_opacity=0.01,
+                             min_opacity=0.5,
                              gradient=spring_gradient,
                              max=1.5,
                              radius=15)
 
     summer_heatmap = Heatmap(name="Summer Heatmap",
                              locations=summer_heatmap_locations,
-                             min_opacity=0.01,
+                             min_opacity=0.5,
                              gradient=summer_gradient,
                              max=1.5,
                              radius=15)
 
     autumn_heatmap = Heatmap(name="Autumn Heatmap",
                              locations=autumn_heatmap_locations,
-                             min_opacity=0.01,
+                             min_opacity=0.5,
                              gradient=autumn_gradient,
                              max=1.5,
                              radius=15)
@@ -310,4 +310,4 @@ def map_all_species(checklist_species=None):
         total_time) + "seconds ---")
 
 
-map_all_species()
+# map_all_species()

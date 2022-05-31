@@ -219,7 +219,11 @@ class Checklist:
                 self.end_of_checklist_reached = True
             else:
                 self.current_species += 1
-                self.count_of_current_species = int(self.data[self.current_species][1])
+                # Check if count is X, set to 1 if the case
+                if self.data[self.current_species][1] == 'X':
+                    self.count_of_current_species = 1
+                else:
+                    self.count_of_current_species = int(self.data[self.current_species][1])
         else:
             print("All species already completed.")
 
@@ -292,30 +296,40 @@ class OutputData:
 
     # Uploads data to SQL server and makes maps and charts
     def upload_data_and_make_media(self,output_data):
+        # Bulk data loading toggle
+        # Set to True if adding multiple checklists to speed up process
+        # Need to manually make charts and maps after
+        bulk_data_loading = True
+
         insert_data_to_sql(self.data,
                            self.checklist_id,
                            self.date,
                            self.time,
                            self.duration,
                            self.location)
-        print("==========================================================")
-        checklist_map_maker(self.checklist_id)
-        print("==========================================================")
-        map_all_species(self.checklist_species)
-        print("==========================================================")
-        make_all_species_charts(self.checklist_species)
-        print("==========================================================")
-        print("==========================================================")
-        print("                All media created!")
-        print("Use this link for eBird checklist comment:")
-        print('<a href="https://theseanfraser.github.io/HighParkBirdLocations/checklists.html#'
-              + self.checklist_id
-              + '">Map of birds seen on this checklist.</a>')
+
+        if not bulk_data_loading:
+            print("==========================================================")
+            checklist_map_maker(self.checklist_id)
+            print("==========================================================")
+            map_all_species(self.checklist_species)
+            print("==========================================================")
+            make_all_species_charts(self.checklist_species)
+            print("==========================================================")
+            print("==========================================================")
+            print("                All media created!")
+            print("Use this link for eBird checklist comment:")
+            print('<a href="https://theseanfraser.github.io/HighParkBirdLocations/checklists.html#'
+                  + self.checklist_id
+                  + '">Map of birds seen on this checklist.</a>')
+
 
 ###############################################################################
 #   Main Function
 #   Starts the GUI with the checklist and output_data objects
 ###############################################################################
+
+
 def start_new_gui(root, checklist_data):
     # Create a checklist object with the data imported from the checklist file
     checklist = Checklist(checklist_data)

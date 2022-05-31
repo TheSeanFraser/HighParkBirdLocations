@@ -97,6 +97,12 @@ def createMap(species="ALL"):
 
     # Add all the layers to the map
     m.add_layer(heatmap)
+    # Save the map for the checklist
+    m.layout.width = '100%'
+    m.layout.height = '500px'
+    m.save(config.dir_path + '\\maps\\all_birds_map.html',
+           title=' All Birds Map')
+
 
     return m
 
@@ -104,6 +110,6 @@ def createMap(species="ALL"):
 createMap()
 
 # Save the map for the checklist
-m.layout.width = '100%'
-m.layout.height = '500px'
-m.save(config.dir_path + '\\maps\\all_birds_map.html', title=' All Birds Map')
+# m.layout.width = '100%'
+# m.layout.height = '500px'
+# m.save(config.dir_path + '\\maps\\all_birds_map.html', title=' All Birds Map')
